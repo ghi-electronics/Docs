@@ -8,7 +8,7 @@ PUSHD "%ScriptRoot%"
 
 PUSHD src
 
-docfx build -o ..
+docfx -o ..
 
 POPD
 
