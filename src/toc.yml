@@ -1,5 +1,6 @@
-- name: Articles
-  href: articles/
-- name: Api Documentation
-  href: api/
-  homepage: api/index.md
+- name: TinyCLR
+  href: articles/tinyclr/getting_started.md
+- name: BrainPad
+  href: articles/brainpad/intro.md
+- name: Products
+  href: articles/products/intro.md
