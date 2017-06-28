@@ -1,3 +1,3 @@
-# [Getting Started](getting_started.md)
-# [C#](csharp/toc.md)
-# [VB](vb/toc.md)
+# [Intro](intro.md)
+# [Courses](courses/toc.md)
+# [Drivers](drivers/toc.md)
