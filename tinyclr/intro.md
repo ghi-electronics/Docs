@@ -1,6 +1,6 @@
 # TinyCLR Intro
 
-Works great with the [FEZ](../products/fez.md)!
+Works great with the [FEZ](../hardware/fez.md)!
 
 ## Section 1
 

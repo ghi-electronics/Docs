@@ -1,3 +1,3 @@
 # [TinyCLR](tinyclr/)
 # [BrainPad](brainpad/)
-# [Products](products/)
+# [Hardware](hardware/)

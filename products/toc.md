@@ -1,6 +1,0 @@
-# [Intro](intro.md)
-# [FEZ](fez.md)
-# [BrainPad](brainpad.md)
-# [UCM](ucm/toc.md)
-# [USM](usm/toc.md)
-# [Legacy](legacy/toc.md)

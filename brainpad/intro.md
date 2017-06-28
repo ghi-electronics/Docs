@@ -1,3 +1,3 @@
 # BrainPad Intro
 
-Make sure you have the [BrainPad](../products/brainpad.md)!
+Make sure you have the [BrainPad](../hardware/brainpad.md)!
