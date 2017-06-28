@@ -1,4 +1,10 @@
 - name: Getting Started
   href: getting_started.md
+- name: GHI Bootloader
+  href: ghi_bootloader.md
 - name: Porting
   href: porting.md
+- name: Native Interops
+  href: native_interops.md
+- name: Native APIs
+  href: native_apis.md
