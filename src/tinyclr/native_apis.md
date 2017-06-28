@@ -1,1 +1,1 @@
-# Native APIs in TinyCLr
+# Native APIs in TinyCLR
