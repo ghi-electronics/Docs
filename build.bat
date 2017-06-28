@@ -4,9 +4,9 @@ SETLOCAL
 
 SET ScriptRoot=%~dp0
 
-PUSHD "%ScriptRoot%\src"
+PUSHD "%ScriptRoot%"
 
-docfx -o ..
+docfx
 
 POPD
 
