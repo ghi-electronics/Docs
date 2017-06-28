@@ -1,8 +1,0 @@
-- name: Getting Started
-  href: getting_started.md
-- name: C# Intro
-  href: csharp_intro.md
-- name: C# Variables and Nested Statements
-  href: csharp_variables_and_nested_statements.md
-- name: C# Threading and Events
-  href: csharp_threading_and_events.md

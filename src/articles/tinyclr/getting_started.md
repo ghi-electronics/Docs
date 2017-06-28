@@ -1,1 +1,0 @@
-# TinyCLR Getting Started
