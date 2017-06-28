@@ -1,3 +1,3 @@
 # GHI Bootloader
 
-![Foo](/images/logo.png)
+![Foo](images/asdf.png)

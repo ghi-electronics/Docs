@@ -79,11 +79,6 @@
     "title": "C# Threading and Events",
     "keywords": "C# Threading and Events"
   },
-  "tinyclr/ghi_bootloader.html": {
-    "href": "tinyclr/ghi_bootloader.html",
-    "title": "GHI Bootloader",
-    "keywords": "GHI Bootloader"
-  },
   "products/g30.html": {
     "href": "products/g30.html",
     "title": "G30",
@@ -108,5 +103,10 @@
     "href": "products/g120.html",
     "title": "G120",
     "keywords": "G120"
+  },
+  "tinyclr/ghi_bootloader.html": {
+    "href": "tinyclr/ghi_bootloader.html",
+    "title": "GHI Bootloader",
+    "keywords": "GHI Bootloader"
   }
 }

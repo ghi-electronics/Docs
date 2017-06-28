@@ -2,13 +2,13 @@
   "build": {
     "content": [
       {
-        "files": [ "**.md" ],
+        "files": [ "**/*.md" ],
         "exclude": [ "obj/**", "docs/**" ]
       }
     ],
     "resource": [
       {
-        "files": [ "images/**" ],
+        "files": [ "**/*.png", "**/*.jpg" ],
         "exclude": [ "obj/**", "docs/**" ]
       }
     ],
