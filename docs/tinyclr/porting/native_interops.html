@@ -76,6 +76,39 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="native-interops-in-tinyclr">Native Interops in TinyCLR</h1>
 
+<p>Interops allow you to write a class in managed code that is partially or entirely implemented in native code. This is useful for time critical tasks, things that would take too long in managed code, or interacting with native functionality not exposed through managed code. Keep in mind that while native code executes, all managed threads are blocked and if you crash in native code, managed code also crashes.</p>
+<p>To get started, create a TinyCLR project called <code>InteropTest</code>. In the project properties window, go to the <code>TinyCLR OS</code> tab. Check both the <code>Generate native stubs for internal methods</code> and the <code>Generate bare native stubs</code> checkboxes. Next, define your native API. Any method that you plan to implement in native code must be declared extern and be decorated with the <code>System.Runtime.CompilerServices.MethodImpl</code> attribute that is constructed with <code>MethodImplOptions.InternalCall</code>. Static and instance functions, static and instance constructors, finalizers, and property set and get bodies can all be implemented native. They can have any visibility, can take any number or types of parameters, and can return any type. For example:</p>
+<pre><code class="lang-csharp">class MyNativeClass {
+    private int field = 5;
+
+    [MethodImpl(MethodImplOptions.InternalCall)]
+    public extern string MyNativeFunc(uint param1);
+
+    public extern int MyNativeProperty {
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        get;
+    }
+}
+</code></pre><p>Once you have your native API define, build your project. In the output folder, find and open <code>pe</code> and then <code>Interop</code>. In there are three files that let TinyCLR connect the managed methods to the native methods. There are two main files that have the same name as your project. These define the entire API. Importantly, there is an object that has the assembly name, its checksum, and an array of its methods. The remaining file contains function stubs for each native method you need to implement from the <code>MyNativeClass</code> class. Each function has a single parameter of type <code>TinyCLR_Interop_MethodData</code> that can be found in the <code>TinyCLR.h</code> file. This type has two memebers: an opaque stack type that you pass to other interop functions and the <a href="native_apis.html">API provider</a> that gives you access to the runtime. You can use this API provider to find the interop provider. The interop provider allows you to read and write object fields, read arguments passed to the function, write to reference arguments, set the return value, raise other events, and create new managed objects. The following code shows reading from a field and setting it as the return value of the property:</p>
+<pre><code class="lang-cpp">TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {    
+    auto ip = (const TinyCLR_Interop_Provider*)md.ApiProvider.FindDefault(&amp;md.ApiProvider, TinyCLR_Api_Type::InteropProvider);
+
+    TinyCLR_Interop_ManagedValue self;
+    TinyCLR_Interop_ManagedValue ret;
+    TinyCLR_Interop_ManagedValue field;
+
+    ret.Type = TinyCLR_Interop_ManagedValueType::I4;
+
+    ip-&gt;GetThisObject(ip, md.Stack, self);
+    ip-&gt;GetField(ip, self, InteropTest_InteropTest_MyNativeClass::FIELD___field___I4, field);
+    ip-&gt;GetReturn(ip, md.Stack, ret);
+
+    ret.Data.Numeric-&gt;I4 = field.Data.Numeric-&gt;I4;
+
+    return TinyCLR_Result::Success;
+}
+</code></pre><p>Now you can compile these files using GCC. If you don&#39;t have GCC yet, see the <a href="intro.html">porting guide</a> to find out how to install GCC. To compile, you can use the sample build and linker scripts from <a href="http://ghielectronics.com/">here</a>. Because TinyCLR can&#39;t currently dynamically relocate your code, you&#39;ll need to tell the scatterfile where to place the final binary image in memory. The sample files automatically place the image in the region dedicated for native interops for the <a href="../../hardware/fez.html">FEZ</a>. Make sure to adjust it for your device and that you don&#39;t overlap other images.</p>
+<p>Once you have a compiled image, look in the map file to find out where the interop definition variable <code>Interop_InteropTest</code> got placed. You&#39;ll need to pass this address to the managed function that registers the interop. In managed code, add the compiled binary image as a resource and use the <code>Marshal</code> class to copy it into the correct location in memory. Then call <code>System.Runtime.InteropServices.Interop.Add</code> and pass it the address of the <code>Interop_InteropTest</code> object from the map file. You need to do this every time your program runs and before you call any of the native methods in your interop class._</p>
 </article>
           </div>
           
