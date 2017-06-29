@@ -1,3 +1,1 @@
 # Gadgeteering
-
-Medusa and Lynx.
