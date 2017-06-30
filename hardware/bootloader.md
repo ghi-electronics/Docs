@@ -27,3 +27,19 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 - R: runs the firmware if present.
 - B: increases the baud rate in serial mode to 921,600.
 - X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device. The firmware is automatically run after a successful upload.
+
+# GLB File Format
+
+The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.
+
+1. 32 bit signature number that is unique for each device.
+2. 32 bit unsigned address in flash that this image should be copied to.
+3. 32 bit unsigned length of the image to flash rounded to the nearest 1,024 bytes.
+4. 16 bit CRC-CCITT of the image.
+
+After the upload header is the actual image to flash. If its length is not divisible by 1,024 bytes, it is padded until it is. For images that are meant to be bootable, the address in the upload header should be set to the entry point defined for the specific device. Bootable images have an additional 1,024 byte header at the beginning of the image that is used to verify the image before booting it. The boot image is also padded to the nearest 1,024 bytes. Starting from offset 0 are the below fields. The rest of the header is currently reserved.
+
+1. 32 bit signature number that is unique for each device.
+2. 32 bit unsigned address in flash that is the entry point the bootloader will invoke.
+3. 32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.
+4. 16 bit CRC-CCITT of the boot image bounded by the specified address and length.
