@@ -1,4 +1,4 @@
-# Release Notes
+# Alpha Release Notes
 
 ## [0.4.0 on 2017-05-10](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.4.0.zip)
 

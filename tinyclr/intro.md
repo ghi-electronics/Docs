@@ -1,6 +1,6 @@
 # TinyCLR OS Introduction
 
-TinyCLR OS is our take on the [.NET Micro Framework](http://netmf.com/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio, a TinyCLR device, and a USB cable.
+TinyCLR OS is our take on the [.NET Micro Framework](http://netmf.com/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio, a TinyCLR device, and a USB cable. Keep in mind that it is still an alpha so there is still a lot more to come.
 
 TinyCLR OS is made for .NET developers. Threading, memory management, timers, event handlers, and many more exist in TinyCLR OS just like they do on full .NET. For interacting with hardware, TinyCLR OS has an API similar to the Windows 10 IoT Core Extensions API you may already be familiar with. GPIO, UART, SPI, I2C, ADC, DAC, PWM, and more are all available for you to interact with the embedded world.
 

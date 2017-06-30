@@ -1,6 +1,6 @@
 # Roadmap
 
-Since TinyCLR OS is still so new, we will be adding more libraries and functionality over time. Some of the things on our wish list in no particular order:
+Since TinyCLR OS is still in early alpha, we will be adding more libraries and functionality over time. Some of the things on our wish list in no particular order:
 
 - USB host and client
 - File system
