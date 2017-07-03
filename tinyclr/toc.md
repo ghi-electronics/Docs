@@ -1,4 +1,5 @@
 # [Intro](intro.md)
+# [Firmware Update](firmware_update.md)
 # [Release Notes](release_notes.md)
 # [Roadmap](roadmap.md)
 # [Tutorials](tutorials/toc.md)
