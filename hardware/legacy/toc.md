@@ -5,4 +5,5 @@
 # [File System](filesystem.md)
 # [Imaging](imaging.md)
 # [Raspberry Pi Hats](raspberrypi_hats.md)
-# [Outrageous Circuits](outrageous_circuits.md)
+# [mBuino](mbuino.md)
+# [CANxtra](canxtra.md)
