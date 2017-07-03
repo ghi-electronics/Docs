@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Intro </title>
+    <title>Introduction to the BrainPad </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Intro ">
+    <meta name="title" content="Introduction to the BrainPad ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -74,8 +74,276 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="intro">Intro</h1>
 
+<hr>
+<h1 id="introduction-to-the-brainpad">Introduction to the BrainPad</h1>
+<hr>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Students will learn how to create projects in Visual Studio along with programming basics. Applications in this lesson will be limited to the <strong>BrainPad</strong> object, <strong>If</strong> statements, a <strong>While</strong> loop and the template functions.</p>
+<hr>
+<h2 id="guidelines">Guidelines</h2>
+<ul>
+<li>Prerequisites: None</li>
+<li>Ages 12 and up</li>
+<li>PC setup with Visual Studio 2017, TinyCLR OS and Nuget packages installed. </li>
+<li>Supplies: BrainPad and microUSB cable.</li>
+</ul>
+<hr>
+<h2 id="install-visual-studio-and-download-vsix-file">Install Visual Studio and Download .vsix file</h2>
+<p>Install Visual Studio Community 2017. Select the Community download. Skip this step if you have Visual Studio 2017 installed.</p>
+<ul>
+<li><a href="https://www.visualstudio.com/downloads/">Visual Studio 2017 Download</a></li>
+</ul>
+<hr>
+<h2 id="starting-a-new-project">Starting a New Project</h2>
+<p>Connect your BrainPad to your computer using a microUSB cable.</p>
+<p>Next Open Visual Studio select <strong>File&gt;New&gt;Project</strong> and under Other Languages select <strong>Visual Basic&gt;TinyCLR</strong> and choose the <strong>BrainPad Application</strong>. Change the Location to  C:\Users&lt;<strong>YourUsername</strong>&gt;\Desktop\ then name the project BrainPad_Project.</p>
+<p><strong>From Visual Studio, select File &gt; New &gt; Project.</strong>
+<img src="images/introduction/Figure1.jpg" alt="alt text"></p>
+<p><em><code>Creating the BrainPad_Project BrainPad TinyCLR Application.</code></em></p>
+<p>Once created, you&#39;ll be presented with a <strong>Program.vb</strong> tab.</p>
+<p><img src="images/introduction/Figure2.jpg" alt="alt text"></p>
+<p><code>The Program.vb file and its contents are shown.</code></p>
+<p>This file contains the default code when you first create a project. The lines in green that begin with &#39; are called comments, and they generally describe what the code does. Take a moment to review them.</p>
+<p>Let&#39;s run the code to see these comments&#39; descriptions come to life. Connect the BrainPad and press the <strong>F5</strong> function key or the Start button.</p>
+<p><img src="images/introduction/Figure3.png" alt="alt text"></p>
+<p><em><code>Press the Start button to run the Program.</code></em></p>
+<p>Visual Studio will now run the code, a few things will happen and the display will now have the text &quot;Hello, world!&quot;.</p>
+<p><img src="images/introduction/Figure4.jpg" alt="alt text"></p>
+<p><em><code>The display shows &quot;Hello world&quot;</code></em></p>
+<p>What happened exactly? Our application began by calling the <strong>BrainPadSetup()</strong> function. This function is called one time, when the application starts, and is generally used to set things up. In this case, it executed the </p>
+<p><strong>BrainPad.Display.DrawText</strong> line to instruct the display to show the text &quot;Hello, world!&quot; After <strong>BrainPadSetup()</strong> was finished, the application called <strong>BrainPadLoop()</strong>. Code placed inside this function is executed in an infinite loop. This is why the code that turns the LED on and then off again never stops.</p>
+<hr>
+<h2 id="exercise">Exercise</h2>
+<p>Change the text to make the program print your name on the display.</p>
+<hr>
+<h2 id="answer">Answer</h2>
+<p>Change this line to your name instead of &quot;Hello World!&quot;</p>
+<pre><code>BrainPad.Display.DrawText(0,0,&quot;YOUR NAME HERE&quot;)
+</code></pre><hr>
+<h2 id="the-brainpad-object">The BrainPad Object</h2>
+<p>The world around us is full of objects. Every person, table or circuit board is an object. If we were to ask a person to say &quot;hello,&quot; we&#39;d be asking an object to perform a task. The same concept can be applied to code. Like in the previous application we ran, the BrainPad was asked to control the display and light bulb through the 
+<strong>BrainPad</strong> object.
+The <strong>BrainPad</strong> object itself, is a piece of code that is contained in one file. This was developed by GHI Electronics to cover the internals of the <strong>BrainPad</strong>. This enables students like you, with an easy way to control the BrainPad circuit board.
+After typing <strong>BrainPad</strong>, press the period key to get a list of all available options for this object, like <strong>Display</strong>.</p>
+<p><img src="images/introduction/Figure5.png" alt="alt text"></p>
+<p><em><code>Using IntelliSense we can see the options offered by the BrainPad object.</code></em></p>
+<p>Now we can use the arrow keys to go up and down in the list to find the <strong>Display</strong>, and then press the period key again to see what options are the available for the <strong>Display</strong>.</p>
+<p><img src="images/introduction/Figure6.png" alt="alt text"></p>
+<p><em><code>Using IntelliSense we can see the options offered by the Display object.</code></em></p>
+<p>Visual Studio does a great deal of simplifying programming by automatically listing the available options for each object.</p>
+<p>Now that we know how to use the <strong>BrainPad</strong>  object, let&#39;s learn about controlling the <strong>LED Light Bulb</strong>.</p>
+<hr>
+<h2 id="the-brainpad-lightbulb">The BrainPad LightBulb</h2>
+<p>LED lights are used in many different electronic devices. Here we will test the <strong>LightBulb</strong> by turning it <strong><span style="color:green">GREEN</span></strong>, then <strong>ON</strong> and <strong>OFF</strong>. </p>
+<p>Copy and paste the code from <em>Example 1</em> into your project&#39;s <strong>BrainPadSetup()</strong> function.</p>
+<pre><code>BrainPad.LightBulb.TurnOff()
+BrainPad.LightBulb.TurnGreen()
+BrainPad.LightBulb.TurnOff()
+BrainPad.LightBulb.TurnGreen()
+</code></pre><p><code>Put this code inside the BrainPadSetup() function.</code></p>
+<p>Now, press <strong>F5</strong> to run the code and you&#39;ll see the <strong>LightBulb</strong> turn <strong><span style="color:green">GREEN</span></strong> and stay on. This happens because our code is executed faster than we can see.</p>
+<hr>
+<h2 id="problem-solving">Problem Solving</h2>
+<p>Since applications execute extremely fast, we need to slow them down to figure out the problem. This way we can see what is happening or if the results are as expected. We will start by stepping in code to see what the application does at a slow speed.</p>
+<hr>
+<h3 id="stepping-in-code">Stepping in Code</h3>
+<p>Add a breakpoint at the first line of code inside of <strong>BrainPadSetup()</strong> by moving the cursor to that line and pressing the <strong>F9</strong> key as shown in <em>(Figure 7)</em>.</p>
+<p><img src="images/introduction/Figure7.jpg" alt="alt text"></p>
+<p><em><code>We&#39;ve added a breakpoint on line 5.</code></em></p>
+<p>Press <strong>F5</strong> to run the application. The project will be built and deployed but then the execution will stop at the breakpoint.</p>
+<p><img src="images/introduction/Figure8.jpg" alt="alt text"></p>
+<p><em><code>The program has executed up to the breakpoint.</code></em></p>
+<p>Press the <strong>F10</strong> key to execute the current line, which turns the green light off. Now press the <strong>F10</strong> key again, and the <strong>LightBulb</strong> will turn <strong><span style="color:green">GREEN</span></strong>. The next steps will continue through the rest of the code. When you reach the closing curly bracket, press <strong>F5</strong> to stop.
+Now that we know our code works (it&#39;s just happening too fast) we can add some delays so we can see the light turn on and then off.</p>
+<hr>
+<h2 id="delays-in-code">Delays in Code</h2>
+<p>In order to see what&#39;s going on we need to add some delays in the code. This is done by telling the <strong>BrainPad</strong> to wait between tasks.</p>
+<pre><code>BrainPad.LightBulb.TurnOff()
+BrainPad.Wait.Seconds(0.5)
+BrainPad.LightBulb.TurnGreen()
+BrainPad.Wait.Seconds(0.5)
+BrainPad.LightBulb.TurnOff()
+BrainPad.Wait.Seconds(0.5)
+BrainPad.LightBulb.TurnGreen()
+</code></pre><p><em><code>This code waits half a second (0.5) between turning the Lightbulb GREEN and OFF.</code></em></p>
+<p>Copy and paste the code from above into your project&#39;s <strong>BrainPadSetup()</strong> function. Run the code and observe the <strong>LightBulb</strong> again. You should now see the <strong>LightBulb</strong> turning <strong><span style="color:green">GREEN</span></strong> and off every half a second.</p>
+<hr>
+<h2 id="exercise-1">Exercise</h2>
+<p>Create a Traffic Light simulation using the following logic and the <strong>LightBulb</strong>:</p>
+<ol>
+<li>Turn the light on <strong><span style="color:green">GREEN</span></strong> </li>
+<li>Wait 5 seconds.</li>
+<li>Turn the <strong>LightBulb</strong> off.</li>
+<li>Turn the light on <strong><span style="color:yellow">YELLOW</span></strong> </li>
+<li>Wait 2 seconds.</li>
+<li>Turn the <strong>LightBulb</strong> off.</li>
+<li>Turn the light on <strong><span style="color:red">RED</span></strong> </li>
+<li>Wait 5 seconds. </li>
+</ol>
+<hr>
+<h2 id="answer-1">Answer</h2>
+<pre><code>BrainPad.LightBulb.TurnGreen()
+BrainPad.Wait.Seconds(5)
+BrainPad.LightBulb.TurnOff()
+BrainPad.LightBulb.TurnYellow()
+BrainPad.Wait.Seconds(2)
+BrainPad.LightBulb.TurnOff()
+BrainPad.LightBulb.TurnRed()
+BrainPad.Wait.Seconds(5)
+</code></pre><hr>
+<h2 id="while-loop">While Loop</h2>
+<p>The previous exercise turned the <strong>LightBulb</strong> several colors but it only did it once. We could repeat the code over and over to make the traffic light run a few more times but what if we want this to run indefinitely? This is where <strong>While</strong>  loops come in handy.</p>
+<pre><code>While BrainPad.Looping
+    &#39;Your code
+End While
+</code></pre><p><code>Code inside a while loop will be executed indefinitely.</code></p>
+<p>Code inside a while loop will be executed indefinitely as long as its condition is met. In our case, we&#39;ll use a constant value from the <strong>BrainPad</strong> object called <strong>Looping</strong>. This constant always returns true, which causes the loop&#39;s condition to always be met.</p>
+<pre><code>While BrainPad.Looping
+      BrainPad.LightBulb.TurnGreen()
+      BrainPad.Wait.Seconds(0.5)
+      BrainPad.LightBulb.TurnOff()
+      BrainPad.Wait.Seconds(0.5)
+End While
+</code></pre><p><em><code>This code will blink the LightBulb GREEN on and off for half a second indefinitely.</code></em></p>
+<p>Let&#39;s keep things simple and blink the <strong>LightBulb</strong> <strong><span style="color:green">GREEN</span></strong> every half a second. Copy and paste the code from above into your project&#39;s <strong>BrainPadSetup()</strong> function. Run the code and observe the <strong>LightBulb</strong>.</p>
+<p><strong><span style="color:green">Tip:</span></strong> The <strong>BrainPadLoop()</strong> function does the same thing as our <strong>While</strong> loop behind the scenes, so you can use this function in your application to simplify things.</p>
+<h2 id="understanding-the-loop">Understanding The Loop</h2>
+<p>To further understand what&#39;s going on, add a breakpoint by moving the cursor to the first line where we turn the light <strong><span style="color:green">GREEN</span></strong> and press <strong>F9</strong>. This will add a breakpoint and pause the application as soon as it reaches that line.</p>
+<h3 id="block">block</h3>
+<p><img src="images/introduction/Figure9.jpg" alt="alt text">
+text</p>
+<p><em><code>Add a breakpoint while the application is running</code></em></p>
+<p>Now use <strong>F10</strong> to step through the code and when the program reaches the end of the <strong>While</strong> loop it will go back to the beginning. Stop the program execution by pressing the <strong>STOP</strong> button.</p>
+<p><img src="images/introduction/Figure10.png" alt="alt text"></p>
+<p><em><code>The stop button will stop the application that&#39;s running.</code></em></p>
+<p>Now, reset the <strong>BrainPad</strong> and note how the green light is still blinking but this time without the need for Visual Studio. In fact, you can connect the <strong>BrainPad</strong> to any appropriate power source (such as a phone charger) and the <strong>LightBulb</strong> will turn on <strong><span style="color:green">GREEN</span></strong> and will blink without the need for a PC.</p>
+<hr>
+<h2 id="exercise-2">Exercise</h2>
+<p>Make the <strong>LightBulb</strong> cycle through <strong>3</strong> different colors indefinitely.</p>
+<hr>
+<h2 id="answer-2">Answer</h2>
+<pre><code>Public Sub BrainPadSetup()
+    While BrainPad.Looping
+      BrainPad.LightBulb.TurnGreen()
+      BrainPad.Wait.Seconds(0.5)
+      BrainPad.LightBulb.TurnRed()
+      BrainPad.Wait.Seconds(0.5)
+      BrainPad.LightBulb.TurnYellow()
+      BrainPad.Wait.Seconds(0.5)
+    End While
+End Sub
+</code></pre><hr>
+<h2 id="if-statement">If Statement</h2>
+<p> An <strong>If</strong> statement (or conditional statement) checks to see if a statement is <strong>TRUE</strong> or <strong>FALSE</strong> and then does one of two things depending on the result. Like if the <strong>DOWN</strong> button is pressed, turn the <strong>LightBulb</strong> <strong><span style="color:green">GREEN</span></strong>.</p>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnGreen()
+    If BrainPad.Buttons.IsDownPressed() Then
+         BrainPad.LightBulb.TurnOff()
+    End If
+End Sub
+</code></pre><p><em><code>Pressing and hold the down button when running this program will turn the LightBulb GREEN.</code></em></p>
+<p>For the code above to work, you have to be holding the button down at the time the program is deployed. This is because once the <strong>If</strong> statement is reached, the program will continue executing until the program ends. To solve this hard to reach goal, we need to repeatedly check if the button is pressed, as seen in the above code. This is where a <strong>While</strong> loop comes in handy. Let&#39;s use the <strong>BrainPadLoop()</strong> function to simplify things <strong><span style="color:green">per the tip earlier</span></strong>.</p>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnOff()
+End Sub
+
+Public Sub BrainPadLoop()
+    If BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnOff()
+    End If
+End Sub
+</code></pre><p>The above code makes sure the <strong>LightBulb</strong> is <strong>OFF</strong> and then it falls into an infinite loop. However, this program still has a bug. Run the program and test it. The <strong>LightBulb</strong> will be <strong>OFF</strong> when the program runs and then once the down button is pressed the the <strong>LightBulb</strong> turn <strong><span style="color:green">GREEN</span></strong> . That is all good so far, but when the button is released, the <strong>LightBulb</strong> never turns <strong>OFF</strong>. Can you guess why? Try stepping in the code to see what happens when the button <strong>is pressed</strong> and when it <strong>is not pressed</strong>.</p>
+<p>Computers are strict on following orders. In previous examples, the <strong>LightBulb</strong> never turned <strong>OFF</strong> because we actually never told the program to turn the <strong>LightBulb</strong>  <strong>OFF</strong>. This means we have to tell the program to turn the <strong>LightBulb ON</strong> when the button is pressed and we also have to tell it to turn the <strong>LightBulb</strong>  <strong>OFF</strong> when the button is <strong>not</strong> pressed.</p>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnOff()
+End Sub
+
+Public Sub BrainPadLoop()
+    If BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnGreen()
+    End If
+    If Not BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnOff()
+    End If
+End Sub
+</code></pre><p><em><code>This code loops indefinitely checking if the down button is pressed. If it is pressed, the LightBulb will turn on GREEN</code></em></p>
+<p>The above code first makes sure the <strong>LightBulb</strong> is off and then it falls into an infinite loop. However, this program still has a bug. Run the program and test it. The <strong>LightBulb</strong> will be off when the program runs and then once the down button is pressed the the <strong>LightBulb</strong> turn <strong><span style="color:green">GREEN</span></strong>. That is all good so far, but when the button is released, the <strong>LightBulb</strong> never turns off. Can you guess why? Try stepping in the code to see what happens when the button <strong>is pressed</strong> and when it is <strong>not pressed</strong>.</p>
+<p>Computers are strict on following orders. In previous examples, the <strong>LightBulb</strong> never turned off because we actually never told the program to turn the <strong><span style="color:green">GREEN</span></strong> <strong>LightBulb</strong> off. This means we have to tell the program to turn the light on when the button is pressed and we also have to tell it to turn the <strong>LightBulb</strong> off when the button is <strong>not pressed</strong> as shown.</p>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnOff()
+End Sub
+
+Public Sub BrainPadLoop()
+    If BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnGreen()
+    End If
+    If Not BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnOff()
+    End If
+End Sub
+</code></pre><p><em><code>This code will turn the LightBulb GREEN
+ when the down button is pressed, and off when the down button **is not pressed** the **LightBulb** will turn on</code></em></p>
+<p>While the <strong>BrainPad</strong> doesn&#39;t have a method called <strong>BrainPad.Button.IsDownNotPressed()</strong> we can continue to use <strong>BrainPad.Button.IsDownPressed()</strong> but with <strong>If Not</strong> before it to represent if the button <strong>is not pressed</strong>.  Now when you run it, not pressing the button will turn/keep the <strong>LightBulb</strong> off.</p>
+<hr>
+<h2 id="exercise-3">Exercise</h2>
+<p>Turn the <strong>LightBulb</strong> <span style="color:green">GREEN</span>  when the <strong>up</strong> button <strong>is pressed</strong>. Turn the <strong>LightBulb</strong> off when the <strong>down</strong> button <strong>is pressed</strong>. Turn the <strong>LightBulb</strong> <span style="color:red">RED</span>  on when the <strong>left</strong> button is pressed and <span style="color:blue">BLUE</span>  when <strong>right</strong> button is pressed</p>
+<hr>
+<h2 id="answer-3">Answer</h2>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnOff()
+End Sub
+
+Public Sub BrainPadLoop()
+    If BrainPad.Buttons.IsUpPressed() Then
+        BrainPad.LightBulb.TurnGreen()
+    End If
+    If BrainPad.Buttons.IsDownPressed() Then
+        BrainPad.LightBulb.TurnOff()
+    End If
+    If BrainPad.Buttons.IsLeftPressed() Then
+        BrainPad.LightBulb.TurnRed()
+    End If
+    If BrainPad.Buttons.IsRightPressed() Then
+        BrainPad.LightBulb.TurnRed()
+    End If
+End Sub
+</code></pre><hr>
+<h2 id="else-statement">Else Statement</h2>
+<p>The Else statement is always used with the If statement and has a very useful purpose that would be perfect for the last example. Previously, we needed to check if the button is pressed and if the button is not pressed. We can simplify this by catching when an If statement isn&#39;t true using Else as shown in the code below.</p>
+<pre><code>Public Sub BrainPadSetup()
+    BrainPad.LightBulb.TurnOff()
+End Sub
+
+Public Sub BrainPadLoop()
+     If BrainPad.Buttons.IsDownPressed() Then
+         BrainPad.LightBulb.TurnGreen()
+     Else
+         BrainPad.LightBulb.TurnOff()
+     End If
+End Sub
+</code></pre><p><em><code>This code uses an else statement to check if a button is pressed or not to turn the LightBulb green and off.</code></em></p>
+<hr>
+<h2 id="or--and-operators">Or &amp; And Operators</h2>
+<p>The most used logical operators are the <strong>Or</strong> and <strong>And</strong> operators. These are typically used within the <strong>If</strong> statement. In the example below, we want the buzzer to generate a 5,000 Hz sound when both the <strong>up</strong> and <strong>down</strong> buttons are pressed. This is accomplished by using an <strong>&amp;&amp;</strong> operator between <strong>IsUpPressed()</strong> and <strong>IsDownPressed()</strong>.</p>
+<pre><code>Public Sub BrainPadLoop()
+    If BrainPad.Button.IsUpPressed() And BrainPad.Button.IsDownPressed() Then
+        BrainPad.Buzzer.Start(5000)
+    Else
+        BrainPad.Buzzer.Stop()
+    End If
+End Sub
+</code></pre><p><em><code>This code checks if both up and down are pressed, if so it plays a high pitch sound.</code></em></p>
+<hr>
+<h2 id="exercise-4">Exercise</h2>
+<p>Turn the <strong>LightBulb</strong> <span style="color:green">GREEN</span> on and play the buzzer at 5,000 Hz whenever the <strong>up</strong> or <strong>down</strong> button is pressed. Pressing both or either one will have the same effect.</p>
+<hr>
+<h2 id="answer-4">Answer</h2>
+<hr>
+<h2 id="extra-credit">Extra Credit</h2>
+<p><strong><span style="color:green">Tip:</span></strong> Use nested statements such as an <strong>If</strong> statement inside another <strong>If</strong> statement.</p>
+<hr>
 </article>
           </div>
           
