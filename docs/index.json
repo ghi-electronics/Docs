@@ -1,4 +1,14 @@
 {
+  "README.html": {
+    "href": "README.html",
+    "title": "Docs",
+    "keywords": "Docs This is the repository for all of our docs."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "",
+    "keywords": "Welcome to our future home for documentation. You will find a lot of missing or wrong information, but feel free to browse around while we clean things up. http://docs.ghielectronics.com is where you can find tutorials, samples, documentation, and API references for all GHI Electronics products. The available docs are not yet complete and those that are present are very rough, so please check back frequently."
+  },
   "tinyclr/tutorials/gpio.html": {
     "href": "tinyclr/tutorials/gpio.html",
     "title": "General Purpose Input Output (GPIO)",
@@ -58,11 +68,6 @@
     "href": "tinyclr/tutorials/gpiochangereader.html",
     "title": "Gpio Change Reader",
     "keywords": "Gpio Change Reader Gpio Change Reader works in the current release. Documentation is coming soon."
-  },
-  "README.html": {
-    "href": "README.html",
-    "title": "Docs",
-    "keywords": "Docs This is the repository for all of our docs."
   },
   "hardware/bootloader.html": {
     "href": "hardware/bootloader.html",
@@ -168,11 +173,6 @@
     "href": "brainpad/courses/csharp/intro.html",
     "title": "Intro",
     "keywords": "Intro"
-  },
-  "index.html": {
-    "href": "index.html",
-    "title": "",
-    "keywords": "Welcome to our future home for documentation. You will find a lot of missing or wrong information, but feel free to browse around while we clean things up. http://docs.ghielectronics.com is where you can find tutorials, samples, documentation, and API references for all GHI Electronics products. The available docs are not yet complete and those that are present are very rough, so please check back frequently."
   },
   "hardware/legacy/netmf/fez_cerberus.html": {
     "href": "hardware/legacy/netmf/fez_cerberus.html",
