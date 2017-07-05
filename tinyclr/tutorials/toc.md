@@ -1,2 +1,8 @@
 # [Intro](intro.md)
 # [GPIO](gpio.md)
+# [UART](uart.md)
+# [I2C](i2c.md)
+# [SPI](spi.md)
+# [PWM](pwm.md)
+# [ADC](adc.md)
+# [DAC](dac.md)
