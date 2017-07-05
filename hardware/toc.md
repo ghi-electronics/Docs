@@ -6,4 +6,5 @@
 # [G120](g120.md)
 # [G400](g400.md)
 # [Bootloader](bootloader.md)
+# [STM32 Bootloader](stm32_bootloader.md)
 # [Legacy](legacy/toc.md)
