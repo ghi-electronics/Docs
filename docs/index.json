@@ -324,11 +324,6 @@
     "title": "FEZ",
     "keywords": "FEZ Coming soon."
   },
-  "hardware/legacy/netmf/shields.html": {
-    "href": "hardware/legacy/netmf/shields.html",
-    "title": "Shields",
-    "keywords": "Shields Coming soon."
-  },
   "tinyclr/porting/native_interops.html": {
     "href": "tinyclr/porting/native_interops.html",
     "title": "Native Interops in TinyCLR",

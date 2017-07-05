@@ -1,3 +1,0 @@
-# Shields
-
-Coming soon.

@@ -5,4 +5,3 @@
 # [USBizi](usbizi.md)
 # [FEZ Cerberus](fez_cerberus.md)
 # [FEZ Hydra](fez_hydra.md)
-# [Shields](shields.md)
