@@ -14,3 +14,11 @@ We recommend TinyCLR OS as a replacement for NETMF. Learn more about TinyCLR at 
 To help you evaluate TinyCLR OS, we are providing a preview firmware for G30. Load this firmware using our boot loader (link) and then these devices will run TinyCLR-OS
 
 FEZ Cerb firmware 0.5.0 (link)
+
+The FEZ Cerberus family of boards, FEZ Cerberus, FEZ Cerbuino and the Cerb40 were originally made to run .NET Micro Framework. To 
+
+Like for the FEZ board, we are providing a bootloader to make firmware update easier. This loader needs to be loaded once and then TinyCLR OS firmware update is a lot easier.
+
+Use the ST DFU tool to load the “cerb loader 2345” onto your Cerb board. When done, your PC should detect a virtual COM port. You can now load the “cerb firmware 0.5.0” onto your board. Loadong the firmware us done using a terminal aosftware with XMODEM. More info is found on our bootloader page http://docs.ghielectronics.com/hardware/bootloader.html
+
+You are now ready to start coding http://docs.ghielectronics.com/tinyclr/tutorials/intro.html
