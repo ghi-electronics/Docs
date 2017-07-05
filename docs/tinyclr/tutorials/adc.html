@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>ADC </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="ADC ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,34 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="adc">ADC</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
-</article>
+<p>Unlike digital input pins, which can only read high or low; analog pins can read a range of voltage levels.  Microcontrollers based on 3.3V can typically read voltages anywhere between zero and 3.3V. Analog inputs connect internally to a Analog to Digital Converter (ADC) that converts the analog voltage level on the pin to a digital value.</p>
+<p>The resolution of the ADC determines its accuracy. An 8bit ADC has 256 steps to work with, 3.3V/256=0.013V. This means an increase of 0.013V will increase the value by one. In other words, a voltage change of less than 0.013V has no effect. The ADC on FEZ is 12bit and should fit most needs.</p>
+<div class="TIP"><h5>Tip</h5><p>Note that the analog channel number is not the pin number. We have these easily enumerated for FEZ but you need to determine the channel number on a specific pin using your system�s documentation.</p>
+</div>
+<p>This example will read the ratio, that is 0 to 1, of an analog input. After running the program, connect a wire from the analog pin to ground and you should see a zero or something really close to zero. Connect to 3.3V and you will see 1 or something close, like 0.99.</p>
+<pre><code class="lang-csharp">using System;
+using System.Diagnostics;
+using System.Threading;
+using GHIElectronics.TinyCLR.Devices.Adc;
+using GHIElectronics.TinyCLR.Pins;
+
+class Program
+{
+    static void Main()
+    {
+        AdcController ADC = AdcController.GetDefault();
+        AdcChannel analog = ADC.OpenChannel(FEZ.AdcChannel.A0);
+        while(true)
+        {
+            double d = analog.ReadRatio();
+            Debug.WriteLine(&quot;An-&gt; &quot; + d.ToString(&quot;N2&quot;));
+            Thread.Sleep(100);
+        }
+    }
+}   
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -85,7 +109,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/adc.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

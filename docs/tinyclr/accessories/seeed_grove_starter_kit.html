@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>Seeed Grove Starter Kit </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="Seeed Grove Starter Kit ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,9 +74,64 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="seeed-grove-starter-kit">Seeed Grove Starter Kit</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
+<p>Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds. We have picked the Seeed Grove Starter Kit for Arduino 
+<a href="https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html">https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html</a> as  starting base but you can add additional Grove modules as well.</p>
+<p>(image)</p>
+<p>The included Grove modules plug into the included arduino shield. This shield works with FEZ, or any other arduino-pinout compatible board.</p>
+<p>Plug the shield on top of your board, and include this one of the NuGet drivers in our project, as explained here <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">http://docs.ghielectronics.com/tinyclr/tutorials/intro.html</a></p>
+<p>The NuGet drivers are:
+�   Grove Button
+�   Grove </p>
+<p>This example that makes some noise!</p>
+<pre><code class="lang-csharp">Buzzer buzz = new Buzzer(FEZ.GpioPin.D4);
+buzz.Beep();
+Thread.Sleep(5000);
+buzz.TurnOn();
+Thread.Sleep(1000);
+buzz.TurnOff();
+while(true)
+{
+    buzz.Beep();
+    Thread.Sleep(1000);
+}
+
+This example will read the temperature
+TemperatureSensor temp = new TemperatureSensor(FEZ.AdcChannel.A1);
+while(true)
+{
+    Debug.WriteLine(&quot;-&gt; &quot; + temp.ReadTemperature());
+    Thread.Sleep(1000);
+}
+</code></pre><p>This example will show some text on the character display</p>
+<pre><code class="lang-csharp">LcdRgbBacklight lcd = new LcdRgbBacklight();
+lcd.Clear();
+lcd.SetBacklightRGB(100, 100, 0);
+lcd.BlinkBacklight(true);
+lcd.BlinkBacklight(false);
+lcd.Write(&quot;*** TinyCLR ***&quot;);
+Thread.Sleep(1000);
+lcd.SetCursor(0, 1);
+lcd.Write(&quot;Count:&quot;);
+int count = 0;
+while (true)
+{
+    lcd.SetCursor(7, 1);
+    lcd.Write(count.ToString());
+    count++;
+    lcd.SetBacklightRGB(100, 100, (byte)count);
+    Thread.Sleep(100);
+}
+</code></pre><div class="WARNING"><h5>Warning</h5><p>Pay attention to the 3.3V-5V switch on the shield. The rotary and temperature sensors only work with 3.3V but the RGB character display only works with 5V.</p>
+</div>
+<p>Since the character display connects to I2C and only works with 5V. We have modified one of the I2C sockets to be always 5V. This allows us to keep the switch at 3.3V, leaving all other sockets at 3.3V.</p>
+<div class="WARNING"><h5>Warning</h5><p>These steps require some experience and will void your warranty!</p>
+</div>
+<p>Start by cutting the power trace going to the last socket.</p>
+<p>(image)</p>
+<p>Now, add a wire from the socket directly to 5V.</p>
+<p>(image)</p>
 </article>
           </div>
           
@@ -85,7 +140,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/accessories/seeed_grove_starter_kit.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>Adafruit Display Shield </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="Adafruit Display Shield ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="adafruit-display-shield">Adafruit Display Shield</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
-</article>
+<p>The Adafruit 1.8� Color TFT Shield w/microSD and Joystick <a href="https://www.adafruit.com/product/802">https://www.adafruit.com/product/802</a> plugs right on top of FEZ, or any other Arduino-pinout compatible board.</p>
+<p>To use this shield, just plug it on top of your board
+(picture)</p>
+<p>The driver is found at (link). Import this NuGet Package, as explained here <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">http://docs.ghielectronics.com/tinyclr/tutorials/intro.html</a></p>
+<p>You are now ready to use the shield</p>
+<pre><code class="lang-csharp">Display18.Display n18 = new Display18.Display(FEZ.GpioPin.A0, FEZ.GpioPin.A1, FEZ.SpiBus.Spi1);
+int count = 0;
+while (true)
+{
+   count++;
+    n18.DrawLargeText(10, 10, &quot;Count &quot; + count, Display18.Color.Green);
+
+    Thread.Sleep(30);
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -85,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/accessories/adafruit_display_shield.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

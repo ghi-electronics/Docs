@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>I2C </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="I2C ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,33 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="i2c">I2C</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
-</article>
+<p>I2C (pronounced eye-squared-sea, or eye-two-sea) was originally developed by Phillips to allow multiple chipsets to communicate on a 2-wire bus in home consumer devices. It has a master and one or more slaves sharing the same data bus. Instead of selecting the slaves using a digital pin like SPI, which consumes an additional I/O pin, I2C uses an addressing mechanism to communicate to a selected device. Before data is transferred, the master sends out a 7-bit address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the slave or receive data from the slave. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a &quot;start condition&quot; before it sends any address or data and then end it with &quot;stop condition&quot;.</p>
+<p>The two wires used to communicate between the I2C Master and the I2C salves are called SDA and SCL lines; SDA stands for Serial Data, and SCL is Serial Clock.</p>
+<p>This is a partial demo showing the use of I2C.</p>
+<pre><code class="lang-csharp">using System;
+using System.Diagnostics;
+using System.Threading;
+using GHIElectronics.TinyCLR.Devices.I2c;
+using GHIElectronics.TinyCLR.Pins;
+
+class Program
+{
+    static void Main()
+    {
+        var settings = new I2cConnectionSettings(0x1C)// the slave&#39;s address
+        {
+            BusSpeed = I2cBusSpeed.FastMode
+        };
+        var device = I2cDevice.FromId(FEZ.I2cBus.I2c1, settings);
+
+        device.Write(new byte[] { 1, 2 });// write something
+        device.WriteRead(...)// this is good for reading registers
+    }
+
+}   
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -85,7 +108,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/i2c.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

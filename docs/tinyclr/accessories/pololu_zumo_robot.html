@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>Pololu Zumo Robot </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="Pololu Zumo Robot ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,61 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="pololu-zumo-robot">Pololu Zumo Robot</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
-</article>
+<p>The Arduino Zumo Robot from Pololu is one of our favorites, especially the pre-assembled version.
+<a href="https://www.pololu.com/category/169/zumo-robot-for-arduino">https://www.pololu.com/category/169/zumo-robot-for-arduino</a></p>
+<p>Drop your FEZ on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around. Thanks to FEZ�s built in WiFi, you can drive the robot right from your phone.</p>
+<p>The driver is found at (link). Import this NuGet Package, as explained here <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">http://docs.ghielectronics.com/tinyclr/tutorials/intro.html</a></p>
+<p>You are now ready for some serious dancing!</p>
+<pre><code class="lang-csharp">public static void Main()
+{
+    bool state = false;
+
+
+    while (!ZumoBot.ButtonIsPressed())
+    {
+        state = !state;
+        ZumoBot.SetLed(state);
+        ZumoBot.Beep();
+        Thread.Sleep(500);
+    }
+    Thread.Sleep(300);
+    ZumoBot.SetLed(false);
+    Thread.Sleep(300);
+    ZumoBot.SetLed(true);
+    Thread.Sleep(300);
+    ZumoBot.SetLed(false);
+    Thread.Sleep(300);
+    ZumoBot.SetLed(true);
+
+    while (true)
+    {
+        long left =  ZumoBot.Reflectors.GetLevel(0);
+        long right = ZumoBot.Reflectors.GetLevel(5);
+        //Debug.WriteLine(&quot;&gt;&quot; + ZumoBot.Reflectors.GetLevel(0));
+        //System.Diagnostics.Debug.WriteLine(&quot;l: &quot; + left + &quot; r: &quot; + right);
+        if (left &lt; 8000 &amp;&amp; right &lt; 8000)
+        {
+            ZumoBot.Motors.Move(40, 40);
+        }
+        else
+        {
+            // backup and turn
+            ZumoBot.Motors.MoveBackward();
+            Thread.Sleep(500);
+            ZumoBot.Motors.Stop();
+            Thread.Sleep(1000);
+            ZumoBot.Motors.TurnLeft();
+            Thread.Sleep(500);
+            ZumoBot.Motors.Stop();
+            Thread.Sleep(1000);
+        }
+        Thread.Sleep(30);
+    }
+
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -85,7 +136,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/accessories/pololu_zumo_robot.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

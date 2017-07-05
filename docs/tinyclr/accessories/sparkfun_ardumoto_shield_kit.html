@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR Tutorials </title>
+    <title>Sparkfun Ardumoto Shield Kit </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR Tutorials ">
+    <meta name="title" content="Sparkfun Ardumoto Shield Kit ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,51 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
+<h1 id="sparkfun-ardumoto-shield-kit">Sparkfun Ardumoto Shield Kit</h1>
 
-<p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
-</article>
+<p>The sparkfun Ardumoto Shield Kit is a low cost way of building a robot, somewhat quickly.
+<a href="https://www.sparkfun.com/products/14180">https://www.sparkfun.com/products/14180</a></p>
+<p>Plug the shield on top of your FEZ, or any other Arduino-pinout compatible board.</p>
+<p>You are now ready for some serious dancing!</p>
+<pre><code class="lang-csharp">public static void Main()
+{
+    var GPIO = GpioController.GetDefault();
+    var DIRA = GPIO.OpenPin(FEZ.GpioPin.D2);
+    var DIRB = GPIO.OpenPin(FEZ.GpioPin.D4);
+    DIRA.SetDriveMode(GpioPinDriveMode.Output);
+    DIRB.SetDriveMode(GpioPinDriveMode.Output);
+
+    var PWM1 = PwmController.FromId(FEZ.PwmPin.Controller1.Id);
+    var PWM3 = PwmController.FromId(FEZ.PwmPin.Controller3.Id);
+    PWM1.SetDesiredFrequency(5000);
+    PWM3.SetDesiredFrequency(5000);
+
+    var PWMA = PWM1.OpenPin(FEZ.PwmPin.Controller1.D3);
+    var PWMB = PWM3.OpenPin(FEZ.PwmPin.Controller3.D11);
+    PWMA.Start();
+    PWMB.Start();
+    // reverse direction every one second!
+    // Do not foget the shield needs power. Thsi can come from VIN, meaning plug a power pack into your *duino board.
+    PWMB.SetActiveDutyCyclePercentage(0.9);
+    while (true)
+    {
+
+        DIRA.Write(GpioPinValue.High);
+        DIRB.Write(GpioPinValue.High);
+        System.Threading.Thread.Sleep(1000);
+
+        //change speed 
+        PWMA.SetActiveDutyCyclePercentage(0.9);
+
+        DIRA.Write(GpioPinValue.Low);
+        DIRB.Write(GpioPinValue.Low);
+        System.Threading.Thread.Sleep(1000);
+
+        //change speed 
+        PWMA.SetActiveDutyCyclePercentage(0.5);
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -85,7 +126,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/tutorials/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/accessories/sparkfun_ardumoto_shield_kit.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
