@@ -133,7 +133,7 @@ class Program
 
 In the previous example, the program just looped, and looped, and looped; each time checking the status of the pin attached to the button. The pin is checked maybe a million times before the button is pressed!  
 
-Events solves this by invoking (calling) a method when an even occur. In this case the event is raised when the value on an input pin is changed. Meaning a button is pressed or released.
+Events solves this by invoking (calling) a method when an event occur. In this case the event is raised when the value on an input pin is changed. Meaning a button is pressed or released.
 
 A RisingEdge happen when the state of a pin changes from low to high, it "rises".
 
@@ -165,9 +165,9 @@ class Program
     private static void Button_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
     {
         if (e.Edge == GpioPinEdge.FallingEdge)
-            led.Write(GpioPinValue.Low);
-        else
             led.Write(GpioPinValue.High);
+        else
+            led.Write(GpioPinValue.Low);
     }
 }
 ```

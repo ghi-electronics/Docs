@@ -4,6 +4,7 @@ Serial data ports, called UART, transfers data between two pins TXD (transmit) a
 
 > [!Tip]
 > the TXD on one end (output) goes to the RXD on the other side (input) and vice versa.
+
 The easiest way to test UART is by wiring TXD to RXD and then any data transmitted is also received. This demo will send a number every half a second and wait for it on the receive end.
 
 > [!Tip]
@@ -63,7 +64,7 @@ class Program
 ```
 
 ## RS232
-UART uses the processor’s voltage levels for transferring data, called TTL voltage levels. Systems from back in the 80s needed a way to transfer data over long distances and so the UART levels changed to be -12V to +12V instead of TTL 0V to 3.3V on FEZ for example. This standard is called RS232.
+UART uses the processor's voltage levels for transferring data, called TTL voltage levels. Systems from back in the 80s needed a way to transfer data over long distances and so the UART levels changed to be -12V to +12V instead of TTL 0V to 3.3V on FEZ for example. This standard is called RS232.
 
 Some PCs still include serial porta till this day but those are RS232 serial ports. A level shifter chip is needed to convert the voltages properly.
 

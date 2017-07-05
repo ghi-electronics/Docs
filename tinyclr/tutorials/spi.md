@@ -13,7 +13,7 @@ In its simplest terms, the master will swap data between itself and the slave. Y
 > SPI needs more wires than other similar buses but it can transfer data very fast. A 50Mhz clock is possible on SPI, that is 50 million bits in one second. 
 
 > [!Tip]
-> Note that a board running TinyCLR OS is always a SPI masters, not slaves.
+> Note that a board running TinyCLR OS is always a SPI master, not a slave.
 
 ```csharp
 using System;

@@ -25,6 +25,7 @@ class Program
 
         device.Write(new byte[] { 1, 2 });// write something
         device.WriteRead(...)// this is good for reading registers
+        // ...
     }
     
 }   
