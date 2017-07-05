@@ -2,10 +2,12 @@
 
 Serial data ports, called UART, transfers data between two pins TXD (transmit) and RXD (receive). There is no clock between the two sides so they both need to agree on the data slow rate, called baudrate. 
 
-> [!Tip] the TXD on one end (output) goes to the RXD on the other side (input) and vice versa.
+> [!Tip]
+> the TXD on one end (output) goes to the RXD on the other side (input) and vice versa.
 The easiest way to test UART is by wiring TXD to RXD and then any data transmitted is also received. This demo will send a number every half a second and wait for it on the receive end.
 
-> [!Tip] Serial uses Storage Streams to handle the data. Add the Storage NuGet package.
+> [!Tip]
+> Serial uses Storage Streams to handle the data. Add the Storage NuGet package.
 
 ```csharp
 using System;
@@ -65,4 +67,5 @@ UART uses the processor’s voltage levels for transferring data, called TTL volta
 
 Some PCs still include serial porta till this day but those are RS232 serial ports. A level shifter chip is needed to convert the voltages properly.
 
-> [!Warning] connecting your circuit to RS232 port without proper level shifter wil damage your circuit.
+> [!Warning]
+> connecting your circuit to RS232 port without proper level shifter wil damage your circuit.

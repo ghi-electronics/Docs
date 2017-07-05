@@ -60,11 +60,13 @@ while (true)
 }
 ```
 
-> [!Warning] Pay attention to the 3.3V-5V switch on the shield. The rotary and temperature sensors only work with 3.3V but the RGB character display only works with 5V.
+> [!Warning]
+> Pay attention to the 3.3V-5V switch on the shield. The rotary and temperature sensors only work with 3.3V but the RGB character display only works with 5V.
 
 Since the character display connects to I2C and only works with 5V. We have modified one of the I2C sockets to be always 5V. This allows us to keep the switch at 3.3V, leaving all other sockets at 3.3V.
 
-> [!Warning] These steps require some experience and will void your warranty!
+> [!Warning]
+> These steps require some experience and will void your warranty!
 
 Start by cutting the power trace going to the last socket.
 

@@ -2,15 +2,18 @@
 
 Microcontrollers include pins that can be controlled through software. They can be inputs or outputs, hence the name general purpose input output, or GPIO for short.
 
-> [!Tip] GPIO is handled by using GHIElectronics.TinyCLR.Devices.Gpio through the Devices NuGet package.
+> [!Tip]
+> GPIO is handled by using GHIElectronics.TinyCLR.Devices.Gpio through the Devices NuGet package.
 
 ## Digital Outputs
 A digital output pin can be set to either high or low. There are different ways of describing these two states. High can also be called "true" or "one;" low can be called "false" or "zero".
 If the processor is powered from 3.3V, then the state high means that there is 3.3V on the output pin. It is not going to be exactly 3.3V but very close. When the pin is set to low then it is voltage is very close to zero volts.
 
-> [!Warning] Never connect two output pins together. If they are connected and one is high and the other is low, the entire processor can be damaged.
+> [!Warning]
+> Never connect two output pins together. If they are connected and one is high and the other is low, the entire processor can be damaged.
 
-> [!Warning] Digital pins on microcontrollers are weak. They can only be used to control small LEDs or transistors. Those transistors can in turn control devices with high power needs, like a motor.
+> [!Warning]
+> Digital pins on microcontrollers are weak. They can only be used to control small LEDs or transistors. Those transistors can in turn control devices with high power needs, like a motor.
 
 This example will blink an LED on FEZ.
 
@@ -77,13 +80,15 @@ class Program
 ## Digital Inputs
 Digital inputs sense if the state of its pin is high or low based on the voltage. Every pin has a maximum & minimum supported voltage. For example, the typical minimum voltage on most pins is 0 volts; a negative voltage may damage the pin or the processor. Also, the maximum that can be supplied to most pins must be less than the processor power source voltage. Since most processors run on 3.3V, the highest voltage a pin should see is 3.3V; however, some processors that are powered by 3.3V are 5V tolerant; that is, they can accept up to 5V on their inputs. FEZ is 5V tolerant.
 
-> [!Warning] 5V-tolerant doesn't mean the processor can be powered by 5V. Only the input pins can tolerate 5V.
+> [!Warning] 
+> 5V-tolerant doesn't mean the processor can be powered by 5V. Only the input pins can tolerate 5V.
 
 Unconnected input pins are called "floating" as they are open for any surrounding noise, which can make the pin high or low. A resistor can be added to pull the pin high or low. Modern processors include internal pull-down or pull-up resistors, that are controlled by software. Note that the pull-up resistor doesn't make a pin high but it pulls it high. If nothing is connected then the pin is high by default.
 
 In this example, a button is connected between ground and the input pin. We will also enable the pull-up resistor, making that pin high when the button is not pressed, and low when the button is pressed. We will read the status of the button and pass its state to the LED. 
 
-> [!Tip] Never use an infinite loop without giving the system time to think, use events or simply add a small sleep.
+> [!Tip]
+> Never use an infinite loop without giving the system time to think, use events or simply add a small sleep.
 
 ```csharp
 using System;
@@ -121,7 +126,8 @@ class Program
 }
 ```
 
-> [!Tip] if you are not using FEZ, see the Output Port example above to see how to determine the pin number.
+> [!Tip]
+> if you are not using FEZ, see the Output Port example above to see how to determine the pin number.
 
 ## Digital Input Events
 
@@ -166,4 +172,5 @@ class Program
 }
 ```
 
-> [!Warning] Once you type += after the event, hit the tab key twice. Visual Studio will automatically create the event for you.
+> [!Warning] 
+> Once you type += after the event, hit the tab key twice. Visual Studio will automatically create the event for you.
