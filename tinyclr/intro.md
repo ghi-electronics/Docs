@@ -7,7 +7,7 @@ TinyCLR OS is made for .NET developers. Threading, memory management, timers, ev
 Better yet, all libraries are available through NuGet. Because of this, there will be no SDK to install or machines to lock to specific versions. Simply use NuGet to download any needed version of any needed library on a per-project basis.
 
 1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
-2. Download and install the [TinyCLR OS Visual Studio extension](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR.0.5.0.vsix).
+2. Download and install the [TinyCLR OS Visual Studio extension](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/GHIElectronics.TinyCLR.VisualStudio.0.5.0.vsix).
 3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? Take a look at the [FEZ](../hardware/FEZ.md): the board made for TinyCLR OS.
 4. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 5. Add some code and press `F5` to deploy and begin debugging your application!
