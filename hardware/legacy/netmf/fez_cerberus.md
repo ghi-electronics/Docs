@@ -22,3 +22,5 @@ Like for the FEZ board, we are providing a bootloader to make firmware update ea
 Use the ST DFU tool to load the “cerb loader 2345” onto your Cerb board. When done, your PC should detect a virtual COM port. You can now load the “cerb firmware 0.5.0” onto your board. Loadong the firmware us done using a terminal aosftware with XMODEM. More info is found on our bootloader page http://docs.ghielectronics.com/hardware/bootloader.html
 
 You are now ready to start coding http://docs.ghielectronics.com/tinyclr/tutorials/intro.html
+
+The region set aside for RLI is 0x2001F000 - 0x2001FFF8.
