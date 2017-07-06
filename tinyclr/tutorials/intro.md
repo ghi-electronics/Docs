@@ -75,4 +75,11 @@ Next you'll click the "+" to add an new Package source.
 
 Then select the location where the NuGet packages are stored locally, by pressing the ... icon. 
 
- 
+ ![Choose Local NuGet Package Folder](images/ChooseLocalNuGetPackageFolder.jpg)
+
+After Selecting the local folder where the downloaded NuGet packages are. You can select the "Installed" Tab to view the NuGet Packages installed. 
+
+
+ ![Show Installed NuGet Packages](images/ShowInstalledNuGetPackages.jpg)
+
+Selecting the "Browse" Tab shows the NuGet Packages in your local folder
