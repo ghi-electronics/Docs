@@ -1,5 +1,102 @@
 # Alpha Release Notes
 
+## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip)
+
+### Notes
+This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
+
+You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seemless experience. See [here](porting/native_interops.md) for details.
+
+To support this, we added a few more classes under `System.Runtime.InteropServices`. Most important is the `Interop` class. It allwos you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the `Marshal` class. You can use `FindAll` to get back a list of all interops registered in the system and `RaiseEvent` to trigger an event on the specified native event dispatcher.
+
+The `NativeEventDispatcher` class allows you to get an instance of the class to receive events that the specified dispatcher name receives (either from native code or `Interop.RaiseEvent`). It has a single event that gets triggered whenever an event is received. There is only one instance per dispatcher name, so calls to `GetDispatcher` with the same name will return the same instance.
+
+Similar to `Interop`, `Api` can be used to add and remove native APIs from the system. It expects you to load the API into memory yourself and pass it the address of the API definition. You can query all registered APIs, find a specific API by name and type, and parse and creator selectors. Selectors are a string that represents an API name and index into its implementations of the form "name\index". A default selector is set so that a specific API type can be returned without knowing the exact name, like the default GPIO controller on a system.
+
+The `Api` class is used internally by the devices library to talk to the native implementation via the implementation `IntPtr` provided for the given API name and index. In some cases you can use the `GetDefault` method on a given device provider to return the default registered API. If there is no default, like for PWM and others, you can pass the `Id` property in the specific pins class to the desired device provider.
+
+We added `Marshal.GetDelegateForFunctionPointer` to enable you to create a quick native interop for a specific address in memory that takes a single `ref IntPtr` parameter and returns nothing. `DeviceInformation` was also added to return the device name, manufacturer, and version set on the native side.
+
+After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://www.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+
+### Libraries
+
+#### Changes
+- Added running device detection.
+- Added listing, adding, and removing system interops.
+- Added listing, adding, and removing system APIs.
+- Added `Marshal.GetDelegateForFunctionPointer`.
+- Added `NativeEventDispatcher`.
+- Added provider IDs to pins.
+- Added FEZ pinout.
+- Added `Expansion` to BrainPad.
+- Updated devices library to use the provider and native API model via a `Provider` class for each device type.
+- Core assembly was renamed to `mscorlib`.
+- `GetDeviceSelector` and `DeviceInformation.FindAll` now throw an exception on use.
+- Opening a non-existent UART now throws on construction.
+- Changed `DateTime.Ticks` to use the same epoch as the desktop.
+- Gpio write now fires `ValueChanged`.
+- BrainPad accelerometer now uses the proper axes and scaling.
+- BrainPad `Image` was renamed to `Picture`.
+- BrainPad `WriteOnComputer` was renamed to `WriteToComputer`.
+- BrainPad Servo `SetMaxPulseWidth` now has correct range in the exception message.
+- Increased the duration and frequency of the BrainPad buzzer beep.
+- Original BrainPad display now works.
+- Replaced `AutoShow` flag on BrainPad with `DrawTextAndShowOnScreen` methods.
+- Reworked BrainPad `Servo` API.
+- Removed BrainPad `Board` class.
+
+#### Known Issues
+- Software I2C can lock up the board if a slave device isn't connected or responds improperly.
+- Formatting numbers that cross an assembly boundary can throw an exception.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Device sharing modes are not respected.
+- Partially transparent ellipses have weird artifacts.
+
+### Firmware
+
+#### Changes
+- Initial FEZ Cerberus, FEZ, Netduino 3, and Quail firmware release.
+- All peripherals are now properly reset on startup.
+- Gpio write values are stored when not in output model.
+- Fixed PWM jittering.
+- All frequencies now round down.
+- Fixed gpio interrupts being slow and something getting missed.
+
+#### Known Issues
+- Rapidly pressing the buttons on the BrainPad may corrupt the display.
+- GpioChangeWriter generates an incorrect signal for periods above 50ms on G400.
+- An 0xA2000000 error is sent over the debug transport when there is no deployment present.
+- Many UART properties and events are not implemented.
+- There is no firmware for G120 and G400 in this release.
+
+### Extension
+
+#### Changes
+- Removed stray semicolon in BrainPad Visual Basic template.
+- Changed BrainPad templates to have a `BrainPad` static class in them.
+- Reduced the number of retries for connecting to device.
+- Added namespace to C# BrainPad template.
+
+#### Known Issues
+- The device may not load drivers on Windows 7 preventing Visual Studio from seeing it.
+- Some uses of pattern matching may crash the C# compiler.
+- Visual Basic resources page generates an incompatible resource file.
+- Visual Basic resource files are wrapped in a second namespace.
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Initial release of porting library and API.
+
+#### Known Issues
+- Marshalling strings does not work.
+- Marshalling `DateTime` and `TimeSpan` does not work.
+- Creating and replacing managed objects does not work.
+- CAN and USB host are missing.
+- The USB client API is still very rough and will change.
+
 ## [0.4.0 on 2017-05-10](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.4.0.zip)
 
 ### Notes
