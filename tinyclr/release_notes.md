@@ -5,9 +5,9 @@
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
 
-You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seemless experience. See [here](porting/native_interops.md) for details.
+You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See [here](porting/native_interops.md) for details.
 
-To support this, we added a few more classes under `System.Runtime.InteropServices`. Most important is the `Interop` class. It allwos you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the `Marshal` class. You can use `FindAll` to get back a list of all interops registered in the system and `RaiseEvent` to trigger an event on the specified native event dispatcher.
+To support this, we added a few more classes under `System.Runtime.InteropServices`. Most important is the `Interop` class. It allows you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the `Marshal` class. You can use `FindAll` to get back a list of all interops registered in the system and `RaiseEvent` to trigger an event on the specified native event dispatcher.
 
 The `NativeEventDispatcher` class allows you to get an instance of the class to receive events that the specified dispatcher name receives (either from native code or `Interop.RaiseEvent`). It has a single event that gets triggered whenever an event is received. There is only one instance per dispatcher name, so calls to `GetDispatcher` with the same name will return the same instance.
 
@@ -30,7 +30,7 @@ After flashing the firmware for the first time on any device, Windows may still 
 - Added provider IDs to pins.
 - Added FEZ pinout.
 - Added `Expansion` to BrainPad.
-- Updated devices library to use the provider and native API model via a `Provider` class for each device type.
+- Updated devices library to use the provider and native API model via a `Provider` class for each type.
 - Core assembly was renamed to `mscorlib`.
 - `GetDeviceSelector` and `DeviceInformation.FindAll` now throw an exception on use.
 - Opening a non-existent UART now throws on construction.
