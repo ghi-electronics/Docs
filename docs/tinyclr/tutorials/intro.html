@@ -77,6 +77,59 @@
 <h1 id="tinyclr-tutorials">TinyCLR Tutorials</h1>
 
 <p>Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can&#39;t, we use <a href="../../hardware/fez.html">FEZ</a> as a reference.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>First you&#39;ll need to download and install Visual Studio 2017 Community Edition, if you already haven&#39;t </p>
+<ul>
+<li><a href="https://www.visualstudio.com/downloads/">Visual Studio 2017 Download</a></li>
+</ul>
+<p>Next you have to download the lastest version of TinyCLR OS here:</p>
+<ul>
+<li><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip">TinyCLR OS Download</a></li>
+</ul>
+<p>Release notes:</p>
+<ul>
+<li><a href="http://docs.ghielectronics.com/tinyclr/release_notes.html">TinyCLR OS Release Notes</a></li>
+</ul>
+<p>The TinyCLR OS zip file you downloaded contains all files you&#39;ll currently need to run TinyCLR OS. </p>
+<p>Extract all the files from the downloaded zip into a folder on your desktop. </p>
+<p>Next run the VSIX installer file, found inside the folder you just extracted to your DESKTOP</p>
+<ul>
+<li><a href="https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR.0.5.0.vsix">TinyCLR OS Visual Studio extension</a></li>
+</ul>
+<p>Connect your device to your PC using a USB cable.</p>
+<h2 id="create-a-new-project">Create a New Project</h2>
+<p>Open Visual Studio, select <code>File &gt; New Project</code>. </p>
+<p><img src="images/StartNewProject.jpg" alt="Start New Project">   </p>
+<p>There should be a <code>TinyCLR</code> option under <code>Visual C#</code></p>
+<p>Click the &quot;OK&quot; button a project and program are created. </p>
+<p><img src="images/SelectTinyCLRProject.jpg" alt="Select TinyCLR Project">   </p>
+<p>The project has only one <code>C#</code> file, called <code>Program.cs</code>. <code>C#</code> source files are listed in the <code>Solution Explorer</code> window. </p>
+<p><img src="images/SolutionExplorer.jpg" alt="Solution Explorer"> </p>
+<p>If the <code>Solution Explorer</code> is not opened, use the <code>View &gt; Solution Explorer</code> menu.</p>
+<p><img src="images/ViewShowSolutionExplorer.jpg" alt="View Show Solution Explorer"> </p>
+<h2 id="adding-nuget-packages">Adding NuGet Packages</h2>
+<p>TinyCLR OS uses NuGet packages, all libraries will be downloaded through NuGet. Because of this, there will be no SDK to install or machines to lock to specific versions. Simply use NuGet to download any needed version of any needed library on a per-project basis.</p>
+<p>To manage your NuGet packages, right click on your Project in the Solution Explorer and select <code>Manage NuGet Packages</code></p>
+<p><img src="images/SelectManageNugetPackages.jpg" alt="View Show Solution Explorer"> </p>
+<h2 id="local-hosting-nuget-packages">Local Hosting NuGet packages</h2>
+<p>Since TinyCLR OS is still so new, we haven&#39;t yet uploaded any packages to NuGet, so make sure to download the available libraries, extract the archive, and place them in a local NuGet feed.</p>
+<p>To do this you&#39;ll have to point Visual Studio to that local NuGet feed. </p>
+<p>After selecting <code>Manage NuGet Packages</code> select the &quot;Package Source&quot; Setting icon. </p>
+<p><img src="images/SettingNugetPackageSource.jpg" alt="Setting Nuget Package Source"> </p>
+<p>Next you&#39;ll click the &quot;+&quot; to add an new Package source. </p>
+<p><img src="images/AddPackageSource.jpg" alt="Add Package Source"></p>
+<p>Then select the location where the NuGet packages are stored locally, by pressing the ... icon. </p>
+<p> <img src="images/ChooseLocalNuGetPackageFolder.jpg" alt="Choose Local NuGet Package Folder"></p>
+<p>After Selecting the local folder where the downloaded NuGet packages are. You can select the &quot;Installed&quot; Tab to view the NuGet Packages installed. </p>
+<p> <img src="images/ShowInstalledNuGetPackages.jpg" alt="Show Installed NuGet Packages"></p>
+<p>Selecting the &quot;Browse&quot; Tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a GREEN check mark in front of the name. </p>
+<p> <img src="images/BrowseLocalNuGetFeed.jpg" alt="Browse Local NuGet Feed"></p>
+<p>To install one of the packages. </p>
+<p> <img src="images/AddNuGetPackage.jpg" alt="Add Nuget Package"></p>
+<p>The last thing to do is accept the licensing agreement. </p>
+<p><img src="images/AcceptAgreementforNuGet.jpg" alt="Accept Agreement for NuGet"></p>
+<p>If you need to update the firmware on your device, download the firmware and follow the instructions to update your device.</p>
+<p>And, that&#39;s it! You&#39;re now ready to start programming using TinyCLR OS. </p>
 </article>
           </div>
           
