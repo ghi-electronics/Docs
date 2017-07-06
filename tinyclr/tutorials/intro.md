@@ -1,7 +1,6 @@
 # TinyCLR Tutorials
 
 Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can't, we use [FEZ](../../hardware/fez.md) as a reference.
-___
 
 ## Getting Started
 First you'll need to download and install Visual Studio 2017 Community Edition, if you already haven't 
@@ -9,7 +8,6 @@ First you'll need to download and install Visual Studio 2017 Community Edition, 
 * [Visual Studio 2017 Download](https://www.visualstudio.com/downloads/)
 
 Next you have to download the lastest version of TinyCLR OS here:
-
  
 * [TinyCLR OS Download](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip)
 
@@ -26,30 +24,23 @@ Next run the VSIX installer file, found inside the folder you just extracted to 
 
 Connect your device to your PC using a USB cable.
 
-___
-
 ## Create a New Project
 
 Open Visual Studio, select ` File > New Project`. 
 
 ![Start New Project](images/StartNewProject.jpg)   
 
-
-
-
-
 There should be a `TinyCLR` option under `Visual C#`
+
 Click the "OK" button a project and program are created. 
 
 ![Select TinyCLR Project](images/SelectTinyCLRProject.jpg)   
-
 
 The project has only one `C#` file, called `Program.cs`. `C#` source files are listed in the `Solution Explorer` window. 
 
 ![Solution Explorer](images/SolutionExplorer.jpg) 
 
 If the `Solution Explorer` is not opened, use the `View > Solution Explorer` menu.
-
 
 ![View Show Solution Explorer](images/ViewShowSolutionExplorer.jpg) 
 
@@ -79,7 +70,6 @@ Then select the location where the NuGet packages are stored locally, by pressin
  ![Choose Local NuGet Package Folder](images/ChooseLocalNuGetPackageFolder.jpg)
 
 After Selecting the local folder where the downloaded NuGet packages are. You can select the "Installed" Tab to view the NuGet Packages installed. 
-
 
  ![Show Installed NuGet Packages](images/ShowInstalledNuGetPackages.jpg)
 
