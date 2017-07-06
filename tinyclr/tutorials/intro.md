@@ -82,4 +82,19 @@ After Selecting the local folder where the downloaded NuGet packages are. You ca
 
  ![Show Installed NuGet Packages](images/ShowInstalledNuGetPackages.jpg)
 
-Selecting the "Browse" Tab shows the NuGet Packages in your local folder
+Selecting the "Browse" Tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a GREEN check mark in front of the name. 
+
+ ![Browse Local NuGet Feed](images/BrowseLocalNuGetFeed.jpg)
+
+To install one of the packages. 
+
+ ![Add Nuget Package](images/AddNuGetPackage.jpg)
+
+The last thing to do is accept the licensing agreement. 
+
+![Accept Agreement for NuGet](images/AcceptAgreementforNuGet.jpg)
+
+If you need to update the firmware on your device, download the firmware and follow the instructions to update your device.
+
+And, that's it! You're now ready to start programming using TinyCLR OS. 
+
