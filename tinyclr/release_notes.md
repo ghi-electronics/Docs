@@ -71,7 +71,7 @@ After flashing the firmware for the first time on any device, Windows may still 
 - Many UART properties and events are not implemented.
 - There is no firmware for G120 and G400 in this release.
 - Software I2C on G30 does not work.
-- PWM on controller 8 does not work on the G80.
+- PWM on controller 8 and up does not work on the G80.
 - Deploying over USB when out of memory crashes the board.
 
 ### Extension
