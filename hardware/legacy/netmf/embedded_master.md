@@ -1,3 +1,3 @@
 # Embedded Master
 
-Replaced by EMX (link)
+Replaced by [EMX](http://docs.ghielectronics.com/hardware/legacy/netmf/emx.html)
