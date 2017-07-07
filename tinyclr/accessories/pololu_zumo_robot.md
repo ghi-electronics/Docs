@@ -1,7 +1,7 @@
 # Pololu Zumo Robot
 
-The Arduino Zumo Robot from Pololu is one of our favorites, especially the pre-assembled version.
-https://www.pololu.com/category/169/zumo-robot-for-arduino
+The [Arduino Zumo Robot](https://www.pololu.com/category/169/zumo-robot-for-arduino) from Pololu is one of our favorites, especially the pre-assembled version.
+
 
 Drop your FEZ on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around. Thanks to FEZ’s built in WiFi, you can drive the robot right from your phone.
 

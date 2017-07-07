@@ -1,7 +1,7 @@
 # Sparkfun Ardumoto Shield Kit
 
-The sparkfun Ardumoto Shield Kit is a low cost way of building a robot, somewhat quickly.
-https://www.sparkfun.com/products/14180
+The sparkfun [Ardumoto Shield Kit](https://www.sparkfun.com/products/14180) is a low cost way of building a robot, somewhat quickly.
+
 
 Plug the shield on top of your FEZ, or any other Arduino-pinout compatible board.
 
