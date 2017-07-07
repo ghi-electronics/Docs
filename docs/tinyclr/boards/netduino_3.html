@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Netduino 3 </title>
+    <title>netduino 3 </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Netduino 3 ">
+    <meta name="title" content="netduino 3 ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -17,7 +17,7 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     <meta property="docfx:rel" content="../../">
-    
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
@@ -74,16 +74,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="netduino-3">Netduino 3</h1>
+<h1 id="netduino-3">netduino 3</h1>
 
 <p>Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:</p>
 <ul>
-<li>netduino 3 <a href="http://www.netduino.com/netduino3/specs.htm">http://www.netduino.com/netduino3/specs.htm</a></li>
-<li>netduino 3 Ethernet <a href="http://www.netduino.com/netduino3ethernet/specs.htm">http://www.netduino.com/netduino3ethernet/specs.htm</a></li>
-<li>netduino 3 WiFi: <a href="http://www.netduino.com/netduino3wifi/specs.htm">http://www.netduino.com/netduino3wifi/specs.htm</a></li>
+<li><a href="http://www.netduino.com/netduino3/specs.htm">netduino 3</a></li>
+<li><a href="http://www.netduino.com/netduino3ethernet/specs.htm">netduino 3 Ethernet</a></li>
+<li><a href="http://www.netduino.com/netduino3wifi/specs.htm">netduino 3 WiFi</a></li>
 </ul>
-<p>Use the ST DFU tool to load the �netduino3 firmware 0.5.0� onto your netduino 3. Currently the firmware is the same for all three devices and doesn�t include any networking support. When done, your PC should detect a TinyCLR device. You are now ready to start coding <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">http://docs.ghielectronics.com/tinyclr/tutorials/intro.html</a></p>
-<p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.</p>
+<p>Follow the instructions at the <a href="http://docs.ghielectronics.com/hardware/stm32_bootloader.html">STM32 bootloader</a> page to generate a DFU file and load on your board.</p>
+<p>When done, your PC should detect a TinyCLR device. You are now ready to <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">start coding</a></p>
+<div class="TIP"><h5>Tip</h5><p>Currently the firmware is the same for all three devices and doesn&#39;t include any networking support.</p>
+</div>
+<div class="TIP"><h5>Tip</h5><p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.</p>
+</div>
 </article>
           </div>
           
