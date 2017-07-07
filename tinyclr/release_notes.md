@@ -52,6 +52,7 @@ After flashing the firmware for the first time on any device, Windows may still 
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Device sharing modes are not respected.
 - Partially transparent ellipses have weird artifacts.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
 
 ### Firmware
 
@@ -69,6 +70,9 @@ After flashing the firmware for the first time on any device, Windows may still 
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
 - Many UART properties and events are not implemented.
 - There is no firmware for G120 and G400 in this release.
+- Software I2C on G30 does not work.
+- PWM on controller 8 does not work on the G80.
+- Deploying over USB when out of memory crashes the board.
 
 ### Extension
 
