@@ -1,6 +1,6 @@
 # Alpha Release Notes
 
-## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip)
+## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/v0.5.0/)
 
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
