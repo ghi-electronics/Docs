@@ -1,15 +1,19 @@
-# Netduino 3
+# netduino 3
 
 Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:
 
-- [netduino 3]( http://www.netduino.com/netduino3/specs.htm)
-- [netduino 3 Ethernet]( http://www.netduino.com/netduino3ethernet/specs.htm)
-- [netduino 3 WiFi]( http://www.netduino.com/netduino3wifi/specs.htm)
+- [netduino 3](http://www.netduino.com/netduino3/specs.htm)
+- [netduino 3 Ethernet](http://www.netduino.com/netduino3ethernet/specs.htm)
+- [netduino 3 WiFi](http://www.netduino.com/netduino3wifi/specs.htm)
 
 
 
+Follow the instructions at the [STM32 bootloader](http://docs.ghielectronics.com/hardware/stm32_bootloader.html) page to generate a DFU file and load on your board.
 
+When done, your PC should detect a TinyCLR device. You are now ready to [start coding](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
 
-Use the [ST DFU tool](http://docs.ghielectronics.com/hardware/stm32_bootloader.html) to load the "netduino3 firmware" onto your netduino 3. Currently the firmware is the same for all three devices and doesn't include any networking support. When done, your PC should detect a TinyCLR device. You are now ready to start coding http://docs.ghielectronics.com/tinyclr/tutorials/intro.html
+> [!Tip]
+> Currently the firmware is the same for all three devices and doesn't include any networking support.
 
-The region set aside for RLI is 0x2002F000 - 0x2002FFF8.
+> [!Tip]
+>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.

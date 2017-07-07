@@ -1,21 +1,16 @@
 # STM32F4 Discovery Boards
 
+ST Microelectronics provides low-cost evaluation and reference boards for their STM32 microcontrollers, called discovery boards. All discovery boards are very close and similar, allowing TinyCLR OS to run on all of them; however, this page includes the discovery board we have tested.
+
+The discovery boards include a built-in native debugging support, called ST-Link. This is a good option for users wanting to port TinyCLR OS and in need for debugging TinyCLR OS native port.
+
 ## STM32F411 Discovery
 
-The [STM32F411 Discovery board]( http://www.st.com/en/evaluation-tools/32f411ediscovery.html) is a low-cost board with a built in native debugging support, called ST-Link. This is a good, especially for users wanting to port TinyCLR OS and in need for debugging TinyCLR OS native port.
+The [STM32F411 Discovery board]( http://www.st.com/en/evaluation-tools/32f411ediscovery.html)
 
-Use the [ST DFU tool](http://docs.ghielectronics.com/hardware/stm32_bootloader.html) to load the "FEZ firmware" onto your discovery board. When done, your PC should detect a TinyCLR device. You are now ready to start coding http://docs.ghielectronics.com/tinyclr/tutorials/intro.html
+This discovery board uses essentially the same microcontroller found on FEZ. Follow the same instructions as [FEZ board](http://docs.ghielectronics.com/tinyclr/boards/fez.html)
 
-Note that we are using the same FEZ firmware. Peripherals are mapped exactly to how they are on the 
-[FEZ board](http://docs.ghielectronics.com/hardware/fez.html) 
-
-
- 
 
 ## STM32F407 Discovery
 
-The [STM32F407 discovery board](http://www.st.com/en/evaluation-tools/stm32f4discovery.html) is very close to the STM32411. 
-
-To 
-[run TinyCLR OS](http://docs.ghielectronics.com/tinyclr/boards/stm32f411_discovery.html), follow the same instructions as the STM32F411 discovery board
-
+The microcontroller on this discovery board is very similar to the one used on FEZ (STM32F401). Follow the same instructions as [FEZ board](http://docs.ghielectronics.com/tinyclr/boards/fez.html)

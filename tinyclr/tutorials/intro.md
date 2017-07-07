@@ -3,26 +3,7 @@
 Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can't, we use [FEZ](../../hardware/fez.md) as a reference.
 
 ## Getting Started
-First you'll need to download and install Visual Studio 2017 Community Edition, if you already haven't 
-
-* [Visual Studio 2017 Download](https://www.visualstudio.com/downloads/)
-
-Next you have to download the lastest version of TinyCLR OS here:
- 
-* [TinyCLR OS Download](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip)
-
-Release notes:
-* [TinyCLR OS Release Notes](http://docs.ghielectronics.com/tinyclr/release_notes.html)
-
-The TinyCLR OS zip file you downloaded contains all files you'll currently need to run TinyCLR OS. 
-
-Extract all the files from the downloaded zip into a folder on your desktop. 
-
-Next run the VSIX installer file, found inside the folder you just extracted to your DESKTOP
-
-* [TinyCLR OS Visual Studio extension](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR.0.5.0.vsix)
-
-Connect your device to your PC using a USB cable.
+Follow these steps http://docs.ghielectronics.com/tinyclr/intro.html
 
 ## Create a New Project
 
