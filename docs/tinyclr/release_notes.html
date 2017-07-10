@@ -17,7 +17,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     <meta property="docfx:rel" content="../">
-    
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
@@ -76,7 +76,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="alpha-release-notes">Alpha Release Notes</h1>
 
-<h2 id="050-on-2017-07-07httpghielectronicscomdownloadstinyclrtinyclr050zip"><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip">0.5.0 on 2017-07-07</a></h2>
+<h2 id="050-on-2017-07-07httpghielectronicscomdownloadstinyclrv050"><a href="http://ghielectronics.com/downloads/TinyCLR/v0.5.0/">0.5.0 on 2017-07-07</a></h2>
 <h3 id="notes">Notes</h3>
 <p>This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!</p>
 <p>You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See <a href="porting/intro.html">here</a> for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See <a href="porting/native_interops.html">here</a> for details.</p>
@@ -120,6 +120,8 @@
 <li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
 <li>Device sharing modes are not respected.</li>
 <li>Partially transparent ellipses have weird artifacts.</li>
+<li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
+<li>Software I2C does not work.</li>
 </ul>
 <h3 id="firmware">Firmware</h3>
 <h4 id="changes-1">Changes</h4>
@@ -138,6 +140,8 @@
 <li>An 0xA2000000 error is sent over the debug transport when there is no deployment present.</li>
 <li>Many UART properties and events are not implemented.</li>
 <li>There is no firmware for G120 and G400 in this release.</li>
+<li>PWM on controller 8 and up does not work on the G80.</li>
+<li>Deploying over USB when out of memory crashes the board.</li>
 </ul>
 <h3 id="extension">Extension</h3>
 <h4 id="changes-2">Changes</h4>

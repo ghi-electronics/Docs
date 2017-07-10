@@ -1,6 +1,6 @@
 # Alpha Release Notes
 
-## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.5.0.zip)
+## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/v0.5.0/)
 
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
@@ -52,6 +52,8 @@ After flashing the firmware for the first time on any device, Windows may still 
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Device sharing modes are not respected.
 - Partially transparent ellipses have weird artifacts.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+- Software I2C does not work.
 
 ### Firmware
 
@@ -69,6 +71,8 @@ After flashing the firmware for the first time on any device, Windows may still 
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
 - Many UART properties and events are not implemented.
 - There is no firmware for G120 and G400 in this release.
+- PWM on controller 8 and up does not work on the G80.
+- Deploying over USB when out of memory crashes the board.
 
 ### Extension
 
