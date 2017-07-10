@@ -21,17 +21,17 @@ BrainPad.Wait.Seconds(0.2)
 Variables can be constants, like the numbers used above. They can also be variables, which will be explained in the coming sections. Also, arguments can also be something completely different!
 
 ```
-    Public Sub BrainPadSetup()
+Public Sub BrainPadSetup()
         'Declared but not used
-    End Sub
+End Sub
 
-    Public Sub BrainPadLoop()
+Public Sub BrainPadLoop()
         If BrainPad.Buttons.IsPressed(BrainPad.Buttons.Button.Up) Then
             BrainPad.WriteDebugMessage("Up button is pressed")
         Else
             BrainPad.WriteDebugMessage("Up button is not pressed")
         End If
-    End Sub
+End Sub
 ```
 What is that argument used with `Button.IsPressed()`? In this case, the `Button.IsPressed` takes an argument to specify which button is to be checked.
 
@@ -83,6 +83,7 @@ After selecting an appropriate name, an appropriate type is needed. The type tel
 Use the code below:
 
 ```
+Class Program
     Dim frequency As Integer
     Dim increment As Integer
 
@@ -96,6 +97,7 @@ Use the code below:
         If BrainPad.Button.IsUpPressed() Then
             increment = 100
         End If
+
         If BrainPad.Button.IsDownPressed() Then
             increment = -100
         End If
@@ -109,6 +111,7 @@ Use the code below:
             BrainPad.Buzzer.Stop()
         End If
     End Sub
+End Class
 ```
 The previous example loops 5 times every second and sets the buzzer to a frequency. The frequency is a variable, also named frequency in this example. The buttons will be checked and when the up button is pressed the `frequency` is incremented by 100 and when the down button is pressed the frequency is decremented by 100. The value held by the frequency variable is also printed using the `Debug.Print` statement. Can we now determine the highest frequency a person can hear?
 
@@ -127,18 +130,19 @@ Add a variable that starts at 0 and then it is incremented by 1 in every loop. O
 ## Inspecting Variables
 Printing the variable value worked well for small programs with a single variable. It is not practical to continuously print every variable out. Instead, we can use the debugger feature to pause the code and inspect variables.
 ```
+Class Program   
     Dim count As Integer = 0
     Dim increment As Integer = 0
 
     Public Sub BrainPadSetup()
         
     End Sub
-
     Public Sub BrainPadLoop()
         count = count + 1
         BrainPad.DebugPrint(count)
         BrainPad.Wait.Seconds(0.2)
-    End Sub       
+    End Sub   
+End Class    
 ```
 Add a breakpoint in the loop in the previous program and step through code. Move the mouse over the count variable and wait a second. A pop up window will come up showing the value of the count variable.
 
@@ -155,6 +159,7 @@ Run the previous program for few loops, then pause the program, or add a breakpo
 While an Integer can hold very large numbers, it can’t hold fractions. For example, there is no way to set an integer to 0.5 or 123.8. The variable type Double should be used whenever fractions are needed. Why not use a Double variable since it can hold large numbers and fractions? You can, but it requires more memory and processing so it isn't as efficient.
 
 ```
+Class Program
     Dim frequency As Double
     Dim increment As Integer
 
@@ -181,12 +186,14 @@ While an Integer can hold very large numbers, it can’t hold fractions. For examp
             BrainPad.Buzzer.Stop()
         End If
     End Sub
+End Class
 ```
 The previous example uses a Double instead of an Integer for the frequency. Since the `Buzzer.Start()` method expects an integer, the variable need to be converted using the CType(). This is demonstrating how using Double for everything is not desirable.
 
 Time to go back and have fun with our favorite green light! This example will turn the green light on for a specific time, set by a variable called delay. It then turns the light off for the same length of time. Pressing the up and down buttons control the delay variable, causing the light to be on and off for longer or shorter periods. The variable is also printed out using `DebugOutput()`.
 
 ```
+Class Program
     Dim delay As Double
 
     Public Sub BrainPadSetup()
@@ -209,10 +216,12 @@ Time to go back and have fun with our favorite green light! This example will tu
         BrainPad.LightBulb.TurnOff()
         BrainPad.Wait.Seconds(delay)
     End Sub
+End Class
 ```
 ## Returned Values
 Some methods return a value, like when reading the light sensor. This value can be placed into a variable and then the variable can be used with if-statements. We have lights bulb and a light sensor on the BrainPad. Why not turn the light on when it is dark? This can be tested by turning the lights off inside the room or by placing a finger over the light sensor to block the light.
 ```
+Class Program
     Dim level As Double
 
     Public Sub BrainPadSetup()
@@ -229,6 +238,7 @@ Some methods return a value, like when reading the light sensor. This value can 
             BrainPad.LightBulb.TurnOff()
         End If
     End Sub
+End Class
 ```
 How do we know what value to use as the threshold on when to turn the light bulb on? This is a perfect example on where inspecting variables is needed. Run the program and test by placing a finger over the light sensor to block the light. This may not work nicely and you need to adjust the threshold from 0.5 to something else. Take a look at the output window to see the light levels to determine what value work best for your needs. Then stop the program, change the threshold and then run the program again to test the results.
 
@@ -257,7 +267,7 @@ The result is what you expect, 4. But now assume str is a string variable, what 
 str = "2" + "2"
 ```
 
-The string is just text, not a number. When adding strings, the result is a string that combines the strings. The result form above is "22". This should make more sense if you try this example.
+The string is just text, not a number. When adding strings, the result is a string that combines the strings. The result from above is "22". This should make more sense if you try this example.
 ```
 str = "Hello number " + "2"
 ```
@@ -271,7 +281,6 @@ One of the important built in method for variables is the ToString() method. Thi
 
 ```
 Class Program
-
     Dim count As Integer=0
 
     Public Sub BrainPadSetup()
@@ -282,7 +291,6 @@ Class Program
         count = count + 1
         BrainPad.DebugOutput("Count: " + count.ToString())
     End Sub
-
 End Class
 ```
 The prior example uses a variable type integer that starts at zero and increments by one in every loop. It will then print the variable value in the Output Window.
@@ -305,6 +313,7 @@ Is this statement true?
 ```
  Yes 1 equals 1, that is true! So keeping that in mind, we can make a while-loop keep looping forever using this statement.
 ```
+Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
         count = 0
@@ -317,9 +326,11 @@ Is this statement true?
     Public Sub BrainPadLoop()
         'Declared but not used
     End Sub
+End Class
 ```
 Or True can simply be used.
 ```
+Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
         count = 0
@@ -332,11 +343,13 @@ Or True can simply be used.
     Public Sub BrainPadLoop()
         'Declared but not used
     End Sub
+End Class
 ```
 
 A `While` loop can also be finite, meaning will stop looping at some point.
 
 ```
+Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
         count = 0
@@ -349,11 +362,13 @@ A `While` loop can also be finite, meaning will stop looping at some point.
     Public Sub BrainPadLoop()
         'Declared but not used
     End Sub
+End Class
 ```
 What did the last program do? It printed the count from 1 to 10. But count started at 0, not one. Shouldn't it print count 0? Time for debugging (troubleshooting). Start by setting a breakpoint at count = 0 and then step in the code to see what the value of count is (use watch window) and then see why the value 0 was never printed. Think about a fix before looking at the next code.
 
 The fix is very easy!
 ```
+Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
         count = 0
@@ -366,6 +381,7 @@ The fix is very easy!
     Public Sub BrainPadLoop()
         'Declared but not used
     End Sub
+End Class
 ```
 What about the 10? Shouldn't the program print Count: 10? The answer is in the while-loop. In plain English, it says: run the following code as long as count is less than 10. Since 10 is not less than 10 then 10 will not be printed. The while-loop can be improved like this:
 
@@ -399,6 +415,7 @@ How do we write a program that prints 1 to 10 repeatedly forever? This is accomp
 The above program will not work. It will print 1 to 10 one time only then the program will not end and it will not print anything after. Time again for debugging the code to determine what the issue is. Run the program and determine the cause of the error. The fix is simple but try to find it before peeking at the fixed code.
 
 ```
+Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
         count = 0
@@ -409,18 +426,14 @@ The above program will not work. It will print 1 to 10 one time only then the pr
                 BrainPad.WriteDebugMessage("Count: " + count.ToString())
                 count = count + 1
             End While
-
         End While
     End Sub
 
     Public Sub BrainPadLoop()
         'Declared but not used
     End Sub
+End Class
 ```
 
 ## Exercise
 Write a program that prints 0 to 10 repeatedly when the up button is **not** pressed when it is bright. If it is dark the button doesn’t do anything. Do not use `And`, instead nest the if-statements.
-
-
-
-
