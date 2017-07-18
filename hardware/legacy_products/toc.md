@@ -1,6 +1,6 @@
 # [Intro](intro.md)
 # [NETMF](netmf/toc.md)
-# [Gadgeteer](gadgeteer.md)
+# [Gadgeteer](gadgeteer/toc.md)
 # [Gadgeteering](gadgeteering.md)
 # [File System](filesystem.md)
 # [Imaging](imaging.md)
