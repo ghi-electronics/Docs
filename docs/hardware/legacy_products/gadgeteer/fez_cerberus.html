@@ -5,18 +5,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TinyCLR OS Accessories </title>
+    <title>FEZ Cerberus </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TinyCLR OS Accessories ">
+    <meta name="title" content="FEZ Cerberus ">
     <meta name="generator" content="docfx 2.19.2.0">
     
-    <link rel="shortcut icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    <meta property="docfx:rel" content="../../">
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:rel" content="../../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -74,10 +74,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="tinyclr-os-accessories">TinyCLR OS Accessories</h1>
+<h1 id="fez-cerberus">FEZ Cerberus</h1>
 
-<p>There are thousands of accessories that can be used with <a href="http://docs.ghielectronics.com/tinyclr/boards/intro.html">boards</a> supported by TinyCLR OS, especially <a href="http://docs.ghielectronics.com/hardware/fez.html">FEZ</a>. However, we have hand picked a few of our favorites and then built the necessary drivers for them.</p>
-<p>Have a list of your own and want to contribute? Talk to us, directly on through the community forum.</p>
+<p>The Cerb family included FEZ Cerberus, FEZ Cerbuino Bee, FEZ Cerbuino Net, FEZ Cerb40, FEZ Cerb40 II, FEZ Cerbot, and GameO. All these open source devices worked with NETMF</p>
+<p>To use any of the cerb-family boards, follow the setup instructions on the NETMF into page (link).</p>
+<p>Resources:</p>
+<ul>
+<li>Schematic</li>
+<li>Development board reference schematic</li>
+</ul>
+<p>G400D is compatible the GHI Electronics. Please consider one of these modules as a drop-in hardware replacement for G400D </p>
+<p>We recommend TinyCLR OS as a replacement for NETMF. Learn more about TinyCLR at www.tinyclr.com.
+To help you evaluate TinyCLR OS, we are providing a preview firmware for G30. Load this firmware using our <a href="http://docs.ghielectronics.com/hardware/bootloader.html">boot loader</a> and then these devices will run TinyCLR-OS</p>
+<p>FEZ Cerb firmware 0.5.0 (link)</p>
+<p>The FEZ Cerberus family of boards, FEZ Cerberus, FEZ Cerbuino and the Cerb40 were originally made to run .NET Micro Framework. To </p>
+<p>Like for the FEZ board, we are providing a bootloader to make firmware update easier. This loader needs to be loaded once and then TinyCLR OS firmware update is a lot easier.</p>
+<p>Use the ST DFU tool to load the �cerb loader 2345� onto your Cerb board. When done, your PC should detect a virtual COM port. You can now load the �cerb firmware 0.5.0� onto your board. Loadong the firmware is done using terminal software with XMODEM. More info is found on our <a href="http://docs.ghielectronics.com/hardware/bootloader.html">bootloader page</a></p>
+<p>You are now ready to <a href="http://docs.ghielectronics.com/tinyclr/tutorials/intro.html">start coding</a></p>
+<p>The region set aside for RLI is 0x2001F000 - 0x2001FFF8.</p>
 </article>
           </div>
           
@@ -86,7 +100,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/accessories/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/legacy_products/gadgeteer/fez_cerberus.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -112,8 +126,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
