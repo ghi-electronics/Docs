@@ -42,13 +42,10 @@ This file contains the default code when you first create a project. The lines i
 Take a moment to review them. You can create your own comments in the code by typing `//` before any notes you like to add. Comments don't affect how your program runs. 
 Comments are a great place to keep notes about how a piece of code might work. They are helpful if another programmer looks at your code, or you return to look at your own code at a later date, to help you understand what the code is doing behind the scenes. 
 
-
-
 ## The BrainPad Object
 The world around us is full of objects. Every person, table or circuit board is an object. If we were to ask a person to say "hello," we'd be asking an object to perform a task. The same concept can be applied to code. Like in the previous application we ran, the BrainPad was asked to control the display through the BrainPad object.
 The BrainPad object itself, is a piece of code that is contained in one file. This was developed by GHI Electronics to cover the internals of the BrainPad. This enables students like you, with an easy way to control the BrainPad circuit board.
 After typing BrainPad, press the period key to get a list of all available options (Figure 3) for this object, like LightBulb.
-
 
 ![Using IntelliSense](images/introduction/UsingIntelliSense.jpg)
 
