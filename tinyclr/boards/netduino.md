@@ -1,4 +1,6 @@
-# netduino 3
+# netduino
+
+## netduino 3
 
 Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:
 
