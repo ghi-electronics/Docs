@@ -76,3 +76,5 @@ Now, press `F5` to run the code and you’ll see the LightBulb turn green come on 
 
 ## Problem Solving
 Since applications execute extremely fast, we need to slow them down to figure out the problem. This way we can see what is happening or if the results are as expected. We will start by running the code one line at a time, this is called stepping in code to see what the application does at a slow speed.
+
+## Stepping in Code

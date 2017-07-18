@@ -1,6 +1,7 @@
 # [Intro](intro.md)
 # [FEZ](fez.md)
 # [BrainPad](brainpad.md)
+# [FEZ Spider II](stm32f4_discovery.md)
 # [STM32F4 Discovery](stm32f4_discovery.md)
 # [Netduino 3](netduino_3.md)
 # [Quail](quail.md)
