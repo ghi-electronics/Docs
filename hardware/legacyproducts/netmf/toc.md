@@ -3,5 +3,3 @@
 # [Embedded Master](embedded_master.md)
 # [ChipworkX](chipworkx.md)
 # [USBizi](usbizi.md)
-# [FEZ Cerberus](fez_cerberus.md)
-# [FEZ Hydra](fez_hydra.md)

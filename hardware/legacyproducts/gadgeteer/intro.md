@@ -1,4 +1,4 @@
-# Gadgeteer
+# Gadgeteer Intro
 
 .NET Gadgeteer that was initiated by Microsoft Research and taken to production by GHI Electronics. Gadgeteer had a great few year run, loved for its plug-and-play mainboard and modules.
 
