@@ -6,7 +6,7 @@
 # [PWM](pwm.md)
 # [ADC](adc.md)
 # [DAC](dac.md)
-# [Display](dac.md)
+# [Display](display.md)
 # [Gpio Change Writer](gpiochangewriter.md)
 # [Gpio Change Reader](gpiochangereader.md)
 # [Gpio Change Reader Writer](gpiochangereaderwriter.md)
