@@ -1,55 +1,73 @@
 # FEZ Spider II
 
-FEZ Spider II is a legacy .NET Gadgeteer product. The core of the FEZ Spider II is the G120E System on Module (SoM), which is [supported by TinyCLR]( http://docs.ghielectronics.com/tinyclr/boards/fez.html).
+FEZ Spider II is a .NET Gadgeteer product.
+(image)
 
- # Updating the Bootloader and the Firmware
+> [!Tip]
+> The use of the original NETMF and Gadgeteer software is discouraged. [Read more](intro.html).
 
-To run TinyCLR OS on the  FEZ Spider II:
+# Using TinyCLR OS
 
-1. Set the board's configuration switches in boot mode. That is by switching #1 and #2 to the on position.
+First step is to load a secondary bootloader and the TinyCLR OS firmware.
+
+## Updating the Bootloader
+
+First, we need GHI Electronics' [bootloader](../../loaders/bootloader.html) version 2.
+
+1. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
 2. Connect the FEZ Spider II to a power module (red module) and then to a PC.
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, download then here.
-4. Open any terminal software, we recommend Tera Term.
+3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
+4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 5. Select serial and pick the COM port associated with your board.
-6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`.
+6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
 7. Enter `X` and you will see `CCCC`... showing on the terminal.
 8. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-9. Select the `G120 Bootloader v203.ghi` (or newer) file. You can find available downloads here
+9. Select the `G120 Bootloader v203.ghi` file. You can find available downloads here
 10. You will see `File Transfer Finished Successfully`.
 11. Change the configuration switches back to the off position and reset the board.
-13. Close Tera Term and reopen it.
-14. Press `V` and then enter. You will see back the boot loader version number (v2.0.3)
-15. Press `U` and then enter, then `Y` and then enter. You will now see `CCCC`... like before.
-16. Now you can transfer the firmware file, just like you transferred the bootloader before. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-17. Select the `G120 Frimware.xxx.glb` (or newer) file. When done, reset the board.
-17. 
- # Blinking the onboard LED
+12. You are now runing GHI Electronics bootloader version 2!
 
->Tip
-If you have never used TinyCLR OS before, [start here]( http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+## Loading the TinyCLR OS firmware
+
+> [!Tip]
+> The core of the FEZ Spider II is the G120E System on Module (SoM)
+
+1. Close Tera Term (if it is still open) and reopen it.
+2. Press `V` and then enter. You will see back the boot loader version number (v2.0.3)
+3. Press `U` and then enter, then `Y` and then enter. You will now see `CCCC`...
+4. Now you can transfer the firmware file, just like you transferred the bootloader before. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
+5. Select the `G120 Frimware.xxx.glb` firmware file. (from where?)
+6. When the transfer is complete, reset your board. You are now ready to use TinyCLR OS.
+
+ # Blinking the LED
+
+> [!Tip]
+> If you have never used TinyCLR OS before, [start here]( http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+
+This example will blink the debug LED. You only need to add a power module to your mainboard.
 
 ```
 using System.Threading;
 using GHIElectronics.TinyCLR.Devices.Gpio;
 using GHIElectronics.TinyCLR.Pins;
 
-namespace FEZSpiderII {
-    class Program {
-        static void Main() {
-           var led = GpioController.GetDefault().OpenPin(G120E.GpioPin.P1_31);
-           led.SetDriveMode(GpioPinDriveMode.Output);
+class Program {
+    static void Main() {
+        var led = GpioController.GetDefault().OpenPin(FezSpiderII.GpioPin.DebugLed);
+        led.SetDriveMode(GpioPinDriveMode.Output);
 
-           while(true) {
-                led.Write(GpioPinValue.High);
-                Thread.Sleep(200);
-                led.Write(GpioPinValue.Low);
-                Thread.Sleep(200);
-            }
+        while(true) {
+            led.Write(GpioPinValue.High);
+            Thread.Sleep(200);
+            led.Write(GpioPinValue.Low);
+            Thread.Sleep(200);
         }
     }
 }
 ```
 
-# Using the Gadgeteer modules
+> [!Tip]
+> The complete pin mapping is made available for TinyCLR OS. You should not need to use any schematics.
 
-In this example, we have a button connected to socket 14. The button is connected to pin 3.
+# Adding .NET Gadgeteer Modules
+You are now ready to start with [Moudles](modules.html).
