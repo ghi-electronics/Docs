@@ -10,6 +10,10 @@ FEZ Spider II is a .NET Gadgeteer product.
 
 First step is to load a secondary bootloader and the TinyCLR OS firmware.
 
+
+> [!Tip]
+> The core of the FEZ Spider II is the G120E System on Module (SoM)
+
 ## Updating the Bootloader
 
 First, we need GHI Electronics' [bootloader](../../loaders/bootloader.html) version 2.
@@ -25,12 +29,9 @@ First, we need GHI Electronics' [bootloader](../../loaders/bootloader.html) vers
 9. Select the `G120 Bootloader v203.ghi` file. You can find available downloads here
 10. You will see `File Transfer Finished Successfully`.
 11. Change the configuration switches back to the off position and reset the board.
-12. You are now runing GHI Electronics bootloader version 2!
+12. You are now running GHI Electronics bootloader version 2!
 
 ## Loading the TinyCLR OS firmware
-
-> [!Tip]
-> The core of the FEZ Spider II is the G120E System on Module (SoM)
 
 1. Close Tera Term (if it is still open) and reopen it.
 2. Press `V` and then enter. You will see back the boot loader version number (v2.0.3)
@@ -38,6 +39,10 @@ First, we need GHI Electronics' [bootloader](../../loaders/bootloader.html) vers
 4. Now you can transfer the firmware file, just like you transferred the bootloader before. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
 5. Select the `G120 Frimware.xxx.glb` firmware file. (from where?)
 6. When the transfer is complete, reset your board. You are now ready to use TinyCLR OS.
+
+
+> [!Tip]
+> You no longer need to update the bootloader. Next time you need to update the firmware, set switch ??? to on and then folow the same steps to update the firmware only.
 
  # Blinking the LED
 
@@ -53,7 +58,7 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var led = GpioController.GetDefault().OpenPin(FezSpiderII.GpioPin.DebugLed);
+        var led = GpioController.GetDefault().OpenPin(FezSpider.GpioPin.DebugLed);
         led.SetDriveMode(GpioPinDriveMode.Output);
 
         while(true) {
@@ -70,4 +75,4 @@ class Program {
 > The complete pin mapping is made available for TinyCLR OS. You should not need to use any schematics.
 
 # Adding .NET Gadgeteer Modules
-You are now ready to start with [Moudles](modules.html).
+You are now ready to start with [Modules](modules.html).

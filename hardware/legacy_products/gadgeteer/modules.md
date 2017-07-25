@@ -1,20 +1,20 @@
 # .NET Gadgeteer Modules
-This page lists all .NET Gadgeteer moduels and how can they be used with [TinyCLR OS](../../../tinyclr/intro.html). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.html) page.
+This page lists all .NET Gadgeteer modules and how can they be used with [TinyCLR OS](../../../tinyclr/intro.html). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.html) page.
 
 > [!Tip]
-> We discourage writing specifc drivers that can't be used outside gadgeteer. It should be easy to transition from a gadgeteer to a non-gadgeteer design.
+> We discourage writing specific drivers that can't be used outside gadgeteer. It should be easy to transition from a gadgeteer to a non-gadgeteer design.
 > If a module is simple, then no driver at all is provided!
 
 > [!Tip]
-> You can use intelesnse with the pin definition class to quickly determine where things go.
+> You can use intellisense with the pin definition class to quickly determine where things go.
 > For example: Typing `FezSpider.GpioPin.Socket3.` lists the available GPIO pins on scoekt3
 > Another example: Typing `FezSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
 
 > [!Tip]
-> We will be using the original, and most popualr, FEZ Spdier as a base for this page but any other mainboard will work very similarly.
+> We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.
 
 # Accel G248
-The Accel G248 measures accelleration though I2C bus.
+The Accel G248 measures acceleration though I2C bus.
 Coming Soon! https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248/AccelG248_43/AccelG248_43.cs
 
 # Barometer
@@ -23,7 +23,7 @@ https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectr
 # Bluetooth
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth
 # Breadboard X1
-An easy breadboard opion. Simply access the socket directly to wire whatver your heart desires!
+An easy breadboard option. Simply access the socket directly to wire whatver your heart desires!
 
 # Breakout
 Simply a breakout of all signals.
@@ -79,13 +79,13 @@ Buttons map:
 * Forward: Pin 9
 
 # CAN DW
-CAN is not yet supported in TinyCLR OS, you can add it if you are up for a challange!
+CAN is not yet supported in TinyCLR OS, you can add it if you are up for a challenge!
 
 # Camera
-USB Host is not supported in TiynCLR OS
+USB Host is not supported in TinyCLR OS
 
-# Celluar Radio
-comming soon!
+# Cellular Radio
+coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio
 
 # Character Display
@@ -94,7 +94,7 @@ coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay/CharacterDisplay_43/CharacterDisplay_43.cs
 
 # ColorSense
-A color sensor that uses software I2C, not yet suported in TinyCLR OS.
+A color sensor that uses software I2C, not yet supported in TinyCLR OS.
 https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense/ColorSense_43/ColorSense_43.cs
 
 # Compass
@@ -102,7 +102,7 @@ Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass
 
 # Current ACS712
-This is a curent sensor that uses ACS712, which simply outputs an analog voltage.
+This is a current sensor that uses ACS712, which simply outputs an analog voltage.
 add example that shows the conversion math https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CurrentACS712/CurrentACS712_43/CurrentACS712_43.cs
 
 # Display CP7
@@ -127,8 +127,8 @@ VerticalSyncPolarity = false,
 ```
 
 # Display N18
-This is an SPI display that can work on any system, even small ons without TFT display support.
-coming soon! use the old brainpad driver.
+This is an SPI display that can work on any system, even small ones without TFT display support.
+coming soon! use the old BrainPad driver.
 
 
 # Display N7
@@ -230,7 +230,7 @@ VerticalSyncPolarity = false,
 A very common ultrasonic sensor that works by sending a pulse on the trig and measuring the response time on echo pin.
 
 ```
-I have the code in teh robot example
+I have the code in the robot example
 ```
 # Ethernet ENC28
 Requires an internal support in the TinyCLR OS port.
@@ -253,9 +253,9 @@ comming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS
 
 # GasSense
-This moudle can host several different air sensors, like Alcohol and CO2.
+This module can host several different air sensors, like Alcohol and CO2.
 
-The sensor has an internal heater that neds to be enableled and then it is a simple analog read.
+The sensor has an internal heater that needs to be enabled and then it is a simple analog read.
 
 ```
 using System.Threading;
@@ -284,7 +284,7 @@ Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro
 
 # HD44780
-See the Character Display Moudle
+See the Character Display Module
 
 # HubAP5
 No hub support is currently planned.
@@ -386,16 +386,16 @@ Center LED: pin ??
 LEDs in CW starting from the top: 1,2,3,4???
 
 # LED Strip
-A strip of 7 LEDs, connceted to pins 3 through 9.
+A strip of 7 LEDs, connected to pins 3 through 9.
 
 # Light Sense
 Simply using analog on pin 3. Use the same code as the potentiometer.
 
 # Load
-Each one of the 7 GPIO pins are connected to a trnsistor to handle a load, like a motor.
+Each one of the 7 GPIO pins are connected to a transistor to handle a load, like a motor.
 
 # MaxO
-Shift registes used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs.
+Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs.
 
 coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO
@@ -429,15 +429,15 @@ class Program {
 ```
 
 # Motor Driver
-The Motor Driver Module uses L298 H-brige that can drive two motors up to 4A.
+The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 
-* Pin 6: Motor A Dirrection (GPIO)
+* Pin 6: Motor A Direction (GPIO)
 * Pin 7: Motor A Speed (PWM)
-* Pin 8: Motor B Dirrection (GPIO)
+* Pin 8: Motor B Direction (GPIO)
 * Pin 9: Motor B Speed (PWM)
 
 > [!Tip]
-> NETMF didn't handle PWM coreclty. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../tinyclr/tutorials/pwm.html).
+> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../tinyclr/tutorials/pwm.html).
 
 This example will setup both motors and then will make the motor A go very slow forward then very fast backward, in a loop.
 
@@ -449,9 +449,9 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        // Determine what PWM controller is used for specific pins, use the power of intellesense!
-        // start typing FEZSpiderII.PwmPin. to navigate the options
-        // >>>>>>>>>>>> Will this work if we have differnt controller?
+        // Determine what PWM controller is used for specific pins, use the power of intellisense!
+        // start typing FEZSpider.PwmPin. to navigate the options
+        // >>>>>>>>>>>> Will this work if we have different controller?
 
         // Motor A
         var MotorDirA = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket8.Pin6);
@@ -484,7 +484,7 @@ This used daisylink but to chain some super expensive LED!
 We will not support this, use some of the many addressable LED options.
 
 # Music
-The Music Module uses th popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
+The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
 Original code is found at [here](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music) and needs a volunteer to update.
 
 # Null Modem
@@ -494,18 +494,18 @@ No driver is needed.
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII
 
 # OneWire X1
-A breakout with a terminal block for easully connecting one wire devices, specifically the common temperature probes.
+A breakout with a terminal block for easily connecting one wire devices, specifically the common temperature probes.
 one wire is not supported yet.
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OneWireX1
 
 # PIR
-Motion detection. Simply pin 3 changes irs state when it detect motion.
+Motion detection. Simply pin 3 changes irs state when it detects motion.
 
 # Parallel CNC
 Will not be supported.
 
 # Potentiometer
-The Potentiometer module is simply a variable resistor connected to pin3. Rotaing it will resul in an anlog value chanign from min to max.
+The Potentiometer module is simply a variable resistor connected to pin3. Rotating its knob will result in an analog value changing from min to max.
 
 ```
 using System.Threading;
@@ -585,9 +585,9 @@ https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectr
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12
 
 # Tunes
-The Tunes Module is a tiny speaker that is connected to pin 9. Use PWM to genrate sounds
+The Tunes Module is a tiny speaker that is connected to pin 9. Use PWM to generate sounds
 
-This example will keep chaging the freequency.
+This example will keep changing the frequency.
 
 ```
 using System.Threading;
@@ -641,4 +641,4 @@ Will not be supported, NDA issues.
 
 # XBee Adapter
 Simply, a serial port. From there a driver like https://xbee.codeplex.com/
- 
+
