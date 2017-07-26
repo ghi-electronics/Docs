@@ -76,7 +76,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="alpha-release-notes">Alpha Release Notes</h1>
 
-<h2 id="050-on-2017-07-07httpghielectronicscomdownloadstinyclrv050"><a href="http://ghielectronics.com/downloads/TinyCLR/v0.5.0/">0.5.0 on 2017-07-07</a></h2>
+<h2 id="050-on-2017-07-07">0.5.0 on 2017-07-07</h2>
 <h3 id="notes">Notes</h3>
 <p>This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!</p>
 <p>You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See <a href="porting/intro.html">here</a> for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See <a href="porting/native_interops.html">here</a> for details.</p>
@@ -172,7 +172,7 @@
 <li>CAN and USB host are missing.</li>
 <li>The USB client API is still very rough and will change.</li>
 </ul>
-<h2 id="040-on-2017-05-10httpghielectronicscomdownloadstinyclrtinyclr040zip"><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.4.0.zip">0.4.0 on 2017-05-10</a></h2>
+<h2 id="040-on-2017-05-10">0.4.0 on 2017-05-10</h2>
 <h3 id="notes-1">Notes</h3>
 <p>This release primarily fixes several bugs; implements more of the serial API; adds <code>DataReader</code>, <code>DataWriter</code>, and <code>Marshal</code> classes; and reworks a lot of the BrainPad API. A new Storage library was added that moves some large members (like <code>DataReader</code>) out of Devices that you may not always needed. There is more to be added to this library down the road. <code>SignalGenerator</code>, <code>SignalCapture</code>, and <code>PulseFeedback</code> were renamed to match the Windows 10 counterparts. Their API will be updated to match as well in a future release.</p>
 <p>The <code>Marshal</code> class under <code>System.Runtime.InteropServices</code> can be used like the old <code>Register</code> and <code>AddressSpace</code> classes to read and write memory. It also adds allocating and releasing unmanaged memory from the managed side that can be manipulated from the other members. </p>
@@ -248,7 +248,7 @@
 <li>Visual Basic resource files are wrapped in a second namespace.</li>
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
-<h2 id="030-on-2017-04-06httpghielectronicscomdownloadstinyclrtinyclr030zip"><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.3.0.zip">0.3.0 on 2017-04-06</a></h2>
+<h2 id="030-on-2017-04-06">0.3.0 on 2017-04-06</h2>
 <h3 id="notes-2">Notes</h3>
 <p>This release has several API additions. Some were added as features themselves (software SPI, SignalGenerator, etc) while others were added to support certain features (the VB runtime, string.Format, MemoryStream and IntPtr for Drawing, etc). We&#39;re working to align ourselves with the various <a href="https://github.com/Microsoft/referencesource">.NET Reference Sources</a> available. You&#39;ll also see many new icons throughout, application templates for the BrainPad, and common item templates. The NuGet packages that have dependencies (such as on Core), now require the major and minor versions to match. For example, the 0.3.0 Devices library depends on Core [0.3.0,0.4.0). This is to further our use of SemVer so that the native interop checksum only changes in major and minor versions. See the <a href="https://docs.microsoft.com/en-us/nuget/create-packages/dependency-versions">NuGet docs</a> for more information.</p>
 <p>The biggest addition is the drawing library. It was designed to mirror System.Drawing from the desktop. The basic API is there but there is still more work to be done. To support this, a DisplayController was added to the devices library to configure the display. Since there is no config yet you need to configure the display every time your program starts. A notable change from NETMF is calling flush on a drawing surface the size of the display will no longer draw to the display. Only drawing surfaces created from the FromHdc method passing in the Hdc value from the DisplayController will flush to the display. At this time, only bmp images are supported. Make sure you add a reference to GHIElectronics.TinyCLR.Drawing if using bitmap or font resources. Since it&#39;s in NuGet now it isn&#39;t automatically added.</p>
@@ -331,7 +331,7 @@
 <li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
-<h2 id="020-on-2017-03-07httpghielectronicscomdownloadstinyclrtinyclr020zip"><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.2.0.zip">0.2.0 on 2017-03-07</a></h2>
+<h2 id="020-on-2017-03-07">0.2.0 on 2017-03-07</h2>
 <h3 id="notes-3">Notes</h3>
 <p>You cannot use projects you made for the 0.1.0 version. You must recreate them and re-add your code files because of the changes to the project templates to make them more closely align them with the desktop .NET templates -- you&#39;ll notice the only difference is a few properties which prevent inclusion of reference assemblies. The templates also use the .NET Framework 4.5.2 target framework. This is only for NuGet compatibility going forward and does not mean you can use other libraries targeting that framework. This was done in anticipation of broader project system support of the new PackageReference format currently used in .NET Core which fails with unknown target frameworks.</p>
 <p>The MSBuild package is no longer provided or required. The metadata processor tool has moved internally to the extension and is invoked during deployment to the device. This means that pe and pdbx files are no longer redistributed with their assemblies -- they appear in a pe folder under the output directory when you deploy. We have also rewritten how dependencies are detected for deployment. If you notice any weird failures around assembly resolution or deployment, let us know and send us the entire project as-is so we can diagnose it.</p>
@@ -395,7 +395,7 @@
 <li>Deploying an assembly larger than the flash sector size fails.</li>
 <li>An 0xA2000000 error will get sent over the debug transport whenever there is no app present.</li>
 </ul>
-<h2 id="010-on-2016-12-16httpghielectronicscomdownloadstinyclrtinyclr010zip"><a href="http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.1.0.zip">0.1.0 on 2016-12-16</a></h2>
+<h2 id="010-on-2016-12-16">0.1.0 on 2016-12-16</h2>
 <h3 id="known-issues-13">Known Issues</h3>
 <ul>
 <li>After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it.</li>

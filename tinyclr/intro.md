@@ -7,12 +7,12 @@ TinyCLR OS is made for .NET developers. Threading, memory management, timers, ev
 Better yet, all libraries are available through NuGet. Because of this, there will be no SDK to install or machines to lock to specific versions. Simply use NuGet to download any needed version of any needed library on a per-project basis.
 
 1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
-2. Download and install the [TinyCLR OS Visual Studio extension](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/GHIElectronics.TinyCLR.VisualStudio.0.5.0.vsix).
+2. Download and install the [TinyCLR OS Visual Studio extension](http://files.ghielectronics.com/downloads/TinyCLR/Extension/GHIElectronics.TinyCLR.VisualStudio.0.5.0.vsix).
 3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? Take a look at the [FEZ](../hardware/products/FEZ.md): the board made for TinyCLR OS.
 4. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 5. Add some code and press `F5` to deploy and begin debugging your application!
-6. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet, so make sure to download the [available libraries](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR_Libraries.0.5.0.zip), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
-7. If you need to update the firmware on your device, download the [firmware](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR_Firmware.0.5.0.zip) and follow the [instructions](firmware_update.md) to update your device.
+6. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet, so make sure to download the [available libraries](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/GHIElectronics.TinyCLR.Libraries.0.5.0.zip), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
+7. If you need to update the firmware on your device, follow the [instructions](firmware_update.md) to update your device.
 
 If you're an existing user of NETMF and still want to use it in addition to TinyCLR OS, don't worry. TinyCLR OS is completely independent of NETMF and works side-by-side with no issues or changes required.
 

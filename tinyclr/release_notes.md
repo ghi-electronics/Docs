@@ -1,6 +1,6 @@
 # Alpha Release Notes
 
-## [0.5.0 on 2017-07-07](http://ghielectronics.com/downloads/TinyCLR/v0.5.0/)
+## 0.5.0 on 2017-07-07
 
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
@@ -101,7 +101,7 @@ After flashing the firmware for the first time on any device, Windows may still 
 - CAN and USB host are missing.
 - The USB client API is still very rough and will change.
 
-## [0.4.0 on 2017-05-10](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.4.0.zip)
+## 0.4.0 on 2017-05-10
 
 ### Notes
 This release primarily fixes several bugs; implements more of the serial API; adds `DataReader`, `DataWriter`, and `Marshal` classes; and reworks a lot of the BrainPad API. A new Storage library was added that moves some large members (like `DataReader`) out of Devices that you may not always needed. There is more to be added to this library down the road. `SignalGenerator`, `SignalCapture`, and `PulseFeedback` were renamed to match the Windows 10 counterparts. Their API will be updated to match as well in a future release.
@@ -180,7 +180,7 @@ After flashing the firmware for the first time on any device, Windows may still 
 - Visual Basic resource files are wrapped in a second namespace.
 - When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
 
-## [0.3.0 on 2017-04-06](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.3.0.zip)
+## 0.3.0 on 2017-04-06
 
 ### Notes
 This release has several API additions. Some were added as features themselves (software SPI, SignalGenerator, etc) while others were added to support certain features (the VB runtime, string.Format, MemoryStream and IntPtr for Drawing, etc). We're working to align ourselves with the various [.NET Reference Sources](https://github.com/Microsoft/referencesource) available. You'll also see many new icons throughout, application templates for the BrainPad, and common item templates. The NuGet packages that have dependencies (such as on Core), now require the major and minor versions to match. For example, the 0.3.0 Devices library depends on Core [0.3.0,0.4.0). This is to further our use of SemVer so that the native interop checksum only changes in major and minor versions. See the [NuGet docs](https://docs.microsoft.com/en-us/nuget/create-packages/dependency-versions) for more information.
@@ -270,7 +270,7 @@ You can see some examples of the new APIs added in this release [here](https://g
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
 
-## [0.2.0 on 2017-03-07](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.2.0.zip)
+## 0.2.0 on 2017-03-07
 
 ### Notes
 You cannot use projects you made for the 0.1.0 version. You must recreate them and re-add your code files because of the changes to the project templates to make them more closely align them with the desktop .NET templates -- you'll notice the only difference is a few properties which prevent inclusion of reference assemblies. The templates also use the .NET Framework 4.5.2 target framework. This is only for NuGet compatibility going forward and does not mean you can use other libraries targeting that framework. This was done in anticipation of broader project system support of the new PackageReference format currently used in .NET Core which fails with unknown target frameworks.
@@ -337,7 +337,7 @@ After flashing the firmware the first time, Windows may still use the old NETMF 
 - Deploying an assembly larger than the flash sector size fails.
 - An 0xA2000000 error will get sent over the debug transport whenever there is no app present.
 
-## [0.1.0 on 2016-12-16](http://ghielectronics.com/downloads/TinyCLR/TinyCLR.0.1.0.zip)
+## 0.1.0 on 2016-12-16
 
 ### Known Issues
 - After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it.
