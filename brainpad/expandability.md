@@ -7,7 +7,7 @@ This is an easy option as these modules simply plug in. There are hundreds of av
 
 (picture)
 
-This page covers further details http://docs.ghielectronics.com/tinyclr/accessories/click...what is the link in previous email?
+This [page](../tinyclr/accessories/intro.md) covers further details.
 
 ## Direct Wiring
 This option is only recommended for advanced users with electronics background. 

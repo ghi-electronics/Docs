@@ -6,7 +6,7 @@ To use this shield, just plug it on top of your board
 
 The driver is found at (link). 
 
-Import this NuGet Package, as explained [here](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html). 
+Import this NuGet Package, as explained [here](../tutorials/intro.md). 
 
 
 You are now ready to use the shield

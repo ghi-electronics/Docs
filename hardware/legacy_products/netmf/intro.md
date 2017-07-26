@@ -2,7 +2,7 @@
 
 .NET Micro Framework (NETMF) is a subset of the full .NET. Initiated by Microsoft for SPOT watches and then later open sourced. The latest working version Visual Studio working with our NETMF products is VS2013.
 
-GHI Electronics' TinyCLR OS is the upgrade path to NETMF on all our future products. Learn more about [TinyCLR OS](www.tinyclr.com)
+GHI Electronics' TinyCLR OS is the upgrade path to NETMF on all our future products. Learn more about [TinyCLR OS](http://tinyclr.com)
 
 To use NETMF, install these components:
 1.	Visual Studio 20013 (community edition is also supported)

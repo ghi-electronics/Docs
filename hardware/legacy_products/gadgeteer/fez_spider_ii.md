@@ -1,6 +1,6 @@
 # FEZ Spider II
 
-FEZ Spider II is a legacy .NET Gadgeteer product. The core of the FEZ Spider II is the G120E System on Module (SoM), which is [supported by TinyCLR]( http://docs.ghielectronics.com/tinyclr/boards/fez.html).
+FEZ Spider II is a legacy .NET Gadgeteer product. The core of the FEZ Spider II is the G120E System on Module (SoM), which is [supported by TinyCLR](../../products/fez.md).
 
  # Updating the Bootloader and the Firmware
 
@@ -26,7 +26,7 @@ To run TinyCLR OS on the  FEZ Spider II:
  # Blinking the onboard LED
 
 >Tip
-If you have never used TinyCLR OS before, [start here]( http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+If you have never used TinyCLR OS before, [start here](../../../tinyclr/tutorials/intro.md)
 
 ```
 using System.Threading;

@@ -10,9 +10,9 @@ Originally a .NET Micro Framework product, netdunio 3 is available in three flav
 
 
 
-Follow the instructions at the [STM32 bootloader](http://docs.ghielectronics.com/hardware/stm32_bootloader.html) page to generate a DFU file and load on your board.
+Follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate a DFU file and load on your board.
 
-When done, your PC should detect a TinyCLR device. You are now ready to [start coding](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.

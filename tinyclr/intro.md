@@ -8,7 +8,7 @@ Better yet, all libraries are available through NuGet. Because of this, there wi
 
 1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Download and install the [TinyCLR OS Visual Studio extension](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/GHIElectronics.TinyCLR.VisualStudio.0.5.0.vsix).
-3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? Take a look at the [FEZ](../hardware/FEZ.md): the board made for TinyCLR OS.
+3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? Take a look at the [FEZ](../hardware/products/FEZ.md): the board made for TinyCLR OS.
 4. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 5. Add some code and press `F5` to deploy and begin debugging your application!
 6. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet, so make sure to download the [available libraries](https://www.ghielectronics.com/downloads/TinyCLR/v0.5.0/TinyCLR_Libraries.0.5.0.zip), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
