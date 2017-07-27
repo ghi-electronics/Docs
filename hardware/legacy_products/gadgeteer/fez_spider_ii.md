@@ -1,7 +1,9 @@
 # FEZ Spider II
 
+![FEZ Spider II](images/fez_spider_ii.jpg)
+
 FEZ Spider II is a .NET Gadgeteer product.
-(image)
+
 
 > [!Tip]
 > The use of the original NETMF and Gadgeteer software is discouraged. [Read more](intro.html).

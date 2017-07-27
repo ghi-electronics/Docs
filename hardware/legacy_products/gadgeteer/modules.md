@@ -6,33 +6,47 @@ This page lists all .NET Gadgeteer modules and how can they be used with [TinyCL
 > If a module is simple, then no driver at all is provided!
 
 > [!Tip]
-> You can use intellisense with the pin definition class to quickly determine where things go.
+> You can use Intellisense with the pin definition class to quickly determine where things go.
 > For example: Typing `FezSpider.GpioPin.Socket3.` lists the available GPIO pins on scoekt3
 > Another example: Typing `FezSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
 
 > [!Tip]
 > We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.
 
+
 # Accel G248
+![Accel G248](images/modules/accel_g248.jpg)
+
 The Accel G248 measures acceleration though I2C bus.
+
 Coming Soon! https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248/AccelG248_43/AccelG248_43.cs
 
 # Barometer
+![Barometer](images/modules/barometer.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer
 
 # Bluetooth
+![Bluetooth](images/modules/bluetooth.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth
 # Breadboard X1
+![Breadboard X1](images/modules/breadboard_x1.jpg)
+
 An easy breadboard option. Simply access the socket directly to wire whatver your heart desires!
 
 # Breakout
+![Breakout](images/modules/breakout.jpg)
 Simply a breakout of all signals.
 
 # Breakout TB10
+![Breakout TB10](images/modules/breakout_tb10.jpg)
+
 Simply a breakout of all signals, on a terminal block.
 
 # Button
-(image)
+![Button](images/modules/button.jpg)
+
 The Button module is very simple, with a button connected to pin 3 and an LED connected to pin4.
 
 This example will blink the LED a different rate, depending on the button press.
@@ -65,6 +79,8 @@ class Program {
 }
 ```
 # Button S7
+![Button S7](images/modules/button_s7.jpg)
+
 7 buttons on a single module, with LEDs that light up with button presses! 
 
 Use the same code example provided for the Button Module.
@@ -79,33 +95,51 @@ Buttons map:
 * Forward: Pin 9
 
 # CAN DW
+![Button S7](images/modules/can_dw.jpg)
+
 CAN is not yet supported in TinyCLR OS, you can add it if you are up for a challenge!
 
 # Camera
+![Camera](images/modules/camera.jpg)
+
 USB Host is not supported in TinyCLR OS
 
 # Cellular Radio
-coming soon!
+![Cellular Radio](images/modules/cellular_radio.jpg)
+
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio
 
 # Character Display
+![Character Display](images/modules/character_display.jpg)
+
 This is a standard and very common HD44780 display.
-coming soon! 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay/CharacterDisplay_43/CharacterDisplay_43.cs
+
+Coming soon! https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay/CharacterDisplay_43/CharacterDisplay_43.cs
 
 # ColorSense
+![ColorSense](images/modules/color_sense.jpg)
+
 A color sensor that uses software I2C, not yet supported in TinyCLR OS.
+
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense/ColorSense_43/ColorSense_43.cs
 
 # Compass
+![Compass](images/modules/compass.jpg)
+
 Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass
 
 # Current ACS712
+![Current ACS712](images/modules/current_acs712.jpg)
+
 This is a current sensor that uses ACS712, which simply outputs an analog voltage.
 add example that shows the conversion math https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CurrentACS712/CurrentACS712_43/CurrentACS712_43.cs
 
 # Display CP7
+![Display CP7](images/modules/display_cp7.jpg)
+
 Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
 The configurations for the display:
 ```
@@ -127,11 +161,15 @@ VerticalSyncPolarity = false,
 ```
 
 # Display N18
+![Display N18](images/modules/display_n18.jpg)
+
 This is an SPI display that can work on any system, even small ones without TFT display support.
-coming soon! use the old BrainPad driver.
+Coming soon! Use the old BrainPad driver.
 
 
 # Display N7
+![Display N7](images/modules/display_n7.jpg)
+
 Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
 The configurations for the display:
 ```
@@ -154,6 +192,8 @@ VerticalSyncPolarity = false,
 
 
 # Display NHVN
+![Display NHVN](images/modules/display_nhvn.jpg)
+
 This allows the use of several displays offered by http://newhavendisplay.com/
 
 Supported displays:
@@ -163,6 +203,8 @@ Supported displays:
 
 
 # Display T35
+![Display T35](images/modules/display_t35.jpg)
+
 Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
 The configurations for the display:
 ```
@@ -184,6 +226,8 @@ VerticalSyncPolarity = false,
 ```
 
 # Display T43
+![Display T43](images/modules/display_t43.jpg)
+
 Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
 The configurations for the display:
 ```
@@ -204,8 +248,9 @@ VerticalSyncPulseWidth = 10,
 VerticalSyncPolarity = false,
 ```
 
-
 # Display TE35
+![Display TE35](images/modules/display_te35.jpg)
+
 Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
 The configurations for the display:
 ```
@@ -227,32 +272,50 @@ VerticalSyncPolarity = false,
 ```
 
 # Distance US3
+![Distance US3](images/modules/distance_us3.jpg)
+
 A very common ultrasonic sensor that works by sending a pulse on the trig and measuring the response time on echo pin.
 
 ```
 I have the code in the robot example
 ```
+
+
 # Ethernet ENC28
+![Ethernet ENC28](images/modules/ethernet_enc28.jpg)
+
 Requires an internal support in the TinyCLR OS port.
 
 # Ethernet J11D
+![Ethernet J11D](images/modules/ethernet_j11d.jpg)
+
 Requires an internal support in the TinyCLR OS port.
 
 # Extender
+![Extender](images/modules/extender.jpg)
+
 No drivers are needed.
 
 # FEZtive
+![FEZtive](images/modules/feztive.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive
 
 # Flash
-commig soon!
+![Flash](images/modules/flash.jpg)
+
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH
 
 # GPS
-comming soon!
+![GPS](images/modules/gps.jpg)
+
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS
 
 # GasSense
+![GasSense](images/modules/gas_sense.jpg)
+
 This module can host several different air sensors, like Alcohol and CO2.
 
 The sensor has an internal heater that needs to be enabled and then it is a simple analog read.
@@ -280,25 +343,37 @@ class Program {
 ```
 
 # Gyro
+![Gyro](images/modules/gyro.jpg)
+
 Coming soon! 
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro
 
 # HD44780
+![HD44780](images/modules/hd44780.jpg)
+
 See the Character Display Module
 
 # HubAP5
+![HubAP5](images/modules/hub_ap5.jpg)
+
 No hub support is currently planned.
 
 # IO60P16
-Thi module provide 60 IOs and 16 PWM pins.
+![IO60P16](images/modules/io60p16.jpg)
+
+This module provide 60 IOs and 16 PWM pins.
 Will not be ported but you can port the [original driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IO60P16).
 
 # IR Receiver
-Comming soon!
+![IR Receiver](images/modules/ir_reciever.jpg)
+
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver
 
 
 # Joystick
+![Joystick](images/modules/joystick.jpg)
+
 The Joystick module has two analog inputs for X and Y position. Pressing the knob also works like a button.
 
 ```
@@ -326,10 +401,14 @@ class Program {
 ```
 
 # Keypad KP16
+![Keypad KP16](images/modules/keypad_kp16.jpg)
+
 A numerical Keypad
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16
 
 # LED 7C
+![LED 7C](images/modules/led_7c.jpg)
+
 An LED that can be set to one of 7 colors, 8 if you count off!
 
 ```
@@ -379,6 +458,8 @@ class Program {
 }
 ```
 # LED 7R
+![LED 7R](images/modules/led_7r.jpg)
+
 This is a ring of 6 LEDs and a 7th center LED.
 Reference the LED 7C module for using pins.
 
@@ -386,25 +467,37 @@ Center LED: pin ??
 LEDs in CW starting from the top: 1,2,3,4???
 
 # LED Strip
+![LED Strip](images/modules/led_strip.jpg)
+
 A strip of 7 LEDs, connected to pins 3 through 9.
 
 # Light Sense
+![Light Sense](images/modules/light_sense.jpg)
+
 Simply using analog on pin 3. Use the same code as the potentiometer.
 
 # Load
+![Load](images/modules/load.jpg)
+
 Each one of the 7 GPIO pins are connected to a transistor to handle a load, like a motor.
 
 # MaxO
+![MaxO](images/modules/maxo.jpg)
+
 Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs.
 
-coming soon!
+Coming soon!
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO
 
 # MicroSD Card
+![MicroSD Card](images/modules/microsd.jpg)
+
 No file system support yet.
 
 # Moisture
-This is a simple analog input measuring the dirst resistance (moisture). An enable pin needs to be activeted.
+![Moisture](images/modules/moisture.jpg)
+
+This is a simple analog input measuring the direct resistance (moisture). An enable pin needs to be activated.
 
 ```
 using System.Threading;
@@ -429,6 +522,8 @@ class Program {
 ```
 
 # Motor Driver
+![Motor Driver](images/modules/motordriver.jpg)
+
 The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 
 * Pin 6: Motor A Direction (GPIO)
@@ -439,7 +534,7 @@ The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 > [!Tip]
 > NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../tinyclr/tutorials/pwm.html).
 
-This example will setup both motors and then will make the motor A go very slow forward then very fast backward, in a loop.
+This example will setup both motors and then will make motor A go very slow forward then very fast backward, in a loop.
 
 ```
 using System.Threading;
@@ -480,31 +575,48 @@ class Program {
 }
 ```
 # Multicolor LED
+![Multicolor LED](images/modules/multicolor_led.jpg)
+
+
 This used daisylink but to chain some super expensive LED!
 We will not support this, use some of the many addressable LED options.
 
 # Music
+![Music](images/modules/music.jpg)
+
 The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
 Original code is found at [here](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music) and needs a volunteer to update.
 
 # Null Modem
+![Null Modem](images/modules/null_modem.jpg)
+
 No driver is needed.
 
 # OBD II
+![OBD II](images/modules/obd_ii.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII
 
 # OneWire X1
+![OneWire X1](images/modules/onewire_x1.jpg)
+
 A breakout with a terminal block for easily connecting one wire devices, specifically the common temperature probes.
 one wire is not supported yet.
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OneWireX1
 
 # PIR
+![PIR](images/modules/pir.jpg)
+
 Motion detection. Simply pin 3 changes irs state when it detects motion.
 
 # Parallel CNC
+![Parallel CNC](images/modules/parallel_cnc.jpg)
+
 Will not be supported.
 
 # Potentiometer
+![Potentiometer](images/modules/potentiometer.jpg)
+
 The Potentiometer module is simply a variable resistor connected to pin3. Rotating its knob will result in an analog value changing from min to max.
 
 ```
@@ -525,66 +637,106 @@ class Program {
 }
 ```
 # Pulse Count
+![Pulse Count](images/modules/pulse_count.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount
 
 # Pulse InOut
+![Pulse InOut](images/modules/pulse_inout.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseInOut
 
 # Pulse Oximeter
+![Pulse Oximeter](images/modules/pulse_oximeter.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter
 
 # RFID Reader
+![RFID Reader](images/modules/rfid_reader.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader
 
 # RS232
+![RS232](images/modules/rs232.jpg)
+
 Simply a serial port.
 
 # RS485 
+![RS485](images/modules/rs485.jpg)
+
 Simply a serial port.
 
 # Radio FM1
+![Radio FM1](images/modules/radio_fm1.jpg)
+
 I have the code on click
 
 # Reflector R3
+![Reflector R3](images/modules/reflector_r3.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3
 
 # Relay ISOx16
+![Relay ISOx16](images/modules/relay_isox16.jpg)
+
 An array of 16 relays.
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16
 
 # Relay X1
+![Relay X1](images/modules/relay_x1.jpg)
+
 Simply use set pin 3 high to activate the relay.
 
 # Rotary H1
+![Rotary H1](images/modules/rotary_h1.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1
 
 # SD Card
+![SD Card](images/modules/sd_card.jpg)
+
 File system is not supported yet.
 
-# SPlus
-We will nto support hubs and inderrections.
+# S-Plus
+![S-Plus](images/modules/s_plus.jpg)
+
+We will not support hubs and inderrections.
 
 # Serial Camera
+![Serial Camera](images/modules/serial_camera.jpg)
+
 Aren't they both the same?
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL2
 
 # Stepper L6470
+![Stepper L6470](images/modules/stepper_l6470.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470
 
 # TempHumidity
+![TempHumidity](images/modules/temp_humidity.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity
 
 # Thermocouple
+![Thermocouple](images/modules/thermocouple.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple
 
 # Touch C8
+![Touch C8](images/modules/touch_c8.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8
 
 # Touch L12
+![Touch L12](images/modules/touch_l12.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12
 
 # Tunes
+![Tunes](images/modules/tunes.jpg)
+
 The Tunes Module is a tiny speaker that is connected to pin 9. Use PWM to generate sounds
 
 This example will keep changing the frequency.
@@ -612,33 +764,53 @@ class Program {
     }
 }
 ```
-# US Battery 4xAA
+# UC Battery 4xAA
+![UC Battery 4xAA](images/modules/uc_battery_4xaa.jpg)
+
 No driver is needed.
 
 # USB Client DP
+![USB Client DP](images/modules/usb_client.jpg)
+
 No driver is needed.
 
 # USB Client SP
+![USB Client SP](images/modules/usb_client_sp.jpg)
+
 No driver is needed.
 
 # USB Host
+![USB Host](images/modules/usb_host.jpg)
+
 USB Host is not currently supported.
 
 # USB Serial
+![USB Serial](images/modules/usb_serial.jpg)
+
 Simply, a serial port.
 
 # USB Serial SP
+![USB Serial SP](images/modules/usb_serial_sp.jpg)
+
 Simply, a serial port.
 
 # VideoOut
+![VideoOut](images/modules/video_out.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut
 
 # WiFi RN171
+![WiFi RN171](images/modules/wifi_rn171.jpg)
+
 https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171
 
 # WiFi RS21
+![WiFi RS21](images/modules/wifi_rs21.jpg)
+
 Will not be supported, NDA issues.
 
 # XBee Adapter
+![XBee Adapter](images/modules/xbee_adapter.jpg)
+
 Simply, a serial port. From there a driver like https://xbee.codeplex.com/
 

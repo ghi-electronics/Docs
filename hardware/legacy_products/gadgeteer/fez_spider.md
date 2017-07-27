@@ -1,10 +1,11 @@
 # FEZ Spider
 
-FEZ Spider is a .NET Gadgeteer product, that utlizes .NET Micro Frameworks (NETMF). 
-(image)
+![FEZ Spider](images/fez_spider.jpg)
+
+FEZ Spider is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). 
 
 > [!Tip]
-> The use of the original NETMF and Gadgeteer software is discouraged.[Read more](intro.html).
+> The use of the original NETMF and Gadgeteer software is discouraged. [Read more](intro.html).
 
 # Using TinyCLR OS
 
@@ -83,4 +84,4 @@ class Program {
 > The complete pin mapping is made available for TinyCLR OS. You should not need to use any schematics.
 
 # Adding .NET Gadgeteer Modules
-You are now ready to start with [Modules](modules.html).
+You are now ready to start with [Modules](/modules.html).

@@ -11,9 +11,9 @@ Microsoft's NETMF website (outdated) http://www.netmf.com/
 ## Open source
 
 Most of the .NET Gadgeteer ecosystem is open source.
-•	[Microsoft’s Gadgeteer core](our fork?)
-•	GHI Electronics’ [Software sources and Hardware design files]( https://github.com/ghi-electronics/NETMF-Gadgeteer)
-•	The Gadgeteer graphical designer was never made available by Microsoft.
+*	[Microsoft’s Gadgeteer core](our fork?)
+*	GHI Electronics' [Software sources and Hardware design files]( https://github.com/ghi-electronics/NETMF-Gadgeteer)
+*	The Gadgeteer graphical designer was never made available by Microsoft.
 
 ## Using .NET Gadgeteer
 To use .NET Gadgeteer, install the latest NETMF software as explained [here](/hardware/legacy_products/netmf/intro.html). You will also need to install the .NET [Gadgeteer core, this is on codeplex and being shut down](http://gadgeteer.codeplex.com/downloads/get/1519812). (Is it okay to install this after our SDK?)

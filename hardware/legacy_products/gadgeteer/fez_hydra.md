@@ -1,6 +1,8 @@
 # FEZ Hydra
 
-FEZ Hydra is an open source gadgeteer board running NETMF. Please follow the Gadgeteer into instructions on using gadgeteer devices.
+![FEZ Hydra](images/fez_hydra.jpg)
+
+FEZ Hydra is an open source gadgeteer board running NETMF. Please follow the Gadgeteer instructions on using gadgeteer devices.
 
 Resources:
 *	Schematics
