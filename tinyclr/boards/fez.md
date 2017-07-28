@@ -1,4 +1,5 @@
 # FEZ
+![FEZ](images/FEZ.jpg) 
 
 FEZ is the official TinyCLR OS board and reference design. Its port, called FEZCLR, has the latest and greatest software, and should be used as a reference for starting new ports. 
 

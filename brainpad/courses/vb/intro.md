@@ -1,8 +1,10 @@
+# Introduction to Visual Basic
 
-___
-# Introduction to the BrainPad 
-___
+Visual Basic is a modern .NET programming language. It is as powerful as any of the other programmign languiages but its code is more englich-like, making it a student/teacher favorite.
 
+The courses are in the process of being created. Please bear with us.
+
+---
 
 ## Overview 
 Students will learn how to create projects in Visual Studio along with programming basics. Applications in this lesson will be limited to the `BrainPad` object, `If` statements, a `While` loop and the template functions.
