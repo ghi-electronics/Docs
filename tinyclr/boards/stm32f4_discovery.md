@@ -8,9 +8,9 @@ The discovery boards include a built-in native debugging support, called ST-Link
 
 The [STM32F411 Discovery board]( http://www.st.com/en/evaluation-tools/32f411ediscovery.html)
 
-This discovery board uses essentially the same microcontroller found on FEZ. Follow the same instructions as [FEZ board](http://docs.ghielectronics.com/tinyclr/boards/fez.html)
+This discovery board uses essentially the same microcontroller found on FEZ. Follow the same instructions as [FEZ board](fez.md)
 
 
 ## STM32F407 Discovery
 
-The microcontroller on this discovery board is very similar to the one used on FEZ (STM32F401). Follow the same instructions as [FEZ board](http://docs.ghielectronics.com/tinyclr/boards/fez.html)
+The microcontroller on this discovery board is very similar to the one used on FEZ (STM32F401). Follow the same instructions as [FEZ board](fez.md)
