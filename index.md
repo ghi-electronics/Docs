@@ -2,7 +2,7 @@ http://docs.ghielectronics.com is where you can find tutorials, samples, documen
 
 Some of the available docs are not yet complete, so please check back frequently.
 
-You may obrain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or though our [community forums](https://forums.ghielectronics.com/).
+You may obtain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or though our [community forums](https://forums.ghielectronics.com/).
 
 (replace this image)
 
