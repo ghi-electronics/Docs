@@ -1,17 +1,16 @@
 # Adafruit Display Shield
+![Adafruit 1.8" Color TFT Shield w/microSD and Joystick](images/adafruit-tft-joystick-shield.jpg) 
 
 The [Adafruit 1.8" Color TFT Shield w/microSD and Joystick](https://www.adafruit.com/product/802) plugs right on top of FEZ, or any other Arduino-pinout compatible board.
 
-To use this shield, just plug it on top of your board
+To use this shield, just plug it on top of your Arduno-pinout compatible board, like the [FEZ](../../hardware/products/fez.html).
 
-The driver is found at (link). 
-
-Import this NuGet Package, as explained [here](../tutorials/intro.md). 
+The driver is found at (coming soon)
 
 
 You are now ready to use the shield
 
-```csharp
+```
 Display18.Display n18 = new Display18.Display(FEZ.GpioPin.A0, FEZ.GpioPin.A1, FEZ.SpiBus.Spi1);
 int count = 0;
 while (true)

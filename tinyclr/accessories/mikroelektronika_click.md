@@ -1,8 +1,8 @@
-# MikroeElectronika Click
-
+# MikroElektronika Click
+![Mikroelektronika Click](images/mikro-click.jpg) 
 Through Mikro Electronica's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click modules](https://shop.mikroe.com/click) can be easily connected to your board.
 
-The BrainPad, Clicker, Clicker2 and Quail bards all have sockets for plugging click modules. You can also use FEZ, or any other Arduino-pinout compatible board through the [Arduino UNO Click shield](https://shop.mikroe.com/arduino-uno-click-shield)
+The [BrainPad](../../brainpad/intro.html), [Clicker](../boards/clicker.html) and [Quail](../boards/quail.html) boards all have sockets for plugging click modules. You can also use [FEZ](../../hardware/products/fez.html), or any other Arduino-pinout compatible board through the [Arduino UNO Click shield](https://shop.mikroe.com/arduino-uno-click-shield)
 
 Current available Click module drivers:
 - [FM Radio click](https://shop.mikroe.com/fm-click)

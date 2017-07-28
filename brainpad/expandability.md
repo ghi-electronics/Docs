@@ -5,14 +5,16 @@ Additional functionality can be added to the BrainPad through its expansion head
 ## Plug-and-play Click Modules
 This is an easy option as these modules simply plug in. There are hundreds of available options https://shop.mikroe.com/click 
 
-(picture)
+![Mikroelektronika Click](images/mikro-click.jpg) 
 
-This [page](../tinyclr/accessories/intro.md) covers further details.
+This page covers further details on the [click modules](../tinyclr/accessories/mikroelectronika_click.html)
+
+Advanced users can add any of the available mdouels. However, there are [courses](courses/intro.html) that cover specifc modules and include all the needed drivers.
 
 ## Direct Wiring
 This option is only recommended for advanced users with electronics background. 
 
-(picture)
+![BrainBot](images/brainbot.jpg) 
 
 As a demo, we built this robot with a chassis we ordered from Amazon http://a.co/dwzywoI The continuous servo motors simply plug in. Pay attention to wires, where the orange wire should be connected to the pin labeled with ~. We then used a breadboard with an ultrasonic distance sensor. This will be used to detect objects to backup the robot.
 
@@ -68,3 +70,7 @@ if (use_builtin)
     }
 }
 ```
+
+This other demo video talk about stepper motors and uses the BrainPad.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SdUkC9XtTSo" frameborder="0" allowfullscreen></iframe>

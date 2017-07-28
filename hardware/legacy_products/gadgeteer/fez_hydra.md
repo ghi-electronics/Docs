@@ -1,6 +1,20 @@
 # FEZ Hydra
 
-FEZ Hydra is an open source gadgeteer board running NETMF. Please follow the Gadgeteer into instructions on using gadgeteer devices.
+![FEZ Hydra](images/fez_hydra.jpg)
 
-Resources:
-*	Schematics
+FEZ Hydra is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF).
+
+# Resources
+* [Schematics (add it)]()
+
+# Using the Gadgeteer software
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
+
+# Using TinyCLR OS
+If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
+
+## Loading Bootloader Version 2
+(coming soon!)
+
+## Loading the Firmware
+(coming soon!)

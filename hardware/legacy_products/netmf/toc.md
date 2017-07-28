@@ -1,5 +1,6 @@
 # [Intro](intro.md)
 # [EMX](emx.md)
+# [USBizi](usbizi.md)
 # [Embedded Master](embedded_master.md)
 # [ChipworkX](chipworkx.md)
-# [USBizi](usbizi.md)
+# [CANxtra](canxtra.md)

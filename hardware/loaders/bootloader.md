@@ -17,6 +17,17 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 - X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device.
 - U: upload a file to the device using 1K XMODEM. Only send *.glb files meant for your device.
 
+An example of firmware update steps: (using the USB interface)
+1. Set your board in the bootloader mode. Each product has a specific way to enter the boot loader.
+2. Open any terminal software, for example [Tera Term](http://ttssh2.osdn.jp/).
+3. Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)
+4. Press `V` and then enter. You will see back the boot loader version number (v2.x.x)
+5. Press `U` or `X` and then enter. Use `X` for firmware file type GHI and `U` for firmware file type GLB. 
+6. Press `Y` to confirm then enter. You will now see `CCCC`...
+7. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
+8. Select the firmware file.
+9. When the transfer is complete, reset your board.
+
 ## Version 1.0
 Currently the EMX, G120, and G120E use this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
 
@@ -27,6 +38,9 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 - R: runs the firmware if present.
 - B: increases the baud rate in serial mode to 921,600.
 - X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device. The firmware is automatically run after a successful upload.
+
+> [!Tip]
+> The USB interface on Version 1.0 doesn't always work on Windows 7 and newer operating systems. Use the serial interface instead.
 
 # GLB File Format
 

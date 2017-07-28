@@ -1,55 +1,39 @@
 # FEZ Spider II
 
-FEZ Spider II is a legacy .NET Gadgeteer product. The core of the FEZ Spider II is the G120E System on Module (SoM), which is [supported by TinyCLR](../../products/fez.md).
+![FEZ Spider II](images/fez_spider_ii.jpg)
 
- # Updating the Bootloader and the Firmware
+FEZ Spider II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider II is the G120E System on Module (SoM).
 
-To run TinyCLR OS on the  FEZ Spider II:
+# Resources
+* [Schematics (add it)]()
 
-1. Set the board's configuration switches in boot mode. That is by switching #1 and #2 to the on position.
-2. Connect the FEZ Spider II to a power module (red module) and then to a PC.
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, download then here.
-4. Open any terminal software, we recommend Tera Term.
-5. Select serial and pick the COM port associated with your board.
-6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`.
-7. Enter `X` and you will see `CCCC`... showing on the terminal.
-8. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-9. Select the `G120 Bootloader v203.ghi` (or newer) file. You can find available downloads here
-10. You will see `File Transfer Finished Successfully`.
-11. Change the configuration switches back to the off position and reset the board.
-13. Close Tera Term and reopen it.
-14. Press `V` and then enter. You will see back the boot loader version number (v2.0.3)
-15. Press `U` and then enter, then `Y` and then enter. You will now see `CCCC`... like before.
-16. Now you can transfer the firmware file, just like you transferred the bootloader before. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-17. Select the `G120 Frimware.xxx.glb` (or newer) file. When done, reset the board.
-17. 
- # Blinking the onboard LED
+# Using the Gadgeteer software
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
->Tip
-If you have never used TinyCLR OS before, [start here](../../../tinyclr/tutorials/intro.md)
+# Using TinyCLR OS
+If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
 
-```
-using System.Threading;
-using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Pins;
+## Loading Bootloader Version 2
 
-namespace FEZSpiderII {
-    class Program {
-        static void Main() {
-           var led = GpioController.GetDefault().OpenPin(G120E.GpioPin.P1_31);
-           led.SetDriveMode(GpioPinDriveMode.Output);
+1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi)
+2. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
+3. Connect the FEZ Spider to a power module (red module) and then to a PC.
+4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
+5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
+6. Select serial and pick the COM port associated with your board.
+7. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
+8. Enter `X` and you will see `CCCC`... showing on the terminal.
+9. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
+10. Select the bootloader file you have downloaded above.
+11. You will see `File Transfer Finished Successfully`.
+12. Change the configuration switches back to the off position and reset the board.
+13. You are now running GHI Electronics bootloader version 2!
 
-           while(true) {
-                led.Write(GpioPinValue.High);
-                Thread.Sleep(200);
-                led.Write(GpioPinValue.Low);
-                Thread.Sleep(200);
-            }
-        }
-    }
-}
-```
+## Loading the Firmware
 
-# Using the Gadgeteer modules
+> [!Tip]
+> First make sure you have bootloader Version 2 loaded. This needs to be done only once.
 
-In this example, we have a button connected to socket 14. The button is connected to pin 3.
+To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
+
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G120/G120%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.

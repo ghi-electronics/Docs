@@ -1,3 +1,12 @@
+# C Sharp (C#)
+It is not a secret that C and C++ are the most popular programing languages among professionals. This is more partically true for professionals that work with small digital systems.
+
+C# is the modern cousin of the C and C++ family. It syntax is very close to JAVA, another very popular programming language.
+
+The courses are in the process of being created. Please bear with us.
+
+---
+
 # Introduction to the BrainPad 
 
 ## Overview 

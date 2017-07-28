@@ -1,4 +1,5 @@
 # STM32 Bootloader
+The STM32 Bootloader lives on all STM32 chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.
 
 These instructions apply to all STM32 chips with built in USB and DFU features.
 
@@ -12,9 +13,9 @@ TinyCLR OS build system will generate a bin file firmware that can be loaded usi
 4. You now have the DFU file!
 
 
-## Uploading the DFU file
+## Uploading DFU Files
 To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 button, just hold the button down while powering the system up. The device manager will see the device "STM Device in DFU Mode".
-1. Find and open "Open DfuSe Demo".
+1. Find and open "Open DfuSe Demo" (from the ST download higher in this page)
 2. Under "Upgrade and Verify Action", click the "Chose..." button and select the firmware DFU file you want to load.
 3. Click the "Upgrade" button.
 4. Click the "Leave DFU mode" button.

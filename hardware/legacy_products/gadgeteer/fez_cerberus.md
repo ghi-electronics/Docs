@@ -1,26 +1,58 @@
 # FEZ Cerberus
 
-The Cerb family included FEZ Cerberus, FEZ Cerbuino Bee, FEZ Cerbuino Net, FEZ Cerb40, FEZ Cerb40 II, FEZ Cerbot, and GameO. All these open source devices worked with NETMF
+![FEZ Cerberus](images/fez_cerberus.jpg)
 
-To use any of the cerb-family boards, follow the setup instructions on the NETMF into page (link).
+FEZ Cerberus is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cerberus is the G30 System on Chip (SoC).
 
-Resources:
-*	Schematic
-*	Development board reference schematic
+FEZ Cerberus is the mother of of [the Cerb Family](the-cerb-family).
 
-G400D is compatible the GHI Electronics. Please consider one of these modules as a drop-in hardware replacement for G400D 
+# Resources
+* [FEZ Cerberus Schematics (add it)]()
 
-We recommend TinyCLR OS as a replacement for NETMF. Learn more about TinyCLR at www.tinyclr.com.
-To help you evaluate TinyCLR OS, we are providing a preview firmware for G30. Load this firmware using our [boot loader](../../loaders/bootloader.md) and then these devices will run TinyCLR-OS
+# Using the Gadgeteer software
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
-FEZ Cerb firmware 0.5.0 (link)
+# Using TinyCLR OS
+If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
 
-The FEZ Cerberus family of boards, FEZ Cerberus, FEZ Cerbuino and the Cerb40 were originally made to run .NET Micro Framework. To 
+## Loading Bootloader Version 2
+1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.ghi)
+2. Press and hold BOOT button down while resetting the board. 
+3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resettign the board.
+4. The system will now detect an ST DFU device.
+5. Read more on [uploading DFU files](/hardware/loaders/stm32_bootloader.html#uploading-dfu-files) on STM32 microcontrollers.
 
-Like for the FEZ board, we are providing a bootloader to make firmware update easier. This loader needs to be loaded once and then TinyCLR OS firmware update is a lot easier.
+## Loading the Firmware
 
-Use the ST DFU tool to load the “cerb loader 2345” onto your Cerb board. When done, your PC should detect a virtual COM port. You can now load the “cerb firmware 0.5.0” onto your board. Loadong the firmware is done using terminal software with XMODEM. More info is found on our [boot loader](../../loaders/bootloader.md)
+To activate bootloader version 2, (how? There is no loader button!)
 
-You are now ready to [start coding](../../../tinyclr/tutorials/intro.md)
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Cerb/Cerb%20Firmware.0.6.0.ghi) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
 
-The region set aside for RLI is 0x2001F000 - 0x2001FFF8.
+# The Cerb Family
+The FEZ Cerberus come in differnt form facotr, together caled the Cerb family. The entire family run the same software.
+
+## FEZ Cerberus
+![FEZ Cerberus](images/fez_cerberus.jpg) 
+
+The mother of the family!
+
+## FEZ Cerbuino Bee
+![FEZ Cerbuino Bee](images/fez_cerbuino_bee.jpg) 
+
+An arduino-pinout compatible for acceping shields and also has some Gadgeteer coket option.
+
+## FEZ Cerbuino Net
+![FEZ Cerbuino Net](images/fez_cerbuino_net.jpg)
+
+An arduino-pinout compatible for acceping shields and also has some Gadgeteer coket option.
+
+## FEZ Cerb40
+![FEZ Cerb40](images/fez_cerb40.jpg)
+
+DIP40 formfactor board. Not really a Gadgeteer board but it is very small!
+
+## FEZ Cerbot
+(change the image)
+![FEZ Cerbot](images/fez_cerbot.jpg)
+
+A robot with reflective sensors and tons of LEDs. Gadgeteer coekts are used as an easy way to add features.

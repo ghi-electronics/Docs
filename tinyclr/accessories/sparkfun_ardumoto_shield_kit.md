@@ -1,13 +1,14 @@
 # Sparkfun Ardumoto Shield Kit
+![Sparkfun Ardumoto Shield Kit](images/sparkfun-ardumoto-shield-kit.jpg) 
 
-The sparkfun [Ardumoto Shield Kit](https://www.sparkfun.com/products/14180) is a low cost way of building a robot, somewhat quickly.
+The sparkfun [Sparkfun Ardumoto Shield Kit](https://www.sparkfun.com/products/14180) is a low cost way of building a robot, somewhat quickly.
 
 
-Plug the shield on top of your FEZ, or any other Arduino-pinout compatible board.
+Plug the shield on top of your [FEZ](../../hardware/products/fez.html), or any other Arduino-pinout compatible board.
 
 You are now ready for some serious dancing!
 
-```csharp
+```
 public static void Main()
 {
     var GPIO = GpioController.GetDefault();
