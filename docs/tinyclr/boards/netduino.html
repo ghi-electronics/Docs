@@ -76,6 +76,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="netduino">netduino</h1>
 
+<p><img src="images/netduino3.png" alt="netduino 3"> </p>
 <h2 id="netduino-3">netduino 3</h2>
 <p>Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:</p>
 <ul>
@@ -83,12 +84,163 @@
 <li><a href="http://www.netduino.com/netduino3ethernet/specs.htm">netduino 3 Ethernet</a></li>
 <li><a href="http://www.netduino.com/netduino3wifi/specs.htm">netduino 3 WiFi</a></li>
 </ul>
-<p>Follow the instructions at the <a href="../../hardware/loaders/stm32_bootloader.html">STM32 bootloader</a> page to generate a DFU file and load on your board.</p>
+<p>The netduino firmware is located <a href="http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex">here</a>. Use ST-Link to load or follow the instructions at the <a href="../../hardware/loaders/stm32_bootloader.html">STM32 bootloader</a> page to generate and load a DFU file.</p>
 <p>When done, your PC should detect a TinyCLR device. You are now ready to <a href="../tutorials/intro.html">start coding</a></p>
 <div class="TIP"><h5>Tip</h5><p>Currently the firmware is the same for all three devices and doesn&#39;t include any networking support.</p>
 </div>
 <div class="TIP"><h5>Tip</h5><p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.</p>
 </div>
+<h2 id="pin-definitions">Pin Definitions</h2>
+<p>This should help in getting to pins available on the netduino3</p>
+<pre><code>namespace GHIElectronics.TinyCLR.Pins {
+    /// &lt;summary&gt;Board definition for the FEZCerbuinoNet.&lt;/summary&gt;
+    public static class Netduino3 {
+        /// &lt;summary&gt;GPIO pin definitions.&lt;/summary&gt;
+        public static class GpioPin {
+
+            /// &lt;summary&gt;Debug LED definition&lt;/summary&gt;
+            public const int Led = STM32F4.GpioPin.PA10;
+            public const int PowerLed = STM32F4.GpioPin.PC13;
+
+            /// &lt;summary&gt;SD Card Dectect definition&lt;/summary&gt;
+            public const int SdCardDetect = STM32F4.GpioPin.PB2;
+            public const int SdCardPwrCtrl = STM32F4.GpioPin.PB1;
+
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D0 = STM32F4.GpioPin.PC7;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D1 = STM32F4.GpioPin.PC6;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D2 = STM32F4.GpioPin.PA3;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D3 = STM32F4.GpioPin.PA2;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D4 = STM32F4.GpioPin.PB12;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D5 = STM32F4.GpioPin.PB8;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D6 = STM32F4.GpioPin.PB9;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D7 = STM32F4.GpioPin.PA1;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D8 = STM32F4.GpioPin.PA0;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D9 = STM32F4.GpioPin.PE5;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D10 = STM32F4.GpioPin.PB10;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D11 = STM32F4.GpioPin.PB15;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D12 = STM32F4.GpioPin.PB14;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int D13 = STM32F4.GpioPin.PB13;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A0 = STM32F4.GpioPin.PC0;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A1 = STM32F4.GpioPin.PC1;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A2 = STM32F4.GpioPin.PC2;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A3 = STM32F4.GpioPin.PC3;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A4 = STM32F4.GpioPin.PC4;
+            /// &lt;summary&gt;GPIO pin.&lt;/summary&gt;
+            public const int A5 = STM32F4.GpioPin.PC5;
+
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public static class GoPort1 {
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin3 = STM32F4.GpioPin.PD13;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin4 = STM32F4.GpioPin.PD8;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin5 = STM32F4.GpioPin.PD9;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin6 = STM32F4.GpioPin.PD0;
+                /// &lt;summary&gt;LED definition.&lt;/summary&gt;
+                public const int Led = STM32F4.GpioPin.PE9;
+                /// &lt;summary&gt;Power On definition.&lt;/summary&gt;
+                public const int PwrOn = STM32F4.GpioPin.PD7;
+            }
+
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public static class GoPort2 {
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin3 = STM32F4.GpioPin.PD14;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin4 = STM32F4.GpioPin.PE8;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin5 = STM32F4.GpioPin.PE7;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin6 = STM32F4.GpioPin.PD1;
+                /// &lt;summary&gt;LED definition.&lt;/summary&gt;
+                public const int Led = STM32F4.GpioPin.PE11;
+                /// &lt;summary&gt;Power On definition.&lt;/summary&gt;
+                public const int PwrOn = STM32F4.GpioPin.PD10;
+            }
+
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public static class GoPort3 {
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin3 = STM32F4.GpioPin.PD15;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin4 = STM32F4.GpioPin.PE1;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin5 = STM32F4.GpioPin.PE0;
+                /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+                public const int Pin6 = STM32F4.GpioPin.PD2;
+                /// &lt;summary&gt;LED definition.&lt;/summary&gt;
+                public const int Led = STM32F4.GpioPin.PB0;
+                /// &lt;summary&gt;Power On definition.&lt;/summary&gt;
+                public const int PwrOn = STM32F4.GpioPin.PE14;
+            }
+        }
+
+        /// &lt;summary&gt;Analog channel definition.&lt;/summary&gt;
+        public static class AdcChannel {
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A0 = STM32F4.AdcChannel.Channel10;
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A1 = STM32F4.AdcChannel.Channel11;
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A2 = STM32F4.AdcChannel.Channel12;
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A3 = STM32F4.AdcChannel.Channel13;
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A4 = STM32F4.AdcChannel.Channel14;
+            /// &lt;summary&gt;Pin definition.&lt;/summary&gt;
+            public const int A5 = STM32F4.AdcChannel.Channel15;
+        }
+
+        /// &lt;summary&gt;Uart port definition.&lt;/summary&gt;
+        public static class UartPort {
+
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public const string GoPort1 = STM32F4.UartPort.Usart3;
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public const string GoPort2 = STM32F4.UartPort.Uart7;
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public const string GoPort3 = STM32F4.UartPort.Uart8;
+
+            /// &lt;summary&gt;UART D0 (RX) and D1 (TX).&lt;/summary&gt;
+            public const string Uart6 = STM32F4.UartPort.Uart6;
+        }
+
+        /// &lt;summary&gt;SPI Bus definition.&lt;/summary&gt;
+        public static class SpiBus {
+
+            /// &lt;summary&gt;Socket definition.&lt;/summary&gt;
+            public const string GoPort1 = STM32F4.SpiBus.Spi4;
+            public const string GoPort2 = STM32F4.SpiBus.Spi4;
+            public const string GoPort3 = STM32F4.SpiBus.Spi4;
+            public const string Spi2 = STM32F4.SpiBus.Spi2;
+        }
+    }
+}
+</code></pre><h2 id="netduino-2">netduino 2</h2>
+<p>This board uses STM32F2, which is very similar to the STM32 F4 used on the netduino 3. Porting TinyCLR OS ro netduino 2 should not be very difficult.</p>
+<h2 id="netduino-1">netduino 1</h2>
+<p>This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for posting TinyCLR OS.</p>
 </article>
           </div>
           

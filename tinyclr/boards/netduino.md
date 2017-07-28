@@ -9,9 +9,9 @@ Originally a .NET Micro Framework product, netdunio 3 is available in three flav
 - [netduino 3 WiFi](http://www.netduino.com/netduino3wifi/specs.htm)
 
 
-The netduino firmware is located [here](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex). Use ST-Link to load or follow the instructions at the [STM32 bootloader](../../hardware/stm32_bootloader.html) page to generate and load a DFU file.
+The netduino firmware is located [here](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex). Use ST-Link to load or follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate and load a DFU file.
 
-When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.html)
+When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.

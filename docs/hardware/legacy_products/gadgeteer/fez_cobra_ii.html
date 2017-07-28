@@ -76,7 +76,35 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="fez-cobra-ii">FEZ Cobra II</h1>
 
-<p>Coming soon.</p>
+<p><img src="images/fez_cobra_ii.jpg" alt="FEZ Cobra II"></p>
+<p>FEZ Cobra II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).</p>
+<h1 id="resources">Resources</h1>
+<ul>
+<li><a href="">Schematics (add it)</a></li>
+</ul>
+<h1 id="using-the-gadgeteer-software">Using the Gadgeteer software</h1>
+<p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
+<h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
+<p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
+<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
+<ol>
+<li>Download the <a href="http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi">bootloader file</a></li>
+<li>Press and keep holding the LDR0 and LDR1 buttons while reseting the board. Then release the buttons.</li>
+<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../netmf/intro.html">NETMF</a> SDK.</li>
+<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
+<li>Select serial and pick the COM port associated with your board.</li>
+<li>Enter <code>E</code> and you will see back &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
+<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
+<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
+<li>Select the bootloader file you have downloaded above.</li>
+<li>You will see <code>File Transfer Finished Successfully</code>.</li>
+<li>Reset your board, you are now running GHI Electronics bootloader version 2!</li>
+</ol>
+<h2 id="loading-the-firmware">Loading the Firmware</h2>
+<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader Version 2 loaded. This needs to be done only once.</p>
+</div>
+<p>To activate bootloader version 2, press and hold the LDR0 button while resetting the board.</p>
+<p>Download the <a href="http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb">firmware</a> and folow <a href="intro.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 </article>
           </div>
           

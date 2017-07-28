@@ -1,5 +1,5 @@
 # .NET Gadgeteer Modules
-This page lists all .NET Gadgeteer modules and how can they be used with [TinyCLR OS](../../../tinyclr/intro.html). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.html) page.
+This page lists all .NET Gadgeteer modules and how can they be used with [TinyCLR OS](../../../tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.md) page.
 
 > [!Tip]
 > We discourage writing specific drivers that can't be used outside gadgeteer. It should be easy to transition from a gadgeteer to a non-gadgeteer design.
@@ -140,7 +140,7 @@ add example that shows the conversion math https://github.com/ghi-electronics/NE
 # Display CP7
 ![Display CP7](images/modules/display_cp7.jpg)
 
-Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -170,7 +170,7 @@ Coming soon! Use the old BrainPad driver.
 # Display N7
 ![Display N7](images/modules/display_n7.jpg)
 
-Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -205,7 +205,7 @@ Supported displays:
 # Display T35
 ![Display T35](images/modules/display_t35.jpg)
 
-Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -228,7 +228,7 @@ VerticalSyncPolarity = false,
 # Display T43
 ![Display T43](images/modules/display_t43.jpg)
 
-Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -251,7 +251,7 @@ VerticalSyncPolarity = false,
 # Display TE35
 ![Display TE35](images/modules/display_te35.jpg)
 
-Read more about the [display support](../../../tinyclr/tutorials/display.html) on TinyCLR OS.
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -532,7 +532,7 @@ The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 * Pin 9: Motor B Speed (PWM)
 
 > [!Tip]
-> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../tinyclr/tutorials/pwm.html).
+> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../tinyclr/tutorials/pwm.md).
 
 This example will setup both motors and then will make motor A go very slow forward then very fast backward, in a loop.
 

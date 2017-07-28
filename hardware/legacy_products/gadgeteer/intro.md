@@ -9,7 +9,7 @@
 > [!Tip]
 > We will refer to .NET Gadgeteer as Gadgeteer throughout all of our documentaion.
 
-The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Similar to Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. [Learn more about NETMF](../netmf/intro.html)
+The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Similar to Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. [Learn more about NETMF](../netmf/intro.md)
 
 Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to [announce](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197) the EOL for Gadgeteer; however, the Gaadgeteer hardware can still be used [with TinyCLR OS](#with-tinyclr-os).
 
@@ -32,7 +32,7 @@ To use the .NET Gadgeteer legcy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
-4. GHI Electronics' [NETMF SDK](/hardware/legacy_products/netmf/intro.html#available-sdks). The latest is recommended.
+4. GHI Electronics' [NETMF SDK](/hardware/legacy_products/netmf/intro.md#available-sdks). The latest is recommended.
 
 The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Gadgeteer/NET_Gadgeteer_for_beginners.pdf) guide is a good starting point.
 
@@ -46,12 +46,12 @@ It all started in this video!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6-FzcgJJM" frameborder="0" allowfullscreen></iframe>
 
-This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR OS](../../../tinyclr/intro.html).
+This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR OS](../../../tinyclr/intro.md).
 
 To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.
 
 # Loading the Bootloader
-Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/bootloader.html) onto the mainboard.
+Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/bootloader.md) onto the mainboard.
 
 Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individial mainboard's pages.
 
@@ -61,12 +61,12 @@ Each mainboard has specific instructions on loading the bootloader. Those instru
 (coming soon)
 
 ## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.html) for manual update.
+TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.md) for manual update.
 
 # Blinking the LED
 
 > [!Tip]
-> If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.html)
+> If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.md)
 
 This example will blink the debug LED. You only need to add a power module to your mainboard.
 
@@ -95,4 +95,4 @@ class Program {
 > Replace `FezSpider` with your mainboard's name.
 
 # Adding Gadgeteer Modules
-You are now ready to start adding [modules](modules.html).
+You are now ready to start adding [modules](modules.md).

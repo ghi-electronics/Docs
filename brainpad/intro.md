@@ -1,5 +1,5 @@
 # BrainPad Intro
-![BrainPad](images/brainpad.jpg) 
+![BrainPad](../hardware/products/images/brainpad.png) 
 
 The BrainPad is a revolutionised board for STEM and STEAM programs. It is very simple with much to offer out of the box, yet it is expandable. It is simple that a beginner can start with but powerful that an advanced user can use it to expand their knowledge. It works from a higher elemntary kids to a retired person.
 
@@ -30,17 +30,17 @@ The firmware file (FEZCLR) is found [here](https://ghistorage.blob.core.windows.
 (coming soon)
 
 ## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../hardware/loaders/bootloader.html) for manual update.
+TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../hardware/loaders/bootloader.md) for manual update.
 
 Here is a video that shows the manual firmware update. It also includes the steps needed for the old BrainPad and steps for updating the bootloader.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLlGMwuNZcc" frameborder="0" allowfullscreen></iframe>
 
 # Advance Hardware Info
-Advance hardware info are found on teh [hardware](../hardware/products/brainpad.html) page. Also, learn about the magic [TinyCLR OS](../tinyclr/intro.html). 
+Advance hardware info are found on teh [hardware](../hardware/products/brainpad.md) page. Also, learn about the magic [TinyCLR OS](../tinyclr/intro.md). 
 
 # The Original BrainPad
-![BrainPad](images/original-brainpad.jpg) 
+![BrainPad](../hardware/products/images/original-brainpad.jpg) 
 The Original (old) BraiPad (the large one) has been decommessioned. It has served well in working with schools to help us make a lot of decissions. 
 
 > [!Tip]

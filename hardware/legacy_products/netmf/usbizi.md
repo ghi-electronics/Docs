@@ -10,10 +10,10 @@ Resources:
 *	What docs do we have for USBizi?
 
 # Using the NETMF software
-We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.html).
+We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md).
 
 # Using TinyCLR OS
-If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html#with-tinyclr-os)
+If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
 (coming soon)
@@ -25,7 +25,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html
 
 To activate bootloader version 2, set .... to be completed!
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
 
 
 # USBizi Based products
@@ -43,17 +43,17 @@ An Arduino-poinout compatible board.
 (image)
 An Arduino-poinout compatible board.
 
-* [Schematics](add)
+* [Schematics]()
 
 ## FEZ Rhino
 (image)
 
-* [Schematics](add)
+* [Schematics]()
 
 ## FEZ Mini
 (image)
 
-* [Schematics](add)
+* [Schematics]()
 
 (https://www.ghielectronics.com/downloads/FEZ/Cobra/)
 

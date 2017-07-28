@@ -29,4 +29,4 @@ class Program {
 }
 ```
 > [!Tip]
-> Do not use analog outputs to control the power of an LED or a motor. Use [PWM](pwm.html) for that.
+> Do not use analog outputs to control the power of an LED or a motor. Use [PWM](pwm.md) for that.

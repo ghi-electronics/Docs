@@ -8,17 +8,17 @@ FEZ Spider II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (
 * [Schematics (add it)]()
 
 # Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
 # Using TinyCLR OS
-If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
+If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
 
 1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
 3. Connect the FEZ Spider to a power module (red module) and then to a PC.
-4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
+4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
 5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 6. Select serial and pick the COM port associated with your board.
 7. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
@@ -36,4 +36,4 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G120/G120%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G120/G120%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.

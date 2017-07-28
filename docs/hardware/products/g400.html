@@ -76,18 +76,27 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="g400">G400</h1>
 
-<p>G400D and G400S are powerful NETMF System on Modules (SoM)</p>
-<p>To use G400, follow the setup instructions on the NETMF into page (link).</p>
-<p>Resources:
-�   Datasheet
-�   Development board reference schematic</p>
-<p>G400D is compatible the GHI Electronics. Please consider one of these modules as a drop-in hardware replacement for G400d </p>
-<p>We recommend TinyCLR OS as a replacement for NETMF. Learn more about TinyCLR at www.tinyclr.com
-To help you evaluate TinyCLR OS, we are providing a preview firmware for G400. First, load the boot loader using SAM-BA tools and then load this firmware using our GHI boot loader (link), and then G400 will run TinyCLR-OS</p>
+<p>(image)</p>
+<p>G400S and G400D are .NET Micro Framework (NETMF) System on Modules.</p>
+<h1 id="resources">Resources</h1>
 <ul>
-<li>G400 Bootloader 2.1.0 (link)</li>
-<li>G400 TinyCLR OS firmware 0.5.0 (link)</li>
+<li><a href="">Datasheet</a></li>
+<li><a href="">Dev Board Schematics</a></li>
 </ul>
+<h1 id="using-the-netmf-software">Using the NETMF software</h1>
+<p>We discourage the use of NETMF software on our products in favor for TinyCLR OS. <a href="../legacy_products/netmf/intro.html">Read more</a> about the use of NETMF and TinyCLR OS.</p>
+<h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
+<p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="../legacy_products/netmf/intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
+<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
+<ol>
+<li>Download the <a href="http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.3.ghi">bootloader file</a></li>
+<li>(how?)</li>
+</ol>
+<h2 id="loading-the-firmware">Loading the Firmware</h2>
+<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader Version 2 loaded. This needs to be done only once.</p>
+</div>
+<p>To activate bootloader version 2, hold the LDR0 signal low while resetting the board.</p>
+<p>Download the <a href="http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G400/G400%20Firmware.0.6.0.glb">firmware</a> and folow <a href="../legacy_products/netmf/intro.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 </article>
           </div>
           

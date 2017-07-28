@@ -15,12 +15,12 @@ To set a system to use TinyCLR OS:
 1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to selct the .NET development option when installing Visual Studio.
 2. Download and install the [TinyCLR OS Visual Studio extension](http:/files.ghielectronics.com/downloads/TinyCLR/Extension/GHIElectronics.TinyCLR.VisualStudio.0.5.0.vsix).
-3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many supported [boards](/boards/intro.html)
+3. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many supported [boards](/boards/intro.md)
 4. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 5. Add some code and press `F5` to deploy and begin debugging your application!
 6. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet, so make sure to download the [available libraries](https://www.ghielectronics.com/downloads/TinyCLR/Libraries/GHIElectronics.TinyCLR.Libraries.0.5.0.zip), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
-7. Do not forget to update the firmware on your [boards](/boards/intro.html).
-8. You are now ready for some [tutorials](tutorials/intro.html).
+7. Do not forget to update the firmware on your [boards](/boards/intro.md).
+8. You are now ready for some [tutorials](tutorials/intro.md).
 
 > [!Tip]
 > If you're an existing user of NETMF and still want to use it in addition to TinyCLR OS, don't worry. TinyCLR OS is completely independent of NETMF and works side-by-side with no issues or changes required.

@@ -76,10 +76,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="sparkfun-ardumoto-shield-kit">Sparkfun Ardumoto Shield Kit</h1>
 
-<p>The sparkfun <a href="https://www.sparkfun.com/products/14180">Ardumoto Shield Kit</a> is a low cost way of building a robot, somewhat quickly.</p>
-<p>Plug the shield on top of your FEZ, or any other Arduino-pinout compatible board.</p>
+<p><img src="images/sparkfun-ardumoto-shield-kit.jpg" alt="Sparkfun Ardumoto Shield Kit"> </p>
+<p>The sparkfun <a href="https://www.sparkfun.com/products/14180">Sparkfun Ardumoto Shield Kit</a> is a low cost way of building a robot, somewhat quickly.</p>
+<p>Plug the shield on top of your <a href="../../hardware/products/fez.html">FEZ</a>, or any other Arduino-pinout compatible board.</p>
 <p>You are now ready for some serious dancing!</p>
-<pre><code class="lang-csharp">public static void Main()
+<pre><code>public static void Main()
 {
     var GPIO = GpioController.GetDefault();
     var DIRA = GPIO.OpenPin(FEZ.GpioPin.D2);

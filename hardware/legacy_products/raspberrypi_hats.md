@@ -21,6 +21,6 @@ Thid [GitHub repo](https://github.com/ghi-electronics/Windows-IoT) includes the 
 ## FEZ Cream
 ![FEZ Cream](images/fez-cream.jpg)
 
-This HAT was part of the [Gadgeteering](gadgeteering.html) efforts.
+This HAT was part of the [Gadgeteering](gadgeteering.md) efforts.
 
 * Schematic

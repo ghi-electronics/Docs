@@ -3,7 +3,7 @@
 
 The [Pololu Zumo Robot](https://www.pololu.com/category/169/zumo-robot-for-arduino) from Pololu is one of our favorites, especially the pre-assembled version.
 
-Drop your [FEZ](../../hardware/products/fez.html) on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around.
+Drop your [FEZ](../../hardware/products/fez.md) on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around.
 
 The driver is found at (coming later).
 

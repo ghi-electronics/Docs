@@ -90,6 +90,18 @@
 <li>X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device.</li>
 <li>U: upload a file to the device using 1K XMODEM. Only send *.glb files meant for your device.</li>
 </ul>
+<p>An example of firmware update steps: (using the USB interface)</p>
+<ol>
+<li>Set your board in the bootloader mode. Each product has a specific way to enter the boot loader.</li>
+<li>Open any terminal software, for example <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
+<li>Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)</li>
+<li>Press <code>V</code> and then enter. You will see back the boot loader version number (v2.x.x)</li>
+<li>Press <code>U</code> or <code>X</code> and then enter. Use <code>X</code> for firmware file type GHI and <code>U</code> for firmware file type GLB. </li>
+<li>Press <code>Y</code> to confirm then enter. You will now see <code>CCCC</code>...</li>
+<li>Go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
+<li>Select the firmware file.</li>
+<li>When the transfer is complete, reset your board.</li>
+</ol>
 <h2 id="version-10">Version 1.0</h2>
 <p>Currently the EMX, G120, and G120E use this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
@@ -100,6 +112,8 @@
 <li>B: increases the baud rate in serial mode to 921,600.</li>
 <li>X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device. The firmware is automatically run after a successful upload.</li>
 </ul>
+<div class="TIP"><h5>Tip</h5><p>The USB interface on Version 1.0 doesn&#39;t always work on Windows 7 and newer operating systems. Use the serial interface instead.</p>
+</div>
 <h1 id="glb-file-format">GLB File Format</h1>
 <p>The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.</p>
 <ol>

@@ -1,7 +1,7 @@
 # BrainPad
 ![BrainPad](images/brainpad.png)
 
-The [BrainPad](www.brainpad.com) is an educational STEM & STEAM targeted board. This page has some advanced hardware resources. Courses and learning materials are ound under the [BrainPad](../../brainpad/intro.html) sections.
+The [BrainPad](http://brainpad.com) is an educational STEM & STEAM targeted board. This page has some advanced hardware resources. Courses and learning materials are ound under the [BrainPad](../../brainpad/intro.md) sections.
 
 Resources:
 *	Schematic

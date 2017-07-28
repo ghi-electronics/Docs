@@ -10,4 +10,4 @@ The firmware needs to be updated to match the assemblies loaded by Visual Studio
 Each board will have details on how to load its firmware.
 
 # Other Supported Devices
-Several of the GHI Electronics' products support TinyCLR OS. Check the individual [hardware pages](hardware/intro.html) to see which devices support TinyCLR OS.  
+Several of the GHI Electronics' products support TinyCLR OS. Check the individual [hardware pages](../../hardware/intro.md) to see which devices support TinyCLR OS.  

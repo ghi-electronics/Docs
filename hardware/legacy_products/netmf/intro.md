@@ -3,7 +3,7 @@
 .NET Micro Framework (NETMF) is a subset of the full .NET. Initiated by Microsoft for SPOT watches and then later open sourced. The latest working version Visual Studio working with our NETMF products is VS2013.
 
 > [!Tip]
-> We discourage the use of NETMF on our products in favor of [TinyCLR OS](../../tinyclr/intro.html). Learn more about using NETMF devices [with TinyCLR OS](with-tinyclr-os).
+> We discourage the use of NETMF on our products in favor of [TinyCLR OS](../../../tinyclr/intro.md). Learn more about using NETMF devices [with TinyCLR OS]().
 
 To use NETMF, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
@@ -34,7 +34,7 @@ Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and Chipwor
 Most NETMF devices are still useable today, and with the latest technologies. To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.
 
 # Loading the Bootloader
-Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/bootloader.html) onto the mainboard.
+Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/bootloader.md) onto the mainboard.
 
 Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individial mainboard's pages.
 
@@ -44,7 +44,7 @@ Each mainboard has specific instructions on loading the bootloader. Those instru
 (coming soon)
 
 ## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.html) for manual update.
+TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.md) for manual update.
 
 > [!Tip]
-> If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.html)
+> If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.md)

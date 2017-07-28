@@ -7,10 +7,10 @@ Resources:
 * [Datasheet]()
 
 # Using the NETMF software
-We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.html) about the use of NETMF and TinyCLR OS.
+We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md) about the use of NETMF and TinyCLR OS.
 
 # Using TinyCLR OS
-If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html#with-tinyclr-os)
+If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
 > [!Tip]
@@ -20,7 +20,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html
 **To update using USB**
 1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.3.ghi)
 2. Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
+3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 5. Select serial and pick the COM port associated with your board.
 6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
@@ -43,7 +43,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html
 
 To activate bootloader version 2, set Pin3 low (double check) and then reset your board.
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
 
 
 # EMX Based products
@@ -57,6 +57,6 @@ The development system used for evaluating the EMX SoM.
 (image)
 A single board computer
 
-* [Schematics](add)
+* [Schematics]()
 
 (https://www.ghielectronics.com/downloads/FEZ/Cobra/)

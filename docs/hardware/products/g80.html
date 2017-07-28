@@ -76,17 +76,23 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="g80">G80</h1>
 
-<p>The G80 System on Chip (SoC) is a low-cost chipsets running the .NET Micro Framework. It is programmed using Microsoft&#39;s Visual Studio using C# or Visual Basic which allows developers to take advantage of the extensive built-in NETMF libraries and GHI Electronics added extensions.</p>
+<p>(image)
+The G80 System on Chip (SoC) is a low-cost chipsets running the .NET Micro Framework. It is programmed using Microsoft&#39;s Visual Studio using C# or Visual Basic which allows developers to take advantage of the extensive built-in NETMF libraries and GHI Electronics added extensions.</p>
 <p>To use G80 SoC, follow the setup instructions on the NETMF into page (link).</p>
 <p>Resources:</p>
 <ul>
-<li>G80 Datasheet</li>
-<li>G80 Development board reference schematic</li>
+<li>Datasheet</li>
+<li>Development board reference schematic</li>
 </ul>
-<p>We recommend TinyCLR OS as a replacement for NETMF. Learn more about TinyCLR at www.tinyclr.com
-To help you evaluate TinyCLR OS, we are providing a preview firmware for G80. Load this firmware using our boot loader (link) and then G80 will run TinyCLR-OS</p>
-<p>G80 TinyCLR OS firmware 0.5.0 (link)</p>
-<p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.</p>
+<h1 id="using-the-netmf-software">Using the NETMF software</h1>
+<p>We discourage the use of NETMF software on our products in favor for TinyCLR OS. <a href="../legacy_products/netmf/intro.html">Read more</a> about the use of NETMF and TinyCLR OS.</p>
+<h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
+<p>If haven&#39;t yet, read about using NETMF devices <a href="../legacy_products/netmf/intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
+<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
+<p>The G80 SoC ships with the Bootloader loaded and locked. No further steps are necessary.</p>
+<h2 id="loading-the-firmware">Loading the Firmware</h2>
+<p>To activate bootloader version 2, both LDR0 and LDR1 signals need to be low while resetting the board.</p>
+<p>Download the <a href="http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.6.0.ghi">firmware</a> and folow <a href="../legacy_products/netmf/intro.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 </article>
           </div>
           

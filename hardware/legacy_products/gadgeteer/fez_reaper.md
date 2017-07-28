@@ -8,10 +8,10 @@ FEZ Reaper is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NET
 * [Schematics (add it)]()
 
 # Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
 # Using TinyCLR OS
-If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
+If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
 The G80 SoC ships with the Bootloader loaded and locked. No further steps are necessary.
@@ -20,4 +20,4 @@ The G80 SoC ships with the Bootloader loaded and locked. No further steps are ne
 
 To activate bootloader version 2, press and hold both LDR0 and LDR1 buttons down while resetting the board.
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.6.0.ghi) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
+Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.6.0.ghi) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.

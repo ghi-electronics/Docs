@@ -7,9 +7,9 @@ This is an easy option as these modules simply plug in. There are hundreds of av
 
 ![Mikroelektronika Click](images/mikro-click.jpg) 
 
-This page covers further details on the [click modules](../tinyclr/accessories/mikroelectronika_click.html)
+This page covers further details on the [click modules](../tinyclr/accessories/mikroelektronika_click.md)
 
-Advanced users can add any of the available mdouels. However, there are [courses](courses/intro.html) that cover specifc modules and include all the needed drivers.
+Advanced users can add any of the available mdouels. However, there are [courses](courses/intro.md) that cover specifc modules and include all the needed drivers.
 
 ## Direct Wiring
 This option is only recommended for advanced users with electronics background. 
