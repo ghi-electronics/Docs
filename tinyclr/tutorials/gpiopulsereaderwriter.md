@@ -1,6 +1,6 @@
-# Gpio Change Reader Writer
+# Gpio Pulse Reader Writer
 
-Gpio Change Reader Writer works in the current release. Documentation is coming soon.
+Gpio Pulse Reader Writer works in the current release. Documentation is coming soon.
 
 `GpioPulseReaderWriter pulse = new GpioPulseReaderWriter(GpioPulseReaderWriter.Mode.DrainDuration, true, 100, FEZ.GpioPin.A1);`
 

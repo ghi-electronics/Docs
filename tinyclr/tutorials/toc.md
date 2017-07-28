@@ -9,4 +9,4 @@
 # [Display](display.md)
 # [Gpio Change Writer](gpiochangewriter.md)
 # [Gpio Change Reader](gpiochangereader.md)
-# [Gpio Change Reader Writer](gpiochangereaderwriter.md)
+# [Gpio Pulse Reader Writer](gpiopulsereaderwriter.md)

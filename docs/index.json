@@ -1,4 +1,9 @@
 {
+  "tinyclr/tutorials/gpiopulsereaderwriter.html": {
+    "href": "tinyclr/tutorials/gpiopulsereaderwriter.html",
+    "title": "Gpio Pulse Reader Writer",
+    "keywords": "Gpio Pulse Reader Writer Gpio Pulse Reader Writer works in the current release. Documentation is coming soon. GpioPulseReaderWriter pulse = new GpioPulseReaderWriter(GpioPulseReaderWriter.Mode.DrainDuration, true, 100, FEZ.GpioPin.A1); See this for now https://www.ghielectronics.com/docs/326/pulse-feedback"
+  },
   "hardware/products/g30.html": {
     "href": "hardware/products/g30.html",
     "title": "G30",
@@ -263,11 +268,6 @@
     "href": "tinyclr/tutorials/gpiochangereader.html",
     "title": "Gpio Change Reader",
     "keywords": "Gpio Change Reader Gpio Change Reader works in the current release. Documentation is coming soon. GpioChangeReader g = new GpioChangeReader(FEZ.GpioPin.A1, GpioPinDriveMode.InputPullUp); See this for now https://www.ghielectronics.com/docs/106/signal-capture"
-  },
-  "tinyclr/tutorials/gpiochangereaderwriter.html": {
-    "href": "tinyclr/tutorials/gpiochangereaderwriter.html",
-    "title": "Gpio Change Reader Writer",
-    "keywords": "Gpio Change Reader Writer Gpio Change Reader Writer works in the current release. Documentation is coming soon. GpioPulseReaderWriter pulse = new GpioPulseReaderWriter(GpioPulseReaderWriter.Mode.DrainDuration, true, 100, FEZ.GpioPin.A1); See this for now https://www.ghielectronics.com/docs/326/pulse-feedback"
   },
   "hardware/legacy_products/imaging.html": {
     "href": "hardware/legacy_products/imaging.html",
