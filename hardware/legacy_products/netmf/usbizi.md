@@ -25,7 +25,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 
 To activate bootloader version 2, set .... to be completed!
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the  [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
 
 
 # USBizi Based products

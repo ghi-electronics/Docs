@@ -43,7 +43,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 
 To activate bootloader version 2, set Pin3 low (double check) and then reset your board.
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the [EMX firmware](../../../tinyclr/downloads.md#emx) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
 
 
 # EMX Based products
