@@ -1,4 +1,5 @@
 # STM32 Bootloader
+The STM32 Bootloader lives on all STM32 chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.
 
 These instructions apply to all STM32 chips with built in USB and DFU features.
 

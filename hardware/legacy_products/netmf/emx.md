@@ -3,13 +3,11 @@
 
 EMX is a NETMF System on Module.
 
-To use EMX with NETMF, follow these [setup instructions](intro.html).
-
 Resources:
 * [Datasheet]()
 
 # Using the NETMF software
-We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.html).
+We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.html) about the use of NETMF and TinyCLR OS.
 
 # Using TinyCLR OS
 If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html#with-tinyclr-os)

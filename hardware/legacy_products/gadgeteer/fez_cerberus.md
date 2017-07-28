@@ -10,7 +10,7 @@ FEZ Cerberus is the mother of of [the Cerb Family](the-cerb-family).
 * [FEZ Cerberus Schematics (add it)]()
 
 # Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS, [Read more](intro.html).
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.html) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)
