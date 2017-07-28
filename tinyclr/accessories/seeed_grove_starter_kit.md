@@ -1,21 +1,16 @@
 # Seeed Grove Starter Kit
+![Seeed Grove Starter Kit](images/GroveStarterKitSeeedStudio.jpg) 
 
 Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds. We have picked the [Seeed Grove Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html) as  starting base but you can add additional Grove modules as well.
 
-![alt text](images/accessories/GroveStarterKitSeeedStudio.jpg) 
+The included Grove modules plug into the included arduino shield. This shield works with any arduio-pinout compatible board, like the [FEZ](../../hardware/products/fez.html).
 
+Plug the shield on top of your board, and get the drivers (coming soon)
 
-The included Grove modules plug into the included arduino shield. This shield works with FEZ, or any other arduino-pinout compatible board.
-
-Plug the shield on top of your board, and include this one of the NuGet drivers in our project, as explained [here](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
-
-The NuGet drivers are:
-*	Grove Button
-*	Grove 
 
 This example that makes some noise!
 
-```csharp
+```
 Buzzer buzz = new Buzzer(FEZ.GpioPin.D4);
 buzz.Beep();
 Thread.Sleep(5000);

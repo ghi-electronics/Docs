@@ -1,5 +1,5 @@
 # netduino
-
+![netduino 3](images/netduino3.png) 
 ## netduino 3
 
 Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:
@@ -9,10 +9,9 @@ Originally a .NET Micro Framework product, netdunio 3 is available in three flav
 - [netduino 3 WiFi](http://www.netduino.com/netduino3wifi/specs.htm)
 
 
+The netduino firmware is located [here](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex). Use ST-Link to load or follow the instructions at the [STM32 bootloader](../../hardware/stm32_bootloader.html) page to generate and load a DFU file.
 
-Follow the instructions at the [STM32 bootloader](http://docs.ghielectronics.com/hardware/stm32_bootloader.html) page to generate a DFU file and load on your board.
-
-When done, your PC should detect a TinyCLR device. You are now ready to [start coding](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.html)
 
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.
@@ -170,3 +169,8 @@ namespace GHIElectronics.TinyCLR.Pins {
     }
 }
 ```
+## netduino 2
+This board uses STM32F2, which is very similar to the STM32 F4 used on the netduino 3. Porting TinyCLR OS ro netduino 2 should not be very difficult.
+
+## netduino 1
+This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for posting TinyCLR OS.

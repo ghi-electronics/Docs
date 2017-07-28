@@ -1,15 +1,15 @@
 # Pololu Zumo Robot
+![Pololu Zumo Robot](images/pololu-zumo-robot.jpg) 
 
-The [Arduino Zumo Robot](https://www.pololu.com/category/169/zumo-robot-for-arduino) from Pololu is one of our favorites, especially the pre-assembled version.
+The [Pololu Zumo Robot](https://www.pololu.com/category/169/zumo-robot-for-arduino) from Pololu is one of our favorites, especially the pre-assembled version.
 
+Drop your [FEZ](../../hardware/products/fez.html) on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around.
 
-Drop your FEZ on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around. Thanks to FEZ’s built in WiFi, you can drive the robot right from your phone.
-
-The driver is found at (link). Import this NuGet Package, as explained [here](http://docs.ghielectronics.com/tinyclr/tutorials/intro.html)
+The driver is found at (coming later).
 
 You are now ready for some serious dancing!
 
-```csharp
+```
 public static void Main()
 {
     bool state = false;

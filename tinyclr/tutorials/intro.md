@@ -2,10 +2,10 @@
 
 Here you will find tutorials covering different features of the TinyCLR OS. We try to keep the documents hardware-generic as much as possible but when we can't, we use [FEZ](../../hardware/fez.md) as a reference.
 
-## Getting Started
-Follow these steps http://docs.ghielectronics.com/tinyclr/intro.html
+## System Setup
+Follow [these steps](../intro.html) to setup your development machine.
 
-## Create a New Project
+## Starting a New Project
 
 Open Visual Studio, select ` File > New Project`. 
 
@@ -66,7 +66,7 @@ The last thing to do is accept the licensing agreement.
 
 ![Accept Agreement for NuGet](images/AcceptAgreementforNuGet.jpg)
 
-If you need to update the firmware on your device, download the firmware and follow the instructions to update your device.
+And, that's it! You're now ready to start programming using TinyCLR OS. Fit the F5 key to build and deploy your application.
 
-And, that's it! You're now ready to start programming using TinyCLR OS. 
+(add more images for build and deploy and see a message on the output window)
 

@@ -11,3 +11,5 @@ Since TinyCLR OS is still in early alpha, we will be adding more libraries and f
 - Runtime Loadable Procedures
 - Generics
 - .NET Standard
+
+The focus now is on making the core essentials available for many devices to prove the stability and portability of the core.
