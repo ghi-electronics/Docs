@@ -61,16 +61,7 @@ Each mainboard has specific instructions on loading the bootloader. Those instru
 (coming soon)
 
 ## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the frimware but we are including the manual update steps as a backup.
-
-1. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
-2. Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)
-3. Press `V` and then enter. You will see back the boot loader version number (v2.x.x)
-4. Press `U` or `X` and then enter, `X` for firmware file type GHI and `U` for firmware file type GLB. 
-5. Press `Y` to confirm then enter. You will now see `CCCC`...
-6. Go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-7. Select the firmware file.
-8. When the transfer is complete, reset your board. You are now ready to use TinyCLR OS.
+TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.html) for manual update.
 
 # Blinking the LED
 

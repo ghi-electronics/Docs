@@ -8,7 +8,7 @@ FEZ Cobra II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (N
 * [Schematics (add it)]()
 
 # Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software techniologies on our products in favor for TinyCLR OS, [Read more](intro.html).
+We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS, [Read more](intro.html).
 
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.html#with-tinyclr-os)

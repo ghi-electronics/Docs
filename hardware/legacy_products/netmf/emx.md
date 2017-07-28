@@ -1,49 +1,49 @@
 # EMX System on Module
+(image)
 
 EMX is a NETMF System on Module.
 
-To use EMX with NETMF, follow these [setup instructions](http://docs.ghielectronics.com/hardware/legacy/netmf/intro.html).
+To use EMX with NETMF, follow these [setup instructions](intro.html).
 
 Resources:
 * [Datasheet]()
 
-# Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software techniologies on our products in favor for TinyCLR OS, [Read more](intro.html).
+# Using the NETMF software
+We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.html).
 
 # Using TinyCLR OS
 If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.html#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
 > [!Tip]
-> The EMX bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
+> The bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
 **To update using USB**
 1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.3.ghi)
-2. Set the board's configuration switches in boot mode. That is by setting switches #1, #2 and #3 to the on position.
-3. Connect the FEZ Spider to a power module (red module) and then to a PC.
-4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
-5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
-6. Select serial and pick the COM port associated with your board.
-7. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
-8. Enter `X` and you will see `CCCC`... showing on the terminal.
-9. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-10. Select the bootloader file you have downloaded above.
-11. You will see `File Transfer Finished Successfully`.
-12. Change the configuration switches back to the off position and reset the board.
-13. You are now running GHI Electronics bootloader version 2!
+2. Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)
+3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.html) SDK.
+4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
+5. Select serial and pick the COM port associated with your board.
+6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
+7. Enter `X` and you will see `CCCC`... showing on the terminal.
+8. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
+9. Select the bootloader file you have downloaded above.
+10. You will see `File Transfer Finished Successfully`.
+11. Change the configuration switches back to the off position and reset the board.
+12. You are now running GHI Electronics bootloader version 2!
 
 **To update using Serial**
-1. Connect a USB-serial module to socket 11.
-2. Follow the exact same steps above except you need to also switch #4 to on (serial mode)
-3. The drivers for the USB-serial module should load automatically. If not, get them from http://www.ftdichip.com/
+1. Connect a development PC to COM1 on EMX, Pin5 and Pin6 (through RS232 converter or a USB-Serial TTL cable).
+2. SET LMODE pin low.
+3. Follow the steps above to load the firmware.
 
 ## Loading the Firmware
 
 > [!Tip]
 > First make sure you have bootloader Version 2 loaded. This needs to be done only once.
 
-To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
+To activate bootloader version 2, set Pin3 low (double check) and then reset your board.
 
 Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) and folow [Loading the Firmware](intro.html#loading-the-firmware) steps.
 

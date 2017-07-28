@@ -6,4 +6,3 @@
 # [Imaging](imaging.md)
 # [Raspberry Pi Hats](raspberrypi_hats.md)
 # [mBuino](mbuino.md)
-# [CANxtra](canxtra.md)

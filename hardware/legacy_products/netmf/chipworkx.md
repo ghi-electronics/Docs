@@ -1,3 +1,9 @@
 # ChipworkX
+(image)
 
-G400D is compatible the GHI Electronics' [Universal Compute Modules (UCM)](www.ghi.co/products/usm). Please consider one of these modules as a drop-in hardware replacement for ChipworkX 
+Embedded Master is a NETMF System on Module. 
+
+To use with NETMF, follow these [setup instructions](intro.html). Needs the NETMF 4.1 SDK.
+
+Resources:
+* [Datasheet]()
