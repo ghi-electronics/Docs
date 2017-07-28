@@ -6,7 +6,8 @@ Originally a .NET Micro Framework product, Quail board brings the option of usin
 Learn more about Quail at:  
 https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  
 
-The netduino firmware is located [here](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex). Follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
+The Quail firmware is located [here](../downloads.md#quail). 
+Follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
 
 When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 

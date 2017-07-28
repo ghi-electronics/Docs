@@ -24,7 +24,6 @@ This video shows one of the schools we worked with:
 We have been bulding and working with local and online communities for years. Hop on our [forum](https://forums.ghielectronics.com/c/brainpad) or [talk to us directly](http://brainpad.com/contact-us/) about our next local community gathering. Teachers and students like you are also interested in STEM.
 
 # Firmware Update
-The firmware file (FEZCLR) is found [here](https://ghistorage.blob.core.windows.net/downloads/TinyCLR/Firmware/FEZCLR/FEZCLR%20Firmware.0.5.0.glb). Download and save this file to load on the BrainPad.
 
 ## Using TinyCLR Config
 (coming soon)
@@ -35,6 +34,8 @@ TinyCLR Config tool should be used to update the firmware. As a backup, use the 
 Here is a video that shows the manual firmware update. It also includes the steps needed for the old BrainPad and steps for updating the bootloader.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLlGMwuNZcc" frameborder="0" allowfullscreen></iframe>
+
+ The BrainPad uses the [FEZCLR firmware](../tinyclr/downloads.md#fezclr)
 
 # Advance Hardware Info
 Advance hardware info are found on teh [hardware](../hardware/products/brainpad.md) page. Also, learn about the magic [TinyCLR OS](../tinyclr/intro.md). 

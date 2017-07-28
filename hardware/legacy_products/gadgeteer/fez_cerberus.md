@@ -26,7 +26,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, (how? There is no loader button!)
 
-Download the [firmware](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Cerb/Cerb%20Firmware.0.6.0.ghi) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the  [Cerb firmware](../../../tinyclr/downloads.md#cerb) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
 
 # The Cerb Family
 The FEZ Cerberus come in differnt form facotr, together caled the Cerb family. The entire family run the same software.
