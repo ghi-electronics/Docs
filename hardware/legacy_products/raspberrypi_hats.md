@@ -1,7 +1,7 @@
 # Raspberry Pi Hats
 Several HATs were made for the RPI. The software was focused on the use of Win10. 
 
-Thid [GitHub repo](https://github.com/ghi-electronics/Windows-IoT) includes the software for all HATs.
+This [GitHub repo](https://github.com/ghi-electronics/Windows-IoT) includes the software for all HATs.
 
 ## FEZ HAT
 ![FEZ HAT](images/fez-hat.jpg)

@@ -7,8 +7,8 @@ This page lists all .NET Gadgeteer modules and how can they be used with [TinyCL
 
 > [!Tip]
 > You can use Intellisense with the pin definition class to quickly determine where things go.
-> For example: Typing `FezSpider.GpioPin.Socket3.` lists the available GPIO pins on scoekt3
-> Another example: Typing `FezSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
+> For example: Typing `FEXSpider.GpioPin.Socket3.` lists the available GPIO pins on scoekt3
+> Another example: Typing `FEZSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
 
 > [!Tip]
 > We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.
@@ -33,7 +33,7 @@ https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectr
 # Breadboard X1
 ![Breadboard X1](images/modules/breadboard_x1.jpg)
 
-An easy breadboard option. Simply access the socket directly to wire whatver your heart desires!
+An easy breadboard option. Simply access the socket directly to wire whatever your heart desires!
 
 # Breakout
 ![Breakout](images/modules/breakout.jpg)
@@ -578,10 +578,9 @@ class Program {
 ![Multicolor LED](images/modules/multicolor_led.jpg)
 
 
-This used daisylink but to chain some super expensive LED!
-We will not support this, use some of the many addressable LED options.
+This module used DaisyLink bus to chain some expensive LED! We will not support the DaisyLink bus.
 
-# Music
+ # Music
 ![Music](images/modules/music.jpg)
 
 The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
@@ -700,7 +699,7 @@ File system is not supported yet.
 # S-Plus
 ![S-Plus](images/modules/s_plus.jpg)
 
-We will not support hubs and inderrections.
+We will not support hubs and socket indirection.
 
 # Serial Camera
 ![Serial Camera](images/modules/serial_camera.jpg)
@@ -751,7 +750,7 @@ class Program {
         var controller = PwmController.FromId(FEZSpiderII.PwmPin.Controller0.Id);
         var buzz = controller.OpenPin(FEZSpiderII.PwmPin.Controller0.Socket11.Pin9);
 
-        controller.SetDesiredFrequency(500);// change teh freequency for sounds
+        controller.SetDesiredFrequency(500);// change the frequency for sounds
         buzz.SetActiveDutyCyclePercentage(0.5);// always use this for sounds
         buzz.Start();
 

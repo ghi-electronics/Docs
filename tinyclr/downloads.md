@@ -1,5 +1,5 @@
 # Downloads
-This page includes differnt download types for individual boards. See individual product pges for details on what to download.
+This page includes different download types for individual boards. See individual product pges for details on what to download.
 
 Software status legend:
 

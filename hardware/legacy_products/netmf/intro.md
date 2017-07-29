@@ -13,22 +13,22 @@ To use NETMF, install:
 The [NETMF for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf) guide is a good starting point.
 
 # Available NETMF SDKs
-Release notes are found withing the SDKs.
+Release notes are found within the SDKs.
 
 Date | NETMF Core Rev | SDK
 --- | --- | ---
-Jun 27, 2016 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2016 R1](https://www.ghielectronics.com/download/sdk/41/ghi-electronics-netmf-sdk-2016-r1)
-Aug 31, 2015 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2015 R1]()
-Oct 29, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R5]()
-Oct 8, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R4]()
-Sep 15, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R3]()
-Jul 31, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R2]()
-Jan 29, 2014 | 4.3 RTM | [NETMF and Gadgeteer Package 2014 R1]()
-Oct 23, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R3]()
-Aug 27, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R2]()
-Apr 30, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R1 Update 1]()
-Feb 14, 2013 | 4.2 QFE2 | [NETMF and Gadgeteer Package 2013 R1]()
-Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and ChipworkX](https://www.ghielectronics.com/download/sdk/5/netmf-sdk-2012-r0)(Includes the old IoT book for FEZ Panda)
+Jun 27, 2016 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2016 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202016%20R1.exe)
+Aug 31, 2015 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2015 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202015%20R1.exe)
+Oct 29, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R5](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R5.exe)
+Oct 8, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R4](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R4.exe)
+Sep 15, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R3](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R3.exe)
+Jul 31, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R2](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R2.exe)
+Jan 29, 2014 | 4.3 RTM | [NETMF and Gadgeteer Package 2014 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R1.zip)
+Oct 23, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R3](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R3.zip)
+Aug 27, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R2](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R2.zip)
+Apr 30, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R1 Update 1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1%20Update1.zip)
+Feb 14, 2013 | 4.2 QFE2 | [NETMF and Gadgeteer Package 2013 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1.zip)
+Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and ChipworkX](https://ghistorage.blob.core.windows.net/downloads/NETMF/SDKs/NETMF%204.1%20SDK.zip)(Includes IoT book for FEZ Panda)
 
 # With TinyCLR OS
 Most NETMF devices are still useable today, and with the latest technologies. To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.
@@ -36,15 +36,8 @@ Most NETMF devices are still useable today, and with the latest technologies. To
 # Loading the Bootloader
 Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/bootloader.md) onto the mainboard.
 
-Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individial mainboard's pages.
-
-# Loading the Firmware
-
-## Using TinyCLR Config
-(coming soon)
-
-## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../../loaders/bootloader.md) for manual update.
+Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individual mainboard's pages.
 
 > [!Tip]
 > If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.md)
+

@@ -5,7 +5,7 @@
 FEZ Spider is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider is the EMX System on Module (SoM).
 
 # Resources
-* [Schematics (add it)]()
+* [Schematics]()
 
 # Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
@@ -45,4 +45,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
 
-Download the  [EMX firmware](../../../tinyclr/downloads.md#emx) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the [EMX firmware](../../../tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+

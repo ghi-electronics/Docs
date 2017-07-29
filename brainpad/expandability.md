@@ -9,14 +9,14 @@ This is an easy option as these modules simply plug in. There are hundreds of av
 
 This page covers further details on the [click modules](../tinyclr/accessories/mikroelektronika_click.md)
 
-Advanced users can add any of the available mdouels. However, there are [courses](courses/intro.md) that cover specifc modules and include all the needed drivers.
+Advanced users can add any of the available modules. However, there are [courses](courses/intro.md) that cover specific modules and include all the needed drivers.
 
 ## Direct Wiring
 This option is only recommended for advanced users with electronics background. 
 
 ![BrainBot](images/brainbot.jpg) 
 
-As a demo, we built this robot with a chassis we ordered from Amazon http://a.co/dwzywoI The continuous servo motors simply plug in. Pay attention to wires, where the orange wire should be connected to the pin labeled with ~. We then used a breadboard with an ultrasonic distance sensor. This will be used to detect objects to backup the robot.
+As a demo, we built this robot with a chassis we ordered from Amazon http://a.co/dwzywoI The continuous servo motors simply plug in. Pay attention to wires, where the orange wire should be connected to the pin labeled with ~. We then used a breadboard with an ultrasonic distance sensor. This will be used to detect objects, to back up the robot.
 
 ```csharp
 BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(false);
