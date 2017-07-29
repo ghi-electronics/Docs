@@ -84,7 +84,7 @@ Firmware | Date | Status
 ## Netduino3
 Firmware | Date | Status
 --- | --- | ---
-[Netduino 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino%20Firmware.0.5.0.hex) | JUL 7, 2017 | A test!
+[Netduino 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino3%20Firmware.0.5.0.hex) | JUL 7, 2017 | A test!
 
 ## Quail
 Firmware | Date | Status
