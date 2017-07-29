@@ -43,28 +43,28 @@ Firmware | Date | Status
 ## G30
 Firmware | Date | Status
 --- | --- | ---
-[G30 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.5.0.glb) | JUL 7, 2017 | Alpha 
-[G30 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.4.0.glb) | MAY 5, 2017 | Alpha
-[G30 0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.3.0.glb) | APR 6, 2017 | Alpha
-[G30 0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.2.0.glb) | MAR 3, 2017 | Alpha
+[G30 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.5.0.ghi) | JUL 7, 2017 | Alpha 
+[G30 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.4.0.ghi) | MAY 5, 2017 | Alpha
+[G30 0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.3.0.ghi) | APR 6, 2017 | Alpha
+[G30 0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G30/G30%20Firmware.0.2.0.ghi) | MAR 3, 2017 | Alpha
 
 ## G80
 Firmware | Date | Status
 --- | --- | ---
-[G80 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.5.0.glb) | JUL 7, 2017 | Alpha 
-[G80 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.4.0.glb) | MAY 5, 2017 | Alpha
-[G80 0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.3.0.glb) | APR 6, 2017 | Alpha
-[G80 0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.2.0.glb) | MAR 3, 2017 | Alpha
+[G80 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.5.0.ghi) | JUL 7, 2017 | Alpha 
+[G80 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.4.0.ghi) | MAY 5, 2017 | Alpha
+[G80 0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.3.0.ghi) | APR 6, 2017 | Alpha
+[G80 0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G80/G80%20Firmware.0.2.0.ghi) | MAR 3, 2017 | Alpha
 
 ## G120
 Firmware | Date | Status
 --- | --- | ---
-[G120 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G120/G120%20Firmware.0.4.0.glb) | MAY 5, 2017 | Alpha
+[G120 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G120/G120%20Firmware.0.4.0.ghi) | MAY 5, 2017 | Alpha
 
 ## G400
 Firmware | Date | Status
 --- | --- | ---
-[G400 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G400/G400%20Firmware.0.4.0.glb) | MAY 5, 2017 | Alpha
+[G400 0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/G400/G400%20Firmware.0.4.0.ghi) | MAY 5, 2017 | Alpha
 
 ## EMX
 Firmware | Date | Status
@@ -84,10 +84,10 @@ Firmware | Date | Status
 ## Netduino3
 Firmware | Date | Status
 --- | --- | ---
-[Netduino 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino%20Firmware.0.5.0.glb) | JUL 7, 2017 | A test!
+[Netduino 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Netduino/Netduino%20Firmware.0.5.0.hex) | JUL 7, 2017 | A test!
 
 ## Quail
 Firmware | Date | Status
 --- | --- | ---
-[Quail 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Quail/Quail%20Firmware.0.5.0.glb) | JUL 7, 2017 | A test!
+[Quail 0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/Quail/Quail%20Firmware.0.5.0.hex) | JUL 7, 2017 | A test!
 
