@@ -2,6 +2,7 @@
 # [Tutorials](tutorials/toc.md)
 # [Boards](boards/toc.md)
 # [Accessories](accessories/toc.md)
+# [Internet Of Things](internetofthings.md)
 # [Porting](porting/toc.md)
 # [Downloads](downloads.md)
 # [Release Notes](release_notes.md)
