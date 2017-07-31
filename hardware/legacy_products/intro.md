@@ -7,6 +7,6 @@ This section covers some details on legacy products. These products are not reco
 
 # Producing Legacy Products
 
-GHI Electronics is the engineering and the manufacturing behind all its products. While some products have been made legacy and not recommended for new designs, the can still be produced. There may be a required minimum order quantity. 
+GHI Electronics is the engineering and the manufacturing behind all its products. While some products have been made legacy and not recommended for new designs, they can still be produced. There may be a required minimum order quantity. 
 
 We understand the seriousness of the need for a decent product longevity and availability. Please [contact us](https://www.ghielectronics.com/contact) directly to discuss ways to fulfill your immediate needs and also to discuss the upgrade options.
