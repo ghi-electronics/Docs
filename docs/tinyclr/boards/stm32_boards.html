@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>STM32F4 Discovery Boards </title>
+    <title>STM32 Boards </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="STM32F4 Discovery Boards ">
+    <meta name="title" content="STM32 Boards ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,15 +74,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="stm32f4-discovery-boards">STM32F4 Discovery Boards</h1>
+<h1 id="stm32-boards">STM32 Boards</h1>
 
-<p>ST Microelectronics provides low-cost evaluation and reference boards for their STM32 microcontrollers, called discovery boards. All discovery boards are very close and similar, allowing TinyCLR OS to run on all of them; however, this page includes the discovery board we have tested.</p>
-<p>The discovery boards include a built-in native debugging support, called ST-Link. This is a good option for users wanting to port TinyCLR OS and in need for debugging TinyCLR OS native port.</p>
-<h2 id="stm32f411-discovery">STM32F411 Discovery</h2>
-<p>The <a href="http://www.st.com/en/evaluation-tools/32f411ediscovery.html">STM32F411 Discovery board</a></p>
-<p>This discovery board uses essentially the same microcontroller found on FEZ. Follow the same instructions as <a href="fez.html">FEZ board</a></p>
-<h2 id="stm32f407-discovery">STM32F407 Discovery</h2>
-<p>The microcontroller on this discovery board is very similar to the one used on FEZ (STM32F401). Follow the same instructions as <a href="fez.html">FEZ board</a></p>
+<p>The market is full of STM32 boards, especially the ones from ST Microelectronics, who offers several evaluation boards for their STM32 product families. The STM32F4 is the most popular family and it is what the FEZCLR reference firmware use.</p>
+<h1 id="stm32f4-discovery">STM32F4 Discovery</h1>
+<p>The ST Microelectronics <a href="http://www.st.com/en/evaluation-tools/32f411ediscovery.html">STM32F411 Discovery board</a> board works with the FEZCLR firmware. Simply, follow the <a href="fez.html">FEZ board</a> instructions.</p>
+<h1 id="stm32f4-nucleo">STM32F4 Nucleo</h1>
+<p>The ST Microelectronics <a href="http://www.st.com/en/evaluation-tools/nucleo-f401re.html">Nucleo-F401RE</a> board works with the FEZCLR firmware. Simply, follow the <a href="fez.html">FEZ board</a> instructions.</p>
+<div class="TIP"><h5>Tip</h5><p>The Nucleo board doesn&#39;t include a USB connector by default but has the needed connections needed to add a USB connector.</p>
+</div>
+<p>See this <a href="https://github.com/valoni/TinyCLR-Ports/tree/master/Devices/NUCLEO411RET6">TinyCLR Fork</a> started with the FEZCLR port to create a port for <a href="http://www.st.com/en/evaluation-tools/nucleo-f411re.html">Nucleo-F411RE</a> port. The <a href="https://github.com/valoni/TinyCLR-Ports/tree/master/Devices/NUCLEO411RET6/Helps/doc">docs</a> include instructions on how to wire USB to the discovery board.</p>
+<h1 id="other-stm32f4-boards">Other STM32F4 boards</h1>
+<p>All STM32F4 microcontrollers are very similar. Any board (Discovery, Nucleo and others) with an 8Mhz crystal should simply run the FEZCLR firmware. However, you can simply change the crystal clock in the port and recompile the firmware. Start <a href="../porting/intro.html">porting</a> TinyCLR OS now.</p>
 </article>
           </div>
           
@@ -91,7 +94,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/boards/stm32f4_discovery.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/tinyclr/boards/stm32_boards.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

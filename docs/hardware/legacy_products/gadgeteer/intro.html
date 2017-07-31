@@ -80,10 +80,10 @@
 <p>.NET Gadgeteer that was initiated by Microsoft Research and taken to production by GHI Electronics in the year 2011. .NET Gadgeteer had a great few year run, where it was loved for its plug-and-play mainboard and modules.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQlTLNOCl90" frameborder="0" allowfullscreen=""></iframe>
 
-<div class="TIP"><h5>Tip</h5><p>We will refer to .NET Gadgeteer as Gadgeteer throughout all of our documentaion.</p>
+<div class="TIP"><h5>Tip</h5><p>We will refer to .NET Gadgeteer as Gadgeteer throughout the rest of the documentation.</p>
 </div>
-<p>The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Similar to Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. <a href="../netmf/intro.html">Learn more about NETMF</a></p>
-<p>Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to <a href="https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197">announce</a> the EOL for Gadgeteer; however, the Gaadgeteer hardware can still be used <a href="#with-tinyclr-os">with TinyCLR OS</a>.</p>
+<p>The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Like Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. <a href="../netmf/intro.html">Learn more about NETMF</a></p>
+<p>Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to <a href="https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197">announce</a> the EOL for Gadgeteer; however, the Gadgeteer hardware can still be used <a href="#with-tinyclr-os">with TinyCLR OS</a>.</p>
 <p>External resources:</p>
 <ul>
 <li>Microsoft&#39;s .NET Gadgeteer website (down) <a href="http://www.gadgeteer.com/">http://www.gadgeteer.com/</a></li>
@@ -96,10 +96,10 @@
 <li>The Gadgeteer graphical designer was never made available by Microsoft.</li>
 </ul>
 <h1 id="socket-map">Socket Map</h1>
-<p>The magic of Gadgteer is in its socket map
+<p>The magic of Gadgeteer is in its socket map
 (copy the map from here <a href="https://www.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference">https://www.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference</a>)</p>
 <h1 id="using-net-gadgeteer">Using .NET Gadgeteer</h1>
-<p>To use the .NET Gadgeteer legcy software, install:</p>
+<p>To use the .NET Gadgeteer legacy software, install:</p>
 <ol>
 <li><a href="https://www.visualstudio.com/vs/older-downloads/">Visual Studio 20013</a> (community edition is also supported)</li>
 <li>Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from <a href="http://netmf.codeplex.com/downloads/get/1423115">here</a> </li>
@@ -115,15 +115,6 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6-FzcgJJM" frameborder="0" allowfullscreen=""></iframe>
 
 <p>This means you can still use all your beloved .NET Gadgeteer gear with <a href="../../../tinyclr/intro.html">TinyCLR OS</a>.</p>
-<p>To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.</p>
-<h1 id="loading-the-bootloader">Loading the Bootloader</h1>
-<p>Before loading the TinyCLR OS firmware, we need load the GHI Electronics&#39; <a href="../../loaders/bootloader.html">Bootloader Version 2</a> onto the mainboard.</p>
-<p>Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individial mainboard&#39;s pages.</p>
-<h1 id="loading-the-firmware">Loading the Firmware</h1>
-<h2 id="using-tinyclr-config">Using TinyCLR Config</h2>
-<p>(coming soon)</p>
-<h2 id="manual-loading-the-firmware">Manual Loading the Firmware</h2>
-<p>TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the <a href="../../loaders/bootloader.html">bootloader page</a> for manual update.</p>
 <h1 id="blinking-the-led">Blinking the LED</h1>
 <div class="TIP"><h5>Tip</h5><p>If you have never used TinyCLR OS before, <a href="../../../tinyclr/tutorials/intro.html">start here</a></p>
 </div>
@@ -134,7 +125,7 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var led = GpioController.GetDefault().OpenPin(FezSpider.GpioPin.DebugLed);
+        var led = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.DebugLed);
         led.SetDriveMode(GpioPinDriveMode.Output);
 
         while(true) {
@@ -146,7 +137,7 @@ class Program {
     }
 }
 </code></pre><div class="TIP"><h5>Tip</h5><p>The complete pin mapping is made available through <code>GHIElectronics.TinyCLR.Pins</code>. You should not need to use any schematics.
-Replace <code>FezSpider</code> with your mainboard&#39;s name.</p>
+Replace <code>FEZSpider</code> with your mainboard&#39;s name.</p>
 </div>
 <h1 id="adding-gadgeteer-modules">Adding Gadgeteer Modules</h1>
 <p>You are now ready to start adding <a href="modules.html">modules</a>.</p>
