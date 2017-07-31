@@ -5,7 +5,7 @@
 FEZ Hydra is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF).
 
 # Resources
-* [Schematics]()
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Hydra Schematic.pdf)
 
 # Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.

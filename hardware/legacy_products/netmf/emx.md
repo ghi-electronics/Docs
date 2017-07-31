@@ -1,10 +1,10 @@
 # EMX System on Module
-(image)
+![EMX SoM](images/emx_som.jpg)
 
 EMX is a NETMF System on Module.
 
-Resources:
-* [Datasheet]()
+# Resources
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/EMX User Manual.pdf)
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md) about the use of NETMF and TinyCLR OS.
@@ -48,16 +48,18 @@ Download the [EMX firmware](../../../tinyclr/downloads.md#emx) and follow [Loadi
 
 # EMX Based products
 ## EMX Dev Sys
-(image)
+![EMX Dev Sys](images/emx_dev_sys.jpg)
+
 The development system used for evaluating the EMX SoM.
 
-* [Schematics]()
+* [Schematics](http://files.ghielectronics.com/downloads/Schematics/Systems/EMX DevSys Schematic.pdf)
 
 ## FEZ Cobra
-(image)
+![FEZ Cobra](images/fez_cobra.jpg)
+
 A single board computer
 
-* [Schematics]()
+* [Schematics](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cobra Schematic.pdf)
 
-(https://www.ghielectronics.com/downloads/FEZ/Cobra/)
+
 

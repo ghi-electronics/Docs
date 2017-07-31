@@ -1,20 +1,20 @@
 # BrainPad Intro
 ![BrainPad](../hardware/products/images/brainpad.jpg) 
 
-The BrainPad is a revolutionised board for STEM and STEAM programs. It is very simple with much to offer out of the box, yet it is expandable. It is simple that a beginner can start with but powerful that an advanced user can use it to expand their knowledge. It works from a higher elemntary kids to a retired person.
+The BrainPad is a revolutionized board for STEM and STEAM programs. It is very simple with much to offer out of the box, yet it is expandable. It is simple enough that a beginner can start with, but powerful that an advanced user can use it to expand their knowledge. It works with higher elementary kids to a retired person.
 
 Visit the official BrainPad website at www.brainpad.com
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKK_CfSFAHc" frameborder="0" allowfullscreen></iframe>
 
-This video shows a 6-year-old using a PC for the first time! And her first PC experince was in programming the BrainPad.
+This video shows a 6-year-old using a PC for the first time! And her first PC experience was in programming the BrainPad.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vCylsiJp4U8" frameborder="0" allowfullscreen></iframe>
 
-The BrainPad design is based on the TinYCLR OS's offical FEZ hardware. This means that the BrainPad will always recive the latest TinyCLR OS updates.
+The BrainPad design is based on the TinYCLR OS's official FEZ hardware. This means that the BrainPad will always receive the latest TinyCLR OS updates.
 
 # The Future Plan
-We want your feedback. After years of work with hundreds of students, the BrainPad setup is simple and works through the TinyCLR OS echosystem of boards. However, we are constantly working on making the use of the BrainPad yet simpler.
+We want your feedback. After years of work with hundreds of students, the BrainPad setup is simple and works through the TinyCLR OS ecosystem of boards. However, we are constantly working on making the use of the BrainPad yet simpler.
 
 This video shows one of the schools we worked with:
 
