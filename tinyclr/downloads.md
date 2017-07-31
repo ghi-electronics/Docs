@@ -1,5 +1,5 @@
 # Downloads
-This page includes different download types for individual boards. See individual product pges for details on what to download.
+This page includes different download types for individual boards. See individual product pages for details on what to download.
 
 Software status legend:
 
@@ -8,7 +8,7 @@ Status | Meaning
 Production | Ready to be used commercially.
 RC | Release Candidate, stable and can be field tested.
 Beta | No more major changes, use for development.
-Alpha | 385CBF690AEEEF259ECC6F531F694151 | Use for tying things out and provide feedback. Major changes to come.
+Alpha | Use for tying things out and provide feedback. Major changes to come.
 
 # Extension
 The extension is what gets loaded on Visual Studio to allow it to communicate with a TinyCLR OS device. It also includes project templates.
@@ -31,6 +31,13 @@ Library | Date | Status | MD5
 [Libraries 0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/GHIElectronics.TinyCLR.Libraries.0.3.0.zip) | 2017-04-06 | Alpha | 21D3E9AD37285B231B1E6E605B7CA709 
 [Libraries 0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/GHIElectronics.TinyCLR.Libraries.0.2.0.zip) | 2017-03-07 | Alpha | 7CDE2D7ADDD3E490344B1DA8DB342F8D 
 [Libraries 0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/GHIElectronics.TinyCLR.Libraries.0.1.0.zip) | 2016-12-16 | Alpha | 9E843638A8A4793814D76B522F8CBF1A 
+
+# TinyCLR Config
+TinyCLR Config is a tool used to update and configure your TinyCLR device.
+
+Library | Date | Status | MD5
+--- | --- | --- | ---
+[Config 0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Config/TinyCLR%20Config%20Setup.0.6.0.msi) | 2017-xx-xx | Alpha | x 
 
 # Firmware
 The Firmware is the TinyCLR OS that lives on your hardware. The firmware version loaded on the hardware must match the version number of the extension and the libraries. This will be easier managed once the libraries are hosted on http://www.nuget.org/
@@ -76,12 +83,12 @@ Firmware | Date | Status | MD5
 ## EMX
 Firmware | Date | Status | MD5
 --- | --- | --- | ---
-[EMX 0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) | 2017-xx-xx | Alpha | X
+[EMX 0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/EMX/EMX%20Firmware.0.6.0.glb) | 2017-xx-xx | Alpha | x
 
 ## USBizi
 Firmware | Date | Status | MD5
 --- | --- | --- | ---
-[UZBizi 0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/USBizi/UZBizi%20Firmware.0.6.0.glb) | 2017-xx-xx | Alpha | X
+[UZBizi 0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmware/USBizi/UZBizi%20Firmware.0.6.0.glb) | 2017-xx-xx | Alpha | x
 
 ## Cerb
 Firmware | Date | Status | MD5
