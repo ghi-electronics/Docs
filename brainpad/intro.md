@@ -1,5 +1,5 @@
 # BrainPad Intro
-![BrainPad](../hardware/products/images/brainpad.png) 
+![BrainPad](../hardware/products/images/brainpad.jpg) 
 
 The BrainPad is a revolutionised board for STEM and STEAM programs. It is very simple with much to offer out of the box, yet it is expandable. It is simple that a beginner can start with but powerful that an advanced user can use it to expand their knowledge. It works from a higher elemntary kids to a retired person.
 
