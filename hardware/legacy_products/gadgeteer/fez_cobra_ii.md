@@ -14,7 +14,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
-1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi)
+1. Download the [bootloader file](../../loaders/bootloader.md#g120)
 2. Press and keep holding the LDR0 and LDR1 buttons while reseting the board. Then release the buttons.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
 5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).

@@ -18,7 +18,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
 **To update using USB**
-1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.3.ghi)
+1. Download the [bootloader file](../../loaders/bootloader.md#emx)
 2. Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)
 3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).

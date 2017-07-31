@@ -16,7 +16,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
-1. Download the [bootloader file](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.ghi)
+1. Download the [bootloader file](../../loaders/bootloader.md#cerb)
 2. Press and hold BOOT button down while resetting the board. 
 3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.
 4. The system will now detect an ST DFU device.
