@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Bootloader </title>
+    <title>GHI Bootloader </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Bootloader ">
+    <meta name="title" content="GHI Bootloader ">
     <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -74,10 +74,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="bootloader">Bootloader</h1>
+<h1 id="ghi-bootloader">GHI Bootloader</h1>
 
 <p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
-<h2 id="version-20">Version 2.0</h2>
+<h1 id="version-20">Version 2.0</h1>
 <p>All commands and results are terminated with CR and LF (\r\n). &quot;OK.&quot; will be sent after each successful command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;OK.&quot;. Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.</p>
 <p>Most commands require confirmation. Send Y or y followed by a new-line to proceed or anything else to cancel.</p>
@@ -87,10 +87,14 @@
 <li>E: erases all user sectors of the device.</li>
 <li>R: runs the firmware if present.</li>
 <li>B: increases the baud rate in serial mode to 921,600.</li>
-<li>X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device.</li>
-<li>U: upload a file to the device using 1K XMODEM. Only send *.glb files meant for your device.</li>
+<li>X: upload a <code>ghi</code> file to the device using 1K XMODEM. Only send *.ghi files meant for your device.</li>
+<li>U: upload a <code>glb</code> file to the device using 1K XMODEM. Only send *.glb files meant for your device.</li>
 </ul>
-<p>An example of firmware update steps: (using the USB interface)</p>
+<h2 id="loading-the-firmware">Loading the Firmware</h2>
+<h3 id="using-tinyclr-config">Using TinyCLR Config</h3>
+<p>Coming soon. Use the manual steps instead.</p>
+<h3 id="manual-loading-the-firmware">Manual Loading the Firmware</h3>
+<p>TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:</p>
 <ol>
 <li>Set your board in the bootloader mode. Each product has a specific way to enter the boot loader.</li>
 <li>Open any terminal software, for example <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
@@ -102,19 +106,7 @@
 <li>Select the firmware file.</li>
 <li>When the transfer is complete, reset your board.</li>
 </ol>
-<h2 id="version-10">Version 1.0</h2>
-<p>Currently the EMX, G120, and G120E use this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
-<p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
-<ul>
-<li>V: returns the current version.</li>
-<li>E: erases all user sectors of the device (* is sent while erasing).</li>
-<li>R: runs the firmware if present.</li>
-<li>B: increases the baud rate in serial mode to 921,600.</li>
-<li>X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device. The firmware is automatically run after a successful upload.</li>
-</ul>
-<div class="TIP"><h5>Tip</h5><p>The USB interface on Version 1.0 doesn&#39;t always work on Windows 7 and newer operating systems. Use the serial interface instead.</p>
-</div>
-<h1 id="glb-file-format">GLB File Format</h1>
+<h2 id="glb-file-format">GLB File Format</h2>
 <p>The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.</p>
 <ol>
 <li>32 bit signature number that is unique for each device.</li>
@@ -129,6 +121,115 @@
 <li>32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.</li>
 <li>16 bit CRC-CCITT of the boot image bounded by the specified address and length.</li>
 </ol>
+<h1 id="version-10">Version 1.0</h1>
+<p>Currently the EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
+<p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
+<ul>
+<li>V: returns the current version.</li>
+<li>E: erases all user sectors of the device (* is sent while erasing).</li>
+<li>R: runs the firmware if present.</li>
+<li>B: increases the baud rate in serial mode to 921,600.</li>
+<li>X: upload a file to the device using 1K XMODEM. Only send *.ghi files meant for your device. The firmware is automatically run after a successful upload.</li>
+</ul>
+<div class="TIP"><h5>Tip</h5><p>The USB interface on Version 1.0 doesn&#39;t always work on Windows 7 and newer operating systems. Use the serial interface instead.</p>
+</div>
+<h1 id="downloads">Downloads</h1>
+<p>Here you can find the various bootloaders available for the various products.</p>
+<h2 id="fezclr">FEZCLR</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader.2.0.3.dfu">FEZCLR 2.0.3</a></td>
+<td>2017-07-07</td>
+<td>Alpha</td>
+<td>056919694D6A5F06546F9B721AE141CE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cerb">Cerb</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.dfu">Cerb 2.0.3</a></td>
+<td>2017-07-07</td>
+<td>Alpha</td>
+<td>6505870259AC8E748FD09EBD00796E2E</td>
+</tr>
+</tbody>
+</table>
+<h2 id="g120">G120</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.2.ghi">G120 2.0.2</a></td>
+<td>2017-03-07</td>
+<td>Alpha</td>
+<td>00ECD55A24607336863B1D61B91C3D86</td>
+</tr>
+</tbody>
+</table>
+<h2 id="g400">G400</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.2.bin">G400 2.0.2</a></td>
+<td>2017-04-06</td>
+<td>Alpha</td>
+<td>81D45A8F078AA8E633C824C7BB3279DC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emx">EMX</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.2.ghi">EMX 2.0.3</a></td>
+<td>2017-xx-xx</td>
+<td>Alpha</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -137,7 +238,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/loaders/bootloader.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/loaders/ghi_bootloader.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

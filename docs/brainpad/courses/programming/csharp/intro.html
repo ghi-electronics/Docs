@@ -132,6 +132,41 @@ BrainPad.LightBulb.TurnGreen();
 <h2 id="problem-solving">Problem Solving</h2>
 <p>Since applications execute extremely fast, we need to slow them down to figure out the problem. This way we can see what is happening or if the results are as expected. We will start by running the code one line at a time, this is called stepping in code to see what the application does at a slow speed.</p>
 <h2 id="stepping-in-code">Stepping in Code</h2>
+<p>Add a breakpoint (stop point) at the first line of code inside of <code>BrainPadSetup()</code> by moving the cursor to that line and pressing the <code>F9</code> key as shown below.</p>
+<p>You can also click in the grey area where the breakpoints appear to either remove or create new breakpoints. </p>
+<p><img src="images/introduction/AddingBreakpoint.jpg" alt="Adding a Breakpoint"></p>
+<p>Press <code>F5</code> to run the application. The project will be built and deployed but then the execution will stop at the breakpoint as shown below.</p>
+<p><img src="images/introduction/StopBreakPoint.jpg" alt="Stopping at the Breakpoint"></p>
+<h2 id="adding-delays-to-code">Adding Delays to Code</h2>
+<p>In order to see what�s going on we need to add some delays in the program code. This is done by telling the BrainPad to wait between tasks.
+Copy and paste the code from below into your project�s <code>BrainPadSetup()</code>, between the two curly braces <code>{ }</code>. </p>
+<pre><code>BrainPad.LightBulb.TurnOff();
+BrainPad.Wait.Seconds(1);
+BrainPad.LightBulb.TurnGreen();
+BrainPad.Wait.Seconds(1);
+BrainPad.LightBulb.TurnOff();
+BrainPad.Wait.Seconds(1);
+BrainPad.LightBulb.TurnGreen();
+</code></pre><p>Run the code by pressing <code>START</code> and observe the LightBulb again. You should now see it turn green, then on and off twice.</p>
+<h2 id="change-the-lightbulb-color">Change the LightBulb Color</h2>
+<p>This works great if you only want the LightBulb green. But what if you want a different color?   The LED inside the LightBulb is capable of showing more colors than just green. LED TV�s use many tiny LEDS lined up in rows and columns to make up the picture you see. Like the LED lights in a TV they are capable of showing many different colors inside just one LED.  First let�s use code similar to the last example, only this time will change the LightBulb from green to red to blue, using built-in functions already created.<br>Copy and paste the code from below into your project�s <code>BrainPadSetup()</code>, between the two curly braces <code>{ }</code>. </p>
+<pre><code>BrainPad.LightBulb.TurnOff();
+BrainPad.LightBulb.TurnGreen();
+BrainPad.Wait.Seconds(1);
+BrainPad.LightBulb.TurnOff();
+BrainPad.LightBulb.TurnRed();
+BrainPad.Wait.Seconds(1);
+BrainPad.LightBulb.TurnOff();
+BrainPad.LightBulb.TurnBlue();
+BrainPad.Wait.Seconds(1);
+</code></pre><h2 id="even-more-lightbulb-colors">Even more LightBulb Colors.</h2>
+<p>Under the <code>BrainPad.LightBulb object</code> you�ll find the method <code>BrainPad.LightBulb.SetRgbColor()</code>.  The <code>SetRgbColor()</code> method requires 3 values be passed into it.   Each value represents the intensity of each of the RGB colors (Red, Green and Blue). From 0 (fully off) to 100 (fully on).  In the example code below the LightBulb RGB values are all set to 100, resulting in a White colored LightBulb. You�ll also notice these values go inside the parentheses and not inside the curly braces.</p>
+<pre><code>BrainPad.LightBulb.SetRgbColor(100,100,100);
+</code></pre><p>We�ll now redo the code above that turns the light from Green to Red to Blue. But this time we�ll use the <code>SetRgbColor()</code> method to achieve the exact same results. 
+Copy and paste the code from below into your project�s <code>BrainPadSetup()</code>, between the two curly braces <code>{ }</code>. </p>
+<p>You may have noticed that methods contain parentheses like the <code>SetRgbColor()</code> method. Sometimes we put values inside these parentheses.  The first value represents Red, the second Green, and the third Blue. These values are called arguments. The arguments are passed in the method between its parentheses like this:</p>
+<pre><code>BrainPad.LightBulb.SetRgbColor(0,100,0);
+</code></pre><p>Resulting in the Light Bulb turning Green.</p>
 </article>
           </div>
           

@@ -1,8 +1,8 @@
-# Bootloader
+# GHI Bootloader
 
 The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.
 
-# Version 2.0
+# Bootloader v2
 All commands and results are terminated with CR and LF (\r\n). "OK." will be sent after each successful command.
 
 On startup, a banner is sent that is terminated by "OK.". Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.
@@ -51,8 +51,8 @@ After the upload header is the actual image to flash. If its length is not divis
 3. 32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.
 4. 16 bit CRC-CCITT of the boot image bounded by the specified address and length.
 
-# Version 1.0
-Currently the EMX, G120, and G120E use this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
+# Bootloader v1
+Currently the EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
 
 On startup, a banner is sent that is terminated by "BL". Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.
 
@@ -64,3 +64,32 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 
 > [!Tip]
 > The USB interface on Version 1.0 doesn't always work on Windows 7 and newer operating systems. Use the serial interface instead.
+
+# Downloads
+
+Here you can find the various bootloaders available for the various products.
+
+## FEZCLR
+Firmware | Date | Status | MD5
+--- | --- | --- | ---
+[FEZCLR 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
+
+## Cerb
+Firmware | Date | Status | MD5
+--- | --- | --- | ---
+[Cerb 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 6505870259AC8E748FD09EBD00796E2E
+
+## G120
+Firmware | Date | Status | MD5
+--- | --- | --- | ---
+[G120 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
+
+## G400
+Firmware | Date | Status | MD5
+--- | --- | --- | ---
+[G400 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
+
+## EMX
+Firmware | Date | Status | MD5
+--- | --- | --- | ---
+[EMX 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.2.ghi) | 2017-xx-xx | Alpha | x

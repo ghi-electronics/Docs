@@ -13,7 +13,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader Version 2
+## Loading Bootloader v2
 (coming soon!)
 
 ## Loading the Firmware
