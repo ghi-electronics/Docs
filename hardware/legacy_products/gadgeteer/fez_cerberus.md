@@ -52,7 +52,6 @@ An arduino-pinout compatible for accepting shields and also has some Gadgeteer s
 DIP40 formfactor board. Not really a Gadgeteer board but it is very small!
 
 ## FEZ Cerbot
-(change the image)
 ![FEZ Cerbot](images/fez_cerbot.jpg)
 
 A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as an easy way to add features.
