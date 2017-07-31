@@ -77,7 +77,7 @@
 <h1 id="ghi-bootloader">GHI Bootloader</h1>
 
 <p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
-<h1 id="version-20">Version 2.0</h1>
+<h1 id="bootloader-v2">Bootloader v2</h1>
 <p>All commands and results are terminated with CR and LF (\r\n). &quot;OK.&quot; will be sent after each successful command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;OK.&quot;. Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.</p>
 <p>Most commands require confirmation. Send Y or y followed by a new-line to proceed or anything else to cancel.</p>
@@ -121,7 +121,7 @@
 <li>32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.</li>
 <li>16 bit CRC-CCITT of the boot image bounded by the specified address and length.</li>
 </ol>
-<h1 id="version-10">Version 1.0</h1>
+<h1 id="bootloader-v1">Bootloader v1</h1>
 <p>Currently the EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
 <ul>

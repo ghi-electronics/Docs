@@ -80,13 +80,13 @@
 <p>FEZ Spider is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider is the EMX System on Module (SoM).</p>
 <h1 id="resources">Resources</h1>
 <ul>
-<li><a href="">Schematics</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Spider Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="using-the-gadgeteer-software">Using the Gadgeteer software</h1>
 <p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
 <h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
 <p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
-<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
+<h2 id="loading-bootloader-v2">Loading Bootloader v2</h2>
 <div class="TIP"><h5>Tip</h5><p>The EMX bootloader version 1 doesn&#39;t always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.</p>
 </div>
@@ -104,7 +104,7 @@ This is a one-time procedure. You should have no issues after the bootloader V2 
 <li>Select the bootloader file you have downloaded above.</li>
 <li>You will see <code>File Transfer Finished Successfully</code>.</li>
 <li>Change the configuration switches back to the off position and reset the board.</li>
-<li>You are now running GHI Electronics bootloader version 2!</li>
+<li>You are now running GHI Electronics bootloader v2!</li>
 </ol>
 <p><strong>To update using Serial</strong></p>
 <ol>
@@ -113,9 +113,9 @@ This is a one-time procedure. You should have no issues after the bootloader V2 
 <li>The drivers for the USB-serial module should load automatically. If not, get them from <a href="http://www.ftdichip.com/">http://www.ftdichip.com/</a></li>
 </ol>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader Version 2 loaded. This needs to be done only once.</p>
+<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.</p>
+<p>To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back ot off after loading the firmware.</p>
 <p>Download the <a href="../../../tinyclr/downloads.html#emx">EMX firmware</a> and follow <a href="../../loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 </article>
           </div>

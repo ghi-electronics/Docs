@@ -81,13 +81,13 @@
 <p>FEZ Cerberus is the mother of <a href="">the Cerb Family</a>.</p>
 <h1 id="resources">Resources</h1>
 <ul>
-<li><a href="">FEZ Cerberus Schematics (add it)</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cerberus Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="using-the-gadgeteer-software">Using the Gadgeteer software</h1>
 <p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
 <h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
 <p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
-<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
+<h2 id="loading-bootloader-v2">Loading Bootloader v2</h2>
 <ol>
 <li>Download the <a href="../../loaders/ghi_bootloader.html#cerb">bootloader file</a></li>
 <li>Press and hold BOOT button down while resetting the board. </li>
@@ -96,7 +96,9 @@
 <li>Read more on <a href="/hardware/loaders/stm32_bootloader.md#uploading-dfu-files">uploading DFU files</a> on STM32 microcontrollers.</li>
 </ol>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
-<p>To activate bootloader version 2, (how? There is no loader button!)</p>
+<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
+</div>
+<p>To activate bootloader v2, set PA15 pin low.</p>
 <p>Download the <a href="../../../tinyclr/downloads.html#cerb">Cerb firmware</a> and follow <a href="../../loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h1 id="the-cerb-family">The Cerb Family</h1>
 <p>The FEZ Cerberus come in different form factor, together called the Cerb family. The entire family run the same software.</p>
