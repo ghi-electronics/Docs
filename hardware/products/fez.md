@@ -1,21 +1,21 @@
 # FEZ
 ![FEZ](images/fez.jpg)
 
-FEZ (fast and easy) is the official board for TinyCLR OS. This low-cost, WiFi IoT-ready, Arduino-pinout compatible and TinyCLR-OS-ready board is everything a developer needs to evaluate TinyCLR OS and to build modern IoT applications.
+FEZ (fast and easy) is the official board for TinyCLR OS. This low-cost, WiFi IoT-ready, Arduino-pinout compatible, and TinyCLR-OS-ready board is everything a developer needs to evaluate TinyCLR OS and to build modern IoT applications.
 
 We have also handpicked some 3rd-party [accessories](../../tinyclr/accessories/intro.md) to help you get going even faster.
 
 # TinyCLR OS
-TinyCLR OS allows tiny systems to run .NET with full debugging capability, though Visual Studio 2017.
+TinyCLR OS allows tiny systems to run .NET applications with rich debugging capabilities though Visual Studio 2017.
 
 * [TinyCLR OS Website](http://www.tinyclr.com/)
 * [TinyCLR on FEZ](../../tinyclr/boards/fez.md)
-* [TinyCLR OS Repo](https://github.com/ghi-electronics/TinyCLR-Ports)
+* [TinyCLR Ports Repo](https://github.com/ghi-electronics/TinyCLR-Ports)
 
 # Other Options
 TinyCLR OS is the official supported platform for FEZ; however, these are some other good options. GHI Electronics is not affiliated and does not provide support for any of these 3rd party options.
 
-Interested in a FERR FEZ to test it with one of these options? We want to hear from you [direclty](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
+Interested in a FREE FEZ to test it with one of these options? We want to hear from you [direclty](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
 
 ## Arduino
 Arduino is simpified multi-platform IDE/C++ combo, with a community STM32 options.
@@ -50,4 +50,3 @@ If you are not adding a SWD JTAG tool, like ST-Link, follow the [STM32 bootloade
  
 * [Keil Website](http://www.keil.com/)
 * [Keil ARM MDK tools](http://www2.keil.com/mdk5)
-
