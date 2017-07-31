@@ -1,12 +1,12 @@
 # USBizi
 (image)
 
-USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It was available in 100pin and 144pin packages.
+USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It was available in 100pin and 144pin LQFP packages.
 
 We are no longer making the chip available but we are making all [bootloader binaries](https://www.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
 
 Resources:
-*	Datsheet? 
+*	Datasheet? 
 *	What docs do we have for USBizi?
 
 # Using the NETMF software
@@ -25,7 +25,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 
 To activate bootloader version 2, set .... to be completed!
 
-Download the  [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
 
 
 # USBizi Based products

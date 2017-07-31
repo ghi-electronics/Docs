@@ -5,7 +5,7 @@
 FEZ Cobra II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
 
 # Resources
-* [Schematics (add it)]()
+* [Schematics]()
 
 # Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
@@ -33,4 +33,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, press and hold the LDR0 button while resetting the board.
 
-Download the  [G120 firmware](../../../tinyclr/downloads.md#g120) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../../tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+

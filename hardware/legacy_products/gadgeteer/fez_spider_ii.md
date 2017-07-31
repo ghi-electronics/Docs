@@ -36,4 +36,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
 
-Download the  [G120 firmware](../../../tinyclr/downloads.md#g120) and folow [Loading the Firmware](intro.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../../tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+

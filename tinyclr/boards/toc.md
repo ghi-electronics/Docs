@@ -1,6 +1,6 @@
 # [Intro](intro.md)
 # [FEZ](fez.md)
-# [STM32F4 Discovery](stm32f4_discovery.md)
+# [STM32 Boards](stm32_boards.md)
 # [Netduino](netduino.md)
 # [Quail](quail.md)
 # [Clicker](clicker.md)
