@@ -6,21 +6,21 @@ This [GitHub repo](https://github.com/ghi-electronics/Windows-IoT) includes the 
 ## FEZ HAT
 ![FEZ HAT](images/fez-hat.jpg)
 
-* Schematic
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ HAT Schematic.pdf)
 
 ## FEZ ProtoPi
 ![FEZ ProtoPi](images/fez-protopi.jpg)
 
-* Schematic
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ ProtoPi Schematic.pdf)
 
 ## FEZ Utility
 ![FEZ Utility](images/fez-utility.jpg)
 
-* Schematic
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Utility Schematic.pdf)
 
 ## FEZ Cream
 ![FEZ Cream](images/fez-cream.jpg)
 
 This HAT was part of the [Gadgeteering](gadgeteering.md) efforts.
 
-* Schematic
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cream Schematic.pdf)

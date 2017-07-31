@@ -1,13 +1,12 @@
 # USBizi
-(image)
+![USBizi 144](images/usbizi_144.jpg) ![USBizi 100](images/usbizi_100.jpg)
 
 USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It was available in 100pin and 144pin LQFP packages.
 
 We are no longer making the chip available but we are making all [bootloader binaries](https://www.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
 
-Resources:
-*	Datasheet? 
-*	What docs do we have for USBizi?
+# Resources
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi 100 User Manual.pdf) 
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md).
@@ -30,32 +29,33 @@ Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow 
 
 # USBizi Based products
 ## USBizi DevSys
-(image)
+![USBizi DevSys](images/usbizi_devsys.jpg)
+
 The original development board for USBizi.
 
 ## FEZ Panda
-(image)
+![FEZ Panda](images/fez_panda.jpg)
+
 An Arduino-poinout compatible board.
 
-* [Schematics]()
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda Schematic.pdf)
 
 ## FEZ Panda II
-(image)
+![FEZ Panda II](images/fez_panda_ii.jpg)
+
 An Arduino-poinout compatible board.
 
-* [Schematics]()
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda II Schematic.pdf)
 
 ## FEZ Rhino
-(image)
+![FEZ Rhino](images/fez_rhino.jpg)
 
-* [Schematics]()
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Rhino Schematic.pdf)
 
 ## FEZ Mini
-(image)
+![FEZ Mini](images/fez_mini.jpg)
 
-* [Schematics]()
-
-(https://www.ghielectronics.com/downloads/FEZ/Cobra/)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Mini Schematic.pdf)
 
 USBizi was the core of many of GHI Electronics' products, FEZ Panda, FEZ Panda II, FEZ Domino, FEZ Rhino and FEZ Mini. 
 Move resources from old server [here](https://www.ghielectronics.com/downloads/FEZ/)
