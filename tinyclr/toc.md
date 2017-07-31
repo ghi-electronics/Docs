@@ -4,6 +4,7 @@
 # [Accessories](accessories/toc.md)
 # [Porting](porting/toc.md)
 # [Internet of Things](internetofthings.md)
+# [TinyCLR Config](tinyclr_config.md)
 # [Downloads](downloads.md)
 # [Release Notes](release_notes.md)
 # [Roadmap](roadmap.md)
