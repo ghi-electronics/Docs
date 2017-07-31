@@ -16,7 +16,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
-1. Download the [bootloader file](../../loaders/bootloader.md#cerb)
+1. Download the [bootloader file](../../loaders/ghi_bootloader.md#cerb)
 2. Press and hold BOOT button down while resetting the board. 
 3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.
 4. The system will now detect an ST DFU device.
@@ -26,7 +26,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, (how? There is no loader button!)
 
-Download the [Cerb firmware](../../../tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+Download the [Cerb firmware](../../../tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 
 # The Cerb Family
 The FEZ Cerberus come in different form factor, together called the Cerb family. The entire family run the same software.

@@ -29,7 +29,7 @@ We have been working with local and online communities for years. Hop on our [fo
 (coming soon)
 
 ## Manual Loading the Firmware
-TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../hardware/loaders/bootloader.md) for manual update.
+TinyCLR Config tool should be used to update the firmware. As a backup, use the instructions on the [bootloader page](../hardware/loaders/ghi_bootloader.md) for manual update.
 
 Here is a video that shows the manual firmware update. It also includes the steps needed for the old BrainPad and steps for updating the bootloader.
 

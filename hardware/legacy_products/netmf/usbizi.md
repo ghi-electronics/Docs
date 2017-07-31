@@ -25,7 +25,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 
 To activate bootloader version 2, set .... to be completed!
 
-Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 
 
 # USBizi Based products

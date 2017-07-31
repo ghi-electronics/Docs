@@ -14,7 +14,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading Bootloader Version 2
-1. Download the [bootloader file](../../loaders/bootloader.md#g400)
+1. Download the [bootloader file](../../loaders/ghi_bootloader.md#g400)
 2. (add instructions here. Needs SAM-BA!)
 
 ## Loading the Firmware
@@ -24,5 +24,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader version 2, press and hold the LDR0 button while resetting the board.
 
-Download the [G400 firmware](../../../tinyclr/downloads.md#g400) and follow [Loading the Firmware](../../loaders/bootloader.md#loading-the-firmware) steps.
+Download the [G400 firmware](../../../tinyclr/downloads.md#g400) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 
