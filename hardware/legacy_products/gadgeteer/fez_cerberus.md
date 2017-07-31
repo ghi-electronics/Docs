@@ -15,7 +15,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader Version 2
+## Loading Bootloader v2
 1. Download the [bootloader file](../../loaders/ghi_bootloader.md#cerb)
 2. Press and hold BOOT button down while resetting the board. 
 3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.
@@ -24,7 +24,10 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 ## Loading the Firmware
 
-To activate bootloader version 2, (how? There is no loader button!)
+> [!Tip]
+> First make sure you have bootloader v2 loaded. This needs to be done only once.
+
+To activate bootloader v2, set PA15 pin low.
 
 Download the [Cerb firmware](../../../tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 

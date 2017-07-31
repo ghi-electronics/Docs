@@ -13,7 +13,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader Version 2
+## Loading Bootloader v2
 1. Download the [bootloader file](../../loaders/ghi_bootloader.md#g120)
 2. Press and keep holding the LDR0 and LDR1 buttons while reseting the board. Then release the buttons.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
@@ -24,14 +24,14 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 9. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
 10. Select the bootloader file you have downloaded above.
 11. You will see `File Transfer Finished Successfully`.
-13. Reset your board, you are now running GHI Electronics bootloader version 2!
+13. Reset your board, you are now running GHI Electronics bootloader v2!
 
 ## Loading the Firmware
 
 > [!Tip]
-> First make sure you have bootloader Version 2 loaded. This needs to be done only once.
+> First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader version 2, press and hold the LDR0 button while resetting the board.
+To activate bootloader v2, press and hold the LDR0 button while resetting the board.
 
 Download the [G120 firmware](../../../tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 

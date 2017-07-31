@@ -48,6 +48,8 @@ It all started in this video!
 
 This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR OS](../../../tinyclr/intro.md).
 
+The first step needed to use TinyCLR OS is to load the GHI Bootloader v2 onto your mainboard, then use that to load the TinyCLR OS firmware. Each mainboard product page includes the needed instructions. Once those are loaded, you can start blinking the debug LED, detailed in the next section.
+
 # Blinking the LED
 
 > [!Tip]
