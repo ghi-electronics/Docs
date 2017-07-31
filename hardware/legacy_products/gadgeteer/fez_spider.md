@@ -13,7 +13,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader Version 2
+## Loading Bootloader v2
 > [!Tip]
 > The EMX bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
@@ -31,7 +31,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 10. Select the bootloader file you have downloaded above.
 11. You will see `File Transfer Finished Successfully`.
 12. Change the configuration switches back to the off position and reset the board.
-13. You are now running GHI Electronics bootloader version 2!
+13. You are now running GHI Electronics bootloader v2!
 
 **To update using Serial**
 1. Connect a USB-serial module to socket 11.
@@ -41,9 +41,9 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 ## Loading the Firmware
 
 > [!Tip]
-> First make sure you have bootloader Version 2 loaded. This needs to be done only once.
+> First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader version 2, set the configuration switch #1 (double check) to the on position and then reset your board.
+To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back ot off after loading the firmware.
 
 Download the [EMX firmware](../../../tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 

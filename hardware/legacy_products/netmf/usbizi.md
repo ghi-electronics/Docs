@@ -15,15 +15,15 @@ We discourage the use of NETMF software on our products in favor for TinyCLR OS,
 # Using TinyCLR OS
 If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader Version 2
+## Loading Bootloader v2
 (coming soon)
 
 ## Loading the Firmware
 
 > [!Tip]
-> First make sure you have bootloader Version 2 loaded. This needs to be done only once.
+> First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader version 2, set .... to be completed!
+To activate bootloader v2, set .... to be completed!
 
 Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
 
