@@ -1,5 +1,5 @@
 # BrainPad
-![BrainPad](images/brainpad.jpg)
+![BrainPad](images/brainPad.jpg)
 
 The BrainPad is an educational STEM & STEAM targeted board. Courses and learning materials are found under the [BrainPad](../../brainpad/intro.md) section. 
 
