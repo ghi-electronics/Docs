@@ -15,7 +15,7 @@ TinyCLR OS allows tiny systems to run .NET applications with rich debugging capa
 # Other Options
 TinyCLR OS is the official supported platform for FEZ; however, these are some other good options. GHI Electronics is not affiliated and does not provide support for any of these 3rd party options.
 
-Interested in a FREE FEZ to test it with one of these options? We want to hear from you [direclty](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
+Interested in a FREE FEZ to test it with one of these options? We want to hear from you [directly](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
 
 ## Arduino
 Arduino is simpified multi-platform IDE/C++ combo, with a community STM32 options.
@@ -31,7 +31,7 @@ The STM32F4 is already one of available ports, making it easier to run MicroPyth
 * [GitHub Repo](https://github.com/elua/elua)
 
 ## mbed
-mbed is an online compiler platform. There is nothign to install, just log in and start coding!
+mbed is an online compiler platform. There is nothing to install, just log in and start coding!
 One of the supported boards is Nucleo-F401RE, which uses the exact same microcontroller found on FEZ. Start with it to build and compile then follow the [STM32 bootloader](../loaders/stm32_bootloader.md) instructions on generating and loading DFU files. 
 
 * [mbed Website](https://developer.mbed.org/)
