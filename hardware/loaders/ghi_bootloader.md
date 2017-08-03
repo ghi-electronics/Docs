@@ -2,6 +2,9 @@
 
 The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.
 
+> [!Tip]
+> If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi_bootloader.md#usb-drivers).
+
 # Bootloader v2
 All commands and results are terminated with CR and LF (\r\n). "OK." will be sent after each successful command.
 
@@ -93,3 +96,9 @@ Firmware | Date | Status | MD5
 Firmware | Date | Status | MD5
 --- | --- | --- | ---
 [EMX 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.2.ghi) | 2017-xx-xx | Alpha | x
+
+## USB Drivers
+Driver | Date | Status | MD5
+--- | --- | --- | --- | ---
+[x64 0.6.0](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64.0.6.0.ghi) | 2017-xx-xx | Alpha | x
+[x86 0.6.0](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86.0.6.0.ghi) | 2017-xx-xx | Alpha | x

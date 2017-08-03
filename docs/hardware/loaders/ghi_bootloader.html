@@ -77,6 +77,8 @@
 <h1 id="ghi-bootloader">GHI Bootloader</h1>
 
 <p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
+<div class="TIP"><h5>Tip</h5><p>If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the <a href="ghi_bootloader.html#usb-drivers">downloads section</a>.</p>
+</div>
 <h1 id="bootloader-v2">Bootloader v2</h1>
 <p>All commands and results are terminated with CR and LF (\r\n). &quot;OK.&quot; will be sent after each successful command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;OK.&quot;. Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.</p>
@@ -224,6 +226,31 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.2.ghi">EMX 2.0.3</a></td>
+<td>2017-xx-xx</td>
+<td>Alpha</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usb-drivers">USB Drivers</h2>
+<table>
+<thead>
+<tr>
+<th>Driver</th>
+<th>Date</th>
+<th>Status</th>
+<th>MD5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64.0.6.0.ghi">x64 0.6.0</a></td>
+<td>2017-xx-xx</td>
+<td>Alpha</td>
+<td>x</td>
+</tr>
+<tr>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86.0.6.0.ghi">x86 0.6.0</a></td>
 <td>2017-xx-xx</td>
 <td>Alpha</td>
 <td>x</td>
