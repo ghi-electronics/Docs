@@ -1,10 +1,11 @@
 # Clicker
+![Clicker](images/clicker.jpg) 
+
 The Clicker board from Mikro Elekronika, and other similar products listed on this page, all run TinyCLR OS. You will be loading TinyCLR OS on these boards using the [Mikro bootloader](../../hardware/loaders/mikro_bootloader.md). 
 
 > [!Tip]
 > The loader will wait for a few seconds on every power up before it runs TinyCLR OS. If this delay is not desirable, use an ST-Link programmer to flash the firmware onto the board directly, overwriting the bootloader.
 
-![Clicker](images/clicker.jpg) 
 Mikro Elekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) board includes a single [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroelektronika_click.md).
 
 The TinyCLR OS Clicker firmware
@@ -15,7 +16,7 @@ The TinyCLR OS Clicker firmware
 
 # Clicker 2
 
-Mikro Elekronika's [cicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroelektronika_click.md).
+Mikro Elekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroelektronika_click.md).
 
 The TinyCLR OS Clicker 2 firmware
 (coming soon!)
