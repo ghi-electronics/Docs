@@ -2,9 +2,13 @@
 The market is full of STM32 boards, especially the ones from ST Microelectronics, who offers several evaluation boards for their STM32 product families. The STM32F4 is the most popular family and it is what the FEZCLR reference firmware use.
 
 # STM32F4 Discovery
+![STM32F411 Discovery Board](images/STM32F411discoveryboard.jpg)
+
 The ST Microelectronics [STM32F411 Discovery board](http://www.st.com/en/evaluation-tools/32f411ediscovery.html) board works with the FEZCLR firmware. Simply, follow the [FEZ board](fez.md) instructions.
 
 # STM32F4 Nucleo
+![Nucleo-F401RE](images/nucleo-f401re.jpg)
+
 The ST Microelectronics [Nucleo-F401RE](http://www.st.com/en/evaluation-tools/nucleo-f401re.html) board works with the FEZCLR firmware. Simply, follow the [FEZ board](fez.md) instructions.
 
 > [!Tip]

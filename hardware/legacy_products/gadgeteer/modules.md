@@ -7,7 +7,7 @@ This page lists all .NET Gadgeteer modules and how can they be used with [TinyCL
 
 > [!Tip]
 > You can use Intellisense with the pin definition class to quickly determine where things go.
-> For example: Typing `FEXSpider.GpioPin.Socket3.` lists the available GPIO pins on scoekt3
+> For example: Typing `FEZSpider.GpioPin.Socket3.` lists the available GPIO pins on socket3
 > Another example: Typing `FEZSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
 
 > [!Tip]
