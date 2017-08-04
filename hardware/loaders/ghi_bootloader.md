@@ -39,7 +39,6 @@ TinyCLR Config tool should be used to update the firmware. As a backup, use thes
 9. When the transfer is complete, reset your board.
 
 ## GLB File Format
-
 The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.
 
 1. 32 bit signature number that is unique for each device.
@@ -55,7 +54,7 @@ After the upload header is the actual image to flash. If its length is not divis
 4. 16 bit CRC-CCITT of the boot image bounded by the specified address and length.
 
 # Bootloader v1
-Currently the EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
+Currently the USBizi, EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
 
 On startup, a banner is sent that is terminated by "BL". Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.
 
@@ -73,29 +72,37 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 Here you can find the various bootloaders available for the various products.
 
 ## FEZCLR
-Firmware | Date | Status | MD5
+Bootloader | Date | Status | MD5
 --- | --- | --- | ---
 [FEZCLR 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
 
 ## Cerb
-Firmware | Date | Status | MD5
+Bootloader | Date | Status | MD5
 --- | --- | --- | ---
 [Cerb 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 6505870259AC8E748FD09EBD00796E2E
 
 ## G120
-Firmware | Date | Status | MD5
+Bootloader | Date | Status | MD5
 --- | --- | --- | ---
 [G120 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
 ## G400
-Firmware | Date | Status | MD5
+Bootloader | Date | Status | MD5
 --- | --- | --- | ---
 [G400 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
 
 ## EMX
-Firmware | Date | Status | MD5
+Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[EMX 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.2.ghi) | 2017-xx-xx | Alpha | x
+[EMX 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.3.ghi) | 2017-xx-xx | Alpha | x
+
+## USBizi
+Bootloader | Date | Status | MD5
+--- | --- | --- | ---
+[USBizi 144 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
+[USBizi 100 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
+[USBizi 144 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 853557479D8797EAB650B98E3D333DCF
+[USBizi 100 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
 ## USB Drivers
 Driver | Date | Status | MD5
