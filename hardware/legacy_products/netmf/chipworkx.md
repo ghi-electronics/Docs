@@ -1,7 +1,6 @@
 # ChipworkX
 ![ChipworkX](images/chipworksX.jpg)
-
-Embedded Master is a NETMF System on Module. 
+ChipworkX is a NETMF System on Module. 
 
 To use with NETMF, follow these [setup instructions](intro.md). Needs the NETMF 4.1 SDK.
 
