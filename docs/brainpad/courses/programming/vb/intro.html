@@ -8,7 +8,7 @@
     <title>Introduction to Visual Basic </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction to Visual Basic ">
-    <meta name="generator" content="docfx 2.19.2.0">
+    <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
@@ -159,7 +159,7 @@ BrainPad.Wait.Seconds(0.5)
 BrainPad.LightBulb.TurnGreen()
 </code></pre><p><em><code>This code waits half a second (0.5) between turning the Lightbulb GREEN and OFF.</code></em></p>
 <p>Copy and paste the code from above into your project&#39;s <code>BrainPadSetup()</code> function. Run the code and observe the LightBulb again. You should now see the LightBulb turning <strong><span style="color:green">GREEN</span></strong> and off every half a second.</p>
-<h2 id="exercise-1">Exercise</h2>
+<h2 id="exercise">Exercise</h2>
 <p>Create a Traffic Light simulation using the following logic and the LightBulb:</p>
 <ol>
 <li>Turn the light on <strong><span style="color:green">GREEN</span></strong> </li>
@@ -171,7 +171,7 @@ BrainPad.LightBulb.TurnGreen()
 <li>Turn the light on <strong><span style="color:red">RED</span></strong> </li>
 <li>Wait 5 seconds. </li>
 </ol>
-<h2 id="answer-1">Answer</h2>
+<h2 id="answer">Answer</h2>
 <pre><code>BrainPad.LightBulb.TurnGreen()
 BrainPad.Wait.Seconds(5)
 BrainPad.LightBulb.TurnOff()
@@ -206,9 +206,9 @@ End While
 <p><img src="images/introduction/Figure10.png" alt="alt text"></p>
 <p><em><code>The stop button will stop the application that&#39;s running.</code></em></p>
 <p>Now, reset the BrainPad and note how the green light is still blinking but this time without the need for Visual Studio. In fact, you can connect the BrainPad to any appropriate power source (such as a phone charger) and the LightBulb will turn on <strong><span style="color:green">GREEN</span></strong> and will blink without the need for a PC.</p>
-<h2 id="exercise-2">Exercise</h2>
+<h2 id="exercise">Exercise</h2>
 <p>Make the LightBulb cycle through <strong>3</strong> different colors indefinitely.</p>
-<h2 id="answer-2">Answer</h2>
+<h2 id="answer">Answer</h2>
 <pre><code>Public Sub BrainPadSetup()
     While BrainPad.Looping
       BrainPad.LightBulb.TurnGreen()
@@ -270,9 +270,9 @@ End Sub
 </code></pre><p><em><code>This code will turn the LightBulb GREEN
  when the down button is pressed, and off when the down button **is not pressed** the **LightBulb** will turn on</code></em></p>
 <p>While the BrainPad doesn&#39;t have a method called <code>BrainPad.Button.IsDownNotPressed()</code> we can continue to use <code>BrainPad.Button.IsDownPressed()</code> but with <code>If Not</code> before it to represent if the button <code>is not pressed</code>.  Now when you run it, not pressing the button will turn/keep the LightBulb off.</p>
-<h2 id="exercise-3">Exercise</h2>
+<h2 id="exercise">Exercise</h2>
 <p>Turn the LightBulb <span style="color:green">GREEN</span>  when the <code>up</code> button <code>is pressed</code>. Turn the LightBulb off when the <code>down</code> button <code>is pressed</code>. Turn the LightBulb <span style="color:red">RED</span>  on when the <code>left</code> button is pressed and <span style="color:blue">BLUE</span>  when <code>right</code> button is pressed</p>
-<h2 id="answer-3">Answer</h2>
+<h2 id="answer">Answer</h2>
 <pre><code>Public Sub BrainPadSetup()
     BrainPad.LightBulb.TurnOff()
 End Sub
@@ -315,7 +315,7 @@ End Sub
     End If
 End Sub
 </code></pre><p><em><code>This code checks if both up and down are pressed, if so it plays a high pitch sound.</code></em></p>
-<h2 id="exercise-4">Exercise</h2>
+<h2 id="exercise">Exercise</h2>
 <p>Turn the LightBulb <span style="color:green">GREEN</span> on and play the buzzer at 5,000 Hz whenever the <code>up</code> or <code>down</code> button is pressed. Pressing both or either one will have the same effect.</p>
 <h2 id="extra-credit">Extra Credit</h2>
 <p><strong><span style="color:green">Tip:</span></strong> Use nested statements such as an <code>If</code> statement inside another <code>If</code> statement.</p>
