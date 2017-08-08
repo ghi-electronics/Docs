@@ -74,21 +74,25 @@ Here you can find the various bootloaders available for the various products.
 ## FEZCLR
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
+[FEZCLR 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader.2.0.4.dfu) | 2017-xx-xx | Alpha | x
 [FEZCLR 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
 
 ## Cerb
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
+[Cerb 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.4.dfu) | 2017-xx-xx | Alpha | x
 [Cerb 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader.2.0.3.dfu) | 2017-07-07 | Alpha | 6505870259AC8E748FD09EBD00796E2E
 
 ## G120
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
+[G120 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi) | 2017-xx-xx | Alpha | x
 [G120 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
 ## G400
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
+[G400 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.3.bin) | 2017-xx-xx | Alpha | x
 [G400 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
 
 ## EMX
@@ -99,8 +103,7 @@ Bootloader | Date | Status | MD5
 ## USBizi
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[USBizi 144 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
-[USBizi 100 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
+[USBizi 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
 [USBizi 144 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 853557479D8797EAB650B98E3D333DCF
 [USBizi 100 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
