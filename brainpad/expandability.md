@@ -7,7 +7,7 @@ This is an easy option as these modules simply plug in. There are hundreds of av
 
 ![Mikroelektronika Click](images/mikro-click.jpg) 
 
-This page covers further details on the [click modules](../tinyclr/accessories/mikroelektronika_click.md)
+This page covers further details on the [click modules](../tinyclr/accessories/mikroe_arduino_uno_click_shield.md)
 
 Advanced users can add any of the available modules. However, there are [courses](courses/intro.md) that cover specific modules and include all the needed drivers.
 
