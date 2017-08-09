@@ -5,7 +5,7 @@ Grove is a modular electronic platform for quick prototyping. Every module has o
 
 The included Grove modules plug into the included arduino shield. This shield works with any arduio-pinout compatible board, like the [FEZ](../../hardware/products/fez.md).
 
-Plug the shield on top of your board, and get the drivers (coming soon)
+Plug the shield on top of your board, and get the [drivers](https://github.com/ghi-electronics/TinyCLR-Accessories).
 
 
 This example that makes some noise!

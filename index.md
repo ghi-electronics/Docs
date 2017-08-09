@@ -5,15 +5,18 @@ This documentation covers three main categories:
 2. TinyCLR: Everything you need to use and/or port TinyCLR OS.
 3. BrainPad: Courses and learning material for the STEM/STEAM focused BrainPad.
 
-The GHI Electronics websites are at:
-* The main website: www.ghielectronics.com
-* TinyCLR OS: www.tinyclr.com 
-* BrainPad: www.brainpad.com
-
-> [!Note]
-> Some of the available docs are not yet complete, so please check back frequently.
+The GHI Electronics websites:
+* The main website: https://www.ghielectronics.com/
+* TinyCLR OS: http://www.tinyclr.com 
+* BrainPad: http://www.brainpad.com
+* The comunity forum: https://forums.ghielectronics.com/
 
 You may obtain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or through our [community forums](https://forums.ghielectronics.com/).
+
+> [!Note]
+> This is a new docuemntaion system and some of the available docs are still in progress. Please check back frequently.
+
+
 
 
 ![GHI Electronics](images/ghi-electronics-hs.jpg)
