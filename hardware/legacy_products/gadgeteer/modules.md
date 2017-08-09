@@ -1,13 +1,9 @@
 # .NET Gadgeteer Modules
-This page lists all .NET Gadgeteer modules and how can they be used with [TinyCLR OS](../../../tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.md) page.
-
-> [!Tip]
-> We discourage writing specific drivers that can't be used outside gadgeteer. It should be easy to transition from a gadgeteer to a non-gadgeteer design.
-> If a module is simple, then no driver at all is provided!
+This page lists all .NET Gadgeteer modules and how can they be used with [TinyCLR OS](../../../tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer, which we discourage, software then read the [.NET Gadgeteer Intro](intro.md) page.
 
 > [!Tip]
 > You can use Intellisense with the pin definition class to quickly determine where things go.
-> For example: Typing `FEZSpider.GpioPin.Socket3.` lists the available GPIO pins on socket3
+> For example: Typing `FEZSpider.GpioPin.Socket4.` lists the available GPIO pins on socket3
 > Another example: Typing `FEZSpider.UartPort.` lists all available UART sockets (that is U in the old Gadgeteer standard)
 
 > [!Tip]
@@ -17,19 +13,18 @@ This page lists all .NET Gadgeteer modules and how can they be used with [TinyCL
 # Accel G248
 ![Accel G248](images/modules/accel_g248.jpg)
 
-The Accel G248 measures acceleration though I2C bus.
-
-Coming Soon! https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248/AccelG248_43/AccelG248_43.cs
+The Accel G248 measures acceleration though I2C bus. Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248) as a refernce.
 
 # Barometer
 ![Barometer](images/modules/barometer.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer
+Meassures presure. Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer) as a refernce.
 
 # Bluetooth
 ![Bluetooth](images/modules/bluetooth.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth) as a refernce.
+
 # Breadboard X1
 ![Breadboard X1](images/modules/breadboard_x1.jpg)
 
@@ -37,6 +32,7 @@ An easy breadboard option. Simply access the socket directly to wire whatever yo
 
 # Breakout
 ![Breakout](images/modules/breakout.jpg)
+
 Simply a breakout of all signals.
 
 # Breakout TB10
@@ -57,10 +53,10 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() { 
-        var LED = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket1.Pin3);
+        var LED = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin3);
         LED.SetDriveMode(GpioPinDriveMode.Output);
 
-        var Button = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket4.Pin4);
+        var Button = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin4);
         Button.SetDriveMode(GpioPinDriveMode.InputPullUp);
         var speed = 200;
         while (true) {
@@ -107,35 +103,34 @@ USB Host is not supported in TinyCLR OS
 # Cellular Radio
 ![Cellular Radio](images/modules/cellular_radio.jpg)
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio) as a refernce.
 
 # Character Display
 ![Character Display](images/modules/character_display.jpg)
 
 This is a standard and very common HD44780 display.
 
-Coming soon! https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay/CharacterDisplay_43/CharacterDisplay_43.cs
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay) as a refernce.
 
 # ColorSense
 ![ColorSense](images/modules/color_sense.jpg)
 
 A color sensor that uses software I2C, not yet supported in TinyCLR OS.
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense/ColorSense_43/ColorSense_43.cs
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense) as a refernce.
 
 # Compass
 ![Compass](images/modules/compass.jpg)
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass) as a refernce.
+
 
 # Current ACS712
 ![Current ACS712](images/modules/current_acs712.jpg)
 
 This is a current sensor that uses ACS712, which simply outputs an analog voltage.
-add example that shows the conversion math https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CurrentACS712/CurrentACS712_43/CurrentACS712_43.cs
+
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CurrentACS712) as a refernce.
 
 # Display CP7
 ![Display CP7](images/modules/display_cp7.jpg)
@@ -144,27 +139,27 @@ Read more about the [display support](../../../tinyclr/tutorials/display.md) on 
 The configurations for the display:
 ```
 // these are the wrong values!
-Width = 480,
-Height = 272,
-PixelClockRate = 20000000,
+Width = 800,
+Height = 480,
+PixelClockRate = 24 * 1000 * 1000,
 PixelPolarity = false,
 OutputEnablePolarity = true,
-OutputEnableIsFixed = false,
-HorizontalFrontPorch = 2,
-HorizontalBackPorch = 2,
-HorizontalSyncPulseWidth = 41,
-HorizontalSyncPolarity = false,
-VerticalFrontPorch = 2,
-VerticalBackPorch = 2,
-VerticalSyncPulseWidth = 10,
-VerticalSyncPolarity = false,
+OutputEnableIsFixed = true,
+HorizontalFrontPorch = 16,
+HorizontalBackPorch = 46,
+HorizontalSyncPulseWidth = 1,
+HorizontalSyncPolarity = true,
+VerticalFrontPorch = 7,
+VerticalBackPorch = 23,
+VerticalSyncPulseWidth = 1,
+VerticalSyncPolarity = true,
 ```
 
 # Display N18
 ![Display N18](images/modules/display_n18.jpg)
 
-This is an SPI display that can work on any system, even small ones without TFT display support.
-Coming soon! Use the old BrainPad driver.
+This is an SPI display that can work on any system with SPI bus, even small ones without TFT display support.
+See the [Display](../../../tinyclr/tutorials/display.md) tutorial for more details.
 
 
 # Display N7
@@ -173,21 +168,20 @@ Coming soon! Use the old BrainPad driver.
 Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
-// these are the wrong values!
-Width = 480,
-Height = 272,
-PixelClockRate = 20000000,
+Width = 800,
+Height = 480,
+PixelClockRate = 24 * 1000 * 1000,
 PixelPolarity = false,
 OutputEnablePolarity = true,
-OutputEnableIsFixed = false,
-HorizontalFrontPorch = 2,
-HorizontalBackPorch = 2,
-HorizontalSyncPulseWidth = 41,
-HorizontalSyncPolarity = false,
-VerticalFrontPorch = 2,
-VerticalBackPorch = 2,
-VerticalSyncPulseWidth = 10,
-VerticalSyncPolarity = false,
+OutputEnableIsFixed = true,
+HorizontalFrontPorch = 16,
+HorizontalBackPorch = 46,
+HorizontalSyncPulseWidth = 1,
+HorizontalSyncPolarity = true,
+VerticalFrontPorch = 7,
+VerticalBackPorch = 23,
+VerticalSyncPulseWidth = 1,
+VerticalSyncPolarity = true,
 ```
 
 
@@ -197,21 +191,21 @@ VerticalSyncPolarity = false,
 This allows the use of several displays offered by http://newhavendisplay.com/
 
 Supported displays:
-* 1
-* 2
-* 3
-
-
-# Display T35
-![Display T35](images/modules/display_t35.jpg)
+* [NHD-4.3-480272EF-ATXL#](http://www.newhavendisplay.com/nhd43480272efatxl-p-5570.html)
+* [NHD-4.3-480272EF-ATXL#-CTP](http://www.newhavendisplay.com/nhd43480272efatxlctp-p-5572.html)
+* [NHD-4.3-480272EF-ATXL#-T](http://www.newhavendisplay.com/nhd43480272efatxlt-p-5571.html)
+* [NHD-7.0-800480EF-ATXL#](http://www.newhavendisplay.com/nhd70800480efatxl-p-6284.html)
+* [NHD-7.0-800480EF-ATXL#-CTP](http://www.newhavendisplay.com/nhd70800480efatxlctp-p-6911.html)
+* [NHD-7.0-800480EF-ATXV#](http://www.newhavendisplay.com/nhd70800480efatxv-p-6720.html)
+* [NHD-7.0-800480EF-ATXV#-CTP](http://www.newhavendisplay.com/nhd70800480efatxvctp-p-6912.html)
 
 Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
-The configurations for the display:
+
+The configurations for all 4.3" display:
 ```
-// these are the wrong values!
 Width = 480,
 Height = 272,
-PixelClockRate = 20000000,
+PixelClockRate = 20 * 1000 * 1000,
 PixelPolarity = false,
 OutputEnablePolarity = true,
 OutputEnableIsFixed = false,
@@ -221,6 +215,48 @@ HorizontalSyncPulseWidth = 41,
 HorizontalSyncPolarity = false,
 VerticalFrontPorch = 2,
 VerticalBackPorch = 2,
+VerticalSyncPulseWidth = 10,
+VerticalSyncPolarity = false,
+```
+
+The configurations for all 7" display:
+```
+Width = 800,
+Height = 480,
+PixelClockRate = 20 * 1000 * 1000,
+PixelPolarity = false,
+OutputEnablePolarity = true,
+OutputEnableIsFixed = false,
+HorizontalFrontPorch = 88,
+HorizontalBackPorch = 40,
+HorizontalSyncPulseWidth = 48,
+HorizontalSyncPolarity = false,
+VerticalFrontPorch = 13,
+VerticalBackPorch = 32,
+VerticalSyncPulseWidth = 3,
+VerticalSyncPolarity = false,
+```
+As for the capacitive touch controller, use this [old NETMF driver](https://old.ghielectronics.com/docs/338/display-nhvn-developers-guide) as a reference.
+
+
+# Display T35
+![Display T35](images/modules/display_t35.jpg)
+
+Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
+The configurations for the display:
+```
+Width = 320,
+Height = 240,
+PixelClockRate = 15 * 1000 * 1000,
+PixelPolarity = false,
+OutputEnablePolarity = true,
+OutputEnableIsFixed = true,
+HorizontalFrontPorch = 51,
+HorizontalBackPorch = 27,
+HorizontalSyncPulseWidth = 41,
+HorizontalSyncPolarity = false,
+VerticalFrontPorch = 16,
+VerticalBackPorch = 8,
 VerticalSyncPulseWidth = 10,
 VerticalSyncPolarity = false,
 ```
@@ -231,10 +267,9 @@ VerticalSyncPolarity = false,
 Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
-// these are the wrong values!
 Width = 480,
 Height = 272,
-PixelClockRate = 20000000,
+PixelClockRate = 20 * 1000 * 1000,
 PixelPolarity = false,
 OutputEnablePolarity = true,
 OutputEnableIsFixed = false,
@@ -254,19 +289,18 @@ VerticalSyncPolarity = false,
 Read more about the [display support](../../../tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
-// these are the wrong values!
-Width = 480,
-Height = 272,
-PixelClockRate = 20000000,
+Width = 320,
+Height = 240,
+PixelClockRate = 15 * 1000 * 1000,
 PixelPolarity = false,
 OutputEnablePolarity = true,
-OutputEnableIsFixed = false,
-HorizontalFrontPorch = 2,
-HorizontalBackPorch = 2,
+OutputEnableIsFixed = true,
+HorizontalFrontPorch = 51,
+HorizontalBackPorch = 29,
 HorizontalSyncPulseWidth = 41,
 HorizontalSyncPolarity = false,
-VerticalFrontPorch = 2,
-VerticalBackPorch = 2,
+VerticalFrontPorch = 16,
+VerticalBackPorch = 3,
 VerticalSyncPulseWidth = 10,
 VerticalSyncPolarity = false,
 ```
@@ -274,22 +308,27 @@ VerticalSyncPolarity = false,
 # Distance US3
 ![Distance US3](images/modules/distance_us3.jpg)
 
-A very common ultrasonic sensor that works by sending a pulse on the trig and measuring the response time on echo pin.
+A very common ultrasonic sensor that works by sending a pulse on the trig Pin4 and measuring the response time on echo Pin3.
 
 ```
-I have the code in the robot example
+GpioPulseReaderWriter echolen = new GpioPulseReaderWriter(
+    GpioPulseReaderWriter.Mode.EchoDuration,
+    true, 10, FEZSpider.GpioPin.Socket4.Pin4,
+    true, FEZSpider.GpioPin.Socket4.Pin3);
+
+long time = echolen.Read();
 ```
 
 
 # Ethernet ENC28
 ![Ethernet ENC28](images/modules/ethernet_enc28.jpg)
 
-Requires an internal support in the TinyCLR OS port.
+Requires an internal support in the TinyCLR OS port or a managed TCP/IP stack.
 
 # Ethernet J11D
 ![Ethernet J11D](images/modules/ethernet_j11d.jpg)
 
-Requires an internal support in the TinyCLR OS port.
+Requires an internal support in the TinyCLR OS port or a managed TCP/IP stack.
 
 # Extender
 ![Extender](images/modules/extender.jpg)
@@ -299,19 +338,17 @@ No drivers are needed.
 # FEZtive
 ![FEZtive](images/modules/feztive.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive) as a refernce.
 
 # Flash
 ![Flash](images/modules/flash.jpg)
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH) as a refernce.
 
 # GPS
 ![GPS](images/modules/gps.jpg)
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS) as a refernce.
 
 # GasSense
 ![GasSense](images/modules/gas_sense.jpg)
@@ -329,11 +366,11 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var Enable = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket10.Pin4);
+        var Enable = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket10.Pin4);
         Enable.SetDriveMode(GpioPinDriveMode.Output);
         Enable.Write(GpioPinValue.High);// Enable the internal heater
 
-        var Ain = AdcController.GetDefault().OpenChannel(FEZSpiderII.AdcChannel.Socket10.Pin3);
+        var Ain = AdcController.GetDefault().OpenChannel(FEZSpider.AdcChannel.Socket10.Pin3);
         while (true) {
             Debug.WriteLine("Ain: " + Ain.ReadRatio());
             Thread.Sleep(500);
@@ -345,13 +382,12 @@ class Program {
 # Gyro
 ![Gyro](images/modules/gyro.jpg)
 
-Coming soon! 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro) as a refernce.
 
 # HD44780
 ![HD44780](images/modules/hd44780.jpg)
 
-See the Character Display Module
+See the [Character Display](#character-display) Module
 
 # HubAP5
 ![HubAP5](images/modules/hub_ap5.jpg)
@@ -362,14 +398,12 @@ No hub support is currently planned.
 ![IO60P16](images/modules/io60p16.jpg)
 
 This module provide 60 IOs and 16 PWM pins.
-Will not be ported but you can port the [original driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IO60P16).
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IP60P16) as a refernce.
 
 # IR Receiver
 ![IR Receiver](images/modules/ir_reciever.jpg)
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver
-
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver) as a refernce.
 
 # Joystick
 ![Joystick](images/modules/joystick.jpg)
@@ -385,9 +419,9 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var AinX = AdcController.GetDefault().OpenChannel(FEZSpiderII.AdcChannel.Socket10.Pin4);
-        var AinY = AdcController.GetDefault().OpenChannel(FEZSpiderII.AdcChannel.Socket10.Pin5);
-        var Button = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket10.Pin3);
+        var AinX = AdcController.GetDefault().OpenChannel(FEZSpider.AdcChannel.Socket10.Pin4);
+        var AinY = AdcController.GetDefault().OpenChannel(FEZSpider.AdcChannel.Socket10.Pin5);
+        var Button = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket10.Pin3);
         Button.SetDriveMode(GpioPinDriveMode.InputPullUp);
 
         while (true) {
@@ -403,8 +437,7 @@ class Program {
 # Keypad KP16
 ![Keypad KP16](images/modules/keypad_kp16.jpg)
 
-A numerical Keypad
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16) as a refernce.
 
 # LED 7C
 ![LED 7C](images/modules/led_7c.jpg)
@@ -421,11 +454,11 @@ using GHIElectronics.TinyCLR.Pins;
 class Program {
     static void Main() {
         var GPIO = GpioController.GetDefault();
-        var Red = GPIO.OpenPin(FEZSpiderII.GpioPin.Socket8.Pin4);
+        var Red = GPIO.OpenPin(FEZSpider.GpioPin.Socket8.Pin4);
         Red.SetDriveMode(GpioPinDriveMode.Output);
-        var Green = GPIO.OpenPin(FEZSpiderII.GpioPin.Socket8.Pin4);
+        var Green = GPIO.OpenPin(FEZSpider.GpioPin.Socket8.Pin5);
         Green.SetDriveMode(GpioPinDriveMode.Output);
-        var Blue = GPIO.OpenPin(FEZSpiderII.GpioPin.Socket8.Pin4);
+        var Blue = GPIO.OpenPin(FEZSpider.GpioPin.Socket8.Pin3);
         Blue.SetDriveMode(GpioPinDriveMode.Output);
 
         while (true) {
@@ -463,13 +496,13 @@ class Program {
 This is a ring of 6 LEDs and a 7th center LED.
 Reference the LED 7C module for using pins.
 
-Center LED: pin ??
-LEDs in CW starting from the top: 1,2,3,4???
+Center LED: pin 9
+LEDs going clock wise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D5, D6 are pins 3 to 8 respectively.
 
 # LED Strip
 ![LED Strip](images/modules/led_strip.jpg)
 
-A strip of 7 LEDs, connected to pins 3 through 9.
+A strip of 7 LEDs, connected to pins 3 through 9. Reference the LED 7C module for using pins.
 
 # Light Sense
 ![Light Sense](images/modules/light_sense.jpg)
@@ -484,10 +517,11 @@ Each one of the 7 GPIO pins are connected to a transistor to handle a load, like
 # MaxO
 ![MaxO](images/modules/maxo.jpg)
 
-Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs.
+Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs. This video explains how this works
 
-Coming soon!
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO) as a refernce.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2qYLsM9DoBI" frameborder="0" allowfullscreen></iframe>
 
 # MicroSD Card
 ![MicroSD Card](images/modules/microsd.jpg)
@@ -508,11 +542,11 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var Enable = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket10.Pin6);
+        var Enable = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket10.Pin6);
         Enable.SetDriveMode(GpioPinDriveMode.Output);
         Enable.Write(GpioPinValue.High);// Enable
 
-        var Ain = AdcController.GetDefault().OpenChannel(FEZSpiderII.AdcChannel.Socket10.Pin3);
+        var Ain = AdcController.GetDefault().OpenChannel(FEZSpider.AdcChannel.Socket10.Pin3);
         while (true) {
             Debug.WriteLine("Ain: " + Ain.ReadRatio());
             Thread.Sleep(500);
@@ -546,21 +580,20 @@ class Program {
     static void Main() {
         // Determine what PWM controller is used for specific pins, use the power of intellisense!
         // start typing FEZSpider.PwmPin. to navigate the options
-        // >>>>>>>>>>>> Will this work if we have different controller?
 
         // Motor A
-        var MotorDirA = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket8.Pin6);
+        var MotorDirA = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket8.Pin6);
         MotorDirA.SetDriveMode(GpioPinDriveMode.Output);
-        var ControllerA = PwmController.FromId(FEZSpiderII.PwmPin.Controller1.Id);
+        var ControllerA = PwmController.FromId(FEZSpider.PwmPin.Controller1.Id);
         ControllerA.SetDesiredFrequency(5000);
-        var MotorSpeedA = ControllerA.OpenPin(FEZSpiderII.PwmPin.Controller1.Socket8.Pin7);
+        var MotorSpeedA = ControllerA.OpenPin(FEZSpider.PwmPin.Controller1.Socket8.Pin7);
 
         // Motor B
-        var MotorDirB = GpioController.GetDefault().OpenPin(FEZSpiderII.GpioPin.Socket8.Pin8);
+        var MotorDirB = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket8.Pin8);
         MotorDirB.SetDriveMode(GpioPinDriveMode.Output);
-        var ControllerB = PwmController.FromId(FEZSpiderII.PwmPin.Controller1.Id);
+        var ControllerB = PwmController.FromId(FEZSpider.PwmPin.Controller1.Id);
         ControllerB.SetDesiredFrequency(5000);
-        var MotorSpeedB = ControllerB.OpenPin(FEZSpiderII.PwmPin.Controller1.Socket8.Pin9);
+        var MotorSpeedB = ControllerB.OpenPin(FEZSpider.PwmPin.Controller1.Socket8.Pin9);
 
         while (true) {
             MotorDirA.Write(GpioPinValue.High);// Forward
@@ -578,13 +611,13 @@ class Program {
 ![Multicolor LED](images/modules/multicolor_led.jpg)
 
 
-This module used DaisyLink bus to chain some expensive LED! We will not support the DaisyLink bus.
+A DaisyLink moudle, we will not support.
 
  # Music
 ![Music](images/modules/music.jpg)
 
 The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
-Original code is found at [here](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music) and needs a volunteer to update.
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music) as a refernce.
 
 # Null Modem
 ![Null Modem](images/modules/null_modem.jpg)
@@ -594,24 +627,24 @@ No driver is needed.
 # OBD II
 ![OBD II](images/modules/obd_ii.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII) as a refernce.
 
 # OneWire X1
 ![OneWire X1](images/modules/onewire_x1.jpg)
 
-A breakout with a terminal block for easily connecting one wire devices, specifically the common temperature probes.
-one wire is not supported yet.
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OneWireX1
+A breakout with a terminal block for easily connecting OneWire devices, specifically the common temperature probes.
+
+OneWire is not supported yet.
 
 # PIR
 ![PIR](images/modules/pir.jpg)
 
-Motion detection. Simply pin 3 changes irs state when it detects motion.
+Motion detection. Simply pin 3 changes its state when it detects motion.
 
 # Parallel CNC
 ![Parallel CNC](images/modules/parallel_cnc.jpg)
 
-Will not be supported.
+A DaisyLink moudle, we will not support.
 
 # Potentiometer
 ![Potentiometer](images/modules/potentiometer.jpg)
@@ -626,7 +659,7 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var Ain = AdcController.GetDefault().OpenChannel(FEZSpiderII.AdcChannel.Socket10.Pin3);
+        var Ain = AdcController.GetDefault().OpenChannel(FEZSpider.AdcChannel.Socket10.Pin3);
 
         while (true) {
             Debug.WriteLine("Pos: " + Ain.ReadRatio() + "%");
@@ -638,22 +671,22 @@ class Program {
 # Pulse Count
 ![Pulse Count](images/modules/pulse_count.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount) as a refernce.
 
 # Pulse InOut
 ![Pulse InOut](images/modules/pulse_inout.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseInOut
+A DaisyLink moudle, we will not support.
 
 # Pulse Oximeter
 ![Pulse Oximeter](images/modules/pulse_oximeter.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter) as a refernce.
 
 # RFID Reader
 ![RFID Reader](images/modules/rfid_reader.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader) as a refernce.
 
 # RS232
 ![RS232](images/modules/rs232.jpg)
@@ -668,28 +701,29 @@ Simply a serial port.
 # Radio FM1
 ![Radio FM1](images/modules/radio_fm1.jpg)
 
-I have the code on click
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RadioFM1) as a refernce.
 
 # Reflector R3
 ![Reflector R3](images/modules/reflector_r3.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3) as a refernce.
 
 # Relay ISOx16
 ![Relay ISOx16](images/modules/relay_isox16.jpg)
 
-An array of 16 relays.
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16
+An array of 16 relays. Operate similar to the MaxO module.
+
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16) as a refernce.
 
 # Relay X1
 ![Relay X1](images/modules/relay_x1.jpg)
 
-Simply use set pin 3 high to activate the relay.
+Simply set pin 3 high to activate the relay.
 
 # Rotary H1
 ![Rotary H1](images/modules/rotary_h1.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1) as a refernce.
 
 # SD Card
 ![SD Card](images/modules/sd_card.jpg)
@@ -699,39 +733,37 @@ File system is not supported yet.
 # S-Plus
 ![S-Plus](images/modules/s_plus.jpg)
 
-We will not support hubs and socket indirection.
+We will not support hubs.
 
 # Serial Camera
 ![Serial Camera](images/modules/serial_camera.jpg)
 
-Aren't they both the same?
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL2
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1) as a refernce.
 
 # Stepper L6470
 ![Stepper L6470](images/modules/stepper_l6470.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470) as a refernce.
 
 # TempHumidity
 ![TempHumidity](images/modules/temp_humidity.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity) as a refernce.
 
 # Thermocouple
 ![Thermocouple](images/modules/thermocouple.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple) as a refernce.
 
 # Touch C8
 ![Touch C8](images/modules/touch_c8.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8) as a refernce.
 
 # Touch L12
 ![Touch L12](images/modules/touch_l12.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12) as a refernce.
 
 # Tunes
 ![Tunes](images/modules/tunes.jpg)
@@ -747,8 +779,8 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() {
-        var controller = PwmController.FromId(FEZSpiderII.PwmPin.Controller0.Id);
-        var buzz = controller.OpenPin(FEZSpiderII.PwmPin.Controller0.Socket11.Pin9);
+        var controller = PwmController.FromId(FEZSpider.PwmPin.Controller0.Id);
+        var buzz = controller.OpenPin(FEZSpider.PwmPin.Controller0.Socket11.Pin9);
 
         controller.SetDesiredFrequency(500);// change the frequency for sounds
         buzz.SetActiveDutyCyclePercentage(0.5);// always use this for sounds
@@ -796,12 +828,12 @@ Simply, a serial port.
 # VideoOut
 ![VideoOut](images/modules/video_out.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut) as a refernce.
 
 # WiFi RN171
 ![WiFi RN171](images/modules/wifi_rn171.jpg)
 
-https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171
+Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171) as a refernce.
 
 # WiFi RS21
 ![WiFi RS21](images/modules/wifi_rs21.jpg)
@@ -811,5 +843,4 @@ Will not be supported, NDA issues.
 # XBee Adapter
 ![XBee Adapter](images/modules/xbee_adapter.jpg)
 
-Simply, a serial port. From there a driver like https://xbee.codeplex.com/
-
+Simply, a serial port. From there a driver like https://xbee.codeplex.com/ will help.
