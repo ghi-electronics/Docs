@@ -496,8 +496,8 @@ class Program {
 This is a ring of 6 LEDs and a 7th center LED.
 Reference the LED 7C module for using pins.
 
-Center LED: pin ??
-LEDs in CW starting from the top: 1,2,3,4???
+Center LED: pin 9
+LEDs going clock wise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D5, D6 are pins 3 to 8 respectively.
 
 # LED Strip
 ![LED Strip](images/modules/led_strip.jpg)
