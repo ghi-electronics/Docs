@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/electronics/intro.html",
-          "hash": "dWJpvM/XIa3hQ85WJdL+TA=="
+          "hash": "bvzZ7vfB19zqJg3XW2pboA=="
         }
       },
       "is_incremental": false,
@@ -428,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/filesystem.html",
-          "hash": "O2ZhX8N4OTR+ZcDqes75bQ=="
+          "hash": "25q7uAL19qaYOXtQGSug3Q=="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/intro.html",
-          "hash": "QWbbwncTKfhrK+t+phoTYg=="
+          "hash": "xDu8ahENuowRJBU+BsE+Iw=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/modules.html",
-          "hash": "JCB0iDRWNAP3jMb55i5Kog=="
+          "hash": "3craoqmTKZKL23geH+d9ZQ=="
         }
       },
       "is_incremental": false,
@@ -1726,7 +1726,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/imaging.html",
-          "hash": "nm/TDD1QYusOgyo22yPoOA=="
+          "hash": "AaLrM/Tk+7YUw1CevSMCWg=="
         }
       },
       "is_incremental": false,
@@ -1965,7 +1965,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/netmf/usbizi.html",
-          "hash": "Lr4uWLnXIw3qhbgQ1ujtfQ=="
+          "hash": "5UK6DFRS3gKYR+aZR7LArw=="
         }
       },
       "is_incremental": false,
@@ -2085,7 +2085,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g400.html",
-          "hash": "lIGfWEhHDDkMbTWYN5RWgA=="
+          "hash": "2r7LjU7ASjCEmfubXEiSFg=="
         }
       },
       "is_incremental": false,
@@ -2398,7 +2398,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/adafruit_display_shield.html",
-          "hash": "C3q9qHsFYbWyCL7Z9aRCBg=="
+          "hash": "zan4qbQ7ojUzdg7+LtO71Q=="
         }
       },
       "is_incremental": false,
@@ -2758,7 +2758,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "aQ8NnWCW7HOEjBFJsWdaSQ=="
+          "hash": "Pm5weFQgE+jTDkNKJfdJPA=="
         }
       },
       "is_incremental": false,
@@ -2818,7 +2818,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/dac.html",
-          "hash": "8aJRDDU9QX9+pvRav7dd/g=="
+          "hash": "VCXztMCkrFroWRnT8K4g1w=="
         }
       },
       "is_incremental": false,
@@ -2830,7 +2830,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/display.html",
-          "hash": "MU+12VlVkYQ6VWtnbi7XDw=="
+          "hash": "F4SAQOgRimyz4MXBNDDBvQ=="
         }
       },
       "is_incremental": false,
@@ -2854,7 +2854,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiochangereader.html",
-          "hash": "MnecI81hv8LzDWJgZFxcyg=="
+          "hash": "SQ5ivwUFTzcxUkGg3etNwA=="
         }
       },
       "is_incremental": false,
@@ -2866,7 +2866,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiochangewriter.html",
-          "hash": "kxWJOcHbgLNwbm8wEoJuGw=="
+          "hash": "kyd0iDB3U/+nRDYq7BOZyg=="
         }
       },
       "is_incremental": false,
@@ -2878,7 +2878,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiopulsereaderwriter.html",
-          "hash": "QFdX1bhh0k3U46pxWQBkIQ=="
+          "hash": "cSPDK2CNB3avrkZIqh8zkw=="
         }
       },
       "is_incremental": false,
@@ -3103,7 +3103,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -3123,11 +3124,11 @@
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
