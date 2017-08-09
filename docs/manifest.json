@@ -2406,17 +2406,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "tinyclr/accessories/images/GroveStarterKitSeeedStudio.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "tinyclr/accessories/images/GroveStarterKitSeeedStudio.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "tinyclr/accessories/images/adafruit-tft-joystick-shield.jpg",
       "output": {
         "resource": {
@@ -2428,10 +2417,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "tinyclr/accessories/images/mikro-click.jpg",
+      "source_relative_path": "tinyclr/accessories/images/mikro-arduino-click-shield.jpg",
       "output": {
         "resource": {
-          "relative_path": "tinyclr/accessories/images/mikro-click.jpg"
+          "relative_path": "tinyclr/accessories/images/mikro-arduino-click-shield.jpg"
         }
       },
       "is_incremental": false,
@@ -2443,6 +2432,17 @@
       "output": {
         "resource": {
           "relative_path": "tinyclr/accessories/images/pololu-zumo-robot.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "tinyclr/accessories/images/seeed-grove-starter-kit.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "tinyclr/accessories/images/seeed-grove-starter-kit.jpg"
         }
       },
       "is_incremental": false,
@@ -2477,7 +2477,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/mikroe_arduino_uno_click_shield.html",
-          "hash": "LFxoEZvzL7t6c8szIgr7KQ=="
+          "hash": "ylM5TlUee8pJ3SXh5un2zw=="
         }
       },
       "is_incremental": false,
@@ -2501,7 +2501,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/seeed_grove_starter_kit.html",
-          "hash": "q096lgl5rOMivsJzTwCPTg=="
+          "hash": "5yU1rneI1I9AocsrkLeVwg=="
         }
       },
       "is_incremental": false,
@@ -3107,18 +3107,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -3127,6 +3123,10 @@
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }

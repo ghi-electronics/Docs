@@ -1,6 +1,6 @@
 # MikroElektronika Arduino UNO Click Shield
 
-![Mikroelektronika Click](images/mikro-click.jpg) 
+![Mikroelektronika Click](images/mikro-arduino-click-shield.jpg) 
 
 Through Mikro Electronica's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click boards](https://shop.mikroe.com/click) can be easily connected to your board.
 

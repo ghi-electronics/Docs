@@ -1,5 +1,5 @@
 # Seeed Grove Starter Kit
-![Seeed Grove Starter Kit](images/GroveStarterKitSeeedStudio.jpg) 
+![Seeed Grove Starter Kit](images/seeed-grove-starter-kit.jpg) 
 
 Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds. We have picked the [Seeed Grove Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html) as  starting base but you can add additional Grove modules as well.
 
