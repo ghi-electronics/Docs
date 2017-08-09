@@ -11,7 +11,7 @@ Originally called ALFAT.
 * [ALFAT-SD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT SD Board Schematic.pdf)
 * [ALFAT-OEM Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT OEM Board Schematic.pdf)
 * [Firmware 1.08]() 
-* [Firmware 2.00](https://www.ghielectronics.com/downloads/ALFAT/ALFAT(2.0.0).GHI) (the file name needs changing)
+* [Firmware 2.00](https://old.ghielectronics.com/downloads/ALFAT/ALFAT(2.0.0).GHI) (the file name needs changing)
 
 
 # F20

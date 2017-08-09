@@ -3,7 +3,7 @@
 
 USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It was available in 100pin and 144pin LQFP packages.
 
-We are no longer making the chip available but we are making all [bootloader binaries](https://www.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
+We are no longer making the chip available but we are making all [bootloader binaries](https://old.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
 
 # Resources
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi 100 User Manual.pdf) 
@@ -58,4 +58,4 @@ An Arduino-poinout compatible board.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Mini Schematic.pdf)
 
 USBizi was the core of many of GHI Electronics' products, FEZ Panda, FEZ Panda II, FEZ Domino, FEZ Rhino and FEZ Mini. 
-Move resources from old server [here](https://www.ghielectronics.com/downloads/FEZ/)
+Move resources from old server [here](https://old.ghielectronics.com/downloads/FEZ/)

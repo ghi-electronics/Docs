@@ -24,7 +24,7 @@ Most of the Gadgeteer ecosystem is open source:
 
 # Socket Map
 The magic of Gadgeteer is in its socket map
-(copy the map from here https://www.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference)
+(copy the map from here https://old.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference)
 
 
 # Using .NET Gadgeteer
