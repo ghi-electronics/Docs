@@ -86,24 +86,29 @@ Bootloader | Date | Status | MD5
 ## G120
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[G120 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.3.ghi) | 2017-xx-xx | Alpha | x
+[G120 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.4.ghi) | 2017-xx-xx | Alpha | x
 [G120 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader.2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
 ## G400
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[G400 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.3.bin) | 2017-xx-xx | Alpha | x
 [G400 2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
+[G400 2.0.1](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader.2.0.1.bin) | 2016-06-27 | Alpha | 42CD50E4105939611ABF360475EBF4E5
 
 ## EMX
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[EMX 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.3.ghi) | 2017-xx-xx | Alpha | x
+[EMX 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader.2.0.4.ghi) | 2017-xx-xx | Alpha | x
+
+## Embedded Master
+Bootloader | Date | Status | MD5
+--- | --- | --- | ---
+[Embedded Master 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Embedded%20Master%20Bootloader.2.0.4.ghi) | 2017-xx-xx | Alpha | x
 
 ## USBizi
 Bootloader | Date | Status | MD5
 --- | --- | --- | ---
-[USBizi 2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.2.0.3.hex) | 2017-xx-xx | Alpha | x
+[USBizi 2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20Bootloader.2.0.4.hex) | 2017-xx-xx | Alpha | x
 [USBizi 144 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 853557479D8797EAB650B98E3D333DCF
 [USBizi 100 1.0.7](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader.1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
