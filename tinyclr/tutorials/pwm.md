@@ -28,15 +28,19 @@ class Program
         PwmPin led = Controller4.OpenPin(FEZ.PwmPin.Controller4.Led1);
         Controller4.SetDesiredFrequency(10000);
         double duty = 0.5, speed = 0.01;
-              led.Start();
+        led.Start();
         while (true)
         {
+            if (duty <= 0 || duty >= 1.0)
+            {
+                speed *= -1; //invert dirrection
+                duty += speed;
+            }
 
             led.SetActiveDutyCyclePercentage(duty);
             duty += speed;
-            if (duty <= 0 || duty >= 1)
-                duty *= -1;//invert dirrection
-            Thread.Sleep(10);// always give the system time to think!
+            
+            Thread.Sleep(10); // always give the system time to think!
         }
     }
 
