@@ -6,7 +6,7 @@ USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It 
 We are no longer making the chip available but we are making all [bootloader binaries](https://www.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
 
 # Resources
-* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi User Manual.pdf) 
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi%20Userjust build them and do a quick test to make sure V, N, and X/U workManual.pdf) 
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md).
@@ -50,31 +50,28 @@ Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow 
 
 The original development board for USBizi.
 
-*[Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/USBizi DevSys Schematic.pdf)
+*[Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/USBizi%20DevSys%20Schematic.pdf)
 
 ## FEZ Panda
 ![FEZ Panda](images/fez_panda.jpg)
 
 An Arduino-poinout compatible board.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Panda%20Schematic.pdf)
 
 ## FEZ Panda II
 ![FEZ Panda II](images/fez_panda_ii.jpg)
 
 An Arduino-poinout compatible board.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda II Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Panda%20II%20Schematic.pdf)
 
 ## FEZ Rhino
 ![FEZ Rhino](images/fez_rhino.jpg)
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Rhino Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Rhino%20Schematic.pdf)
 
 ## FEZ Mini
 ![FEZ Mini](images/fez_mini.jpg)
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Mini Schematic.pdf)
-
-USBizi was the core of many of GHI Electronics' products, FEZ Panda, FEZ Panda II, FEZ Domino, FEZ Rhino and FEZ Mini. 
-Move resources from old server [here](https://www.ghielectronics.com/downloads/FEZ/)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Mini%20Schematic.pdf)
