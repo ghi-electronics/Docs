@@ -1,5 +1,85 @@
 # Alpha Release Notes
 
+## 0.6.0 on 2017-07-xx
+
+### Notes
+Initial release of bootloader interface drivers for Windows 7 and Windows 8. TinyCLR Config update firmware won't work for this release because it's new.
+
+### Libraries
+
+#### Changes
+- Split `ReadTemperature` in BrainPad to `ReadTemperatureInCelsius` and `ReadTemperatureInFahrenheit`.
+- Moved `Picture` out of `BrainPad.Display`.
+- Moved `BrainPad.Expansion` to the pins library.
+- Changed the original BrainPad display driver to only allocate memory on first use.
+- Added basic STM32F4, LPC17, LPC24, and AT91 processor pin definitions.
+- Added `FEZSpiderII`, `Cerb`, and `FEZCLR` to the pins library.
+- Updated many pin names to match the processor name more closely (particularly COM to UART).
+- Calls to `*Provider.FromId` in devices with the same id now return the same object instance.
+- Sharing modes for the various providers in the devices library are now supported.
+- Software I2C works correctly again.
+
+#### Known Issues
+- Formatting numbers that cross an assembly boundary can throw an exception.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Partially transparent ellipses have weird artifacts.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+
+### Firmware
+
+#### Changes
+- Fixed the device not loading drivers over USB.
+- Added clicker and clicker2.
+- Added G120, EMX, Embedded Master, and USBizi.
+- Renamed `FEZ` to `FEZCLR` and `FEZCerberus` to `Cerb` [#8](https://github.com/ghi-electronics/TinyCLR-Ports/issues/8).
+- Refactored specific devices out of the build script and into configuration files [#6](https://github.com/ghi-electronics/TinyCLR-Ports/issues/6).
+- Corrected the incorrect index being passed to `TinyCLR_Startup_SetDebugger` [#3](https://github.com/ghi-electronics/TinyCLR-Ports/issues/3).
+- Fixed PWM beyond timer 8 on on STM32F4 boards not functioning.
+- Reworked the GPIO functions in the ports to more closely match the processor's API.
+- Added ARM7 and Cortex M3 targets.
+- Added a flag for whether or not to run TinyCLR after rebooting.
+- Added `Acquire` and `Release` to GPIO, ADC, DAC, PWM, Interop, Task, Memory, and API providers.
+- Interop `GetReturn` now sets the return type automatically but will no longer create an array, object, or string (call `CreateObject` yourself after).
+- Interop `ReplaceObject` now functions.
+- Strings can now be manipulated in interops.
+- Interops now support `DateTime` and `TimeSpan` objects by exposing them as U8.
+- Added `FindType` to interops for finding a specific managed typed by name and assembly.
+- Objects in interops now track the type of the object as well with the `TinyCLR_Interop_ManagedObjectType` type.
+- Very basic object creation in interops has been added, but it fails in many cases and does not run any constructor.
+- Removed the `stack` parameter from `ReplaceObject` in interop.
+
+#### Known Issues
+- Rapidly pressing the buttons on the BrainPad may corrupt the display.
+- Many UART properties and events are not implemented.
+- Deploying over USB when out of memory crashes the board.
+- There is no firmware for the G400 in this release.
+- Arrays of non-primatives in interops are not supported.
+- CAN and USB host are missing.
+- The USB client API is still very rough and will change.
+- An 0xA2000000 error is sent over the debug transport when there is no deployment present.
+
+### TinyCLR Config
+
+#### Changes
+- Initial release.
+
+#### Known Issues
+- None
+
+### Extension
+
+#### Changes
+- Added a using for `GHIElectronics.TinyCLR.BrainPad` to the C# `BrainPad Application` template.
+- Removed Expansion from the VB and C# BrainPad application templates.
+- Updated URLs in the various NuGet and VSIX pacakges.
+- Forced parity to none when using the serial debugger interface instead of using what the port configures.
+
+#### Known Issues
+- Some uses of pattern matching may crash the C# compiler.
+- Visual Basic resources page generates an incompatible resource file.
+- Visual Basic resource files are wrapped in a second namespace.
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
 ## 0.5.0 on 2017-07-07
 
 ### Notes
