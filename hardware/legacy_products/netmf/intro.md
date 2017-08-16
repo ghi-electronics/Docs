@@ -33,11 +33,12 @@ Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and Chipwor
 # With TinyCLR OS
 Most NETMF devices are still useable today, and with the latest technologies. To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.
 
-# Loading the Bootloader
-Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/ghi_bootloader.md) onto the mainboard.
+## Loading the Bootloader v2
+Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootloader Version 2](../../loaders/ghi_bootloader.md).
 
-Each mainboard has specific instructions on loading the bootloader. Those instructions, and the firmware file, are found on the individual mainboard's pages.
+Each board has specific instructions on loading the bootloader. The instructions are found on the individual board's pages.
 
-> [!Tip]
-> If you have never used TinyCLR OS before, [start here]( ../../../tinyclr/tutorials/intro.md)
+## Running TinyCLR OS
+Individual product pages detail how to put the device into loader mode to load the firmware, which is detailed on [Bootloader v2](../../loaders/ghi_bootloader.md). You can now start with the TinyCLR OS [intro tutorial]( ../../../tinyclr/tutorials/intro.md).
+
 
