@@ -2,5 +2,4 @@
 # [FEZ](fez.md)
 # [STM32 Boards](stm32_boards.md)
 # [Netduino](netduino.md)
-# [Quail](quail.md)
-# [Clicker](clicker.md)
+# [Mikro](mikro.md)
