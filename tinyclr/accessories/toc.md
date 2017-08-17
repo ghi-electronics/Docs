@@ -1,6 +1,6 @@
 # [Intro](intro.md)
 # [Adafruit Display Shield](adafruit_display_shield.md)
-# [MikroeElectronika Click](mikroelektronika_click.md)
+# [Mikroe Arduino Click Shield](mikroe_arduino_uno_click_shield.md)
 # [Pololu Zumo Robot](pololu_zumo_robot.md)
 # [Seeed Grove Starter Kit](seeed_grove_starter_kit.md)
 # [Sparkfun Ardumoto Shield Kit](sparkfun_ardumoto_shield_kit.md)

@@ -79,18 +79,8 @@
 <p><img src="images/adafruit-tft-joystick-shield.jpg" alt="Adafruit 1.8&quot; Color TFT Shield w/microSD and Joystick"> </p>
 <p>The <a href="https://www.adafruit.com/product/802">Adafruit 1.8&quot; Color TFT Shield w/microSD and Joystick</a> plugs right on top of FEZ, or any other Arduino-pinout compatible board.</p>
 <p>To use this shield, just plug it on top of your Arduno-pinout compatible board, like the <a href="../../hardware/products/fez.html">FEZ</a>.</p>
-<p>The driver is found at (coming soon)</p>
-<p>You are now ready to use the shield</p>
-<pre><code>Display18.Display n18 = new Display18.Display(FEZ.GpioPin.A0, FEZ.GpioPin.A1, FEZ.SpiBus.Spi1);
-int count = 0;
-while (true)
-{
-   count++;
-    n18.DrawLargeText(10, 10, &quot;Count &quot; + count, Display18.Color.Green);
-
-    Thread.Sleep(30);
-}
-</code></pre></article>
+<p>The driver is found <a href="https://github.com/ghi-electronics/TinyCLR-Accessories">here</a>.</p>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

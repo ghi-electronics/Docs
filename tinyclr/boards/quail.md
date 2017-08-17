@@ -1,7 +1,7 @@
 # Quail
 ![Quail](images/quail-board.png)
 
-Originally a .NET Micro Framework product, Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../accessories/mikroelektronika_click.md). 
+Originally a .NET Micro Framework product, Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../accessories/mikroe_arduino_uno_click_shield.md). 
 
 Learn more about Quail at:  
 https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  

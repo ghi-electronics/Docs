@@ -14,7 +14,7 @@ Better yet, all libraries are available through NuGet. Because of this, there wi
 To set a system to use TinyCLR OS:
 1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to select the `.NET desktop development` workload when installing Visual Studio.
-3. Download and install the newest [TinyCLR OS Visual Studio extension](downloads.md#extension).
+3. Download and install the newest [TinyCLR OS Visual Studio extension](downloads.md#visual-studio-project-system).
 4. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many supported [boards](boards/intro.md).
 5. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 6. Add some code and press `F5` to deploy and begin debugging your application!

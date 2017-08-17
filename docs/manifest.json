@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/electronics/intro.html",
-          "hash": "dWJpvM/XIa3hQ85WJdL+TA=="
+          "hash": "bvzZ7vfB19zqJg3XW2pboA=="
         }
       },
       "is_incremental": false,
@@ -358,7 +358,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/expandability.html",
-          "hash": "7TTzhnlKvAZ/HQorW6h4WQ=="
+          "hash": "XeeSxZYQKpEqpiRpoBlbJg=="
         }
       },
       "is_incremental": false,
@@ -428,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/filesystem.html",
-          "hash": "O2ZhX8N4OTR+ZcDqes75bQ=="
+          "hash": "25q7uAL19qaYOXtQGSug3Q=="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/intro.html",
-          "hash": "QWbbwncTKfhrK+t+phoTYg=="
+          "hash": "xDu8ahENuowRJBU+BsE+Iw=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/modules.html",
-          "hash": "JCB0iDRWNAP3jMb55i5Kog=="
+          "hash": "3craoqmTKZKL23geH+d9ZQ=="
         }
       },
       "is_incremental": false,
@@ -1726,7 +1726,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/imaging.html",
-          "hash": "nm/TDD1QYusOgyo22yPoOA=="
+          "hash": "AaLrM/Tk+7YUw1CevSMCWg=="
         }
       },
       "is_incremental": false,
@@ -1965,7 +1965,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/netmf/usbizi.html",
-          "hash": "Lr4uWLnXIw3qhbgQ1ujtfQ=="
+          "hash": "zbUVTAeFW0pKHQAZ9kJN9A=="
         }
       },
       "is_incremental": false,
@@ -1989,7 +1989,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/loaders/ghi_bootloader.html",
-          "hash": "suj5n6wQaKFyLFQY4eN1aw=="
+          "hash": "VV+H+mGwbPsVlAXFJg592g=="
         }
       },
       "is_incremental": false,
@@ -2049,7 +2049,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/fez.html",
-          "hash": "j4EnlyoJYRXjKIz7Q2JJcg=="
+          "hash": "lUu/4dmcU9iR8D847rZe9A=="
         }
       },
       "is_incremental": false,
@@ -2085,7 +2085,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g400.html",
-          "hash": "lIGfWEhHDDkMbTWYN5RWgA=="
+          "hash": "2r7LjU7ASjCEmfubXEiSFg=="
         }
       },
       "is_incremental": false,
@@ -2386,7 +2386,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "M5fKds+q9OcByvjK38wTOQ=="
+          "hash": "toJt3CpLlx0mjPIHL5G6HQ=="
         }
       },
       "is_incremental": false,
@@ -2398,18 +2398,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/adafruit_display_shield.html",
-          "hash": "5+EB/PugIxuIqAeOuGD9Hg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "tinyclr/accessories/images/GroveStarterKitSeeedStudio.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "tinyclr/accessories/images/GroveStarterKitSeeedStudio.jpg"
+          "hash": "zan4qbQ7ojUzdg7+LtO71Q=="
         }
       },
       "is_incremental": false,
@@ -2428,10 +2417,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "tinyclr/accessories/images/mikro-click.jpg",
+      "source_relative_path": "tinyclr/accessories/images/mikro-arduino-click-shield.jpg",
       "output": {
         "resource": {
-          "relative_path": "tinyclr/accessories/images/mikro-click.jpg"
+          "relative_path": "tinyclr/accessories/images/mikro-arduino-click-shield.jpg"
         }
       },
       "is_incremental": false,
@@ -2443,6 +2432,17 @@
       "output": {
         "resource": {
           "relative_path": "tinyclr/accessories/images/pololu-zumo-robot.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "tinyclr/accessories/images/seeed-grove-starter-kit.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "tinyclr/accessories/images/seeed-grove-starter-kit.jpg"
         }
       },
       "is_incremental": false,
@@ -2473,11 +2473,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "tinyclr/accessories/mikroelektronika_click.md",
+      "source_relative_path": "tinyclr/accessories/mikroe_arduino_uno_click_shield.md",
       "output": {
         ".html": {
-          "relative_path": "tinyclr/accessories/mikroelektronika_click.html",
-          "hash": "6fled0HVxummwoTzLsUrfw=="
+          "relative_path": "tinyclr/accessories/mikroe_arduino_uno_click_shield.html",
+          "hash": "ylM5TlUee8pJ3SXh5un2zw=="
         }
       },
       "is_incremental": false,
@@ -2489,7 +2489,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/pololu_zumo_robot.html",
-          "hash": "xiPkxcPteIGZ22jYi15JNQ=="
+          "hash": "oKykl/i4NBIC9MYtf09pxw=="
         }
       },
       "is_incremental": false,
@@ -2501,7 +2501,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/accessories/seeed_grove_starter_kit.html",
-          "hash": "eQ+YaaG9Txx17D4BdzlFoQ=="
+          "hash": "5yU1rneI1I9AocsrkLeVwg=="
         }
       },
       "is_incremental": false,
@@ -2525,7 +2525,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/boards/clicker.html",
-          "hash": "RIxAHBT7+Vg2uNA9u0ekdg=="
+          "hash": "2cmo8Rndi1KG3N7LW79YSw=="
         }
       },
       "is_incremental": false,
@@ -2639,7 +2639,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/boards/quail.html",
-          "hash": "Bfr8o5WfVNQ/dkC5+gy0mQ=="
+          "hash": "+JY1Y6h8auvt4rrjkR8ITw=="
         }
       },
       "is_incremental": false,
@@ -2758,7 +2758,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "aQ8NnWCW7HOEjBFJsWdaSQ=="
+          "hash": "Pm5weFQgE+jTDkNKJfdJPA=="
         }
       },
       "is_incremental": false,
@@ -2794,7 +2794,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/toc.html",
-          "hash": "mtMSixRteoetdFq2ALO4fw=="
+          "hash": "Hh7kzuhxdZ1oSiAH1LaM2A=="
         }
       },
       "is_incremental": false,
@@ -2818,7 +2818,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/dac.html",
-          "hash": "8aJRDDU9QX9+pvRav7dd/g=="
+          "hash": "VCXztMCkrFroWRnT8K4g1w=="
         }
       },
       "is_incremental": false,
@@ -2830,7 +2830,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/display.html",
-          "hash": "MU+12VlVkYQ6VWtnbi7XDw=="
+          "hash": "F4SAQOgRimyz4MXBNDDBvQ=="
         }
       },
       "is_incremental": false,
@@ -2854,7 +2854,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiochangereader.html",
-          "hash": "MnecI81hv8LzDWJgZFxcyg=="
+          "hash": "SQ5ivwUFTzcxUkGg3etNwA=="
         }
       },
       "is_incremental": false,
@@ -2866,7 +2866,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiochangewriter.html",
-          "hash": "kxWJOcHbgLNwbm8wEoJuGw=="
+          "hash": "kyd0iDB3U/+nRDYq7BOZyg=="
         }
       },
       "is_incremental": false,
@@ -2878,7 +2878,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpiopulsereaderwriter.html",
-          "hash": "QFdX1bhh0k3U46pxWQBkIQ=="
+          "hash": "cSPDK2CNB3avrkZIqh8zkw=="
         }
       },
       "is_incremental": false,
@@ -3103,8 +3103,7 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.19.2.0002 to 2.22.2.0.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
@@ -3118,17 +3117,17 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
