@@ -14,7 +14,7 @@ The GHI Electronics websites:
 You may obtain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or through our [community forums](https://forums.ghielectronics.com/).
 
 > [!Note]
-> This is a new documentaion system and some of the available docs are still in progress. Please check back frequently.
+> This is a new documentation system and some of the available docs are still in progress. Please check back frequently.
 
 
 
