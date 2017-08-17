@@ -15,6 +15,7 @@ The TinyCLR OS Clicker firmware
 > Clicker and Clicker 2 boards use different processors and different system clock. Each board has its own TinyCLR OS firmware.
 
 # Clicker 2
+![Clicker](images/clicker2.jpg) 
 
 Mikro Elekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroe_arduino_uno_click_shield.md).
 
@@ -25,8 +26,12 @@ The TinyCLR OS Clicker 2 firmware
 > Clicker and Clicker 2 boards use different processors and different system clock. Each board has its own TinyCLR OS firmware.
 
 # MINI-M4 for STM32
+![Clicker](images/miniM4STM32.jpg) 
+
 The [MINI-M4 for STM32](https://shop.mikroe.com/mini-stm32f4) uses the same processor and system clock as the Clicker board (not Clicker 2).
 
 # Buggy
+![Clicker](images/buggy.jpg) 
+
 [Buggy](https://shop.mikroe.com/buggy) is a robot rover platform that is expandable through the [click modules](../accessories/mikroe_arduino_uno_click_shield.md). The Clicker 2 is used to drive this rover, making it a TinyCLR OS rover!
 
