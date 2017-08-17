@@ -1,3 +1,6 @@
+# Mikro
+Mikro Elektronika offers multiple boards that are suited for TinyCLR OS. We offer a pre-compiled firmware for a few of thier products.
+
 # Clicker
 ![Clicker](images/clicker.jpg) 
 
@@ -35,3 +38,18 @@ The [MINI-M4 for STM32](https://shop.mikroe.com/mini-stm32f4) uses the same proc
 
 [Buggy](https://shop.mikroe.com/buggy) is a robot rover platform that is expandable through the [click modules](../accessories/mikroe_arduino_uno_click_shield.md). The Clicker 2 is used to drive this rover, making it a TinyCLR OS rover!
 
+# Quail
+![Quail](images/quail-board.png)
+
+Originally a .NET Micro Framework product, Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../accessories/mikroe_arduino_uno_click_shield.md). 
+
+Learn more about Quail at:  
+https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  
+
+The Quail firmware is located [here](../downloads.md#quail). 
+Follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
+
+When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
+
+> [!Tip]
+>The region set aside for RLI is 0x2002F000 - 0x2002FFF8
