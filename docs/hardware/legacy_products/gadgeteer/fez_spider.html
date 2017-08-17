@@ -93,7 +93,7 @@ This is a one-time procedure. You should have no issues after the bootloader V2 
 <p><strong>To update using USB</strong></p>
 <ol>
 <li>Download the <a href="../../loaders/ghi_bootloader.html#emx">bootloader file</a></li>
-<li>Set the board&#39;s configuration switches in boot mode. That is by setting switches #1, #2 and #3 to the on position.</li>
+<li>Set the board&#39;s configuration switches in boot mode. That is by setting switches #1, #2 and #3 to the <code>ON</code> position.</li>
 <li>Connect the FEZ Spider to a power module (red module) and then to a PC.</li>
 <li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../netmf/intro.html">NETMF</a> SDK.</li>
 <li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
@@ -109,7 +109,7 @@ This is a one-time procedure. You should have no issues after the bootloader V2 
 <p><strong>To update using Serial</strong></p>
 <ol>
 <li>Connect a USB-serial module to socket 11.</li>
-<li>Follow the exact same steps above except you need to also switch #4 to on (serial mode)</li>
+<li>Follow the exact same steps above except you need to also switch #4 to <code>ON</code> (serial mode) and you need to set the baud rate to 115200 on the terminal software.</li>
 <li>The drivers for the USB-serial module should load automatically. If not, get them from <a href="http://www.ftdichip.com/">http://www.ftdichip.com/</a></li>
 </ol>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
