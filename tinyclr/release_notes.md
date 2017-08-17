@@ -1,6 +1,6 @@
 # Alpha Release Notes
 
-## 0.6.0 on 2017-07-xx
+## 0.6.0 on 2017-08-xx
 
 ### Notes
 Initial release of bootloader interface drivers for Windows 7 and Windows 8. TinyCLR Config update firmware won't work for this release because it's new.
