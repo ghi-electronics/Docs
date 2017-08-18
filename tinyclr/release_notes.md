@@ -57,6 +57,7 @@ Initial release of bootloader interface drivers for Windows 7 and Windows 8. Tin
 - CAN and USB host are missing.
 - The USB client API is still very rough and will change.
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
+- The version passed to `SetDeviceInformation` is ignored.
 
 ### TinyCLR Config
 
