@@ -24,6 +24,7 @@ Initial release of bootloader interface drivers for Windows 7 and Windows 8. Tin
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Partially transparent ellipses have weird artifacts.
 - Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+- Non-blocking `GpioChangeWriter` does not work.
 
 ### Firmware
 
