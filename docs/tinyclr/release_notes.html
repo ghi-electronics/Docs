@@ -76,6 +76,91 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="alpha-release-notes">Alpha Release Notes</h1>
 
+<h2 id="060-on-2017-08-xx">0.6.0 on 2017-08-xx</h2>
+<h3 id="notes">Notes</h3>
+<p>Initial release of bootloader interface drivers for Windows 7 and Windows 8. TinyCLR Config update firmware won&#39;t work for this release because it&#39;s new.</p>
+<h3 id="libraries">Libraries</h3>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>Split <code>ReadTemperature</code> in BrainPad to <code>ReadTemperatureInCelsius</code> and <code>ReadTemperatureInFahrenheit</code>.</li>
+<li>Moved <code>Picture</code> out of <code>BrainPad.Display</code>.</li>
+<li>Moved <code>BrainPad.Expansion</code> to the pins library.</li>
+<li>Changed the original BrainPad display driver to only allocate memory on first use.</li>
+<li>Added basic STM32F4, LPC17, LPC23, LPC24, and AT91 processor definitions to the pins library.</li>
+<li>Added many more devices to the pins library.</li>
+<li>Updated many pin names to match the processor name more closely (particularly COM to UART).</li>
+<li>Calls to <code>*Provider.FromId</code> in devices with the same id now return the same object instance.</li>
+<li>Sharing modes for the various providers in the devices library are now supported.</li>
+<li>Software I2C works correctly again.</li>
+</ul>
+<h4 id="known-issues">Known Issues</h4>
+<ul>
+<li>Formatting numbers that cross an assembly boundary can throw an exception.</li>
+<li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
+<li>Partially transparent ellipses have weird artifacts.</li>
+<li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
+<li>Non-blocking <code>GpioChangeWriter</code> does not work.</li>
+</ul>
+<h3 id="firmware">Firmware</h3>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>Fixed the device not loading drivers over USB.</li>
+<li>Added clicker and clicker2.</li>
+<li>Added G120, EMX, Embedded Master, and USBizi.</li>
+<li>Renamed <code>FEZ</code> to <code>FEZCLR</code> and <code>FEZCerberus</code> to <code>Cerb</code> <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/8">#8</a>.</li>
+<li>Refactored specific devices out of the build script and into configuration files <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/6">#6</a>.</li>
+<li>Corrected the incorrect index being passed to <code>TinyCLR_Startup_SetDebugger</code> <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/3">#3</a>.</li>
+<li>Fixed PWM beyond timer 8 on on STM32F4 boards not functioning.</li>
+<li>Reworked the GPIO functions in the ports to more closely match the processor&#39;s API.</li>
+<li>Added ARM7 and Cortex M3 targets.</li>
+<li>Added a flag for whether or not to run TinyCLR after rebooting.</li>
+<li>Added <code>Acquire</code> and <code>Release</code> to GPIO, ADC, DAC, PWM, Interop, Task, Memory, and API providers.</li>
+<li>Interop <code>GetReturn</code> now sets the return type automatically but will no longer create an array, object, or string (call <code>CreateObject</code> yourself after).</li>
+<li>Interop <code>ReplaceObject</code> now functions.</li>
+<li>Strings can now be manipulated in interops.</li>
+<li>Interops now support <code>DateTime</code> and <code>TimeSpan</code> objects by exposing them as U8.</li>
+<li>Added <code>FindType</code> to interops for finding a specific managed typed by name and assembly.</li>
+<li>Objects in interops now track the type of the object as well with the <code>TinyCLR_Interop_ManagedObjectType</code> type.</li>
+<li>Very basic object creation in interops has been added, but it fails in many cases and does not run any constructor.</li>
+<li>Removed the <code>stack</code> parameter from <code>ReplaceObject</code> in interop.</li>
+</ul>
+<h4 id="known-issues">Known Issues</h4>
+<ul>
+<li>Rapidly pressing the buttons on the BrainPad may corrupt the display.</li>
+<li>Many UART properties and events are not implemented.</li>
+<li>Deploying over USB when out of memory crashes the board.</li>
+<li>There is no firmware for the G400 in this release.</li>
+<li>Arrays of non-primatives in interops are not supported.</li>
+<li>CAN and USB host are missing.</li>
+<li>The USB client API is still very rough and will change.</li>
+<li>An 0xA2000000 error is sent over the debug transport when there is no deployment present.</li>
+<li>The version passed to <code>SetDeviceInformation</code> is ignored.</li>
+<li>I2C may block for one second in some circumstances.</li>
+</ul>
+<h3 id="tinyclr-config">TinyCLR Config</h3>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>Initial release.</li>
+</ul>
+<h4 id="known-issues">Known Issues</h4>
+<ul>
+<li>None</li>
+</ul>
+<h3 id="extension">Extension</h3>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>Added a using for <code>GHIElectronics.TinyCLR.BrainPad</code> to the C# <code>BrainPad Application</code> template.</li>
+<li>Removed Expansion from the VB and C# BrainPad application templates.</li>
+<li>Updated URLs in the various NuGet and VSIX pacakges.</li>
+<li>Forced parity to none when using the serial debugger interface instead of using what the port configures.</li>
+</ul>
+<h4 id="known-issues">Known Issues</h4>
+<ul>
+<li>Some uses of pattern matching may crash the C# compiler.</li>
+<li>Visual Basic resources page generates an incompatible resource file.</li>
+<li>Visual Basic resource files are wrapped in a second namespace.</li>
+<li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
+</ul>
 <h2 id="050-on-2017-07-07">0.5.0 on 2017-07-07</h2>
 <h3 id="notes">Notes</h3>
 <p>This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!</p>
