@@ -12,8 +12,8 @@ Initial release of bootloader interface drivers for Windows 7 and Windows 8. Tin
 - Moved `Picture` out of `BrainPad.Display`.
 - Moved `BrainPad.Expansion` to the pins library.
 - Changed the original BrainPad display driver to only allocate memory on first use.
-- Added basic STM32F4, LPC17, LPC24, and AT91 processor pin definitions.
-- Added `FEZSpiderII`, `Cerb`, and `FEZCLR` to the pins library.
+- Added basic STM32F4, LPC17, LPC23, LPC24, and AT91 processor definitions to the pins library.
+- Added many more devices to the pins library.
 - Updated many pin names to match the processor name more closely (particularly COM to UART).
 - Calls to `*Provider.FromId` in devices with the same id now return the same object instance.
 - Sharing modes for the various providers in the devices library are now supported.
