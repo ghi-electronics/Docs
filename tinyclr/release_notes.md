@@ -64,6 +64,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
 - The version passed to `SetDeviceInformation` is ignored.
 - I2C may block for one second in some circumstances.
+- Deploying on USBizi sometimes fails. Resetting the board and try again to work around it.
 
 ### TinyCLR Config
 
