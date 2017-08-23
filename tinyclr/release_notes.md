@@ -3,7 +3,11 @@
 ## 0.6.0 on 2017-08-xx
 
 ### Notes
-Initial release of bootloader interface drivers for Windows 7 and Windows 8. TinyCLR Config update firmware won't work for this release because it's new.
+This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the GitHub repo. There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are proper functioning without a USB driver, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
+
+Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
+
+Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../hardware/loaders/ghi_bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
 
 ### Libraries
 
@@ -54,7 +58,7 @@ Initial release of bootloader interface drivers for Windows 7 and Windows 8. Tin
 - Many UART properties and events are not implemented.
 - Deploying over USB when out of memory crashes the board.
 - There is no firmware for the G400 in this release.
-- Arrays of non-primatives in interops are not supported.
+- Arrays of non-primitives in interops are not supported.
 - CAN and USB host are missing.
 - The USB client API is still very rough and will change.
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
@@ -67,14 +71,15 @@ Initial release of bootloader interface drivers for Windows 7 and Windows 8. Tin
 - Initial release.
 
 #### Known Issues
-- None
+- The `Update Firmware` action won't work in this release because changes were needed in the firmware. Use the `Loader` tab to manually update the firmware. This will not be required in the next release as long as you have the firmware from this release or newer on the device.
+- TinyCLR Config may not function properly with devices running firmwares from before this release due to changes in the communication protocols.
 
 ### Extension
 
 #### Changes
 - Added a using for `GHIElectronics.TinyCLR.BrainPad` to the C# `BrainPad Application` template.
 - Removed Expansion from the VB and C# BrainPad application templates.
-- Updated URLs in the various NuGet and VSIX pacakges.
+- Updated URLs in the various NuGet and VSIX packages.
 - Forced parity to none when using the serial debugger interface instead of using what the port configures.
 
 #### Known Issues
