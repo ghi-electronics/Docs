@@ -1,7 +1,7 @@
 # CANxtra
 ![CANxtra](images/canxtra.jpg)
 
-CANxtra is a hand-held programmable OBD-II tool, that includes CAN, LIN and other vehicle busses.
+CANxtra is a hand-held programmable OBD-II tool that includes CAN, LIN and other vehicle buses.
 
 Resources below are provided for reference only. Please [contact us]() for all of custom automotive needs.
 

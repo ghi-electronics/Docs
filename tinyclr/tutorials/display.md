@@ -37,7 +37,7 @@ screen.Flush();
 ```
 
 # Serial SPI/I2C Displays
-Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why srial display are usually smaller displays.
+Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial display are usually smaller displays.
 
 To the system, the serial display is nothing but a serial device. You are expected to write the code to handle graphics.
 
