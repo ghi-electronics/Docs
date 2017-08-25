@@ -71,6 +71,12 @@ An Arduino-poinout compatible board.
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Rhino%20Schematic.pdf)
 
+## FEZ Domino
+
+![FEZ Domino](images/fez_domino.jpg)
+
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Domino%20Schematic.pdf)
+
 ## FEZ Mini
 ![FEZ Mini](images/fez_mini.jpg)
 

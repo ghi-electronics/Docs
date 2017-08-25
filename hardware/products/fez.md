@@ -29,7 +29,7 @@ One of the supported boards is Nucleo-F401RE, which uses the exact same microcon
 
 This video shows the steps needed to use Mbed (The FEZ and the BrainPad share the same hardware core).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8qcKctDvV_4" frameborder="0" allowfullscreen></iframe>
 
 * [mbed Website](https://developer.mbed.org/)
 * [Nucleo-F401RE](https://developer.mbed.org/platforms/ST-Nucleo-F401RE/)

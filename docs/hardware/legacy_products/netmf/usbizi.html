@@ -78,50 +78,74 @@
 
 <p><img src="images/usbizi_144.jpg" alt="USBizi 144"> <img src="images/usbizi_100.jpg" alt="USBizi 100"></p>
 <p>USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It was available in 100pin and 144pin LQFP packages.</p>
-<p>We are no longer making the chip available but we are making all <a href="https://old.ghielectronics.com/downloads/NETMF/USBizi/">bootloader binaries</a> (move to new server) available for free, including for commercial use. </p>
+<p>We are no longer making the chip available but we are making all <a href="https://www.ghielectronics.com/downloads/NETMF/USBizi/">bootloader binaries</a> (move to new server) available for free, including for commercial use. </p>
 <h1 id="resources">Resources</h1>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi User Manual.pdf">User Manual</a> </li>
+<li><a href="http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi%20Userjust build them and do a quick test to make sure V, N, and X/U workManual.pdf">User Manual</a> </li>
 </ul>
 <h1 id="using-the-netmf-software">Using the NETMF software</h1>
 <p>We discourage the use of NETMF software on our products in favor for TinyCLR OS, <a href="intro.html">Read more</a>.</p>
 <h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
 <p>If haven&#39;t yet, read about using .NET NETMF devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
 <h2 id="loading-bootloader-v2">Loading Bootloader v2</h2>
-<p>(coming soon)</p>
+<div class="TIP"><h5>Tip</h5><p>The instructions apply to all USBizi-based boards but we are using the FEZ Panda II as reference.</p>
+</div>
+<p>We first need to erase the old bootloader v1:</p>
+<ol>
+<li>Connect UART0 TX/RX to your PC. The easiest way would be to use a USB-Serial TTL cable. Those are D0 and D1 on FEZ Panda II. Do not forget to connect the ground.</li>
+<li>Put the device in serial mode by connecting MOD pin to ground.</li>
+<li>Open a terminal software and set the baudrate to 115200.</li>
+<li>Press the enter key and you should see <code>BL</code> coming back.</li>
+<li>Enter this exact line <code>Unlock This device!</code> (case sensitive). Ignore the <code>BL</code> keeps coming back with every key press. If you entered it correctly, you will see <code>Are you sure?</code></li>
+<li>Enter <code>Yes</code> (case sensitive).</li>
+<li>You now have a blank LPC chip! You can now close the terminal software, release MOD pin, and reset your board.</li>
+</ol>
+<p>The new bootloader v2 can now be loaded.</p>
+<ol>
+<li>Download and install <a href="http://www.flashmagictool.com">Flash Magic</a>.</li>
+<li>Open Flash Magic and select LPC2378.</li>
+<li>Check &quot;Erase all Flash&quot;.</li>
+<li>Set the correct COM port number of your serial connection.</li>
+<li>Click the <code>Start</code> button.</li>
+<li>When done, reset the board and the PC will detect a virtual USB device.</li>
+</ol>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader v2, set .... to be completed!</p>
+<p>To activate bootloader v2, set LDR pin low. On FEZ Panda II  it is a button marked LDR. Simply press it. Once the LDR pin is set low, keep it low while resetting the board.</p>
 <p>Download the <a href="../../../tinyclr/downloads.html#usbizi">USBizi firmware</a> and follow <a href="../../loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h1 id="usbizi-based-products">USBizi Based products</h1>
 <h2 id="usbizi-devsys">USBizi DevSys</h2>
 <p><img src="images/usbizi_devsys.jpg" alt="USBizi DevSys"></p>
 <p>The original development board for USBizi.</p>
+<p>*<a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/USBizi%20DevSys%20Schematic.pdf">Schematic</a></p>
 <h2 id="fez-panda">FEZ Panda</h2>
 <p><img src="images/fez_panda.jpg" alt="FEZ Panda"></p>
 <p>An Arduino-poinout compatible board.</p>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda Schematic.pdf">Schematic</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Panda%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h2 id="fez-panda-ii">FEZ Panda II</h2>
 <p><img src="images/fez_panda_ii.jpg" alt="FEZ Panda II"></p>
 <p>An Arduino-poinout compatible board.</p>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Panda II Schematic.pdf">Schematic</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Panda%20II%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h2 id="fez-rhino">FEZ Rhino</h2>
 <p><img src="images/fez_rhino.jpg" alt="FEZ Rhino"></p>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Rhino Schematic.pdf">Schematic</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Rhino%20Schematic.pdf">Schematic</a></li>
+</ul>
+<h2 id="fez-domino">FEZ Domino</h2>
+<p><img src="images/fez_domino.jpg" alt="FEZ Domino"></p>
+<ul>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Domino%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h2 id="fez-mini">FEZ Mini</h2>
 <p><img src="images/fez_mini.jpg" alt="FEZ Mini"></p>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Mini Schematic.pdf">Schematic</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Mini%20Schematic.pdf">Schematic</a></li>
 </ul>
-<p>USBizi was the core of many of GHI Electronics&#39; products, FEZ Panda, FEZ Panda II, FEZ Domino, FEZ Rhino and FEZ Mini. 
-Move resources from old server <a href="https://old.ghielectronics.com/downloads/FEZ/">here</a></p>
 </article>
           </div>
           
