@@ -81,6 +81,7 @@ class Program {
 }
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Button%20Module%20Schematic.pdf)
+
 # Button S7
 ![Button S7](images/modules/button_s7.jpg)
 
@@ -132,6 +133,7 @@ A color sensor that uses software I2C, not yet supported in TinyCLR OS.
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense) as a refernce.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Color%20Sense%20Module%20Schematic.pdf)
+
 # Compass
 ![Compass](images/modules/compass.jpg)
 
@@ -276,6 +278,7 @@ VerticalSyncPulseWidth = 10,
 VerticalSyncPolarity = false,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20T35%20Module%20Schematic.pdf)
+
 # Display T43
 ![Display T43](images/modules/display_t43.jpg)
 
