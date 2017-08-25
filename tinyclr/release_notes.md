@@ -65,6 +65,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - The version passed to `SetDeviceInformation` is ignored.
 - PWM may jitter when decreasing the pulse length while enabled.
 - Deploying on USBizi sometimes fails. Resetting the board and try again to work around it.
+- Tight loops on LPC24 may prevent the debugger from working.
 
 ### TinyCLR Config
 
