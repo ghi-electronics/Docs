@@ -9,7 +9,7 @@ The GHI Electronics websites:
 * The main website: https://www.ghielectronics.com/
 * TinyCLR OS: http://www.tinyclr.com 
 * BrainPad: http://www.brainpad.com
-* The comunity forum: https://forums.ghielectronics.com/
+* The community forum: https://forums.ghielectronics.com/
 
 You may obtain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or through our [community forums](https://forums.ghielectronics.com/).
 

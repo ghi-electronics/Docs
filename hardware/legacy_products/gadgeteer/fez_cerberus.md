@@ -2,7 +2,7 @@
 
 ![FEZ Cerberus](images/fez_cerberus.jpg)
 
-FEZ Cerberus is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cerberus is the G30 System on Chip (SoC).
+FEZ Cerberus is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cerberus is the G30 System on Chip (SoC).
 
 FEZ Cerberus is the mother of [the Cerb Family]().
 
@@ -42,12 +42,12 @@ The mother of the family!
 ## FEZ Cerbuino Bee
 ![FEZ Cerbuino Bee](images/fez_cerbuino_bee.jpg) 
 
-An arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
+An Arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
 
 ## FEZ Cerbuino Net
 ![FEZ Cerbuino Net](images/fez_cerbuino_net.jpg)
 
-An arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
+An Arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
 
 ## FEZ Cerb40
 ![FEZ Cerb40](images/fez_cerb40.jpg)

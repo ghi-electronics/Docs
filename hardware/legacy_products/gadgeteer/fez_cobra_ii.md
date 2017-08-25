@@ -2,7 +2,7 @@
 
 ![FEZ Cobra II](images/fez_cobra_ii.jpg)
 
-FEZ Cobra II is a .NET Gadgeteer product, that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
+FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
 
 # Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cobra II Schematic.pdf)
@@ -15,7 +15,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 ## Loading Bootloader v2
 1. Download the [bootloader file](../../loaders/ghi_bootloader.md#g120)
-2. Press and keep holding the LDR0 and LDR1 buttons while reseting the board. Then release the buttons.
+2. Press and keep holding the LDR0 and LDR1 buttons while resetting the board. Then release the buttons.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
 5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 6. Select serial and pick the COM port associated with your board.
