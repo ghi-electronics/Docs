@@ -68,7 +68,7 @@ A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbot%20Schematic.pdf)
 
 ## FEZ Game-O
-![FEZ Cerbot](images/fez_game-o.jpg)
+![FEZ Cerbot](images/fez_gameo.jpg)
 
 A programmable console combined with a 320 x 240 color display, 3D accelerometer and audio circuitry.
 
