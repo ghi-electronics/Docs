@@ -67,6 +67,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
 - An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
 - Tight loops on LPC24 may prevent the debugger from working.
+- ADC6 and ADC7 do not work on USBizi144.
 
 ### TinyCLR Config
 
