@@ -440,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_cerberus.html",
-          "hash": "LcgMLEzscMXcaSuCFMJokg=="
+          "hash": "InMkYCmS18cYj5Nvs0bkyA=="
         }
       },
       "is_incremental": false,
@@ -597,10 +597,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy_products/gadgeteer/images/fez_gameO.jpg",
+      "source_relative_path": "hardware/legacy_products/gadgeteer/images/fez_gameo.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy_products/gadgeteer/images/fez_gameO.jpg"
+          "relative_path": "hardware/legacy_products/gadgeteer/images/fez_gameo.jpg"
         }
       },
       "is_incremental": false,
@@ -2790,7 +2790,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "TzBUzXwLARyIX5w+84Iipg=="
+          "hash": "NfqdvursjQkv4rvRGnF5+A=="
         }
       },
       "is_incremental": false,
@@ -3135,32 +3135,31 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.22.2.0 to 2.23.1.0.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

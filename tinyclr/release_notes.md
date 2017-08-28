@@ -22,6 +22,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Calls to `*Provider.FromId` in devices with the same id now return the same object instance.
 - Sharing modes for the various providers in the devices library are now supported.
 - Software I2C works correctly again.
+- Added `Environment.NewLine`.
 
 #### Known Issues
 - Formatting numbers that cross an assembly boundary can throw an exception.
