@@ -3,9 +3,9 @@
 ## 0.6.0 on 2017-08-xx
 
 ### Notes
-This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the [GitHub repo](https://github.com/ghi-electronics/TinyCLR-Ports). There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are proper functioning without a USB driver, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
+This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the [GitHub repo](https://github.com/ghi-electronics/TinyCLR-Ports). There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
 
-Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
+Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
 
 Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../hardware/loaders/ghi_bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
 
@@ -64,8 +64,10 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - An 0xA2000000 error is sent over the debug transport when there is no deployment present.
 - The version passed to `SetDeviceInformation` is ignored.
 - PWM may jitter when decreasing the pulse length while enabled.
-- Deploying on USBizi sometimes fails. Resetting the board and try again to work around it.
+- Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
+- An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
 - Tight loops on LPC24 may prevent the debugger from working.
+- ADC6 and ADC7 do not work on USBizi144.
 
 ### TinyCLR Config
 

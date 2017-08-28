@@ -8,7 +8,7 @@
     <title>Alpha Release Notes </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Alpha Release Notes ">
-    <meta name="generator" content="docfx 2.22.2.0">
+    <meta name="generator" content="docfx 2.23.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,7 +78,9 @@
 
 <h2 id="060-on-2017-08-xx">0.6.0 on 2017-08-xx</h2>
 <h3 id="notes">Notes</h3>
-<p>Initial release of bootloader interface drivers for Windows 7 and Windows 8. TinyCLR Config update firmware won&#39;t work for this release because it&#39;s new.</p>
+<p>This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">GitHub repo</a>. There are new classes available in the <code>Pins</code> library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, continued improvements to the <code>BrainPad</code> library, <code>Acquire</code> and <code>Release</code> were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.</p>
+<p>Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See <a href="tinyclr_config.html">here</a> for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.</p>
+<p>Lastly, how we distribute releases is changing going forward. There&#39;s no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its <a href="downloads.html">downloads</a> page and bootloader binaries are available on the bootloader <a href="../hardware/loaders/ghi_bootloader.html#downloads">download</a> page. MD5 hashes are provided for all downloads as well.</p>
 <h3 id="libraries">Libraries</h3>
 <h4 id="changes">Changes</h4>
 <ul>
@@ -130,12 +132,15 @@
 <li>Many UART properties and events are not implemented.</li>
 <li>Deploying over USB when out of memory crashes the board.</li>
 <li>There is no firmware for the G400 in this release.</li>
-<li>Arrays of non-primatives in interops are not supported.</li>
+<li>Arrays of non-primitives in interops are not supported.</li>
 <li>CAN and USB host are missing.</li>
 <li>The USB client API is still very rough and will change.</li>
 <li>An 0xA2000000 error is sent over the debug transport when there is no deployment present.</li>
 <li>The version passed to <code>SetDeviceInformation</code> is ignored.</li>
-<li>I2C may block for one second in some circumstances.</li>
+<li>PWM may jitter when decreasing the pulse length while enabled.</li>
+<li>Deploying on USBizi sometimes fails. Reset the board and try again to work around it.</li>
+<li>An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.</li>
+<li>Tight loops on LPC24 may prevent the debugger from working.</li>
 </ul>
 <h3 id="tinyclr-config">TinyCLR Config</h3>
 <h4 id="changes">Changes</h4>
@@ -144,14 +149,15 @@
 </ul>
 <h4 id="known-issues">Known Issues</h4>
 <ul>
-<li>None</li>
+<li>The <code>Update Firmware</code> action won&#39;t work in this release because changes were needed in the firmware. Use the <code>Loader</code> tab to manually update the firmware. This will not be required in the next release as long as you have the firmware from this release or newer on the device.</li>
+<li>TinyCLR Config may not function properly with devices running firmwares from before this release due to changes in the communication protocols.</li>
 </ul>
 <h3 id="extension">Extension</h3>
 <h4 id="changes">Changes</h4>
 <ul>
 <li>Added a using for <code>GHIElectronics.TinyCLR.BrainPad</code> to the C# <code>BrainPad Application</code> template.</li>
 <li>Removed Expansion from the VB and C# BrainPad application templates.</li>
-<li>Updated URLs in the various NuGet and VSIX pacakges.</li>
+<li>Updated URLs in the various NuGet and VSIX packages.</li>
 <li>Forced parity to none when using the serial debugger interface instead of using what the port configures.</li>
 </ul>
 <h4 id="known-issues">Known Issues</h4>

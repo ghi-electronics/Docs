@@ -8,7 +8,7 @@
     <title>Display </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Display ">
-    <meta name="generator" content="docfx 2.22.2.0">
+    <meta name="generator" content="docfx 2.23.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -107,7 +107,7 @@ screen.DrawEllipse(GreenPen, 40, 30, 20, 10);
 // Flush the memory to the display. This is a very fast operation.
 screen.Flush();
 </code></pre><h1 id="serial-spii2c-displays">Serial SPI/I2C Displays</h1>
-<p>Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why srial display are usually smaller displays.</p>
+<p>Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial display are usually smaller displays.</p>
 <p>To the system, the serial display is nothing but a serial device. You are expected to write the code to handle graphics.</p>
 <p>A good example is the <a href="../accessories/adafruit_display_shield.html">Adafruit Display Shield</a> which uses a SPI display.</p>
 <p>This video features a very low cost I2C display option</p>
