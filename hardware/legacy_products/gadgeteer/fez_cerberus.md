@@ -7,7 +7,7 @@ FEZ Cerberus is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NE
 FEZ Cerberus is the mother of [the Cerb Family]().
 
 # Resources
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cerberus Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerberus%20Schematic.pdf)
 
 # Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
@@ -44,17 +44,32 @@ The mother of the family!
 
 An Arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
 
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20BeeSchematic%20.pdf)
+
 ## FEZ Cerbuino Net
 ![FEZ Cerbuino Net](images/fez_cerbuino_net.jpg)
 
 An Arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
+
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20Net%20Schematic.pdf)
 
 ## FEZ Cerb40
 ![FEZ Cerb40](images/fez_cerb40.jpg)
 
 DIP40 formfactor board. Not really a Gadgeteer board but it is very small!
 
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerb40%20Schematic.pdf)
+
 ## FEZ Cerbot
 ![FEZ Cerbot](images/fez_cerbot.jpg)
 
 A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as an easy way to add features.
+
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbot%20Schematic.pdf)
+
+## FEZ Game-O
+![FEZ Cerbot](images/fez_game-o.jpg)
+
+A programmable console combined with a 320 x 240 color display, 3D accelerometer and audio circuitry.
+
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Gameo%20Schematic.pdf)
