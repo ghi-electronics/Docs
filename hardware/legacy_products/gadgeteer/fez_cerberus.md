@@ -72,4 +72,4 @@ A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as 
 
 A programmable console combined with a 320 x 240 color display, 3D accelerometer and audio circuitry.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Gameo%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20GameO%20Schematic.pdf)
