@@ -114,6 +114,6 @@ File | Date | Status | MD5
 
 ## USB Drivers
 File | Date | Status | MD5
---- | --- | --- | --- | ---
+--- | --- | --- | ---
 [v0.6.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi) | 2017-08-xx | Alpha | x
 [v0.6.0 x86](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v0.6.0.msi) | 2017-08-xx | Alpha | x
