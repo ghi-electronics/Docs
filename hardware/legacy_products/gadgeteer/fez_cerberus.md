@@ -12,6 +12,10 @@ FEZ Cerberus is the mother of [the Cerb Family]().
 # Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
+# The Boot Pins
+PB10 is the MODE pin, which is used to select between USB and serial interfaces, for loader and for firmware. USART1 is used whem in serial mode, that is PB6 and PB7.
+LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts the device into bootloader mode. Setting LDR1 low will execute the firmware but will stop the application from running.
+
 # Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
