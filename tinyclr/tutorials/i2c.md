@@ -6,7 +6,7 @@ The two wires used to communicate between the I2C Master and the I2C salves are 
 
 This is a partial demo showing the use of I2C.
 
-```csharp
+```
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -28,4 +28,26 @@ class Program
     }
     
 }   
+```
+
+# Software I2C
+
+The I2C bus is relatively simple and can be "bit banged" using software. The advantage is that any two GPIO pins can be used. However, software I2C requires more system resources and runs slower.
+
+This example initializes the software I2C drivers and then, from this point, using I2C is the same as standard hardware I2C.
+
+```
+using GHIElectronics.TinyCLR.Devices.I2c;
+using GHIElectronics.TinyCLR.Pins;
+
+class Program 
+{
+    static void Main() 
+	{
+        var softwareProvider = new I2cSoftwareProvider(FEZ.GpioPin.PA0, FEZ.GpioPin.PA1);
+        var controllers = I2cController.GetControllers(softwareProvider);
+        var controller = controllers[0];
+        var device = controller.GetDevice(new I2cConnectionSettings(0x22) { BusSpeed = I2cBusSpeed.StandardMode, SharingMode = I2cSharingMode.Exclusive });
+    }
+}
 ```
