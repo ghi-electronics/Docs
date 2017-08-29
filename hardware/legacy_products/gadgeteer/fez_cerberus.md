@@ -48,7 +48,7 @@ The mother of the family!
 
 An Arduino-pinout compatible for accepting shields and also has some Gadgeteer socket option.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20BeeSchematic%20.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20Bee%20Schematic%20.pdf)
 
 ## FEZ Cerbuino Net
 ![FEZ Cerbuino Net](images/fez_cerbuino_net.jpg)
@@ -63,6 +63,13 @@ An Arduino-pinout compatible for accepting shields and also has some Gadgeteer s
 DIP40 formfactor board. Not really a Gadgeteer board but it is very small!
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerb40%20Schematic.pdf)
+
+## FEZ Cerb40 II
+![FEZ Cerb40](images/fez_cerb40_II.jpg)
+
+Same as the FEZ Cerb40 with an added regulator chip
+
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerb40%20II0%20Schematic.pdf)
 
 ## FEZ Cerbot
 ![FEZ Cerbot](images/fez_cerbot.jpg)
