@@ -1,6 +1,8 @@
 # GHI Bootloader
 
-The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.
+The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. 
+
+The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.
 
 > [!Tip]
 > If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi_bootloader.md#usb-drivers).
