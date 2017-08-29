@@ -12,10 +12,10 @@ Resources:
 ## The Original BrainPad
 ![Original BrainPad](images/original-brainpad.jpg)
 
+The limited-release original BrainPad was used to iron out the details that helped us in creating the leaner and meaner production BrainPad. The original BrainPad is no longer recommended; however, the latest software is mostly compatible with original BrainPad. Feel free to use the original BrainPad with the latest software to ease into the transition.
+
 Resources:
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/BrainPad BP1 Schematic.pdf)
 
-# Software Options
-While TinyCLR OS is the official supported system for the BrainPad, there are many [other options](fez.md#other-options) (The BrainPad and the FEZ share the same core).
-
-Interested in a FREE BrainPad to test it with one of other options? We want to hear from you [directly](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
+# Other Software Options
+The TinyCLR OS is the official supported system for the BrainPad. However, there are many [other options](fez.md#other-options) listed on the FEZ hardware page (The BrainPad and the FEZ share the same core).

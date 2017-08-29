@@ -13,15 +13,17 @@ TinyCLR OS allows tiny systems to run .NET applications with rich debugging capa
 * [TinyCLR Ports Repo](https://github.com/ghi-electronics/TinyCLR-Ports)
 
 # Other Options
-TinyCLR OS is the official supported platform for FEZ; however, these are some other good options. GHI Electronics is not affiliated and does not provide support for any of these 3rd party options.
-
-Interested in a FREE FEZ to test it with one of these options? We want to hear from you [directly](https://www.ghielectronics.com/contact) or on our [community forums](https://forums.ghielectronics.com/).
+TinyCLR OS is the official supported platform for FEZ; however, these are some other good options. GHI Electronics is not affiliated and **does not provide support** for any of these 3rd party options.
 
 ## Arduino
-Arduino is simplified multi-platform IDE/C++ combo, with a community STM32 options. We haven't started any work on Arduino yet but we welcome any contributions.
+Arduino is simplified multi-platform IDE/C++ combo, with a community STM32 options. 
+
+This video shows the use of Arduino (The FEZ and the BrainPad share the same hardware core).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CIIIbwWzBDI" frameborder="0" allowfullscreen></iframe>
 
 * [Arduino Website](https://www.arduino.cc/)
-* [Arduino STM32 forum](http://www.stm32duino.com/)
+* [Arduino STM32 Github](https://github.com/stm32duino)
 
 ## mbed
 mbed is an online compiler platform. There is nothing to install, just log in and start coding!
