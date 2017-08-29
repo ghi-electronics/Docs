@@ -27,7 +27,7 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR-OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.html) page.
+Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.md) page.
 
 ### Manual Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
