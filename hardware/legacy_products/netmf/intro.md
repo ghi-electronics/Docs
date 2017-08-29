@@ -28,7 +28,7 @@ Oct 23, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R3](http://files.ghie
 Aug 27, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R2](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R2.zip)
 Apr 30, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R1 Update 1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1%20Update1.zip)
 Feb 14, 2013 | 4.2 QFE2 | [NETMF and Gadgeteer Package 2013 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1.zip)
-Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and ChipworkX](https://ghistorage.blob.core.windows.net/downloads/NETMF/SDKs/NETMF%204.1%20SDK.zip)(Includes IoT book for FEZ Panda)
+Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and ChipworkX](https://ghistorage.blob.core.windows.net/downloads/NETMF/SDKs/NETMF%204.1%20SDK.zip) (Includes IoT book for FEZ Panda)
 
 # With TinyCLR OS
 Most NETMF devices are still useable today, and with the latest technologies. To use TinyCLR OS, you need to load a new bootloader and the TinyCLR OS firmware.
@@ -39,6 +39,6 @@ Before loading the TinyCLR OS firmware, we need load the GHI Electronics' [Bootl
 Each board has specific instructions on loading the bootloader. The instructions are found on the individual board's pages.
 
 ## Running TinyCLR OS
-Individual product pages detail how to put the device into loader mode to load the firmware, which is detailed on [Bootloader v2](../../loaders/ghi_bootloader.md). You can now start with the TinyCLR OS [intro tutorial]( ../../../tinyclr/tutorials/intro.md).
+Individual product pages detail how to put the device into loader mode to load the firmware. Once running TinyCLR OS, start with the TinyCLR OS [intro tutorial]( ../../../tinyclr/tutorials/intro.md).
 
 
