@@ -24,8 +24,40 @@ Most of the Gadgeteer ecosystem is open source:
 
 # Socket Map
 The magic of Gadgeteer is in its socket map
-(copy the map from here https://old.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference)
 
+Socket | Pin1 | Pin2 | Pin3 | Pin4 | Pin5 | Pin6 | Pin7 | Pin8 | Pin9 | Pin10
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+A | +3.3V | +5V | AIN (G!) | AIN (G) | AIN | GPIO | [UN] | [UN] | [UN] | GND 
+B | +3.3V | +5V | LCD B0 | LCD B1 | LCD B2 | LCD B3 | LCD B4 | LCD ENABLE | LCD CLK | GND 
+C | +3.3V | +5V | GPIO! | CAN TD (G) | CAN RD (G) | GPIO | [UN] | [UN] | [UN] | GND 
+D | +3.3V | +5V | GPIO! | D- | D+ | GPIO | GPIO | [UN] | [UN] | GND 
+E | +3.3V | +5V | [UN] | LED1 (OPT) | LED2 (OPT) | TX D- | TX D+ | RX D- | RX D+ | GND 
+F | +3.3V | +5V | GPIO! | DAT0 | DAT1 | CMD | DAT2 | DAT3 | CLK | GND 
+G | +3.3V | +5V | LCD G0 | LCD G1 | LCD G2 | LCD G3 | LCD G4 | LCD G5 | LCD BACKLIGHT | GND 
+H | +3.3V | +5V | GPIO! | D- | D+ | [UN] | [UN] | [UN] | [UN] | GND 
+I | +3.3V | +5V | GPIO! | [UN] | [UN] | GPIO | [UN] | SDA | SCL | GND 
+K | +3.3V | +5V | GPIO! | TX (G) | RX (G) | RTS | CTS | [UN] | [UN] | GND 
+O | +3.3V | +5V | GPIO! | GPIO | AOUT | [UN] | [UN] | [UN] | [UN] | GND 
+P | +3.3V | +5V | GPIO! | [UN] | [UN] | GPIO | PWM (G) | PWM (G) | PWM | GND 
+R | +3.3V | +5V | LCD R0 | LCD R1 | LCD R2 | LCD R3 | LCD R4 | LCD VSYNC | LCD HSYNC | GND 
+S | +3.3V | +5V | GPIO! | GPIO | GPIO | CS | MOSI | MISO | SCK | GND 
+T | +3.3V | +5V | [UN] | YU | XL | YD | XR | [UN] | [UN] | GND 
+U | +3.3V | +5V | GPIO! | TX (G) | RX (G) | GPIO | [UN] | [UN] | [UN] | GND 
+X | +3.3V | +5V | GPIO! | GPIO | GPIO | [UN] | [UN] | [UN] | [UN] | GND 
+Y | +3.3V | +5V | GPIO! | GPIO | GPIO | GPIO | GPIO | GPIO | GPIO | GND 
+Z | +3.3V | +5V | [MS] | [MS] | [MS] | [MS] | [MS] | [MS] | [MS] | GND 
+\* | +3.3V | +5V | GPIO! | GPIO | GPIO | [MS] | [MS] | [MS] | [MS] | GND
+
+Symbol | Description
+--- | ---
+AIN | Analog input pin.
+GPIO | A general-purpose digital input/output pin, operating at 3.3 volts.
+(G) | In addition to another functionality, a pin that is also usable as a GPIO.
+[UN] | Modules must not connect to this pin if using this socket type. Mainboards can support multiple socket types on one socket, as long as individual pin functionalities overlap in a compatible manner, so that a pin from one socket type can overlap with a [UN] pin of another.
+! | Interrupt-capable and software pull-up capable GPIO (the pull-up is switchable and in the range of 10,000 to 100,000 ohms).
++3.3V | Connection to the +3.3 V power net.
++5V | Connection to the +5 V power net.
+GND | Connection the power ground net.
 
 # Using .NET Gadgeteer
 To use the .NET Gadgeteer legacy software, install:
