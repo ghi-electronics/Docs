@@ -107,7 +107,7 @@ File | Date | Status | MD5
 ## Embedded Master
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Embedded%20Master%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | F39BD6BC7F14855A6B5A557DEF26B720
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EmbeddedMaster%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | F39BD6BC7F14855A6B5A557DEF26B720
 
 ## USBizi
 File | Date | Status | MD5
