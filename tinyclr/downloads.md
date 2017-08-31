@@ -99,7 +99,7 @@ File | Date | Status | MD5
 ## USBizi
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/UZBizi%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 20748AD886D5C20C8EF7B93AD8C522E9
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 20748AD886D5C20C8EF7B93AD8C522E9
 
 ## Cerb
 File | Date | Status | MD5
@@ -122,7 +122,7 @@ File | Date | Status | MD5
 ## clicker
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker/click%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | 6A28632B898EEF7DF56A73D1034FED97
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker/clicker%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | 6A28632B898EEF7DF56A73D1034FED97
 
 ## clicker 2
 File | Date | Status | MD5
