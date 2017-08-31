@@ -117,6 +117,9 @@ File | Date | Status | MD5
 [v1.0.7 100](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader%20v1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
 ## USB Drivers
+
+Only needed for Windows 7 and 8 since they do not automatically load drivers for the bootloader interface.
+
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.6.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi) | 2017-08-31 | Alpha | AEDD7C00854BBF99AC3FDAB4976E1F33
