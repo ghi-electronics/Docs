@@ -79,7 +79,6 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
 - Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
 - Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
-- Every other deployment on G120 fails [#44](https://github.com/ghi-electronics/TinyCLR-Ports/issues/44).
 - The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
 
 ### TinyCLR Config
