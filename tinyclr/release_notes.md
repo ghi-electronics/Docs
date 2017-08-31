@@ -29,7 +29,6 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Partially transparent ellipses have weird artifacts.
 - Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
-- Non-blocking `GpioChangeWriter` does not work.
 
 ### Firmware
 
@@ -68,7 +67,14 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
 - An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
 - Tight loops on LPC24 may prevent the debugger from working.
-- ADC6 and ADC7 do not work on USBizi144.
+- Debugging VS through serial on G120 does not work.
+- UART 3 and 4 do not work on G120.
+- Non-blocking `GpioChangeWriter` does not work on NXP devices.
+- The LCD has a blue tint on EMX and EMM.
+- PWM on PB8 and PB9 do not work on Cerb.
+- The run app pin does not work on USBizi.
+- ADC 6 and 7 do not work on USBizi.
+- PWM on 3.27 does not work on EMM.
 
 ### TinyCLR Config
 
