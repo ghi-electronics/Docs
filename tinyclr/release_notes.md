@@ -29,7 +29,6 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Partially transparent ellipses have weird artifacts.
 - Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
-- Non-blocking `GpioChangeWriter` does not work.
 
 ### Firmware
 
@@ -68,7 +67,20 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
 - An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
 - Tight loops on LPC24 may prevent the debugger from working.
-- ADC6 and ADC7 do not work on USBizi144.
+- The LCD on EMM sometimes does not work.
+- The LCD has a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- Debugging VS through serial on G120 does not work [#34](https://github.com/ghi-electronics/TinyCLR-Ports/issues/34).
+- UART 3 does not work on G120E and 4 does not work on G120 and G120E [#35](https://github.com/ghi-electronics/TinyCLR-Ports/issues/35).
+- Non-blocking `GpioChangeWriter` does not work on NXP devices [#36](https://github.com/ghi-electronics/TinyCLR-Ports/issues/36).
+- The last two PWM are missing on Cerb [#37](https://github.com/ghi-electronics/TinyCLR-Ports/issues/37).
+- PWM on PB8 and PB9 do not work on Cerb [#38](https://github.com/ghi-electronics/TinyCLR-Ports/issues/38).
+- The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
+- ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
+- Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- Every other deployment on G120 fails [#44](https://github.com/ghi-electronics/TinyCLR-Ports/issues/44).
+- The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
 
 ### TinyCLR Config
 
