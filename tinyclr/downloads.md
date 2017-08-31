@@ -94,7 +94,7 @@ File | Date | Status | MD5
 ## Embedded Master
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Embedded%20Master/Embedded%20Master%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | AD4E022B7F493B60BEEA3EBE685AB525
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EmbeddedMaster/EmbeddedMaster%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | AD4E022B7F493B60BEEA3EBE685AB525
 
 ## USBizi
 File | Date | Status | MD5
