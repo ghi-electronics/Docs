@@ -110,8 +110,8 @@ File | Date | Status | MD5
 ## netduino 3
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino%203/netduino%203%20Firmware%20v0.6.0.hex) | 2017-08-xx | Alpha | x
-[v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino%203/netduino%203%20Firmware%20v0.5.0.hex) | 2017-07-07 | Alpha | F6C51E2E7286262D4652D40CAAB1731A
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino3/netduino3%20Firmware%20v0.6.0.hex) | 2017-08-xx | Alpha | x
+[v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino3/netduino3%20Firmware%20v0.5.0.hex) | 2017-07-07 | Alpha | F6C51E2E7286262D4652D40CAAB1731A
 
 ## Quail
 File | Date | Status | MD5
@@ -127,4 +127,4 @@ File | Date | Status | MD5
 ## clicker 2
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker%202/clicker%202%20Firmware%20v0.6.0.hex) | 2017-08-xx | Alpha | x
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker2/clicker2%20Firmware%20v0.6.0.hex) | 2017-08-xx | Alpha | x
