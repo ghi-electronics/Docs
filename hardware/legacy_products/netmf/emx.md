@@ -4,7 +4,7 @@
 EMX is a NETMF System on Module.
 
 # Resources
-* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/EMX User Manual.pdf)
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/EMX%20User%20Manual.pdf)
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md) about the use of NETMF and TinyCLR OS.

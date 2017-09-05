@@ -3,7 +3,7 @@
 
 The BrainPad is a revolutionized board for STEM and STEAM programs. It is very simple with much to offer out of the box, yet it is expandable. It is simple enough that a beginner can start with, but powerful that an advanced user can use it to expand their knowledge. It works with higher elementary kids to a retired person.
 
-Visit the official BrainPad website at www.brainpad.com
+Visit the official BrainPad website at [www.brainpad.com](http://www.brainpad.com)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKK_CfSFAHc" frameborder="0" allowfullscreen></iframe>
 

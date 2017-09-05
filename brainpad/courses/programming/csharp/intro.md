@@ -1,5 +1,5 @@
 # C Sharp (C#)
-It is not a secret that C and C++ are the most popular programing languages among professionals. This is more partically true for professionals that work with small digital systems.
+It is not a secret that C and C++ are the most popular programing languages among professionals. This is more particularly true for professionals that work with small digital systems.
 
 C# is the modern cousin of the C and C++ family. It syntax is very close to JAVA, another very popular programming language.
 
@@ -63,11 +63,11 @@ Now we can use the arrow keys to go up and down in the list to find the LightBul
 ![Using IntelliSense with the LightBulb](images/introduction/UsingIntellSenseLightBulb.jpg)
 
 Visual Studio does a great deal of simplifying the programming process by automatically listing available options for an object. They call this neat option built into Visual Studio, _IntelliSense_
-Now that we know how to use the `BrainPad` object, let’s learn about controlling the LightBulb.
+Now that we know how to use the `BrainPad` object, let's learn about controlling the LightBulb.
 
 ## The BrainPad LightBulb
 LED lights are used in many different electronic devices. Here we will test the LightBulb by turning it green, then on, then off. 
-Copy and paste the code from Example 1 into your project’s `BrainPadSetup()`, between its two curly braces { }. 
+Copy and paste the code from Example 1 into your project's `BrainPadSetup()`, between its two curly braces { }. 
 
 > [!Tip]
 > Parentheses `( )` and curly braces `{ }` are used differently, do not confuse them?
@@ -78,7 +78,7 @@ BrainPad.LightBulb.TurnGreen();
 BrainPad.LightBulb.TurnOff();
 BrainPad.LightBulb.TurnGreen();
 ```
-Now, press `F5` to run the code and you’ll see the LightBulb turn green come on and stay on. This happens because our code is executed faster than we can see. So we never see the LightBulb actually blink.
+Now, press `F5` to run the code and you'll see the LightBulb turn green come on and stay on. This happens because our code is executed faster than we can see. So we never see the LightBulb actually blink.
 
 ## Problem Solving
 Since applications execute extremely fast, we need to slow them down to figure out the problem. This way we can see what is happening or if the results are as expected. We will start by running the code one line at a time, this is called stepping in code to see what the application does at a slow speed.
