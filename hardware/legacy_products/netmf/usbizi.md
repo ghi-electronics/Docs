@@ -6,7 +6,9 @@ USBizi was the first single chip .NET Micro Framework (NETMF) on the market. It 
 We are no longer making the chip available but we are making all [bootloader binaries](https://www.ghielectronics.com/downloads/NETMF/USBizi/) (move to new server) available for free, including for commercial use. 
 
 # Resources
-* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi%20Userjust build them and do a quick test to make sure V, N, and X/U workManual.pdf) 
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi%20User%20Manual.pdf) 
+
+build them and do a quick test to make sure V, N, and X/U workManual.pdf) 
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md).
