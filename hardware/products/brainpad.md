@@ -6,7 +6,7 @@ The BrainPad is an educational STEM & STEAM targeted board. Courses and learning
 This page has info for advanced users.
 
 Resources:
-* The BrainPad's main website: http://brainpad.com
+* The BrainPad's main website: [brainpad.com](http://www.brainpad.com)
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/BrainPad%20BP2%20Schematic.pdf)
 
 ## The Original BrainPad

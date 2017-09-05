@@ -481,4 +481,4 @@ End Class
 ```
 
 ## Exercise
-Write a program that prints 0 to 10 repeatedly when the up button is **not** pressed when it is bright. If it is dark the button doesn’t do anything. Do not use `And`, instead nest the if-statements.
+Write a program that prints 0 to 10 repeatedly when the up button is **not** pressed when it is bright. If it is dark the button doesn't do anything. Do not use `And`, instead nest the if-statements.
