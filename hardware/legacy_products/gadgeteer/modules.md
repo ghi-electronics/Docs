@@ -98,7 +98,7 @@ Buttons map:
 * Back: Pin 4
 * Forward: Pin 9
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Button%20s7%20Module%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Button%20S7%20Module%20Schematic.pdf)
 
 # CAN DW
 ![Button S7](images/modules/can_dw.jpg)
@@ -660,7 +660,7 @@ class Program {
 A DaisyLink module, we will not support.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Multicolor%20LED%20Module%20Schematic.pdf)
 
- # Music
+# Music
 ![Music](images/modules/music.jpg)
 
 The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.

@@ -8,7 +8,7 @@ We are no longer making the chip available but we are making all [bootloader bin
 # Resources
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBizi%20User%20Manual.pdf) 
 
-build them and do a quick test to make sure V, N, and X/U workManual.pdf) 
+build them and do a quick test to make sure V, N, and X/U workManual.pdf
 
 # Using the NETMF software
 We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md).
@@ -52,7 +52,7 @@ Download the [USBizi firmware](../../../tinyclr/downloads.md#usbizi) and follow 
 
 The original development board for USBizi.
 
-*[Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/USBizi%20DevSys%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/USBizi%20DevSys%20Schematic.pdf)
 
 ## FEZ Panda
 ![FEZ Panda](images/fez_panda.jpg)
