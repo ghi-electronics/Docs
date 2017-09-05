@@ -76,9 +76,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="alpha-release-notes">Alpha Release Notes</h1>
 
-<h2 id="060-on-2017-08-xx">0.6.0 on 2017-08-xx</h2>
+<h2 id="060-on-2017-08-31">0.6.0 on 2017-08-31</h2>
 <h3 id="notes">Notes</h3>
-<p>This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">GitHub repo</a>. There are new classes available in the <code>Pins</code> library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, continued improvements to the <code>BrainPad</code> library, <code>Acquire</code> and <code>Release</code> were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.</p>
+<p>This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">GitHub repo</a>. There are new classes available in the <code>Pins</code> library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the <code>BrainPad</code> library, <code>Acquire</code> and <code>Release</code> were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.</p>
 <p>Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See <a href="tinyclr_config.html">here</a> for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.</p>
 <p>Lastly, how we distribute releases is changing going forward. There&#39;s no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its <a href="downloads.html">downloads</a> page and bootloader binaries are available on the bootloader <a href="../hardware/loaders/ghi_bootloader.html#downloads">download</a> page. MD5 hashes are provided for all downloads as well.</p>
 <h3 id="libraries">Libraries</h3>
@@ -102,7 +102,6 @@
 <li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
 <li>Partially transparent ellipses have weird artifacts.</li>
 <li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
-<li>Non-blocking <code>GpioChangeWriter</code> does not work.</li>
 </ul>
 <h3 id="firmware">Firmware</h3>
 <h4 id="changes">Changes</h4>
@@ -142,7 +141,19 @@
 <li>Deploying on USBizi sometimes fails. Reset the board and try again to work around it.</li>
 <li>An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.</li>
 <li>Tight loops on LPC24 may prevent the debugger from working.</li>
-<li>ADC6 and ADC7 do not work on USBizi144.</li>
+<li>The LCD on EMM sometimes does not work.</li>
+<li>The LCD has a blue tint on EMX and EMM <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/29">#29</a>.</li>
+<li>Debugging VS through serial on G120 does not work <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/34">#34</a>.</li>
+<li>UART 3 does not work on G120E and 4 does not work on G120 and G120E <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/35">#35</a>.</li>
+<li>Non-blocking <code>GpioChangeWriter</code> does not work on NXP devices <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/36">#36</a>.</li>
+<li>The last two PWM are missing on Cerb <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/37">#37</a>.</li>
+<li>PWM on PB8 and PB9 do not work on Cerb <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/38">#38</a>.</li>
+<li>The run app pin does not work on USBizi <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/39">#39</a>.</li>
+<li>ADC 6 and 7 do not work on USBizi <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/40">#40</a>.</li>
+<li>PWM on 3.27 does not work on EMM <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/41">#41</a>.</li>
+<li>Debugging in VS sometimes pauses forever until you manually break <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/42">#42</a>.</li>
+<li>Debugging in VS with USBizi crashes the firmware sometimes <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/43">#43</a>.</li>
+<li>The ADC on G80 may be slightly inaccurate <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/45">#45</a>.</li>
 </ul>
 <h3 id="tinyclr-config">TinyCLR Config</h3>
 <h4 id="changes">Changes</h4>

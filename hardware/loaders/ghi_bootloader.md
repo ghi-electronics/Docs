@@ -78,13 +78,13 @@ Here you can find the various bootloaders available for the various products.
 ## FEZCLR
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 33F7FCAE266D07209C079CEA38AAB583
 [v2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
 
 ## G120
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | 7052D6FFB1890987DDCC4043895788D3
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
 ## G400
@@ -96,28 +96,31 @@ File | Date | Status | MD5
 ## Cerb
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.4.dfu) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 934825046A0245756C2F3B4066E7F79F
 [v2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.3.dfu) | 2017-07-07 | Alpha | 6505870259AC8E748FD09EBD00796E2E
 
 ## EMX
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader%20v2.0.4.ghi) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | E728AEFF7737E60B05620F9387FAA373
 
 ## Embedded Master
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Embedded%20Master%20Bootloader%20v2.0.4.ghi) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EmbeddedMaster%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | F39BD6BC7F14855A6B5A557DEF26B720
 
 ## USBizi
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20Bootloader%20v2.0.4.hex) | 2017-08-xx | Alpha | x
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20Bootloader%20v2.0.4.hex) | 2017-08-31 | Alpha | 97BF3C83B801CDA6119B149CF339BE7A
 [v1.0.7 144](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader%20v1.0.7.hex) | 2015-05-05 | Production | 853557479D8797EAB650B98E3D333DCF
 [v1.0.7 100](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader%20v1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
 ## USB Drivers
+
+Only needed for Windows 7 and 8 since they do not automatically load drivers for the bootloader interface.
+
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.6.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi) | 2017-08-xx | Alpha | x
-[v0.6.0 x86](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v0.6.0.msi) | 2017-08-xx | Alpha | x
+[v0.6.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi) | 2017-08-31 | Alpha | AEDD7C00854BBF99AC3FDAB4976E1F33
+[v0.6.0 x86](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v0.6.0.msi) | 2017-08-31 | Alpha | A0F487D32B882199F0A69E6CAA8DE4CB

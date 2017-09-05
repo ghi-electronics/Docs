@@ -76,28 +76,28 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="net-gadgeteer-modules">.NET Gadgeteer Modules</h1>
 
-<p>This page lists all .NET Gadgeteer modules and how can they be used with <a href="../../../tinyclr/intro.html">TinyCLR OS</a>. If you are planning on using the old NETMF/Gadgeteer, which we discourage, software then read the <a href="intro.html">.NET Gadgeteer Intro</a> page.</p>
+<p>This page lists all .NET Gadgeteer modules and how they can be used with <a href="../../../tinyclr/intro.html">TinyCLR OS</a>. If you are planning on using the old NETMF/Gadgeteer software, which we discourage,  then read the <a href="intro.html">.NET Gadgeteer Intro</a> page.</p>
 <div class="TIP"><h5>Tip</h5><p>You can use Intellisense with the pin definition class to quickly determine where things go.
-For example: Typing <code>FEZSpider.GpioPin.Socket4.</code> lists the available GPIO pins on socket3
-Another example: Typing <code>FEZSpider.UartPort.</code> lists all available UART sockets (that is U in the old Gadgeteer standard)</p>
+For example: Typing <code>FEZSpider.GpioPin.Socket4.</code> lists the available GPIO pins on socket 4
+Another example: Typing <code>FEZSpider.UartPort.</code> lists all available UART sockets (that is &quot;U&quot; in the old Gadgeteer standard)</p>
 </div>
 <div class="TIP"><h5>Tip</h5><p>We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.</p>
 </div>
 <h1 id="accel-g248">Accel G248</h1>
 <p><img src="images/modules/accel_g248.jpg" alt="Accel G248"></p>
-<p>The Accel G248 measures acceleration though I2C bus. Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248">original Gadgteer driver</a> as a refernce.</p>
+<p>The Accel G248 measures acceleration though I2C bus. Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Accel%20G248%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="barometer">Barometer</h1>
 <p><img src="images/modules/barometer.jpg" alt="Barometer"></p>
-<p>Meassures presure. Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer">original Gadgteer driver</a> as a refernce.</p>
+<p>Measures pressure. Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Barometer%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="bluetooth">Bluetooth</h1>
 <p><img src="images/modules/bluetooth.jpg" alt="Bluetooth"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Bluetooth%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -122,7 +122,7 @@ Another example: Typing <code>FEZSpider.UartPort.</code> lists all available UAR
 <h1 id="button">Button</h1>
 <p><img src="images/modules/button.jpg" alt="Button"></p>
 <p>The Button module is very simple, with a button connected to pin 3 and an LED connected to pin4.</p>
-<p>This example will blink the LED a different rate, depending on the button press.</p>
+<p>This example will blink the LED at different rates, depending on the button press.</p>
 <pre><code>using System.Threading;
 using GHIElectronics.TinyCLR.Devices.Gpio;
 using GHIElectronics.TinyCLR.Pins;
@@ -183,34 +183,34 @@ class Program {
 </ul>
 <h1 id="cellular-radio">Cellular Radio</h1>
 <p><img src="images/modules/cellular_radio.jpg" alt="Cellular Radio"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Cellular%20Radio%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="character-display">Character Display</h1>
 <p><img src="images/modules/character_display.jpg" alt="Character Display"></p>
 <p>This is a standard and very common HD44780 display.</p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Character%20Display%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="colorsense">ColorSense</h1>
 <p><img src="images/modules/color_sense.jpg" alt="ColorSense"></p>
 <p>A color sensor that uses software I2C, not yet supported in TinyCLR OS.</p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Color%20Sense%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="compass">Compass</h1>
 <p><img src="images/modules/compass.jpg" alt="Compass"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Compass%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="current-acs712">Current ACS712</h1>
 <p><img src="images/modules/current_acs712.jpg" alt="Current ACS712"></p>
 <p>This is a current sensor that uses ACS712, which simply outputs an analog voltage.</p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CurrentACS712">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CurrentACS712">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Current%20ACS712%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -407,19 +407,19 @@ long time = echolen.Read();
 </ul>
 <h1 id="feztive">FEZtive</h1>
 <p><img src="images/modules/feztive.jpg" alt="FEZtive"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/FEZtive%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="flash">Flash</h1>
 <p><img src="images/modules/flash.jpg" alt="Flash"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/FLASH%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="gps">GPS</h1>
 <p><img src="images/modules/gps.jpg" alt="GPS"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/GPS%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -451,7 +451,7 @@ class Program {
 </ul>
 <h1 id="gyro">Gyro</h1>
 <p><img src="images/modules/gyro.jpg" alt="Gyro"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Gyro%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -470,13 +470,13 @@ class Program {
 <h1 id="io60p16">IO60P16</h1>
 <p><img src="images/modules/io60p16.jpg" alt="IO60P16"></p>
 <p>This module provide 60 IOs and 16 PWM pins.
-Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IP60P16">original Gadgteer driver</a> as a refernce.</p>
+Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IP60P16">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/IO60P16%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="ir-receiver">IR Receiver</h1>
 <p><img src="images/modules/ir_reciever.jpg" alt="IR Receiver"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/IRReceiver%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -509,7 +509,7 @@ class Program {
 </ul>
 <h1 id="keypad-kp16">Keypad KP16</h1>
 <p><img src="images/modules/keypad_kp16.jpg" alt="Keypad KP16"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Keypad%20KP16%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -568,7 +568,7 @@ class Program {
 <p>This is a ring of 6 LEDs and a 7th center LED.
 Reference the LED 7C module for using pins.</p>
 <p>Center LED: pin 9
-LEDs going clock wise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D5, D6 are pins 3 to 8 respectively.</p>
+LEDs going clockwise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D5, D6 are pins 3 to 8 respectively.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/LED%207R%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -593,7 +593,7 @@ LEDs going clock wise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D
 <h1 id="maxo">MaxO</h1>
 <p><img src="images/modules/maxo.jpg" alt="MaxO"></p>
 <p>Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs. This video explains how this works</p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/MaxO">original Gadgteer driver</a> as a reference.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2qYLsM9DoBI" frameborder="0" allowfullscreen=""></iframe>
 
 <ul>
@@ -682,7 +682,7 @@ class Program {
 </ul>
 <h1 id="multicolor-led">Multicolor LED</h1>
 <p><img src="images/modules/multicolor_led.jpg" alt="Multicolor LED"></p>
-<p>A DaisyLink moudle, we will not support.</p>
+<p>A DaisyLink module, we will not support.</p>
 <ul>
 <li><p><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Multicolor%20LED%20Module%20Schematic.pdf">Schematic</a></p>
 <h1 id="music">Music</h1>
@@ -690,7 +690,7 @@ class Program {
 </li>
 </ul>
 <p>The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
-Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music">original Gadgteer driver</a> as a refernce.</p>
+Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Music%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -699,7 +699,7 @@ Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/
 <p>No driver is needed.</p>
 <h1 id="obd-ii">OBD II</h1>
 <p><img src="images/modules/obd_ii.jpg" alt="OBD II"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII">original Gadgteer driver</a> as a reference.</p>
 <h1 id="onewire-x1">OneWire X1</h1>
 <p><img src="images/modules/onewire_x1.jpg" alt="OneWire X1"></p>
 <p>A breakout with a terminal block for easily connecting OneWire devices, specifically the common temperature probes.</p>
@@ -715,7 +715,7 @@ Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/
 </ul>
 <h1 id="parallel-cnc">Parallel CNC</h1>
 <p><img src="images/modules/parallel_cnc.jpg" alt="Parallel CNC"></p>
-<p>A DaisyLink moudle, we will not support.</p>
+<p>A DaisyLink module, we will not support.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Parallel%20CNC%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -742,25 +742,25 @@ class Program {
 </ul>
 <h1 id="pulse-count">Pulse Count</h1>
 <p><img src="images/modules/pulse_count.jpg" alt="Pulse Count"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20Count%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="pulse-inout">Pulse InOut</h1>
 <p><img src="images/modules/pulse_inout.jpg" alt="Pulse InOut"></p>
-<p>A DaisyLink moudle, we will not support.</p>
+<p>A DaisyLink module, we will not support.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20In%20Out%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="pulse-oximeter">Pulse Oximeter</h1>
 <p><img src="images/modules/pulse_oximeter.jpg" alt="Pulse Oximeter"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20Oximeter%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="rfid-reader">RFID Reader</h1>
 <p><img src="images/modules/rfid_reader.jpg" alt="RFID Reader"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/RFID%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -778,20 +778,20 @@ class Program {
 </ul>
 <h1 id="radio-fm1">Radio FM1</h1>
 <p><img src="images/modules/radio_fm1.jpg" alt="Radio FM1"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RadioFM1">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RadioFM1">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Radio%20FM1%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="reflector-r3">Reflector R3</h1>
 <p><img src="images/modules/reflector_r3.jpg" alt="Reflector R3"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Reflector%20R3%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="relay-isox16">Relay ISOx16</h1>
 <p><img src="images/modules/relay_isox16.jpg" alt="Relay ISOx16"></p>
 <p>An array of 16 relays. Operate similar to the MaxO module.</p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Relay%20ISOx16%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -803,7 +803,7 @@ class Program {
 </ul>
 <h1 id="rotary-h1">Rotary H1</h1>
 <p><img src="images/modules/rotary_h1.jpg" alt="Rotary H1"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Rotary%20H1%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -821,34 +821,34 @@ class Program {
 </ul>
 <h1 id="serial-camera">Serial Camera</h1>
 <p><img src="images/modules/serial_camera.jpg" alt="Serial Camera"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1">original Gadgteer driver</a> as a reference.</p>
 <h1 id="stepper-l6470">Stepper L6470</h1>
 <p><img src="images/modules/stepper_l6470.jpg" alt="Stepper L6470"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Stepper%20L647x%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="temphumidity">TempHumidity</h1>
 <p><img src="images/modules/temp_humidity.jpg" alt="TempHumidity"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Temp%20Humid%20SI70%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="thermocouple">Thermocouple</h1>
 <p><img src="images/modules/thermocouple.jpg" alt="Thermocouple"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Thermocouple%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="touch-c8">Touch C8</h1>
 <p><img src="images/modules/touch_c8.jpg" alt="Touch C8"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Touch%20C8%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="touch-l12">Touch L12</h1>
 <p><img src="images/modules/touch_l12.jpg" alt="Touch L12"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Touch%20L12%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
@@ -918,13 +918,13 @@ class Program {
 </ul>
 <h1 id="videoout">VideoOut</h1>
 <p><img src="images/modules/video_out.jpg" alt="VideoOut"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/VideoOut%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>
 <h1 id="wifi-rn171">WiFi RN171</h1>
 <p><img src="images/modules/wifi_rn171.jpg" alt="WiFi RN171"></p>
-<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171">original Gadgteer driver</a> as a refernce.</p>
+<p>Use the <a href="https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171">original Gadgteer driver</a> as a reference.</p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/WiFi%20RN171%20Module%20Schematic.pdf">Schematic</a></li>
 </ul>

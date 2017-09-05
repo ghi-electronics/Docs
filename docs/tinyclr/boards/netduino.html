@@ -84,10 +84,10 @@
 <li><a href="http://www.netduino.com/netduino3ethernet/specs.htm">netduino 3 Ethernet</a></li>
 <li><a href="http://www.netduino.com/netduino3wifi/specs.htm">netduino 3 WiFi</a></li>
 </ul>
-<p>The netduino3 firmware is located <a href="../downloads.html#netduino-3">here</a>. Use ST-Link to load or follow the instructions at the <a href="../../hardware/loaders/stm32_bootloader.html">STM32 bootloader</a> page to generate and load a DFU file.</p>
-<p>When done, your PC should detect a TinyCLR device. You are now ready to <a href="../tutorials/intro.html">start coding</a></p>
 <div class="TIP"><h5>Tip</h5><p>Currently the firmware is the same for all three devices and doesn&#39;t include any networking support.</p>
 </div>
+<p>The netduino3 firmware is located <a href="../downloads.html#netduino-3">here</a>. To put the netduino in DFU mode, hold its one button down while plugging in the USB cable. Now follow the instructions at the <a href="../../hardware/loaders/stm32_bootloader.html">STM32 bootloader</a> page to generate and load a DFU file.</p>
+<p>When done, your PC should detect a TinyCLR device. You are now ready to <a href="../tutorials/intro.html">start coding</a></p>
 <div class="TIP"><h5>Tip</h5><p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8.</p>
 </div>
 <h2 id="pin-definitions">Pin Definitions</h2>
@@ -238,7 +238,7 @@
     }
 }
 </code></pre><h2 id="netduino-2">netduino 2</h2>
-<p>This board uses STM32F2, which is very similar to the STM32 F4 used on the netduino 3. Porting TinyCLR OS ro netduino 2 should not be very difficult.</p>
+<p>This board uses STM32F2, which is very similar to the STM32F4 used on the netduino 3. Porting TinyCLR OS to netduino 2 should not be very difficult.</p>
 <h2 id="netduino-1">netduino 1</h2>
 <p>This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for posting TinyCLR OS.</p>
 </article>

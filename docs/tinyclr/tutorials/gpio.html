@@ -124,11 +124,19 @@ class Program
     }
     static void Main()
     {
-        GpioPin led = GpioController.GetDefault().OpenPin(
-            //PinNumber(&#39;B&#39;, 2));// Cerbuino
-            //PinNumber(&#39;A&#39;, 10));//netduino 3
-            //PinNumber(&#39;D&#39;, 5));//411 red Discovery
-            PinNumber(&#39;D&#39;, 15));//411 blue Discovery
+        var led = GpioController.GetDefault().OpenPin(
+        //PinNumber(&#39;E&#39;, 2));// Buggy bot right flash
+        //PinNumber(&#39;C&#39;, 4));// Buggy bot left flash
+        //PinNumber(&#39;C&#39;, 12));// mini M4
+        //PinNumber(&#39;B&#39;, 2));// Cerbuino
+        //PinNumber(&#39;A&#39;, 1));// clicker
+        //PinNumber(&#39;E&#39;, 12));// clicker2
+        //PinNumber(&#39;E&#39;, 15));// Quail
+        //PinNumber(&#39;A&#39;, 10));//netduino 3
+        //PinNumber(&#39;D&#39;, 5));//411 red Discovery
+        //PinNumber(&#39;D&#39;, 15));//411 blue Discovery
+        STM32F4.GpioPin.PA15);
+
         led.SetDriveMode(GpioPinDriveMode.Output);
 
         while(true)

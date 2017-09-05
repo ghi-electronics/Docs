@@ -440,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_cerberus.html",
-          "hash": "InMkYCmS18cYj5Nvs0bkyA=="
+          "hash": "/EPpjFcUKkTL2+9RmmdzDg=="
         }
       },
       "is_incremental": false,
@@ -452,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_cobra_ii.html",
-          "hash": "TUUTbgRY7utGBDP9IV43ZA=="
+          "hash": "FPg/zbtTKPQzp5eVmW/K7A=="
         }
       },
       "is_incremental": false,
@@ -464,7 +464,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_hydra.html",
-          "hash": "QBAqmICFkKmKFPZJ2nzqzg=="
+          "hash": "6VH4E3elffeGfTtSBwhugA=="
         }
       },
       "is_incremental": false,
@@ -476,7 +476,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_raptor.html",
-          "hash": "fENc2KaRg1d4SLjLQA60Sg=="
+          "hash": "1t89GHMMIwuHt+ZOpg2/Iw=="
         }
       },
       "is_incremental": false,
@@ -488,7 +488,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_reaper.html",
-          "hash": "Pe7Zz/mST34WFVPhj5wdJw=="
+          "hash": "xbQnqQwOfjhnb2CaE4/F3g=="
         }
       },
       "is_incremental": false,
@@ -500,7 +500,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_spider.html",
-          "hash": "H1ZLKTSjN7Gxtgb4FO0lPg=="
+          "hash": "54YbOKs455yiLNPAo1xYkg=="
         }
       },
       "is_incremental": false,
@@ -512,7 +512,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_spider_ii.html",
-          "hash": "Chmxdh2fF4YDrqaiySV9yQ=="
+          "hash": "nC0P1FFM3LFbkJAYhJXjJg=="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/intro.html",
-          "hash": "6GDtzawH/SDqv5PSITtXng=="
+          "hash": "142IQRZeaDYshzNYxyOU5g=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/modules.html",
-          "hash": "0+cacRHzFq+GQeZHIMvWvA=="
+          "hash": "1/FC8iGGZLxojhU0jDdSgg=="
         }
       },
       "is_incremental": false,
@@ -1762,7 +1762,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/netmf/canxtra.html",
-          "hash": "arDbbGiwQjvbMF8f3UMMtQ=="
+          "hash": "G1K1mOgQU1Ut7BaBDjsQHw=="
         }
       },
       "is_incremental": false,
@@ -1786,7 +1786,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/netmf/embedded_master.html",
-          "hash": "BrCIf1qYnfF362WCPbQbqg=="
+          "hash": "/Ek1fi43IxO9sk/V4/TUsw=="
         }
       },
       "is_incremental": false,
@@ -1964,7 +1964,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/netmf/intro.html",
-          "hash": "f7sFchIIKtQ2lDY2yhkQjQ=="
+          "hash": "0WTdrZhy4aKP4b+y3/cCnQ=="
         }
       },
       "is_incremental": false,
@@ -2000,7 +2000,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/loaders/ghi_bootloader.html",
-          "hash": "Tg6pE5tH581WYi3wrKogcQ=="
+          "hash": "yPvZ0AVGtOK9XjR3NKhSkQ=="
         }
       },
       "is_incremental": false,
@@ -2036,7 +2036,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/loaders/stm32_bootloader.html",
-          "hash": "KBtv17BHBFy+SkegLVbqYg=="
+          "hash": "T3/lMmMwS8KKeU+0buY8IA=="
         }
       },
       "is_incremental": false,
@@ -2048,7 +2048,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/brainpad.html",
-          "hash": "haACjt2jGcLFska6tusqvA=="
+          "hash": "pjh0VPEXUIYuYZSZtS3GjQ=="
         }
       },
       "is_incremental": false,
@@ -2060,7 +2060,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/fez.html",
-          "hash": "xiR5TxhXVSVapiZpNOpybA=="
+          "hash": "hKYJCnyNk6U5A1n9/f25kQ=="
         }
       },
       "is_incremental": false,
@@ -2072,7 +2072,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g120.html",
-          "hash": "NGJtt4arfGBCIvzyzScGgA=="
+          "hash": "R+UZRBj0V++hFR8Sa9QCnw=="
         }
       },
       "is_incremental": false,
@@ -2084,7 +2084,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g30.html",
-          "hash": "4Twv8ky9X7dyO3KTRQJ7WQ=="
+          "hash": "XYKAyrvTNgkb0RZbIObsbA=="
         }
       },
       "is_incremental": false,
@@ -2096,7 +2096,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g400.html",
-          "hash": "t7hv+3JAe7moDdmbzr1JUA=="
+          "hash": "To6G6mYdf4X4f4ARx5j0rw=="
         }
       },
       "is_incremental": false,
@@ -2108,7 +2108,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/g80.html",
-          "hash": "5Z4kM1G4B9XvWT2dDf/hZA=="
+          "hash": "Wh5MhTtGqLAd1HRo8f4erw=="
         }
       },
       "is_incremental": false,
@@ -2397,7 +2397,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ciHzR4ojVybCq6iharY6pQ=="
+          "hash": "ctC4W+QNIYK4gH7vIgHh/A=="
         }
       },
       "is_incremental": false,
@@ -2659,7 +2659,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/boards/mikro.html",
-          "hash": "A/Ow/MraMbS/tQ9Phd1lkg=="
+          "hash": "ryt9kMkcNehYJc3nnzvd5Q=="
         }
       },
       "is_incremental": false,
@@ -2671,7 +2671,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/boards/netduino.html",
-          "hash": "lTDzht+EezOlYqaprHpAEQ=="
+          "hash": "ctwlrpMpKITXoX5xgXoO7w=="
         }
       },
       "is_incremental": false,
@@ -2695,7 +2695,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/downloads.html",
-          "hash": "TibKZviwE4NUO9m39LV6DQ=="
+          "hash": "Jn1XuT2Bs531s3vQabJzjA=="
         }
       },
       "is_incremental": false,
@@ -2790,7 +2790,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "NfqdvursjQkv4rvRGnF5+A=="
+          "hash": "7A9o350IHVYNG8LTtUYIfg=="
         }
       },
       "is_incremental": false,
@@ -2874,7 +2874,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpio.html",
-          "hash": "tkBOWxBrmlZ2R9/Iziyppw=="
+          "hash": "PKpXpwdPt8z3/b+INi8R0g=="
         }
       },
       "is_incremental": false,
@@ -2922,7 +2922,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/i2c.html",
-          "hash": "PL0P8bnj3x3YukD7amp63A=="
+          "hash": "PrC2KVhtknjVusbS5arGzg=="
         }
       },
       "is_incremental": false,
@@ -3139,14 +3139,19 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -3155,11 +3160,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

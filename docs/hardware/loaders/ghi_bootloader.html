@@ -76,7 +76,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="ghi-bootloader">GHI Bootloader</h1>
 
-<p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. The bootloader communicates over a USB virtual serial port or a regular serial port. The interface used is usually controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
+<p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. </p>
+<p>The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
 <div class="TIP"><h5>Tip</h5><p>If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the <a href="ghi_bootloader.html#usb-drivers">downloads section</a>.</p>
 </div>
 <h1 id="bootloader-v2">Bootloader v2</h1>
@@ -94,7 +95,8 @@
 </ul>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
 <h3 id="using-tinyclr-config">Using TinyCLR Config</h3>
-<p>Coming soon. Use the manual steps instead.</p>
+<p>TinyCLR Config tool includes multiple features developers need to work with TinyCLR-OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.</p>
+<p>Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the <a href="../../tinyclr/tinyclr_config.html">TinyCLR Config</a> page.</p>
 <h3 id="manual-loading-the-firmware">Manual Loading the Firmware</h3>
 <p>TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:</p>
 <ol>
@@ -150,9 +152,9 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>33F7FCAE266D07209C079CEA38AAB583</td>
 </tr>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.3.dfu">v2.0.3</a></td>
@@ -175,9 +177,9 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>7052D6FFB1890987DDCC4043895788D3</td>
 </tr>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.2.ghi">v2.0.2</a></td>
@@ -225,9 +227,9 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.4.dfu">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>934825046A0245756C2F3B4066E7F79F</td>
 </tr>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.3.dfu">v2.0.3</a></td>
@@ -250,9 +252,9 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader%20v2.0.4.ghi">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>E728AEFF7737E60B05620F9387FAA373</td>
 </tr>
 </tbody>
 </table>
@@ -268,10 +270,10 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Embedded%20Master%20Bootloader%20v2.0.4.ghi">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td><a href="http://files.ghielectronics.com/downloads/Bootloaders/EmbeddedMaster%20Bootloader%20v2.0.4.ghi">v2.0.4</a></td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>F39BD6BC7F14855A6B5A557DEF26B720</td>
 </tr>
 </tbody>
 </table>
@@ -288,9 +290,9 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20Bootloader%20v2.0.4.hex">v2.0.4</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>97BF3C83B801CDA6119B149CF339BE7A</td>
 </tr>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader%20v1.0.7.hex">v1.0.7 144</a></td>
@@ -307,6 +309,7 @@
 </tbody>
 </table>
 <h2 id="usb-drivers">USB Drivers</h2>
+<p>Only needed for Windows 7 and 8 since they do not automatically load drivers for the bootloader interface.</p>
 <table>
 <thead>
 <tr>
@@ -319,15 +322,15 @@
 <tbody>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi">v0.6.0 x64</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>AEDD7C00854BBF99AC3FDAB4976E1F33</td>
 </tr>
 <tr>
 <td><a href="http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v0.6.0.msi">v0.6.0 x86</a></td>
-<td>2017-08-xx</td>
+<td>2017-08-31</td>
 <td>Alpha</td>
-<td>x</td>
+<td>A0F487D32B882199F0A69E6CAA8DE4CB</td>
 </tr>
 </tbody>
 </table>
