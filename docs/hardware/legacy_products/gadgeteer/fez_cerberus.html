@@ -86,7 +86,7 @@
 <h1 id="using-the-gadgeteer-software">Using the Gadgeteer software</h1>
 <p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
 <h1 id="the-boot-pins">The Boot Pins</h1>
-<p>PB10 is the MODE pin, which is used to select between USB and serial interfaces, for loader and for firmware. USART1 is used whem in serial mode, that is PB6 and PB7.
+<p>PB10 is the MODE pin, which is used to select between USB and serial interfaces, for loader and for firmware. USART1 is used when in serial mode, that is PB6 and PB7.
 LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts the device into bootloader mode. Setting LDR1 low will execute the firmware but will stop the application from running.</p>
 <h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
 <p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
@@ -101,7 +101,7 @@ LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts th
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader v2, set PA15 pin low.</p>
+<p>To activate bootloader v2, set PC1 pin low.</p>
 <p>Download the <a href="../../../tinyclr/downloads.html#cerb">Cerb firmware</a> and follow <a href="../../loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h1 id="the-cerb-family">The Cerb Family</h1>
 <p>The FEZ Cerberus come in different form factor, together called the Cerb family. The entire family run the same software.</p>
