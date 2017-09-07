@@ -19,7 +19,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
 **To update using USB**
-1. Download the [bootloader file](../../loaders/ghi_bootloader.md#emx)
+1. Download the [EMX bootloader file](../../loaders/ghi_bootloader.md#emx)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1, #2 and #3 to the `ON` position.
 3. Connect the FEZ Spider to a power module (red module) and then to a PC.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../netmf/intro.md) SDK.
