@@ -476,7 +476,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_raptor.html",
-          "hash": "1t89GHMMIwuHt+ZOpg2/Iw=="
+          "hash": "A5DAi+NBBI/t2loogXSANQ=="
         }
       },
       "is_incremental": false,
@@ -500,7 +500,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_spider.html",
-          "hash": "54YbOKs455yiLNPAo1xYkg=="
+          "hash": "cTenSBfmLoGn3rc0h5D9ww=="
         }
       },
       "is_incremental": false,
@@ -2067,76 +2067,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/products/g120.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/products/g120.html",
-          "hash": "R+UZRBj0V++hFR8Sa9QCnw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/products/g30.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/products/g30.html",
-          "hash": "XYKAyrvTNgkb0RZbIObsbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/products/g400.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/products/g400.html",
-          "hash": "To6G6mYdf4X4f4ARx5j0rw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/products/g80.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/products/g80.html",
-          "hash": "Wh5MhTtGqLAd1HRo8f4erw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/G400D.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/G400D.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/G400S.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/G400S.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "hardware/products/images/brainpad.jpg",
       "output": {
@@ -2153,171 +2083,6 @@
       "output": {
         "resource": {
           "relative_path": "hardware/products/images/fez.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/fez_cobra_ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/fez_cobra_ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/fez_cobra_iii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/fez_cobra_iii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/fez_lemur.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/fez_lemur.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/fez_panda_ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/fez_panda_ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g120.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g120.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g120dev.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g120dev.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g120th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g120th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g30.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g30.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g30dev.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g30dev.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g30th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g30th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g400dev.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g400dev.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g400th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g400th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g80.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g80.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g80dev.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g80dev.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/products/images/g80th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/products/images/g80th.jpg"
         }
       },
       "is_incremental": false,
@@ -2347,12 +2112,271 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/scm/g120.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/scm/g120.html",
+          "hash": "bPnBbmXZ3ztAZf4GOTysqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/scm/g30.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/scm/g30.html",
+          "hash": "+Ug6z8cU4ZFKrjwY2hQhlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/scm/g80.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/scm/g80.html",
+          "hash": "5KKCxx8KmzvSBorSFefptw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/fez_cobra_ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/fez_cobra_ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/fez_cobra_iii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/fez_cobra_iii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/fez_lemur.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/fez_lemur.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/fez_panda_ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/fez_panda_ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g120.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g120.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g120dev.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g120dev.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g120th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g120th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g30.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g30.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g30dev.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g30dev.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g30th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g30th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g80.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g80.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g80dev.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g80dev.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g80th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g80th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/scm/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/scm/intro.html",
+          "hash": "dG7+b/iYvNH1VRJHwKSjlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/ucm/g400.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/ucm/g400.html",
+          "hash": "YfEOZKFkhCnKLsCZPKYqcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/ucm/images/g400d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/ucm/images/g400d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/ucm/images/g400dev.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/ucm/images/g400dev.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/ucm/images/g400s.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/ucm/images/g400s.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/ucm/images/g400th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/ucm/images/g400th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/ucm/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/ucm/intro.html",
+          "hash": "ZooCY5YrkuQvAY145fUIiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "hardware/toc.md",
       "output": {
         ".html": {
           "relative_path": "hardware/toc.html",
-          "hash": "hyME48Qrf39X6SykbektEQ=="
+          "hash": "VncRRlObQmgFTyQlwo04lA=="
         }
       },
       "is_incremental": false,
@@ -3139,6 +3163,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -3149,16 +3178,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
