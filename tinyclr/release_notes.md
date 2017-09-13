@@ -3,7 +3,7 @@
 ## 0.6.0 on 2017-08-31
 
 ### Notes
-This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7, ARM9, and CortexM3 builds of the core now available in the [GitHub repo](https://github.com/ghi-electronics/TinyCLR-Ports). There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
+This release adds support for the G400 and all of our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7, ARM9, and CortexM3 builds of the core now available in the [GitHub repo](https://github.com/ghi-electronics/TinyCLR-Ports). There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
 
 Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
 
@@ -35,7 +35,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 #### Changes
 - Fixed the device not loading drivers over USB.
 - Added clicker and clicker2.
-- Added G120, EMX, Embedded Master, and USBizi.
+- Added G400, G120, EMX, Embedded Master, and USBizi.
 - Renamed `FEZ` to `FEZCLR` and `FEZCerberus` to `Cerb` [#8](https://github.com/ghi-electronics/TinyCLR-Ports/issues/8).
 - Refactored specific devices out of the build script and into configuration files [#6](https://github.com/ghi-electronics/TinyCLR-Ports/issues/6).
 - Corrected the incorrect index being passed to `TinyCLR_Startup_SetDebugger` [#3](https://github.com/ghi-electronics/TinyCLR-Ports/issues/3).

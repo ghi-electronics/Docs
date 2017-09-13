@@ -2814,7 +2814,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "BRTlksIjA+cO2Y5Hu/HgEQ=="
+          "hash": "5/IP4/+Q/mtU2DoMdcXVpg=="
         }
       },
       "is_incremental": false,
@@ -3173,16 +3173,16 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
