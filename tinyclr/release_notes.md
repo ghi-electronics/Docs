@@ -57,7 +57,6 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 - Rapidly pressing the buttons on the BrainPad may corrupt the display.
 - Many UART properties and events are not implemented.
 - Deploying over USB when out of memory crashes the board.
-- There is no firmware for the G400 in this release.
 - Arrays of non-primitives in interops are not supported.
 - CAN and USB host are missing.
 - The USB client API is still very rough and will change.

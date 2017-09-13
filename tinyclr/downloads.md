@@ -83,6 +83,7 @@ File | Date | Status | MD5
 ## G400
 File | Date | Status | MD5
 --- | --- | --- | ---
+[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.6.0.glb) | 2017-09-13 | Alpha | 81F063028D379699ECE969F45757C801
 [v0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.4.0.ghi) | 2017-05-10 | Alpha | 03859F270F8B16CE4D40245918065E88
 [v0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.3.0.ghi) | 2017-04-06 | Alpha | 8AA7E83ED7A62A94F0833569A6A12FEE
 

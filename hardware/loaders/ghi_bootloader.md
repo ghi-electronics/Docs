@@ -90,6 +90,7 @@ File | Date | Status | MD5
 ## G400
 File | Date | Status | MD5
 --- | --- | --- | ---
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.4.bin) | 2017-09-13 | Alpha | BD46D86D41DCD42C4FC50D27AF02E5EE
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
 [v2.0.1](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.1.bin) | 2016-06-27 | Alpha | 42CD50E4105939611ABF360475EBF4E5
 
