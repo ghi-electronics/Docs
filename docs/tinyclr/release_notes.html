@@ -78,7 +78,7 @@
 
 <h2 id="060-on-2017-08-31">0.6.0 on 2017-08-31</h2>
 <h3 id="notes">Notes</h3>
-<p>This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7 and CortexM3 builds of the core now available in the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">GitHub repo</a>. There are new classes available in the <code>Pins</code> library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the <code>BrainPad</code> library, <code>Acquire</code> and <code>Release</code> were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.</p>
+<p>This release adds support for all our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7, ARM9, and CortexM3 builds of the core now available in the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">GitHub repo</a>. There are new classes available in the <code>Pins</code> library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the <code>BrainPad</code> library, <code>Acquire</code> and <code>Release</code> were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.</p>
 <p>Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See <a href="tinyclr_config.html">here</a> for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.</p>
 <p>Lastly, how we distribute releases is changing going forward. There&#39;s no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its <a href="downloads.html">downloads</a> page and bootloader binaries are available on the bootloader <a href="../hardware/loaders/ghi_bootloader.html#downloads">download</a> page. MD5 hashes are provided for all downloads as well.</p>
 <h3 id="libraries">Libraries</h3>
@@ -114,7 +114,7 @@
 <li>Corrected the incorrect index being passed to <code>TinyCLR_Startup_SetDebugger</code> <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/3">#3</a>.</li>
 <li>Fixed PWM beyond timer 8 on on STM32F4 boards not functioning.</li>
 <li>Reworked the GPIO functions in the ports to more closely match the processor&#39;s API.</li>
-<li>Added ARM7 and Cortex M3 targets.</li>
+<li>Added ARM7, ARM9, and Cortex M3 targets.</li>
 <li>Added a flag for whether or not to run TinyCLR after rebooting.</li>
 <li>Added <code>Acquire</code> and <code>Release</code> to GPIO, ADC, DAC, PWM, Interop, Task, Memory, and API providers.</li>
 <li>Interop <code>GetReturn</code> now sets the return type automatically but will no longer create an array, object, or string (call <code>CreateObject</code> yourself after).</li>
