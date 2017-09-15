@@ -1,6 +1,6 @@
 # SPI
 
-SPI uses three, sometimes four, wires for transferring data. The bus on SPI consists of a single master and one or more slaves. The master will send clock to the salves over the SCK pin. It will also send date over MOSI pin, while reading incoming data on the MISO pin. The SCK clock is used to determine how fast the data is moved. If you know electronics, this is simply a shift register.
+SPI uses three, sometimes four, wires for transferring data. The bus on SPI consists of a single master and one or more slaves. The master will send clock to the slaves over the SCK pin. It will also send date over MOSI pin, while reading incoming data on the MISO pin. The SCK clock is used to determine how fast the data is moved. If you know electronics, this is simply a shift register.
 
 The master selects which slave it will swap the data with using the SSEL pin, sometimes called CS.
 

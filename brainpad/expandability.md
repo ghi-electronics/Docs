@@ -1,6 +1,6 @@
 # Expandability
 
-Additional functionality can be added to the BrainPad through its expansion headers. This can be done though a plug-and-play click modules or by direct wiring.
+Additional functionality can be added to the BrainPad through its expansion headers. This can be done through a plug-and-play click modules or by direct wiring.
 
 ## Plug-and-play Click Modules
 This is an easy option as these modules simply plug in. There are hundreds of available options https://shop.mikroe.com/click 
