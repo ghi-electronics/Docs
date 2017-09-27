@@ -10,10 +10,12 @@ TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpr
 
 The compiled firmware can then be found in the repo directory under `build\release\FEZCLR`. The build system automatically produces firmware images in hex format (.hex), a raw binary (.bin), and either a binary meant to be loaded by our [GHI Bootloader](../../hardware/loaders/ghi_bootloader.md) with its U command (.glb) or a binary meant to be loaded by the same bootloader with the X command (.ghi). For the FEZCLR firmware we built, flash the `FEZCLR Firmware.glb` to your FEZ following the instructions on the [bootloader](../../hardware/loaders/ghi_bootloader.md) page. When you restart it, it should be running TinyCLR OS and you can deploy to it from Visual Studio.
 
-## Creating your own Devices
+## Creating your own device
 To create a new firmware for a board that a `Target` already exists for, you just need to create a new folder under Devices to define your board. You can do this easily by copying an existing board, like the FEZ, and making the changes you need for your board. Make sure you update the scatterfile to place the final firmware image in memory where it needs to be. For example, the FEZ scatterfile expects the GHI Bootloader to be present but you need to place your firmware's image at the start of flash.
 
-## Creating a new Target
+To make using a custom port easier, we're specifically making the USB product ID 0x5000 under our vendor ID (0x1B9F) available for anyone to use for the USB debug interface on their TinyCLR device. Make sure to only use this product ID because other product IDs are assigned by us for our own use. Of course, if you have your own vendor ID, you are free to use it. So when you copy an existing device to make a new one, be sure to verify the USB vendor and product IDs are correct.
+
+## Creating a new target
 To port to a new board with a new `Target`, make sure it is one of the architectures that we have made a core library available for. Then, like above, you'll need to make a new folder for your device under the Devices folder. You'll also need to create a new folder under Targets that implements the needed APIs. 
 
 The TinyCLR runtime requires you to provide a few APIs for it to function correctly: deployment, interrupt, power, and time. The runtime also makes a few APIs available to you automatically: the API provider itself; a memory allocator; a recurring task creator; and a way to interact with managed objects, arguments, and events. Beyond that, you can provide whatever APIs you need like GPIO and SPI. See the [native API document](native_apis.md) for details on APIs. On top of providing several APIs, you must call all the functions under `TinyCLR_Startup_*` to properly initialize the system. The `main.cpp` provided in the repo that our existing ports use and the build system includes is a good starting point.
