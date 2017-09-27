@@ -2,4 +2,4 @@
 # [FEZ](fez.md)
 # [STM32 Boards](stm32_boards.md)
 # [Netduino](netduino.md)
-# [Mikro](mikro.md)
+# [MikroElektronika](MikroElektronika.md)

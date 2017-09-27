@@ -5,7 +5,7 @@ Additional functionality can be added to the BrainPad through its expansion head
 ## Plug-and-play Click Modules
 This is an easy option as these modules simply plug in. There are hundreds of available options https://shop.mikroe.com/click 
 
-![Mikroelektronika Click](images/mikro-click.jpg) 
+![MikroElektronika Click](images/mikro-click.jpg) 
 
 This page covers further details on the [click modules](../tinyclr/accessories/mikroe_arduino_uno_click_shield.md)
 

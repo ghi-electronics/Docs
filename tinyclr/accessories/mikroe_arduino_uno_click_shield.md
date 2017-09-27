@@ -1,10 +1,10 @@
 # MikroElektronika Arduino UNO Click Shield
 
-![Mikroelektronika Click](images/mikro-arduino-click-shield.jpg) 
+![MikroElektronika Click](images/mikro-arduino-click-shield.jpg) 
 
-Through Mikro Electronica's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click boards](https://shop.mikroe.com/click) can be easily connected to your board.
+Through MikroElektronika's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click boards](https://shop.mikroe.com/click) can be easily connected to your board.
 
-The [BrainPad](../../brainpad/intro.md), [Clicker](../boards/mikro.md#clicker), and [Quail](../boards/mikro.md#quail) boards all have sockets for plugging click boards.
+The [BrainPad](../../brainpad/intro.md), [Clicker](../boards/mikroelektronika.md#clicker), and [Quail](../boards/mikroelektronika.md#quail) boards all have sockets for plugging click boards.
 
 This video talks about the technology behind SPI bus, shift registers, and serial-parallel data. It uses the [LED ring click](https://shop.mikroe.com/led-ring-r-click) on the BrainPad.
 

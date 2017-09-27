@@ -1,5 +1,5 @@
-# Mikro
-Mikro Elektronika offers multiple boards that are suited for TinyCLR OS. We offer a pre-compiled firmware for a few of thier products.
+# MikroElektronika
+MikroElektronika offers multiple boards that are suited for TinyCLR OS. We offer a pre-compiled firmware for a few of thier products.
 
 Clicker/Clicker 2 and related boards ship with the [Mikro bootloader](../../hardware/loaders/mikro_bootloader.md) pre installed. Use it to load the TinyCLR OS firmware.
 
@@ -9,7 +9,7 @@ Clicker/Clicker 2 and related boards ship with the [Mikro bootloader](../../hard
 # Clicker
 ![Clicker](images/clicker.jpg) 
 
-Mikro Elekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) board includes a single [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroe_arduino_uno_click_shield.md).
+MikroElekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) board includes a single [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroe_arduino_uno_click_shield.md).
 
 The TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 
@@ -19,7 +19,7 @@ The TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 # Clicker 2
 ![Clicker](images/clicker2.jpg) 
 
-Mikro Elekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroe_arduino_uno_click_shield.md).
+MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../accessories/mikroe_arduino_uno_click_shield.md).
 
 The TinyCLR OS [Clicker 2 firmware](../downloads.md#clicker-2).
 
