@@ -358,7 +358,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/expandability.html",
-          "hash": "55KGGz+onq/qRl/DHLelNw=="
+          "hash": "A187+n5qmsDjwQAqooFHMQ=="
         }
       },
       "is_incremental": false,
@@ -2778,7 +2778,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/porting/intro.html",
-          "hash": "OiV/w2d4dKu4rTLqI0rOHg=="
+          "hash": "wVYEgfg435G8tacHpTrIVg=="
         }
       },
       "is_incremental": false,
@@ -2898,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/gpio.html",
-          "hash": "PKpXpwdPt8z3/b+INi8R0g=="
+          "hash": "d4BCkpFiPiMKcYOHh9gZ0A=="
         }
       },
       "is_incremental": false,
@@ -3113,7 +3113,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/pwm.html",
-          "hash": "1eUAiygAWILxxRbBPzXzSw=="
+          "hash": "IHqvrg7bMsei3JFRl6/nhw=="
         }
       },
       "is_incremental": false,
@@ -3125,7 +3125,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/spi.html",
-          "hash": "dQ7o1ZtQRjJEbBLE2KS95w=="
+          "hash": "KatHRnqnsL+7YyLaOv1NEw=="
         }
       },
       "is_incremental": false,
@@ -3137,7 +3137,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/uart.html",
-          "hash": "9qrr4KAqwDBahzUzQEG6Nw=="
+          "hash": "FSwKETHJIrs7BOK8PhxJ4w=="
         }
       },
       "is_incremental": false,
@@ -3159,7 +3159,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -3179,11 +3180,11 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
