@@ -59,10 +59,10 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Main() { 
-        var LED = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin3);
+        var LED = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin4);
         LED.SetDriveMode(GpioPinDriveMode.Output);
 
-        var Button = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin4);
+        var Button = GpioController.GetDefault().OpenPin(FEZSpider.GpioPin.Socket4.Pin3);
         Button.SetDriveMode(GpioPinDriveMode.InputPullUp);
         var speed = 200;
         while (true) {
