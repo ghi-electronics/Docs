@@ -38,7 +38,7 @@ class Program
 
     static void Main()
     {
-        SerialDevice ser = SerialDevice.FromId(FEZ.SerialPort.Com1);
+        SerialDevice ser = SerialDevice.FromId(FEZ.UartPort.Usart1);
         ser.BaudRate = 115200;
         ser.ReadTimeout = TimeSpan.Zero;
         serReader = new DataReader(ser.InputStream);
