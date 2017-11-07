@@ -11,12 +11,12 @@ Students will learn how to create projects in Visual Studio along with programmi
 ## Install Visual Studio and TinyCLR OS extension
 Skip this step if you have Visual Studio 2017 and the TinyCLR OS extension installed:
 
-[Setting Up Visual Studio for the BrainPad](setup_visual_studio.md)
+[Setting Up Visual Studio for the BrainPad](../setup_visual_studio.md)
 
 ## Guidelines 
 * Prerequisites: None
 * Ages 6 and up
-* PC setup with Visual Studio 2017 and TinyCLR OS extension installed. [Click Here](setup_visual_studio.md)
+* PC setup with Visual Studio 2017 and TinyCLR OS extension installed. [Click Here](../setup_visual_studio.md)
 * Supplies: BrainPad and microUSB cable.
 
 ## Starting a New C# BrainPad Project
@@ -61,7 +61,8 @@ Now that we know how to use the `BrainPad` object, let's learn about controlling
 LED lights are used in many different electronic devices. Here we will test the *LightBulb* by turning it green, then on, then off. 
 Copy and paste the code from the example below into your project's `BrainPadSetup()`, between its two curly braces ``{ }``. You'll also notice every line of code **must** ends with a semicolon `;`
 
-> [!Tip] Parentheses `( )` and curly braces `{ }` are used differently in C# programming, do not confuse them?
+> [!Tip]
+> Parentheses `( )` and curly braces `{ }` are used differently in C# programming, do not confuse them?
 
 
 ```

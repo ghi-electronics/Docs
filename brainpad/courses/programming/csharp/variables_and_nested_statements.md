@@ -274,7 +274,8 @@ The variable `count` an integer that starts at zero and increments by one in eve
 
 ![Inspecting a variable](images/variables_and_nested_statemets/output_window.png) 
 
-> [!Tip] `BrainPad.WriteToComputer()` method is an excellent way to send messages to Visual Studio about things happening in your program while you're debugging. Messages here are only shown in Visual Studio's Output window and don't effect what's displayed on your BrainPad. 
+> [!Tip]
+> `BrainPad.WriteToComputer()` method is an excellent way to send messages to Visual Studio about things happening in your program while you're debugging. Messages here are only shown in Visual Studio's Output window and don't effect what's displayed on your BrainPad. 
 
 C# is smart when it comes to concatenation. Try changing code `count.ToString()` to just `count`. Concatenating numbers and other objects with strings will automatically call the ToString() method as shown below.
 ```

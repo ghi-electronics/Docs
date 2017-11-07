@@ -5,6 +5,8 @@
 
 ## [Programming](courses/programming/intro.md)
 
+### [Setup Visual Studio](courses/programming/setup_visual_studio.md)
+
 ### [C#](courses/programming/csharp/intro.md)
 #### [Variables and Nested Statements](courses/programming/csharp/variables_and_nested_statements.md)
 #### [Threading and Events](courses/programming/csharp/threading_and_events.md)
