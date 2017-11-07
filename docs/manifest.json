@@ -50,10 +50,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/AddingBreakpoint.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/adding_breakpoint.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/AddingBreakpoint.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/adding_breakpoint.jpg"
         }
       },
       "is_incremental": false,
@@ -61,10 +61,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/ProgramContentsShown.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/buttons_.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/ProgramContentsShown.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/buttons_.jpg"
         }
       },
       "is_incremental": false,
@@ -72,10 +72,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/StartNewVisualCSharpProject.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/continue_button.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/StartNewVisualCSharpProject.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/continue_button.jpg"
         }
       },
       "is_incremental": false,
@@ -83,10 +83,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/StopBreakPoint.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/display_hello.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/StopBreakPoint.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/display_hello.jpg"
         }
       },
       "is_incremental": false,
@@ -94,10 +94,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/UsingIntellSenseLightBulb.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/or_and_keys.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/UsingIntellSenseLightBulb.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/or_and_keys.jpg"
         }
       },
       "is_incremental": false,
@@ -105,10 +105,98 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/UsingIntelliSense.jpg",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/program_contents_shown.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/csharp/images/introduction/UsingIntelliSense.jpg"
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/program_contents_shown.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/start_key_button.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/start_key_button.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/start_new_visual_csharp_project.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/start_new_visual_csharp_project.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/stepping_into.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/stepping_into.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/stop_breakpoint.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/stop_breakpoint.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/using_intellisense.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/using_intellisense.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/introduction/using_intellsense_lightbulb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/introduction/using_intellsense_lightbulb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/breakpoint_count.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/breakpoint_count.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/output_window.png",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/output_window.png"
         }
       },
       "is_incremental": false,
@@ -120,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/intro.html",
-          "hash": "fU+QlUqzKu8aGuul5KhjpQ=="
+          "hash": "RN9ftOya66cY3ufGSgUlaA=="
         }
       },
       "is_incremental": false,
@@ -132,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/threading_and_events.html",
-          "hash": "Lurze5YTtiRISUm5gNSNcw=="
+          "hash": "KXjc9ya/g1UD7iELz3N3xA=="
         }
       },
       "is_incremental": false,
@@ -144,7 +232,29 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/variables_and_nested_statements.html",
-          "hash": "z5RirD5cLDdbGUJuyE4LRw=="
+          "hash": "TZnjJdiV0n0V0CW3xUz/Mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/images/install_vsix.png",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/images/install_vsix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/images/visual_studio_workloads.png",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/images/visual_studio_workloads.png"
         }
       },
       "is_incremental": false,
@@ -157,6 +267,18 @@
         ".html": {
           "relative_path": "brainpad/courses/programming/intro.html",
           "hash": "5Uhb5bUZrHTRV3uipPYF4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "brainpad/courses/programming/setup_visual_studio.md",
+      "output": {
+        ".html": {
+          "relative_path": "brainpad/courses/programming/setup_visual_studio.html",
+          "hash": "LW+ArX8c71CnK5+Fb17z6A=="
         }
       },
       "is_incremental": false,
@@ -404,7 +526,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/toc.html",
-          "hash": "wFbsVcO8Xppy2STJDo3Cpw=="
+          "hash": "HyNEbwm5Q63ZS5ikIvYp+Q=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1736,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/modules.html",
-          "hash": "tL3yBERuM0LXQ8qAMInr5A=="
+          "hash": "taHQ53WF+OCEXbjbBr1Mog=="
         }
       },
       "is_incremental": false,
@@ -2719,7 +2841,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/downloads.html",
-          "hash": "dUWZXO9CnzB4fEEpXROOSg=="
+          "hash": "aqPCTWQGugaAaq5CzT1FVg=="
         }
       },
       "is_incremental": false,
@@ -3137,7 +3259,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/tutorials/uart.html",
-          "hash": "FSwKETHJIrs7BOK8PhxJ4w=="
+          "hash": "o8hHFBlBmJcw5JlCTGrPIA=="
         }
       },
       "is_incremental": false,
@@ -3164,13 +3286,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -3178,13 +3301,12 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "RestApiDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

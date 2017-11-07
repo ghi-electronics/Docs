@@ -76,6 +76,257 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="threading-and-events">Threading and Events</h1>
 
+<h2 id="methods">Methods</h2>
+<p>The <code>BrainPad</code> object (or class) includes methods to control many aspects of the BrainPad&#39;s hardware. A method is a set of instructions grouped together. If a student is asked to speak, the command may look like <code>Student.Say(&quot;Hello&quot;)</code>. The <code>Say()</code> method is simple, but speaking requires many things like taking in air and moving your vocal cords. In the same sense, activating the LightBulb and Turning it green is a simple request but internally it does many small tasks to reach the final goal.
+Methods can also take arguments. For example, you could have a method called <code>Student.Run()</code> to order a student to run or <code>Student.Run(slow)</code> to order them to run slow. Methods can also return a value, like <code>Student.GetAge()</code> which returns the student&#39;s age.</p>
+<p>In the code example below, we show how a method called <code>Add</code> can be add 5 + 2 and print the total integer to the Output window. We&#39;ve also added an additional line to display the result on the BrainPad&#39;s own display too. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        int total = Add(5, 2);
+        BrainPad.WriteToComputer(total);
+        BrainPad.Display.DrawNumberAndShowOnScreen(1, 1, total);
+    }
+
+    public void BrainPadLoop() {
+        // Declared but not used
+    }
+
+    public int Add(int a, int b) {
+        return a + b;
+    }
+}
+</code></pre><p>The above example creates a simple method that takes two integer arguments and returns an integer. The method will add the two arguments and return the results. </p>
+<p>Method names are like variable names, only certain things are allowed. Method names cannot start with a number, contain a symbol besides the underscore �_� or have a space in them.
+The following examples show proper and improper use of method names.</p>
+<p>Valid Method Names</p>
+<pre><code>bool AreAll4ButtonsPressed()
+string Add(int a, int b)
+</code></pre><p>Poorly named Methods</p>
+<pre><code>bool areallbuttonspressed()
+int method34from94handler()
+</code></pre><p>Note: Method names should always be easy to read and meaningful. This allows a programmer to easily discern what it does.</p>
+<p>Invalid Method Names</p>
+<pre><code>bool Are All Buttons Pressed()
+bool AreAllButtonsPressed?()
+</code></pre><p>Methods are not required to return anything. To fill that case of not returning a value the keyword void is used.</p>
+<pre><code>void ActivateAlarm()
+</code></pre><p>Finally, methods can also be private or public and static or non-static. This is beyond the scope of this course and <code>public static</code> will always be used.</p>
+<h2 id="overloading-methods">Overloading Methods</h2>
+<p>The same method name can have one or more argument types. Depending on the argument passed to the method, the system will determine which method to call as shown in in the code sample below we create a method called <code>Test</code> which can handle both an integer or a double. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        Test(5);
+        Test(5.0);
+    }
+
+    public void BrainPadLoop() {
+        // Declared but not used
+    }
+
+    public void Test(int x) {
+        BrainPad.WriteToComputer(&quot;integer&quot;);
+        BrainPad.Display.DrawSmallText(1,1,&quot;integer&quot;);
+        BrainPad.Display.ShowOnScreen();
+    }
+
+    public void Test(double x) {
+        BrainPad.WriteToComputer(&quot;double&quot;);
+        BrainPad.Display.DrawSmallText(1, 20, &quot;double&quot;);
+        BrainPad.Display.ShowOnScreen();
+    }
+}
+</code></pre><p>In the code above, you&#39;ll notice in the <code>BrainPadSetup()</code> we use the <code>Test()</code> method twice, once with a integer<code>(5)</code> and then with a double<code>(5.0)</code>. When the <code>Test()</code> method is called the computer determines what the data type is and routes to the appropriate method. This is what is meant by overloading a method. </p>
+<h2 id="boolean-variables">Boolean Variables</h2>
+<p>In programming we use <code>true</code> or <code>false</code> to represent the truth values of logic. These values are known as <code>Boolean</code> or <code>bool</code> when coding. For example, let&#39;s say we need to check if the up and down buttons are pressed in multiple spots throughout our program. We could check each button in each spot or we could create a reusable method that returns true if both are pressed or false otherwise, as shown in the code examples below. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        // Declared but not used
+    }
+
+    public void BrainPadLoop() {
+        if (UpAndDownPressed()) {
+            BrainPad.LightBulb.TurnGreen();
+        }
+        else {
+            rainPad.LightBulb.TurnOff();
+        }
+    }
+
+    public bool UpAndDownPressed() {
+        if (BrainPad.Buttons.IsUpPressed() &amp;&amp; BrainPad.Buttons.IsDownPressed()) {
+            return true;
+        }
+        else {
+            return false;
+       }
+    }
+}
+</code></pre><h2 id="the-new-keyword">The new Keyword</h2>
+<p>In the examples used so far, the BrainPad object has been used directly. This will not work for all object types. Remember the <code>Student.Say(&quot;Hello&quot;)</code> example? This statement is not completely valid because we don&#39;t know which student is going to say �Hello�. To access a specific student, you need to create a variable named <code>mike</code> to hold the Student object as shown in the code sample below.</p>
+<pre><code>Student mike = new Student();
+</code></pre><h2 id="threading">Threading</h2>
+<p>Threading in the programming world is a way to describe multitasking. Each task is a thread that runs separately. The threading support in TinyCLR OS on the BrainPad is easy to work with. </p>
+<p>First, we need to inform the system that the threading library needs to be imported. We do this by adding the code below to the very top of our program, where other libraries are also imported. Like the <code>using GHIElectronics.TinyCLR.BrainPad;</code> library,  that allows us to program using the <code>BrainPad</code> object.</p>
+<pre><code>using System.Threading;
+</code></pre><p>Before adding a thread, we need a method for it to use as shown in the code below. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        Thread blinkerThread = new Thread(Blinker);
+        blinkerThread.Start();
+
+        while (true) {
+            BrainPad.LightBulb.TurnRed();
+            BrainPad.Wait.Seconds(0.1);
+            BrainPad.LightBulb.TurnOff();
+            BrainPad.Wait.Seconds(1);
+        }
+    }
+
+    public void BrainPadLoop() {
+        // Declared but not used
+    }
+
+    public void Blinker() {
+        while (true) {
+            BrainPad.LightBulb.TurnGreen();
+            BrainPad.Wait.Seconds(0.2);
+            BrainPad.LightBulb.TurnOff();
+            BrainPad.Wait.Seconds(0.2);
+        }
+    }
+}
+</code></pre><p>The previous program will blink the light green Stepping through code, we can easily see how the Blinker method never returns execution to BrainPadSetup(). The program keeps looping infinitely inside the Blinker method. But most programs would probably need to blink the light while doing something else. This is where threads come in very handy.
+First, we need to construct a Thread object as shown below. This object has special internal control over the program flow.</p>
+<pre><code>Thread blinkerThread = new Thread(Blinker);
+</code></pre><p>Note how the names easily identify what they represent. The <code>blinkerThread()</code> method is a thread that handles the <code>Blinker()</code> method. All we need to do is <code>Start()</code> the thread and the <code>Blinker()</code> method will be executed. However, there is still an issue. The <code>BrainPadSetup()</code> method will reach the end, which will cause the program and all its threads to terminate. A temporary solution is to make the <code>BrainPadSetup()</code> method wait indefinitely is by using -1 milliseconds as shown in the code example below. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        Thread blinkerThread = new Thread(Blinker);
+         blinkerThread.Start();
+        BrainPad.Wait.Milliseconds(-1);
+    }
+
+    public void BrainPadLoop() {
+        // Declared but not used
+    }
+
+    public void Blinker() {
+        while (true) {
+            BrainPad.LightBulb.TurnGreen();
+            BrainPad.Wait.Seconds(0.2);
+            BrainPad.LightBulb.TurnOff();
+            BrainPad.Wait.Seconds(0.2);
+        }
+    }
+}
+</code></pre><p>In code example below, while the red light is blinking in its own thread, the system can now go do other things like incrementing our <code>count</code> variable and showing the results on the display. </p>
+<pre><code>public class Program {
+    int count = 0;
+
+    public void BrainPadSetup() {
+        Thread blinkerThread = new Thread(Blinker);
+        blinkerThread.Start();
+
+        while (true) {
+             BrainPad.LightBulb.TurnRed();
+             BrainPad.Wait.Seconds(0.1);
+             BrainPad.LightBulb.TurnOff();
+             BrainPad.Wait.Seconds(1);
+        }
+    }
+
+    public void BrainPadLoop() {
+         // Declared but not used
+    }
+
+    public void Blinker() {
+        while (true) {
+             count = count + 1;
+             BrainPad.Display.DrawTextAndShowOnScreen(40,25,&quot; &quot;+ count);
+         }
+    }
+}
+</code></pre><h2 id="events">Events</h2>
+<p>If a program needs to turn a light on via a button press, that program will need to check the button&#39;s state indefinitely. How often should we check the button? What if the button was pressed and released before the check? If we check too fast the system cannot enter low power mode.</p>
+<p>This is important for battery operated devices like circuit boards or mobile phones. If the phone was always fully on, the battery would not last more than a few minutes. The only way a mobile phone can last an entire day on a charged battery is by shutting off unneeded components (like turning the screen off).</p>
+<p>The proper way to handle the button is to subscribe to an event that is fired when the button is pressed or released. The BrainPad&#39;s <code>BrainPad.Buttons.WhenUpButtonPressed</code> event allows us to subscribe using the <code>+=</code> symbols. Now every time the <code>Up</code> button is pressed the <code>Buttons_WhenUpButtonPressed()</code> method is called. In the example below we&#39;ve created event handlers for all the buttons on the BrainPad. There is a handler to also check when the button is released as shown in the code below. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+
+        BrainPad.Buttons.WhenUpButtonPressed += Buttons_WhenUpButtonPressed;
+        BrainPad.Buttons.WhenDownButtonPressed += Buttons_WhenDownButtonPressed;
+        BrainPad.Buttons.WhenRightButtonPressed += Buttons_WhenRightButtonPressed;
+        BrainPad.Buttons.WhenLeftButtonPressed += Buttons_WhenLeftButtonPressed;
+
+        BrainPad.Buttons.WhenUpButtonReleased += Buttons_WhenUpButtonReleased;
+        BrainPad.Buttons.WhenDownButtonReleased += Buttons_WhenDownButtonReleased;
+        BrainPad.Buttons.WhenRightButtonReleased += Buttons_WhenRightButtonReleased;
+        BrainPad.Buttons.WhenLeftButtonReleased += Buttons_WhenLeftButtonReleased;
+    }
+    private void Buttons_WhenUpButtonPressed() {
+        BrainPad.LightBulb.TurnRed();
+    }
+    private void Buttons_WhenDownButtonPressed() {
+        BrainPad.LightBulb.TurnGreen();
+    }
+    private void Buttons_WhenRightButtonPressed() {
+        BrainPad.LightBulb.TurnBlue();
+    }
+    private void Buttons_WhenLeftButtonPressed() {
+        BrainPad.LightBulb.TurnWhite();
+    }
+    private void Buttons_WhenUpButtonReleased() {
+        BrainPad.LightBulb.TurnOff();
+    }
+    private void Buttons_WhenDownButtonReleased() {
+        BrainPad.LightBulb.TurnOff();
+    }
+    private void Buttons_WhenRightButtonReleased() {
+        BrainPad.LightBulb.TurnOff();
+    }
+    private void Buttons_WhenLeftButtonReleased() {
+        BrainPad.LightBulb.TurnOff();
+    }
+
+    public void BrainPadLoop() {
+
+    }
+}
+</code></pre><p>When typing, after you enter the += symbols, Visual Studio will instruct you to press TAB to insert a pre-named event handler. After doing so, you&#39;ll want to press TAB again to generate the actual handler inside the class.</p>
+<p>Activating a light on a button press can be done in a loop but then the system is always running. Using events in this example, the system is mostly sleeping (in low power mode). The first thing it does is subscribe to the button event. The system sleeps until one of the buttons is pressed or released, at which point it wakes up and runs the appropriate Button method. But the code above can be simplified a bit more. Since each ButtonReleased method in our program does the same thing we can share a single event as demonstrated in the code below. </p>
+<pre><code>public class Program {
+    public void BrainPadSetup() {
+        BrainPad.Buttons.WhenUpButtonPressed += Buttons_WhenUpButtonPressed;
+        BrainPad.Buttons.WhenDownButtonPressed += Buttons_WhenDownButtonPressed;
+        BrainPad.Buttons.WhenRightButtonPressed += Buttons_WhenRightButtonPressed;
+        BrainPad.Buttons.WhenLeftButtonPressed += Buttons_WhenLeftButtonPressed;
+
+        BrainPad.Buttons.WhenUpButtonReleased += Buttons_WhenButtonReleased;
+        BrainPad.Buttons.WhenDownButtonReleased += Buttons_WhenButtonReleased;
+        BrainPad.Buttons.WhenRightButtonReleased += Buttons_WhenButtonReleased;
+        BrainPad.Buttons.WhenLeftButtonReleased += Buttons_WhenButtonReleased;
+    }
+    private void Buttons_WhenUpButtonPressed() {
+        BrainPad.LightBulb.TurnRed();
+    }
+    private void Buttons_WhenDownButtonPressed() {
+        BrainPad.LightBulb.TurnGreen();
+    }
+    private void Buttons_WhenRightButtonPressed() {
+        BrainPad.LightBulb.TurnBlue();
+    }
+    private void Buttons_WhenLeftButtonPressed() {
+        BrainPad.LightBulb.TurnWhite();
+    }
+    private void Buttons_WhenButtonReleased() {
+        BrainPad.LightBulb.TurnOff();
+    }
+
+    public void BrainPadLoop() {
+
+    }
+}
+</code></pre><p>In the above code, we&#39;ve accomplish the same thing as before using a few less lines of code. This might not always be the case. But since each button release does the same thing we can simplify our code by sharing the <code>Buttons_WhenButtonReleased()</code> method with all our Button Release events. </p>
 </article>
           </div>
           
