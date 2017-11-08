@@ -103,7 +103,7 @@ If you press the `Continue` button in the top tool bar of Visual Studio as shown
 
   ![Stopping at the Breakpoint](images/introduction/continue_button.jpg) 
 
-To the right of the `Continue` button are more buttons for navigating the code while the program is running. Unlike the `Continue` button. The `Step Into` button or `F11` key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.
+To the right of the `Continue` button are more buttons for navigating the code while the program is running. Unlike the `Continue` button, the `Step Into` button or `F11` key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.
 
   ![Stepping into code](images/introduction/stepping_into.jpg) 
 
@@ -192,7 +192,7 @@ You should hear a very low tone, that plays for one(1) second and stops.
 
 Inside the `BrainPad.Buzzer.StartBuzzing(100)` method you'll see that in the code we've added the value of 100. This is the frequency of the sound that will be played by the Buzzer. You can change this value to create a bunch of different sounds. Let's try changing it.
 
-Copy and paste the following code into your `BrainPadSetUp()` between the curly braces `{}`. Press `F5` on the Key board or `Start` on the Visual Studio toolbar.
+Copy and paste the following code into your `BrainPadSetUp()` between the curly braces `{}`. Press `F5` on the keyboard or `Start` on the Visual Studio toolbar.
 ```
 BrainPad.Buzzer.StartBuzzing(400);
 BrainPad.Wait.Seconds(1);
@@ -200,7 +200,7 @@ BrainPad.Buzzer.StartBuzzing(100);
 BrainPad.Wait.Seconds(1);
 BrainPad.Buzzer.StopBuzzing();
 ```
-First you’ll hear the Buzzer make a very high sound, then a very low sound. This is what changing the frequency does to the Buzzer. 
+First you'll hear the Buzzer make a very high sound, then a very low sound. This is what changing the frequency does to the Buzzer. 
 
 Try changing the frequency to different values and see what kind of sounds the Buzzer makes. 
 
@@ -252,7 +252,7 @@ public void BrainPadLoop() {
      }
 }
 ```
-The above code, first makes sure the Light Bulb is OFF and then it falls into an infinite loop, called the `BrainpadLoop()`. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.
+The above code first makes sure the Light Bulb is OFF and then it falls into an infinite loop, called the `BrainpadLoop()`. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.
 
 Computers are strict at following orders. In the previous examples, the Light Bulb never turned off because we actually never told the program to turn the green light off. This means we have to tell the program to turn the light on when the button is pressed and we also have to tell it to turn the light off when the button is not pressed
 
@@ -345,7 +345,7 @@ public void BrainPadLoop() {
 ```
 
 ## Whitespace
-Spaces and lines are used to make our code more readable to humans. C# programs completely ignore **whitespace** as shown in the code example below. It will execute correctly, but without whitespaces it can be very difficult to read and debug. 
+Spaces and lines are used to make our code more readable to humans. C# programs completely ignore **whitespace** as shown in the code example below. It will execute correctly, but without whitespace it can be very difficult to read and debug. 
 ``` 
-public void BrainPadSetup(){BrainPad.TrafficLight.TurnGreenLightOff();}public void BrainPadLoop(){if (BrainPad.Button.IsUpPressed() && BrainPad.Button.IsDownPressed()){BrainPad.Buzzer.PlayFrequency(5000);}else{BrainPad.Buzzer.Stop();}}
+public void BrainPadSetup(){BrainPad.TrafficLight.TurnGreenLightOff();}public void BrainPadLoop(){if (BrainPad.Button.IsUpPressed() && BrainPad.Button.IsDownPressed()){BrainPad.Buzzer.PlayFrequency(5000);}else{BrainPad.Buzzer.Stop();}} 
 ```
