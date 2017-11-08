@@ -35,7 +35,9 @@ This file contains the default code when you first create a project. The lines i
 
 Comments are a great place to keep notes about how a piece of code might work. They are helpful if another programmer looks at your code, or you return to look at your own code at a later date, to help you understand what the code is doing behind the scenes. 
 
-Let's run the code to see these comments' descriptions come to life. Connect the BrainPad and press the `F5` function key or the Start button.
+Let's run the code to see these comments' descriptions come to life. Connect the BrainPad and press the `F5` function key or the Start button in Visual Studio's toolbar.
+
+![F5 Key and Start Button](images/introduction/start_key_button.jpg)
 
 Visual Studio will now run the code, a few things will happen and the display will now have the text `"Hello!"`.
 
@@ -73,8 +75,6 @@ BrainPad.LightBulb.TurnGreen();
 ```
 Now, press `F5` on the keyboard or the `Start` button in Visual Studio to run the code and you'll see the *LightBulb* turn green come on and stay on. 
 
-![F5 Key and Start Button](images/introduction/start_key_button.jpg)
-
 This happens because our code is executed faster than we can see. So we never see the *LightBulb* actually blink.
 
 ## Problem Solving
@@ -84,7 +84,7 @@ Since applications execute extremely fast, we need to slow them down to figure o
 With Visual Studio we can "step" through the code executing each line separately one at a time. 
 This will help when you're trying to debug a problem. To do this we need to add what is called a **breakpoint** or (stop point).
 
-A breakpoint is a spot in your program where the code will execute up until it reaches the breakpoint then wait for futher instructions. 
+A breakpoint is a spot in your program where the code will execute until it reaches the breakpoint, then Visual Studio will wait for further instructions. 
  
 To add a breakpoint at the first line of code inside of `BrainPadSetup()` moving the cursor to that line and pressing the `F9` key as shown below. A red circle will appear to the left of your code. This is where your code will stop and wait. 
 
@@ -103,7 +103,7 @@ If you press the `Continue` button in the top tool bar of Visual Studio as shown
 
   ![Stopping at the Breakpoint](images/introduction/continue_button.jpg) 
 
-To the right of the `Continue` button are more buttons for navigating the code while the program is running. Unlike the `Continue` button The `Step Into` button or `F11` key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.
+To the right of the `Continue` button are more buttons for navigating the code while the program is running. Unlike the `Continue` button. The `Step Into` button or `F11` key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.
 
   ![Stepping into code](images/introduction/stepping_into.jpg) 
 
@@ -180,7 +180,7 @@ BrainPad.Wait.Seconds(2);
 ```
 
 ## BrainPad Buzzer
-Included on your BrainPad is a Buzzer. You can use this Buzzer to program different sounds you’d like to use in your program.  Like the `BrainPad.LightBulb` object, you’ll also have to tell the `Buzzer` object to `Beep`, `StartBuzzing` and `StopBuzzing`. Will also tell the BrainPad to `Wait` in between playing and not playing as sound. When you tell the BrainPad to `Wait`, the sound will play for that duration.
+Included on your BrainPad is a **Buzzer**. You can use this Buzzer to program different sounds you'd like to use in your program.  Like the `BrainPad.LightBulb` object, you'll also have to tell the `Buzzer` object to `Beep`, `StartBuzzing` and `StopBuzzing`. Will also tell the BrainPad to `Wait` in between playing and not playing as sound. When you tell the BrainPad to `Wait`, the sound will play for that duration.
 
 Copy and paste the following code into your `BrainPadSetUp()` between the curly braces `{}`. Press `F5` key or `Start` button in Visual Studio.
 ```
@@ -190,9 +190,9 @@ Copy and paste the following code into your `BrainPadSetUp()` between the curly 
 ```
 You should hear a very low tone, that plays for one(1) second and stops. 
 
-Inside the `BrainPad.Buzzer.StartBuzzing(100)` method you’ll see that in the code we’ve added the value of 100. This is the frequency of the sound that will be played by the Buzzer. You can change this value to create a bunch of different sounds. Let’s try changing it.
+Inside the `BrainPad.Buzzer.StartBuzzing(100)` method you'll see that in the code we've added the value of 100. This is the frequency of the sound that will be played by the Buzzer. You can change this value to create a bunch of different sounds. Let's try changing it.
 
-Copy and paste the following code into your `BrainPadSetUp()` between the curly braces `{}`. Press `F5` or `Start`
+Copy and paste the following code into your `BrainPadSetUp()` between the curly braces `{}`. Press `F5` on the Key board or `Start` on the Visual Studio toolbar.
 ```
 BrainPad.Buzzer.StartBuzzing(400);
 BrainPad.Wait.Seconds(1);
@@ -252,7 +252,7 @@ public void BrainPadLoop() {
      }
 }
 ```
-The above code, first makes sure the Light Bulb is OFF and then it falls into an infinite loop, the `BrainpadLoop()`. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.
+The above code, first makes sure the Light Bulb is OFF and then it falls into an infinite loop, called the `BrainpadLoop()`. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.
 
 Computers are strict at following orders. In the previous examples, the Light Bulb never turned off because we actually never told the program to turn the green light off. This means we have to tell the program to turn the light on when the button is pressed and we also have to tell it to turn the light off when the button is not pressed
 
@@ -271,16 +271,16 @@ public void BrainPadLoop() {
     }
 }
 ```
-The `!` symbol represents the opposite. While the BrainPad doesn’t have a method called `BrainPad.Button.IsLeftNotPressed()` we can continue to use `BrainPad.Button.IsLeftPressed()` but with a `!` before it to represent if the button is not pressed.  Now when you run it, not pressing the button will turn/keep the *LightBulb* off.
+The `!` symbol represents the opposite. While the BrainPad doesn't have a method called `BrainPad.Button.IsLeftNotPressed()` we can continue to use `BrainPad.Button.IsLeftPressed()` but with a `!` before it, to represent if the button is not pressed.  Now when you run it, not pressing the button will turn/keep the *LightBulb* off.
 
 ## Logical Operators -- Or & And -- || and &&
 ![Keyboard Location ](images/introduction/or_and_keys.jpg)
 
 The **Or** operator is found by holding the shift key and pressing the `||` key  twice, the **And** operator can be found by holding the shift key and pressing `&&` twice
 
-These are typically used within the **if statement**. Let’s assume in our previous example you wanted to press the *Left* button to make the *LightBulb* Green and when you press the *Right* button you want to make the *LightBulb* Red. If neither button is pressed the *LightBulb* is off. 
-To accomplish this you’ll need to use the **And** operator `&&` to check and make sure both buttons are **Not** (!) pressed, and turn off the *LightBulb*. 
-In the code example below, in our third **if statement**, you can see where we ask the question, “Is the *Right* button pressed **And** is the *Left* button pressed?” 
+These are typically used within the **if statement**. Let's assume in our previous example you wanted to press the *Left* button to make the *LightBulb* Green and when you press the *Right* button you want to make the *LightBulb* Red. If neither button is pressed the *LightBulb* is off. 
+To accomplish this you'll need to use the **And** operator `&&` to check and make sure both buttons are **Not** (!) pressed, and turn off the *LightBulb*. 
+In the code example below, in our third **if statement**, you can see where we ask the question, "Is the *Right* button pressed **And** is the *Left* button pressed?" 
 Both of these condition must be met in order to execute the code in its curly braces`{ }`. When using the **Or** operator `||`, only one of the conditions need to be met to run the code within the curly braces `{}`. 
 ```
 public void BrainPadSetup() {
@@ -303,7 +303,7 @@ public void BrainPadLoop() {
 ```
 
 ## The Else Statement
-The **else statement** is always used with the **if statement** and has a very useful purpose that would be perfect for the last example. In previous code example, we needed to check if the *Left* button was pressed or not. We can simplify this by catching when an **if statement** isn’t true using **else** as shown in the code below.
+The **else statement** is always used with the **if statement** and has a very useful purpose that would be perfect for the last example. In the previous code example, we needed to check if the *Left* button was being pressed or not. We can simplify this by catching when an **if statement** isn't true using **else** as shown in the code below.
 ```
 public void BrainPadSetup() {
     BrainPad.LightBulb.TurnOff();
@@ -345,7 +345,7 @@ public void BrainPadLoop() {
 ```
 
 ## Whitespace
-Spaces and lines are used to make our code more readable to humans. C# programs completely ignore **whitespace** as shown in the code example below. It will execute correctly, but without **whitespaces** it can be very difficult to read and debug. 
+Spaces and lines are used to make our code more readable to humans. C# programs completely ignore **whitespace** as shown in the code example below. It will execute correctly, but without whitespaces it can be very difficult to read and debug. 
 ``` 
 public void BrainPadSetup(){BrainPad.TrafficLight.TurnGreenLightOff();}public void BrainPadLoop(){if (BrainPad.Button.IsUpPressed() && BrainPad.Button.IsDownPressed()){BrainPad.Buzzer.PlayFrequency(5000);}else{BrainPad.Buzzer.Stop();}}
 ```

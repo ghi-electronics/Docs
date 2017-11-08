@@ -37,13 +37,13 @@ int count me;
 int count#;
 int 2count;
 ```
-Variables in small programs can use any names. It could even be just “x”. However, using a meaningful name is very important when writing programs, as there maybe hundreds of variables in a large program.
+Variables in small programs can use any names. It could even be just "x". However, using a meaningful name is very important when writing programs, as there maybe hundreds of variables in a large program.
 
 One of the benefits of variables, is they can be used to store numbers as shown in the example below. 
 ```
 int count;
 count = 10;
-…
+...
 count = 123;
 ```
 In the above example, the `count` variable is stored with the a value of 10. Later in the code, the same varible is used to store a new number, 123. 
@@ -238,7 +238,7 @@ It's important to remember that the value `2` and the string `"2"` are not the s
 x = 2 + 2;
 ```
 
-Let’s assume `str` is a string variable in the example below, what is the value of str?
+Let's assume `str` is a string variable in the example below, what is the value of str?
 
 ```
 str = "2" + "2";
@@ -270,7 +270,7 @@ public class Program {
 ```
 The code above continiously increase the `count` variable and display it as a string.
 
-The variable `count` an integer that starts at zero and increments by one in every loop. The string "Count: " is concatenated before the value to give us these results. It then prints the variable’s value in the Output Window, as seen in the image below.
+The variable `count` an integer that starts at zero and increments by one in every loop. The string "Count: " is concatenated before the value to give us these results. It then prints the variable's value in the Output Window, as seen in the image below.
 
 ![Inspecting a variable](images/variables_and_nested_statemets/output_window.png) 
 

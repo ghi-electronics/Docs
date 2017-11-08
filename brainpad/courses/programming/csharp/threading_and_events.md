@@ -4,7 +4,7 @@
 The `BrainPad` object (or class) includes methods to control many aspects of the BrainPad's hardware. A method is a set of instructions grouped together. If a student is asked to speak, the command may look like `Student.Say("Hello")`. The `Say()` method is simple, but speaking requires many things like taking in air and moving your vocal cords. In the same sense, activating the LightBulb and Turning it green is a simple request but internally it does many small tasks to reach the final goal.
 Methods can also take arguments. For example, you could have a method called `Student.Run()` to order a student to run or `Student.Run(slow)` to order them to run slow. Methods can also return a value, like `Student.GetAge()` which returns the student's age.
 
-In the code example below, we show how a method called `Add` can be add 5 + 2 and print the total integer to the Output window. We've also added an additional line to display the result on the BrainPad's own display too. 
+In the code example below, we show how a method we create called `Add` can be used to add 5 + 2 and print the total integer to the Output window. We've also added an additional line to display the result on the BrainPad's own display too. 
 ```
 public class Program {
     public void BrainPadSetup() {
@@ -24,7 +24,7 @@ public class Program {
 ```
 The above example creates a simple method that takes two integer arguments and returns an integer. The method will add the two arguments and return the results. 
 
-Method names are like variable names, only certain things are allowed. Method names cannot start with a number, contain a symbol besides the underscore “_” or have a space in them.
+Method names are like variable names, only certain things are allowed. Method names cannot start with a number, contain a symbol besides the underscore "_" or have a space in them.
 The following examples show proper and improper use of method names.
 
 Valid Method Names
@@ -107,7 +107,7 @@ public class Program {
 }
 ```
 ## The new Keyword
-In the examples used so far, the BrainPad object has been used directly. This will not work for all object types. Remember the `Student.Say("Hello")` example? This statement is not completely valid because we don't know which student is going to say “Hello”. To access a specific student, you need to create a variable named `mike` to hold the Student object as shown in the code sample below.
+In the examples used so far, the BrainPad object has been used directly. This will not work for all object types. Remember the `Student.Say("Hello")` example? This statement is not completely valid because we don't know which student is going to say "Hello". To access a specific student, you need to create a variable named `mike` to hold the Student object as shown in the code sample below.
 ```
 Student mike = new Student();
 ```
