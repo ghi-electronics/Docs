@@ -60,7 +60,7 @@ GPIO | A general-purpose digital input/output pin, operating at 3.3 volts.
 GND | Connection the power ground net.
 
 # Using .NET Gadgeteer
-To use the .NET Gadgeteer's legacy software, install:
+To use .NET Gadgeteer's legacy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
