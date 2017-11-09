@@ -2,9 +2,7 @@
 
 ![Gadgeteer](images/gadgeteer.jpg)
 
-.NET Gadgeteer that was initiated by Microsoft Research and taken to production by GHI Electronics in the year 2011. .NET Gadgeteer had a great few year run, where it was loved for its plug-and-play mainboard and modules.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wQlTLNOCl90" frameborder="0" allowfullscreen></iframe>
+.NET Gadgeteer is a **discontinued** technology that was initiated by Microsoft Research and taken to production by GHI Electronics in the year 2011. .NET Gadgeteer had a great few year run, where it was loved for its plug-and-play mainboard and modules.
 
 > [!Tip]
 > We will refer to .NET Gadgeteer as Gadgeteer throughout the rest of the documentation.
@@ -17,10 +15,12 @@ External resources:
 * Microsoft's .NET Gadgeteer website (down) http://www.gadgeteer.com/
 * Microsoft's NETMF website (outdated) http://www.netmf.com/
 
-Most of the Gadgeteer ecosystem is open source:
+Most of the Gadgeteer ecosystem is open-source:
 *	Microsoft's [.NET Gadgeteer Core](http://gadgeteer.codeplex.com/)
 *	GHI Electronics' [Software sources and Hardware design files]( https://github.com/ghi-electronics/NETMF-Gadgeteer)
 *	The Gadgeteer graphical designer was never made available by Microsoft.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wQlTLNOCl90" frameborder="0" allowfullscreen></iframe>
 
 # Socket Map
 The magic of Gadgeteer is in its socket map
@@ -60,7 +60,7 @@ GPIO | A general-purpose digital input/output pin, operating at 3.3 volts.
 GND | Connection the power ground net.
 
 # Using .NET Gadgeteer
-To use the .NET Gadgeteer legacy software, install:
+To use the .NET Gadgeteer's legacy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
