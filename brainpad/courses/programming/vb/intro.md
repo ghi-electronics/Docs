@@ -25,7 +25,7 @@ Skip this step if you have Visual Studio 2017 and the TinyCLR OS extension insta
 ## Starting a New Visual Basic Project
 Connect your BrainPad to your computer using a microUSB cable.
 
-Next Open Visual Studio select `File > New > Project` and under Other Languages select `Visual Basic > TinyCLR` and choose the `BrainPad Application`. Change the Location to  `C:\Users\<YourUsername>\Desktop\` then name the project `BrainPad_Project`.
+Next Open Visual Studio select `File > New > Project` and under `Other Languages` select `Visual Basic > TinyCLR` and choose the `BrainPad Application`. Change the Location to  `C:\Users\<YourUsername>\Desktop\` then name the project `BrainPad_Project`.
 
 ![Start New Visual Basic Project](images/introduction/start_new_visual_basic_project.jpg) 
 
