@@ -234,16 +234,28 @@ The peripherals found on each module may vary.
 
 ## UCM Standard - Module Dimesions
 ### Module Size A
-![UCM Dev board](images/g400dev.jpg)
+![UCM Module Size A](images/ucm_size_a.jpg)
 
 The standard module size (67.75mm x 31.75mm).
 
 ### Module Size B
-![UCM Breakout](images/g400th.jpg)
+![UCM Module Size B](images/ucm_size_b.jpg)
 
 For larger additional components (67.75mm x 47.625mm).
 
 ### Module Size C
-![UCM Breakout](images/g400th.jpg)
+![UCM Module Size C](images/ucm_size_c.jpg)
 
 For larger additional components (67.75mm x 63.5mm).
+
+# Related Products
+---
+## UCM Dev Board
+![UCM Dev board](images/ucm_dev_board.jpg)
+
+The development system used for evaluating the UCM.
+
+## UCM Breakout
+![UCM Breakout](images/ucm_breakout.jpg)
+
+A quick break-out of more widely used peripherals.
