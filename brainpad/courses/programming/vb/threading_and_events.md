@@ -36,7 +36,7 @@ In Visual Basic, a function that returns a value is set up as in the example bel
 Public Function Add(a As Integer, b As Integer) As Integer
 ```
 
-But Functions are not alway required to return values, sometimes they just perform a certian task. In the example below we show how a function is setup that doesn't return a value. 
+But Functions are not always required to return values, sometimes they just perform a certain task. In the example below we show how a function is setup that doesn't return a value. 
 
 ```vb
 Public Sub Add(a As Integer, b As Integer)
@@ -82,7 +82,7 @@ Note: Function names should always be easy to read and meaningful. This allows a
 Public Sub ActivateAlarm()
 ```
 
-Finally, functions can also be private or public and shared or non-shared. This is beyond the scope of this course and `Public Sub` will always be used, unless returning a value, then we'll use `Public Function` .
+Finally, functions can also be private or public and shared or non-shared. This is beyond the scope of this course and `Public Sub` will always be used, unless returning a value, then we'll use `Public Function`.
 
 ## Overloading Functions
 The same function name can have one or more argument types. Depending on the argument passed to the function, the system will determine which function to call as shown in in the code sample below we create a function called `Add` which can handle both an integer or a string. 
