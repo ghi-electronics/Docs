@@ -428,7 +428,7 @@ End Class
 
 The above program still will not work the way we want. It will print 1 to 10 only once. Then the program will continue to loop but will not print anything after `count` is greater then 10. Can you fix the code without looking at the solution below?
 
-```
+```vb
 Class Program
     Public Sub BrainPadSetup()
         Dim count As Integer
@@ -448,3 +448,152 @@ Class Program
     End Sub
 End Class
 ```
+
+## The For Loop
+The **For loop** executes a block of statements, those between the initial `For` statement and the keyword `Next`, repeatedly until the condition is done. *For loops* are handy for actions where you have to do a specific task a specific number of times. The syntax of the *For loop* always starts with the keyword `For` As noted in the example below.
+
+
+```vb
+For i = 1 To 5 Step 1 
+  
+Next
+```
+ 
+A few things are happening in the line of code that contains our `For` statement. First, `i` is initialized, in our example we set it to `1`. This step happens only once, regardless of how many times the loop repeats. 
+
+The second part we tell the computer how high or how many times to loop through the *For loop*. In our example we have `5`. 
+
+Finally the last part of the code contains the keyword `Step` and tells us how much to increment the `i`. In our example we increment `i` by `1` everytime we reach the end of the loop. The end of the *For Loop* is noted by the keyword `Next`
+
+
+In the example below we use a *For loop* to count to 10 and display the value on the BrainPad's display. After the for loop is done, we then display the words "finished"
+
+```vb
+Public Sub BrainPadSetup()
+    For i = 1 To 5 Step 1           
+        BrainPad.Display.DrawNumberAndShowOnScreen(55, 25, i)
+
+        BrainPad.Wait.Seconds(1)
+    Next
+
+    BrainPad.Display.DrawTextAndShowOnScreen(17,25, "Finished")
+End Sub
+```
+
+## Arrays
+Arrays are an excellent way to store many of the same data type into a single named varible. The array works well with *for loops* like we just learned previously. In the code examples below we show you how an array is declared and how it's intialized with values. 
+
+An array of integers:
+
+```vb
+Dim nums() As Integer = {1, 2, 3}
+```
+
+An array of strings:
+
+```vb
+Dim names() As String = { "Tom", "Bill", "Sally", "Greg", "Allen" }
+```
+
+The syntax for creating an array, like the ones above, always begin with the keyword `Dim`. 
+
+Next we choose a meaningful name for our array, it is followed by `()` parentheses. Then we use the keyword `As` followed by the data type of our array. 
+
+
+ After selecting the arrays data type we follow with an `=` equal sign. After the equal sign and inbetween the two `{}` curly braces is the data we want to store in the array seperated by commas. 
+
+Let's now demonstrate how we access the data from within our array, using the *for loop* we learned earlier. In the code example below we will use our array of strings to display each name stored in the array on the BrainPad display.
+
+```vb
+Class Program
+    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
+    
+    Public Sub BrainPadSetup()
+        For i = 0 To names.Length - 1 Step 1
+            BrainPad.Display.DrawTextAndShowOnScreen(55, 25, names(i))
+
+            BrainPad.Wait.Seconds(1)
+        Next
+
+        BrainPad.Display.DrawTextAndShowOnScreen(17, 25, "Finished")
+    End Sub
+
+    Public Sub BrainPadLoop()
+        
+    End Sub
+End Class
+```
+
+If you look closely in our *for loop* you'll notice in the parameter of our `BrainPad.Display.DrawTextAndShowOnScreen()` function, you will see the `names()` array, with our `i` variable as its parameter. The elements of an array are stored as shown in the image below. 
+
+![Buttons on the BrainPad](images/variables_and_nested_statements/array_example_vb.jpg)
+
+You'll notice that our array `names` contains 5 elements. But the actual location value inside our array parameter starts at `0`, and ends at `4`. Because all arrays start counting at `0`. So the first element of any array, ours as an example will be `names(0)` which contains the string `"Tom"`. You'll also notice instead of using a hard coded value in our for loop parameter. We can find out the length of our array, by using the `Length` property of `names` like this `names.Length`. This is something built into the code that returns the length of the array. 
+
+Also notice, when we find the length of the area, we ask the computer to subtract one `-1`. This is because `names.Length` returns `5` because we have 5 elements in our array. But, as pointed out and demonstrated in the image above, our array storage slot starts at `names(0)` and only goes to `names(4)` trying to access `names(5)` would cause an error. 
+
+Let's show in our previous code example how we can use two arrays together within our *for loop*, to hold two different values. Using two arrays together in this fashion is often referred to as using *parrallel arrays*
+
+```vb
+Class Program
+    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
+    Dim ages() As Integer = {15, 21, 36, 50, 17}
+
+    Public Sub BrainPadSetup()
+        For i = 0 To names.Length - 1 Step 1
+            BrainPad.Display.DrawText(30, 10, names(i))
+            BrainPad.Display.DrawNumber(40, 40, ages(i))
+            BrainPad.Display.ShowOnScreen()
+            BrainPad.Wait.Seconds(1)
+            BrainPad.Display.ClearScreen()
+        Next
+
+        BrainPad.Display.DrawTextAndShowOnScreen(17, 25, "Finished")
+
+    End Sub
+
+    Public Sub BrainPadLoop()
+        'Put your program code here. It runs repeatedly after the BrainPad starts up.
+
+    End Sub
+End Class
+```
+
+## For Each loop
+We showed how you can access an array using the for loop. Now we'll show you how to use the **For Each loop**. The *For Each loop* is perfect when you have to cycle through only one array at a time. Unlike the previous example where we used parallel arrays, and accessed two different array elements. 
+
+Note that the *For Each loop* syntax reads very similar to regular English. 
+
+```vb
+For Each name As String In names
+
+Next
+``` 
+
+The *For Each loop* below first creates a string variable called `name`. Each time through the *For Each loop* advances to the next element of the array called `names()` and sets our newly created `name` variable to its value. The *For Each loop* is a good example of why we pick meanful variable names in our code to make it more readable. 
+
+Here is a code sample that uses the *For Each loop* and the `names()` array
+
+```vb
+Class Program
+    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
+
+    Public Sub BrainPadSetup()
+
+        For Each name As String In names
+            BrainPad.Display.DrawTextAndShowOnScreen(30, 25, name)
+
+            BrainPad.Wait.Seconds(1)
+        Next
+
+        BrainPad.Display.DrawTextAndShowOnScreen(17, 25, "Finished")
+
+    End Sub
+
+    Public Sub BrainPadLoop()
+        'Put your program code here. It runs repeatedly after the BrainPad starts up.
+
+    End Sub
+End Class
+```
+
