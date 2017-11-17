@@ -486,7 +486,7 @@ Arrays are an excellent way to store many of the same data type into a single na
 An array of integers:
 
 ```vb
-Dim nums() As Integer = {1, 2, 3}
+Dim nums() As Integer = { 1, 2, 3 }
 ```
 
 An array of strings:
@@ -506,7 +506,7 @@ Let's now demonstrate how we access the data from within our array, using the *f
 
 ```vb
 Class Program
-    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
+    Dim names() As String = { "Tom", "Bill", "Sally", "Greg", "Allen" }
     
     Public Sub BrainPadSetup()
         For i = 0 To names.Length - 1 Step 1
@@ -530,14 +530,14 @@ If you look closely in our *for loop* you'll notice in the parameter of our `Bra
 
 You'll notice that our array `names` contains 5 elements. But the actual location value inside our array parameter starts at `0`, and ends at `4`. Because all arrays start counting at `0`. So the first element of any array, ours as an example will be `names(0)` which contains the string `"Tom"`. You'll also notice instead of using a hard coded value in our for loop parameter. We can find out the length of our array, by using the `Length` property of `names` like this `names.Length`. This is something built into the code that returns the length of the array. 
 
-Also notice, when we find the length of the area, we ask the computer to subtract one `-1`. This is because `names.Length` returns `5` because we have 5 elements in our array. But, as pointed out and demonstrated in the image above, our array storage slot starts at `names(0)` and only goes to `names(4)` trying to access `names(5)` would cause an error. 
+Also notice, when we find the length of the area, we ask the computer to subtract one. This is because `names.Length` returns `5` because we have 5 elements in our array. But, as pointed out and demonstrated in the image above, our array storage slot starts at `names(0)` and only goes to `names(4)` trying to access `names(5)` would cause an error. 
 
 Let's show in our previous code example how we can use two arrays together within our *for loop*, to hold two different values. Using two arrays together in this fashion is often referred to as using *parrallel arrays*
 
 ```vb
 Class Program
-    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
-    Dim ages() As Integer = {15, 21, 36, 50, 17}
+    Dim names() As String = { "Tom", "Bill", "Sally", "Greg", "Allen" }
+    Dim ages() As Integer = { 15, 21, 36, 50, 17 }
 
     Public Sub BrainPadSetup()
         For i = 0 To names.Length - 1 Step 1
@@ -549,11 +549,9 @@ Class Program
         Next
 
         BrainPad.Display.DrawTextAndShowOnScreen(17, 25, "Finished")
-
     End Sub
 
     Public Sub BrainPadLoop()
-        'Put your program code here. It runs repeatedly after the BrainPad starts up.
 
     End Sub
 End Class
@@ -572,14 +570,13 @@ Next
 
 The *For Each loop* below first creates a string variable called `name`. Each time through the *For Each loop* advances to the next element of the array called `names()` and sets our newly created `name` variable to its value. The *For Each loop* is a good example of why we pick meanful variable names in our code to make it more readable. 
 
-Here is a code sample that uses the *For Each loop* and the `names()` array
+Here is a code sample that uses the *For Each loop* and the `names` array
 
 ```vb
 Class Program
-    Dim names() As String = {"Tom", "Bill", "Sally", "Greg", "Allen"}
+    Dim names() As String = { "Tom", "Bill", "Sally", "Greg", "Allen" }
 
     Public Sub BrainPadSetup()
-
         For Each name As String In names
             BrainPad.Display.DrawTextAndShowOnScreen(30, 25, name)
 
@@ -587,13 +584,10 @@ Class Program
         Next
 
         BrainPad.Display.DrawTextAndShowOnScreen(17, 25, "Finished")
-
     End Sub
 
     Public Sub BrainPadLoop()
-        'Put your program code here. It runs repeatedly after the BrainPad starts up.
 
     End Sub
 End Class
 ```
-
