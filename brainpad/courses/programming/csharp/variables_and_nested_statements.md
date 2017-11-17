@@ -425,6 +425,137 @@ public class Program {
 ```
 Instead of intializing the `count` variable to 0 at the beginning of our code, we do it inside while loop instead. This means after the nested while loop finishs counting to 10, the first while loop goes back to the top and resets our `count` variable to 0. Which is less than 10, starting our nested while loop to begin printing again.  
 
+## The For Loop
+The **For Loop** executes a block of statements, those between its `{}`curly braces, repeatedly until the specified condition returns false. *For loops* are handy for actions where you have to do a specific task a specific number of times. The syntax of the *for loop* always starts with the keyword `for` As noted in the example below.
 
+```
+for (intializer; condition; iterator){
+} 
+```
 
+```
+for (int i = 1; i <= 5; i++){
+} 
+```
+ 
+There are 3 parameters inside each *for loop*, each parameter is sepearted by a `;` semicolon. 
 
+First, the variable `i` is initialized, in our example we set it to `1`. This step happens only once, regardless of how many times the loop repeats. 
+
+The second part of the parameter is the condition part. While our `i` variable is less than or equal to `5` the conditon evaluates to `true`, so the loop continues.  
+
+The last parameter in the *for loop* is the iterator. Ours says that everytime we reach the end of our loop the `i` variable is increased by `1` and then starts back at the top of the loop again. This repeats itself until the condition part of the for loop returns `false`. 
+
+In the example below we use a *for loop* to count to 10 and display the value on the BrainPad's display. After the for loop is done, we then display the words "finished"
+
+```
+public void BrainPadSetup() {
+    for(int i = 1; i <= 10; i++) {
+        BrainPad.Display.DrawTextAndShowOnScreen(10, 10, i.ToString());
+
+        //Pauses the BrainPad 1 second before contining the loop
+        BrainPad.Wait.Seconds(1);
+       }
+       BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
+}
+```
+## Arrays
+Arrays are an excellent way to store many of the same data type into a single named varible. The array works well with *for loops* like we just learned previously. In the code examples below we show you how an array is declared and how it's intialized with values. 
+
+An array of integers. 
+
+```
+int[] nummbers = { 4, 88, 34, 32, 23 };
+```
+
+An array of Strings
+
+```
+string[] names = { "Tom", "Bill", "Sally", "Greg", "Allen" };
+```
+The syntax for creating an array, like the ones above, always begin with the data type of the array, followed by `[]` brackets. Next we give our array a name. Just like our variable names, make the array names meaningful. After naming the array we follow with an `=` equal sign. After the equal sign and inbetween the two `{}` curly braces is the data we want to store in the array seperated by commas. 
+
+Let's now demonstrate how we access the data from within our array, using the *for loop* we learned earlier. In the code example below we will use our array of strings to display each name stored in the array on the BrainPad display.
+
+```
+class Program {
+    string[] names = { "Tom", "Bill", "Sally", "Greg", "Allen" };
+
+    public void BrainPadSetup() {
+        for(int i = 0; i < names.Length; i++) {
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, names[i]);
+
+            BrainPad.Wait.Seconds(1);
+        }
+        BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
+    }
+
+    public void BrainPadLoop() {
+            
+    }
+}
+```
+
+If you look closely in our *for loop* you'll notice in the parameter of our `BrainPad.Display.DrawTextAndShowOnScreen()` function, you will see the `names[]` array. The elements of an array are stored as shown in the image below. 
+
+![Inspecting a variable](images/variables_and_nested_statemets/array_example.jpg)
+
+You'll notice that our array `names[]` contain 5 elements. But the actual location value inside our array starts at `0`, and ends at `4`. Because all arrays start counting at `0`. So the first element of any array, ours as an example will be `names[0]` which contains the string `"Tom"`. You'll also notice instead of a using a hard coded value in our for loop parameter. We can find out the length of our array, by using the `.length` property of `names` like this `names.length`. This is something built into the code that returns the length of the array. 
+
+Let's show in our previous code example how we can use two arrays together within our *for loop*, to hold two different values. Using two arrays together in this fashion is often referred to as using *parrallel arrays*
+
+```
+class Program {
+        string[] names = { "Tom", "Bill", "Sally", "Greg", "Allen" };
+        int[] ages = { 15, 21, 36, 50, 17 };
+
+        public void BrainPadSetup() {
+            for (int i = 0; i < names.Length; i++) {
+                BrainPad.Display.DrawText(10, 10, names[i]);
+
+                BrainPad.Display.DrawText(20, 40, ages[i].ToString());
+
+                BrainPad.Display.ShowOnScreen();
+
+                BrainPad.Wait.Seconds(1);
+
+                BrainPad.Display.ClearScreen();
+            }
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
+        }
+
+        public void BrainPadLoop() {
+
+        }
+    }
+```
+## Foreach loop
+We showed how you can access an array using the for loop. Now we'll show you how to use the **foreach loop**. The *foreach loop* is perfect when you have to cycle through only one array at a time. Unlike the previous example where we used parallel arrays, and accessed two different array elements. 
+
+In the code below, you'll notice the parameters required for the *foreach loop* are different then the for loop and don't require 3 parameters. The *foreach* loop below first creates a string variable called `name` within it's parameters. Each time through the *foreach loop* advances to the next element of the array called `names[]` and sets our newly created `name` variable to its value. The *foreach loop* is a good example of why we pick meanful variable names in our code. 
+
+```
+foreach(string name in names){
+}
+```
+
+Here is a code sample that uses the *foreach loop* and the `names[]` array
+
+```
+class Program {
+        string[] names = { "Tom", "Bill", "Sally", "Greg", "Allen" };
+        int[] age = { 15, 21, 36, 50, 17 };
+
+        public void BrainPadSetup() {
+            foreach (string name in names) {
+                BrainPad.Display.DrawTextAndShowOnScreen(10, 10, name);              
+            }
+
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
+        }
+
+        public void BrainPadLoop() {
+
+        }
+}
+```
