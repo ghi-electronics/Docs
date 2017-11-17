@@ -426,15 +426,17 @@ public class Program {
 Instead of intializing the `count` variable to 0 at the beginning of our code, we do it inside while loop instead. This means after the nested while loop finishs counting to 10, the first while loop goes back to the top and resets our `count` variable to 0. Which is less than 10, starting our nested while loop to begin printing again.  
 
 ## The For Loop
-The **For Loop** executes a block of statements, those between its `{}`curly braces, repeatedly until the specified condition returns false. *For loops* are handy for actions where you have to do a specific task a specific number of times. The syntax of the *for loop* always starts with the keyword `for` As noted in the example below.
+The **For Loop** executes a block of statements, those between its `{}` curly braces, repeatedly until the specified condition returns false. *For loops* are handy for actions where you have to do a specific task a specific number of times. The syntax of the *for loop* always starts with the keyword `for` As noted in the example below.
 
 ```
-for (intializer; condition; iterator){
+for (intializer; condition; iterator) {
+
 } 
 ```
 
 ```
-for (int i = 1; i <= 5; i++){
+for (int i = 1; i <= 5; i++) {
+
 } 
 ```
  
@@ -451,24 +453,25 @@ In the example below we use a *for loop* to count to 10 and display the value on
 ```
 public void BrainPadSetup() {
     for(int i = 1; i <= 10; i++) {
-        BrainPad.Display.DrawTextAndShowOnScreen(10, 10, i.ToString());
+        BrainPad.Display.DrawNumberAndShowOnScreen(10, 10, i);
 
         //Pauses the BrainPad 1 second before contining the loop
         BrainPad.Wait.Seconds(1);
-       }
-       BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
+     }
+     
+     BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
 }
 ```
 ## Arrays
 Arrays are an excellent way to store many of the same data type into a single named varible. The array works well with *for loops* like we just learned previously. In the code examples below we show you how an array is declared and how it's intialized with values. 
 
-An array of integers. 
+An array of integers:
 
 ```
 int[] nummbers = { 4, 88, 34, 32, 23 };
 ```
 
-An array of Strings
+An array of strings:
 
 ```
 string[] names = { "Tom", "Bill", "Sally", "Greg", "Allen" };
@@ -487,6 +490,7 @@ class Program {
 
             BrainPad.Wait.Seconds(1);
         }
+        
         BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
     }
 
@@ -500,7 +504,7 @@ If you look closely in our *for loop* you'll notice in the parameter of our `Bra
 
 ![Inspecting a variable](images/variables_and_nested_statemets/array_example.jpg)
 
-You'll notice that our array `names[]` contain 5 elements. But the actual location value inside our array starts at `0`, and ends at `4`. Because all arrays start counting at `0`. So the first element of any array, ours as an example will be `names[0]` which contains the string `"Tom"`. You'll also notice instead of a using a hard coded value in our for loop parameter. We can find out the length of our array, by using the `.length` property of `names` like this `names.length`. This is something built into the code that returns the length of the array. 
+You'll notice that our array `names` contains 5 elements. But the actual location value inside our array starts at `0`, and ends at `4`. Because all arrays start counting at `0`. So the first element of any array, ours as an example will be `names[0]` which contains the string `"Tom"`. You'll also notice instead of a using a hard coded value in our for loop parameter. We can find out the length of our array, by using the `Length` property of `names` like this `names.Length`. This is something built into the code that returns the length of the array. 
 
 Let's show in our previous code example how we can use two arrays together within our *for loop*, to hold two different values. Using two arrays together in this fashion is often referred to as using *parrallel arrays*
 
@@ -521,6 +525,7 @@ class Program {
 
                 BrainPad.Display.ClearScreen();
             }
+            
             BrainPad.Display.DrawTextAndShowOnScreen(10, 10, "Finished");
         }
 
