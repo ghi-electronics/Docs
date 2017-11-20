@@ -79,7 +79,7 @@
 <h2 id="methods">Methods</h2>
 <p>The <code>BrainPad</code> object (or class) includes methods to control many aspects of the BrainPad&#39;s hardware. A method is a set of instructions grouped together. If a student is asked to speak, the command may look like <code>Student.Say(&quot;Hello&quot;)</code>. The <code>Say()</code> method is simple, but speaking requires many things like taking in air and moving your vocal cords. In the same sense, activating the LightBulb and Turning it green is a simple request but internally it does many small tasks to reach the final goal.
 Methods can also take arguments. For example, you could have a method called <code>Student.Run()</code> to order a student to run or <code>Student.Run(slow)</code> to order them to run slow. Methods can also return a value, like <code>Student.GetAge()</code> which returns the student&#39;s age.</p>
-<p>In the code example below, we show how a method called <code>Add</code> can be add 5 + 2 and print the total integer to the Output window. We&#39;ve also added an additional line to display the result on the BrainPad&#39;s own display too. </p>
+<p>In the code example below, we show how a method we create called <code>Add</code> can be used to add 5 + 2 and print the total integer to the Output window. We&#39;ve also added an additional line to display the result on the BrainPad&#39;s own display too. </p>
 <pre><code>public class Program {
     public void BrainPadSetup() {
         int total = Add(5, 2);
@@ -96,7 +96,7 @@ Methods can also take arguments. For example, you could have a method called <co
     }
 }
 </code></pre><p>The above example creates a simple method that takes two integer arguments and returns an integer. The method will add the two arguments and return the results. </p>
-<p>Method names are like variable names, only certain things are allowed. Method names cannot start with a number, contain a symbol besides the underscore �_� or have a space in them.
+<p>Method names are like variable names, only certain things are allowed. Method names cannot start with a number, contain a symbol besides the underscore &quot;_&quot; or have a space in them.
 The following examples show proper and improper use of method names.</p>
 <p>Valid Method Names</p>
 <pre><code>bool AreAll4ButtonsPressed()
@@ -162,7 +162,7 @@ bool AreAllButtonsPressed?()
     }
 }
 </code></pre><h2 id="the-new-keyword">The new Keyword</h2>
-<p>In the examples used so far, the BrainPad object has been used directly. This will not work for all object types. Remember the <code>Student.Say(&quot;Hello&quot;)</code> example? This statement is not completely valid because we don&#39;t know which student is going to say �Hello�. To access a specific student, you need to create a variable named <code>mike</code> to hold the Student object as shown in the code sample below.</p>
+<p>In the examples used so far, the BrainPad object has been used directly. This will not work for all object types. Remember the <code>Student.Say(&quot;Hello&quot;)</code> example? This statement is not completely valid because we don&#39;t know which student is going to say &quot;Hello&quot;. To access a specific student, you need to create a variable named <code>mike</code> to hold the Student object as shown in the code sample below.</p>
 <pre><code>Student mike = new Student();
 </code></pre><h2 id="threading">Threading</h2>
 <p>Threading in the programming world is a way to describe multitasking. Each task is a thread that runs separately. The threading support in TinyCLR OS on the BrainPad is easy to work with. </p>

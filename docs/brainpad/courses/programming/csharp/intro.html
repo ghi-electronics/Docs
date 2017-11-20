@@ -99,7 +99,8 @@
 <p><img src="images/introduction/program_contents_shown.jpg" alt="Program Contents Shown">  </p>
 <p>This file contains the default code when you first create a project. The lines in green that begin with <code>//</code> are called comments, and they generally describe what the code does. Take a moment to review them. You can create your own comments in the code by typing <code>//</code> before any notes you like to add. Comments don&#39;t affect how your program runs. </p>
 <p>Comments are a great place to keep notes about how a piece of code might work. They are helpful if another programmer looks at your code, or you return to look at your own code at a later date, to help you understand what the code is doing behind the scenes. </p>
-<p>Let&#39;s run the code to see these comments&#39; descriptions come to life. Connect the BrainPad and press the <code>F5</code> function key or the Start button.</p>
+<p>Let&#39;s run the code to see these comments&#39; descriptions come to life. Connect the BrainPad and press the <code>F5</code> function key or the Start button in Visual Studio&#39;s toolbar.</p>
+<p><img src="images/introduction/start_key_button.jpg" alt="F5 Key and Start Button"></p>
 <p>Visual Studio will now run the code, a few things will happen and the display will now have the text <code>&quot;Hello!&quot;</code>.</p>
 <p><img src="images/introduction/display_hello.jpg" alt="Using IntellSense LightBulb"></p>
 <h2 id="the-brainpad-object">The BrainPad Object</h2>
@@ -121,14 +122,13 @@ BrainPad.LightBulb.TurnGreen();
 BrainPad.LightBulb.TurnOff();
 BrainPad.LightBulb.TurnGreen();
 </code></pre><p>Now, press <code>F5</code> on the keyboard or the <code>Start</code> button in Visual Studio to run the code and you&#39;ll see the <em>LightBulb</em> turn green come on and stay on. </p>
-<p><img src="images/introduction/start_key_button.jpg" alt="F5 Key and Start Button"></p>
 <p>This happens because our code is executed faster than we can see. So we never see the <em>LightBulb</em> actually blink.</p>
 <h2 id="problem-solving">Problem Solving</h2>
 <p>Since applications execute extremely fast, we need to slow them down to figure out the problem. This way we can see what is happening or if the results are as expected. We will start by running the code one line at a time, this is called stepping in code to see what the application does at a slow speed.</p>
 <h2 id="stepping-in-code">Stepping in Code</h2>
 <p>With Visual Studio we can &quot;step&quot; through the code executing each line separately one at a time. 
 This will help when you&#39;re trying to debug a problem. To do this we need to add what is called a <strong>breakpoint</strong> or (stop point).</p>
-<p>A breakpoint is a spot in your program where the code will execute up until it reaches the breakpoint then wait for futher instructions. </p>
+<p>A breakpoint is a spot in your program where the code will execute until it reaches the breakpoint, then Visual Studio will wait for further instructions. </p>
 <p>To add a breakpoint at the first line of code inside of <code>BrainPadSetup()</code> moving the cursor to that line and pressing the <code>F9</code> key as shown below. A red circle will appear to the left of your code. This is where your code will stop and wait. </p>
 <p>You can also click in the grey area where the breakpoints appear to either remove or create new breakpoints. Your program can have as many breakpoints as you feel necessary to diagnose any programming issues. </p>
 <p><img src="images/introduction/adding_breakpoint.jpg" alt="Adding a Breakpoint"></p>
@@ -138,7 +138,7 @@ This will help when you&#39;re trying to debug a problem. To do this we need to 
 as noted by the yellow arrow now in the red circle. You have several options to continue or step through you code line by line, while the program is still running. </p>
 <p>If you press the <code>Continue</code> button in the top tool bar of Visual Studio as shown below. Your program will continue, to the end of the code or the next breakpoint.</p>
 <p>  <img src="images/introduction/continue_button.jpg" alt="Stopping at the Breakpoint"> </p>
-<p>To the right of the <code>Continue</code> button are more buttons for navigating the code while the program is running. Unlike the <code>Continue</code> button The <code>Step Into</code> button or <code>F11</code> key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.</p>
+<p>To the right of the <code>Continue</code> button are more buttons for navigating the code while the program is running. Unlike the <code>Continue</code> button, the <code>Step Into</code> button or <code>F11</code> key advances your program one line of code at a time. This can be very useful when trying to diagnose programming errors.</p>
 <p>  <img src="images/introduction/stepping_into.jpg" alt="Stepping into code"> </p>
 <h2 id="adding-delays-to-code">Adding Delays to Code</h2>
 <p>In order to see what&#39;s going on we need to add some delays in the program code. This is done by telling the BrainPad to <code>Wait</code> between tasks.
@@ -195,20 +195,20 @@ BrainPad.Display.DrawTextAndShowOnScreen(37, 48, &quot;White&quot;);
 BrainPad.LightBulb.TurnColor(100, 100, 100);
 BrainPad.Wait.Seconds(2);
 </code></pre><h2 id="brainpad-buzzer">BrainPad Buzzer</h2>
-<p>Included on your BrainPad is a Buzzer. You can use this Buzzer to program different sounds you�d like to use in your program.  Like the <code>BrainPad.LightBulb</code> object, you�ll also have to tell the <code>Buzzer</code> object to <code>Beep</code>, <code>StartBuzzing</code> and <code>StopBuzzing</code>. Will also tell the BrainPad to <code>Wait</code> in between playing and not playing as sound. When you tell the BrainPad to <code>Wait</code>, the sound will play for that duration.</p>
+<p>Included on your BrainPad is a <strong>Buzzer</strong>. You can use this Buzzer to program different sounds you&#39;d like to use in your program.  Like the <code>BrainPad.LightBulb</code> object, you&#39;ll also have to tell the <code>Buzzer</code> object to <code>Beep</code>, <code>StartBuzzing</code> and <code>StopBuzzing</code>. Will also tell the BrainPad to <code>Wait</code> in between playing and not playing as sound. When you tell the BrainPad to <code>Wait</code>, the sound will play for that duration.</p>
 <p>Copy and paste the following code into your <code>BrainPadSetUp()</code> between the curly braces <code>{}</code>. Press <code>F5</code> key or <code>Start</code> button in Visual Studio.</p>
 <pre><code> BrainPad.Buzzer.StartBuzzing(100);
  BrainPad.Wait.Seconds(1);
  BrainPad.Buzzer.StopBuzzing();
 </code></pre><p>You should hear a very low tone, that plays for one(1) second and stops. </p>
-<p>Inside the <code>BrainPad.Buzzer.StartBuzzing(100)</code> method you�ll see that in the code we�ve added the value of 100. This is the frequency of the sound that will be played by the Buzzer. You can change this value to create a bunch of different sounds. Let�s try changing it.</p>
-<p>Copy and paste the following code into your <code>BrainPadSetUp()</code> between the curly braces <code>{}</code>. Press <code>F5</code> or <code>Start</code></p>
+<p>Inside the <code>BrainPad.Buzzer.StartBuzzing(100)</code> method you&#39;ll see that in the code we&#39;ve added the value of 100. This is the frequency of the sound that will be played by the Buzzer. You can change this value to create a bunch of different sounds. Let&#39;s try changing it.</p>
+<p>Copy and paste the following code into your <code>BrainPadSetUp()</code> between the curly braces <code>{}</code>. Press <code>F5</code> on the keyboard or <code>Start</code> on the Visual Studio toolbar.</p>
 <pre><code>BrainPad.Buzzer.StartBuzzing(400);
 BrainPad.Wait.Seconds(1);
 BrainPad.Buzzer.StartBuzzing(100);
 BrainPad.Wait.Seconds(1);
 BrainPad.Buzzer.StopBuzzing();
-</code></pre><p>First you�ll hear the Buzzer make a very high sound, then a very low sound. This is what changing the frequency does to the Buzzer. </p>
+</code></pre><p>First you&#39;ll hear the Buzzer make a very high sound, then a very low sound. This is what changing the frequency does to the Buzzer. </p>
 <p>Try changing the frequency to different values and see what kind of sounds the Buzzer makes. </p>
 <h2 id="brainpad-buttons">BrainPad Buttons</h2>
 <p><img src="images/introduction/buttons_.jpg" alt="Buttons on the BrainPad"></p>
@@ -246,7 +246,7 @@ public void BrainPadLoop() {
          BrainPad.LightBulb.TurnGreen();
      }
 }
-</code></pre><p>The above code, first makes sure the Light Bulb is OFF and then it falls into an infinite loop, the <code>BrainpadLoop()</code>. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.</p>
+</code></pre><p>The above code first makes sure the Light Bulb is OFF and then it falls into an infinite loop, called the <code>BrainpadLoop()</code>. However, this program still has an operational bug. Run the program and test it. The green light will be off when the program runs and then once the LEFT button is pressed the green light will turn on. That is all good so far, but when the button is released, the green light stays on. Can you guess why? Try stepping in the code to see what happens when the button is pressed and when it is not pressed.</p>
 <p>Computers are strict at following orders. In the previous examples, the Light Bulb never turned off because we actually never told the program to turn the green light off. This means we have to tell the program to turn the light on when the button is pressed and we also have to tell it to turn the light off when the button is not pressed</p>
 <pre><code>public void BrainPadSetup() {
     BrainPad.LightBulb.TurnOff();
@@ -261,13 +261,13 @@ public void BrainPadLoop() {
         BrainPad.LightBulb.TurnOff();
     }
 }
-</code></pre><p>The <code>!</code> symbol represents the opposite. While the BrainPad doesn�t have a method called <code>BrainPad.Button.IsLeftNotPressed()</code> we can continue to use <code>BrainPad.Button.IsLeftPressed()</code> but with a <code>!</code> before it to represent if the button is not pressed.  Now when you run it, not pressing the button will turn/keep the <em>LightBulb</em> off.</p>
+</code></pre><p>The <code>!</code> symbol represents the opposite. While the BrainPad doesn&#39;t have a method called <code>BrainPad.Button.IsLeftNotPressed()</code> we can continue to use <code>BrainPad.Button.IsLeftPressed()</code> but with a <code>!</code> before it, to represent if the button is not pressed.  Now when you run it, not pressing the button will turn/keep the <em>LightBulb</em> off.</p>
 <h2 id="logical-operators----or--and-----and-">Logical Operators -- Or &amp; And -- || and &amp;&amp;</h2>
 <p><img src="images/introduction/or_and_keys.jpg" alt="Keyboard Location "></p>
 <p>The <strong>Or</strong> operator is found by holding the shift key and pressing the <code>||</code> key  twice, the <strong>And</strong> operator can be found by holding the shift key and pressing <code>&amp;&amp;</code> twice</p>
-<p>These are typically used within the <strong>if statement</strong>. Let�s assume in our previous example you wanted to press the <em>Left</em> button to make the <em>LightBulb</em> Green and when you press the <em>Right</em> button you want to make the <em>LightBulb</em> Red. If neither button is pressed the <em>LightBulb</em> is off. 
-To accomplish this you�ll need to use the <strong>And</strong> operator <code>&amp;&amp;</code> to check and make sure both buttons are <strong>Not</strong> (!) pressed, and turn off the <em>LightBulb</em>. 
-In the code example below, in our third <strong>if statement</strong>, you can see where we ask the question, �Is the <em>Right</em> button pressed <strong>And</strong> is the <em>Left</em> button pressed?� 
+<p>These are typically used within the <strong>if statement</strong>. Let&#39;s assume in our previous example you wanted to press the <em>Left</em> button to make the <em>LightBulb</em> Green and when you press the <em>Right</em> button you want to make the <em>LightBulb</em> Red. If neither button is pressed the <em>LightBulb</em> is off. 
+To accomplish this you&#39;ll need to use the <strong>And</strong> operator <code>&amp;&amp;</code> to check and make sure both buttons are <strong>Not</strong> (!) pressed, and turn off the <em>LightBulb</em>. 
+In the code example below, in our third <strong>if statement</strong>, you can see where we ask the question, &quot;Is the <em>Right</em> button pressed <strong>And</strong> is the <em>Left</em> button pressed?&quot; 
 Both of these condition must be met in order to execute the code in its curly braces<code>{ }</code>. When using the <strong>Or</strong> operator <code>||</code>, only one of the conditions need to be met to run the code within the curly braces <code>{}</code>. </p>
 <pre><code>public void BrainPadSetup() {
     BrainPad.LightBulb.TurnOff();
@@ -287,7 +287,7 @@ public void BrainPadLoop() {
     }
 }
 </code></pre><h2 id="the-else-statement">The Else Statement</h2>
-<p>The <strong>else statement</strong> is always used with the <strong>if statement</strong> and has a very useful purpose that would be perfect for the last example. In previous code example, we needed to check if the <em>Left</em> button was pressed or not. We can simplify this by catching when an <strong>if statement</strong> isn�t true using <strong>else</strong> as shown in the code below.</p>
+<p>The <strong>else statement</strong> is always used with the <strong>if statement</strong> and has a very useful purpose that would be perfect for the last example. In the previous code example, we needed to check if the <em>Left</em> button was being pressed or not. We can simplify this by catching when an <strong>if statement</strong> isn&#39;t true using <strong>else</strong> as shown in the code below.</p>
 <pre><code>public void BrainPadSetup() {
     BrainPad.LightBulb.TurnOff();
 }
@@ -322,8 +322,8 @@ public void BrainPadLoop() {
     }
 }
 </code></pre><h2 id="whitespace">Whitespace</h2>
-<p>Spaces and lines are used to make our code more readable to humans. C# programs completely ignore <strong>whitespace</strong> as shown in the code example below. It will execute correctly, but without <strong>whitespaces</strong> it can be very difficult to read and debug. </p>
-<pre><code>public void BrainPadSetup(){BrainPad.TrafficLight.TurnGreenLightOff();}public void BrainPadLoop(){if (BrainPad.Button.IsUpPressed() &amp;&amp; BrainPad.Button.IsDownPressed()){BrainPad.Buzzer.PlayFrequency(5000);}else{BrainPad.Buzzer.Stop();}}
+<p>Spaces and lines are used to make our code more readable to humans. C# programs completely ignore <strong>whitespace</strong> as shown in the code example below. It will execute correctly, but without whitespace it can be very difficult to read and debug. </p>
+<pre><code>public void BrainPadSetup(){BrainPad.TrafficLight.TurnGreenLightOff();}public void BrainPadLoop(){if (BrainPad.Button.IsUpPressed() &amp;&amp; BrainPad.Button.IsDownPressed()){BrainPad.Buzzer.PlayFrequency(5000);}else{BrainPad.Buzzer.Stop();}} 
 </code></pre></article>
           </div>
           

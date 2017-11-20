@@ -182,6 +182,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/array_example.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/array_example.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "brainpad/courses/programming/csharp/images/variables_and_nested_statemets/breakpoint_count.jpg",
       "output": {
         "resource": {
@@ -208,7 +219,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/intro.html",
-          "hash": "RN9ftOya66cY3ufGSgUlaA=="
+          "hash": "xExkHDBT/6+kP/MN1hBjzw=="
         }
       },
       "is_incremental": false,
@@ -220,7 +231,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/threading_and_events.html",
-          "hash": "KXjc9ya/g1UD7iELz3N3xA=="
+          "hash": "qX+JHRwvTBges2KuE2fypw=="
         }
       },
       "is_incremental": false,
@@ -232,7 +243,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/csharp/variables_and_nested_statements.html",
-          "hash": "TZnjJdiV0n0V0CW3xUz/Mg=="
+          "hash": "1ZvjXblisGSLMBYlfCsbiw=="
         }
       },
       "is_incremental": false,
@@ -286,10 +297,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure1.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/adding_breakpoint.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure1.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/adding_breakpoint.jpg"
         }
       },
       "is_incremental": false,
@@ -297,10 +308,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure10.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/buttons_.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure10.png"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/buttons_.jpg"
         }
       },
       "is_incremental": false,
@@ -308,10 +319,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure2.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/continue_button.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure2.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/continue_button.jpg"
         }
       },
       "is_incremental": false,
@@ -319,10 +330,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure3.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/display_hello.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure3.png"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/display_hello.jpg"
         }
       },
       "is_incremental": false,
@@ -330,10 +341,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure4.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/or_and_keys.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure4.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/or_and_keys.jpg"
         }
       },
       "is_incremental": false,
@@ -341,10 +352,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure5.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/project_contents_shown.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure5.png"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/project_contents_shown.jpg"
         }
       },
       "is_incremental": false,
@@ -352,10 +363,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure6.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/start_key_button.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure6.png"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/start_key_button.jpg"
         }
       },
       "is_incremental": false,
@@ -363,10 +374,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure7.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/start_new_visual_basic_project.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure7.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/start_new_visual_basic_project.jpg"
         }
       },
       "is_incremental": false,
@@ -374,10 +385,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure8.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/stepping_into.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure8.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/stepping_into.jpg"
         }
       },
       "is_incremental": false,
@@ -385,10 +396,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/Figure9.jpg",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/stop_breakpoint.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/introduction/Figure9.jpg"
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/stop_breakpoint.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/using_intellisense.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/using_intellisense.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "brainpad/courses/programming/vb/images/introduction/using_intellisense_lightbulb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "brainpad/courses/programming/vb/images/introduction/using_intellisense_lightbulb.jpg"
         }
       },
       "is_incremental": false,
@@ -418,10 +451,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/Watchwindow.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/WriteDebugMessageBreakpoint.png",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/Watchwindow.png"
+          "relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/WriteDebugMessageBreakpoint.png"
         }
       },
       "is_incremental": false,
@@ -429,10 +462,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/WriteDebugMessageBreakpoint.png",
+      "source_relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/array_example_vb.jpg",
       "output": {
         "resource": {
-          "relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/WriteDebugMessageBreakpoint.png"
+          "relative_path": "brainpad/courses/programming/vb/images/variables_and_nested_statements/array_example_vb.jpg"
         }
       },
       "is_incremental": false,
@@ -444,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/vb/intro.html",
-          "hash": "gV0+BvraQ+G9MlIYt52JBw=="
+          "hash": "ubvBNChc9zuQqOqTYRlw3g=="
         }
       },
       "is_incremental": false,
@@ -456,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/vb/threading_and_events.html",
-          "hash": "w+U0/q+Yh2kGosoAVNnqZg=="
+          "hash": "oZAnZhCebO2qflDK9pnWTw=="
         }
       },
       "is_incremental": false,
@@ -468,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "brainpad/courses/programming/vb/variables_and_nested_statements.html",
-          "hash": "ti7w3ziKUkcD8psqaVspVQ=="
+          "hash": "L1iZt3BBgRnVJXmEM/98OQ=="
         }
       },
       "is_incremental": false,
@@ -1724,7 +1757,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/intro.html",
-          "hash": "142IQRZeaDYshzNYxyOU5g=="
+          "hash": "EMMwIl335mm9R0V3JcHDEQ=="
         }
       },
       "is_incremental": false,
@@ -2481,12 +2514,30 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "hardware/products/ucm/intro.md",
       "output": {
         ".html": {
           "relative_path": "hardware/products/ucm/intro.html",
-          "hash": "ZooCY5YrkuQvAY145fUIiA=="
+          "hash": "2C/vwxFd2sQcLdhgUquvEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "hardware/products/ucm/uc5550.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/products/ucm/uc5550.html",
+          "hash": "6IMpNYffZg5aDjY2laOo6g=="
         }
       },
       "is_incremental": false,
@@ -2498,7 +2549,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/toc.html",
-          "hash": "Zy0vU562I9w/3I219/dOxQ=="
+          "hash": "DbS0CoCKj1c1VHT9a6aDeQ=="
         }
       },
       "is_incremental": false,
@@ -3286,23 +3337,23 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

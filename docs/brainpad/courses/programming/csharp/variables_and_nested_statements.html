@@ -98,11 +98,11 @@ int count2var;
 <pre><code>int count me;
 int count#;
 int 2count;
-</code></pre><p>Variables in small programs can use any names. It could even be just �x�. However, using a meaningful name is very important when writing programs, as there maybe hundreds of variables in a large program.</p>
+</code></pre><p>Variables in small programs can use any names. It could even be just &quot;x&quot;. However, using a meaningful name is very important when writing programs, as there maybe hundreds of variables in a large program.</p>
 <p>One of the benefits of variables, is they can be used to store numbers as shown in the example below. </p>
 <pre><code>int count;
 count = 10;
-�
+...
 count = 123;
 </code></pre><p>In the above example, the <code>count</code> variable is stored with the a value of 10. Later in the code, the same varible is used to store a new number, 123. </p>
 <p>Varibles can also be used in equation as shown below</p>
@@ -258,7 +258,7 @@ else {
 <pre><code>BrainPad.WriteToComputer(&quot;Hello World!&quot;);
 </code></pre><p>It&#39;s important to remember that the value <code>2</code> and the string <code>&quot;2&quot;</code> are not the same thing. They may be the same to us but internally in the system they are very different. When <code>x</code> is an integer adding 2 + 2 means <code>x</code> equals 4, as you would expect.</p>
 <pre><code>x = 2 + 2;
-</code></pre><p>Let�s assume <code>str</code> is a string variable in the example below, what is the value of str?</p>
+</code></pre><p>Let&#39;s assume <code>str</code> is a string variable in the example below, what is the value of str?</p>
 <pre><code>str = &quot;2&quot; + &quot;2&quot;;
 </code></pre><p>The plus sign symbol <code>+</code> means something different when dealing with strings. Using the plus sign <code>+</code> to connect strings is called <em>concatenation</em>. Which means a series of interconnected things.
 When concatenating strings in the example above, the result is &quot;22&quot;. This will make more sense if you try the code below.</p>
@@ -279,7 +279,7 @@ When concatenating strings in the example above, the result is &quot;22&quot;. T
     }
 }
 </code></pre><p>The code above continiously increase the <code>count</code> variable and display it as a string.</p>
-<p>The variable <code>count</code> an integer that starts at zero and increments by one in every loop. The string &quot;Count: &quot; is concatenated before the value to give us these results. It then prints the variable�s value in the Output Window, as seen in the image below.</p>
+<p>The variable <code>count</code> an integer that starts at zero and increments by one in every loop. The string &quot;Count: &quot; is concatenated before the value to give us these results. It then prints the variable&#39;s value in the Output Window, as seen in the image below.</p>
 <p><img src="images/variables_and_nested_statemets/output_window.png" alt="Inspecting a variable"> </p>
 <div class="TIP"><h5>Tip</h5><p><code>BrainPad.WriteToComputer()</code> method is an excellent way to send messages to Visual Studio about things happening in your program while you&#39;re debugging. Messages here are only shown in Visual Studio&#39;s Output window and don&#39;t effect what&#39;s displayed on your BrainPad. </p>
 </div>
@@ -396,7 +396,105 @@ How do we write a program that prints one to 10 repeatedly forever? This is acco
     }
 }
 </code></pre><p>Instead of intializing the <code>count</code> variable to 0 at the beginning of our code, we do it inside while loop instead. This means after the nested while loop finishs counting to 10, the first while loop goes back to the top and resets our <code>count</code> variable to 0. Which is less than 10, starting our nested while loop to begin printing again.  </p>
-</article>
+<h2 id="the-for-loop">The For Loop</h2>
+<p>The <strong>For Loop</strong> executes a block of statements, those between its <code>{}</code> curly braces, repeatedly until the specified condition returns false. <em>For loops</em> are handy for actions where you have to do a specific task a specific number of times. The syntax of the <em>for loop</em> always starts with the keyword <code>for</code> As noted in the example below.</p>
+<pre><code>for (intializer; condition; iterator) {
+
+} 
+</code></pre><pre><code>for (int i = 1; i &lt;= 5; i++) {
+
+} 
+</code></pre><p>There are 3 parameters inside each <em>for loop</em>, each parameter is sepearted by a <code>;</code> semicolon. </p>
+<p>First, the variable <code>i</code> is initialized, in our example we set it to <code>1</code>. This step happens only once, regardless of how many times the loop repeats. </p>
+<p>The second part of the parameter is the condition part. While our <code>i</code> variable is less than or equal to <code>5</code> the conditon evaluates to <code>true</code>, so the loop continues.  </p>
+<p>The last parameter in the <em>for loop</em> is the iterator. Ours says that everytime we reach the end of our loop the <code>i</code> variable is increased by <code>1</code> and then starts back at the top of the loop again. This repeats itself until the condition part of the for loop returns <code>false</code>. </p>
+<p>In the example below we use a <em>for loop</em> to count to 10 and display the value on the BrainPad&#39;s display. After the for loop is done, we then display the words &quot;finished&quot;</p>
+<pre><code>public void BrainPadSetup() {
+    for(int i = 1; i &lt;= 10; i++) {
+        BrainPad.Display.DrawNumberAndShowOnScreen(10, 10, i);
+
+        //Pauses the BrainPad 1 second before contining the loop
+        BrainPad.Wait.Seconds(1);
+     }
+
+     BrainPad.Display.DrawTextAndShowOnScreen(10, 10, &quot;Finished&quot;);
+}
+</code></pre><h2 id="arrays">Arrays</h2>
+<p>Arrays are an excellent way to store many of the same data type into a single named varible. The array works well with <em>for loops</em> like we just learned previously. In the code examples below we show you how an array is declared and how it&#39;s intialized with values. </p>
+<p>An array of integers:</p>
+<pre><code>int[] nummbers = { 4, 88, 34, 32, 23 };
+</code></pre><p>An array of strings:</p>
+<pre><code>string[] names = { &quot;Tom&quot;, &quot;Bill&quot;, &quot;Sally&quot;, &quot;Greg&quot;, &quot;Allen&quot; };
+</code></pre><p>The syntax for creating an array, like the ones above, always begin with the data type of the array, followed by <code>[]</code> brackets. Next we give our array a name. Just like our variable names, make the array names meaningful. After naming the array we follow with an <code>=</code> equal sign. After the equal sign and inbetween the two <code>{}</code> curly braces is the data we want to store in the array seperated by commas. </p>
+<p>Let&#39;s now demonstrate how we access the data from within our array, using the <em>for loop</em> we learned earlier. In the code example below we will use our array of strings to display each name stored in the array on the BrainPad display.</p>
+<pre><code>class Program {
+    string[] names = { &quot;Tom&quot;, &quot;Bill&quot;, &quot;Sally&quot;, &quot;Greg&quot;, &quot;Allen&quot; };
+
+    public void BrainPadSetup() {
+        for(int i = 0; i &lt; names.Length; i++) {
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, names[i]);
+
+            BrainPad.Wait.Seconds(1);
+        }
+
+        BrainPad.Display.DrawTextAndShowOnScreen(10, 10, &quot;Finished&quot;);
+    }
+
+    public void BrainPadLoop() {
+
+    }
+}
+</code></pre><p>If you look closely in our <em>for loop</em> you&#39;ll notice in the parameter of our <code>BrainPad.Display.DrawTextAndShowOnScreen()</code> function, you will see the <code>names[]</code> array. The elements of an array are stored as shown in the image below. </p>
+<p><img src="images/variables_and_nested_statemets/array_example.jpg" alt="Inspecting a variable"></p>
+<p>You&#39;ll notice that our array <code>names</code> contains 5 elements. But the actual location value inside our array starts at <code>0</code>, and ends at <code>4</code>. Because all arrays start counting at <code>0</code>. So the first element of any array, ours as an example will be <code>names[0]</code> which contains the string <code>&quot;Tom&quot;</code>. You&#39;ll also notice instead of a using a hard coded value in our for loop parameter. We can find out the length of our array, by using the <code>Length</code> property of <code>names</code> like this <code>names.Length</code>. This is something built into the code that returns the length of the array. </p>
+<p>Let&#39;s show in our previous code example how we can use two arrays together within our <em>for loop</em>, to hold two different values. Using two arrays together in this fashion is often referred to as using <em>parrallel arrays</em></p>
+<pre><code>class Program {
+        string[] names = { &quot;Tom&quot;, &quot;Bill&quot;, &quot;Sally&quot;, &quot;Greg&quot;, &quot;Allen&quot; };
+        int[] ages = { 15, 21, 36, 50, 17 };
+
+        public void BrainPadSetup() {
+            for (int i = 0; i &lt; names.Length; i++) {
+                BrainPad.Display.DrawText(10, 10, names[i]);
+
+                BrainPad.Display.DrawText(20, 40, ages[i].ToString());
+
+                BrainPad.Display.ShowOnScreen();
+
+                BrainPad.Wait.Seconds(1);
+
+                BrainPad.Display.ClearScreen();
+            }
+
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, &quot;Finished&quot;);
+        }
+
+        public void BrainPadLoop() {
+
+        }
+    }
+</code></pre><h2 id="foreach-loop">Foreach loop</h2>
+<p>We showed how you can access an array using the for loop. Now we&#39;ll show you how to use the <strong>foreach loop</strong>. The <em>foreach loop</em> is perfect when you have to cycle through only one array at a time. Unlike the previous example where we used parallel arrays, and accessed two different array elements. </p>
+<p>In the code below, you&#39;ll notice the parameters required for the <em>foreach loop</em> are different then the for loop and don&#39;t require 3 parameters. The <em>foreach</em> loop below first creates a string variable called <code>name</code> within it&#39;s parameters. Each time through the <em>foreach loop</em> advances to the next element of the array called <code>names[]</code> and sets our newly created <code>name</code> variable to its value. The <em>foreach loop</em> is a good example of why we pick meanful variable names in our code. </p>
+<pre><code>foreach(string name in names){
+}
+</code></pre><p>Here is a code sample that uses the <em>foreach loop</em> and the <code>names[]</code> array</p>
+<pre><code>class Program {
+        string[] names = { &quot;Tom&quot;, &quot;Bill&quot;, &quot;Sally&quot;, &quot;Greg&quot;, &quot;Allen&quot; };
+        int[] age = { 15, 21, 36, 50, 17 };
+
+        public void BrainPadSetup() {
+            foreach (string name in names) {
+                BrainPad.Display.DrawTextAndShowOnScreen(10, 10, name);              
+            }
+
+            BrainPad.Display.DrawTextAndShowOnScreen(10, 10, &quot;Finished&quot;);
+        }
+
+        public void BrainPadLoop() {
+
+        }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
