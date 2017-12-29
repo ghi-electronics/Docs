@@ -21,15 +21,13 @@ class MyNativeClass {
 Once you have your native API defined, build your project. In the output folder, find and open `pe` and then `Interop`. In there are three files that let TinyCLR connect the managed methods to the native methods. There are two main files that have the same name as your project. These define the entire API. Importantly, there is an object that has the assembly name, its checksum, and an array of its methods. The remaining file contains function stubs for each native method you need to implement from the `MyNativeClass` class. Each function has a single parameter of type `TinyCLR_Interop_MethodData` that can be found in the `TinyCLR.h` file. This type has two memebers: an opaque stack type that you pass to other interop functions and the [API provider](native_apis.md) that gives you access to the runtime. You can use this API provider to find the interop provider. The interop provider allows you to read and write object fields, read arguments passed to the function, write to reference arguments, set the return value, raise other events, and create new managed objects. The following code shows reading from a field and setting it as the return value of the property:
 
 ```cpp
-TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {    
-    auto ip = (const TinyCLR_Interop_Provider*)md.ApiProvider.FindDefault(&md.ApiProvider, TinyCLR_Api_Type::InteropProvider);
-    
-    TinyCLR_Interop_ManagedValue self;
-    TinyCLR_Interop_ManagedValue ret;
-    TinyCLR_Interop_ManagedValue field;
-    
-    ret.Type = TinyCLR_Interop_ManagedValueType::I4;
-    
+TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {
+    auto ip = reinterpret_cast<const TinyCLR_Interop_Provider*>(md.ApiProvider.FindDefault(&md.ApiProvider, TinyCLR_Api_Type::InteropProvider));
+
+    const TinyCLR_Interop_ClrObject* self;
+    TinyCLR_Interop_ClrValue ret;
+    TinyCLR_Interop_ClrValue field;
+
     ip->GetThisObject(ip, md.Stack, self);
     ip->GetField(ip, self, InteropTest_InteropTest_MyNativeClass::FIELD___field___I4, field);
     ip->GetReturn(ip, md.Stack, ret);
@@ -40,7 +38,7 @@ TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(cons
 }
 ```
 
-Now you need tp compile these files. If you don't have GCC yet, see the [porting guide](intro.md) to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We've provided samples of each below.
+Now you need to compile these files. If you don't have GCC yet, see the [porting guide](intro.md) to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We've provided samples of each below.
 
 The makefile is setup to compile all cpp in the same directory it is and to do using for a Cortex M4 architecture. If you're not on CortexM4, change the `MCU_FLAGS` parameter accordingly. The output file is `InteropTest.bin`. You can change that with the `OUTPUT_NAME` property.
 
