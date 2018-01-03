@@ -8,7 +8,7 @@
     <title>Alpha Release Notes </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Alpha Release Notes ">
-    <meta name="generator" content="docfx 2.23.1.0">
+    <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -104,7 +105,7 @@
 <li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
 </ul>
 <h3 id="firmware">Firmware</h3>
-<h4 id="changes">Changes</h4>
+<h4 id="changes-1">Changes</h4>
 <ul>
 <li>Fixed the device not loading drivers over USB.</li>
 <li>Added clicker and clicker2.</li>
@@ -126,7 +127,7 @@
 <li>Very basic object creation in interops has been added, but it fails in many cases and does not run any constructor.</li>
 <li>Removed the <code>stack</code> parameter from <code>ReplaceObject</code> in interop.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-1">Known Issues</h4>
 <ul>
 <li>Rapidly pressing the buttons on the BrainPad may corrupt the display.</li>
 <li>Many UART properties and events are not implemented.</li>
@@ -155,24 +156,24 @@
 <li>The ADC on G80 may be slightly inaccurate <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/45">#45</a>.</li>
 </ul>
 <h3 id="tinyclr-config">TinyCLR Config</h3>
-<h4 id="changes">Changes</h4>
+<h4 id="changes-2">Changes</h4>
 <ul>
 <li>Initial release.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-2">Known Issues</h4>
 <ul>
 <li>The <code>Update Firmware</code> action won&#39;t work in this release because changes were needed in the firmware. Use the <code>Loader</code> tab to manually update the firmware. This will not be required in the next release as long as you have the firmware from this release or newer on the device.</li>
 <li>TinyCLR Config may not function properly with devices running firmwares from before this release due to changes in the communication protocols.</li>
 </ul>
 <h3 id="extension">Extension</h3>
-<h4 id="changes">Changes</h4>
+<h4 id="changes-3">Changes</h4>
 <ul>
 <li>Added a using for <code>GHIElectronics.TinyCLR.BrainPad</code> to the C# <code>BrainPad Application</code> template.</li>
 <li>Removed Expansion from the VB and C# BrainPad application templates.</li>
 <li>Updated URLs in the various NuGet and VSIX packages.</li>
 <li>Forced parity to none when using the serial debugger interface instead of using what the port configures.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-3">Known Issues</h4>
 <ul>
 <li>Some uses of pattern matching may crash the C# compiler.</li>
 <li>Visual Basic resources page generates an incompatible resource file.</li>
@@ -180,7 +181,7 @@
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
 <h2 id="050-on-2017-07-07">0.5.0 on 2017-07-07</h2>
-<h3 id="notes">Notes</h3>
+<h3 id="notes-1">Notes</h3>
 <p>This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!</p>
 <p>You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See <a href="porting/intro.html">here</a> for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See <a href="porting/native_interops.html">here</a> for details.</p>
 <p>To support this, we added a few more classes under <code>System.Runtime.InteropServices</code>. Most important is the <code>Interop</code> class. It allows you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the <code>Marshal</code> class. You can use <code>FindAll</code> to get back a list of all interops registered in the system and <code>RaiseEvent</code> to trigger an event on the specified native event dispatcher.</p>
@@ -189,8 +190,8 @@
 <p>The <code>Api</code> class is used internally by the devices library to talk to the native implementation via the implementation <code>IntPtr</code> provided for the given API name and index. In some cases you can use the <code>GetDefault</code> method on a given device provider to return the default registered API. If there is no default, like for PWM and others, you can pass the <code>Id</code> property in the specific pins class to the desired device provider.</p>
 <p>We added <code>Marshal.GetDelegateForFunctionPointer</code> to enable you to create a quick native interop for a specific address in memory that takes a single <code>ref IntPtr</code> parameter and returns nothing. <code>DeviceInformation</code> was also added to return the device name, manufacturer, and version set on the native side.</p>
 <p>After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing <a href="https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">2016 R1 NETMF SDK</a>.</p>
-<h3 id="libraries">Libraries</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="libraries-1">Libraries</h3>
+<h4 id="changes-4">Changes</h4>
 <ul>
 <li>Added running device detection.</li>
 <li>Added listing, adding, and removing system interops.</li>
@@ -216,7 +217,7 @@
 <li>Reworked BrainPad <code>Servo</code> API.</li>
 <li>Removed BrainPad <code>Board</code> class.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-4">Known Issues</h4>
 <ul>
 <li>Software I2C can lock up the board if a slave device isn&#39;t connected or responds improperly.</li>
 <li>Formatting numbers that cross an assembly boundary can throw an exception.</li>
@@ -226,8 +227,8 @@
 <li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
 <li>Software I2C does not work.</li>
 </ul>
-<h3 id="firmware">Firmware</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="firmware-1">Firmware</h3>
+<h4 id="changes-5">Changes</h4>
 <ul>
 <li>Initial FEZ Cerberus, FEZ, Netduino 3, and Quail firmware release.</li>
 <li>All peripherals are now properly reset on startup.</li>
@@ -236,7 +237,7 @@
 <li>All frequencies now round down.</li>
 <li>Fixed gpio interrupts being slow and something getting missed.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-5">Known Issues</h4>
 <ul>
 <li>Rapidly pressing the buttons on the BrainPad may corrupt the display.</li>
 <li>GpioChangeWriter generates an incorrect signal for periods above 50ms on G400.</li>
@@ -246,15 +247,15 @@
 <li>PWM on controller 8 and up does not work on the G80.</li>
 <li>Deploying over USB when out of memory crashes the board.</li>
 </ul>
-<h3 id="extension">Extension</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="extension-1">Extension</h3>
+<h4 id="changes-6">Changes</h4>
 <ul>
 <li>Removed stray semicolon in BrainPad Visual Basic template.</li>
 <li>Changed BrainPad templates to have a <code>BrainPad</code> static class in them.</li>
 <li>Reduced the number of retries for connecting to device.</li>
 <li>Added namespace to C# BrainPad template.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-6">Known Issues</h4>
 <ul>
 <li>The device may not load drivers on Windows 7 preventing Visual Studio from seeing it.</li>
 <li>Some uses of pattern matching may crash the C# compiler.</li>
@@ -263,11 +264,11 @@
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
 <h3 id="porting">Porting</h3>
-<h4 id="changes">Changes</h4>
+<h4 id="changes-7">Changes</h4>
 <ul>
 <li>Initial release of porting library and API.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-7">Known Issues</h4>
 <ul>
 <li>Marshalling strings does not work.</li>
 <li>Marshalling <code>DateTime</code> and <code>TimeSpan</code> does not work.</li>
@@ -276,14 +277,14 @@
 <li>The USB client API is still very rough and will change.</li>
 </ul>
 <h2 id="040-on-2017-05-10">0.4.0 on 2017-05-10</h2>
-<h3 id="notes">Notes</h3>
+<h3 id="notes-2">Notes</h3>
 <p>This release primarily fixes several bugs; implements more of the serial API; adds <code>DataReader</code>, <code>DataWriter</code>, and <code>Marshal</code> classes; and reworks a lot of the BrainPad API. A new Storage library was added that moves some large members (like <code>DataReader</code>) out of Devices that you may not always needed. There is more to be added to this library down the road. <code>SignalGenerator</code>, <code>SignalCapture</code>, and <code>PulseFeedback</code> were renamed to match the Windows 10 counterparts. Their API will be updated to match as well in a future release.</p>
 <p>The <code>Marshal</code> class under <code>System.Runtime.InteropServices</code> can be used like the old <code>Register</code> and <code>AddressSpace</code> classes to read and write memory. It also adds allocating and releasing unmanaged memory from the managed side that can be manipulated from the other members. </p>
 <p>You can see a quick example on using the new serial API <a href="https://gist.github.com/anonymous/f26c82e463c397cd716c6fb807111913">here</a>. You must use either the <code>DataReader</code> and <code>DataWriter</code> classes or use the <code>WindowsRuntimeBufferExtensions</code> to manipulate a <code>Buffer</code> since the internal array is no longer publicly accessible to match the UWP API. Pay attention to the <code>Load</code> and <code>Store</code> members. You can&#39;t read before calling <code>Load</code> and writes do not get flushed until you call <code>Store</code>.</p>
 <p>There has been no change to the G120 and G400 bootloaders in this release so you do not need to update them if you already have them on your device from the 0.3.0 release.</p>
 <p>After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing <a href="https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">2016 R1 NETMF SDK</a>.</p>
-<h3 id="libraries">Libraries</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="libraries-2">Libraries</h3>
+<h4 id="changes-8">Changes</h4>
 <ul>
 <li>Fixed <code>GpioPin.ValueChanged</code> sender parameter type to be GpioPin.</li>
 <li>Fixed many of the <code>Debug</code> and <code>Trace</code> members not functioning properly.</li>
@@ -312,7 +313,7 @@
 <li>Removed the members of <code>Buffer</code> that don&#39;t conform to the UWP API.</li>
 <li>Renamed <code>SignalGenerator</code> to <code>GpioChangeWriter</code>, <code>SignalCapture</code> to <code>GpioChangeReader</code>, and <code>PulseFeedback</code> to <code>GpioPulseReaderWriter</code>.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-8">Known Issues</h4>
 <ul>
 <li>The original BrainPad display does not currently work with the <code>GHIElectronics.TinyCLR.BrainPad</code> library.</li>
 <li>Software I2C can lock up the board if a slave device isn&#39;t connected or responds improperly.</li>
@@ -321,13 +322,13 @@
 <li>Opening a non-existent UART will only throw when it is used.</li>
 <li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
 </ul>
-<h3 id="firmware">Firmware</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="firmware-2">Firmware</h3>
+<h4 id="changes-9">Changes</h4>
 <ul>
 <li>Fixed the G30 sometimes getting stuck during deployment.</li>
 <li>Added another sector to the G30 deployment region.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-9">Known Issues</h4>
 <ul>
 <li>Rapidly pressing the buttons on the BrainPad may corrupt the display.</li>
 <li>Gpio interrupts may be slow when Visual Studio is connected.</li>
@@ -335,14 +336,14 @@
 <li>An 0xA2000000 error is sent over the debug transport when there is no deployment present.</li>
 <li><code>GpioChangeWriter</code> does not generate proper signals for periods above 50ms on G400.</li>
 </ul>
-<h3 id="extension">Extension</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="extension-2">Extension</h3>
+<h4 id="changes-10">Changes</h4>
 <ul>
 <li>Added a flag on the TinyCLR OS property page to control stub generation style.</li>
 <li>Added the <code>DebuggerNonUserCode</code> attribute to the startup code in BrainPad templates.</li>
 <li>Removed the <code>public</code> modifier from the C# application template.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-10">Known Issues</h4>
 <ul>
 <li>The Visual Basic BrainPad template has a semicolon in the startup file.</li>
 <li>The device may not load drivers on Windows 7 preventing Visual Studio from seeing it.</li>
@@ -352,7 +353,7 @@
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
 <h2 id="030-on-2017-04-06">0.3.0 on 2017-04-06</h2>
-<h3 id="notes">Notes</h3>
+<h3 id="notes-3">Notes</h3>
 <p>This release has several API additions. Some were added as features themselves (software SPI, SignalGenerator, etc) while others were added to support certain features (the VB runtime, string.Format, MemoryStream and IntPtr for Drawing, etc). We&#39;re working to align ourselves with the various <a href="https://github.com/Microsoft/referencesource">.NET Reference Sources</a> available. You&#39;ll also see many new icons throughout, application templates for the BrainPad, and common item templates. The NuGet packages that have dependencies (such as on Core), now require the major and minor versions to match. For example, the 0.3.0 Devices library depends on Core [0.3.0,0.4.0). This is to further our use of SemVer so that the native interop checksum only changes in major and minor versions. See the <a href="https://docs.microsoft.com/en-us/nuget/create-packages/dependency-versions">NuGet docs</a> for more information.</p>
 <p>The biggest addition is the drawing library. It was designed to mirror System.Drawing from the desktop. The basic API is there but there is still more work to be done. To support this, a DisplayController was added to the devices library to configure the display. Since there is no config yet you need to configure the display every time your program starts. A notable change from NETMF is calling flush on a drawing surface the size of the display will no longer draw to the display. Only drawing surfaces created from the FromHdc method passing in the Hdc value from the DisplayController will flush to the display. At this time, only bmp images are supported. Make sure you add a reference to GHIElectronics.TinyCLR.Drawing if using bitmap or font resources. Since it&#39;s in NuGet now it isn&#39;t automatically added.</p>
 <p>Support for Visual Basic has also been reenabled. One important thing to keep in mind is that there is no longer a Microsoft.VisualBasic assembly. We are using the embedded runtime option provided by Roslyn. It relies on several APIs being present in the core library. We added several of the key APIs needed to enable common usage scenarios. If you find you&#39;re getting cryptic compile errors from locations not in your code, let us know so we can evaluate what additional APIs are required.</p>
@@ -362,8 +363,8 @@
 <p>This release also includes the firmware for the G400. It requires an updated bootloader from the one provided on the <a href="https://old.ghielectronics.com/docs/336/g400-bootloader-installation">G400 bootloader installation page</a>. Simply download the bootloader installer from the installation page and replace Bootloader.bin with the bootloader provided in the TinyCLR download package (making sure to rename it to Bootloader.bin). This updated bootloader can still be used to install the NETMF G400 firmware. It will eventually replace the one provided on the installation page.</p>
 <p>After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing <a href="https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">2016 R1 NETMF SDK</a>.</p>
 <p>You can see some examples of the new APIs added in this release <a href="https://gist.github.com/anonymous/63595fe71b867356ce45f7489d7a85bc">here</a>.</p>
-<h3 id="libraries">Libraries</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="libraries-3">Libraries</h3>
+<h4 id="changes-11">Changes</h4>
 <ul>
 <li>PWM now has one controller per frequency source (usually a hardware timer) allowing different frequencies for each controller.</li>
 <li>string.Format should now work in all cases.</li>
@@ -393,7 +394,7 @@
 <li>Added listeners collection to Trace and Debug and a default listener mapped to Debugger.Log.</li>
 <li>Added BrainPad.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-11">Known Issues</h4>
 <ul>
 <li>The sender parameter in the ValueChanged event on GpioPin is an instance of IGpioPinProvider, not GpioPin.</li>
 <li>Opening a non-existent UART will only throw when it is used.</li>
@@ -403,8 +404,8 @@
 <li>Some frequencies may round up instead of down if the requested frequency cannot be met.</li>
 <li>In the Debug class, only WriteLine(string) functions correctly.</li>
 </ul>
-<h3 id="firmware">Firmware</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="firmware-3">Firmware</h3>
+<h4 id="changes-12">Changes</h4>
 <ul>
 <li>G30 should no longer get stuck at waiting for device to initialize.</li>
 <li>PWM no longer takes 40 seconds to start on the G30 and G80.</li>
@@ -412,13 +413,13 @@
 <li>Added support for native int and native unsigned int in runtime</li>
 <li>Added G400 firmware.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-12">Known Issues</h4>
 <ul>
 <li>Deploying to the G30 sometimes fails when writing a sector.</li>
 <li>An 0xA2000000 error is sent over the debug transport when there is no deployment present.</li>
 </ul>
-<h3 id="extension">Extension</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="extension-3">Extension</h3>
+<h4 id="changes-13">Changes</h4>
 <ul>
 <li>Assemblies larger than sector size can now be deployed.</li>
 <li>Added Visual Basic support.</li>
@@ -427,7 +428,7 @@
 <li>Added icons throughout.</li>
 <li>NuGet packages now have a better range dependency for dealing with assembly checksums.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-13">Known Issues</h4>
 <ul>
 <li>Visual Basic resources page generates an incompatible resource file.</li>
 <li>Visual Basic resource files are wrapped in a second namespace.</li>
@@ -435,14 +436,14 @@
 <li>When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.</li>
 </ul>
 <h2 id="020-on-2017-03-07">0.2.0 on 2017-03-07</h2>
-<h3 id="notes">Notes</h3>
+<h3 id="notes-4">Notes</h3>
 <p>You cannot use projects you made for the 0.1.0 version. You must recreate them and re-add your code files because of the changes to the project templates to make them more closely align them with the desktop .NET templates -- you&#39;ll notice the only difference is a few properties which prevent inclusion of reference assemblies. The templates also use the .NET Framework 4.5.2 target framework. This is only for NuGet compatibility going forward and does not mean you can use other libraries targeting that framework. This was done in anticipation of broader project system support of the new PackageReference format currently used in .NET Core which fails with unknown target frameworks.</p>
 <p>The MSBuild package is no longer provided or required. The metadata processor tool has moved internally to the extension and is invoked during deployment to the device. This means that pe and pdbx files are no longer redistributed with their assemblies -- they appear in a pe folder under the output directory when you deploy. We have also rewritten how dependencies are detected for deployment. If you notice any weird failures around assembly resolution or deployment, let us know and send us the entire project as-is so we can diagnose it.</p>
 <p>The information displayed while deploying to the device has also been improved to show more information about what is going on and what stage the deployment is in. We&#39;ve also reworked incremental deployment so that assemblies are deployed one to a flash sector (if space allows) to enable re-deploying only the assemblies that have changed on a sector by sector basis. This greatly increases deployment speed on devices which a large number of flash sectors allocated to deployment.</p>
 <p>This release also includes the firmware for the G120 and G120E. Because the current GHI bootloader on the G120 expects to load TinyBooter, we have provided a second stage bootloader with this preview that you must deploy using the existing GHI bootloader as if you were deploying TinyBooter. Once it is deployed and you restart the device, you&#39;ll notice that it starts our newer <a href="https://old.ghielectronics.com/docs/344/ghi-bootloader">GHI bootloader 2.0</a>. You can then use this second bootloader to deploy the TinyCLR OS firmware. Asserting LDR0 will enter the second bootloader while asserting both LDR0 and LDR1 will enter the original bootloader and allow you to return to NETMF.</p>
 <p>After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing <a href="https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">2016 R1 NETMF SDK</a>.</p>
-<h3 id="libraries">Libraries</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="libraries-4">Libraries</h3>
+<h4 id="changes-14">Changes</h4>
 <ul>
 <li>Formatting numbers works in more cases.</li>
 <li>The built in &quot;en&quot; culture has been removed.</li>
@@ -460,28 +461,28 @@
 <li>The pe and pdbx files are no longer included with the package.</li>
 <li>The package now targets the NET452 TFM.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-14">Known Issues</h4>
 <ul>
 <li>Formatting numbers sometimes returns incorrect values.</li>
 <li>string.Format fails for non-trivial cases.</li>
 <li>There is only one PWM controller currently and since the Windows API has a controller-wide frequency, all PWM channels use the same frequency.</li>
 <li>Some frequencies may round up instead of down if the requested frequency cannot be met.</li>
 </ul>
-<h3 id="firmware">Firmware</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="firmware-4">Firmware</h3>
+<h4 id="changes-15">Changes</h4>
 <ul>
 <li>Added G120/G120E firmware.</li>
 <li>Flushing over USB is quicker.</li>
 <li>GPIO interrupts are now raised reliably.</li>
 <li>The maximum allocation is now 51,539,607,484 bytes.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-15">Known Issues</h4>
 <ul>
 <li>PWM frequencies beyond 45MHz on G80 and 21MHz on G30 can fail.</li>
 <li>PWM may take up to a minute to start on G30 and G80.</li>
 </ul>
-<h3 id="extension">Extension</h3>
-<h4 id="changes">Changes</h4>
+<h3 id="extension-4">Extension</h3>
+<h4 id="changes-16">Changes</h4>
 <ul>
 <li>Breakpoints and the commands dependent on them now function properly.</li>
 <li>References no longer need a solution reload to deploy.</li>
@@ -493,13 +494,13 @@
 <li>The project templates now mirror the desktop templates much more closely.</li>
 <li>The Visual Studio projects now target .NET Framework v4.5.2.</li>
 </ul>
-<h4 id="known-issues">Known Issues</h4>
+<h4 id="known-issues-16">Known Issues</h4>
 <ul>
 <li>Deploying an assembly larger than the flash sector size fails.</li>
 <li>An 0xA2000000 error will get sent over the debug transport whenever there is no app present.</li>
 </ul>
 <h2 id="010-on-2016-12-16">0.1.0 on 2016-12-16</h2>
-<h3 id="known-issues">Known Issues</h3>
+<h3 id="known-issues-17">Known Issues</h3>
 <ul>
 <li>After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it.</li>
 <li>To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing <a href="https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">2016 R1 NETMF SDK</a>.</li>
