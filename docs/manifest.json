@@ -2975,7 +2975,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/porting/native_interops.html",
-          "hash": "5Q2ByllCLWnqgxHdDEBkhw=="
+          "hash": "tLzLbfpkxUhwwYka75B1RA=="
         }
       },
       "is_incremental": false,
@@ -3332,23 +3332,13 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -3356,8 +3346,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
