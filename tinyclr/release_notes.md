@@ -1,5 +1,115 @@
 # Alpha Release Notes
 
+## 0.7.0 on 2018-01-04
+
+### Notes
+This release adds CAN support to many devices. The managed API reflects the UWP provider model, but there are more changes to come. We've also fixed the issue in the latest Visual Studio 15.5 update that prevents projects from building along with many other firmware level bugs. For best results with the 15.5 fix, you should either recreate your projects or remove the `NoStdLib` and `AddAdditionalExplicitAssemblyReferences` properties from your csproj (or vbproj).
+
+There have been several changes around the interop API in this release that makes it easier to interact with managed arguments, fields, and objects including reading, writing, creation, and reassignment. You can find an updated basic example on the [interop docs](porting/native_interops.md). There was also a field added to the API info object that allows the API author to track custom state based on their needs.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. There are no new bootloader releases this time. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
+
+### Libraries
+
+#### Changes
+- Added CAN provider.
+- Added CAN and USB to pins.
+- Fixed builds failing in the latest Visual Studio 15.5 update.
+- Fixed some `DataWriter` not always growing the internal buffer enough causing it to throw.
+- Fixed many errors and inconsistencies in pins.
+- Updated the `ResourceManager` API to match the desktop more closely.
+- Changed `mscorlib.targets` to props so it gets included first and also registered it with `MSBuildAllProjects`.
+
+#### Known Issues
+- Partially transparent ellipses have weird artifacts.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+
+### Firmware
+
+#### Changes
+- Fixed `GpioChangeWriter` generating an incorrect signal for periods above 50ms on G400.
+- Fixed min and max clock values for SPI.
+- Fixed debugging G120 through serial not working [#34](https://github.com/ghi-electronics/TinyCLR-Ports/issues/34).
+- Fixed UART3 and UART4 not working on G120 [#35](https://github.com/ghi-electronics/TinyCLR-Ports/issues/35).
+- Fixed non-blocking `GpioChangeWriter` not working on NXP devices [#36](https://github.com/ghi-electronics/TinyCLR-Ports/issues/36).
+- Fixed the last two PWM being missing on Cerb [#37](https://github.com/ghi-electronics/TinyCLR-Ports/issues/37).
+- Fixed PWM on PB8 and PB9 not working on Cerb [#38](https://github.com/ghi-electronics/TinyCLR-Ports/issues/38).
+- Fixed AT91 modes being incorrect [#57](https://github.com/ghi-electronics/TinyCLR-Ports/issues/57).
+- Fixed 921600 baud not always working on STM32F4 [#91](https://github.com/ghi-electronics/TinyCLR-Ports/issues/91).
+- Fixed some interrupts not working on STM32F4 [#106](https://github.com/ghi-electronics/TinyCLR-Ports/issues/106).
+- Fixed incorrect SPI clock behavior on STM32F4 [#108](https://github.com/ghi-electronics/TinyCLR-Ports/issues/108).
+- Enabled custom GPIO initialization in STM32F4 port [#23](https://github.com/ghi-electronics/TinyCLR-Ports/issues/23).
+
+#### Known Issues
+- When the deployment is erased, a junk assembly list is returned until device reboot.
+- An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
+- Rapidly pressing the buttons on the BrainPad may corrupt the display.
+- Many UART properties and events are not implemented.
+- Deploying over USB when out of memory crashes the board.
+- PWM may jitter when decreasing the pulse length while enabled.
+- Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
+- The LCD on EMM sometimes does not work.
+- UART handshaking may miss data on STM32F4.
+- The LCD has a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
+- ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
+- Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
+- CAN is not present on USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
+- STM32F4 is missing ADC 16 and 17 [#130](https://github.com/ghi-electronics/TinyCLR-Ports/issues/130).
+- PWM does not stop after a soft reset on AT91 [#137](https://github.com/ghi-electronics/TinyCLR-Ports/issues/137).
+
+### TinyCLR Config
+
+#### Changes
+- Added a list to show deployed assemblies.
+- Added a button to enter loader mode.
+- Added a display for separate core and device versions.
+- Fixed crashes when multiple COM ports are present.
+- Fixed many UI issues when rebooting the device.
+- Updated the logo.
+
+#### Known Issues
+- The assembly list is not cleared when rebooting the device.
+- Many features will not function with devices running firmwares before 0.6.0.
+
+### Extension
+
+#### Changes
+- Added support for `CustomToolNamespace`.
+- Readded resx to the My Project dialogs in VB.
+- Readded the Code Analysis project page.
+- Fixed VB resx generating under a second level namespace.
+- Fixed the deploy list order not reflecting what is actually deployed to.
+- Moved two properties from the project templates into the mscorlib.props file referenced by `GHIElectronics.TinyCLR.Core`.
+- Increased the number of retries and decreased the wait between each when attempting to connect to the device.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added the CAN provider.
+- Added `TinyCLR_Result::NoDataAvailable`.
+- Added `TinyCLR_Api_Info::State` for implementer use.
+- Added support for arrays of non-primitives in interops.
+- Added missing RLI region to NXP devices [#46](https://github.com/ghi-electronics/TinyCLR-Ports/issues/46).
+- Added better macros for controlling debugger selection [#53](https://github.com/ghi-electronics/TinyCLR-Ports/issues/53).
+- Fixed the version passed to `SetDeviceInformation` being ignored.
+- Fixed device name and manufacturer for non-GHI devices [#49](https://github.com/ghi-electronics/TinyCLR-Ports/issues/49).
+- Clarified policy around USB VID and PID by assigning one PID under our VID for general use [#27](https://github.com/ghi-electronics/TinyCLR-Ports/issues/27).
+- Heavily reworked the interop API for easier use.
+- Renamed `TinyCLR_Power_Sleep_Level` to `TinyCLR_Power_SleepLevel`.
+
+#### Known Issues
+- The USB host API is missing.
+- The USB client API is still very rough and will change.
+
 ## 0.6.0 on 2017-08-31
 
 ### Notes
