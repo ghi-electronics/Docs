@@ -35,7 +35,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - Fixed non-blocking `GpioChangeWriter` not working on NXP devices [#36](https://github.com/ghi-electronics/TinyCLR-Ports/issues/36).
 - Fixed the last two PWM being missing on Cerb [#37](https://github.com/ghi-electronics/TinyCLR-Ports/issues/37).
 - Fixed PWM on PB8 and PB9 not working on Cerb [#38](https://github.com/ghi-electronics/TinyCLR-Ports/issues/38).
-- Fixed AT91 modes being incorrect [#57](https://github.com/ghi-electronics/TinyCLR-Ports/issues/57).
+- Fixed AT91 SPI modes being incorrect [#57](https://github.com/ghi-electronics/TinyCLR-Ports/issues/57).
 - Fixed 921600 baud not always working on STM32F4 [#91](https://github.com/ghi-electronics/TinyCLR-Ports/issues/91).
 - Fixed some interrupts not working on STM32F4 [#106](https://github.com/ghi-electronics/TinyCLR-Ports/issues/106).
 - Fixed incorrect SPI clock behavior on STM32F4 [#108](https://github.com/ghi-electronics/TinyCLR-Ports/issues/108).
