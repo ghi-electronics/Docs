@@ -31,7 +31,7 @@
 ## [Native Interops](porting/native_interops.md)
 ## [Native APIs](porting/native_apis.md)
 
-# [Internet of Things](internetofthings.md)
+# [Internet of Things](internet_of_things.md)
 # [TinyCLR Config](tinyclr_config.md)
 # [Downloads](downloads.md)
 # [Release Notes](release_notes.md)
