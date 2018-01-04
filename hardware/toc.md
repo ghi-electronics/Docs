@@ -15,6 +15,7 @@
 ### [G120](products/scm/g120.md)
 
 ## [UCM](products/ucm/intro.md)
+### [UC2550](products/ucm/uc2550.md)
 ### [UC5550](products/ucm/uc5550.md)
 ### [G400](products/ucm/g400.md)
 
