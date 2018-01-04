@@ -2530,6 +2530,7 @@
     },
     {
       "log_codes": [
+        "InvalidYamlHeader",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -2987,7 +2988,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "7KFPE4njV2BqXuCDXBPekw=="
+          "hash": "QmrpD7wwUmUb6M+ZTPWHlA=="
         }
       },
       "is_incremental": false,
@@ -3332,7 +3333,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -3347,7 +3349,7 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

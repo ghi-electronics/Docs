@@ -62,6 +62,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - CAN is not present on USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
 - STM32F4 is missing ADC 16 and 17 [#130](https://github.com/ghi-electronics/TinyCLR-Ports/issues/130).
 - PWM does not stop after a soft reset on AT91 [#137](https://github.com/ghi-electronics/TinyCLR-Ports/issues/137).
+- PWM on PB6 for G30 does not work [#141](https://github.com/ghi-electronics/TinyCLR-Ports/issues/141).
 
 ### TinyCLR Config
 
