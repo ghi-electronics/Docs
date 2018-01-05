@@ -118,9 +118,9 @@ The peripherals found on each module may vary.
 | 50            | LCD 24bpp B2                  |
 | 51            | GND                           |
 | 52            | Module Specific 9             |
-| 53            | I2S SCK                       |
-| 54            | I2S WD                        |
-| 55            | I2S WS                        |
+| 53            | Reserved                      |
+| 54            | Reserved                      |
+| 55            | Reserved                      |
 | 56            | 5V                            |
 | 57            | IRQ A                         |
 | 58            | IRQ B                         |
