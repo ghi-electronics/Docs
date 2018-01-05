@@ -98,6 +98,7 @@
 <li>Partially transparent ellipses have weird artifacts.</li>
 <li>Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.</li>
 <li>Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.</li>
+<li><code>PwmController.ActualFrequency</code> is always 0.</li>
 </ul>
 <h3 id="firmware">Firmware</h3>
 <h4 id="changes-1">Changes</h4>
@@ -138,6 +139,8 @@
 <li>STM32F4 is missing ADC 16 and 17 <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/130">#130</a>.</li>
 <li>PWM does not stop after a soft reset on AT91 <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/137">#137</a>.</li>
 <li>PWM on PB6 for G30 does not work <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/141">#141</a>.</li>
+<li>UART2 handshaking does not work on NXP devices <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/143">#143</a>.</li>
+<li>Several PWMs on NXP do not work at most frequencies <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/144">#144</a>.</li>
 </ul>
 <h3 id="tinyclr-config">TinyCLR Config</h3>
 <h4 id="changes-2">Changes</h4>
