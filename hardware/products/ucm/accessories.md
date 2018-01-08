@@ -1,5 +1,4 @@
 # UCM Accessories
----
 The UCM accessories are the main development tools available to begin the process of integrating the UC modules into an application.
 
 ## UCM Dev Board
