@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>G400 </title>
+    <title>UCM Accessories </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="G400 ">
+    <meta name="title" content="UCM Accessories ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,49 +75,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="g400">G400</h1>
+<h1 id="ucm-accessories">UCM Accessories</h1>
 
-<p><img src="images/g400s.jpg" alt="G400S"> <img src="images/g400d.jpg" alt="G400D"></p>
-<p>G400S and G400D are .NET Micro Framework (NETMF) System on Modules.</p>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Documents/Datasheets/G400S%20and%20G400D%20Datasheet.pdf">Datasheet</a></li>
-</ul>
-<h1 id="using-the-netmf-software">Using the NETMF software</h1>
-<p>We discourage the use of NETMF software on our products in favor for TinyCLR OS. <a href="../../legacy_products/netmf/intro.html">Read more</a> about the use of NETMF and TinyCLR OS.</p>
-<h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
-<p>If haven&#39;t yet, read about using NETMF devices <a href="../../legacy_products/netmf/intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
-<h2 id="loading-bootloader-version-2">Loading Bootloader Version 2</h2>
-<ol>
-<li>Download the <a href="../../loaders/ghi_bootloader.html#g400">bootloader file</a>.</li>
-<li>Download and install SAM-BA. We tested <a href="https://old.ghielectronics.com/downloads/NETMF/SDK/sam-ba.2.12.exe">SAM-BA.2.12.exe</a> but we should move to <a href="http://www.atmel.com/tools/ATMELSAM-BAIN-SYSTEMPROGRAMMER.aspx">SAM-BA.2.16 for Windows</a></li>
-<li>Download and unzip the <a href="http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20Installer.zip">update scripts</a>. You will have a folder called <code>G400 Bootloader Installer</code>.</li>
-<li>Rename the bootloader file, downloaded earlier, to bootloader.bin and move it to the <code>G400 Bootloader Installer</code> folder.</li>
-<li>Connect SPI1_MISO pin to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. on FEZ Raptor, SPI1_MISO is pin 8 on socket 3.</li>
-<li>Open up the Device Manager, look under Ports, and find a COM port similar to &quot;Bossa Program Port&quot; or &quot;GPS Detect&quot;.</li>
-<li>In the <code>G400 Bootloader Installer</code> folder, run <code>Flash Bootloader.bat</code>.</li>
-<li>When prompted, enter the number of the COM port found under Device Manager. For example: for COM10, enter just 10.</li>
-<li>You will see &quot;Bootloader Update Complete&quot; when the update is finished. The update will take several minutes.</li>
-</ol>
-<h2 id="loading-the-firmware">Loading the Firmware</h2>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
-</div>
-<p>To activate bootloader v2, hold the LDR0 signal low while resetting the board.</p>
-<p>Download the <a href="../../../tinyclr/downloads.html#g400">G400 firmware</a> and follow <a href="../../loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
-<div class="TIP"><h5>Tip</h5><p>The upload takes several seconds to start. Wait about a minute to start seeing the upload progress.</p>
-</div>
-<h1 id="g400-based-products">G400 Based products</h1>
-<h2 id="g400-development-board">G400 Development Board</h2>
-<p><img src="images/g400dev.jpg" alt="G400 Dev board"></p>
-<p>The development system used for evaluating the G400 SoM.</p>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/Systems/G400D%20Dev%20Board%20Schematic.pdf">Schematic</a></li>
-</ul>
-<h2 id="g400-th-module">G400 TH Module</h2>
-<p><img src="images/g400th.jpg" alt="G400 TH board"></p>
-<p>A though-hole version of G400.</p>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/Systems/G400TH%20Schematic.pdf">Schematic</a></li>
-</ul>
+<p>The UCM accessories are the main development tools available to begin the process of integrating the UC modules into an application.</p>
+<h2 id="ucm-dev-board">UCM Dev Board</h2>
+<p><img src="images/ucm_dev_board.jpg" alt="UCM Dev board"></p>
+<p>The UCM Dev Board is the development system designed to expose various peripherals by either typical connectors, such as the RJ45 Ethernet connector or the D-SUB9 connector for UART serial connections, or with female headers to allow bread-board level wiring to connect to various external accessories.</p>
+<h2 id="ucm-breakout">UCM Breakout</h2>
+<p><img src="images/ucm_breakout.jpg" alt="UCM Breakout"></p>
+<p>A quick break-out to allow the user to wire any type of connector to their prototype via a bread-board or direct soldering.</p>
+<h2 id="ud435">UD435</h2>
+<p><img src="images/ud435.jpg" alt="UD435"></p>
+<p>A 4.3 inch or 5 inch capacitive touch LCD screen for the UCM Dev Board or UCM Breakout.</p>
+<h2 id="ud700">UD700</h2>
+<p><img src="images/ud700.jpg" alt="UD700"></p>
+<p>A 7 inch capacitive touch LCD screen for the UCM Dev Board or UCM Breakout.</p>
 </article>
           </div>
           
@@ -126,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/products/ucm/g400.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/products/ucm/accessories.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
