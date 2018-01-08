@@ -17,7 +17,7 @@
 ## [UCM](products/ucm/intro.md)
 ### [UC5550](products/ucm/uc5550.md)
 ### [G400](products/ucm/g400.md)
-### [UCM Accessories](products/ucm/accessories.md)
+### [Accessories](products/ucm/accessories.md)
 
 # [Legacy Products](legacy_products/intro.md)
 
