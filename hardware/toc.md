@@ -13,11 +13,13 @@
 ### [G30](products/scm/g30.md)
 ### [G80](products/scm/g80.md)
 ### [G120](products/scm/g120.md)
+### [G400S](products/scm/g400s.md)
 
 ## [UCM](products/ucm/intro.md)
 ### [UC2550](products/ucm/uc2550.md)
 ### [UC5550](products/ucm/uc5550.md)
-### [G400](products/ucm/g400.md)
+### [G400D](products/ucm/g400d.md)
+### [Accessories](products/ucm/accessories.md)
 
 # [Legacy Products](legacy_products/intro.md)
 
