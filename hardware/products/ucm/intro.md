@@ -283,24 +283,8 @@ For larger additional components (67.75mm x 47.625mm).
 
 For larger additional components (67.75mm x 63.5mm).
 
-# Related Products (Accessories)
+# [Development Tools](accessories.md)
 ---
-## UCM Dev Board
-![UCM Dev board](images/ucm_dev_board.jpg)
+UCM Dev Board
 
-The development system used for evaluating the UCM.
-
-## UCM Breakout
-![UCM Breakout](images/ucm_breakout.jpg)
-
-A quick break-out of more widely used peripherals.
-
-## UD435
-![UD435](images/ud435.jpg)
-
-A 4.3 inch or 5 inch capacitive touch LCD screen for the UCM Dev Board or UCM Breakout.
-
-## UD700
-![UD700](images/ud700.jpg)
-
-A 7 inch capacitive touch LCD screen for the UCM Dev Board or UCM Breakout.
+UCM Breakout
