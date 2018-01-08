@@ -14,7 +14,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ## Loading GHI Bootloader v2
-Follow the exact same steps found on the [G400](../../products/ucm/g400.md) page.
+Follow the exact same steps found on the [G400](../../products/scm/g400s.md) page.
 
 ## Loading the Firmware
 
