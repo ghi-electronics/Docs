@@ -16,6 +16,7 @@
 ### [G400S](products/scm/g400s.md)
 
 ## [UCM](products/ucm/intro.md)
+### [UC2550](products/ucm/uc2550.md)
 ### [UC5550](products/ucm/uc5550.md)
 ### [G400D](products/ucm/g400d.md)
 ### [Accessories](products/ucm/accessories.md)
