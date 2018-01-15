@@ -4,7 +4,7 @@ TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpr
 
 1. Clone the [ports repo](https://github.com/ghi-electronics/TinyCLR-Ports) to your computer. If you're new to git or haven't even heard of it, take a look at the [Git Book](https://git-scm.com/book/en/v2) to learn more about it.
 2. Download and install [GCC](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). The latest version we have tested is `7-2017-q4-major`.
-3. Download and extract the contents of [CMSIS](https://github.com/ARM-software/CMSIS/releases/download/v4.3.0/ARM.CMSIS.4.3.0.pack) into the CMSIS folder of the cloned repo. While the file extension is `*.pack`, it's actually a zip that you can extract once you rename it to `*.zip`.
+3. Download and extract the contents of [CMSIS](https://github.com/ARM-software/CMSIS_5/releases/download/5.2.0/ARM.CMSIS.5.2.0.pack) into the CMSIS folder of the cloned repo. While the file extension is `*.pack`, it's actually a zip that you can extract once you rename it to `*.zip`.
 4. Download and extract the latest [TinyCLR OS Core Library](https://github.com/ghi-electronics/TinyCLR-Ports/releases) into the Core folder of the cloned repo.
 5. Open a command prompt, change the directory to the cloned repo, and then execute `build.bat FEZCLR`.
 
