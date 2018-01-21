@@ -30,9 +30,9 @@ Low speed or fault tolerant CAN uses a linear bus, star bus, or multiple star bu
 ## The TinyCLR CAN Interface
 The TinyCLR CAN API provides several methods for sending and receiving CAN messages.
 
-### Sending CAN Messages
+### Configuring the bus
+Before you can communicate over the CAN bus, the processor needs to know the characteristics of the bus so all nodes can communicate properly.
 
-#### The SetBitTiming() Method
 `SetBitTiming()` defines the CAN bus timing using the arguments listed below.  Due to the complexity of CAN bus timing, CAN bit rate calculators are available online which you may find helpful.  Please refer to the processor datasheet for a full description of the following parameters.
 
 The `propagation` argument is used to compensate for the physical delay times of the network and includes the input comparator delay, the output driver delay and the propagation delay of the bus itself (which is affected by the length of the CAN bus wiring).  `Propagation` uses time quanta as a unit of measurement.
@@ -49,23 +49,25 @@ When true, `useMultiBitSampling` will cause the bus to be sampled three times fo
 
 In the sample code below the CAN bus is communicating at 1 Megabit per second over a short bus.
 
-#### The WriteMessage() Method
+### Sending CAN Messages
+
+#### `WriteMessage()`
 `WriteMessage()` writes a single CAN message.  Each CAN message is defined by eight data bytes, an arbitration ID, the length (number of bytes to send), and two Boolean arguments which specify if the transmission is a remote transmission request and whether the message uses an extended arbitration ID.  Extended arbitration IDs are 29 bits long, standard IDs are 11 bits long.
 
-#### The WriteMessages() Method
+#### `WriteMessages()`
 The `WriteMessages()` method is used to send an array of CAN messages.  The arguments for this function are the array of CAN messages followed by an `offset` and `count` integer values.  The `offset` is the array subscript of the first message to send, while `count` specifies how many messages to send.
  
 ### Receiving CAN Messages
 
-#### The ReadMessage() Method
+#### `ReadMessage()`
 `ReadMessage()` receives a CAN message and includes the `ArbitrationId`, `IsExtendedId`, `IsRemoteTransmissionRequest`, `TimeStamp` and `Data` properties.
 
 ### Filtering Incoming CAN Messages
 
-#### The SetGroupFilters() Method
+#### `SetGroupFilters()`
 `SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
 
-#### The SetExplicitFilters() Method
+#### `SetExplicitFilters()`
 `SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted in addition to the arbitration IDs specified by the group filters.
 
 ## Sample Code
@@ -77,15 +79,15 @@ using System.Diagnostics;
 using System.Threading;
 using GHIElectronics.TinyCLR.Devices.Can;
 using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Pins;
 
 namespace CanExample {
     class Program {
         static void Main() {
-            GpioPin downButton = GpioController.GetDefault().OpenPin(G120E.GpioPin.P0_22);
+            var downButton = GpioController.GetDefault().OpenPin(0);
+            
             downButton.SetDriveMode(GpioPinDriveMode.InputPullUp);
 
-            CanController myCanBus = CanController.FromId(G120E.CanBus.Can1);
+            var can = CanController.FromId(G120E.CanBus.Can1);
 
             var propagation = 0;
             var phase1 = 7;
@@ -94,8 +96,7 @@ namespace CanExample {
             var synchronizationJumpWidth = 1;
             var useMultiBitSampling = false;
 
-            myCanBus.SetBitTiming(new CanBitTiming(propagation, phase1, phase2, baudratePrescaler,
-                synchronizationJumpWidth, useMultiBitSampling));
+            can.SetBitTiming(new CanBitTiming(propagation, phase1, phase2, baudratePrescaler, synchronizationJumpWidth, useMultiBitSampling));
 
             var message = new CanMessage() {
                 Data = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2E, 0x20, 0x20 },
@@ -105,72 +106,40 @@ namespace CanExample {
                 IsExtendedId = false
             };
 
-            uint[] lowerBounds = new uint[] { 0x12, 0x500 };
-            uint[] upperBounds = new uint[] { 0x20, 0x1000 };
-            myCanBus.SetGroupFilters(lowerBounds, upperBounds);
+            var lowerBounds = new uint[] { 0x12, 0x500 };
+            var upperBounds = new uint[] { 0x20, 0x1000 };
+            can.SetGroupFilters(lowerBounds, upperBounds);
 
-            uint[] explicitFilter = new uint[] { 0x11, 0x5678 };
-            myCanBus.SetExplicitFilters(explicitFilter);
+            var explicitFilter = new uint[] { 0x11, 0x5678 };
+            can.SetExplicitFilters(explicitFilter);
 
-            myCanBus.MessageReceived += CanController_MessageReceived;
-            myCanBus.ErrorReceived += CanController_ErrorReceived;
+            can.MessageReceived += CanController_MessageReceived;
+            can.ErrorReceived += CanController_ErrorReceived;
 
             while (true) {
-                if (downButton.Read() == GpioPinValue.Low) {
-                    myCanBus.WriteMessage(message);
-                }
+                if (downButton.Read() == GpioPinValue.Low)
+                    can.WriteMessage(message);
+					
                 Thread.Sleep(100);
             }
         }
 
         private static void CanController_MessageReceived(CanController sender, MessageReceivedEventArgs e) {
-            CanMessage message;
-            sender.ReadMessage(out message);
+            sender.ReadMessage(out var message);
 
             Debug.WriteLine("Arbritration ID: 0x" + message.ArbitrationId.ToString("X8"));
             Debug.WriteLine("Is extended ID: " + message.IsExtendedId.ToString());
             Debug.WriteLine("Is remote transmission request: " + message.IsRemoteTransmissionRequest.ToString());
             Debug.WriteLine("Time stamp: " + message.TimeStamp.ToString());
 
-            string data = "";
-            for (int i = 0; i < message.Length; i++) data += (Convert.ToChar(message.Data[i]));
+            var data = "";
+            for (var i = 0; i < message.Length; i++)
+			    data += Convert.ToChar(message.Data[i]);
 
             Debug.WriteLine("Data: " + data);
         }
 
-        private static void CanController_ErrorReceived(CanController sender, ErrorReceivedEventArgs e) {
-            Debug.WriteLine("Error " + e.ToString());
-        }
+        private static void CanController_ErrorReceived(CanController sender, ErrorReceivedEventArgs e) => Debug.WriteLine("Error " + e.ToString());
     }
 }
-```
-
-The `WriteMessages()` method works with an array of CAN messages.  The following sample code will send `message1` and `message2`, but not `message0`.
-
-```csharp
-var message0 = new CanMessage() {
-    Data = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2E, 0x20, 0x20 },
-    ArbitrationId = (0x11),
-    Length = 6,
-    IsRemoteTransmissionRequest = false,
-    IsExtendedId = false
-};
-var message1 = new CanMessage() {
-    Data = new byte[] { 0x47, 0x6F, 0x6F, 0x64, 0x62, 0x79, 0x65, 0x20 },
-    ArbitrationId = (0x11),
-    Length = 7,
-    IsRemoteTransmissionRequest = false,
-    IsExtendedId = false
-};
-var message2 = new CanMessage() {
-    Data = new byte[] { 0x32, 0x63, 0x6F, 0x6F, 0x6C, 0x34, 0x75, 0x20 },
-    ArbitrationId = (0x11),
-    Length = 7,
-    IsRemoteTransmissionRequest = false,
-    IsExtendedId = false
-};
-. . .
-var offset = 1;
-var count = 2;
-myCanBus.WriteMessages(new CanMessage[] { message0, message1, message2 }, offset, count);
 ```
