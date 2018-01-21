@@ -8,6 +8,7 @@
 ## [PWM](tutorials/pwm.md)
 ## [ADC](tutorials/adc.md)
 ## [DAC](tutorials/dac.md)
+## [CAN](tutorials/can.md)
 ## [Display](tutorials/display.md)
 ## [Gpio Change Writer](tutorials/gpiochangewriter.md)
 ## [Gpio Change Reader](tutorials/gpiochangereader.md)
