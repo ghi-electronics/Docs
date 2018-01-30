@@ -2296,7 +2296,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/scm/g400s.html",
-          "hash": "MfO17JwlU99SAUKbwkpSSA=="
+          "hash": "ocmK5VzyAs+TqzS8L1aZAw=="
         }
       },
       "is_incremental": false,
@@ -2353,6 +2353,17 @@
       "output": {
         "resource": {
           "relative_path": "hardware/products/scm/images/fez_panda_ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/fez_raptor.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/fez_raptor.jpg"
         }
       },
       "is_incremental": false,
@@ -2419,6 +2430,17 @@
       "output": {
         "resource": {
           "relative_path": "hardware/products/scm/images/g30th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/products/scm/images/g400s.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/products/scm/images/g400s.jpg"
         }
       },
       "is_incremental": false,
@@ -3038,7 +3060,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/roadmap.html",
-          "hash": "7u3Gl1SkAXAssg1bb/jcMw=="
+          "hash": "GtElR4oKv2tB5IBte1fy4Q=="
         }
       },
       "is_incremental": false,
@@ -3062,7 +3084,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/toc.html",
-          "hash": "jozMbT20hfEq9PbwB5wZlA=="
+          "hash": "vigG2JLGdsofe8cMYgth/w=="
         }
       },
       "is_incremental": false,
@@ -3075,6 +3097,18 @@
         ".html": {
           "relative_path": "tinyclr/tutorials/adc.html",
           "hash": "7ie2Phq7OL4tnzxjyz2EaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tinyclr/tutorials/can.md",
+      "output": {
+        ".html": {
+          "relative_path": "tinyclr/tutorials/can.html",
+          "hash": "gsr3SfoF6RXCZA99mEbwwQ=="
         }
       },
       "is_incremental": false,
@@ -3308,6 +3342,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "tinyclr/tutorials/images/can_bus.png",
+      "output": {
+        "resource": {
+          "relative_path": "tinyclr/tutorials/images/can_bus.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "tinyclr/tutorials/intro.md",
       "output": {
@@ -3381,13 +3426,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
