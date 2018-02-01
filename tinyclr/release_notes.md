@@ -1,5 +1,102 @@
 # Alpha Release Notes
 
+## 0.8.0 on 2018-02-01
+
+### Notes
+This release adds a firmware and bootloader for the FEZ Hydra, a driver for the SPWF04Sx Wi-Fi module from STMicroelectronics, and a build of the core for Cortex-M7 based devices. We've also updated to the latest GCC and CMSIS builds, so be sure to visit the [porting](porting/intro.md) page to ensure you have the latest if you build your own firmware.
+
+Also added are overloads to the various SPI and I2C write and read functions that take an offset and a count so you no longer need to pass exact sized buffers. The previous overloads still exist for compatibility  with UWP. While they're not yet exposed in managed code publicly, UART and CAN now allow you to customize the size of the read and write buffer for each port to suit your needs.
+
+Additionally, we've also added `GetString` to the Encoding class (as before, only UTF8 is provided by default). It takes a byte array so you can create a string without having to use an intermediate char array, potentially wasting space. Additionally, since strings are represented as UTF8 internally, you can save on having your already-UTF8 `byte[]` converted to UTF16 when it's converted to `char[]`, then back to UTF8 when using that `char[]` to create a string.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
+
+### Libraries
+
+#### Changes
+- Added `Encoding.GetString`.
+- Added `string.IsNullOrEmpty`.
+- Added the non-generic `System.Action` delegate.
+- Added various overloads to I2C and SPI write and read that take an offset and count.
+- Added the Wi-Fi pins to the `FEZ` pins class.
+- Added the missing I2C on Cerb socket 1 pins.
+- Added driver for STMicroelectronics SPWF04Sx Wi-Fi module.
+- Fixed offset in CAN `WriteMessages` having no effect.
+- Fixed `PwmController.ActualFrequency` never being set.
+
+#### Known Issues
+- Partially transparent ellipses have weird artifacts.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+- Large responses for `HttpGet` and `HttpPost` on SPWF04Sx will overflow the internal buffer.
+
+### Firmware
+
+#### Changes
+- Added FEZ Hydra.
+- Added ADC 16 and 17 to STM32F4 [#130](https://github.com/ghi-electronics/TinyCLR-Ports/issues/130).
+- Improved native SPI driver stability. [#128](https://github.com/ghi-electronics/TinyCLR-Ports/issues/128).
+- Changed CAN and UART default buffer sizes to be per-port. [#154](https://github.com/ghi-electronics/TinyCLR-Ports/issues/154).
+- Fixed I2C on LPC24 based devices failing after soft reset [#164](https://github.com/ghi-electronics/TinyCLR-Ports/issues/164).
+- Fixed most frequencies on many PWMs not working on LPC17 and LPC24. [#144](https://github.com/ghi-electronics/TinyCLR-Ports/issues/144).
+- Fixed handshaking on UART2 for LPC17 and LPC24 not working. [#143](https://github.com/ghi-electronics/TinyCLR-Ports/issues/143).
+- Fixed PWM on PB6 and PB7 not working on the G30. [#141](https://github.com/ghi-electronics/TinyCLR-Ports/issues/141).
+- Fixed PWM not stopping on soft reset on the AT91. [#137](https://github.com/ghi-electronics/TinyCLR-Ports/issues/137).
+- Fixed UART6 on Cerb being mapped incorrectly.
+
+#### Known Issues
+- An internal error may sometimes occur during deployment. Reset the board, cancel deployment, and try again to work around it.
+- Many UART properties and events are not implemented.
+- Deploying over USB when out of memory crashes the board.
+- PWM may jitter when decreasing the pulse length while enabled.
+- Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
+- The LCD on EMM sometimes does not work.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- The LCD has a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
+- ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
+- Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
+- CAN is not present on USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
+- `Debug.WriteLine` sometimes does not output anything [#173](https://github.com/ghi-electronics/TinyCLR-Ports/issues/173).
+
+### TinyCLR Config
+
+#### Changes
+- Fixed the assembly list not clearing during reboot.
+
+#### Known Issues
+- Many features will not function with devices running firmwares before 0.6.0.
+
+### Extension
+
+#### Changes
+- Fixed the list of assemblies after erase being populated with garbage.
+- Fixed strings in the debugger longer than 128 characters displaying as garbage. [#169](https://github.com/ghi-electronics/TinyCLR-Ports/issues/169).
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added Cortex-M7 build.
+- Added `length` parameter to `TinyCLR_Display_Provider::WriteString`.
+- Added `length` parameter to `TinyCLR_Interop_Provider::CreateString`.
+- Added `TinyCLR_Debugger_Provider::Log`.
+- Added members to the native CAN and UART providers to control the buffer sizes.
+- Renamed `TinyCLR_Startup_SetDebugger` to `TinyCLR_Startup_SetDebuggerTransportProvider`.
+- Updated to latest CMSIS.
+- Updated to latest GCC.
+
+#### Known Issues
+- The USB host API is missing.
+- The USB client API is still very rough and will change.
+
 ## 0.7.0 on 2018-01-04
 
 ### Notes
