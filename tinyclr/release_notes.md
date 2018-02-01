@@ -29,6 +29,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
 - Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
 - Large responses for `HttpGet` and `HttpPost` on SPWF04Sx will overflow the internal buffer.
+- `SpiDevice::TransferFullDuplex` requires same-sized arrays to function correctly.
 
 ### Firmware
 
