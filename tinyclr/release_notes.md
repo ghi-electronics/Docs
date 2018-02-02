@@ -9,6 +9,8 @@ Also added are overloads to the various SPI and I2C write and read functions tha
 
 Additionally, we've also added `GetString` to the Encoding class (as before, only UTF8 is provided by default). It takes a byte array so you can create a string without having to use an intermediate char array, potentially wasting space. Additionally, since strings are represented as UTF8 internally, you can save on having your already-UTF8 `byte[]` converted to UTF16 when it's converted to `char[]`, then back to UTF8 when using that `char[]` to create a string.
 
+To get started with the FEZ Hydra, you'll need to install the GHI Bootloader. Follow [these steps](../hardware/legacy_products/gadgeteer/fez_hydra.md#using_tinyclr_os) to get going.
+
 As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
 
 ### Libraries
