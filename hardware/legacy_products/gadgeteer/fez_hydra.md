@@ -11,10 +11,19 @@ FEZ Hydra is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
 # Using TinyCLR OS
-If you haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
+TinyCLR is our own operating system and provides a means of programming embedded devices using .NET and Visual Studio.  Visual Studio is widely regarded as one of the best (if not the best) integrated development environments available.  The free Community version of Visual Studio can be downloaded here:  [Visual Studio Downloads](https://www.visualstudio.com/downloads/).  For information on setting up TinyCLR to work in Visual Studio please click here:  [TinyCLR Introduction](../../../tinyclr/intro.md)
 
 ## Loading Bootloader v2
-(coming soon!)
+1. Download the [bootloader file](../../loaders/ghi_bootloader.md#fezhydra).
+2. Enter SAM-BA mode by connecting SPI1_MISO pin to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. On later revisions of the board, you can hold down the small button labelled `S1` near the processor instead.
+3. Open up the Device Manager, look under Ports, and find a COM port similar to "Bossa Program Port" or "GPS Detect".
+4. Follow the steps for the [SAM-BA bootloader](../../loaders/samba_bootloader.md), connecting to the COM port in the previous step. The FEZ Hydra is based on the AT91SAM9RL64-EK. You may get a warning saying that external RAM access is required to run applets. Click yes that you do want to continue anyway.
 
 ## Loading the Firmware
-(coming soon!)
+
+> [!Tip]
+> First make sure you have bootloader v2 loaded. This needs to be done only once.
+
+To activate bootloader v2, hold the LDR0 (socket 3, pin 3) signal low while resetting the board.
+
+Download the [FEZHydra firmware](../../../tinyclr/downloads.md#fezhydra) and follow [Loading the Firmware](../../loaders/ghi_bootloader.md#loading-the-firmware) steps.
