@@ -619,7 +619,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy_products/gadgeteer/fez_hydra.html",
-          "hash": "TPO9SURzFsumFrvsc81zFA=="
+          "hash": "Oq/L+J/DAchWHhQRkw1wUQ=="
         }
       },
       "is_incremental": false,
@@ -2155,7 +2155,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/loaders/ghi_bootloader.html",
-          "hash": "7H4b9OH5qu+Xo58AQrcyXQ=="
+          "hash": "sadZmNzC1iMQRLADZncnpw=="
         }
       },
       "is_incremental": false,
@@ -2180,6 +2180,18 @@
         ".html": {
           "relative_path": "hardware/loaders/mikro_bootloader.html",
           "hash": "e08hmDM78KvTAVp5BNsWEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/loaders/samba_bootloader.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/loaders/samba_bootloader.html",
+          "hash": "3tX/El56Dvjh0Ocp+s47kA=="
         }
       },
       "is_incremental": false,
@@ -2296,7 +2308,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/scm/g400s.html",
-          "hash": "ocmK5VzyAs+TqzS8L1aZAw=="
+          "hash": "SgKEE6UP3+LakaO82atvjQ=="
         }
       },
       "is_incremental": false,
@@ -2512,7 +2524,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/products/ucm/g400d.html",
-          "hash": "7BlHb/MiBrkeYFPoiF0ZDA=="
+          "hash": "FArX2YaRcs327wEY/7f3zw=="
         }
       },
       "is_incremental": false,
@@ -2953,7 +2965,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/downloads.html",
-          "hash": "0S+0ffN8XEK0oXY//mK8Sg=="
+          "hash": "uAs+jg4iMjH7KxMlLJUJQw=="
         }
       },
       "is_incremental": false,
@@ -3048,7 +3060,7 @@
       "output": {
         ".html": {
           "relative_path": "tinyclr/release_notes.html",
-          "hash": "Be4j9PA+KPkVP1ZemUas0Q=="
+          "hash": "W/wacczacrtcYUc6oLV3tA=="
         }
       },
       "is_incremental": false,
@@ -3426,13 +3438,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
