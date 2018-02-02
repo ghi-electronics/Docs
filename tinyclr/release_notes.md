@@ -59,11 +59,11 @@ As before, you can find all downloads in their respective sections on the [downl
 - The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
 - ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
 - PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
-- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
 - Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
 - The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
 - CAN is not present on USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
 - `Debug.WriteLine` sometimes does not output anything [#173](https://github.com/ghi-electronics/TinyCLR-Ports/issues/173).
+- Trying to use handshaking on a UART port that doesn't support it does not throw an exception [#175](https://github.com/ghi-electronics/TinyCLR-Ports/issues/175).
 
 ### TinyCLR Config
 
@@ -81,6 +81,7 @@ As before, you can find all downloads in their respective sections on the [downl
 
 #### Known Issues
 - When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
 
 ### Porting
 
