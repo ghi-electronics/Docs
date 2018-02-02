@@ -94,6 +94,11 @@ File | Date | Status | MD5
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
 [v2.0.1](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.1.bin) | 2016-06-27 | Alpha | 42CD50E4105939611ABF360475EBF4E5
 
+## FEZ Hydra
+File | Date | Status | MD5
+--- | --- | --- | ---
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZHydra%20Bootloader%20v2.0.4.bin) | 2018-02-01 | Alpha | 6B8C5DFA5D29F50C6FC3C73ECD2F8ED5
+
 ## Cerb
 File | Date | Status | MD5
 --- | --- | --- | ---
