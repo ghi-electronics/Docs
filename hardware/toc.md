@@ -3,6 +3,7 @@
 # [Loaders](loaders/intro.md)
 ## [GHI Bootloader](loaders/ghi_bootloader.md)
 ## [STM32 Bootloader](loaders/stm32_bootloader.md)
+## [SAMBA Bootloader](loaders/samba_bootloader.md)
 ## [Mikro Bootloader](loaders/mikro_bootloader.md)
 
 # [Products](products/intro.md)
