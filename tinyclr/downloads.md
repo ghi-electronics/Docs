@@ -132,6 +132,11 @@ File | Date | Status | MD5
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Cerb/Cerb%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 92BB5C076086AB581A1C64B40248297D 
 [v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Cerb/Cerb%20Firmware%20v0.5.0.glb) | 2017-07-07 | Alpha | 4F8C039EC6D0206D7FC97083E8765EC7 
 
+## FEZ Hydra
+File | Date | Status | MD5
+--- | --- | --- | ---
+[v0.8.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZHydra/FEZHydra%20Firmware%20v0.8.0.glb) | 2018-02-01 | Alpha | 027E3CF379D81D9BE76B719FD470D52A 
+
 ## netduino 3
 File | Date | Status | MD5
 --- | --- | --- | ---
