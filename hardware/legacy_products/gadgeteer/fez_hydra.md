@@ -15,9 +15,14 @@ TinyCLR is our own operating system and provides a means of programming embedded
 
 ## Loading Bootloader v2
 1. Download the [bootloader file](../../loaders/ghi_bootloader.md#fez-hydra).
-2. Enter SAM-BA mode by connecting SPI1_MISO pin to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. On later revisions of the board, you can hold down the small button labelled `S1` near the processor instead.
+2. Enter SAM-BA mode by connecting SPI1_MISO pin to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. SPI1_MISO is pin 8 on socket 3, and ground is pin 10. On later revisions of the board, you can hold down the small button labelled `S1` near the processor instead.  
 3. Open up the Device Manager, look under Ports, and find a COM port similar to "Bossa Program Port" or "GPS Detect".
 4. Follow the steps for the [SAM-BA bootloader](../../loaders/samba_bootloader.md), connecting to the COM port in the previous step. The FEZ Hydra is based on the AT91SAM9RL64-EK. You may get a warning saying that external RAM access is required to run applets. Click yes that you do want to continue anyway.
+
+**Gadgeteer Socket:**
+
+![Gadgeteer Socket](images/socket.png)
+
 
 ## Loading the Firmware
 
