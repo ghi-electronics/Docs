@@ -10,7 +10,7 @@ TinyCLR OS built in graphics can be used with these displays. You need to add th
 ```
 var displayController = DisplayController.GetDefault();
 // Enter the proper display configurations
-displayController.ApplySettings(new LcdControllerSettings {
+displayController.ApplySettings(new ParallelDisplayControllerSettings {
     Width = 480,
     Height = 272,
     PixelClockRate = 20000000,
