@@ -13,6 +13,7 @@ var displayController = DisplayController.GetDefault();
 displayController.ApplySettings(new ParallelDisplayControllerSettings {
     Width = 480,
     Height = 272,
+    DataFormat = DisplayDataFormat.Rgb565,
     PixelClockRate = 20000000,
     PixelPolarity = false,
     OutputEnablePolarity = true,
