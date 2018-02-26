@@ -6,8 +6,8 @@
 > We discourage the use of NETMF on our products in favor of [TinyCLR OS](../../../tinyclr/intro.md). Learn more about using NETMF devices [with TinyCLR OS]().
 
 To use NETMF, install:
-1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
-2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
+1. [Visual Studio 2013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
+2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://files.ghielectronics.com/downloads/NETMF/SDKs/MS%20NETMF%20QFE2.zip) 
 3. One of the [available NETMF SDKs](#available-netmf-sdks). The latest is recommended.
 
 The [NETMF for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf) guide is a good starting point.
