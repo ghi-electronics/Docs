@@ -5,13 +5,13 @@
 ### Notes
 This release adds a number of new features. We've also worked to reduce the frequency of crashing during deployment and greatly improved the performance of the SPWF04Sx and how it handles low memory situations.
 
-One minor added function is `MethodBase.GetParameters`. It can be used to get the types and positions of parameters for any function (but not the parameter name). This is useful for scenarios like dependency injection.
-
 We also re-added the `IO`, `Networking`, and `HTTP` libraries in this release. These contain the old `FileStream`, `HttpWebRequest`, `Socket`, and `SslStream` classes from before. However, there is no native file system or networking support still. Instead, we've added managed hooks that allow you to provide your own file and networking implementation. Take a look at `DriveInfo.RegisterDriverProvider` and `NetworkInterface.RegisterNetworkInterface` to get going. `DriveInfo` expects an instance of an interface that provides the required file IO operations. `NetworkInterface` expects an instance of itself. It will be used for the respective network operations if it implements `ISocketProvider`, `IDnsProvider`, or `ISslStreamProvider` interfaces. The SPWF04Sx driver was updated to implement these interfaces.
 
 All devices now also have a native SPI display provider that is used just like the existing parallel displays. On a `DisplayController` created for the SPI native API, call `ApplySettings` with an instance of `SpiDisplayControllerSettings`. Then just create an instance of `Graphics` like previously. Some displays, like the N18, require certain configuration before flushing data, so make sure to do that yourself before calling `Flush`. It's also expected that you initialize the display itself as well.
 
 Relatedly, we also added `WriteString` to the display controller. This allows you to write directly to the display in a console format, without needing a font, if the display provider supports it (which our current parallel display provider does). It's useful for quick debug logging.
+
+One minor added function is `MethodBase.GetParameters`. It can be used to get the types and positions of parameters for any function (but not the parameter name). This is useful for scenarios like dependency injection.
 
 We have changed the core so that any time the `.constrained` IL prefix is executed, a not-supported instruction is thrown. We noticed a case where it was being generated again so we added this exception to try and catch more cases. Since it is currently not implemented in the firmware, simply ignoring the prefix can corrupt your program. Please let us know if you encounter this exception. We'll evaluate keeping the exception in depending on the frequency it occurs. The one case we have found so far is calling `ToString` on an enum. To work around it, cast your enum to its underlying type (usually `int`) first since we do not support getting names in this way anyway. See [this forum thread](https://forums.ghielectronics.com/t/char-concat/4777) for more information.
 
