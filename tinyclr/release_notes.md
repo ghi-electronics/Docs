@@ -1,4 +1,109 @@
-# Alpha Release Notes
+# Release Notes
+
+## 0.9.0 on 2018-03-01
+
+### Notes
+This release adds a number of new features. We've also worked to reduce the frequency of crashing during deployment and greatly improved the performance of the SPWF04Sx and how it handles low memory situations.
+
+One minor added function is `MethodBase.GetParameters`. It can be used to get the types and positions of parameters for any function (but not the parameter name). This is useful for scenarios like dependency injection.
+
+We also re-added the `IO`, `Networking`, and `HTTP` libraries in this release. These contain the old `FileStream`, `HttpWebRequest`, `Socket`, and `SslStream` classes from before. However, there is no native file system or networking support still. Instead, we've added managed hooks that allow you to provide your own file and networking implementation. Take a look at `DriveInfo.RegisterDriverProvider` and `NetworkInterface.RegisterNetworkInterface` to get going. `DriveInfo` expects an instance of an interface that provides the require file IO operations. `NetworkInterface` expects an instance of itself. It will be used for the respective network operations if it implements `ISocketProvider`, `IDnsProvider`, or `ISslStreamProvider` interfaces. The SPWF04Sx driver was updated to implement these interfaces.
+
+All devices now also have a native SPI display provider that is used just like the existing parallel displays. On a `DisplayController` created for the SPI native API, call `ApplySettings` with an instance of `SpiDisplayControllerSettings`. Then just create an instance of `Graphics` like previously. Some displays, like the N18, require certain configuration before flushing data, so make sure to do that yourself before calling `Flush`. It's also expected that you initialize the display itself as well.
+
+Relatedly, we also added `WriteString` to the display controller. This allows you to write directly to the display in a console format, without needing a font, if the display provider supports it (which our current parallel display provider does). It's useful for quick debug logging.
+
+We have changed the core so that any time the `.constrained` IL prefix is executed, a not-supported instruction is thrown. We noticed a case where it was being generated again so we added this exception to try and catch more cases. Since it is currently not implemented in the firmware, simply ignoring the prefix can corrupt your program. Please let us know if you encounter this exception. We'll evaluate keeping the exception in depending on the frequency it occurs. To work around the one case we know of that does throw, calling `ToString` on an enum, cast your enum to its underlying type, usually `int`, first since we do not support getting names in this way anyway. See [this forum thread](https://forums.ghielectronics.com/t/char-concat/4777) for more information.
+
+Lastly, we've enabled support for anyone to provide NuGet packages for satellite assemblies of our `mscorlib` that contain the `CultureInfo` for a desired localization. While we do not provide any ourselves, take a look at the [NuGet docs](https://docs.microsoft.com/en-us/nuget/create-packages/creating-localized-packages) for more information.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you. There are no new bootloaders in this release.
+
+### Libraries
+
+#### Changes
+- Added `DisplayController.WriteString`.
+- Added an `IO` library.
+- Added a `Networking` library with `Socket`, `SslStream`, and `HTTP`.
+- Added `MethodBase.GetParameters`.
+- Added `Type` to `DisplayController`.
+- Renamed `LcdControllerSettings` to `ParallelDisplayControllerSettings`.
+- Reworking entire SPWF04Sx driver to be more performant and less memory sensitive.
+- `ResourceManager` now detects if the culture changes after initialization.
+- Culture info can be found in user provided satellite assemblies of `mscorlib`.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes.
+- `Thread` does not override `GetHashCode`.
+- `Thread.ManagedThreadId` may return zero.
+- Partially transparent ellipses have weird artifacts.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+
+### Firmware
+
+#### Changes
+- Added a native SPI display driver.
+- The `.constrained` IL prefix throws a not supported instruction exception.
+- Attempting to use handshaking when it is not available now throws an exception [#175](https://github.com/ghi-electronics/TinyCLR-Ports/issues/175).
+- Reduced frequency of an internal error during deployment when low on memory.
+- Reduced frequency of crashing on deployment when low on memory.
+
+#### Known Issues
+- Many UART properties and events are not implemented.
+- PWM may jitter when decreasing the pulse length while enabled.
+- Deploying on USBizi sometimes fails. Reset the board and try again to work around it.
+- The LCD on EMM sometimes does not work.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- The LCD has a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
+- ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- The ADC on G80 may be slightly inaccurate [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
+- CAN is not present on USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- The display is not cleared on soft reset [#198](https://github.com/ghi-electronics/TinyCLR-Ports/issues/198).
+- `GetWriteBufferSize` returns the wrong value until `SetWriteBufferSize` is called for CAN [#199](https://github.com/ghi-electronics/TinyCLR-Ports/issues/199).
+- Deployment fails the second time if using CAN [#200](https://github.com/ghi-electronics/TinyCLR-Ports/issues/200).
+- After changing the receive buffer size, CAN may crash if it receives too many messages [#201](https://github.com/ghi-electronics/TinyCLR-Ports/issues/201).
+- `GetWriteBufferSize` returns the wrong value until `SetWriteBufferSize` is called for UART [#203](https://github.com/ghi-electronics/TinyCLR-Ports/issues/203).
+
+### TinyCLR Config
+
+#### Changes
+- Erasing and loading the app now properly refreshes the assembly list.
+- Added function to the loader interface that will update to the latest firmware regardless of the version on device.
+
+#### Known Issues
+- Many features will not function with devices running firmwares before 0.6.0.
+
+### Extension
+
+#### Changes
+- Fixed the `#` character in a project's path preventing deployment.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+- Debugging in VS sometimes pauses forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
+
+### Porting
+
+#### Changes
+- Added `TinyCLR_Display_Provider::GetCapabilities`.
+- Removed the `interop` parameter from `TinyCLR_Can_MessageReceivedHandler` and `TinyCLR_Can_ErrorReceivedHandler`.
+- Reordered members in `TinyCLR_Api_Info`.
+- Reworked `TinyCLR_Display_Provider::SetLcdConfiguration` and other members to a generic `SetConfiguration` that takes a new `TinyCLR_Display_ParallelConfiguration` or `TinyCLR_Display_SpiConfiguration`.
+- Renamed `TinyCLR_Display_Format` to `TinyCLR_Display_DataFormat`.
+- Renamed `TinyCLR_UsbClient_StreamMode` to `TinyCLR_UsbClient_PipeMode`.
+- Moved external flash drivers out of targets [#58](https://github.com/ghi-electronics/TinyCLR-Ports/issues/58).
+- Updated many of the names of the targets.
+
+#### Known Issues
+- The USB host API is missing.
+- The USB client API is still very rough and will change.
 
 ## 0.8.0 on 2018-02-01
 
