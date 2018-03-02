@@ -45,6 +45,7 @@ As before, you can find all downloads in their respective sections on the [downl
 #### Changes
 - Added a native SPI display driver.
 - The `.constrained` IL prefix throws a not supported instruction exception.
+- The run app pin now works on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
 - Attempting to use handshaking when it is not available now throws an exception [#175](https://github.com/ghi-electronics/TinyCLR-Ports/issues/175).
 - Reduced frequency of an internal error during deployment when low on memory.
 - Reduced frequency of crashing on deployment when low on memory.
@@ -58,7 +59,6 @@ As before, you can find all downloads in their respective sections on the [downl
 - Testing `NaN`s for equality gives unexpected results.
 - The LCD has a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
 - The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
-- The run app pin does not work on USBizi [#39](https://github.com/ghi-electronics/TinyCLR-Ports/issues/39).
 - ADC 6 and 7 do not work on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
 - PWM on 3.27 does not work on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
 - Debugging in VS with USBizi crashes the firmware sometimes [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
