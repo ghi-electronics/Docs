@@ -130,7 +130,7 @@ File | Date | Status | MD5
 ## USBizi
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.9.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.9.0.glb) | 2018-03-01 | Alpha | A2E10FDE3332EBF6CA4636ED9FFA4D22
+[v0.9.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.9.0.glb) | 2018-03-01 | Alpha | FF725F65D9B0024086D84CAF0818CF77
 [v0.8.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.8.0.glb) | 2018-02-01 | Alpha | 7F738C57B223709B18E935BD6EC586A5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.7.0.glb) | 2018-01-04 | Alpha | 7165508B530FE2C004B98B1AC9C6FB4B
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 20748AD886D5C20C8EF7B93AD8C522E9
