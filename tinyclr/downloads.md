@@ -6,9 +6,8 @@ Software status legend:
 Status | Meaning
 --- | ---
 Production | Ready to be used commercially.
-RC | Release Candidate, stable and can be field tested.
-Beta | No more major changes, use for development.
-Alpha | Use for trying things out and providing feedback. Major changes to come.
+Preview | Preview of the next release, not quite ready for production use.
+Alpha | Bleeding edge development that will frequently change. Major changes to come.
 
 # Visual Studio Project System
 The extension is what gets loaded on Visual Studio to allow it to communicate with a TinyCLR OS device. It also includes project templates.
