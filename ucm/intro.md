@@ -12,11 +12,13 @@ A free version of Visual Studio is available.  Find out more on our [TinyCLR OS 
 |--|--|
 | **The UCM Standard** </br> Makes upgrading a snap! [**Learn more...**](standard.md) | **UC2550** </br> Our low power UCM. [**Learn more...**](uc2550.md) |
 | [![UCM SOM](images/som.jpg)](standard.md) | [![G400D](images/g400d.jpg)](uc2550.md) |
-| **UC5500** </br> Available with ARM Cortex M4 or M7. [**Learn more...**](uc5550.md) | **G400D** </br> Our original UCM. [**Learn more...**](g400d.md) |
+| **UC5500** </br> Based on the Cortex M7. [**Learn more...**](uc5550.md) | **G400D** </br> Our original UCM. [**Learn more...**](g400d.md) |
 | [![G400D](images/g400d.jpg)](uc5550.md) | [![G400D](images/g400d.jpg)](g400d.md) |
-| **Development Options** </br> Development boards, breakout boards, displays. [**Learn more...**](accessories.md) |  |
+| **UCM Accessories** </br> Development boards, breakout boards, displays. [**Learn more...**](accessories.md) |  |
 | [![G400 Dev Board](images/ucm_dev_board.jpg)](accessories.md) |  |
 
 ***
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+[**Learn more**](standard.md) about the [**UCM Standard**](standard.md).
+
+You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
