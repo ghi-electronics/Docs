@@ -55,10 +55,10 @@ ADCs are used to measure an analog voltage level by converting it to a digital v
 PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. [*Sample TinyCLR code*](../tinyclr/tutorials/pwm.md)
 
 ### GPIO (General Purpose Input/Output)
-GPIOs are the digital I/O pins that allow the user to connect basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md)
+GPIOs are the digital I/O pins that allow the user to interface with basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md)
 
 ### IRQ (Interrupt Request Capable GPIO)
-IRQ capable GPIO pins can be programmed to interrupt a program when the input state of the pin changes.  For example, an IRQ could be used to signal the processor that the WiFi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
+IRQ capable GPIO pins can be programmed to interrupt a program when the input of the pin changes.  For example, an IRQ could be used by a WiFi module to signal the processor that it is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
 
 ### USB Client
 Used to communicate with a USB host.  Often used to program and debug embedded devices.
@@ -67,10 +67,10 @@ Used to communicate with a USB host.  Often used to program and debug embedded d
 Used to communicate with one or more USB clients.  Typically used to communicate with various devices such as a mouse, keyboard, camera, etc.
 
 ### LCD (TFT Controller - 16bpp or 24bpp)
-An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp) which determines the number of colors that can be displayed. [*Sample TinyCLR code*](../tinyclr/tutorials/display.md)
+An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed. [*Sample TinyCLR code*](../tinyclr/tutorials/display.md)
 
 ### Ethernet PHY
-Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals for the Ethernet connector.
+Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals to the Ethernet connector.
 
 ### DCMI (Digital Camera Interface)
 A standard interface for compatable digital cameras.
@@ -81,7 +81,7 @@ VBAT is used to provide battery voltage to a microcontroller's real time clock. 
 ### JTAG
 JTAG is a serial interface which allows communication between the processor and a host computer.  It is built into the microcontroller and provides a means of software debugging including the ability to stop program execution, single step through program instructions, and read and write to memory and processor registers.
 
-## UCM Standard Pin Assignment
+## UCM Standard Pin Assignments
 | SO-DIMM Pin   | Universal Compute Standard    |
 |---------------|-------------------------------|
 | 1             | AGND                          |
@@ -287,4 +287,6 @@ JTAG is a serial interface which allows communication between the processor and 
 
 ***
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+Learn about our lastest UCMs -- the [**UC2550**](uc2550.md) and the [**UC5550**](uc5550.md).
+
+You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

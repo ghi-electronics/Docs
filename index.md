@@ -23,4 +23,8 @@ Here you will find our product documentation.  For more information about GHI El
 
 ***
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+Want to quickly design a product?  Look into our [**Universal Compute Modules**](ucm/intro.md).
+
+Maker?  Check out the [**FEZ**](fez/intro.md)
+
+You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
