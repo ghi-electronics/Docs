@@ -41,7 +41,7 @@ Serial displays can work on all microcontrollers. They use the very common SPI o
 
 To the system, the serial display is nothing but a serial device. You are expected to write the code to handle graphics.
 
-A good example is the [Adafruit Display Shield](../accessories/adafruit_display_shield.md) which uses a SPI display.
+A good example is the [Adafruit Display Shield](../../fez/accessories.md#adafruit-display-shield) which uses a SPI display.
 
 This video features a very low cost I2C display option
 

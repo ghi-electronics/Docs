@@ -9,7 +9,7 @@ Also added are overloads to the various SPI and I2C write and read functions tha
 
 Additionally, we've also added `GetString` to the Encoding class (as before, only UTF8 is provided by default). It takes a byte array so you can create a string without having to use an intermediate char array, potentially wasting space. Additionally, since strings are represented as UTF8 internally, you can save on having your already-UTF8 `byte[]` converted to UTF16 when it's converted to `char[]`, then back to UTF8 when using that `char[]` to create a string.
 
-To get started with the FEZ Hydra, you'll need to install the GHI Bootloader. Follow [these steps](../hardware/legacy_products/gadgeteer/fez_hydra.md#using-tinyclr-os) to get going.
+To get started with the FEZ Hydra, you'll need to install the GHI Bootloader. Follow [these steps](../legacy/gadgeteer/fez_hydra.md#using-tinyclr-os) to get going.
 
 As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
 
@@ -222,7 +222,7 @@ This release adds support for the G400 and all of our previous NXP based devices
 
 Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
 
-Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../hardware/loaders/ghi_bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
+Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../tinyclr/loaders/ghi_bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
 
 ### Libraries
 
@@ -679,3 +679,7 @@ After flashing the firmware the first time, Windows may still use the old NETMF 
 - {int/long/double/...}.TryParse(string source, out value)
 - string.Format(string format, param object[] args)
 - System.Diagnostics.WriteLine(string message)
+
+***
+
+Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

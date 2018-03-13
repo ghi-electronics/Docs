@@ -1,22 +1,26 @@
-Welcome to http://docs.ghielectronics.com where you can find tutorials, samples, documentation, and API references for all GHI Electronics products.
-
-This documentation covers three main categories:
-1. Hardware: This includes every hardware product GHI Electronics makes. Also included are the needed resources and instructions for the use of these products. It also covers bootloaders.
-2. TinyCLR: Everything you need to use and/or port TinyCLR OS.
-3. BrainPad: Courses and learning material for the STEM/STEAM focused BrainPad.
-
-The GHI Electronics websites:
-* The main website: https://www.ghielectronics.com/
-* TinyCLR OS: http://www.tinyclr.com 
-* BrainPad: http://www.brainpad.com
-* The community forum: https://forums.ghielectronics.com/
-
-You may obtain further assistance by contacting us [directly](https://www.ghielectronics.com/contact) or through our [community forums](https://forums.ghielectronics.com/).
+# GHI Electronics Documentation
+---
+Here you will find our product documentation.  For more information about GHI Electronics, our products, and our engineeering and manufacturing services please visit our website at [**www.ghielectronics.com**](http://www.ghielectronics.com).  You can also visit our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com).
 
 > [!Note]
-> This is a new documentation system and some of the available docs are still in progress. Please check back frequently.
+> Please check back often for the latest updates to our products, documentation, and software.
 
+***
 
+## Product Sections
+|  |  |
+|---|---|
+| **UCM (Universal Compute Modules)** </br> Our UCMs paired with TinyCLR significantly reduce development time.  They follow a standard design allowing you to change processors without costly hardware or software redesign. [**Learn More...**](ucm/intro.md) | **SCM (Surface Compute Modules)** </br> Our Surface Compute Modules are surface mount embedded controllers.  Designed to be easily embedded in your products, they are ideal for harsh or high vibration environments. [**Learn More...**](scm/intro.md) |
+| [![G400D](images/g400d.jpg)](ucm/intro.md)            | [![G400S](images/g400s.jpg)](scm/intro.md)     |
+| **FEZ** </br> The FEZ (fast and easy) is our maker-targeted board with arduino compatible pinout and optional WiFi. [**Learn More...**](fez/intro.md) | **TinyCLR Operating System** </br> TinyCLR OS is light weight .NET operating system for IoT and embedded devices. [**Learn More...**](tinyclr/intro.md) |
+| [![FEZ](images/fez.jpg)](fez/intro.md)        | [![tinyCLR](images/tinyclrlogo.jpg)](tinyclr/intro.md) |
 
+***
+| |
+|---------------------|
+| **Legacy Products** </br> Here you will find information on our legacy products and our longevity policy. [**Learn More...**](legacy/intro.md) |
+| [![legacy](images/legacy.jpg)](legacy/intro.md) |
 
-![GHI Electronics](images/ghi-electronics-hs.jpg)
+***
+
+Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

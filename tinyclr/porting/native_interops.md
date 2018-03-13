@@ -1,5 +1,5 @@
 # Native Interops in TinyCLR
-
+---
 Interops allow you to write a class in managed code that is partially or entirely implemented in native code. This is useful for time critical tasks, things that would take too long in managed code, or interacting with native functionality not exposed through managed code. Keep in mind that while native code executes, all managed threads are blocked and if you crash in native code, managed code also crashes.
 
 To get started, create a TinyCLR project called `InteropTest`. In the project properties window, go to the `TinyCLR OS` tab. Check both the `Generate native stubs for internal methods` and the `Generate bare native stubs` checkboxes. Next, define your native API. Any method that you plan to implement in native code must be declared extern and be decorated with the `System.Runtime.CompilerServices.MethodImpl` attribute that is constructed with `MethodImplOptions.InternalCall`. Static and instance functions, static and instance constructors, finalizers, and property set and get bodies can all be implemented native. They can have any visibility, can take any number or types of parameters, and can return any type. For example:

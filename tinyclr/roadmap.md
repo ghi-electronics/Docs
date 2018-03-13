@@ -1,4 +1,6 @@
 # Roadmap
+---
+![Roadmap](images/road.jpg)
 
 Below is an outline of our goals for a stable and production-ready 1.0 release of TinyCLR OS. Of course, this is subject to change and does not include many smaller improvements and features.
 
@@ -18,3 +20,7 @@ No new features planned for this release. Instead it'll be a lot of final polish
 While we will continue to support and fix bugs in 1.0, we're not done there! High on our list for 2.0 are several important features like file system, improved networking, in field update, more graphics, even easier interops, and USB host and client. We hope to get as many of these out as we can by the end of 2018. More details will follow after 1.0.
 
 Longer term we do plan to investigate support for generics and, once we have that, alignment with .NET Standard.
+
+***
+
+Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

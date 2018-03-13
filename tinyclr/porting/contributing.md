@@ -1,3 +1,0 @@
-# Contributing
-
-We are taking contributions to the TinyCLR OS ports and documentation, but we don't have an established process just yet, so standard contributing practices apply. Create a fork of the repo, create a new branch from dev, work on your changes, then submit a PR. Make sure to follow the existing style for the project and keep your changes easily reviewable. Your changes will need to be licensed under Apache 2 and you need to sign a Contributor License Agreement with us before your PR can be accepted.

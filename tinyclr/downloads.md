@@ -1,5 +1,10 @@
 # Downloads
+---
+![Download](images/download_noborder.jpg)
+
 This page includes different download types for individual boards. See individual product pages for details on what to download.
+
+See Release notes [here](release_notes.md).
 
 Software status legend:
 
@@ -51,7 +56,7 @@ File | Date | Status | MD5
 The Firmware is the TinyCLR OS that lives on your hardware. The firmware version loaded on the hardware must match the version number of the extension and the libraries. This will be easier managed once the libraries are hosted on http://www.nuget.org/
 
 ## FEZCLR
-This is the reference firmware for TinyCLR OS and it runs on the [FEZ](../hardware/products/fez.md) and the [BrainPad](../brainpad/intro.md).
+This is the reference firmware for TinyCLR OS and it runs on the [FEZ](../fez/intro.md).
 
 File | Date | Status | MD5
 --- | --- | --- | ---
@@ -166,3 +171,7 @@ File | Date | Status | MD5
 [v0.8.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker2/clicker2%20Firmware%20v0.8.0.hex) | 2018-02-01 | Alpha | FC9043D746B798CCC56BD0719FEB4124
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker2/clicker2%20Firmware%20v0.7.0.hex) | 2018-01-04 | Alpha | B57669816F36BB258E6FA38716FC2489
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker2/clicker2%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | EAC2085E921759ED81E60973C00A0DF5
+
+***
+
+Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
