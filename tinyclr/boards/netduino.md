@@ -11,7 +11,7 @@ Originally a .NET Micro Framework product, netdunio 3 is available in three flav
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.
 
-The netduino3 firmware is located [here](../downloads.md#netduino-3). To put the netduino in DFU mode, hold its one button down while plugging in the USB cable. Now follow the instructions at the [STM32 bootloader](../../hardware/loaders/stm32_bootloader.md) page to generate and load a DFU file.
+The netduino3 firmware is located [here](../downloads.md#netduino-3). To put the netduino in DFU mode, hold its one button down while plugging in the USB cable. Now follow the instructions at the [STM32 bootloader](../../tinyclr/loaders/stm32_bootloader.md) page to generate and load a DFU file.
 
 When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 
@@ -173,3 +173,7 @@ This board uses STM32F2, which is very similar to the STM32F4 used on the netdui
 
 ## netduino 1
 This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for posting TinyCLR OS.
+
+***
+
+Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

@@ -69,4 +69,4 @@ UART uses the processor's voltage levels for transferring data, called TTL volta
 Some PCs still include serial ports to this day, but those are RS232 serial ports. A level shifter chip is needed to convert the voltages properly.
 
 > [!Warning]
-> connecting your circuit to RS232 port without proper level shifter wil damage your circuit.
+> Connecting your device to an RS232 port without a proper voltage level shifter can damage your device.

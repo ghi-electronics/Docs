@@ -1,3 +1,5 @@
-# [Hardware](hardware/intro.md)
-# [TinyCLR](tinyclr/intro.md)
-# [BrainPad](brainpad/intro.md)
+# [UCM](ucm/intro.md)
+# [SCM](scm/intro.md)
+# [FEZ](fez/intro.md)
+# [TinyCLR OS](tinyclr/intro.md)
+# [Legacy](legacy/intro.md)

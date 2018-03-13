@@ -1,4 +1,4 @@
-# [Intro](intro.md)
+# [Introduction](intro.md)
 
 # [Tutorials](tutorials/intro.md)
 ## [GPIO](tutorials/gpio.md)
@@ -14,26 +14,13 @@
 ## [Gpio Change Reader](tutorials/gpiochangereader.md)
 ## [Gpio Pulse Reader Writer](tutorials/gpiopulsereaderwriter.md)
 
-# [Boards](boards/intro.md)
-## [FEZ](boards/fez.md)
-## [STM32 Boards](boards/stm32_boards.md)
-## [Netduino](boards/netduino.md)
-## [MikroElektronika](boards/mikroelektronika.md)
-
-# [Accessories](accessories/intro.md)
-## [Adafruit Display Shield](accessories/adafruit_display_shield.md)
-## [Mikro Arduino Click Shield](accessories/mikroe_arduino_uno_click_shield.md)
-## [Pololu Zumo Robot](accessories/pololu_zumo_robot.md)
-## [Seeed Grove Starter Kit](accessories/seeed_grove_starter_kit.md)
-## [Sparkfun Ardumoto Shield Kit](accessories/sparkfun_ardumoto_shield_kit.md)
 
 # [Porting](porting/intro.md)
-## [Contributing](porting/contributing.md)
 ## [Native Interops](porting/native_interops.md)
 ## [Native APIs](porting/native_apis.md)
 
-# [Internet of Things](internet_of_things.md)
 # [TinyCLR Config](tinyclr_config.md)
 # [Downloads](downloads.md)
-# [Release Notes](release_notes.md)
 # [Roadmap](roadmap.md)
+# [Supported Boards](boards/intro.md)
+# [Bootloaders](loaders/intro.md)

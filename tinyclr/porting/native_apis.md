@@ -1,5 +1,5 @@
 # Native APIs in TinyCLR
-
+---
 The TinyCLR runtime provides several built in APIs for you to use and allows you to register APIs of your own that other parts of the system can later use. These APIs are also exposed to managed code to query and use.
 
 Looking inside the TinyCLR.h file provided in the porting repo, you'll see several types defined under `TinyCLR_Api_Type`. Each of those types has an associated provider somewhere else in the file that defines its API. The `GPIO` API for example allows you to read and write a pin that that provider has. APIs can also be set as the default API for a given type. This makes it easier for managed code to get access to a resource without knowing the exact name. Notice also that APIs are all defined as a struct with a field to access the owning API and a number of function pointers that provide the API. Most function pointers in avaialble APIs take a pointer to the owning struct as a `this` reference, since one is not implicitly provided because they're not traditional classes with instance members.

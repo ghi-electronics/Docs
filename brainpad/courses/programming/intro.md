@@ -1,3 +1,0 @@
-# Programming Intro
-
-Coming soon.
