@@ -17,4 +17,6 @@ A free version of Visual Studio is available.  Find out more on our [TinyCLR OS 
  
 ***
 
+Our TinyCLR operating system lets you program our devices (and others) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](../tinyclr/intro.md).
+
 Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

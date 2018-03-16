@@ -3,5 +3,5 @@
 # [Arduino](arduino.md)
 # [Mbed](mbed.md)
 # [MicroPython](python.md)
-# [Plain Coding!](plain_coding.md)
+# [Bare Metal](bare-metal.md)
 # [Accessories](accessories.md)

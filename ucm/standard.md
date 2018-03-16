@@ -58,7 +58,7 @@ PWM is a method of generating a square wave signal of uniform frequency with var
 GPIOs are the digital I/O pins that allow the user to interface with basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md)
 
 ### IRQ (Interrupt Request Capable GPIO)
-IRQ capable GPIO pins can be programmed to interrupt a program when the input of the pin changes.  For example, an IRQ could be used by a WiFi module to signal the processor that it is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
+IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to signal the processor that it is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
 
 ### USB Client
 Used to communicate with a USB host.  Often used to program and debug embedded devices.

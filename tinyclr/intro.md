@@ -2,7 +2,7 @@
 ---
 ![TinyCLR Logo](images/tinyclrlogo_noborder.jpg)
 
-TinyCLR OS is our path forward that started with the [.NET Micro Framework](http://netmf.com/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio, a TinyCLR device, and a USB cable.
+TinyCLR OS is our path forward that started with the [.NET Micro Framework](http://netmf.com/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio (free version available), a TinyCLR device, and a USB cable.
 
 |  |  |
 |--|--|
@@ -28,7 +28,7 @@ In addition, all libraries are available through NuGet. Because of this, there w
 
 ### TinyCLR Computer Setup
 To set up your computer to use TinyCLR OS:
-1. If you don't already have Visual Studio 2017, download and install the freely available [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
+1. If you don't already have Visual Studio 2017, download and install the free version here:  [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to select the `.NET desktop development` workload when installing Visual Studio.
 3. Download and install the newest [TinyCLR OS Visual Studio extension](downloads.md#visual-studio-project-system).
 4. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many supported [boards](boards/intro.md).
@@ -42,7 +42,7 @@ To set up your computer to use TinyCLR OS:
 > If you're an existing user of NETMF and still want to use it in addition to TinyCLR OS, don't worry. TinyCLR OS is completely independent of NETMF and works side-by-side with no issues.
 
 ### TinyCLR Device Setup
-To use TinyCLR with a device you must first install the latest verions of the GHI bootloader and TinyCLR firmware on the device.  The bootloader is installed first and provides a way to install the firmware and to execute programs which are loaded onto the device.
+To use TinyCLR with a device you must first install the latest versions of the GHI bootloader and TinyCLR firmware on the device.  The bootloader is installed first and provides a way to install the firmware and to execute programs which are loaded onto the device.
 
 The TinyCLR firmware includes the Common Language Runtime (CLR) which converts compiled code into machine instructions and manages program execution.  The TinyCLR firmware is also responsible for interacting with Microsoft Visual Studio to load and debug your application programs.
 

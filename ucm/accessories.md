@@ -26,4 +26,6 @@ A 7 inch capacitive touch LCD screen for the UCM Dev Board or UCM Breakout.
 
 ***
 
+Need a solution for harsh or high vibration environments?  Check out our [**SCMs**](../scm/intro.md).
+
 Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
