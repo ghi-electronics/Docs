@@ -1,5 +1,5 @@
 # MikroElektronika
-MikroElektronika offers multiple boards that are suited for TinyCLR OS. We offer a pre-compiled firmware for a few of thier products.
+MikroElektronika offers multiple boards that are suited for TinyCLR OS. We offer pre-compiled firmware for a few of their products.
 
 Clicker/Clicker 2 and related boards ship with the [Mikro bootloader](../../tinyclr/loaders/intro.md#mikro-bootloader) pre installed. Use it to load the TinyCLR OS firmware.
 
@@ -14,12 +14,12 @@ MikroElekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) bo
 The TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 
 > [!Warning]
-> Clicker and Clicker 2 boards use different processors and different system clock. Each board has its own TinyCLR OS firmware.
+> Clicker and Clicker 2 boards use different processors and a different system clock. Each board has its own TinyCLR OS firmware.
 
 # Clicker 2
 ![Clicker](images/clicker2.jpg) 
 
-MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield).
+MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) sockets, for adding many available [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield).
 
 The TinyCLR OS [Clicker 2 firmware](../downloads.md#clicker-2).
 
@@ -36,12 +36,12 @@ The [MINI-M4 for STM32](https://shop.mikroe.com/mini-stm32f4) uses the same proc
 # Quail
 ![Quail](images/quail-board.png)
 
-Originally a .NET Micro Framework product, Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield). 
+Originally a .NET Micro Framework product, the Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield). 
 
 Learn more about Quail at:  
 https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  
 
-The Quail firmware is located [here](../downloads.md#quail). To enter the DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Now, follow the instructions at the [STM32 bootloader](../../tinyclr/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
+The Quail firmware is located [here](../downloads.md#quail). To enter the DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Now, follow the instructions on the [STM32 bootloader](../../tinyclr/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
 
 When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 

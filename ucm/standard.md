@@ -70,7 +70,7 @@ Used to communicate with one or more USB clients.  Typically used to communicate
 An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed. [*Sample TinyCLR code*](../tinyclr/tutorials/display.md)
 
 ### Ethernet PHY
-Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals to the Ethernet connector.
+Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals for the Ethernet connector.
 
 ### DCMI (Digital Camera Interface)
 A standard interface for compatable digital cameras.

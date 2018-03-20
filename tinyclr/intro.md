@@ -2,7 +2,7 @@
 ---
 ![TinyCLR Logo](images/tinyclrlogo_noborder.jpg)
 
-TinyCLR OS is our path forward that started with the [.NET Micro Framework](http://netmf.com/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio (free version available), a TinyCLR device, and a USB cable.
+TinyCLR OS is our path forward that started with the [.NET Micro Framework](https://netmf.github.io/) to enable managed .NET development using Microsoft's Visual Studio on embedded devices -- including debugging! All you need to get started is Visual Studio (free version available), a TinyCLR device, and a USB cable.
 
 |  |  |
 |--|--|
@@ -31,11 +31,11 @@ To set up your computer to use TinyCLR OS:
 1. If you don't already have Visual Studio 2017, download and install the free version here:  [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to select the `.NET desktop development` workload when installing Visual Studio.
 3. Download and install the newest [TinyCLR OS Visual Studio extension](downloads.md#visual-studio-project-system).
-4. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many supported [boards](boards/intro.md).
+4. Connect your device to your PC using a USB cable. Don't have a TinyCLR OS device yet? There are many [supported boards](boards/intro.md), but we recomment the [FEZ](../fez/intro.md) as an inexpensive way to get started.
 5. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 6. Add some code and press `F5` to deploy and begin debugging your application!
 7. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet, so make sure to download the newest [libraries](downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
-8. Do not forget to update the firmware on your [board](boards/intro.md).
+8. Do not forget to update the firmware on your board.
 9. You are now ready to get started with TinyCLR! Take a look at the [tutorials](tutorials/intro.md) to get going.
 
 > [!Tip]

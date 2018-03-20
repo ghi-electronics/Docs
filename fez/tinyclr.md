@@ -14,7 +14,7 @@ Instructions for setting up your computer are found [**here**](../tinyclr/intro.
 ## Setting Up Your FEZ
 The following instructions explain how to install the bootloader and TinyCLR firmware on the FEZ.  The bootloader should be installed on the FEZ already.  It does not need to be reinstalled unless it accidently becomes deleted or corrupted.
 
-The firmware may come pre-installed on the FEZ, but it might not be the latest version.  If you are having problems or just want to make sure your FEZ is up to date with the latest release, use the TinyCLR Config tool to install the latest firmware.  We also have included instructions for manually installing the firmware if you are having difficulty with the config tool.
+The firmware may come pre-installed on the FEZ, but it might not be the latest version.  If you are having problems or just want to make sure your FEZ is up to date with the latest release, use the TinyCLR Config tool to install the latest firmware.  We have also included instructions for manually installing the firmware if that's what you prefer.
 
 ### Loading the GHI Bootloader v2
 1. Download and save the latest [FEZCLR bootloader file](../tinyclr/loaders/ghi_bootloader.md#fezclr) (v2.x.x).

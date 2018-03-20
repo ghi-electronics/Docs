@@ -26,7 +26,7 @@ Depending on using a HEX or BIN files, the instructions are slightly different.
 ## Uploading DFU Files
 To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 button, just hold the button down while powering the system up. The device manager will see the device "STM Device in DFU Mode".
 1. Find and open "Open DfuSe Demo" (from the ST download higher in this page)
-2. Under "Upgrade and Verify Action", click the "Chose..." button and select the firmware DFU file you want to load.
+2. Under "Upgrade and Verify Action", click the "Choose..." button and select the firmware DFU file you want to load.
 3. Click the "Upgrade" button.
 4. Click the "Leave DFU mode" button.
 5. Congratulations, your board is now running the loaded firmware!
