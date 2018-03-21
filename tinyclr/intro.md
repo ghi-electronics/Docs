@@ -54,5 +54,7 @@ A modern system is not complete without support for the Internet and the cloud. 
 
 ***
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+To learn more about TinyCLR embedded programming check out our [**tutorials**](tutorials/intro.md).
+
+You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
 

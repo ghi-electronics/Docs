@@ -10,9 +10,9 @@ Here you will find our product documentation.  For more information about GHI El
 ## Product Sections
 |  |  |
 |---|---|
-| **UCM (Universal Compute Modules)** </br> Our UCMs paired with TinyCLR significantly reduce development time.  They follow a standard design allowing you to change processors without costly hardware or software redesign. [**Learn More...**](ucm/intro.md) | **SCM (Surface Compute Modules)** </br> Our Surface Compute Modules are surface mount embedded controllers.  Designed to be easily embedded in your products, they are ideal for harsh or high vibration environments. [**Learn More...**](scm/intro.md) |
+| **UCM (Universal Compute Modules)** </br> Learn about our UCM standard and product line. [**Learn More...**](ucm/intro.md) | **SCM (Surface Compute Modules)** </br> Learn about our line of SCMs. [**Learn More...**](scm/intro.md) |
 | [![G400D](images/g400d.jpg)](ucm/intro.md)            | [![G400S](images/g400s.jpg)](scm/intro.md)     |
-| **FEZ** </br> The FEZ (fast and easy) is our maker-targeted board with arduino compatible pinout and optional WiFi. [**Learn More...**](fez/intro.md) | **TinyCLR Operating System** </br> TinyCLR OS is light weight .NET operating system for IoT and embedded devices. [**Learn More...**](tinyclr/intro.md) |
+| **FEZ** </br> Specs and programming options of our maker board. [**Learn More...**](fez/intro.md) | **TinyCLR Operating System** </br> TinyCLR OS is light weight .NET operating system for IoT and embedded devices. [**Learn More...**](tinyclr/intro.md) |
 | [![FEZ](images/fez.jpg)](fez/intro.md)        | [![tinyCLR](images/tinyclrlogo.jpg)](tinyclr/intro.md) |
 
 ***

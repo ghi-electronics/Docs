@@ -2,7 +2,7 @@
 ---
 ![FEZ](images/fez_noborder.jpg)
 
-FEZ (fast and easy) is the ultimate maker board. This low cost board offers Arduino pinout compatibility, optional WiFi for IOT applications, and can be programmed using multiple programming languages and development environments.  Based on an ARM Cortex M4 processor with 512kB of internal flash memory, the FEZ offers great performance at a rock bottom price.
+FEZ (fast and easy) is our maker board. This low cost board offers Arduino pinout compatibility, optional WiFi for IOT applications, and can be programmed using multiple programming languages and development environments.
 
 ## Programming Options
 
@@ -25,9 +25,7 @@ FEZ (fast and easy) is the ultimate maker board. This low cost board offers Ardu
 | Internal Flash | 512 kB                          |
 | Dimensions     | 70.6 x 56.0 x 14.5 mm           |
 
-## Peripherals
-
-*Note:  Many peripherals share I/O pins.  Not all peripherals will be available to your application.*
+## Peripherals*
 
 | Peripheral         | Quantity          |
 |--------------------|-------------------|
@@ -41,6 +39,8 @@ FEZ (fast and easy) is the ultimate maker board. This low cost board offers Ardu
 | CAN                | 0                 |
 | USB Client         | 1                 |
 | WiFi               | Optional          |
+
+\**Note:  Many peripherals share I/O pins.  Not all peripherals will be available to your application.*
 
 ## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20T18.pdf)

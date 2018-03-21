@@ -172,7 +172,7 @@ namespace GHIElectronics.TinyCLR.Pins {
 This board uses STM32F2, which is very similar to the STM32F4 used on the netduino 3. Porting TinyCLR OS to netduino 2 should not be very difficult.
 
 ## netduino 1
-This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for posting TinyCLR OS.
+This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for porting TinyCLR OS.
 
 ***
 

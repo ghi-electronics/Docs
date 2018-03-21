@@ -4,11 +4,7 @@
 
 Our UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Our Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  
 
-Our UCMs significantly reduce the time and cost of both your hardware and software design.  The hardware standard is described below.  For more information on programming our UCMs using Visual Studio .NET, please visit our [TinyCLR tutorials](../tinyclr/tutorials/intro.md).
-
-Available peripherals vary by model.
-
-## UCM Standard Peripherals
+## UCM Standard Peripherals*
 | Peripheral                                            | Up to Max |
 |-------------------------------------------------------|-----------|
 | UART (Universal Asynchronous Receiver/Transmitter)    | 4         |
@@ -28,6 +24,8 @@ Available peripherals vary by model.
 | DCMI (Digital Camera Interface)                       | 1         |
 | VBAT (Battery Backup for RTC)                         | 1         |
 | JTAG (Debug Serial Port)                              | 1         |
+
+\**Available peripherals vary by model.*
 
 ### UART (Universal Asynchronous Receiver/Transmitter)
 UART is used to implement moderate speed full duplex asynchronous serial communication.  It is usually used for peer to peer communication between only two devices. It can transfer data using only one wire for each direction if both devices share a common ground. [*Sample TinyCLR code*](../tinyclr/tutorials/uart.md)
@@ -58,7 +56,7 @@ PWM is a method of generating a square wave signal of uniform frequency with var
 GPIOs are the digital I/O pins that allow the user to interface with basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md)
 
 ### IRQ (Interrupt Request Capable GPIO)
-IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to signal the processor that it is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
+IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to tell the processor that the WiFi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../tinyclr/tutorials/gpio.md#digital-input-events)
 
 ### USB Client
 Used to communicate with a USB host.  Often used to program and debug embedded devices.
@@ -288,5 +286,7 @@ JTAG is a serial interface which allows communication between the processor and 
 ***
 
 Learn about our lastest UCMs -- the [**UC2550**](uc2550.md) and the [**UC5550**](uc5550.md).
+
+Want to quickly build your prototype?  Check out our [**UCM Development Options**](development-options.md).
 
 You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

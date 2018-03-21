@@ -2,7 +2,7 @@
 ---
 ![TinyCLR Logo](../tinyclr/images/tinyclrlogo_noborder.jpg)
 
-TinyCLR is our own operating system and allows you to program the FEZ in C# or Visual Basic using Microsoft's Visual Studio development environment.  Visual Studio is widely regarded as one of the best (if not the best) development environments available, and Visual Studio's advanced debugging and code completion features make writing code a breeze!  In addition, not only is TinyCLR free, but Microsoft offers a free version of Visual Studio as well!
+TinyCLR is our own operating system and allows you to program the FEZ in C# or Visual Basic using Microsoft's Visual Studio development environment.
 
 To start using TinyCLR with the FEZ you must first:
 * Set up your computer:  Install Visual Studio, the TinyCLR OS extensions and NuGet packages.
@@ -17,6 +17,7 @@ The following instructions explain how to install the bootloader and TinyCLR fir
 The firmware may come pre-installed on the FEZ, but it might not be the latest version.  If you are having problems or just want to make sure your FEZ is up to date with the latest release, use the TinyCLR Config tool to install the latest firmware.  We have also included instructions for manually installing the firmware if that's what you prefer.
 
 ### Loading the GHI Bootloader v2
+The bootloader should be installed on your FEZ already and does not need to be reinstalled unless it becomes erased or corrupted.
 1. Download and save the latest [FEZCLR bootloader file](../tinyclr/loaders/ghi_bootloader.md#fezclr) (v2.x.x).
 2. Download and install the [DfuSe USB device firmware upgrade software](http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) from STMicroelectronics (click on the blue [**Get Software**](http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) button).
 3. Run the DfuSeDemo program installed in the previous step.  It should appear in the programs menu under `STMicroelectronics`.

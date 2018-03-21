@@ -2,11 +2,7 @@
 ---
 ![G400S](../images/g400s_noborder.jpg)
 
-Our Surface Compute Modules are surface mount embedded controllers and are ideal for harsh or high vibration environments.
-
-Our SCMs and UCMs can be programmed using a variety of languages and development environments including our own TinyCLR operating system.  TinyCLR allows you to write programs using Microsoft's Visual Studio development environment and Visual Basic or C# programming languages.
-
-A free version of Visual Studio is available.  Find out more on our [TinyCLR OS introduction](../tinyclr/intro.md) page. 
+Our SCMs are surface mount embedded controllers and are ideal for harsh or high vibration environments.
 
 |  |  |
 |--|--|
@@ -19,4 +15,4 @@ A free version of Visual Studio is available.  Find out more on our [TinyCLR OS 
 
 Our TinyCLR operating system lets you program our devices (and others) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](../tinyclr/intro.md).
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
