@@ -1,5 +1,0 @@
-# [Surface Mount Modules](intro.md)
-# [G30](g30.md)
-# [G80](g80.md)
-# [G120 / G120E](g120.md)
-# [G400S](g400s.md)
