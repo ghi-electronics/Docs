@@ -2,9 +2,9 @@
 ---
 ![G400S](images/g400s_noborder.jpg)
 
-Our SCMs are surface mount embedded controllers and are ideal for harsh or high vibration environments.
+SCMs are surface mount embedded controllers that are well suited for harsh or high vibration environments.
 
-Our SCMs can be programmed using a variety of tools including our own TinyCLR operating system, Microsoft's .NET Micro Framework, and bare metal C/C++.
+A variety of tools and software options are available. Check the individual product documentation for details.
 
 |  |  |
 |--|--|
@@ -15,6 +15,6 @@ Our SCMs can be programmed using a variety of tools including our own TinyCLR op
  
 ***
 
-Our TinyCLR operating system lets you program our devices (and others) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](../../software/tinyclr/intro.md).
+TinyCLR lets you program our devices (and others) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](../../software/tinyclr/intro.md).
 
 You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

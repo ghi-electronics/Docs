@@ -1,8 +1,26 @@
 # .NET Micro Framework Getting Started
+---
+![Getting Started](../tinyclr/images/getting-started.jpg)
 
-## Software Setup
+## Installation Steps
 
-Follow the setup instructions on our [.NET Micro Framework tutorials page](tutorials/intro.md).
+### Install Visual Studio Community Edition
+Download and install [Microsoft's Visual Studio 2013 Community Edition](http://go.microsoft.com/fwlink/?LinkId=517284).
+
+To use Visual Studio 2015, **though unsupported**, please see [this document](https://www.ghielectronics.com/docs/346/using-visual-studio-2015)
+
+### Install Microsoft .NET Micro Framework
+* Uninstall any currently installed NETMF SDKs.
+* Download [Microsoft .NET Micro Framework 4.3 (QFE2)](http://files.ghielectronics.com/downloads/NETMF/SDKs/MS%20NETMF%20QFE2.zip) and unzip the file.
+* Open the file's folder and install **MicroFrameworkSDK.MSI** and **netmfvs2013.vsix**.
+
+### Install Microsoft .NET Gadgeteer Core (for Gadgeteer users only)
+Download and install [Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812).
+For more information on the future of Gadgeteer, please see this [news post](https://www.ghielectronics.com/community/forum/topic?id=23671).
+
+### Install GHI Electronic's NETMF SDK
+Download and install [GHI Electronics NETMF SDK 2016 R1](http://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+If you have a reason you want to use an older SDK [click here](http://old.ghielectronics.com/support/netmf/sdks).
 
 > [!Tip]
 > All example code should be copied directly from this document and pasted into the Visual Studio program editor.
@@ -66,7 +84,7 @@ In the Properties window, on the left side tabs, select `.NET Micro Framework` a
 
 ![Project properties](images/project-properties.jpg)
 
-Console applications have their `Debug.Print` statements appear in Visual Studio's Output Window. The application in this example uses print statements; so, if the Output window is not visible, open it by selecting `Output` in the `View` menu.
+Console applications have their `Debug.Print` statements appear in Visual Studio's Output Window. The application in this example uses print statements.  If the Output window is not visible, open it by selecting `Output` in the `View` menu.
 
 ## Executing
 
@@ -82,7 +100,7 @@ After a few seconds, the program will stop and the Output window will have "Amaz
 
 The following sections are a quick introduction to the power and ease of debugging NETMF applications.
 
-Start running the program by pressing `F11` (instead of `F5`), this will "step" into the application instead of just running it; after deployment, the program starts to run and stops at the very first line of the code. This is indicated by the yellow arrow.
+Start running the program by pressing `F11` (instead of `F5`), this will "step" into the application instead of just running it.  After deployment, the program starts to run and stops at the very first line of the code. This is indicated by the yellow arrow.
 
 ![Yellow arrow](images/yellow-arrow.jpg)
 
@@ -142,5 +160,6 @@ Pressing `F5` sends the simple application to the hardware and runs it. Debuggin
 
 ## Next Steps
 
-All NETMF related tutorials are located at https://www.ghielectronics.com/docs?tags=netmf
+We are currently updating the NETMF documentation found in our NETMF [Tutorials](tutorials/intro.md). We also have extensive NETMF documentation on our old website which can be viewed [here](http://old.ghielectronics.com/support/netmf).
+
 

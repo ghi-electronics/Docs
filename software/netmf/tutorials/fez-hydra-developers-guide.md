@@ -1,4 +1,5 @@
 # FEZ Hydra Developers' Guide
+---
 
 FEZ Hydra is a 100% open source hardware (OSHW). This means, hardware design files are made public and the software running the board is made public as well. Even better, FEZ Hydra hardware is designed with EAGLE, one of the most popular design tools and the software is developed on the free, open source GCC compiler.
 

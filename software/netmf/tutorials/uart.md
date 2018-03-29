@@ -1,4 +1,5 @@
-# UART (Universal Asynchronous Receiver Transmitter)
+# UART
+---
 
 UART transfers data between two pins TXD (transmit) and RXD (receive). Normally, the pins are on different processors. Data is sent from TXD, in a sequence, at a predefined speed. The receiver checks data on RXD.
 

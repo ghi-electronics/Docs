@@ -1,8 +1,11 @@
-# I2C (Inter Integrated Circuit)
+# I2C
+---
 
-I2C (pronounced eye-squared-sea, or eye-two-sea) was originally developed by Phillips to allow multiple chipsets to communicate on a 2-wire bus in home consumer devices. It has a master and one or more slaves sharing the same data bus. Instead of selecting the slaves using a digital pin like SPI, which consumes an additional I/O pin, I2C uses an addressing mechanism to communicate to a selected device. Before data is transferred, the master sends out a 7-bit address address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the device or receive data from the device. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a "start" condition before it sends any address or data and then end it with "stop" condition.
+I2C (pronounced eye-squared-sea, or eye-two-sea) was originally developed by Phillips to allow multiple chipsets to communicate on a 2-wire bus in home consumer devices. It has a master and one or more slaves sharing the same data bus. Instead of selecting the slaves using a digital pin like SPI (consuming an additional I/O pin), I2C uses an addressing mechanism to communicate to the selected device.
 
-The I2C uses two wires to communicate between the I2C Master and the I2C device. These two wires are known as the SDA and SCL lines; SDA stands for Serial Data, and SCL is Serial Clock.
+Before data is transferred, the master sends out a 7-bit address address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the device or receive data from the device. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a "start" condition before it sends any address or data and then end it with "stop" condition.
+
+The I2C uses two wires to communicate between the I2C Master and the I2C device. These two wires are known as the SDA and SCL lines. SDA stands for Serial Data, and SCL is Serial Clock.
 
 The I2C NETMF driver is based on transactions. If we want to read from a register on a sensor, we would first need to send it the register number we wish to read from, and then we need to read the register. Those are two transactions; a write followed by a read.
 
@@ -10,9 +13,9 @@ The I2C NETMF driver is based on transactions. If we want to read from a registe
 One very important point about I2C is that I2C devices have a 7-bit address, but 8-bits are sent on the wire in the "control byte" when communicating with the I2C bus. The 8th bit tells the device whether the operation will be a read operation (the 8th bit is a 1) or a write operation (the 8th bit is a 0). When discussing I2C you should always make sure you are clear about the 7-bit address that your device uses, rather than stating your 8-bit read or write address.
 
 ## Software I2C
-When using I2C, it is highly recommended that you use the built-in hardware support for I2C. In some cases though it may be necessary to have another I2C bus or it is necessary to use specific pins that are not I2C pins. In this case, I2C can be handled all in software, though performance will be lower.
+When using I2C, it is highly recommended that you use the built-in hardware support for I2C. In some cases though it may be necessary to have another I2C bus or it is necessary to use specific pins that are not I2C pins. In this case, I2C can be handled completely in software, though performance will be lower.
 
-The GHI libraries includes a software I2C implementation in the GHI.Hardware assembly (GHI.IO.SoftwareI2CBus).
+The GHI libraries include a software I2C implementation in the GHI.Hardware assembly (GHI.IO.SoftwareI2CBus).
 
 ## An I2C Example
 This example will read the value of the register on an I2C device with the 7-bit address of 0x38. As discussed above, you first have to write the register number you want to read, two in this case, and then read the value back.

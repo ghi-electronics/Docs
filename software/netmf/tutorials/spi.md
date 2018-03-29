@@ -1,4 +1,5 @@
 # SPI
+---
 
 SPI uses three, sometimes four, wires for transferring data. The bus on SPI consists of one master and one or more slaves. The master will send clock to the salves along with data and will read back using the same clock. This clock is used to determine how fast the data is moved. If you know electronics, this is a shift register.
 

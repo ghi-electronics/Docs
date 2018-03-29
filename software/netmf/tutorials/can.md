@@ -1,8 +1,12 @@
 # CAN
+---
 
 Controller Area Network (CAN) is a very common interface in industrial and automotive control. CAN is very robust and works very well in noisy environments at high speeds. All error checking and recovery methods are done automatically on the hardware. TD (Transmit Data) and RD (Receive Date) are the only two pins needed.
+
 There is no master/slave relationship in CAN. All nodes are equal and can both transmit and receive. CAN includes a protocal which easily allows for a node to claim a slice of time for its use so that collisions do not occur. You must have at least two nodes on the bus, however, or CAN will not work.
-There are many kinds of physical layers, but the most commonly used is a high-speed-dual wire that uses a twisted pair for noise immunity. This transceiver can run at up to 1 Mbit/s and can transfer data on very long wires if a low bit rate is used. Data can be transferred between nodes on the bus where any node can transfer at any time and all other nodes are required to successfully receive the data. All nodes must have a predefined bit timing criteria. This is much more complicated than calculating a simple baud rate for UART. For this reason, many CAN bit rate calculators are available which can you find using a simple internet search.
+
+There are many kinds of physical layers, but the most commonly used is a high-speed-dual wire that uses a twisted pair for noise immunity. This transceiver can run at up to 1 Mbit/s and can transfer data on very long wires if a low bit rate is used. Data can be transferred between nodes on the bus where any node can transfer at any time and all other nodes are required to successfully receive the data. All nodes must have a predefined bit timing criteria. This is much more complicated than calculating a simple baud rate for UART. For this reason, many CAN bit rate calculators are available which you can find using a simple internet search.
+
 We provide a few precalculated speeds that you can use but you can create more precise custom timings if you wish. There is an informative CAN guide in our downloads.
 
 ![Can Bus](images/can-bus.jpg)
@@ -12,8 +16,9 @@ The above image shows two CAN nodes connected over a bus with the 120 ohm resist
 > [!Tip]
 > Make sure to check the datasheet from the tranceiver. Most CAN controllers will divide the frequency by 2 before actually using it.
 
-Getting Started
-The below code sends a message over the CAN bus and prints out every message it receives to the debug window. It requires the GHI.Hardware assembly be added to the resources in your Visual Studio project.
+**Getting Started**
+
+The code below sends a message over the CAN bus and prints out every message it receives to the debug window. It requires the GHI.Hardware assembly be added to the resources in your Visual Studio project.
 
 ```c#
 using GHI.IO;

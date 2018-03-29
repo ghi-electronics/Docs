@@ -1,4 +1,5 @@
 # Display NHVN Developers' Guide
+---
 
 **While the Display NHVN is legacy and will be discontinued, it is available for the time being until a suitable replacement is available for NETMF devices.**
 

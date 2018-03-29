@@ -1,4 +1,5 @@
 # USB Client
+---
 
 By default, all of GHI's NETMF devices use USB for deploying and debugging. You may optionally use the USB client (not the host) for something other than debugging. This is actually supported by NETMF and GHI adds more functionality making it even easier to use.
 
@@ -196,7 +197,7 @@ public class Program
 
 GHI's USB client supports Mass Storage Class (MSC). This allows access to connected media right from USB. For example, a data logger application that needs to save data to an SD card or USB memory. When the user is done collecting data, they can plug the USB data logger into the PC and now the PC can detect the device as a mass storage device. The user can then transfer the files using standard operating system controls. It may be helpful to think of the device as a memory card reader. We can even enhance our logger where the USB client interface can be CDC to configure the device and later dynamically switch to MSC to transfer files.
 
-Once very common question on GHI support is "Why can't I access the media from my application while the media is also accessed externally (from windows)?".  -- Due to caching of file system data and/or the possibility of a write from one interface while the other is doing a read and/or a write, data on the media and/or data used by the interface will likely (and quickly) be corrupted.
+Once very common question on GHI support is "Why can't I access the media from my application while the media is also accessed externally (from windows)?"  Due to caching of file system data and/or the possibility of a write from one interface while the other is doing a read and/or a write, data on the media and/or data used by the interface will likely (and quickly) be corrupted.
 
 Note: you can easily switch back and forth between internal file system and USB MSC.
 

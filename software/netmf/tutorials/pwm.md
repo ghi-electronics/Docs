@@ -1,8 +1,9 @@
 # PWM
+---
 
 PWM is used to control of the ratio of a pin's high and low state, the "duty cycle." This can be done using software or using built-in PWM pins on the processor. PWM pins have the advantage over Software PWM because the toggling is independent of the CPU. Software PWM is performed using the SignalGenerator class.
 
-PWM objects are constructed with the period and duration of the pulse.The duration is how long the pin is high or active while the period is the time between one duration and the next. "Duty Cycle" is the ratio of the duration and the period; as a convenience, a scale can be set. The scale is applied to the numbers assigned to the PWM's properties.
+PWM objects are constructed with the period and duration of the pulse.  The duration is how long the pin is high or active while the period is the time between one duration and the next. "Duty Cycle" is the ratio of the duration and the period -- as a convenience, a scale can be set. The scale is applied to the numbers assigned to the PWM's properties.
 
 A pin with duty cycle 0.5 will be high half the time and low the other half.
 

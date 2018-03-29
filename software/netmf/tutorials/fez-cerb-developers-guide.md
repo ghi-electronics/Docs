@@ -1,4 +1,5 @@
 # FEZ Cerb Family Developers' Guide
+---
 
 The powerful firmware on a single chip design of the Cerb Family makes this core ideal for many uses. GHI offers the following Cerb Family products that all share the exact same processor (STM32F405RGT6) and firmware:
 

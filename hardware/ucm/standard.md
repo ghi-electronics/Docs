@@ -2,7 +2,7 @@
 ---
 ![UCM SOM](images/som_noborder.jpg)
 
-Our UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Our Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  
+The UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  
 
 ## UCM Standard Peripherals*
 | Peripheral                                            | Up to Max |
@@ -41,7 +41,6 @@ SPI is a synchronous serial communication interface used for short distance comm
 
 ### CAN (Controller Area Network)
 A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/can.md)
-
 
 ### SDIO (SD Card)
 SDIO (Secure Digital Input Output) is an interface used for reading from and writing to SD cards.
@@ -285,8 +284,6 @@ JTAG is a serial interface which allows communication between the processor and 
 
 ***
 
-Learn about our lastest UCMs -- the [**UC2550**](uc2550.md) and the [**UC5550**](uc5550.md).
-
-Want to quickly build your prototype?  Check out our [**UCM Development Options**](development-options.md).
+Want to quickly build your prototype?  Check out the UCM [**Development Options**](development-options.md).
 
 You can also visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).

@@ -1,4 +1,5 @@
 # FEZ Hydra Firmware
+---
 
 Since the [FEZ Hydra](https://www.ghielectronics.com/catalog/product/530) is open source, its firmware is available and can be built by end users who wish to customize it. To begin, make sure you have the following installed:
 

@@ -1,4 +1,5 @@
 # USB Host
+---
 
 There is usually a lot of confusion between USB host and USB client. USB host is the system that connects to multiple USB clients. For example, the PC is a USB host and it can connect to multiple USB clients like mice, keyboards, and mass storage devices. Implementing a USB client is rather simple but implementing a host is far more complicated.
 
@@ -6,7 +7,7 @@ USB host is an exclusive feature from GHI Electronics. With this feature, you ca
 
 ## Getting Started
 
-When working with USB host, you interact with the Controller . You subscribe to the connected event for various devices and then start the controller. When a device connected, you receive an object representing that device as the event arguments. You can subscribe to the Disconnect event on that device to do any clean up you might need.
+When working with USB host, you interact with the Controller.  You subscribe to the connected event for various devices and then start the controller. When a device connected, you receive an object representing that device as the event arguments. You can subscribe to the Disconnect event on that device to do any clean up you might need.
 
 The below code requires the GHI.Usb and GHI.Hardware assemblies and shows you briefly how to handle device connections and disconnections.
 
@@ -139,7 +140,7 @@ public class Program
 
 Serial (UART) communication is a very common interface. There are many companies that create chips that convert USB to serial. GHI currently supports chipsets from FTDI. Their FT232 is known to work, though others may as well. USB chipsets are made to be somewhat customized. A company can use an FTDI chip to make their product run on USB and they will change the strings in USB descriptors so that when you plug in their device to a PC you will see the company name and not FTDI. They can also change the USB VID/PID, vendor ID and product ID. Many of the interface products on the market use the FTDI chipset.
 
-A few other USB-Serial manufacturers, like Prolific, are included, but they are depreciated and not supported by us.
+A few other USB-Serial manufacturers, like Prolific, are included, but they are deprecated and not supported by us.
 
 The below example simply echoes any data received back out to the sender and prints it to the debug output.
 
@@ -231,6 +232,7 @@ Under current versions of NETMF, the Flush method of FileStream will eventually 
 
 ## Webcams
 You can also connect a webcam and stream images from it. Webcams only support certain image formats and sizes so you need to query the formats supported and tell the camera to stream images using that format. We support cameras that support the YUV2 color format.
+
 The below code requires the Microsoft.SPOT.Graphics and Microsoft.SPOT.TinyCore assemblies. It looks for a format that has a size of 320x240 and starts to stream it. When a new image is available an event is raised and we draw the received image to the bitmap that represents our screen and then flush it. Make sure you have a display properly configured.
 
 ```c#

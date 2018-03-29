@@ -1,6 +1,7 @@
 # Digital Inputs
+---
 
-Digital inputs sense if the state of its pin is high or low based on the voltage. Every pin has a maximum & minimum supported voltages. For example, the typical minimum voltage on most pins is 0 volts; a negative voltage may damage the pin or the processor. Also, the maximum that can be supplied to most pins must be less than the processor power source voltage. Since most processors run on 3.3V, the highest voltage a pin should see is 3.3V; however, some processors that are powered by 3.3V are 5V tolerant; that is, they are capable of accepting up to 5V on their inputs. Check the product's or the processor's manual for the tolerance level.
+Digital inputs sense if the state of its pin is high or low based on the voltage. Every pin has a maximum & minimum supported voltages. For example, the typical minimum voltage on most pins is 0 volts -- a negative voltage may damage the pin or the processor. Also, the maximum that can be supplied to most pins must be less than the processor power source voltage. Since most processors run on 3.3V, the highest voltage a pin should see is 3.3V; however, some processors that are powered by 3.3V are 5V tolerant and are capable of accepting up to 5V on their inputs. Check the product's or the processor's manual for the tolerance level.
  
 > [!Warning]
 > 5V-tolerant doesn't mean the processor can be powered by 5V. Only the input pins can tolerate 5V.
@@ -38,10 +39,14 @@ public class Program
 
 ## Interrupt Port
 
-In the previous example, the program just looped, and looped, and looped; each time checking the status of the pin attached to the button. The pin is checked maybe a million times before/after the button is pressed!  
+In the previous example, the program just looped, and looped, and looped -- each time checking the status of the pin attached to the button. The pin is checked maybe a million times before/after the button is pressed!  
+
 Interrupt ports allows us to set a method that will be executed when the button is pressed (when pin is low for example).
-We can set the interrupt to fire (call the method) on many state changes on the pin: when a pin is low or maybe when it is high. The most common use is the "on change." The change from low to high or high to low creates a signal edge. The high edge occurs when the signal rises from low to high. The low edge happen when the signal falls from high to low. For a more in-depth understanding of the difference between the "change" interrupt versus a "level" interrupt, use wikipedia, the two articles of relevance are found by searching for "Interrupt Port" and "edge level transition."
+
+We can set the interrupt to fire (call the method) on many state changes on the pin: when a pin is low or maybe when it is high. The most common use is the "on change." The change from low to high or high to low creates a signal edge. The rising edge occurs when the signal rises from low to high. The falling edge happen when the signal falls from high to low. For a more in-depth understanding of the difference between the "change" interrupt versus a "level" interrupt, use wikipedia -- the two articles of relevance are found by searching for "Interrupt Port" and "edge level transition."
+
 In the example below, we are using the low edge to detect a button press. "IntButton_OnInterrupt" will automatically run when button is pressed.
+
 The following code requires the Microsoft.SPOT.Hardware assembly. Consult the device schematic or manual for pin numbers.
 
 ```c#
@@ -81,8 +86,10 @@ When creating the new InterruptPort object, the second argument indicates whethe
 > In the event handler, like the one above : ...OnInterrupt(uint port, uint state..., the state argument is the state of the Pin after the edge transition. I.e. on a low to high edge, state will be high (true); likewise for high to low transitions.
 
 ## Tristate Port
-If we want a pin to be an input and output, what can we do? A pin can never be in and out simultaneously but we can make it output to set something and then make it input to read a response back. One way is to "Dispose" the pin. We make an output port, use it and then dispose it, then we can make the pin input and read it.
-NETMF supports a better option using Tristate port. Tristate means three states; that is input, output low and output high. One minor issue about tristate pins is that if a pin is set to output and then you set it to output again then an exception will occur. One common work-around for this is to check the direction of the pin before changing it. The direction of the pin is in its property "Active" where false means input and true is output.
+If we want a pin to be an input and output, what can we do? A pin can never be in and out simultaneously but we can make it output to set something and then make it input to read a response back. One way is to "Dispose" of the pin. We make an output port, use it and then dispose it; then we can make the pin input and read it.
+
+NETMF supports a better option called a Tristate port. Tristate means three states -- input, output low and output high. One minor issue about tristate pins is that if a pin is set to output and then you set it to output again an exception will occur. One common work-around for this is to check the direction of the pin before changing it. The direction of the pin is in its property "Active" where false means input and true is output.
+
 The code below requires the Microsoft.SPOT.Hardware assembly.
  
 > [!Tip]
