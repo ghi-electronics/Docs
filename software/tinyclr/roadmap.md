@@ -1,6 +1,6 @@
 # Roadmap
 ---
-![Roadmap](images/road.jpg)
+![Roadmap](images/roadmap-noborder.jpg)
 
 Below is an outline of our goals for a stable and production-ready 1.0 release of TinyCLR OS. Of course, this is subject to change and does not include many smaller improvements and features.
 

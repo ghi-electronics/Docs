@@ -1,6 +1,6 @@
 # Downloads
 ---
-![Download](images/download_noborder.jpg)
+![Download](images/download-noborder.jpg)
 
 This page includes different download types for individual boards. See individual product pages for details on what to download.
 

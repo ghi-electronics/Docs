@@ -13,7 +13,7 @@ The [NETMF for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_
 |    |    |
 |----|----|
 |  **Getting Started** </br> Deploy your first NETMF program. [**Learn more...**](getting-started.md)  |  **Tutorials** </br> Learn NETMF embedded programming. [**Learn more...**](tutorials/intro.md)  |
-|  [![Getting Started](../tinyclr/images/getting-started.jpg)](getting-started.md)  |  [![Learn More](../tinyclr/images/learn.jpg)](tutorials/intro.md)  |
+|  [![Getting Started](../tinyclr/images/getting-started.jpg)](getting-started.md)  |  [![Learn More](../tinyclr/images/tutorials.jpg)](tutorials/intro.md)  |
 |  **Downloads** </br> Visual Studio and device downloads. [**Learn more...**](downloads.md)  |    |
 |  [![Download](../tinyclr/images/download.jpg)](downloads.md)  |    |
 

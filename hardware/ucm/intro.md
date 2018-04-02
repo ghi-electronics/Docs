@@ -1,6 +1,6 @@
 # Universal Compute Modules
 ---
-![G400D](images/g400d_noborder.jpg)
+![G400D](../../images/uc5550-noborder.jpg)
 
 Universal Compute Modules are based on a 200 pin SO-DIMM form factor.  All models follow a standard pin out making it easy to change modules to fit the needs of your product.
 
@@ -9,11 +9,11 @@ A variety of tools and software options are available. Check the individual prod
 |  |  |
 |--|--|
 | **The UCM Standard** </br> Description, peripherals and pinouts of the standard. [**Learn more...**](standard.md) | **UC2550** </br> ARM Cortex-M4 based UCM with optional WiFi. [**Learn more...**](uc2550.md) |
-| [![UCM SOM](images/som.jpg)](standard.md) | [![G400D](images/g400d.jpg)](uc2550.md) |
+| [![UCM SOM](images/som.jpg)](standard.md) | [![UC2550](images/uc2550.jpg)](uc2550.md) |
 | **UC5500** </br> ARM Cortex M7 based UCM with optional WiFi. [**Learn more...**](uc5550.md) | **G400D** </br> Based on a 400 MHz Atmel ARM 926. [**Learn more...**](g400d.md) |
-| [![G400D](images/g400d.jpg)](uc5550.md) | [![G400D](images/g400d.jpg)](g400d.md) |
+| [![UC5550](images/uc5550.jpg)](uc5550.md) | [![G400D](images/g400d.jpg)](g400d.md) |
 | **UCM Development Options** </br> Development boards, breakout boards, displays. [**Learn more...**](development-options.md) |  |
-| [![G400 Dev Board](images/ucm_dev_board.jpg)](development-options.md) |  |
+| [![Display Option](images/accessories.jpg)](development-options.md) |  |
 
 ***
 

@@ -7,11 +7,11 @@ TinyCLR OS started with Microsoft's .NET Micro Framework and continues to enable
 |  |  |
 |--|--|
 |  **Getting Started** </br> Deploy your first TinyCLR program. [**Learn more...**](getting-started.md)  |  **Tutorials** </br> Learn TinyCLR embedded programming. [**Learn more...**](tutorials/intro.md)   |
-|  [![Getting Started](images/getting-started.jpg)](getting-started.md)   |  [![Learn More](images/learn.jpg)](tutorials/intro.md)  |
+|  [![Getting Started](images/getting-started.jpg)](getting-started.md)   |  [![Tutorials](images/tutorials.jpg)](tutorials/intro.md)  |
 |   **Porting** </br> Run TinyCLR on other devices. [**Learn more...**](porting/intro.md)  |  **TinyCLR Config** </br> Our device configuration program. [**Learn more...**](tinyclr_config.md)  |
 |  [![TinyCLR Logo](images/tinyclrlogo.jpg)](porting/intro.md)   |  [![TinyCLR Config](images/tinyclr-config_sm.png)](tinyclr_config.md)   |
 |  **Downloads** </br> Visual Studio and device downloads. [**Learn more...**](downloads.md)   |   **Roadmap** </br> The future of TinyCLR. [**Learn more...**](roadmap.md)  |
-|  [![Download](images/download.jpg)](downloads.md)   |  [![Road](images/road.jpg)](roadmap.md)   |
+|  [![Download](images/download.jpg)](downloads.md)   |  [![Road](images/roadmap.jpg)](roadmap.md)   |
 |  **Supported Boards** </br> Some boards that run TinyCLR. [**Learn more...**](boards/intro.md)   |  **Bootloaders** </br> [**Learn more...**](loaders/intro.md)   |
 |  [![Boards](images/boards.png)](boards/intro.md)   |  [![Bootloader](images/bootloader.png)](loaders/intro.md)   |
 
