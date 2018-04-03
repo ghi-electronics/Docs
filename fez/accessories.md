@@ -2,9 +2,9 @@
 ---
 ![Accessories](images/accessories_noborder.png)
 
-There are thousands of accessories that can be used with [boards](../tinyclr/boards/intro.md) supported by TinyCLR OS, especially [FEZ](../fez/intro.md). However, we have hand picked a few of our favorites and then built the necessary drivers for them.
+There are thousands of accessories that can be used with the [FEZ](../fez/intro.md). However, we have hand picked a few of our favorites and then built the necessary drivers for them.
 
-Have a list of your own and want to contribute? Talk to us, [directly](https://www.ghielectronics.com/contact) on through the [community forum](https://forums.ghielectronics.com/).
+Have a list of your own and want to contribute? Talk to us, [directly](https://www.ghielectronics.com/contact) or through the [community forum](https://forums.ghielectronics.com/).
 
 # Adafruit Display Shield
 ---
@@ -12,7 +12,7 @@ Have a list of your own and want to contribute? Talk to us, [directly](https://w
 
 The [Adafruit 1.8" Color TFT Shield w/microSD and Joystick](https://www.adafruit.com/product/802) plugs right on top of FEZ, or any other Arduino-pinout compatible board.
 
-To use this shield, just plug it on top of your Arduno-pinout compatible board, like the [FEZ](../fez/intro.md).
+To use this shield, just plug it on top of your FEZ.
 
 The driver is found [here](https://github.com/ghi-electronics/TinyCLR-Accessories).
 
@@ -22,7 +22,7 @@ The driver is found [here](https://github.com/ghi-electronics/TinyCLR-Accessorie
 
 Through MikroElektronika's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click boards](https://shop.mikroe.com/click) can be easily connected to your board.
 
-The [BrainPad](../../brainpad/intro.md), [Clicker](../tinyclr/boards/mikroelektronika.md#clicker), and [Quail](../tinyclr/boards/mikroelektronika.md#quail) boards all have sockets for plugging click boards.
+The [BrainPad](../../brainpad/intro.md), [Clicker](../tinyclr/boards/mikroelektronika.md#clicker), and [Quail](../tinyclr/boards/mikroelektronika.md#quail) boards all have sockets for plugging in click boards.
 
 This video talks about the technology behind SPI bus, shift registers, and serial-parallel data. It uses the [LED ring click](https://shop.mikroe.com/led-ring-r-click) on the BrainPad.
 
@@ -102,14 +102,14 @@ public static void Main()
 ---
 ![Seeed Grove Starter Kit](images/seeed-grove-starter-kit.jpg) 
 
-Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effect and so on. Just plug the modules you need to the base shield, then you are ready to test your idea buds. We have picked the [Seeed Grove Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html) as  starting base but you can add additional Grove modules as well.
+Grove is a modular electronic platform for quick prototyping. Every module has one function, such as touch sensing, creating audio effects and so on. Just plug the modules you need to the base shield, then you are ready to test your ideas. We have picked the [Seeed Grove Starter Kit for Arduino](https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html) as a starting base but you can add additional Grove modules as well.
 
-The included Grove modules plug into the included arduino shield. This shield works with any arduio-pinout compatible board, like the [FEZ](../fez/intro.md).
+The included Grove modules plug into the included arduino shield. This shield works with any arduino pinout compatible board, like the [FEZ](../fez/intro.md).
 
-Plug the shield on top of your board, and get the [drivers](https://github.com/ghi-electronics/TinyCLR-Accessories).
+You can get the drivers [here](https://github.com/ghi-electronics/TinyCLR-Accessories).
 
 
-This example that makes some noise!
+This example makes some noise!
 
 ```
 Buzzer buzz = new Buzzer(FEZ.GpioPin.D4);
@@ -133,7 +133,7 @@ while(true)
 }
 ```
 
-This example will show some text on the character display
+This example will show some text on the character display.
 
 ```csharp
 LcdRgbBacklight lcd = new LcdRgbBacklight();
@@ -176,7 +176,7 @@ Now, add a wire from the socket directly to 5V.
 ---
 ![Sparkfun Ardumoto Shield Kit](images/sparkfun-ardumoto-shield-kit_noborder.jpg) 
 
-The sparkfun [Sparkfun Ardumoto Shield Kit](https://www.sparkfun.com/products/14180) is a low cost way of building a robot, somewhat quickly.
+The sparkfun [Sparkfun Ardumoto Shield Kit](https://www.sparkfun.com/products/14180) is a low cost way to quickly build a robot.
 
 
 Plug the shield on top of your [FEZ](intro.md), or any other Arduino-pinout compatible board.
