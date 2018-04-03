@@ -12,20 +12,20 @@ The [**GHI Bootloader**](ghi_bootloader.md) page can be found [**here**](ghi_boo
 ## STM32 Bootloader
 The [**STM32 Bootloader**](stm32_bootloader.md) page can be found [**here**](stm32_bootloader.md).
 
-## SAMBA Bootloader
-The SAMBA Bootloader lives on many Atmel chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.
+## SAM-BA Bootloader
+The SAM-BA Bootloader lives on many Atmel chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.
 
 ### Uploading bin Files
-To set the chip in SAMBA mode, hold down the dedicated button on your board when the system powers up. If there is no such button, make sure SPI1_MISO is low instead. The device manager will show a COM port similar to "Bossa Program Port" or "GPS Detect".
+To set the chip in SAM-BA mode, hold down the dedicated button on your board (BOOTA on UCM Dev and Breakout boards) while the system powers up (or during reset). If there is no such button, connect SPI1_MISO to ground instead. Keep the pin grounded for three seconds after power up or reset and then remove the connection from SPI1_MISO to ground. The device manager will show a COM port similar to "Bossa Program Port" or "GPS Detect".
 
 1. If it is not already installed, download and install the SAM-BA tool from [Microchip](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atmel%20sam-ba%20in-system%20programmer). The latest version we have tested is 2.18 for Windows.
-2. Open the SAM-BA program then select the COM port for your device in the connection box and your board type below it, then click connect.
-3. In the bottom half of the Window, go to the `DataFlash AT45DB/DCB` tab.
-4. Under `Scripts`, select `Enable Dataflash (SPI0 CS0)` then click execute.
-5. Under `Scripts`, select `Erase All` then click execute. This will take some time to complete and the program may appear to freeze during it.
+2. Open the SAM-BA program then select the COM port for your device in the connection box and your board type below it (at91sam9x35-ek for G400), then click connect.
+3. Near the middle of the window, go to the `DataFlash AT45DB/DCB` tab.
+4. Under `Scripts`, select `Enable Dataflash (SPI0 CS0)` then click the `Execute` button..
+5. Under `Scripts`, select `Erase All` then click `Execute`. This will take some time to complete.  It seems that if SAM-BA loses focus during the erase procedure it can lock up.  We recommend that once you click the `Execute` button you leave the computer alone until the erase procedure is completed.
 6. Under `Scripts`, select `Send Boot File`, click execute, then browse to and select the bootloader for the device.
 7. Once the transfer finishes, go to `File` > `Quit` and then reset the board. Make sure to properly quit the program or connection errors may result on subsequent uses.
-8. Congratulations, your board is now running the loaded program!
+8. Now reset the board.  Congratulations, your board is now running the loaded program!
 
 ## Mikro Bootloader
 MikroElektronika's bootloader is found on several products offered by them. Some of the TinyCLR OS supported boards are made by MikroElectronika and include this loader by default.

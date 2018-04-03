@@ -1,4 +1,4 @@
-# Legacy Systems on Modules
+# Legacy System on Modules
 ---
 ![Legacy SoMs](images/legacy-soms.jpg)
 

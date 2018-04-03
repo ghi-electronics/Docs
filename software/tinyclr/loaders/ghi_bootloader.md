@@ -29,7 +29,7 @@ TinyCLR Config tool includes multiple features developers need to work with Tiny
 
 Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.md) page.
 
-### Manual Loading the Firmware
+### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
 
 1. Set your board in the bootloader mode. Each product has a specific way to enter the boot loader.

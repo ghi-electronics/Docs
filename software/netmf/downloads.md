@@ -1,5 +1,6 @@
 # NETMF Downloads
 ---
+![Downloads](../../software/tinyclr/images/download-noborder.jpg)
 
 ## Microsoft Visual Studio
 The lastest version of Visual Studio that works with NETMF is VS2013.  The Community Version can be downloaded from the following link:

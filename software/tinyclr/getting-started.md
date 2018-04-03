@@ -1,8 +1,8 @@
 # Getting Started
 ---
-![Getting Started](images/getting-started.jpg)
+![Getting Started](images/getting-started-noborder.jpg)
 
-This page explains how to set up the TinyCLR programming environment.  It covers device and computer setup and deployment of a "Hello World!" program.
+This page explains how to set up the TinyCLR programming environment.  It covers device and computer setup and deployment of a "hello world" program.
 > [!Tip]
 > If you're an existing user of NETMF and still want to use it in addition to TinyCLR OS, don't worry. TinyCLR is completely independent of NETMF and works side-by-side with no issues.
 
@@ -52,7 +52,7 @@ And, that's it! You're now ready to start programming using TinyCLR OS.
 
 ## Starting a New Project
 
-Let's make a "Hello World!" program and deploy it on the FEZ Cobra III.
+Let's make a "hello world" program and deploy it on the FEZ Cobra III.
 
 Open Visual Studio and select `File > New > Project`. 
 
@@ -72,7 +72,7 @@ If you right click on the project name in the Solution Explorer window a drop do
 
 ![View Show Solution Explorer](images/manage-nuget-packages-menu.png) 
 
-Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core).  This is the only library we will need for our "Hello World!" program.
+Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core).  This is the only library we will need for our "hello world" program.
 
 ![Installed NuGet](images/installed-nuget.png)
 
