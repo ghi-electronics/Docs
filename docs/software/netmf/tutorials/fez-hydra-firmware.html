@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FEZ Hydra Firmware </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="FEZ Hydra Firmware ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="fez-hydra-firmware">FEZ Hydra Firmware</h1>
+
+<hr>
+<p>Since the <a href="https://www.ghielectronics.com/catalog/product/530">FEZ Hydra</a> is open source, its firmware is available and can be built by end users who wish to customize it. To begin, make sure you have the following installed:</p>
+<ul>
+<li>Visual Studio 2012 Express for Desktop</li>
+<li>The GNU GCC toolchain</li>
+</ul>
+<p>Only Visual Studio 2012 is supported due to a requirement in NETMF itself. You may continue to use Visual Studio 2013 or newer for deploying programs to the board. You may use other compilers or toolchains, but they are not covered in this guide and may require a number of changes to the sources to use correctly. </p>
+<p>Additionally, compiling the firmware requires the path to the compiler to not have any spaces in it. If you install the above toolchain to the default location in Program Files, you must create a shortcut to it that has no spaces. To do so, assuming the default install path, execute the below command from an elevated command prompt. It will create a shortcut to the install directory in C:\ called gcc.</p>
+<pre><code>mklink /D C:\gcc &quot;C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q2&quot;
+</code></pre><h2 id="getting-the-sources">Getting the Sources</h2>
+<p>After you have installed the above tools, you need to download the source code for the firmware. It can be found on Bitbucket. If you are familiar with git, you can clone is to a local directory. If not, you can download the latest version from the downloads page. In either case, make sure you extract it to a folder with no spaces in its path just like the compiler. Unfortunately, a shortcut like we created above will not work. For this guide, we will assume you cloned or downloaded and extracted it to C:\netmf-open-firmware.</p>
+<p>One important thing to keep in mind is that we do not release the C# sources to our extensions. However, the firmware does include the native interop code. As such, if you wish to use our libraries, you must match the libraries found in an SDK with the firmware version you are compiling. For example, when we released the 2014 R5 SDK, we tagged that commit as SDK-2014-R5 to easily find it later. Pre-releases are not tagged but just have a commit message of the form &quot;Commit for SDK release 2015.1.9.0&quot;. If you try to compile a firmware version that came after the SDK version you got our libraries from, it will likely not work.</p>
+<h2 id="compiling">Compiling</h2>
+<p>Once you have all of the tools installed and the firmware source code downloaded, you are ready to compile. Begin by opening a command prompt and navigating to the directory with the firmware source, for example: C:\netmf-open-firmware. Once in that directory, execute the below command. Make sure that the last parameter matches the directory you installed the GCC toolchain to or the shortcut you created.</p>
+<pre><code>setenv_gcc 4.9.3 C:\gcc
+</code></pre><p>After that, to build TinyBooter, execute:</p>
+<pre><code>msbuild Solutions\FEZ_Hydra\TinyBooter\TinyBooter.proj /t:cleanbuild /p:flavor=release
+</code></pre><p>Once compilation finishes, you will find the final binary at C:\netmf-open-firmware\BuildOutput\ARM\GCC4.9\le\FLASH\release\FEZ_Hydra\bin\TinyBooter.bin. You can then use the loader updater that comes with our SDK to deploy that TinyBooter to your board (make sure to rename it to Loader.bin for the script to find.)</p>
+<p>Next, you can compile TinyCLR (the main firmware). Execute the same command as above, except change TinyBooter to TinyCLR:</p>
+<pre><code>msbuild Solutions\FEZ_Hydra\TinyCLR\TinyCLR.proj /t:cleanbuild /p:flavor=release
+</code></pre><p>Once that finishes, the final firmware can be found in &quot;C:\netmf-open-firmware\BuildOutput\ARM\GCC4.9\le\FLASH\release\FEZ_Hydra\bin\tinyclr.hex&quot;. ER_CONFIG is the same as Config.hex in our SDK and ER_FLASH is the same as Firmware.hex. You can deploy those files using MFDeploy or FEZ Config. You now have your own firmware running on your FEZ Hydra and can deploy to it from Visual Studio.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/netmf/tutorials/fez-hydra-firmware.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
