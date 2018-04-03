@@ -11,8 +11,8 @@ Below is an outline of our goals for a stable and production-ready 1.0 release o
 
 ## v0.9.0 in March
 - A .NET sockets and HTTP library for any interface (including ST's WiFi)
+- A .NET IO library for any interface
 - Native driver for SPI displays
-- Additional ports for other third-party devices
 
 ## v1.0.0 previews in April
 We plan to be feature-complete by the first preview release and focus on a lot of final polish, bug fixing, documentation updates, and publishing in the online galleries. There will be at least one preview, but there may be more if required. If all goes well, we're aiming for a final release in early to mid May.
