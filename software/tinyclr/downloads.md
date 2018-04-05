@@ -75,12 +75,12 @@ File | Date | Status | MD5
 ## UC2550
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC2550/UC2550%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 4C265BD5A6889CAEB1DFFCBC7675AE60
+[v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC2550/UC2550%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | 4C265BD5A6889CAEB1DFFCBC7675AE60
 
 ## UC5550
 File | Date | Status | MD5
 --- | --- | --- | ---
-[v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC5550/UC5550%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 789EA25CF38545DCE49964295D6AD581
+[v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC5550/UC5550%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | 789EA25CF38545DCE49964295D6AD581
 
 ## G30
 File | Date | Status | MD5
