@@ -3349,7 +3349,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/downloads.html",
-          "hash": "5xjcy+stm2nxglPgClZGBQ=="
+          "hash": "ZjprrAVRgua0WGrEed86kw=="
         }
       },
       "is_incremental": false,
@@ -3770,7 +3770,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/loaders/ghi_bootloader.html",
-          "hash": "htHtAfIzWJc0DlwIfpoWcA=="
+          "hash": "9cvNGJq+4wDjL+4uCF9z5Q=="
         }
       },
       "is_incremental": false,
@@ -3859,7 +3859,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/release_notes.html",
-          "hash": "dxvcmAFPpHqwSeWGaNV76Q=="
+          "hash": "5UjzxgILgF8cpb14t8pLGQ=="
         }
       },
       "is_incremental": false,
