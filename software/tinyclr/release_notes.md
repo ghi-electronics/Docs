@@ -27,26 +27,26 @@ As before, you can find all downloads in their respective sections on the [downl
 ### Firmware
 
 #### Changes
-- Added CAN to USBizi. [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
-- Added support for repeated start in I2C for the AT91 targets. [#55](https://github.com/ghi-electronics/TinyCLR-Ports/issues/55).
+- Added CAN to USBizi [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
+- Added support for repeated start in I2C for the AT91 targets [#55](https://github.com/ghi-electronics/TinyCLR-Ports/issues/55).
 - Added an STM32F7 target.
 - Added UC2550 and UC5550 firmwares.
-- Improved resetting peripherals during soft reset. [#247](https://github.com/ghi-electronics/TinyCLR-Ports/issues/247).
-- Moved some deployment logic out of flash drivers. [#187](https://github.com/ghi-electronics/TinyCLR-Ports/issues/187).
-- Fixed the firmware crashing during soft reset if a CAN or UART port is open. [#249](https://github.com/ghi-electronics/TinyCLR-Ports/issues/249).
-- Fixed being unable to deploy a second time if SPI is used in the application on G120 or G400. [#208](https://github.com/ghi-electronics/TinyCLR-Ports/issues/208).
-- Fixed being unable to deploy a second time if CAN is used in the application on G80. [#200](https://github.com/ghi-electronics/TinyCLR-Ports/issues/200).
-- Fixed UART and CAN buffer sizes returning zero if they were not previously set. [#203](https://github.com/ghi-electronics/TinyCLR-Ports/issues/203). and [#199](https://github.com/ghi-electronics/TinyCLR-Ports/issues/199).
-- Fixed some devices freezing if receiving too many messages over CAN after setting the buffer size. [#201](https://github.com/ghi-electronics/TinyCLR-Ports/issues/201).
-- Fixed the display memory not clearing during soft reset. [#198](https://github.com/ghi-electronics/TinyCLR-Ports/issues/198).
-- Fixed the ADC being slightly inaccurate on G80. [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
-- Fixed the LCD on the EMM sometimes not working. [#168](https://github.com/ghi-electronics/TinyCLR-Ports/issues/168).
-- Fixed the LCD having a blue tint on EMX and EMM. [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
-- Fixed PWM 3.27 not working on EMM. [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
-- Fixed ADC6 and ADC7 not working on USBizi. [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
-- Fixed the firmware crashing on USBizi during debugging. [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- Improved resetting peripherals during soft reset [#247](https://github.com/ghi-electronics/TinyCLR-Ports/issues/247).
+- Moved some deployment logic out of flash drivers [#187](https://github.com/ghi-electronics/TinyCLR-Ports/issues/187).
+- Fixed the firmware crashing during soft reset if a CAN or UART port is open [#249](https://github.com/ghi-electronics/TinyCLR-Ports/issues/249).
+- Fixed being unable to deploy a second time if SPI is used in the application on G120 or G400 [#208](https://github.com/ghi-electronics/TinyCLR-Ports/issues/208).
+- Fixed being unable to deploy a second time if CAN is used in the application on G80 [#200](https://github.com/ghi-electronics/TinyCLR-Ports/issues/200).
+- Fixed UART and CAN buffer sizes returning zero if they were not previously set [#203](https://github.com/ghi-electronics/TinyCLR-Ports/issues/203). and [#199](https://github.com/ghi-electronics/TinyCLR-Ports/issues/199).
+- Fixed some devices freezing if receiving too many messages over CAN after setting the buffer size [#201](https://github.com/ghi-electronics/TinyCLR-Ports/issues/201).
+- Fixed the display memory not clearing during soft reset [#198](https://github.com/ghi-electronics/TinyCLR-Ports/issues/198).
+- Fixed the ADC being slightly inaccurate on G80 [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
+- Fixed the LCD on the EMM sometimes not working [#168](https://github.com/ghi-electronics/TinyCLR-Ports/issues/168).
+- Fixed the LCD having a blue tint on EMX and EMM [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- Fixed PWM 3.27 not working on EMM [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Fixed ADC6 and ADC7 not working on USBizi [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- Fixed the firmware crashing on USBizi during debugging [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
 - Fixed resetting the ADC provider resetting ADC pins that aren't in ADC mode.
-- Fixed the USBizi sometimes failing to deployed.
+- Fixed the USBizi sometimes failing to deploy.
 - Fixed some frequencies rounding up on the G120 and G400.
 
 #### Known Issues
@@ -56,10 +56,10 @@ As before, you can find all downloads in their respective sections on the [downl
 - Testing `NaN`s for equality gives unexpected results.
 - The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
 - Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
-- RTC does not work on Cerb. [#263](https://github.com/ghi-electronics/TinyCLR-Ports/issues/263).
-- RTC does not work on G400 or FEZHydra. [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
-- RTC does not work on G30 or FEZCLR. [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
-- ADC11 does not work on the STM32F7 target. [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
+- RTC does not work on Cerb [#263](https://github.com/ghi-electronics/TinyCLR-Ports/issues/263).
+- RTC does not work on G400 or FEZHydra [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
+- RTC does not work on G30 or FEZCLR [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
+- ADC11 does not work on the STM32F7 target [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
 
 ### TinyCLR Config
 
@@ -234,13 +234,13 @@ As before, you can find all downloads in their respective sections on the [downl
 #### Changes
 - Added FEZ Hydra.
 - Added ADC 16 and 17 to STM32F4 [#130](https://github.com/ghi-electronics/TinyCLR-Ports/issues/130).
-- Improved native SPI driver stability. [#128](https://github.com/ghi-electronics/TinyCLR-Ports/issues/128).
-- Changed CAN and UART default buffer sizes to be per-port. [#154](https://github.com/ghi-electronics/TinyCLR-Ports/issues/154).
+- Improved native SPI driver stability [#128](https://github.com/ghi-electronics/TinyCLR-Ports/issues/128).
+- Changed CAN and UART default buffer sizes to be per-port [#154](https://github.com/ghi-electronics/TinyCLR-Ports/issues/154).
 - Fixed I2C on LPC24 based devices failing after soft reset [#164](https://github.com/ghi-electronics/TinyCLR-Ports/issues/164).
-- Fixed most frequencies on many PWMs not working on LPC17 and LPC24. [#144](https://github.com/ghi-electronics/TinyCLR-Ports/issues/144).
-- Fixed handshaking on UART2 for LPC17 and LPC24 not working. [#143](https://github.com/ghi-electronics/TinyCLR-Ports/issues/143).
-- Fixed PWM on PB6 and PB7 not working on the G30. [#141](https://github.com/ghi-electronics/TinyCLR-Ports/issues/141).
-- Fixed PWM not stopping on soft reset on the AT91. [#137](https://github.com/ghi-electronics/TinyCLR-Ports/issues/137).
+- Fixed most frequencies on many PWMs not working on LPC17 and LPC24 [#144](https://github.com/ghi-electronics/TinyCLR-Ports/issues/144).
+- Fixed handshaking on UART2 for LPC17 and LPC24 not working [#143](https://github.com/ghi-electronics/TinyCLR-Ports/issues/143).
+- Fixed PWM on PB6 and PB7 not working on the G30 [#141](https://github.com/ghi-electronics/TinyCLR-Ports/issues/141).
+- Fixed PWM not stopping on soft reset on the AT91 [#137](https://github.com/ghi-electronics/TinyCLR-Ports/issues/137).
 - Fixed UART6 on Cerb being mapped incorrectly.
 
 #### Known Issues
@@ -275,7 +275,7 @@ As before, you can find all downloads in their respective sections on the [downl
 
 #### Changes
 - Fixed the list of assemblies after erase being populated with garbage.
-- Fixed strings in the debugger longer than 128 characters displaying as garbage. [#169](https://github.com/ghi-electronics/TinyCLR-Ports/issues/169).
+- Fixed strings in the debugger longer than 128 characters displaying as garbage [#169](https://github.com/ghi-electronics/TinyCLR-Ports/issues/169).
 
 #### Known Issues
 - When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
