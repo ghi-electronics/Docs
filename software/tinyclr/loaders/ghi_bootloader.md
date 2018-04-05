@@ -81,6 +81,16 @@ File | Date | Status | MD5
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 33F7FCAE266D07209C079CEA38AAB583
 [v2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
 
+## UC2550
+File | Date | Status | MD5
+--- | --- | --- | ---
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC2550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 692FA78A161BAA2AEF17E9F85A6AF141
+
+## UC5550
+File | Date | Status | MD5
+--- | --- | --- | ---
+[v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 594744A52EC07CEFE6212669D33A5FE1
+
 ## G120
 File | Date | Status | MD5
 --- | --- | --- | ---
