@@ -1,5 +1,96 @@
 # Release Notes
 
+## 0.10.0 on 2018-04-05
+
+### Notes
+This release fixes a number of bugs including some that caused lockup during debugging and deployment. We added RTC to many devices and also added a target for the STM32F7 in the ports repo that we will maintain.
+
+`.constrained` continues to throw in this release as we gather more data. We have not found any other common cases beyond `ToString` on an enum.
+
+Lastly, the time provider for firmwares was split up into a native and system time provider. The core now exposes a system time provider that you can consume to get and set the current system time (this is also exposed in managed). The existing provider was repurposed to simply provide the native tick count, convert it to system time, and delay.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you. There are no new bootloaders in this release.
+
+### Libraries
+
+#### Changes
+- Added a method to set the system time in `System.Runtime.InteropServices.SystemTime`.
+- Fixed `Thread` not overriding `GetHashCode`.
+- Fixed `Thread.ManagedThreadId` getting corrupted.
+- Fixed partially transparent ellipses having weird artifacts.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Pins are not currently reserved so you can create multiple objects on the same pin which behave incorrectly.
+
+### Firmware
+
+#### Changes
+- Added CAN to USBizi. [#114](https://github.com/ghi-electronics/TinyCLR-Ports/issues/114).
+- Added support for repeated start in I2C for the AT91 targets. [#55](https://github.com/ghi-electronics/TinyCLR-Ports/issues/55).
+- Added an STM32F7 target.
+- Added UC2550 and UC5550 firmwares.
+- Improved resetting peripherals during soft reset. [#247](https://github.com/ghi-electronics/TinyCLR-Ports/issues/247).
+- Moved some deployment logic out of flash drivers. [#187](https://github.com/ghi-electronics/TinyCLR-Ports/issues/187).
+- Fixed the firmware crashing during soft reset if a CAN or UART port is open. [#249](https://github.com/ghi-electronics/TinyCLR-Ports/issues/249).
+- Fixed being unable to deploy a second time if SPI is used in the application on G120 or G400. [#208](https://github.com/ghi-electronics/TinyCLR-Ports/issues/208).
+- Fixed being unable to deploy a second time if CAN is used in the application on G80. [#200](https://github.com/ghi-electronics/TinyCLR-Ports/issues/200).
+- Fixed UART and CAN buffer sizes returning zero if they were not previously set. [#203](https://github.com/ghi-electronics/TinyCLR-Ports/issues/203). and [#199](https://github.com/ghi-electronics/TinyCLR-Ports/issues/199).
+- Fixed some devices freezing if receiving too many messages over CAN after setting the buffer size. [#201](https://github.com/ghi-electronics/TinyCLR-Ports/issues/201).
+- Fixed the display memory not clearing during soft reset. [#198](https://github.com/ghi-electronics/TinyCLR-Ports/issues/198).
+- Fixed the ADC being slightly inaccurate on G80. [#45](https://github.com/ghi-electronics/TinyCLR-Ports/issues/45).
+- Fixed the LCD on the EMM sometimes not working. [#168](https://github.com/ghi-electronics/TinyCLR-Ports/issues/168).
+- Fixed the LCD having a blue tint on EMX and EMM. [#29](https://github.com/ghi-electronics/TinyCLR-Ports/issues/29).
+- Fixed PWM 3.27 not working on EMM. [#41](https://github.com/ghi-electronics/TinyCLR-Ports/issues/41).
+- Fixed ADC6 and ADC7 not working on USBizi. [#40](https://github.com/ghi-electronics/TinyCLR-Ports/issues/40).
+- Fixed the firmware crashing on USBizi during debugging. [#43](https://github.com/ghi-electronics/TinyCLR-Ports/issues/43).
+- Fixed resetting the ADC provider resetting ADC pins that aren't in ADC mode.
+- Fixed the USBizi sometimes failing to deployed.
+- Fixed some frequencies rounding up on the G120 and G400.
+
+#### Known Issues
+- Many UART properties and events are not implemented.
+- PWM may jitter when decreasing the pulse length while enabled.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- RTC does not work on Cerb. [#263](https://github.com/ghi-electronics/TinyCLR-Ports/issues/263).
+- RTC does not work on G400 or FEZHydra. [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
+- RTC does not work on G30 or FEZCLR. [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
+- ADC11 does not work on the STM32F7 target. [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
+
+### TinyCLR Config
+
+#### Changes
+- Added manufacturer name display.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- Fixed debugging in VS sometimes pausing forever until you manually break [#42](https://github.com/ghi-electronics/TinyCLR-Ports/issues/42).
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added an RTC provider.
+- Added a system time provider.
+- Reworked the existing time provider to only be a native time provider.
+- Removed `DelayNoInterrupt` and `GetInitialTime` from the time provider.
+- Fixed getting the value of a `DateTime` for return in interops.
+- Enabled deployment regions to be discontiguous.
+
+#### Known Issues
+- The USB host API is missing.
+- The USB client API is still very rough and will change.
+
 ## 0.9.0 on 2018-03-01
 
 ### Notes
