@@ -60,6 +60,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - RTC does not work on G400 or FEZHydra [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
 - RTC does not work on G30 or FEZCLR [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
 - ADC11 does not work on the STM32F7 target [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
+- All GPIO are reset when the controller is acquired [#256](https://github.com/ghi-electronics/TinyCLR-Ports/issues/256).
 
 ### TinyCLR Config
 
