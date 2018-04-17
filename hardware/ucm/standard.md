@@ -37,7 +37,7 @@ UART with handshaking is a configuration which allows the host and client to neg
 I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/i2c.md)
 
 ### SPI (Serial Peripheral Interface)
-SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/spi.md)
+SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/spi.md)
 
 ### CAN (Controller Area Network)
 A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/can.md)
@@ -52,7 +52,7 @@ ADCs are used to measure an analog voltage level by converting it to a digital v
 PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/pwm.md)
 
 ### GPIO (General Purpose Input/Output)
-GPIOs are the digital I/O pins that allow the user to interface with basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md)
+GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md)
 
 ### IRQ (Interrupt Request Capable GPIO)
 IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to tell the processor that the WiFi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md#digital-input-events)
@@ -187,11 +187,11 @@ JTAG is a serial interface which allows communication between the processor and 
 | 104           | ADC C                         |
 | 105           | PWM A                         |
 | 106           | 3.3V                          |
-| 107           | Bootstrap A                   |
+| 107           | System A                      |
 | 108           | Module Specific 2             |
 | 109           | Module Specific 3             |
 | 110           | ADC D                         |
-| 111           | Bootstrap C                   |
+| 111           | System C                      |
 | 112           | PWM B                         |
 | 113           | GND                           |
 | 114           | ADC E                         |
@@ -214,8 +214,8 @@ JTAG is a serial interface which allows communication between the processor and 
 | 131           | GND                           |
 | 132           | GPIO K                        |
 | 133           | PWM D                         |
-| 134           | Bootstrap B                   |
-| 135           | Bootstrap D                   |
+| 134           | System B                      |
+| 135           | System D                      |
 | 136           | GPIO L                        |
 | 137           | Module Specific 10            |
 | 138           | UART HS B RTS                 |
