@@ -33,7 +33,7 @@ Instructions for installing the bootloader and firmware are provided on the docu
 6. Click the `+` button to add a new Package source. 
 ![Add Package Source](images/AddPackageSource.jpg)
 
-7. Select the location where the NuGet packages are stored locally, by pressing the `...` button. 
+7. Select the location where the NuGet packages are stored locally by pressing the `...` button. 
 ![Choose Local NuGet Package Folder](images/ChooseLocalNuGetPackageFolder.jpg)
 
 8. After Selecting the local folder where the downloaded NuGet packages are, you can select the `Installed` Tab to view the installed NuGet Packages. 

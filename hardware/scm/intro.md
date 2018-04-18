@@ -2,7 +2,7 @@
 ---
 ![G400S](images/g400s_noborder.jpg)
 
-SCMs are surface mount embedded controllers that are well suited for harsh or high vibration environments.
+SCMs are surface mount embedded controllers that are well suited to harsh or high vibration environments.
 
 A variety of tools and software options are available. Check the individual product documentation for details.
 
