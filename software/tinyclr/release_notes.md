@@ -1,5 +1,5 @@
 # Release Notes
----
+
 ## 0.10.0 on 2018-04-05
 
 ### Notes
