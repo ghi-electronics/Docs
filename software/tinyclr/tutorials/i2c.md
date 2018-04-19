@@ -1,8 +1,10 @@
 # I2C
 
-I2C (pronounced eye-squared-sea, or eye-two-sea) was originally developed by Phillips to allow multiple chipsets to communicate on a 2-wire bus in home consumer devices. It has a master and one or more slaves sharing the same data bus. Instead of selecting the slaves using a digital pin like SPI, which consumes an additional I/O pin, I2C uses an addressing mechanism to communicate to a selected device. Before data is transferred, the master sends out a 7-bit address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the slave or receive data from the slave. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a "start condition" before it sends any address or data and then end it with "stop condition".
+I2C (pronounced eye-squared-sea, or eye-two-sea) was originally developed by Phillips as a protocal for synchronous serial communication between integrated circuits. It has a master and one or more slaves sharing the same data bus. Instead of selecting the slaves by using a dedicated chip select signal like SPI, I2C uses an addressing mechanism to communicate with the selected device. This addressing method saves one I/O pin per slave.
 
-The two wires used to communicate between the I2C Master and the I2C salves are called SDA and SCL lines; SDA stands for Serial Data, and SCL is Serial Clock.
+Before data is transferred, the master transmits the 7-bit address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the slave or receive data from the slave. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a "start condition" before sending an address or data. The master ends the data transfer with a "stop condition."
+
+The two wires for I2C communication are called the SDA and SCL lines. SDA stands for Serial Data, and SCL is Serial Clock.
 
 This is a partial demo showing the use of I2C.
 
@@ -13,20 +15,16 @@ using System.Threading;
 using GHIElectronics.TinyCLR.Devices.I2c;
 using GHIElectronics.TinyCLR.Pins;
 
-class Program
-{
-    static void Main()
-    {
-        var settings = new I2cConnectionSettings(0x1C)// the slave's address
-        {
+class Program {
+    static void Main() {
+        var settings = new I2cConnectionSettings(0x1C) {    // the slave's address
             BusSpeed = I2cBusSpeed.FastMode
         };
         var device = I2cDevice.FromId(FEZ.I2cBus.I2c1, settings);
 
-        device.Write(new byte[] { 1, 2 });// write something
-        device.WriteRead(...)// this is good for reading registers
+        device.Write(new byte[] { 1, 2 });  // write something
+        device.WriteRead(...)               // this is good for reading registers
     }
-    
 }   
 ```
 
@@ -34,16 +32,14 @@ class Program
 
 The I2C bus is relatively simple and can be "bit banged" using software. The advantage is that any two GPIO pins can be used. However, software I2C requires more system resources and runs slower.
 
-This example initializes the software I2C drivers and then, from this point, using I2C is the same as standard hardware I2C.
+This example initializes a software I2C driver. Once initialized, it's used the same as hardware I2C.
 
 ```
 using GHIElectronics.TinyCLR.Devices.I2c;
 using GHIElectronics.TinyCLR.Pins;
 
-class Program 
-{
-    static void Main() 
-	{
+class Program {
+    static void Main() {
         var softwareProvider = new I2cSoftwareProvider(FEZ.GpioPin.PA0, FEZ.GpioPin.PA1);
         var controllers = I2cController.GetControllers(softwareProvider);
         var controller = controllers[0];
