@@ -1,13 +1,13 @@
 # GHI Bootloader
 ---
-The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. 
+The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device (if present). 
 
-The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.
+The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and which version of the bootloader it runs.
 
 > [!Tip]
 > If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi_bootloader.md#usb-drivers).
 
-# Bootloader v2
+## Bootloader v2
 All commands and results are terminated with CR and LF (\r\n). "OK." will be sent after each successful command.
 
 On startup, a banner is sent that is terminated by "OK.". Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.
@@ -25,9 +25,9 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 ## Loading the Firmware
 
 ### Using TinyCLR Config
-TinyCLR Config tool includes multiple features developers need to work with TinyCLR-OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
+TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.md) page.
+Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.md) page.
 
 ### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
@@ -42,7 +42,7 @@ TinyCLR Config tool should be used to update the firmware. As a backup, use thes
 8. Select the firmware file.
 9. When the transfer is complete, reset your board.
 
-## GLB File Format
+#### GLB File Format
 The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.
 
 1. 32 bit signature number that is unique for each device.
@@ -57,7 +57,7 @@ After the upload header is the actual image to flash. If its length is not divis
 3. 32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.
 4. 16 bit CRC-CCITT of the boot image bounded by the specified address and length.
 
-# Bootloader v1
+## Bootloader v1
 Currently the USBizi, EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
 
 On startup, a banner is sent that is terminated by "BL". Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.
@@ -71,68 +71,68 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 > [!Tip]
 > The USB interface on Version 1.0 doesn't always work on Windows 7 and newer operating systems. Use the serial interface instead.
 
-# Downloads
+## Downloads
 
 Here you can find the various bootloaders available for the various products.
 
-## FEZCLR
+### FEZCLR
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 33F7FCAE266D07209C079CEA38AAB583
 [v2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.3.dfu) | 2017-07-07 | Alpha | 056919694D6A5F06546F9B721AE141CE
 
-## UC2550
+### UC2550
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC2550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 692FA78A161BAA2AEF17E9F85A6AF141
 
-## UC5550
+### UC5550
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 594744A52EC07CEFE6212669D33A5FE1
 
-## G120
+### G120
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | 7052D6FFB1890987DDCC4043895788D3
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
-## G400
+### G400
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.4.bin) | 2017-09-13 | Alpha | BD46D86D41DCD42C4FC50D27AF02E5EE
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.2.bin) | 2017-04-06 | Alpha | 81D45A8F078AA8E633C824C7BB3279DC
 [v2.0.1](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.1.bin) | 2016-06-27 | Alpha | 42CD50E4105939611ABF360475EBF4E5
 
-## FEZ Hydra
+### FEZ Hydra
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZHydra%20Bootloader%20v2.0.4.bin) | 2018-02-01 | Alpha | 6B8C5DFA5D29F50C6FC3C73ECD2F8ED5
 
-## Cerb
+### Cerb
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 934825046A0245756C2F3B4066E7F79F
 [v2.0.3](http://files.ghielectronics.com/downloads/Bootloaders/Cerb%20Bootloader%20v2.0.3.dfu) | 2017-07-07 | Alpha | 6505870259AC8E748FD09EBD00796E2E
 
-## EMX
+### EMX
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EMX%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | E728AEFF7737E60B05620F9387FAA373
 
-## Embedded Master
+### Embedded Master
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/EmbeddedMaster%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | F39BD6BC7F14855A6B5A557DEF26B720
 
-## USBizi
+### USBizi
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20Bootloader%20v2.0.4.hex) | 2017-08-31 | Alpha | 97BF3C83B801CDA6119B149CF339BE7A
 [v1.0.7 144](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20144%20Bootloader%20v1.0.7.hex) | 2015-05-05 | Production | 853557479D8797EAB650B98E3D333DCF
 [v1.0.7 100](http://files.ghielectronics.com/downloads/Bootloaders/USBizi%20100%20Bootloader%20v1.0.7.hex) | 2015-05-05 | Production | 34D17AA5CA4E13D5447C80AB8094D064
 
-## USB Drivers
+### USB Drivers
 
 Only needed for Windows 7 and 8 since they do not automatically load drivers for the bootloader interface.
 

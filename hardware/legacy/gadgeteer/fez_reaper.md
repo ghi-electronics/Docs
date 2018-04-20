@@ -1,5 +1,5 @@
 # FEZ Reaper
-
+---
 ![FEZ Reaper](images/fez_reaper.jpg)
 
 FEZ Reaper is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Reaper is the G80 System on Chip (SoC).

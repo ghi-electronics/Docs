@@ -1,5 +1,5 @@
 # FEZ Spider II
-
+---
 ![FEZ Spider II](images/fez_spider_ii.jpg)
 
 FEZ Spider II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider II is the G120E System on Module (SoM).

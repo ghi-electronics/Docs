@@ -1,18 +1,19 @@
 # EMX System on Module
+---
 ![EMX SoM](images/emx_som.jpg)
 
 EMX is a NETMF System on Module.
 
-# Resources
+## Resources
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/EMX%20User%20Manual.pdf)
 
-# Using the NETMF software
-We discourage the use of NETMF software on our products in favor for TinyCLR OS, [Read more](intro.md) about the use of NETMF and TinyCLR OS.
+## Using NETMF software
+We discourage the use of NETMF software on our products in favor of TinyCLR OS, but the choice is up to you. To find out more about NETMF, go to our [NETMF Introduction Page](../../../software/netmf/intro.md)
 
-# Using TinyCLR OS
-If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#with-tinyclr-os)
+## Using TinyCLR OS
+The following instructions describe how to set up EMX to work with TinyCLR OS. To learn more about TinyCLR check out the [TinyCLR Introduction](../../../software/tinyclr/intro.md) page.
 
-## Loading Bootloader v2
+### Loading Bootloader v2
 > [!Tip]
 > The bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
@@ -36,7 +37,7 @@ If haven't yet, read about using .NET NETMF devices [with TinyCLR OS](intro.md#w
 2. SET LMODE pin low.
 3. Follow the steps above to load the firmware.
 
-## Loading the Firmware
+### Loading the Firmware
 
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
@@ -45,21 +46,12 @@ To activate bootloader v2, set Pin3 low (double check) and then reset your board
 
 Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
 
-
-# EMX Based products
 ## EMX Dev Sys
 ![EMX Dev Sys](images/emx_dev_sys.jpg)
 
 The development system used for evaluating the EMX SoM.
 
-* [Schematics](http://files.ghielectronics.com/downloads/Schematics/Systems/EMX DevSys Schematic.pdf)
-
-## FEZ Cobra
-![FEZ Cobra](images/fez_cobra.jpg)
-
-A single board computer
-
-* [Schematics](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ Cobra Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/EMX DevSys Schematic.pdf)
 
 
 

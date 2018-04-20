@@ -60,18 +60,6 @@ File | Date | Status | MD5
 # Firmwares
 The Firmware is the TinyCLR OS that lives on your hardware. The firmware version loaded on the hardware must match the version number of the extension and the libraries. This will be easier managed once the libraries are hosted on http://www.nuget.org/
 
-## FEZCLR
-This is the reference firmware for TinyCLR OS and it runs on the [FEZ](../fez/intro.md) and the [BrainPad](http://docs.brainpad.com).
-
-File | Date | Status | MD5
---- | --- | --- | ---
-[v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 038BB3074D55DC37700FC27FD3DC7ACD
-[v0.9.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.9.0.glb) | 2018-03-01 | Alpha | 137B142B2A278A8AC62F2ED88B9E25A8
-[v0.8.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.8.0.glb) | 2018-02-01 | Alpha | 1C219C675CF6F7CE28B3F3971E9385BF
-[v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.7.0.glb) | 2018-01-04 | Alpha | A0D3B8449C6D5D03E3CA4259AD94204A
-[v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 3D66C9FF460591AA2DD4B002DE6D9B9A
-[v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZCLR/FEZCLR%20Firmware%20v0.5.0.glb) | 2017-07-07 | Alpha | 93094FF58D78DEB36D22FD9450737362
-
 ## UC2550
 File | Date | Status | MD5
 --- | --- | --- | ---
