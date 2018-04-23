@@ -1,4 +1,5 @@
 # .NET Gadgeteer Modules
+---
 This page lists all .NET Gadgeteer modules and how they can be used with [TinyCLR OS](../../../software/tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software, which we discourage,  then read the [.NET Gadgeteer Intro](intro.md) page.
 
 > [!Tip]
@@ -610,7 +611,7 @@ The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 * Pin 9: Motor B Speed (PWM)
 
 > [!Tip]
-> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../tinyclr/tutorials/pwm.md).
+> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../software/tinyclr/tutorials/pwm.md).
 
 This example will setup both motors and then will make motor A go very slow forward then very fast backward, in a loop.
 

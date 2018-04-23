@@ -2,7 +2,7 @@
 ---
 ![TinyCLR Logo](../images/tinyclrlogo_noborder.jpg)
 
-TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpreter and runtime for several architectures. Currently Cortex M3, Cortex M4, ARM7, and ARM9 are supported. To get started we'll build the FEZCLR firmware that the [FEZ](../../fez/intro.md) uses.
+TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpreter and runtime for several architectures. Currently Cortex M3, Cortex M4, ARM7, and ARM9 are supported. To get started we'll build the FEZCLR firmware that the FEZ uses.
 
 1. Clone the [ports repo](https://github.com/ghi-electronics/TinyCLR-Ports) to your computer. If you're new to git or haven't even heard of it, take a look at the [Git Book](https://git-scm.com/book/en/v2) to learn more about it.
 2. Download and install [GCC](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). The latest version we have tested is `7-2017-q4-major`.

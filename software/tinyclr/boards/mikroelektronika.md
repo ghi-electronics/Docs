@@ -9,7 +9,7 @@ Clicker/Clicker 2 and related boards ship with the [Mikro bootloader](../../tiny
 # Clicker
 ![Clicker](images/clicker.jpg) 
 
-MikroElekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) board includes a single [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield).
+MikroElekronika's [STM32 M4 Clicker](https://shop.mikroe.com/clicker-stm32f4) board includes a single [mikroBUS](https://www.mikroe.com/mikrobus/) socket, for quickly adding one of many available click modules.
 
 The TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 
@@ -19,7 +19,7 @@ The TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 # Clicker 2
 ![Clicker](images/clicker2.jpg) 
 
-MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) sockets, for adding many available [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield).
+MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f4) board includes dual [mikroBUS](https://www.mikroe.com/mikrobus/) sockets, for adding many available click modules.
 
 The TinyCLR OS [Clicker 2 firmware](../downloads.md#clicker-2).
 
@@ -31,12 +31,12 @@ The [MINI-M4 for STM32](https://shop.mikroe.com/mini-stm32f4) uses the same proc
 # Buggy
 ![Clicker](images/buggy.jpg) 
 
-[Buggy](https://shop.mikroe.com/buggy) is a robot rover platform that is expandable through the [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield). The Clicker 2 is used to drive this rover, making it a TinyCLR OS rover!
+[Buggy](https://shop.mikroe.com/buggy) is a robot rover platform that is expandable through the click modules. The Clicker 2 is used to drive this rover, making it a TinyCLR OS rover!
 
 # Quail
 ![Quail](images/quail-board.png)
 
-Originally a .NET Micro Framework product, the Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's [click modules](../../fez/accessories.md#mikroelektronika-arduino-uno-click-shield). 
+Originally a .NET Micro Framework product, the Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro's click modules.
 
 Learn more about Quail at:  
 https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  

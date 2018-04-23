@@ -1,5 +1,5 @@
 # FEZ Spider
-
+---
 ![FEZ Spider](images/fez_spider.jpg)
 
 FEZ Spider is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider is the EMX System on Module (SoM).

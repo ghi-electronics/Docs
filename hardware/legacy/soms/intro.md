@@ -6,4 +6,4 @@ With the rapid advance of technology it can be hard to stay current.  We take pr
 
 Legacy product should not be used for new designs; however, many of our older products can still be produced (minimum order may be required).
 
-Please [contact us](https://www.ghielectronics.com/contact) for information on the production of legacy products or the recommended path to upgrade to current or planned products.
+Please [contact us](https://www.ghielectronics.com/contact) for information on the production of legacy products or the recommended upgrade path to current or planned products.

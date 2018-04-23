@@ -64,7 +64,7 @@ To use .NET Gadgeteer's legacy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
-4. GHI Electronics' [NETMF SDK](../../../software/netmf/intro.md#available-netmf-sdks). The latest is recommended.
+4. GHI Electronics' [NETMF SDK](../../../software/netmf/downloads.md#available-netmf-sdks). The latest is recommended.
 
 The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Gadgeteer/NET_Gadgeteer_for_beginners.pdf) guide is a good starting point.
 

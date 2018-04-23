@@ -1,11 +1,11 @@
-# FEZ Cobra II Eco and WiFi
+# FEZ Cobra II Net
 ---
-![FEZ Cobra II Eco](images/fez_cobra_ii.jpg) ![FEZ Cobra II Wifi](images/fez-cobra-ii-wifi.jpg)
+![FEZ Cobra II](images/fez-cobra-ii-net.jpg)
 
 FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
 
 ## Resources
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Net%20Schematic.pdf)
 * Cobra II Extender [schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Extender%20Schematic.pdf)
 
 ## Using the Gadgeteer software
