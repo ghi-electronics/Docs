@@ -1,6 +1,6 @@
 # File System
 ---
-![F40 Board](images/f40_board_noborder.jpg)
+![F40 Board](images/f40-board-noborder.jpg)
 
 Since 2003, GHI Electronics has made several industry-first file system chipsets.
 

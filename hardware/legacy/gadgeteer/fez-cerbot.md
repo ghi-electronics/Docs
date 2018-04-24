@@ -1,6 +1,6 @@
 # FEZ Cerbot
 ---
-![FEZ Cerbot](images/fez_cerbot.jpg)
+![FEZ Cerbot](images/fez-cerbot.jpg)
 
 A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as an easy way to add features.
 
@@ -10,4 +10,4 @@ A robot with reflective sensors and tons of LEDs. Gadgeteer sockets are used as 
 
 ## Software
 
-For information on programming the FEZ Cerbot, please go to the [FEZ Cerberus](fez_cerberus.md) page.
+For information on programming the FEZ Cerbot, please go to the [FEZ Cerberus](fez-cerberus.md) page.

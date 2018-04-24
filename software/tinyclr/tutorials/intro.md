@@ -15,8 +15,8 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [DAC](dac.md)
 * [CAN](can.md)
 * [Display](display.md)
-* [Gpio Change Writer](gpiochangewriter.md)
-* [Gpio Change Reader](gpiochangereader.md)
-* [Gpio Pulse Reader Writer](gpiopulsereaderwriter.md)
+* [Gpio Change Writer](gpio-change-writer.md)
+* [Gpio Change Reader](gpio-change-reader.md)
+* [Gpio Pulse Reader Writer](gpio-pulse-reader-writer.md)
 
 

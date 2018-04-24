@@ -1,7 +1,7 @@
 # .NET Micro Framework Introduction
 ---
 
-![NETMF Logo](images/netmf_logo_noborder.png)
+![NETMF Logo](images/netmf-logo-noborder.png)
 
 .NET Micro Framework (NETMF) is a subset of the full Microsoft .NET Framework used to make Windows applications. NETMF was started by Microsoft for use in SPOT watches and then later open sourced. The latest version of Visual Studio working with our NETMF products is VS2013.
 

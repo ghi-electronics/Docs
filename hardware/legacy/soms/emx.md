@@ -1,6 +1,6 @@
 # EMX System on Module
 ---
-![EMX SoM](images/emx_som.jpg)
+![EMX SoM](images/emx-som.jpg)
 
 EMX is a NETMF System on Module.
 
@@ -19,7 +19,7 @@ The following instructions describe how to set up EMX to work with TinyCLR OS. T
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
 **To update using USB**
-1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi_bootloader.md#emx)
+1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#emx)
 2. Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)
 3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
@@ -44,10 +44,10 @@ The following instructions describe how to set up EMX to work with TinyCLR OS. T
 
 To activate bootloader v2, set Pin3 low (double check) and then reset your board.
 
-Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
+Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 
 ## EMX Dev Sys
-![EMX Dev Sys](images/emx_dev_sys.jpg)
+![EMX Dev Sys](images/emx-dev-sys.jpg)
 
 The development system used for evaluating the EMX SoM.
 

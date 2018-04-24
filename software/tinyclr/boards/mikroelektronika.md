@@ -24,7 +24,7 @@ MikroElekronika's [clicker 2 for STM32](https://shop.mikroe.com/clicker-2-stm32f
 The TinyCLR OS [Clicker 2 firmware](../downloads.md#clicker-2).
 
 # MINI-M4 for STM32
-![Clicker](images/miniM4STM32.jpg) 
+![Clicker](images/mini-M4-STM32.jpg) 
 
 The [MINI-M4 for STM32](https://shop.mikroe.com/mini-stm32f4) uses the same processor and system clock as the Clicker board. Use the TinyCLR OS [Clicker firmware](../downloads.md#clicker).
 
@@ -41,7 +41,7 @@ Originally a .NET Micro Framework product, the Quail board brings the option of 
 Learn more about Quail at:  
 https://www.mikrobusnet.org/ and https://shop.mikroe.com/quail  
 
-The Quail firmware is located [here](../downloads.md#quail). To enter the DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Now, follow the instructions on the [STM32 bootloader](../../tinyclr/loaders/stm32_bootloader.md) page to generate and load a DFU firmware file.
+The Quail firmware is located [here](../downloads.md#quail). To enter the DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Now, follow the instructions on the [STM32 bootloader](../../tinyclr/loaders/stm32-bootloader.md) page to generate and load a DFU firmware file.
 
 When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 

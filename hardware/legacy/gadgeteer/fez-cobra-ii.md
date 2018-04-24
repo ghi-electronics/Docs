@@ -1,6 +1,6 @@
 # FEZ Cobra II Eco and WiFi
 ---
-![FEZ Cobra II Eco](images/fez_cobra_ii.jpg) ![FEZ Cobra II Wifi](images/fez-cobra-ii-wifi.jpg)
+![FEZ Cobra II Eco](images/fez-cobra-ii.jpg) ![FEZ Cobra II Wifi](images/fez-cobra-ii-wifi.jpg)
 
 FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
 
@@ -24,5 +24,5 @@ Follow the instructions on the [G120 page](../../../hardware/scm/g120.md)
 
 To activate bootloader v2, press and hold the LDR0 button while resetting the board.
 
-Download the [G120 firmware](../../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 

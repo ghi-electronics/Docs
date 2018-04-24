@@ -1,5 +1,5 @@
 # Gpio Change Reader
-
+---
 Gpio Change Reader works in the current release. Documentation is coming soon.
 
 `var reader = new GpioChangeReader(FEZ.GpioPin.A1, GpioPinDriveMode.InputPullUp);`

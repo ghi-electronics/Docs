@@ -5,7 +5,7 @@
 These options are provided to speed the development of your product and make it possible to start programming your application within minutes without designing or building new hardware.
 
 ## UCM Dev Board
-![UCM Dev board](images/ucm_dev_board_noborder.jpg)
+![UCM Dev board](images/ucm-dev-board-noborder.jpg)
 
 The UCM Dev Board is the fastest and easiest way to start using our Universal Compute Modules.  This board provides a socket for the UCM, standard connectors for input/output, and three 40 pin socket headers for connecting peripherals and a display.
 

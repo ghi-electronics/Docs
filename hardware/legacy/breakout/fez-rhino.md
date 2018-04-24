@@ -1,6 +1,6 @@
 # FEZ Rhino
 ---
-![FEZ Rhino](images/fez_rhino.jpg)
+![FEZ Rhino](images/fez-rhino.jpg)
 
 ## Resources
 

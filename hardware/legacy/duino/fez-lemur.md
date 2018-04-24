@@ -1,6 +1,6 @@
 # FEZ Lemur
 ---
-![FEZ Lemur](images/fez_lemur.jpg)
+![FEZ Lemur](images/fez-lemur.jpg)
 
 A Arduino-pinout compatible single board computer.
 

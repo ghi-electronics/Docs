@@ -1,6 +1,6 @@
 # FEZ Panda
 ---
-![FEZ Panda](images/fez_panda.jpg)
+![FEZ Panda](images/fez-panda.jpg)
 
 An Arduino-pinout compatible board.
 

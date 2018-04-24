@@ -1,5 +1,5 @@
 # General Purpose Input Output (GPIO)
-
+---
 Microcontrollers include pins that can be controlled through software. They can be inputs or outputs, hence the name general purpose input/output, or GPIO for short.
 
 > [!Tip]

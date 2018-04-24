@@ -4,7 +4,7 @@
 
 This page includes different download types for individual boards. See individual product pages for details on what to download.
 
-See Release notes [here](release_notes.md).
+See Release notes [here](release-notes.md).
 
 Software status legend:
 
@@ -14,7 +14,7 @@ Production | Ready to be used commercially.
 Preview | Preview of the next release, not quite ready for production use.
 Alpha | Bleeding edge development that will frequently change. Major changes to come.
 
-# Visual Studio Project System
+## Visual Studio Project System
 The extension is what gets loaded on Visual Studio to allow it to communicate with a TinyCLR OS device. It also includes project templates.
 
 File | Date | Status | MD5
@@ -30,7 +30,7 @@ File | Date | Status | MD5
 [v0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.2.0.vsix) | 2017-03-07 | Alpha | A9CB8E88011AFF28AD88656E86C73A31
 [v0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.1.0.vsix) | 2016-12-16 | Alpha | D93A8FF13900362FB4528F8036D46612
 
-# Libraries
+## Libraries
 Libraries are hosted though a local NuGet feed for now as we are a lot of changes still. These libraries will be hosted on http://www.nuget.org/ in the future.
 
 File | Date | Status | MD5
@@ -46,7 +46,7 @@ File | Date | Status | MD5
 [v0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.2.0.zip) | 2017-03-07 | Alpha | 7CDE2D7ADDD3E490344B1DA8DB342F8D 
 [v0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.1.0.zip) | 2016-12-16 | Alpha | 9E843638A8A4793814D76B522F8CBF1A 
 
-# TinyCLR Config
+## TinyCLR Config
 TinyCLR Config is a tool used to update and configure your TinyCLR device.
 
 File | Date | Status | MD5
@@ -57,20 +57,20 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Config/TinyCLR%20Config%20Setup%20v0.7.0.msi) | 2018-01-04 | Alpha | 329D4A24BA66423DD5D655202873B38C
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Config/TinyCLR%20Config%20Setup%20v0.6.0.msi) | 2017-08-31 | Alpha | 75743E33D1B98E6999BDCC9936479C14
 
-# Firmwares
+## Firmwares
 The Firmware is the TinyCLR OS that lives on your hardware. The firmware version loaded on the hardware must match the version number of the extension and the libraries. This will be easier managed once the libraries are hosted on http://www.nuget.org/
 
-## UC2550
+### UC2550
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC2550/UC2550%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | 4C265BD5A6889CAEB1DFFCBC7675AE60
 
-## UC5550
+### UC5550
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/UC5550/UC5550%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | 789EA25CF38545DCE49964295D6AD581
 
-## G30
+### G30
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G30/G30%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | 872C7C2A18275E299E8509F0805E05A9 
@@ -84,7 +84,7 @@ File | Date | Status | MD5
 [v0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G30/G30%20Firmware%20v0.2.0.ghi) | 2017-03-07 | Alpha | 6E5BB699634D78DD64FFFB69D547A58F
 [v0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G30/G30%20Firmware%20v0.1.0.ghi) | 2016-12-16 | Alpha | 6347B73E93FF9BF7D52ECE142D9F2ECB
 
-## G80
+### G80
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G80/G80%20Firmware%20v0.10.0.ghi) | 2018-04-05 | Alpha | A2F66C80A28E41D3B9D7D60C77C7456B 
@@ -98,7 +98,7 @@ File | Date | Status | MD5
 [v0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G80/G80%20Firmware%20v0.2.0.ghi) | 2017-03-07 | Alpha | 4EAA86216B6FFCDE937D1CCFD9558356
 [v0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G80/G80%20Firmware%20v0.1.0.ghi) | 2016-12-16 | Alpha | 5C93CCA961904F25BB56A9B9AD7C501A
 
-## G120
+### G120
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G120/G120%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | DF63957F4F27848BDEAE3F35B0322053
@@ -110,7 +110,7 @@ File | Date | Status | MD5
 [v0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G120/G120%20Firmware%20v0.3.0.ghi) | 2017-04-06 | Alpha | 57836246074A8E729EE3D6C6BCF76F55
 [v0.2.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G120/G120%20Firmware%20v0.2.0.ghi) | 2017-03-07 | Alpha | 66EAA71A4A7D1B96AC9CD7C892DAA3CE
 
-## G400
+### G400
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | F158C930D47E6E6820341CF42A2A4CBD
@@ -121,7 +121,7 @@ File | Date | Status | MD5
 [v0.4.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.4.0.ghi) | 2017-05-10 | Alpha | 03859F270F8B16CE4D40245918065E88
 [v0.3.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/G400/G400%20Firmware%20v0.3.0.ghi) | 2017-04-06 | Alpha | 8AA7E83ED7A62A94F0833569A6A12FEE
 
-## EMX
+### EMX
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EMX/EMX%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | D4BB6A5092FD4990E1E6F7FE3654ECE4
@@ -130,7 +130,7 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EMX/EMX%20Firmware%20v0.7.0.glb) | 2018-01-04 | Alpha | 2565650A2A476D61FF49EBC37BA6842B
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EMX/EMX%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | EA9C0E782CB3AA34EE4852E7538F6138
 
-## Embedded Master
+### Embedded Master
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EmbeddedMaster/EmbeddedMaster%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 4F83A28F864C03A45CA2A6B36E50FBCB
@@ -139,7 +139,7 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EmbeddedMaster/EmbeddedMaster%20Firmware%20v0.7.0.glb) | 2018-01-04 | Alpha | FDC1B41FA77A70FFF4DEDD696007F72F
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/EmbeddedMaster/EmbeddedMaster%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | AD4E022B7F493B60BEEA3EBE685AB525
 
-## USBizi
+### USBizi
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | D5633D66C1B0A4B4419C8E2D867F8FCF
@@ -148,7 +148,7 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.7.0.glb) | 2018-01-04 | Alpha | 7165508B530FE2C004B98B1AC9C6FB4B
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/USBizi/USBizi%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 20748AD886D5C20C8EF7B93AD8C522E9
 
-## Cerb
+### Cerb
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Cerb/Cerb%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 9211446AB2556D7A16058429E9F36D1F 
@@ -158,14 +158,14 @@ File | Date | Status | MD5
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Cerb/Cerb%20Firmware%20v0.6.0.glb) | 2017-08-31 | Alpha | 92BB5C076086AB581A1C64B40248297D 
 [v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Cerb/Cerb%20Firmware%20v0.5.0.glb) | 2017-07-07 | Alpha | 4F8C039EC6D0206D7FC97083E8765EC7 
 
-## FEZ Hydra
+### FEZ Hydra
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZHydra/FEZHydra%20Firmware%20v0.10.0.glb) | 2018-04-05 | Alpha | 1004BB46DA7A34FCBADD52C7226D687C 
 [v0.9.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZHydra/FEZHydra%20Firmware%20v0.9.0.glb) | 2018-03-01 | Alpha | 0050DA256930588E758ED6170177CEC7 
 [v0.8.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/FEZHydra/FEZHydra%20Firmware%20v0.8.0.glb) | 2018-02-01 | Alpha | 027E3CF379D81D9BE76B719FD470D52A 
 
-## netduino 3
+### netduino 3
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino3/netduino3%20Firmware%20v0.10.0.hex) | 2018-04-05 | Alpha | A43CEF4A7B072C3EAAC82A12CF03DD20
@@ -175,7 +175,7 @@ File | Date | Status | MD5
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino3/netduino3%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | 5FBCCADDDCF1663E64FA2DDE3A16B745
 [v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/netduino3/netduino3%20Firmware%20v0.5.0.hex) | 2017-07-07 | Alpha | F6C51E2E7286262D4652D40CAAB1731A
 
-## Quail
+### Quail
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Quail/Quail%20Firmware%20v0.10.0.hex) | 2018-04-05 | Alpha | A17035F655EE05F8213B590264891C3F
@@ -185,7 +185,7 @@ File | Date | Status | MD5
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Quail/Quail%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | F6E6C9D6C05084AB87B79ECA76D867BC
 [v0.5.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/Quail/Quail%20Firmware%20v0.5.0.hex) | 2017-07-07 | Alpha | 714AD4715964A7B6CA3A23C67370A5EA
 
-## clicker
+### clicker
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker/clicker%20Firmware%20v0.10.0.hex) | 2018-04-05 | Alpha | B461DFB5E09E7DD562E06BB14FAA063F
@@ -194,7 +194,7 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker/clicker%20Firmware%20v0.7.0.hex) | 2018-01-04 | Alpha | 51F9CB3ABC3919A5C2457F2DB8767B9E
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker/clicker%20Firmware%20v0.6.0.hex) | 2017-08-31 | Alpha | 6A28632B898EEF7DF56A73D1034FED97
 
-## clicker 2
+### clicker 2
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Firmwares/clicker2/clicker2%20Firmware%20v0.10.0.hex) | 2018-04-05 | Alpha | FA5EDFF15447504EA6D51703DDFE1CD7
