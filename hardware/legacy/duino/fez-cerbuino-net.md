@@ -1,6 +1,6 @@
 # FEZ Cerbuino Net
 ---
-![FEZ Cerbuino Net](images/fez_cerbuino_net.jpg) 
+![FEZ Cerbuino Net](images/fez-cerbuino-net.jpg) 
 
 An Arduino-pinout compatible single board computer with Gadgeteer sockets.
 
@@ -10,4 +10,4 @@ An Arduino-pinout compatible single board computer with Gadgeteer sockets.
 
 ## Software
 
-For information on programming the FEZ Cerbuino Net, please go to the [FEZ Cerberus](../gadgeteer/fez_cerberus.md) page.
+For information on programming the FEZ Cerbuino Net, please go to the [FEZ Cerberus](../gadgeteer/fez-cerberus.md) page.

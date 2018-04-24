@@ -1,6 +1,6 @@
 # FEZ Cobra
 ---
-![FEZ Cobra](images/fez_cobra.jpg)
+![FEZ Cobra](images/fez-cobra.jpg)
 
 ## Resources
 

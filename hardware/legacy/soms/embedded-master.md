@@ -1,6 +1,6 @@
 # Embedded Master
 ---
-![Embedded Master](images/embedded_master.jpg)
+![Embedded Master](images/embedded-master.jpg)
 
 Embedded Master is a NETMF System on Module. 
 
@@ -19,7 +19,7 @@ The following instructions describe how to set up Embedded Master to work with T
 > This is a one-time procedure. You should have no issues after bootloader V2 is installed.
 
 **To update using USB**
-1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi_bootloader.md#embedded-master)
+1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#embedded-master)
 2. Set Embedded Master in boot mode, by making pins up, down, and select (3, 7, and 53 on TFT or 43 on non-TFT) low and resetting the Embedded Master.
 3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
@@ -44,4 +44,4 @@ The following instructions describe how to set up Embedded Master to work with T
 
 To activate bootloader v2, set the up pin low and then reset your board. To enter USB mode, set the select pin.
 
-Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
+Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.

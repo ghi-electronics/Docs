@@ -1,6 +1,6 @@
 # FEZ Panda II
 ---
-![FEZ Panda II](images/fez_panda_ii.jpg)
+![FEZ Panda II](images/fez-panda-ii.jpg)
 
 An Arduino-pinout compatible single board computer.
 

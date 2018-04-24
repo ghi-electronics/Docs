@@ -1,6 +1,6 @@
 # FEZ Cobra III
 ---
-![FEZ Cobra III](images/fez_cobra_iii.jpg) 
+![FEZ Cobra III](images/fez-cobra-iii.jpg) 
 
 An Arduino-pinout compatible single board computer.
 

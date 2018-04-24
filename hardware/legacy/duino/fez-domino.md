@@ -1,6 +1,6 @@
 # FEZ Domino
 ---
-![FEZ Domino](images/fez_domino.jpg)
+![FEZ Domino](images/fez-domino.jpg)
 
 ## Resources
 

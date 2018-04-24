@@ -1,6 +1,6 @@
 # FEZ Mini
 ---
-![FEZ Mini](images/fez_mini.jpg)
+![FEZ Mini](images/fez-mini.jpg)
 
 ## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Mini%20Schematic.pdf)

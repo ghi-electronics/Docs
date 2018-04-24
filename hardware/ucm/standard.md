@@ -1,6 +1,6 @@
 # The UCM Standard
 ---
-![UCM SOM](images/som_noborder.jpg)
+![UCM SOM](images/som-noborder.jpg)
 
 The UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  
 

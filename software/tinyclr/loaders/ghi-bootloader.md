@@ -5,7 +5,7 @@ The GHI Bootloader is used to update the firmware on our devices. It is the firs
 The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and which version of the bootloader it runs.
 
 > [!Tip]
-> If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi_bootloader.md#usb-drivers).
+> If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi-bootloader.md#usb-drivers).
 
 ## Bootloader v2
 All commands and results are terminated with CR and LF (\r\n). "OK." will be sent after each successful command.
@@ -27,7 +27,7 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr_config.md) page.
+Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr-config.md) page.
 
 ### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:

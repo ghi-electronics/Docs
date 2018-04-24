@@ -1,6 +1,6 @@
 # FEZ Cerberus
 ---
-![FEZ Cerberus](images/fez_cerberus.jpg)
+![FEZ Cerberus](images/fez-cerberus.jpg)
 
 FEZ Cerberus is a .NET Gadgeteer product that utilizes .NET Micro Framework (NETMF). The core of the FEZ Cerberus is the G30 System on Chip (SoC).
 
@@ -20,11 +20,11 @@ PB10 is the MODE pin, which is used to select between USB and serial interfaces 
 LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts the device into bootloader mode. Setting LDR1 low will execute the firmware but will stop the application from running.
 
 ### Loading Bootloader v2
-1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi_bootloader.md#cerb).
+1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#cerb).
 2. Press and hold the BOOT button down while resetting the board. 
 3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.
 4. The system will now detect an ST DFU device.
-5. Read more on [uploading DFU files](../../../software/tinyclr/loaders/stm32_bootloader.md#uploading-dfu-files) on STM32 microcontrollers.
+5. Read more on [uploading DFU files](../../../software/tinyclr/loaders/stm32-bootloader.md#uploading-dfu-files) on STM32 microcontrollers.
 
 ### Loading the Firmware
 
@@ -33,10 +33,10 @@ LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts th
 
 To activate bootloader v2, set PC1 pin low.
 
-Download the [Cerb firmware](../../../software/tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
+Download the [Cerb firmware](../../../software/tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 
 ## FEZ Game-O
-![FEZ Game-O](images/fez_gameo.jpg)
+![FEZ Game-O](images/fez-gameo.jpg)
 
 A programmable game console based on the FEZ Cerberus that was funded with a successful kickstarter campaign. The FEZ Game-O combine a 320 x 240 color display, 3D accelerometer and audio circuitry within an attractive, ergonomic enclosure.
 

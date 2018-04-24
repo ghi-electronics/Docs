@@ -1,16 +1,16 @@
 # Bootloaders Introduction
 ---
-![Bootloader](images/bootloader_noborder.png)
+![Bootloader](images/bootloader-noborder.png)
 
 A bootloader is a small software that boots up the system and runs the firmware. It is also used to update the firmware.
 
 This section covers different bootloader features and usage details.
 
 ## GHI Bootloader
-The [**GHI Bootloader**](ghi_bootloader.md) page can be found [**here**](ghi_bootloader.md).
+The [**GHI Bootloader**](ghi-bootloader.md) page can be found [**here**](ghi-bootloader.md).
 
 ## STM32 Bootloader
-The [**STM32 Bootloader**](stm32_bootloader.md) page can be found [**here**](stm32_bootloader.md).
+The [**STM32 Bootloader**](stm32-bootloader.md) page can be found [**here**](stm32-bootloader.md).
 
 ## SAM-BA Bootloader
 The SAM-BA Bootloader lives on many Atmel chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.

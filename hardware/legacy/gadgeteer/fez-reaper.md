@@ -1,6 +1,6 @@
 # FEZ Reaper
 ---
-![FEZ Reaper](images/fez_reaper.jpg)
+![FEZ Reaper](images/fez-reaper.jpg)
 
 FEZ Reaper is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Reaper is the G80 System on Chip (SoC).
 
@@ -20,5 +20,5 @@ The G80 SoC ships with the Bootloader loaded and locked. No further steps are ne
 
 To activate bootloader v2, press and hold both LDR0 and LDR1 buttons down while resetting the board.
 
-Download the [G80 firmware](../../../software/tinyclr/downloads.md#g80) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi_bootloader.md#loading-the-firmware) steps.
+Download the [G80 firmware](../../../software/tinyclr/downloads.md#g80) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 

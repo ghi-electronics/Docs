@@ -1,10 +1,10 @@
-# Supported Boards
+# Board Options
 ---
 ![Boards](../images/boards.png)
 
 Our SCM and UCM products all support TinyCLR OS.  TinyCLR can be ported to other devices, and we are providing a ready port for a few popular boards.  For information about some of the third party boards we support, please follow the links below.
 
-* [**STM32 Boards**](stm32_boards.md)
+* [**STM32 Boards**](stm32-boards.md)
 * [**Netduino**](netduino.md)
 * [**MikroElektronika**](mikroelektronika.md)
 

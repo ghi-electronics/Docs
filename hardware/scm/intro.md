@@ -1,6 +1,6 @@
 # Surface Mount Compute Modules
 ---
-![G400S](images/g400s_noborder.jpg)
+![G400S](images/g400s-noborder.jpg)
 
 SCMs are surface mount embedded controllers that are well suited to harsh or high vibration environments.
 

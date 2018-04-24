@@ -1,5 +1,5 @@
 # Release Notes
-
+---
 ## 0.10.0 on 2018-04-05
 
 ### Notes
@@ -206,7 +206,7 @@ Also added are overloads to the various SPI and I2C write and read functions tha
 
 Additionally, we've also added `GetString` to the Encoding class (as before, only UTF8 is provided by default). It takes a byte array so you can create a string without having to use an intermediate char array, potentially wasting space. Additionally, since strings are represented as UTF8 internally, you can save on having your already-UTF8 `byte[]` converted to UTF16 when it's converted to `char[]`, then back to UTF8 when using that `char[]` to create a string.
 
-To get started with the FEZ Hydra, you'll need to install the GHI Bootloader. Follow [these steps](../../hardware/legacy/gadgeteer/fez_hydra.md#using-tinyclr-os) to get going.
+To get started with the FEZ Hydra, you'll need to install the GHI Bootloader. Follow [these steps](../../hardware/legacy/gadgeteer/fez-hydra.md#using-tinyclr-os) to get going.
 
 As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
 
@@ -303,7 +303,7 @@ As before, you can find all downloads in their respective sections on the [downl
 ### Notes
 This release adds CAN support to many devices. The managed API reflects the UWP provider model, but there are more changes to come. We've also fixed the issue in the latest Visual Studio 15.5 update that prevents projects from building along with many other firmware level bugs. For best results with the 15.5 fix, you should either recreate your projects or remove the `NoStdLib` and `AddAdditionalExplicitAssemblyReferences` properties from your csproj (or vbproj).
 
-There have been several changes around the interop API in this release that makes it easier to interact with managed arguments, fields, and objects including reading, writing, creation, and reassignment. You can find an updated basic example on the [interop docs](porting/native_interops.md). There was also a field added to the API info object that allows the API author to track custom state based on their needs.
+There have been several changes around the interop API in this release that makes it easier to interact with managed arguments, fields, and objects including reading, writing, creation, and reassignment. You can find an updated basic example on the [interop docs](porting/native-interops.md). There was also a field added to the API info object that allows the API author to track custom state based on their needs.
 
 As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. There are no new bootloader releases this time. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
 
@@ -417,9 +417,9 @@ As before, you can find all downloads in their respective sections on the [downl
 ### Notes
 This release adds support for the G400 and all of our previous NXP based devices: G120, EMX, Embedded Master, and USBizi. There are new LPC17 and LPC24 ports and ARM7, ARM9, and CortexM3 builds of the core now available in the [GitHub repo](https://github.com/ghi-electronics/TinyCLR-Ports). There are new classes available in the `Pins` library to go along with these new ports. The other major changes in this release are fixed automatic loading of USB drivers, updated bootloaders for devices, continued improvements to the `BrainPad` library, `Acquire` and `Release` were added to all native APIs, native interops have increased functionality, and sharing modes for devices are now supported.
 
-Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr_config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
+Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr-config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
 
-Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../tinyclr/loaders/ghi_bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
+Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../tinyclr/loaders/ghi-bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
 
 ### Libraries
 
@@ -520,7 +520,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
 
-You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See [here](porting/native_interops.md) for details.
+You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See [here](porting/native-interops.md) for details.
 
 To support this, we added a few more classes under `System.Runtime.InteropServices`. Most important is the `Interop` class. It allows you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the `Marshal` class. You can use `FindAll` to get back a list of all interops registered in the system and `RaiseEvent` to trigger an event on the specified native event dispatcher.
 
