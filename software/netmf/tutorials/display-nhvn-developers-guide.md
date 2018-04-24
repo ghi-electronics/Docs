@@ -79,7 +79,8 @@ if (Display.Save())
 
 ## Capacitive Touch Controller Driver
 
-> [!Note] the displays do not seem to raise the TouchUp event in our tests.
+> [!Note]
+> The displays do not seem to raise the TouchUp event in our tests.
 
 ```c#
 public class FT5306Controller {
