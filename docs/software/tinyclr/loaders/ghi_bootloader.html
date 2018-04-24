@@ -78,11 +78,11 @@
 <h1 id="ghi-bootloader">GHI Bootloader</h1>
 
 <hr>
-<p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device if present. </p>
-<p>The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and for which version of the bootloader it runs.</p>
+<p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device (if present). </p>
+<p>The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and which version of the bootloader it runs.</p>
 <div class="TIP"><h5>Tip</h5><p>If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the <a href="ghi_bootloader.html#usb-drivers">downloads section</a>.</p>
 </div>
-<h1 id="bootloader-v2">Bootloader v2</h1>
+<h2 id="bootloader-v2">Bootloader v2</h2>
 <p>All commands and results are terminated with CR and LF (\r\n). &quot;OK.&quot; will be sent after each successful command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;OK.&quot;. Once the banner is received, you are free to enter any of the case-insensitive single-character commands described below.</p>
 <p>Most commands require confirmation. Send Y or y followed by a new-line to proceed or anything else to cancel.</p>
@@ -97,8 +97,8 @@
 </ul>
 <h2 id="loading-the-firmware">Loading the Firmware</h2>
 <h3 id="using-tinyclr-config">Using TinyCLR Config</h3>
-<p>TinyCLR Config tool includes multiple features developers need to work with TinyCLR-OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.</p>
-<p>Using this tool is the recommended path; however, the manual instructions are included on this page. Read more on the <a href="../tinyclr_config.html">TinyCLR Config</a> page.</p>
+<p>TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.</p>
+<p>Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the <a href="../tinyclr_config.html">TinyCLR Config</a> page.</p>
 <h3 id="manually-loading-the-firmware">Manually Loading the Firmware</h3>
 <p>TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:</p>
 <ol>
@@ -112,7 +112,7 @@
 <li>Select the firmware file.</li>
 <li>When the transfer is complete, reset your board.</li>
 </ol>
-<h2 id="glb-file-format">GLB File Format</h2>
+<h4 id="glb-file-format">GLB File Format</h4>
 <p>The glb files that are loaded onto devices have some additional metadata that help the bootloader function in addition to the raw data itself. The first 1,024 bytes of a glb file is the upload header. Starting from offset 0 are the below fields. The rest of the header is currently reserved.</p>
 <ol>
 <li>32 bit signature number that is unique for each device.</li>
@@ -127,7 +127,7 @@
 <li>32 bit unsigned length of the boot image rounded to the nearest 1,024 bytes.</li>
 <li>16 bit CRC-CCITT of the boot image bounded by the specified address and length.</li>
 </ol>
-<h1 id="bootloader-v1">Bootloader v1</h1>
+<h2 id="bootloader-v1">Bootloader v1</h2>
 <p>Currently the USBizi, EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
 <ul>
@@ -139,9 +139,9 @@
 </ul>
 <div class="TIP"><h5>Tip</h5><p>The USB interface on Version 1.0 doesn&#39;t always work on Windows 7 and newer operating systems. Use the serial interface instead.</p>
 </div>
-<h1 id="downloads">Downloads</h1>
+<h2 id="downloads">Downloads</h2>
 <p>Here you can find the various bootloaders available for the various products.</p>
-<h2 id="fezclr">FEZCLR</h2>
+<h3 id="fezclr">FEZCLR</h3>
 <table>
 <thead>
 <tr>
@@ -166,7 +166,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="uc2550">UC2550</h2>
+<h3 id="uc2550">UC2550</h3>
 <table>
 <thead>
 <tr>
@@ -185,7 +185,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="uc5550">UC5550</h2>
+<h3 id="uc5550">UC5550</h3>
 <table>
 <thead>
 <tr>
@@ -204,7 +204,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="g120">G120</h2>
+<h3 id="g120">G120</h3>
 <table>
 <thead>
 <tr>
@@ -229,7 +229,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="g400">G400</h2>
+<h3 id="g400">G400</h3>
 <table>
 <thead>
 <tr>
@@ -260,7 +260,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="fez-hydra">FEZ Hydra</h2>
+<h3 id="fez-hydra">FEZ Hydra</h3>
 <table>
 <thead>
 <tr>
@@ -279,7 +279,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="cerb">Cerb</h2>
+<h3 id="cerb">Cerb</h3>
 <table>
 <thead>
 <tr>
@@ -304,7 +304,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="emx">EMX</h2>
+<h3 id="emx">EMX</h3>
 <table>
 <thead>
 <tr>
@@ -323,7 +323,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="embedded-master">Embedded Master</h2>
+<h3 id="embedded-master">Embedded Master</h3>
 <table>
 <thead>
 <tr>
@@ -342,7 +342,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="usbizi">USBizi</h2>
+<h3 id="usbizi">USBizi</h3>
 <table>
 <thead>
 <tr>
@@ -373,7 +373,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="usb-drivers">USB Drivers</h2>
+<h3 id="usb-drivers">USB Drivers</h3>
 <p>Only needed for Windows 7 and 8 since they do not automatically load drivers for the bootloader interface.</p>
 <table>
 <thead>

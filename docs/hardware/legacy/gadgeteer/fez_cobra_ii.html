@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FEZ Cobra II </title>
+    <title>FEZ Cobra II Eco and WiFi </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FEZ Cobra II ">
+    <meta name="title" content="FEZ Cobra II Eco and WiFi ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,33 +75,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="fez-cobra-ii">FEZ Cobra II</h1>
+<h1 id="fez-cobra-ii-eco-and-wifi">FEZ Cobra II Eco and WiFi</h1>
 
-<p><img src="images/fez_cobra_ii.jpg" alt="FEZ Cobra II"></p>
+<hr>
+<p><img src="images/fez_cobra_ii.jpg" alt="FEZ Cobra II Eco"> <img src="images/fez-cobra-ii-wifi.jpg" alt="FEZ Cobra II Wifi"></p>
 <p>FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).</p>
-<h1 id="resources">Resources</h1>
+<h2 id="resources">Resources</h2>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Schematic.pdf">Schematic</a></li>
+<li>Cobra II Extender <a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Extender%20Schematic.pdf">schematic</a></li>
 </ul>
-<h1 id="using-the-gadgeteer-software">Using the Gadgeteer software</h1>
+<h2 id="using-the-gadgeteer-software">Using the Gadgeteer software</h2>
 <p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
-<h1 id="using-tinyclr-os">Using TinyCLR OS</h1>
+<h2 id="using-tinyclr-os">Using TinyCLR OS</h2>
 <p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
-<h2 id="loading-bootloader-v2">Loading Bootloader v2</h2>
-<ol>
-<li>Download the <a href="../../../software/tinyclr/loaders/ghi_bootloader.html#g120">bootloader file</a></li>
-<li>Press and keep holding the LDR0 and LDR1 buttons while resetting the board. Then release the buttons.</li>
-<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../../../software/netmf/intro.html">NETMF</a> SDK.</li>
-<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
-<li>Select serial and pick the COM port associated with your board.</li>
-<li>Enter <code>E</code> and you will see back &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
-<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
-<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
-<li>Select the bootloader file you have downloaded above.</li>
-<li>You will see <code>File Transfer Finished Successfully</code>.</li>
-<li>Reset your board, you are now running GHI Electronics bootloader v2!</li>
-</ol>
-<h2 id="loading-the-firmware">Loading the Firmware</h2>
+<h3 id="loading-bootloader-v2">Loading Bootloader v2</h3>
+<p>Follow the instructions on the <a href="../../scm/g120.html">G120 page</a></p>
+<h3 id="loading-the-firmware">Loading the Firmware</h3>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
 <p>To activate bootloader v2, press and hold the LDR0 button while resetting the board.</p>

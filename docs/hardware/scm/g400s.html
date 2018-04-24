@@ -89,18 +89,9 @@
 <p>We discourage the use of NETMF software on our products in favor of TinyCLR OS. For more information on NETMF you can go to the <a href="../../software/netmf/intro.html">NETMF Introduction</a> page.  The <a href="../../software/netmf/getting-started.html">NETMF Getting Started</a> page covers NETMF from setup of the host computer to program deployment on both an emulator and target device.</p>
 <h3 id="tinyclr-os">TinyCLR OS</h3>
 <p>TinyCLR is our own operating system and provides a means of programming embedded devices using .NET and Visual Studio.  Visual Studio is widely regarded as one of the best (if not the best) integrated development environments available.  The free Community version of Visual Studio can be downloaded here:  <a href="https://www.visualstudio.com/downloads/">Visual Studio Downloads</a>.  For information on setting up TinyCLR to work in Visual Studio please click here:  <a href="../../software/tinyclr/intro.html">TinyCLR Introduction</a></p>
-<h4 id="loading-bootloader-v2">Loading Bootloader v2</h4>
-<ol>
-<li>Download the <a href="../../software/tinyclr/loaders/ghi_bootloader.html#g400">G400 bootloader file</a>.</li>
-<li>Download and install SAM-BA. We have tested <a href="https://old.ghielectronics.com/downloads/NETMF/SDK/sam-ba.2.12.exe">SAM-BA.2.12.exe</a> but newer versions of the SAM-BA In-system Programmer are available from <a href="http://www.microchip.com/developmenttools/productdetails.aspx?partno=atmel%20sam-ba%20in-system%20programmer">Microchip</a>.</li>
-<li>Download and unzip the <a href="http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20Installer.zip">update scripts</a>. You will have a folder called <code>G400 Bootloader Installer</code>.</li>
-<li>Rename the bootloader file, downloaded earlier, to bootloader.bin and move it to the <code>G400 Bootloader Installer</code> folder.</li>
-<li>Connect SPI1_MISO pin (pin 75) to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. on FEZ Raptor, SPI1_MISO is pin 8 on socket 3.</li>
-<li>Open up the Device Manager, look under Ports, and find a COM port similar to &quot;Bossa Program Port&quot; or &quot;GPS Detect&quot;.</li>
-<li>In the <code>G400 Bootloader Installer</code> folder, run <code>Flash Bootloader.bat</code>.</li>
-<li>When prompted, enter the number of the COM port found under Device Manager. For example: for COM10, enter just 10.</li>
-<li>You will see &quot;Bootloader Update Complete&quot; when the update is finished. The update will take several minutes.</li>
-</ol>
+<h4 id="loading-bootloader-version-2">Loading Bootloader Version 2</h4>
+<p>Download the <a href="../../software/tinyclr/loaders/ghi_bootloader.html#g400">G400 bootloader file</a>.</p>
+<p>Go to the <a href="../../software/tinyclr/loaders/intro.html#sam-ba-bootloader">SAMBA</a> section of the <a href="../../software/tinyclr/loaders/intro.html">Bootloaders Introduction</a> page for instructions on loading the bootloader.</p>
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>

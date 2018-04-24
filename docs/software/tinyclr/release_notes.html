@@ -134,6 +134,7 @@
 <li>RTC does not work on G400 or FEZHydra <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/260">#260</a>.</li>
 <li>RTC does not work on G30 or FEZCLR <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/228">#228</a>.</li>
 <li>ADC11 does not work on the STM32F7 target <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/261">#261</a>.</li>
+<li>All GPIO are reset when the controller is acquired <a href="https://github.com/ghi-electronics/TinyCLR-Ports/issues/256">#256</a>.</li>
 </ul>
 <h3 id="tinyclr-config">TinyCLR Config</h3>
 <h4 id="changes-2">Changes</h4>
@@ -274,7 +275,7 @@
 <p>This release adds a firmware and bootloader for the FEZ Hydra, a driver for the SPWF04Sx Wi-Fi module from STMicroelectronics, and a build of the core for Cortex-M7 based devices. We&#39;ve also updated to the latest GCC and CMSIS builds, so be sure to visit the <a href="porting/intro.html">porting</a> page to ensure you have the latest if you build your own firmware.</p>
 <p>Also added are overloads to the various SPI and I2C write and read functions that take an offset and a count so you no longer need to pass exact sized buffers. The previous overloads still exist for compatibility  with UWP. While they&#39;re not yet exposed in managed code publicly, UART and CAN now allow you to customize the size of the read and write buffer for each port to suit your needs.</p>
 <p>Additionally, we&#39;ve also added <code>GetString</code> to the Encoding class (as before, only UTF8 is provided by default). It takes a byte array so you can create a string without having to use an intermediate char array, potentially wasting space. Additionally, since strings are represented as UTF8 internally, you can save on having your already-UTF8 <code>byte[]</code> converted to UTF16 when it&#39;s converted to <code>char[]</code>, then back to UTF8 when using that <code>char[]</code> to create a string.</p>
-<p>To get started with the FEZ Hydra, you&#39;ll need to install the GHI Bootloader. Follow <a href="../legacy/gadgeteer/fez_hydra.md#using-tinyclr-os">these steps</a> to get going.</p>
+<p>To get started with the FEZ Hydra, you&#39;ll need to install the GHI Bootloader. Follow <a href="../../hardware/legacy/gadgeteer/fez_hydra.html#using-tinyclr-os">these steps</a> to get going.</p>
 <p>As before, you can find all downloads in their respective sections on the <a href="downloads.html">downloads</a> page. Just download the new installers and NuGet packages to get going. You don&#39;t even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.</p>
 <h3 id="libraries-2">Libraries</h3>
 <h4 id="changes-10">Changes</h4>

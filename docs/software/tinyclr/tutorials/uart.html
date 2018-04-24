@@ -77,11 +77,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="uart">UART</h1>
 
-<p>Serial data ports, called UART, transfers data between two pins TXD (transmit) and RXD (receive). There is no clock between the two sides so they both need to agree on the data slow rate, called baudrate. </p>
+<p>Serial data ports, called UARTs, transfer data between devices using two pins: TXD (transmit data) and RXD (receive data). UART stands for Universal Asynchronous Receiver Transmitter. Asynchronous means there is no clock signal to synchronize the two devices. The devices agree on a data rate, called the baud rate, and send a start bit the beginning of each transmitted character to keep the devices synchronized. </p>
 <div class="TIP"><h5>Tip</h5><p>the TXD on one end (output) goes to the RXD on the other side (input) and vice versa.</p>
 </div>
-<p>The easiest way to test UART is by wiring TXD to RXD and then any data transmitted is also received. This demo will send a number every half a second and wait for it on the receive end.</p>
-<div class="TIP"><h5>Tip</h5><p>Serial uses Storage Streams to handle the data. Add the Storage NuGet package.</p>
+<p>The easiest way to test a UART is by wiring a device&#39;s TXD to its RXD so any transmitted data is received by the same device. This is called a &quot;loopback&quot; test. This demo will transmit and receive a number every half second.</p>
+<div class="TIP"><h5>Tip</h5><p>UART serial communication uses Storage Streams to handle the data. Don&#39;t forget to add the Storage NuGet package.</p>
 </div>
 <pre><code class="lang-csharp">using System;
 using System.Diagnostics;
@@ -90,16 +90,13 @@ using GHIElectronics.TinyCLR.Storage.Streams;
 using GHIElectronics.TinyCLR.Devices.SerialCommunication;
 using GHIElectronics.TinyCLR.Pins;
 
-class Program
-{
+class Program {
     static DataReader serReader;
     static DataWriter serWriter;
 
-    static void Sender()
-    {
+    static void Sender() {
         byte b = 0;
-        while(true)
-        {
+        while(true) {
             serWriter.WriteByte(b++);
             serWriter.Store();
             Debug.WriteLine(&quot;Sent: &quot; + b);
@@ -108,8 +105,7 @@ class Program
         }
     }
 
-    static void Main()
-    {
+    static void Main() {
         SerialDevice ser = SerialDevice.FromId(FEZ.UartPort.Usart1);
         ser.BaudRate = 115200;
         ser.ReadTimeout = TimeSpan.Zero;
@@ -119,8 +115,7 @@ class Program
         Thread SenderT = new Thread(Sender);
         SenderT.Start();
 
-        while (true)
-        {
+        while (true) {
             var i = serReader.Load(1);
             if(i&gt;0)
             {
@@ -131,11 +126,10 @@ class Program
             Thread.Sleep(10);// always give the system time to think!
         }
     }
-
 }
 </code></pre><h2 id="rs232">RS232</h2>
-<p>UART uses the processor&#39;s voltage levels for transferring data, called TTL voltage levels. Systems from back in the 80s needed a way to transfer data over long distances and so the UART levels changed to be -12V to +12V instead of TTL 0V to 3.3V on FEZ for example. This standard is called RS232.</p>
-<p>Some PCs still include serial ports to this day, but those are RS232 serial ports. A level shifter chip is needed to convert the voltages properly.</p>
+<p>UART uses the processor&#39;s voltage levels (logic levels) for transferring data. On the FEZ this is 0 to 3.3 volts. In the early days of computers UARTs used -12 to 12 volts to communicate reliably over longer distances. This is known as the RS232 standard.</p>
+<p>Some PCs still include serial ports, but those are RS232 serial ports. A voltage level shifter is needed to properly connect a logic level UART to an RS232 device.</p>
 <div class="WARNING"><h5>Warning</h5><p>Connecting your device to an RS232 port without a proper voltage level shifter can damage your device.</p>
 </div>
 </article>

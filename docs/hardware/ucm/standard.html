@@ -167,7 +167,7 @@
 <h3 id="i2c-inter-integrated-circuit">I2C (Inter-Integrated Circuit)</h3>
 <p>I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI. <a href="../../software/tinyclr/tutorials/i2c.html"><em>Sample TinyCLR code</em></a></p>
 <h3 id="spi-serial-peripheral-interface">SPI (Serial Peripheral Interface)</h3>
-<p>SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. <a href="../../software/tinyclr/tutorials/spi.html"><em>Sample TinyCLR code</em></a></p>
+<p>SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. <a href="../../software/tinyclr/tutorials/spi.html"><em>Sample TinyCLR code</em></a></p>
 <h3 id="can-controller-area-network">CAN (Controller Area Network)</h3>
 <p>A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length. <a href="../../software/tinyclr/tutorials/can.html"><em>Sample TinyCLR code</em></a></p>
 <h3 id="sdio-sd-card">SDIO (SD Card)</h3>
@@ -177,7 +177,7 @@
 <h3 id="pwm-pulse-width-modulation">PWM (Pulse Width Modulation)</h3>
 <p>PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. <a href="../../software/tinyclr/tutorials/pwm.html"><em>Sample TinyCLR code</em></a></p>
 <h3 id="gpio-general-purpose-inputoutput">GPIO (General Purpose Input/Output)</h3>
-<p>GPIOs are the digital I/O pins that allow the user to interface with basic devices such as a buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. <a href="../../software/tinyclr/tutorials/gpio.html"><em>Sample TinyCLR code</em></a></p>
+<p>GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. <a href="../../software/tinyclr/tutorials/gpio.html"><em>Sample TinyCLR code</em></a></p>
 <h3 id="irq-interrupt-request-capable-gpio">IRQ (Interrupt Request Capable GPIO)</h3>
 <p>IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to tell the processor that the WiFi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. <a href="../../software/tinyclr/tutorials/gpio.html#digital-input-events"><em>Sample TinyCLR code</em></a></p>
 <h3 id="usb-client">USB Client</h3>
@@ -629,7 +629,7 @@
 </tr>
 <tr>
 <td>107</td>
-<td>Bootstrap A</td>
+<td>System A</td>
 </tr>
 <tr>
 <td>108</td>
@@ -645,7 +645,7 @@
 </tr>
 <tr>
 <td>111</td>
-<td>Bootstrap C</td>
+<td>System C</td>
 </tr>
 <tr>
 <td>112</td>
@@ -737,11 +737,11 @@
 </tr>
 <tr>
 <td>134</td>
-<td>Bootstrap B</td>
+<td>System B</td>
 </tr>
 <tr>
 <td>135</td>
-<td>Bootstrap D</td>
+<td>System D</td>
 </tr>
 <tr>
 <td>136</td>

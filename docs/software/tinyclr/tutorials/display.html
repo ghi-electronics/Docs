@@ -111,7 +111,7 @@ screen.Flush();
 </code></pre><h1 id="serial-spii2c-displays">Serial SPI/I2C Displays</h1>
 <p>Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial display are usually smaller displays.</p>
 <p>To the system, the serial display is nothing but a serial device. You are expected to write the code to handle graphics.</p>
-<p>A good example is the <a href="../../fez/accessories.md#adafruit-display-shield">Adafruit Display Shield</a> which uses a SPI display.</p>
+<p>A good example is the Adafruit Display Shield which uses a SPI display.</p>
 <p>This video features a very low cost I2C display option</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CL-nSqaGVaw" frameborder="0" allowfullscreen=""></iframe>
 
