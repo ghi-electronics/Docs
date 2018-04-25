@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FEZ Cobra II Eco and WiFi </title>
+    <title>STM32 Bootloader </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FEZ Cobra II Eco and WiFi ">
+    <meta name="title" content="STM32 Bootloader ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,27 +75,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="fez-cobra-ii-eco-and-wifi">FEZ Cobra II Eco and WiFi</h1>
+<h1 id="stm32-bootloader">STM32 Bootloader</h1>
 
 <hr>
-<p><img src="images/fez_cobra_ii.jpg" alt="FEZ Cobra II Eco"> <img src="images/fez-cobra-ii-wifi.jpg" alt="FEZ Cobra II Wifi"></p>
-<p>FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).</p>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Schematic.pdf">Schematic</a></li>
-<li>Cobra II Extender <a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20II%20Extender%20Schematic.pdf">schematic</a></li>
-</ul>
-<h2 id="using-the-gadgeteer-software">Using the Gadgeteer software</h2>
-<p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
-<h2 id="using-tinyclr-os">Using TinyCLR OS</h2>
-<p>If haven&#39;t yet, read about using .NET Gadgeteer devices <a href="intro.html#with-tinyclr-os">with TinyCLR OS</a></p>
-<h3 id="loading-bootloader-v2">Loading Bootloader v2</h3>
-<p>Follow the instructions on the <a href="../../scm/g120.html">G120 page</a></p>
-<h3 id="loading-the-firmware">Loading the Firmware</h3>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
-</div>
-<p>To activate bootloader v2, press and hold the LDR0 button while resetting the board.</p>
-<p>Download the <a href="../../../software/tinyclr/downloads.html#g120">G120 firmware</a> and follow <a href="../../../software/tinyclr/loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
+<p>The STM32 Bootloader lives on all STM32 chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.</p>
+<p>These instructions apply to all STM32 chips with built in USB and DFU features.</p>
+<h2 id="creating-dfu-file">Creating DFU file</h2>
+<p>The STM32 bootloader only accepts DFU file types, which can be generated from a HEX or BIN files. To generate a DFU file, download the &quot;DfuSe USB device firmware upgrade STMicroelectronics extension&quot; <a href="http://www.st.com/en/development-tools/stsw-stm32080.html">software package</a></p>
+<p>Depending on using a HEX or BIN files, the instructions are slightly different.</p>
+<h3 id="from-hex-files">From HEX files</h3>
+<ol>
+<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
+<li>Click on &quot;S19 or Hex...&quot; button to select the hex file.</li>
+<li>Click &quot;Generate...&quot;</li>
+<li>You now have the DFU file!</li>
+</ol>
+<h3 id="from-bin-files">From BIN files</h3>
+<ol>
+<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
+<li>Click on &quot;Multi BIN...&quot; button to select the bin file.</li>
+<li>Change the address to 08000000</li>
+<li>Click on the &quot;Add to list &gt;&gt;&quot; button then click the &quot;OK&quot; button.</li>
+<li>Click &quot;Generate...&quot;</li>
+<li>You now have the DFU file!</li>
+</ol>
+<h2 id="uploading-dfu-files">Uploading DFU Files</h2>
+<p>To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 or BOOTA button, just hold the button down while powering the system up. The device manager will see the device &quot;STM Device in DFU Mode&quot;.</p>
+<ol>
+<li>Find and open &quot;Open DfuSe Demo&quot; (from the ST download higher in this page)</li>
+<li>Under &quot;Upgrade and Verify Action&quot;, click the &quot;Choose...&quot; button and select the firmware DFU file you want to load.</li>
+<li>Click the &quot;Upgrade&quot; button.</li>
+<li>Click the &quot;Leave DFU mode&quot; button.</li>
+<li>Congratulations, your board is now running the loaded firmware!</li>
+</ol>
 </article>
           </div>
           
@@ -104,7 +116,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/legacy/gadgeteer/fez_cobra_ii.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/loaders/stm32-bootloader.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -25,310 +25,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidYamlHeader",
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "fez/accessories.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/accessories.html",
-          "hash": "mlEIfmrOiRHcmi9k0+jnLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "fez/arduino.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/arduino.html",
-          "hash": "sV0bP1wfESW5fFmJ6aLd2w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "fez/bare-metal.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/bare-metal.html",
-          "hash": "nxeh7xCejKbDPKMzAZCfRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/accessories.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/accessories.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/accessories_noborder.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/accessories_noborder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/adafruit-tft-joystick-shield.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/adafruit-tft-joystick-shield.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/arduino_logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/arduino_logo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/arduino_logo_noborder.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/arduino_logo_noborder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/code.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/code.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/code_noborder.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/code_noborder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/fez_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/fez_noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/mbed_logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/mbed_logo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/mbed_logo_noborder.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/mbed_logo_noborder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/micro_python_logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/micro_python_logo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/micro_python_logo_noborder.png",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/micro_python_logo_noborder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/mikro-arduino-click-shield.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/mikro-arduino-click-shield.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/pololu-zumo-robot_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/pololu-zumo-robot_noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/seeed-grove-starter-kit.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/seeed-grove-starter-kit.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/sparkfun-ardumoto-shield-kit.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/sparkfun-ardumoto-shield-kit.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/sparkfun-ardumoto-shield-kit_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/sparkfun-ardumoto-shield-kit_noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "fez/images/tinyclrlogo.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "fez/images/tinyclrlogo.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "fez/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/intro.html",
-          "hash": "DoxZB0IRgHM5PWzaQDGpCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "fez/mbed.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/mbed.html",
-          "hash": "oZp1zmRxyLd1a57iEAvsdQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "fez/python.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/python.html",
-          "hash": "+C+zeAszVdetshQgogQhzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "fez/tinyclr.md",
-      "output": {
-        ".html": {
-          "relative_path": "fez/tinyclr.html",
-          "hash": "O+Q039eXXEDdNIFHfuSjXg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "hardware/legacy/breakout/fez-cerb40.md",
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/breakout/fez-cerb40.html",
-          "hash": "k5lXkK4E3MM2o6VA44GfKQ=="
+          "hash": "dkM7jVPEPTI9yjeUiIECXg=="
         }
       },
       "is_incremental": false,
@@ -340,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/breakout/fez-cobra.html",
-          "hash": "5yLxflx/AHpdtE4AQbhGwA=="
+          "hash": "96LM3M8EzJDOS6o3fD7sQQ=="
         }
       },
       "is_incremental": false,
@@ -352,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/breakout/fez-rhino.html",
-          "hash": "QS2+EcCm+Xv6/A0iGOiDeQ=="
+          "hash": "tq25uTQrMe4XR4O9tWb7oA=="
         }
       },
       "is_incremental": false,
@@ -420,10 +122,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez_cerb40.jpg",
+      "source_relative_path": "hardware/legacy/breakout/images/fez-cerb40.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez_cerb40.jpg"
+          "relative_path": "hardware/legacy/breakout/images/fez-cerb40.jpg"
         }
       },
       "is_incremental": false,
@@ -431,10 +133,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez_cerb40_II.jpg",
+      "source_relative_path": "hardware/legacy/breakout/images/fez-cerb40_II.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez_cerb40_II.jpg"
+          "relative_path": "hardware/legacy/breakout/images/fez-cerb40_II.jpg"
         }
       },
       "is_incremental": false,
@@ -442,10 +144,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez_cobra.jpg",
+      "source_relative_path": "hardware/legacy/breakout/images/fez-cobra.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez_cobra.jpg"
+          "relative_path": "hardware/legacy/breakout/images/fez-cobra.jpg"
         }
       },
       "is_incremental": false,
@@ -453,10 +155,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez_rhino.jpg",
+      "source_relative_path": "hardware/legacy/breakout/images/fez-rhino.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez_rhino.jpg"
+          "relative_path": "hardware/legacy/breakout/images/fez-rhino.jpg"
         }
       },
       "is_incremental": false,
@@ -557,7 +259,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-cerbuino-bee.html",
-          "hash": "2/yikICjn9rsInM2iegsOQ=="
+          "hash": "VcwwrsH5JGfLXid4a/KMQg=="
         }
       },
       "is_incremental": false,
@@ -569,7 +271,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-cerbuino-net.html",
-          "hash": "xUjRT6JR/EkCjZchnU66EA=="
+          "hash": "br3YBMKZky/Pn+01N0ZnWw=="
         }
       },
       "is_incremental": false,
@@ -581,7 +283,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-cobra-iii.html",
-          "hash": "xWTrwNWFseBM4qmn84pfDw=="
+          "hash": "nxrj5uD3Yt0ncp/RNZLR6g=="
         }
       },
       "is_incremental": false,
@@ -593,7 +295,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-domino.html",
-          "hash": "x3rqfi+73ls6sjLlL4tguQ=="
+          "hash": "ycSGm1kWjV/yAAouCWCQkg=="
         }
       },
       "is_incremental": false,
@@ -605,7 +307,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-lemur.html",
-          "hash": "lrHAS1/nMvkC4bJgOArcEg=="
+          "hash": "40A2lOsYNwYSoNkxo+J2wQ=="
         }
       },
       "is_incremental": false,
@@ -617,7 +319,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-mini.html",
-          "hash": "DhpliJXtcacQZ1jX5Wa2oQ=="
+          "hash": "FE/zfPGuD5JnGrbDLFCaNg=="
         }
       },
       "is_incremental": false,
@@ -629,7 +331,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-panda-ii.html",
-          "hash": "9WkavfjyawzrMEFcA0jAKg=="
+          "hash": "sob/ykw8l45deetdfHOxDQ=="
         }
       },
       "is_incremental": false,
@@ -653,7 +355,84 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/duino/fez-panda.html",
-          "hash": "jgGeNVAoGDEnBdYmC9JAQw=="
+          "hash": "LCPOgxhHS4Zjvh34xymUTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-cerbuino-bee.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-cerbuino-bee.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-cerbuino-net.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-cerbuino-net.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-cobra-iii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-cobra-iii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-domino.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-domino.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-lemur.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-lemur.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-mini.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-mini.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/duino/images/fez-panda-ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/duino/images/fez-panda-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -672,87 +451,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_cerbuino_bee.jpg",
+      "source_relative_path": "hardware/legacy/duino/images/fez-panda.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_cerbuino_bee.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_cerbuino_net.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_cerbuino_net.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_cobra_iii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_cobra_iii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_domino.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_domino.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_lemur.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_lemur.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_mini.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_mini.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_panda.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_panda.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez_panda_ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez_panda_ii.jpg"
+          "relative_path": "hardware/legacy/duino/images/fez-panda.jpg"
         }
       },
       "is_incremental": false,
@@ -776,7 +478,31 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/filesystem.html",
-          "hash": "oL8MiVmiNYSfxBhPeSuXxA=="
+          "hash": "lkZJ3TjUv+z7Xzcmrf8GhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-cerberus.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/legacy/gadgeteer/fez-cerberus.html",
+          "hash": "ZDKIMXtuJRLOS+DR6B4SXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-cerbot.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/legacy/gadgeteer/fez-cerbot.html",
+          "hash": "mGV1B4DLh3VIqUj4YMP5Xg=="
         }
       },
       "is_incremental": false,
@@ -788,7 +514,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii-net.html",
-          "hash": "qP2GDRWRsxFCcjUvgI8+UQ=="
+          "hash": "qSBKBRfFAjIaobv4SuLY/w=="
         }
       },
       "is_incremental": false,
@@ -796,11 +522,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_cerberus.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_cerberus.html",
-          "hash": "San2z+0VMWausFuBMUYfjg=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii.html",
+          "hash": "5sI2oynolH6dgw378E1DUA=="
         }
       },
       "is_incremental": false,
@@ -808,11 +534,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_cerbot.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-hydra.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_cerbot.html",
-          "hash": "51zCWx02dpeW8pmVKwEBfQ=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-hydra.html",
+          "hash": "LErqxiEUVcOI3+bWD2eivg=="
         }
       },
       "is_incremental": false,
@@ -820,11 +546,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_cobra_ii.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-raptor.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_cobra_ii.html",
-          "hash": "LnRlGExxl/AMW4rs3ZvCLg=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-raptor.html",
+          "hash": "QlKinToEbwaXAfscIrE0VQ=="
         }
       },
       "is_incremental": false,
@@ -832,11 +558,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_hydra.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-reaper.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_hydra.html",
-          "hash": "BKxVJox7ngNlVclRqkxBMQ=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-reaper.html",
+          "hash": "2OAenCMNXw5yypj7POfpOg=="
         }
       },
       "is_incremental": false,
@@ -844,11 +570,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_raptor.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-spider-ii.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_raptor.html",
-          "hash": "CSuREC4YoGk4qoDKBfWy4w=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-spider-ii.html",
+          "hash": "duvOm5VKx3sVmwv7z9X78w=="
         }
       },
       "is_incremental": false,
@@ -856,35 +582,33 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_reaper.md",
+      "source_relative_path": "hardware/legacy/gadgeteer/fez-spider.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_reaper.html",
-          "hash": "ha6jPpkf1E0LfqKJ550NBQ=="
+          "relative_path": "hardware/legacy/gadgeteer/fez-spider.html",
+          "hash": "BSszI74r3kf5jYHxqxUYzQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_spider.md",
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cerberus.jpg",
       "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_spider.html",
-          "hash": "IYjDopDpr5z2ahLG7xBokg=="
+        "resource": {
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-cerberus.jpg"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez_spider_ii.md",
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cerbot.jpg",
       "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez_spider_ii.html",
-          "hash": "eAN2YfKbVbqNGRT1gO+5Pg=="
+        "resource": {
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-cerbot.jpg"
         }
       },
       "is_incremental": false,
@@ -914,10 +638,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_cerberus.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_cerberus.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -925,10 +649,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_cerbot.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-gameo.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_cerbot.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-gameo.jpg"
         }
       },
       "is_incremental": false,
@@ -936,10 +660,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_cobra_ii.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-hydra.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_cobra_ii.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-hydra.jpg"
         }
       },
       "is_incremental": false,
@@ -947,10 +671,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_gameo.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-raptor.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_gameo.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-raptor.jpg"
         }
       },
       "is_incremental": false,
@@ -958,10 +682,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_hydra.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-reaper.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_hydra.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-reaper.jpg"
         }
       },
       "is_incremental": false,
@@ -969,10 +693,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_raptor.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-spider-ii.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_raptor.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-spider-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -980,32 +704,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_reaper.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-spider.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_reaper.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_spider.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_spider.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez_spider_ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez_spider_ii.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/fez-spider.jpg"
         }
       },
       "is_incremental": false,
@@ -1024,10 +726,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/accel_g248.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/accel-g248.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/accel_g248.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/accel-g248.jpg"
         }
       },
       "is_incremental": false,
@@ -1057,10 +759,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard_x1.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard-x1.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard_x1.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard-x1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breakout-tb10.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/breakout-tb10.jpg"
         }
       },
       "is_incremental": false,
@@ -1079,10 +792,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breakout_tb10.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/button-s7.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/breakout_tb10.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/button-s7.jpg"
         }
       },
       "is_incremental": false,
@@ -1101,17 +814,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/button_s7.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/button_s7.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "hardware/legacy/gadgeteer/images/modules/camera.jpg",
       "output": {
         "resource": {
@@ -1123,10 +825,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/can_dw.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/can-dw.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/can_dw.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/can-dw.jpg"
         }
       },
       "is_incremental": false,
@@ -1134,10 +836,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/cellular_radio.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/cellular-radio.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/cellular_radio.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/cellular-radio.jpg"
         }
       },
       "is_incremental": false,
@@ -1145,10 +847,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/character_display.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/character-display.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/character_display.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/character-display.jpg"
         }
       },
       "is_incremental": false,
@@ -1156,10 +858,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/color_sense.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/color-sense.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/color_sense.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/color-sense.jpg"
         }
       },
       "is_incremental": false,
@@ -1178,10 +880,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/current_acs712.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/current-acs712.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/current_acs712.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/current-acs712.jpg"
         }
       },
       "is_incremental": false,
@@ -1189,10 +891,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_cp7.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-cp7.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_cp7.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-cp7.jpg"
         }
       },
       "is_incremental": false,
@@ -1200,10 +902,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_n18.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-n18.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_n18.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-n18.jpg"
         }
       },
       "is_incremental": false,
@@ -1211,10 +913,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_n7.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-n7.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_n7.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-n7.jpg"
         }
       },
       "is_incremental": false,
@@ -1222,10 +924,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_nhvn.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-nhvn.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_nhvn.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-nhvn.jpg"
         }
       },
       "is_incremental": false,
@@ -1233,10 +935,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_t35.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-t35.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_t35.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-t35.jpg"
         }
       },
       "is_incremental": false,
@@ -1244,10 +946,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_t43.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-t43.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_t43.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-t43.jpg"
         }
       },
       "is_incremental": false,
@@ -1255,10 +957,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display_te35.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-te35.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display_te35.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-te35.jpg"
         }
       },
       "is_incremental": false,
@@ -1266,10 +968,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/distance_us3.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/distance-us3.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/distance_us3.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/distance-us3.jpg"
         }
       },
       "is_incremental": false,
@@ -1277,10 +979,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet_enc28.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-enc28.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet_enc28.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-enc28.jpg"
         }
       },
       "is_incremental": false,
@@ -1288,10 +990,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet_j11d.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-j11d.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet_j11d.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-j11d.jpg"
         }
       },
       "is_incremental": false,
@@ -1332,10 +1034,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/gas_sense.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/gas-sense.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/gas_sense.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/gas-sense.jpg"
         }
       },
       "is_incremental": false,
@@ -1376,10 +1078,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/hub_ap5.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/hub-ap5.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/hub_ap5.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/hub-ap5.jpg"
         }
       },
       "is_incremental": false,
@@ -1398,10 +1100,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ir_reciever.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ir-reciever.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ir_reciever.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/ir-reciever.jpg"
         }
       },
       "is_incremental": false,
@@ -1420,10 +1122,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/keypad_kp16.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/keypad-kp16.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/keypad_kp16.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/keypad-kp16.jpg"
         }
       },
       "is_incremental": false,
@@ -1431,10 +1133,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led_7c.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-7c.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led_7c.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-7c.jpg"
         }
       },
       "is_incremental": false,
@@ -1442,10 +1144,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led_7r.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-7r.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led_7r.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-7r.jpg"
         }
       },
       "is_incremental": false,
@@ -1453,10 +1155,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led_strip.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-strip.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led_strip.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-strip.jpg"
         }
       },
       "is_incremental": false,
@@ -1464,10 +1166,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/light_sense.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/light-sense.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/light_sense.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/light-sense.jpg"
         }
       },
       "is_incremental": false,
@@ -1552,10 +1254,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/null_modem.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/null-modem.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/null_modem.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/null-modem.jpg"
         }
       },
       "is_incremental": false,
@@ -1563,10 +1265,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/obd_ii.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/obd-ii.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/obd_ii.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/obd-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -1574,10 +1276,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/onewire_x1.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/onewire-x1.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/onewire_x1.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/onewire-x1.jpg"
         }
       },
       "is_incremental": false,
@@ -1585,10 +1287,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/parallel_cnc.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/parallel-cnc.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/parallel_cnc.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/parallel-cnc.jpg"
         }
       },
       "is_incremental": false,
@@ -1618,10 +1320,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_count.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-count.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_count.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-count.jpg"
         }
       },
       "is_incremental": false,
@@ -1629,10 +1331,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_inout.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-inout.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_inout.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-inout.jpg"
         }
       },
       "is_incremental": false,
@@ -1640,10 +1342,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_oximeter.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-oximeter.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse_oximeter.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-oximeter.jpg"
         }
       },
       "is_incremental": false,
@@ -1651,10 +1353,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/radio_fm1.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/radio-fm1.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/radio_fm1.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/radio-fm1.jpg"
         }
       },
       "is_incremental": false,
@@ -1662,10 +1364,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/reflector_r3.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/reflector-r3.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/reflector_r3.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/reflector-r3.jpg"
         }
       },
       "is_incremental": false,
@@ -1673,10 +1375,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay_isox16.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay-isox16.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay_isox16.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay-isox16.jpg"
         }
       },
       "is_incremental": false,
@@ -1684,10 +1386,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay_x1.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay-x1.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay_x1.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay-x1.jpg"
         }
       },
       "is_incremental": false,
@@ -1695,10 +1397,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rfid_reader.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rfid-reader.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rfid_reader.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/rfid-reader.jpg"
         }
       },
       "is_incremental": false,
@@ -1706,10 +1408,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rotary_h1.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rotary-h1.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rotary_h1.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/rotary-h1.jpg"
         }
       },
       "is_incremental": false,
@@ -1739,10 +1441,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/s_plus.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/s-plus.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/s_plus.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/s-plus.jpg"
         }
       },
       "is_incremental": false,
@@ -1750,10 +1452,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/sd_card.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/sd-card.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/sd_card.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/sd-card.jpg"
         }
       },
       "is_incremental": false,
@@ -1761,10 +1463,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/serial_camera.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/serial-camera.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/serial_camera.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/serial-camera.jpg"
         }
       },
       "is_incremental": false,
@@ -1772,10 +1474,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/stepper_l6470.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/stepper-l6470.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/stepper_l6470.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/stepper-l6470.jpg"
         }
       },
       "is_incremental": false,
@@ -1783,10 +1485,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/temp_humidity.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/temp-humidity.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/temp_humidity.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/temp-humidity.jpg"
         }
       },
       "is_incremental": false,
@@ -1805,10 +1507,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch_c8.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch-c8.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch_c8.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch-c8.jpg"
         }
       },
       "is_incremental": false,
@@ -1816,10 +1518,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch_l12.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch-l12.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch_l12.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch-l12.jpg"
         }
       },
       "is_incremental": false,
@@ -1838,10 +1540,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/uc_battery_4xaa.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/uc-battery-4xaa.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/uc_battery_4xaa.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/uc-battery-4xaa.jpg"
         }
       },
       "is_incremental": false,
@@ -1849,10 +1551,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb_client.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client-sp.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb_client.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client-sp.jpg"
         }
       },
       "is_incremental": false,
@@ -1860,10 +1562,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb_client_sp.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb_client_sp.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client.jpg"
         }
       },
       "is_incremental": false,
@@ -1871,10 +1573,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb_host.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-host.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb_host.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-host.jpg"
         }
       },
       "is_incremental": false,
@@ -1882,10 +1584,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb_serial.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial-sp.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb_serial.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial-sp.jpg"
         }
       },
       "is_incremental": false,
@@ -1893,10 +1595,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb_serial_sp.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb_serial_sp.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial.jpg"
         }
       },
       "is_incremental": false,
@@ -1904,10 +1606,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/video_out.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/video-out.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/video_out.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/video-out.jpg"
         }
       },
       "is_incremental": false,
@@ -1915,10 +1617,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi_rn171.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rn171.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi_rn171.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rn171.jpg"
         }
       },
       "is_incremental": false,
@@ -1926,10 +1628,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi_rs21.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rs21.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi_rs21.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rs21.jpg"
         }
       },
       "is_incremental": false,
@@ -1937,10 +1639,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/xbee_adapter.jpg",
+      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/xbee-adapter.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/xbee_adapter.jpg"
+          "relative_path": "hardware/legacy/gadgeteer/images/modules/xbee-adapter.jpg"
         }
       },
       "is_incremental": false,
@@ -1975,7 +1677,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/gadgeteer/modules.html",
-          "hash": "E+cEkRj87/aZ2tXBXtNhWA=="
+          "hash": "SkKW90zprr+yjMCwWM6k0g=="
         }
       },
       "is_incremental": false,
@@ -1995,6 +1697,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "hardware/legacy/images/alcam-sm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/images/alcam-sm.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "hardware/legacy/images/alcam.jpg",
       "output": {
         "resource": {
@@ -2006,10 +1719,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/alcam_sm.jpg",
+      "source_relative_path": "hardware/legacy/images/f40-board-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/images/alcam_sm.jpg"
+          "relative_path": "hardware/legacy/images/f40-board-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/legacy/images/f40-board.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/images/f40-board.jpg"
         }
       },
       "is_incremental": false,
@@ -2021,28 +1745,6 @@
       "output": {
         "resource": {
           "relative_path": "hardware/legacy/images/f40.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/f40_board.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/f40_board.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/f40_board_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/f40_board_noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2072,10 +1774,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-lynx.jpg",
+      "source_relative_path": "hardware/legacy/images/fez-lynx-sm.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/images/fez-lynx.jpg"
+          "relative_path": "hardware/legacy/images/fez-lynx-sm.jpg"
         }
       },
       "is_incremental": false,
@@ -2083,10 +1785,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-lynx_sm.jpg",
+      "source_relative_path": "hardware/legacy/images/fez-lynx.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/images/fez-lynx_sm.jpg"
+          "relative_path": "hardware/legacy/images/fez-lynx.jpg"
         }
       },
       "is_incremental": false,
@@ -2116,6 +1818,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "hardware/legacy/images/legacy-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/legacy/images/legacy-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "hardware/legacy/images/legacy-soms.jpg",
       "output": {
         "resource": {
@@ -2127,10 +1840,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/legacy_noborder.jpg",
+      "source_relative_path": "hardware/legacy/images/mbuino-sm.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/images/legacy_noborder.jpg"
+          "relative_path": "hardware/legacy/images/mbuino-sm.jpg"
         }
       },
       "is_incremental": false,
@@ -2142,17 +1855,6 @@
       "output": {
         "resource": {
           "relative_path": "hardware/legacy/images/mbuino.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/mbuino_sm.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/mbuino_sm.jpg"
         }
       },
       "is_incremental": false,
@@ -2176,7 +1878,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/intro.html",
-          "hash": "sDE10QoAGX5DpDNVlrP2Wg=="
+          "hash": "nl9SlR/UwEia53i3gm2Uew=="
         }
       },
       "is_incremental": false,
@@ -2196,11 +1898,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/raspberrypi_hats.md",
+      "source_relative_path": "hardware/legacy/raspberrypi-hats.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/raspberrypi_hats.html",
-          "hash": "ekgTstTk9/dq6eyEWHM5+A=="
+          "relative_path": "hardware/legacy/raspberrypi-hats.html",
+          "hash": "pKsw9pOwGscq4nf7MsAOqg=="
         }
       },
       "is_incremental": false,
@@ -2232,11 +1934,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/embedded_master.md",
+      "source_relative_path": "hardware/legacy/soms/embedded-master.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/soms/embedded_master.html",
-          "hash": "83NbavxxDOkDAtNmuvrztQ=="
+          "relative_path": "hardware/legacy/soms/embedded-master.html",
+          "hash": "u6TxjOgA+gwBf+xp8VQ6EA=="
         }
       },
       "is_incremental": false,
@@ -2248,7 +1950,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/soms/emx.html",
-          "hash": "H/lu8mDpQnthJDdXgUvpOw=="
+          "hash": "LrkhD5SMmDA8q5o0aC123g=="
         }
       },
       "is_incremental": false,
@@ -2278,10 +1980,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/embedded_master.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/embedded-master.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/embedded_master.jpg"
+          "relative_path": "hardware/legacy/soms/images/embedded-master.jpg"
         }
       },
       "is_incremental": false,
@@ -2289,10 +1991,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/emx_dev_sys.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/emx-dev-sys.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/emx_dev_sys.jpg"
+          "relative_path": "hardware/legacy/soms/images/emx-dev-sys.jpg"
         }
       },
       "is_incremental": false,
@@ -2300,10 +2002,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/emx_som.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/emx-som.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/emx_som.jpg"
+          "relative_path": "hardware/legacy/soms/images/emx-som.jpg"
         }
       },
       "is_incremental": false,
@@ -2322,10 +2024,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi_100.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/usbizi-100.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi_100.jpg"
+          "relative_path": "hardware/legacy/soms/images/usbizi-100.jpg"
         }
       },
       "is_incremental": false,
@@ -2333,10 +2035,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi_144.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/usbizi-144.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi_144.jpg"
+          "relative_path": "hardware/legacy/soms/images/usbizi-144.jpg"
         }
       },
       "is_incremental": false,
@@ -2344,10 +2046,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi_devsys.jpg",
+      "source_relative_path": "hardware/legacy/soms/images/usbizi-devsys.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi_devsys.jpg"
+          "relative_path": "hardware/legacy/soms/images/usbizi-devsys.jpg"
         }
       },
       "is_incremental": false,
@@ -2371,7 +2073,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/soms/usbizi.html",
-          "hash": "r/ADGu+gn6dZtX6DJSbyRA=="
+          "hash": "4N3G9Lri7JIuUOFt3dZwaw=="
         }
       },
       "is_incremental": false,
@@ -2383,7 +2085,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/legacy/toc.html",
-          "hash": "jjYbJD1KGqg/bzt/+ZgyJA=="
+          "hash": "KD5l8PKNFv1QLdKWYvv+Hw=="
         }
       },
       "is_incremental": false,
@@ -2395,7 +2097,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g120.html",
-          "hash": "fXHsB3sjqXlw6XVT/ZNq+Q=="
+          "hash": "uY7LhMuk8S5/i6wz/i0RZw=="
         }
       },
       "is_incremental": false,
@@ -2419,7 +2121,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g30.html",
-          "hash": "IJZ24TPbVNFcW0klQ2ks0g=="
+          "hash": "do5FHRyXWw6rV9Zit399dA=="
         }
       },
       "is_incremental": false,
@@ -2431,7 +2133,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g400s.html",
-          "hash": "mUGOVq7GWrvIp3YBT3ZqWA=="
+          "hash": "BU9OXqtyYmEG4HCfONiFEQ=="
         }
       },
       "is_incremental": false,
@@ -2443,7 +2145,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g80.html",
-          "hash": "JsqnXoeYaKmkd1uzm7WQPQ=="
+          "hash": "3w+vCkaaupWlJE6k7iE7lA=="
         }
       },
       "is_incremental": false,
@@ -2451,10 +2153,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/fez_cobra_ii.jpg",
+      "source_relative_path": "hardware/scm/images/fez-cobra-ii.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/fez_cobra_ii.jpg"
+          "relative_path": "hardware/scm/images/fez-cobra-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -2462,10 +2164,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/fez_panda_ii.jpg",
+      "source_relative_path": "hardware/scm/images/fez-panda-ii.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/fez_panda_ii.jpg"
+          "relative_path": "hardware/scm/images/fez-panda-ii.jpg"
         }
       },
       "is_incremental": false,
@@ -2473,10 +2175,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/fez_raptor.jpg",
+      "source_relative_path": "hardware/scm/images/fez-raptor.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/fez_raptor.jpg"
+          "relative_path": "hardware/scm/images/fez-raptor.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/g120-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/g120-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2495,10 +2208,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g120_noborder.jpg",
+      "source_relative_path": "hardware/scm/images/g120dev.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/g120_noborder.jpg"
+          "relative_path": "hardware/scm/images/g120dev.jpg"
         }
       },
       "is_incremental": false,
@@ -2506,10 +2219,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g120dev.jpg",
+      "source_relative_path": "hardware/scm/images/g30-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/g120dev.jpg"
+          "relative_path": "hardware/scm/images/g30-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2528,10 +2241,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g30_noborder.jpg",
+      "source_relative_path": "hardware/scm/images/g30dev.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/g30_noborder.jpg"
+          "relative_path": "hardware/scm/images/g30dev.jpg"
         }
       },
       "is_incremental": false,
@@ -2539,10 +2252,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g30dev.jpg",
+      "source_relative_path": "hardware/scm/images/g400s-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/g30dev.jpg"
+          "relative_path": "hardware/scm/images/g400s-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2561,10 +2274,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g400s_noborder.jpg",
+      "source_relative_path": "hardware/scm/images/g80-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/scm/images/g400s_noborder.jpg"
+          "relative_path": "hardware/scm/images/g80-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2576,17 +2289,6 @@
       "output": {
         "resource": {
           "relative_path": "hardware/scm/images/g80.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/scm/images/g80_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/scm/images/g80_noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2609,7 +2311,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/intro.html",
-          "hash": "H1IWCEgkOaBJN1aPsdNs5A=="
+          "hash": "xvdFrP6HZBAVYMXG7UoM2g=="
         }
       },
       "is_incremental": false,
@@ -2633,7 +2335,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/development-options.html",
-          "hash": "eeLsWS6Z0sDTdRPKRLw95g=="
+          "hash": "yG5js7XYlHqslHYiUHOrOw=="
         }
       },
       "is_incremental": false,
@@ -2645,7 +2347,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/g400d.html",
-          "hash": "LmG/C0J0uA3mabcCCtGyhg=="
+          "hash": "QCVxJni2x9QlchgqDCNHQQ=="
         }
       },
       "is_incremental": false,
@@ -2675,6 +2377,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "hardware/ucm/images/g400-dev.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/ucm/images/g400-dev.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/ucm/images/g400d-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/ucm/images/g400d-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "hardware/ucm/images/g400d.jpg",
       "output": {
         "resource": {
@@ -2686,21 +2410,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/ucm/images/g400d_noborder.jpg",
+      "source_relative_path": "hardware/ucm/images/som-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/ucm/images/g400d_noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/ucm/images/g400dev.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/ucm/images/g400dev.jpg"
+          "relative_path": "hardware/ucm/images/som-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2712,17 +2425,6 @@
       "output": {
         "resource": {
           "relative_path": "hardware/ucm/images/som.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/ucm/images/som_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/ucm/images/som_noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2785,10 +2487,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/ucm/images/ucm_dev_board.jpg",
+      "source_relative_path": "hardware/ucm/images/ucm-dev-board-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/ucm/images/ucm_dev_board.jpg"
+          "relative_path": "hardware/ucm/images/ucm-dev-board-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2796,10 +2498,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "hardware/ucm/images/ucm_dev_board_noborder.jpg",
+      "source_relative_path": "hardware/ucm/images/ucm-dev-board.jpg",
       "output": {
         "resource": {
-          "relative_path": "hardware/ucm/images/ucm_dev_board_noborder.jpg"
+          "relative_path": "hardware/ucm/images/ucm-dev-board.jpg"
         }
       },
       "is_incremental": false,
@@ -2845,7 +2547,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/standard.html",
-          "hash": "LrXhRvBqj+CrsmDVSBvo2Q=="
+          "hash": "HCnmO9KKVk5SaJkwKKcIIg=="
         }
       },
       "is_incremental": false,
@@ -2869,7 +2571,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc2550.html",
-          "hash": "GKPl5gy6NCbu1K4wb/dxyA=="
+          "hash": "NTCb17KNk6MQPMEyjR531Q=="
         }
       },
       "is_incremental": false,
@@ -2881,7 +2583,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc5550.html",
-          "hash": "b+iAt5fQVS90YrLKvq23tw=="
+          "hash": "Juyf6JEdOOdTa1X3v3I3Fw=="
         }
       },
       "is_incremental": false,
@@ -2911,6 +2613,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/g400d-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/g400d-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/g400d.jpg",
       "output": {
         "resource": {
@@ -2922,10 +2635,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/g400d_noborder.jpg",
+      "source_relative_path": "images/g400s-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "images/g400d_noborder.jpg"
+          "relative_path": "images/g400s-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -2937,17 +2650,6 @@
       "output": {
         "resource": {
           "relative_path": "images/g400s.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/g400s_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "images/g400s_noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -3079,10 +2781,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/arduino_logo.png",
+      "source_relative_path": "software/netmf/images/arduino-logo.png",
       "output": {
         "resource": {
-          "relative_path": "software/netmf/images/arduino_logo.png"
+          "relative_path": "software/netmf/images/arduino-logo.png"
         }
       },
       "is_incremental": false,
@@ -3123,10 +2825,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/mbed_logo.png",
+      "source_relative_path": "software/netmf/images/mbed-logo.png",
       "output": {
         "resource": {
-          "relative_path": "software/netmf/images/mbed_logo.png"
+          "relative_path": "software/netmf/images/mbed-logo.png"
         }
       },
       "is_incremental": false,
@@ -3134,10 +2836,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/micro_python_logo.png",
+      "source_relative_path": "software/netmf/images/micro-python_logo.png",
       "output": {
         "resource": {
-          "relative_path": "software/netmf/images/micro_python_logo.png"
+          "relative_path": "software/netmf/images/micro-python_logo.png"
         }
       },
       "is_incremental": false,
@@ -3145,10 +2847,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/netmf_logo.png",
+      "source_relative_path": "software/netmf/images/netmf-logo-noborder.png",
       "output": {
         "resource": {
-          "relative_path": "software/netmf/images/netmf_logo.png"
+          "relative_path": "software/netmf/images/netmf-logo-noborder.png"
         }
       },
       "is_incremental": false,
@@ -3156,10 +2858,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/netmf_logo_noborder.png",
+      "source_relative_path": "software/netmf/images/netmf-logo.png",
       "output": {
         "resource": {
-          "relative_path": "software/netmf/images/netmf_logo_noborder.png"
+          "relative_path": "software/netmf/images/netmf-logo.png"
         }
       },
       "is_incremental": false,
@@ -3254,15 +2956,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
       "type": "Conceptual",
       "source_relative_path": "software/netmf/intro.md",
       "output": {
         ".html": {
           "relative_path": "software/netmf/intro.html",
-          "hash": "wEdBCwx1W2xQWyEbLgrYDw=="
+          "hash": "g0nYknamumaqSsZWrlFzKg=="
         }
       },
       "is_incremental": false,
@@ -3346,7 +3045,7 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/tutorials/display-nhvn-developers-guide.html",
-          "hash": "6fdqD8mzqjsLmDC9C9gFYA=="
+          "hash": "lHtTtx6XfohnxYAMd6Ax2A=="
         }
       },
       "is_incremental": false,
@@ -3412,15 +3111,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
       "type": "Conceptual",
       "source_relative_path": "software/netmf/tutorials/intro.md",
       "output": {
         ".html": {
           "relative_path": "software/netmf/tutorials/intro.html",
-          "hash": "yi53NA1I+AeZohUnBYEDkA=="
+          "hash": "ZZ/NY+xE6HRzJhLRhiyCXw=="
         }
       },
       "is_incremental": false,
@@ -3487,32 +3183,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/fez.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/boards/fez.html",
-          "hash": "/9IQJaJNvBBgD4IUY4Dz6A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/STM32F411discoveryboard.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/STM32F411discoveryboard.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "software/tinyclr/boards/images/buggy.jpg",
       "output": {
@@ -3547,10 +3217,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/miniM4STM32.jpg",
+      "source_relative_path": "software/tinyclr/boards/images/mini-m4-stm32.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/boards/images/miniM4STM32.jpg"
+          "relative_path": "software/tinyclr/boards/images/mini-m4-stm32.jpg"
         }
       },
       "is_incremental": false,
@@ -3590,12 +3260,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/boards/images/stm32f411-discovery-board.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/boards/images/stm32f411-discovery-board.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "software/tinyclr/boards/intro.md",
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/boards/intro.html",
-          "hash": "HEuSGw/sMa1sLN3bHdofEw=="
+          "hash": "wL8bFPtPNckrNhd/jhqk5Q=="
         }
       },
       "is_incremental": false,
@@ -3607,7 +3288,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/boards/mikroelektronika.html",
-          "hash": "Amfq05aF1h7rYoLhlfNYZQ=="
+          "hash": "pvjgHempFjo07OMw6rStoQ=="
         }
       },
       "is_incremental": false,
@@ -3619,7 +3300,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/boards/netduino.html",
-          "hash": "DVJhMcph7v6pIcflIK6DFA=="
+          "hash": "rdLn9ysXt92y3SzDfYJuYg=="
         }
       },
       "is_incremental": false,
@@ -3627,11 +3308,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/stm32_boards.md",
+      "source_relative_path": "software/tinyclr/boards/stm32-boards.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/boards/stm32_boards.html",
-          "hash": "kejLW0voj1jVZaQf38FCGA=="
+          "relative_path": "software/tinyclr/boards/stm32-boards.html",
+          "hash": "e1fAqSTAjBos/Zm/wk6pIQ=="
         }
       },
       "is_incremental": false,
@@ -3643,7 +3324,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/downloads.html",
-          "hash": "0anAXdS9kBt+31XsJQHwCA=="
+          "hash": "NYChladgn/v1abbgyW3oyg=="
         }
       },
       "is_incremental": false,
@@ -3655,7 +3336,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/getting-started.html",
-          "hash": "XgO/k2VGf1cKDqEnM/eaMw=="
+          "hash": "Ix3btqMfP7GKIJDknQCU2w=="
         }
       },
       "is_incremental": false,
@@ -3663,10 +3344,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/AcceptAgreementforNuGet.jpg",
+      "source_relative_path": "software/tinyclr/images/accept-agreement-for-nuget.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/AcceptAgreementforNuGet.jpg"
+          "relative_path": "software/tinyclr/images/accept-agreement-for-nuget.jpg"
         }
       },
       "is_incremental": false,
@@ -3674,10 +3355,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/AddNuGetPackage.jpg",
+      "source_relative_path": "software/tinyclr/images/add-nuget-package.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/AddNuGetPackage.jpg"
+          "relative_path": "software/tinyclr/images/add-nuget-package.jpg"
         }
       },
       "is_incremental": false,
@@ -3685,109 +3366,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/AddPackageSource.jpg",
+      "source_relative_path": "software/tinyclr/images/add-package-source.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/AddPackageSource.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/BrowseLocalNuGetFeed.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/BrowseLocalNuGetFeed.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/ChooseLocalNuGetPackageFolder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/ChooseLocalNuGetPackageFolder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/SelectManageNugetPackages.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/SelectManageNugetPackages.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/SelectTinyCLRProject.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/SelectTinyCLRProject.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/SettingNugetPackageSource.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/SettingNugetPackageSource.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/ShowInstalledNuGetPackages.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/ShowInstalledNuGetPackages.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/SolutionExplorer.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/SolutionExplorer.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/StartNewProject.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/StartNewProject.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/ViewShowSolutionExplorer.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/ViewShowSolutionExplorer.jpg"
+          "relative_path": "software/tinyclr/images/add-package-source.jpg"
         }
       },
       "is_incremental": false,
@@ -3817,10 +3399,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/browse-local-nuget-feed.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/browse-local-nuget-feed.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/browse-nugets.png",
       "output": {
         "resource": {
           "relative_path": "software/tinyclr/images/browse-nugets.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/choose-local-nuget-package-folder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/choose-local-nuget-package-folder.jpg"
         }
       },
       "is_incremental": false,
@@ -3982,10 +3586,87 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/select-manage-nuget-packages.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/select-manage-nuget-packages.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/select-tinyclr-project.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/select-tinyclr-project.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/setting-nuget-package-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/setting-nuget-package-source.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/show-installed-nuget-packages.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/show-installed-nuget-packages.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/solution-explorer.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/solution-explorer.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/solution-explorer.png",
       "output": {
         "resource": {
           "relative_path": "software/tinyclr/images/solution-explorer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/start-new-project.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/start-new-project.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/tinyclr-config-sm.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/tinyclr-config-sm.PNG"
         }
       },
       "is_incremental": false,
@@ -4004,10 +3685,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/tinyclr-config_sm.PNG",
+      "source_relative_path": "software/tinyclr/images/tinyclr-logo-noborder.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/tinyclr-config_sm.PNG"
+          "relative_path": "software/tinyclr/images/tinyclr-logo-noborder.jpg"
         }
       },
       "is_incremental": false,
@@ -4015,21 +3696,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/tinyclrlogo.jpg",
+      "source_relative_path": "software/tinyclr/images/tinyclr-logo.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/tinyclrlogo.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/tinyclrlogo_noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/tinyclrlogo_noborder.jpg"
+          "relative_path": "software/tinyclr/images/tinyclr-logo.jpg"
         }
       },
       "is_incremental": false,
@@ -4047,12 +3717,11 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/intro.md",
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/view-show-solution-explorer.jpg",
       "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/intro.html",
-          "hash": "wWrrYfu8S9y2YJ0zflcIKw=="
+        "resource": {
+          "relative_path": "software/tinyclr/images/view-show-solution-explorer.jpg"
         }
       },
       "is_incremental": false,
@@ -4060,11 +3729,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/loaders/ghi_bootloader.md",
+      "source_relative_path": "software/tinyclr/intro.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/loaders/ghi_bootloader.html",
-          "hash": "/mDIXYs8BeLzpFWNB6F42Q=="
+          "relative_path": "software/tinyclr/intro.html",
+          "hash": "2WXIOvCeNhplafuyfsq2xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/loaders/ghi-bootloader.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/loaders/ghi-bootloader.html",
+          "hash": "J8rzlDFj70omY3bnXnDUdQ=="
         }
       },
       "is_incremental": false,
@@ -4072,10 +3753,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/loaders/images/bootloader_noborder.png",
+      "source_relative_path": "software/tinyclr/loaders/images/bootloader-noborder.png",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/loaders/images/bootloader_noborder.png"
+          "relative_path": "software/tinyclr/loaders/images/bootloader-noborder.png"
         }
       },
       "is_incremental": false,
@@ -4087,7 +3768,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/loaders/intro.html",
-          "hash": "a54mKPNXBsSKhb6hO4lPkQ=="
+          "hash": "qb2gZ0uvh7PLpSrjaIdJ4g=="
         }
       },
       "is_incremental": false,
@@ -4095,11 +3776,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/loaders/stm32_bootloader.md",
+      "source_relative_path": "software/tinyclr/loaders/stm32-bootloader.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/loaders/stm32_bootloader.html",
-          "hash": "AhwS9sVyExIIx0fuuIlcqg=="
+          "relative_path": "software/tinyclr/loaders/stm32-bootloader.html",
+          "hash": "M6DXbpxkOBDPzi7KcMPnqg=="
         }
       },
       "is_incremental": false,
@@ -4111,7 +3792,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/porting/intro.html",
-          "hash": "kTHy35a46GEdBHPjnzILIw=="
+          "hash": "l5G29LV3FRbfcGSAilZUOg=="
         }
       },
       "is_incremental": false,
@@ -4119,11 +3800,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/porting/native_apis.md",
+      "source_relative_path": "software/tinyclr/porting/native-apis.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/porting/native_apis.html",
-          "hash": "9emYOCnwW4FiMB9LylSLyQ=="
+          "relative_path": "software/tinyclr/porting/native-apis.html",
+          "hash": "QKX2wjUCAzEhJeMizRss2g=="
         }
       },
       "is_incremental": false,
@@ -4131,11 +3812,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/porting/native_interops.md",
+      "source_relative_path": "software/tinyclr/porting/native-interops.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/porting/native_interops.html",
-          "hash": "WkLAhuProRM5KoEvoV/m4w=="
+          "relative_path": "software/tinyclr/porting/native-interops.html",
+          "hash": "0KDv5E7k/6UeufF1J56QBQ=="
         }
       },
       "is_incremental": false,
@@ -4143,11 +3824,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/release_notes.md",
+      "source_relative_path": "software/tinyclr/release-notes.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/release_notes.html",
-          "hash": "mBdYBMclbtMFvj/8bKawsA=="
+          "relative_path": "software/tinyclr/release-notes.html",
+          "hash": "es8LFWtjcD3tOSuav85k3A=="
         }
       },
       "is_incremental": false,
@@ -4167,11 +3848,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tinyclr_config.md",
+      "source_relative_path": "software/tinyclr/tinyclr-config.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/tinyclr_config.html",
-          "hash": "a0vTKhdNn79mgGH7YIjg7w=="
+          "relative_path": "software/tinyclr/tinyclr-config.html",
+          "hash": "pVFdfECTbBgjhePMTmddMw=="
         }
       },
       "is_incremental": false,
@@ -4183,7 +3864,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/toc.html",
-          "hash": "OY8fCb4KJ3UaGjjF20Y9ig=="
+          "hash": "QGoFnftgJDosqpyjDlgKyg=="
         }
       },
       "is_incremental": false,
@@ -4195,7 +3876,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/adc.html",
-          "hash": "IapND/0yCuJRrKd8prgJNw=="
+          "hash": "X9x9R7zxECt8hjMIX+vd0w=="
         }
       },
       "is_incremental": false,
@@ -4207,7 +3888,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/can.html",
-          "hash": "5f5IKtL3zKq6HGI7u3RTsg=="
+          "hash": "nN/xBSQRhpVv9Q6j/XKVEg=="
         }
       },
       "is_incremental": false,
@@ -4219,7 +3900,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/dac.html",
-          "hash": "L2CyKK2tqNjp5kBrFUbonA=="
+          "hash": "ducaNW2stfsS5Cxt5ipE3A=="
         }
       },
       "is_incremental": false,
@@ -4231,7 +3912,43 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/display.html",
-          "hash": "M8q1GGQuAz/x2GKBbZk1pA=="
+          "hash": "Ya4GBcAq4H31rXLuEJnSzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/gpio-change-reader.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/gpio-change-reader.html",
+          "hash": "RSlfGTG5eWYhZ8gj3v6wVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/gpio-change-writer.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/gpio-change-writer.html",
+          "hash": "uJOlVBatA/KiM3ZO5XJR0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/gpio-pulse-reader-writer.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/gpio-pulse-reader-writer.html",
+          "hash": "sbDohA6uKwN2tHVOlj7YPw=="
         }
       },
       "is_incremental": false,
@@ -4243,43 +3960,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/gpio.html",
-          "hash": "OrZ/Xy+9YtCqRimda7hWTQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpiochangereader.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpiochangereader.html",
-          "hash": "ljoHrEb0xHnaGKTeTAvgxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpiochangewriter.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpiochangewriter.html",
-          "hash": "D639ftaT8LCFU2XUQI0+iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpiopulsereaderwriter.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpiopulsereaderwriter.html",
-          "hash": "QsU4NXALoS9F7mZG0la6yA=="
+          "hash": "uKN9t7cUVL+RWB0uFFWO6g=="
         }
       },
       "is_incremental": false,
@@ -4291,7 +3972,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/i2c.html",
-          "hash": "8j9ueiJhfgqN7iuqekaEUA=="
+          "hash": "vFtBSwsi5FWA1I+W+vYD4A=="
         }
       },
       "is_incremental": false,
@@ -4299,10 +3980,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/tutorials/images/can_bus.png",
+      "source_relative_path": "software/tinyclr/tutorials/images/can-bus.png",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/tutorials/images/can_bus.png"
+          "relative_path": "software/tinyclr/tutorials/images/can-bus.png"
         }
       },
       "is_incremental": false,
@@ -4314,7 +3995,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/intro.html",
-          "hash": "Zg/ff0wj38KYksWoEHzONg=="
+          "hash": "uFNy1NMyXsntBZ45gpidNw=="
         }
       },
       "is_incremental": false,
@@ -4326,7 +4007,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/pwm.html",
-          "hash": "Z4kWuqmUK9PNJParKO8gVg=="
+          "hash": "b3bvqfB98ZrfVvew3RIwBA=="
         }
       },
       "is_incremental": false,
@@ -4338,7 +4019,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/spi.html",
-          "hash": "Firvv5ajC/hPo43KNTRDVg=="
+          "hash": "N58eyqHVsX8URwWTIT5Srw=="
         }
       },
       "is_incremental": false,
@@ -4350,7 +4031,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/uart.html",
-          "hash": "fdg56q1A3ZSE/b8iGOOUqg=="
+          "hash": "U3aU5Rk4N2l09qmXz59Xjw=="
         }
       },
       "is_incremental": false,
@@ -4377,14 +4058,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

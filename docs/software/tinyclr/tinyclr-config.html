@@ -78,10 +78,10 @@
 <h1 id="tinyclr-config">TinyCLR Config</h1>
 
 <hr>
-<p>TinyCLR Config is a stand-alone tool to help managing TinyCLR OS devices. The tool is cloud-connected. It automatically finds and downloads newer firmware versions from a list of provided sources. These sources can be on the internet or local on your machine if you don&#39;t have or don&#39;t want to access to the internet. The firmware update functionality only works for devices that have <a href="loaders/ghi_bootloader.html">GHI Bootloader v2</a>.</p>
+<p>TinyCLR Config is a stand-alone tool to help managing TinyCLR OS devices. The tool is cloud-connected. It automatically finds and downloads newer firmware versions from a list of provided sources. These sources can be on the internet or local on your machine if you don&#39;t have or don&#39;t want to access to the internet. The firmware update functionality only works for devices that have <a href="loaders/ghi-bootloader.html">GHI Bootloader v2</a>.</p>
 <p><img src="images/tinyclr-config.png" alt="TinyCLR Config"></p>
 <p>The TinyCLR Config tool is stil in development. Please <a href="https://forums.ghielectronics.com/c/announcements">stay tuned</a>.</p>
-<h1 id="firmware-sources">Firmware Sources</h1>
+<h2 id="firmware-sources">Firmware Sources</h2>
 <p>When TinyCLR Config starts up, it looks for a file called <code>FirmwareSources.txt</code> in the same directory as the TinyCLR Config executable itself. If the file isn&#39;t present, it&#39;s created automatically with one entry pointing to the official GHI firmware store.</p>
 <p>The file is a comma-separated list of sources, one per line. The first value is an integer priority with lower numbers being searched first. Each source is tried until a newer version than the currently flashed version is found. The next value is either <code>Local</code> or <code>Network</code> which determines where the next value points to: the local disk or the network. The last value is a URI that points to an xml file that defines the list of available firmwares.</p>
 <p>The firmware xml list is made up of a list of devices. Each device has a name attribute and firmware list child. Within the firmware list is a list of each available firmware. Each firmware must have an MD5 hash that matches the file pointed to, a version of the form <code>major.minor.patch</code>, a release date, and a uri that points to the location of the firmware (the location type must match the location type of the firmware list itself, i.e. local vs network). See the official hosted file for a complete example.</p>
@@ -95,7 +95,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tinyclr_config.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tinyclr-config.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

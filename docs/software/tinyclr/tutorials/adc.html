@@ -77,6 +77,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="adc">ADC</h1>
 
+<hr>
 <p>Unlike digital input pins, which can only read high or low; analog pins can read a range of voltage levels.  Microcontrollers based on 3.3V can typically read voltages anywhere between zero and 3.3V. Analog inputs connect internally to a Analog to Digital Converter (ADC) that converts the analog voltage level on the pin to a digital value.</p>
 <p>The resolution of the ADC determines its accuracy. An 8bit ADC has 256 steps to work with, 3.3V/256=0.013V. This means an increase of 0.013V will increase the value by one. In other words, a voltage change of less than 0.013V has no effect. The ADC on FEZ is 12bit and should fit most needs.</p>
 <div class="TIP"><h5>Tip</h5><p>Note that the analog channel number is not the pin number. We have these easily enumerated for FEZ but you need to determine the channel number on a specific pin using your system&#39;s documentation.</p>

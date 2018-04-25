@@ -77,6 +77,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="can">CAN</h1>
 
+<hr>
 <p>Controller Area Network (CAN) bus is a two wire serial communication protocol which was originally released at the 1986 Society of Automotive Engineers (SAE) congress in Detroit.  The first vehicle to use CAN reduced the weight of its wiring by over 100 pounds. While CAN was originally designed for use in cars to reduce the amount of wiring, the use of CAN has expanded and it can now be found in avionics, hospitals, assembly lines, and even some bicycles and prosthetic limbs. </p>
 <p>Some features that make CAN so popular include:</p>
 <ul>
@@ -94,7 +95,7 @@
 </ul>
 <p>CAN bus is generally a two wire bus, but sometimes additional power and ground lines are included requiring four wires.</p>
 <p>High speed CAN is set up as a linear bus of 120 ohm nominal twisted pair wiring with two or more nodes.  Termination resistors are used at each end of the bus as shown below.</p>
-<p><img src="images/can_bus.png" alt="CAN linear bus"></p>
+<p><img src="images/can-bus.png" alt="CAN linear bus"></p>
 <div class="TIP"><h5>Tip</h5><p>Some CAN devices including our own development boards have built in termination resistors. If you are using more than two nodes on a high speed CAN bus you must disable the termination resistors on all nodes except for the two end nodes. </p>
 </div>
 <p>Low speed or fault tolerant CAN uses a linear bus, star bus, or multiple star buses.  Fault tolerant CAN buses are terminated differently than linear CAN buses and require a termination resistor at each node.  The value of these resistors depends on the network but should equal about 100 ohms per CAN line in total.</p>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Embedded Master </title>
+    <title>FEZ Cerberus </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Embedded Master ">
+    <meta name="title" content="FEZ Cerberus ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,49 +75,42 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="embedded-master">Embedded Master</h1>
+<h1 id="fez-cerberus">FEZ Cerberus</h1>
 
 <hr>
-<p><img src="images/embedded_master.jpg" alt="Embedded Master"></p>
-<p>Embedded Master is a NETMF System on Module. </p>
+<p><img src="images/fez-cerberus.jpg" alt="FEZ Cerberus"></p>
+<p>FEZ Cerberus is a .NET Gadgeteer product that utilizes .NET Micro Framework (NETMF). The core of the FEZ Cerberus is the G30 System on Chip (SoC).</p>
+<p>FEZ Cerberus is the mother of the Cerb Family.</p>
 <h2 id="resources">Resources</h2>
 <ul>
-<li><a href="http://files.ghielectronics.com/downloads/Documents/Manuals/Embedded Master User Manual.pdf">User Manual</a></li>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerberus%20Schematic.pdf">Schematic</a></li>
 </ul>
-<h2 id="using-netmf-software">Using NETMF software</h2>
-<p>We discourage the use of NETMF software on our products in favor of TinyCLR OS, but the choice is up to you. Embedded Master will only work with the NETMF 4.1 SDK. To find out more about NETMF, go to our <a href="../../../software/netmf/intro.html">NETMF Introduction Page</a></p>
+<h2 id="using-the-gadgeteer-software">Using the Gadgeteer software</h2>
+<p>We discourage the use of Gadgeteer and NETMF software on our products in favor of TinyCLR OS, but the choice is up to you. To find out more about NETMF, go to our <a href="../../../software/netmf/intro.html">NETMF Introduction Page</a></p>
 <h2 id="using-tinyclr-os">Using TinyCLR OS</h2>
-<p>The following instructions describe how to set up Embedded Master to work with TinyCLR OS. To learn more about TinyCLR check out the <a href="../../../software/tinyclr/intro.html">TinyCLR Introduction</a> page.</p>
+<p>The following instructions describe how to set up EMX to work with TinyCLR OS. To learn more about TinyCLR check out the <a href="../../../software/tinyclr/intro.html">TinyCLR Introduction</a> page.</p>
+<h2 id="the-boot-pins">The Boot Pins</h2>
+<p>PB10 is the MODE pin, which is used to select between USB and serial interfaces for bootloader and firmware. USART1 (PB6 and PB7) is used when in serial mode.
+LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts the device into bootloader mode. Setting LDR1 low will execute the firmware but will stop the application from running.</p>
 <h3 id="loading-bootloader-v2">Loading Bootloader v2</h3>
-<div class="TIP"><h5>Tip</h5><p>Bootloader version 1 doesn&#39;t always work with Windows version 7 and later (Error code 10). You can use the serial option to update the loader.
-This is a one-time procedure. You should have no issues after bootloader V2 is installed.</p>
-</div>
-<p><strong>To update using USB</strong></p>
 <ol>
-<li>Download the <a href="../../../software/tinyclr/loaders/ghi_bootloader.html#embedded-master">bootloader file</a></li>
-<li>Set Embedded Master in boot mode, by making pins up, down, and select (3, 7, and 53 on TFT or 43 on non-TFT) low and resetting the Embedded Master.</li>
-<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../../../software/netmf/intro.html">NETMF</a> SDK.</li>
-<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
-<li>Select serial and pick the COM port associated with your board.</li>
-<li>Enter <code>E</code> and you will see back &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
-<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
-<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
-<li>Select the bootloader file you have downloaded above.</li>
-<li>You will see <code>File Transfer Finished Successfully</code>.</li>
-<li>Change the configuration switches back to the off position and reset the board.</li>
-<li>You are now running GHI Electronics bootloader v2!</li>
-</ol>
-<p><strong>To update using Serial</strong></p>
-<ol>
-<li>Connect a development PC to COM1 on Embedded Master, pins 5 and 6 (through RS232 converter or a USB-Serial TTL cable).</li>
-<li>Set the down and select pins low.</li>
-<li>Follow the above steps starting at step 4 to load the firmware.</li>
+<li>Download the <a href="../../../software/tinyclr/loaders/ghi-bootloader.html#cerb">bootloader file</a>.</li>
+<li>Press and hold the BOOT button down while resetting the board. </li>
+<li>If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.</li>
+<li>The system will now detect an ST DFU device.</li>
+<li>Read more on <a href="../../../software/tinyclr/loaders/stm32-bootloader.html#uploading-dfu-files">uploading DFU files</a> on STM32 microcontrollers.</li>
 </ol>
 <h3 id="loading-the-firmware">Loading the Firmware</h3>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader v2, set the up pin low and then reset your board. To enter USB mode, set the select pin.</p>
-<p>Download the <a href="../../../software/tinyclr/downloads.html#emx">EMX firmware</a> and follow <a href="../../../software/tinyclr/loaders/ghi_bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
+<p>To activate bootloader v2, set PC1 pin low.</p>
+<p>Download the <a href="../../../software/tinyclr/downloads.html#cerb">Cerb firmware</a> and follow <a href="../../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
+<h2 id="fez-game-o">FEZ Game-O</h2>
+<p><img src="images/fez-gameo.jpg" alt="FEZ Game-O"></p>
+<p>A programmable game console based on the FEZ Cerberus that was funded with a successful kickstarter campaign. The FEZ Game-O combine a 320 x 240 color display, 3D accelerometer and audio circuitry within an attractive, ergonomic enclosure.</p>
+<ul>
+<li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20GameO%20Schematic.pdf">Schematic</a></li>
+</ul>
 </article>
           </div>
           
@@ -126,7 +119,7 @@ This is a one-time procedure. You should have no issues after bootloader V2 is i
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/legacy/soms/embedded_master.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/hardware/legacy/gadgeteer/fez-cerberus.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

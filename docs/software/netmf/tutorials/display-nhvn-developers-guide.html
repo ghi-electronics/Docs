@@ -140,7 +140,7 @@ Display.CurrentRotation = Display.Rotation.Normal;
 if (Display.Save())
     PowerState.RebootDevice(false);
 </code></pre><h2 id="capacitive-touch-controller-driver">Capacitive Touch Controller Driver</h2>
-<div class="NOTE"><h5>Note</h5><p>the displays do not seem to raise the TouchUp event in our tests.</p>
+<div class="NOTE"><h5>Note</h5><p>The displays do not seem to raise the TouchUp event in our tests.</p>
 </div>
 <pre><code class="lang-c#">public class FT5306Controller {
     private InterruptPort touchInterrupt;
