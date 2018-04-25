@@ -1,5 +1,4 @@
 # .NET Micro Framework Introduction
----
 
 ![NETMF Logo](images/netmf-logo-noborder.png)
 
@@ -26,8 +25,6 @@ The [NETMF for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_
 * [Troubleshooting Guide](http://old.ghielectronics.com/docs/165)
 * [Forthcoming changes](http://old.ghielectronics.com/docs/325) planned for the SDK.
 
----
-
 ## .NET Gadgeteer Resources
 * [Source code](https://bitbucket.org/ghi_elect/gadgeteer) to mainboards and module drivers.
 * [Sockets Quick Reference](http://old.ghielectronics.com/docs/305)
@@ -35,12 +32,8 @@ The [NETMF for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_
 * [Using Plain NETMF on .NET Gadgeteer](http://old.ghielectronics.com/docs/144)
 * [Future of Gadgeteer](https://www.ghielectronics.com/community/forum/topic?id=23671)
 
----
-
 ## Community
 Our forum's [.NET Micro Framework Board](http://old.ghielectronics.com/community/forum/board?id=28) is monitored by our engineers and active community members.
-
----
 
 ## Library Documentation
 * [Microsoft NETMF Platform SDK](https://msdn.microsoft.com/en-us/library/ms376806.aspx)
@@ -48,8 +41,6 @@ Our forum's [.NET Micro Framework Board](http://old.ghielectronics.com/community
 * [GHI NETMF 4.2 SDK](http://old.ghielectronics.com/downloads/man/Library_Documentation_v4.2/)
 * [GHI NETMF 4.1 SDK](http://old.ghielectronics.com/downloads/man/Library_Documentation_v4.1/)
 * [.NET Gadgeteer Drivers](https://www.ghielectronics.com/downloads/man/Gadgeteer_Documentation_v4.3/)
-
----
 
 ## Discontinued
 [ChipworkX, Panda I & II and Domino](http://old.ghielectronics.com/docs/313/)
