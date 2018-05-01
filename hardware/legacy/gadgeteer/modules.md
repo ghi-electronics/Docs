@@ -11,43 +11,43 @@ This page lists all .NET Gadgeteer modules and how they can be used with [TinyCL
 > We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.
 
 
-# Accel G248
+## Accel G248
 ![Accel G248](images/modules/accel-g248.jpg)
 
 The Accel G248 measures acceleration though I2C bus. Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/AccelG248) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Accel%20G248%20Module%20Schematic.pdf)
 
-# Barometer
+## Barometer
 ![Barometer](images/modules/barometer.jpg)
 
 Measures pressure. Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Barometer) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Barometer%20Module%20Schematic.pdf)
 
-# Bluetooth
+## Bluetooth
 ![Bluetooth](images/modules/bluetooth.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Bluetooth) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Bluetooth%20Module%20Schematic.pdf)
 
-# Breadboard X1
+## Breadboard X1
 ![Breadboard X1](images/modules/breadboard-x1.jpg)
 
 An easy breadboard option. Simply access the socket directly to wire whatever your heart desires!
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/BreadBoard%20X1%20Module%20Schematic.pdf)
 
-# Breakout
+## Breakout
 ![Breakout](images/modules/breakout.jpg)
 
 Simply a breakout of all signals.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Breakout%20Module%20Schematic.pdf)
 
-# Breakout TB10
+## Breakout TB10
 ![Breakout TB10](images/modules/breakout-tb10.jpg)
 
 Simply a breakout of all signals, on a terminal block.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Breakout%20TB10%20Module%20Schematic.pdf)
 
-# Button
+## Button
 ![Button](images/modules/button.jpg)
 
 The Button module is very simple, with a button connected to pin 3 and an LED connected to pin4.
@@ -83,7 +83,7 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Button%20Module%20Schematic.pdf)
 
-# Button S7
+## Button S7
 ![Button S7](images/modules/button-s7.jpg)
 
 7 buttons on a single module, with LEDs that light up with button presses! 
@@ -101,25 +101,25 @@ Buttons map:
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Button%20S7%20Module%20Schematic.pdf)
 
-# CAN DW
+## CAN DW
 ![Button S7](images/modules/can-dw.jpg)
 
 CAN is not yet supported in TinyCLR OS, you can add it if you are up for a challenge!
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/CANDW%20Module%20Schematic.pdf)
 
-# Camera
+## Camera
 ![Camera](images/modules/camera.jpg)
 
 USB Host is not supported in TinyCLR OS
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Camera%20Module%20Schematic.pdf)
 
-# Cellular Radio
+## Cellular Radio
 ![Cellular Radio](images/modules/cellular-radio.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CellularRadio) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Cellular%20Radio%20Module%20Schematic.pdf)
 
-# Character Display
+## Character Display
 ![Character Display](images/modules/character-display.jpg)
 
 This is a standard and very common HD44780 display.
@@ -127,7 +127,7 @@ This is a standard and very common HD44780 display.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/CharacterDisplay) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Character%20Display%20Module%20Schematic.pdf)
 
-# ColorSense
+## ColorSense
 ![ColorSense](images/modules/color-sense.jpg)
 
 A color sensor that uses software I2C, not yet supported in TinyCLR OS.
@@ -135,13 +135,13 @@ A color sensor that uses software I2C, not yet supported in TinyCLR OS.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/blob/master/Modules/GHIElectronics/ColorSense) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Color%20Sense%20Module%20Schematic.pdf)
 
-# Compass
+## Compass
 ![Compass](images/modules/compass.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Compass) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Compass%20Module%20Schematic.pdf)
 
-# Current ACS712
+## Current ACS712
 ![Current ACS712](images/modules/current-acs712.jpg)
 
 This is a current sensor that uses ACS712, which simply outputs an analog voltage.
@@ -149,7 +149,7 @@ This is a current sensor that uses ACS712, which simply outputs an analog voltag
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/CurrentACS712) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Current%20ACS712%20Module%20Schematic.pdf)
 
-# Display CP7
+## Display CP7
 ![Display CP7](images/modules/display-cp7.jpg)
 
 Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
@@ -173,14 +173,14 @@ VerticalSyncPolarity = true,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20CP7%20Module%20Schematic.pdf)
 
-# Display N18
+## Display N18
 ![Display N18](images/modules/display-n18.jpg)
 
 This is an SPI display that can work on any system with SPI bus, even small ones without TFT display support.
 See the [Display](../../../software/tinyclr/tutorials/display.md) tutorial for more details.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20N18%20Module%20Schematic.pdf)
 
-# Display N7
+## Display N7
 ![Display N7](images/modules/display-n7.jpg)
 
 Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
@@ -203,7 +203,7 @@ VerticalSyncPolarity = true,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20N7%20Module%20Schematic.pdf)
 
-# Display NHVN
+## Display NHVN
 ![Display NHVN](images/modules/display-nhvn.jpg)
 
 This allows the use of several displays offered by http://newhavendisplay.com/
@@ -257,7 +257,7 @@ VerticalSyncPolarity = false,
 As for the capacitive touch controller, use this [old NETMF driver](https://old.ghielectronics.com/docs/338/display-nhvn-developers-guide) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20NHVN%20Module%20Schematic.pdf)
 
-# Display T35
+## Display T35
 ![Display T35](images/modules/display-t35.jpg)
 
 Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
@@ -280,7 +280,7 @@ VerticalSyncPolarity = false,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20T35%20Module%20Schematic.pdf)
 
-# Display T43
+## Display T43
 ![Display T43](images/modules/display-t43.jpg)
 
 Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
@@ -303,7 +303,7 @@ VerticalSyncPolarity = false,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20T43%20Module%20Schematic.pdf)
 
-# Display TE35
+## Display TE35
 ![Display TE35](images/modules/display-te35.jpg)
 
 Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
@@ -326,7 +326,7 @@ VerticalSyncPolarity = false,
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20TE35%20Module%20Schematic.pdf)
 
-# Distance US3
+## Distance US3
 ![Distance US3](images/modules/distance-us3.jpg)
 
 A very common ultrasonic sensor that works by sending a pulse on the trig Pin4 and measuring the response time on echo Pin3.
@@ -341,37 +341,37 @@ long time = echolen.Read();
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Distance%20US3%20Module%20Schematic.pdf)
 
-# Ethernet ENC28
+## Ethernet ENC28
 ![Ethernet ENC28](images/modules/ethernet-enc28.jpg)
 
 Requires an internal support in the TinyCLR OS port or a managed TCP/IP stack.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Ethernet%20ENC28%20Module%20Schematic.pdf)
 
-# Ethernet J11D
+## Ethernet J11D
 ![Ethernet J11D](images/modules/ethernet-j11d.jpg)
 
 Requires an internal support in the TinyCLR OS port or a managed TCP/IP stack.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Ethernet%20J11D%20Module%20Schematic.pdf)
 
-# Extender
+## Extender
 ![Extender](images/modules/extender.jpg)
 
 No drivers are needed.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Extender%20Module%20Schematic.pdf)
 
-# FEZtive
+## FEZtive
 ![FEZtive](images/modules/feztive.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FEZtive) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/FEZtive%20Module%20Schematic.pdf)
 
-# Flash
+## Flash
 ![Flash](images/modules/flash.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/FLASH) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/FLASH%20Module%20Schematic.pdf)
 
-# GPS
+## GPS
 ![GPS](images/modules/gps.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/GPS) as a reference.
@@ -407,38 +407,38 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/GasSense%20Module%20Schematic.pdf)
 
-# Gyro
+## Gyro
 ![Gyro](images/modules/gyro.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Gyro) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Gyro%20Module%20Schematic.pdf)
 
-# HD44780
+## HD44780
 ![HD44780](images/modules/hd44780.jpg)
 
 See the [Character Display](#character-display) Module
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/HD44780%20Module%20Schematic.pdf)
 
-# HubAP5
+## HubAP5
 ![HubAP5](images/modules/hub-ap5.jpg)
 
 No hub support is currently planned.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Hub%20AP5%20Module%20Schematic.pdf)
 
-# IO60P16
+## IO60P16
 ![IO60P16](images/modules/io60p16.jpg)
 
 This module provide 60 IOs and 16 PWM pins.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IP60P16) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/IO60P16%20Module%20Schematic.pdf)
 
-# IR Receiver
+## IR Receiver
 ![IR Receiver](images/modules/ir-reciever.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/IRReceiver) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/IRReceiver%20Module%20Schematic.pdf)
 
-# Joystick
+## Joystick
 ![Joystick](images/modules/joystick.jpg)
 
 The Joystick module has two analog inputs for X and Y position. Pressing the knob also works like a button.
@@ -468,13 +468,13 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Joystick%20Module%20Schematic.pdf)
 
-# Keypad KP16
+## Keypad KP16
 ![Keypad KP16](images/modules/keypad-kp16.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/KeypadKP16) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Keypad%20KP16%20Module%20Schematic.pdf)
 
-# LED 7C
+## LED 7C
 ![LED 7C](images/modules/led-7c.jpg)
 
 An LED that can be set to one of 7 colors, 8 if you count off!
@@ -527,7 +527,7 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/LED%207C%20Module%20Schematic.pdf)
 
-# LED 7R
+## LED 7R
 ![LED 7R](images/modules/led-7r.jpg)
 
 This is a ring of 6 LEDs and a 7th center LED.
@@ -537,25 +537,25 @@ Center LED: pin 9
 LEDs going clockwise starting from LEDs D1 to D6 on the board D1, D2, D3, D4, D5, D6 are pins 3 to 8 respectively.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/LED%207R%20Module%20Schematic.pdf)
 
-# LED Strip
+## LED Strip
 ![LED Strip](images/modules/led-strip.jpg)
 
 A strip of 7 LEDs, connected to pins 3 through 9. Reference the LED 7C module for using pins.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/LED%20Strip%20Module%20Schematic.pdf)
 
-# Light Sense
+## Light Sense
 ![Light Sense](images/modules/light-sense.jpg)
 
 Simply using analog on pin 3. Use the same code as the potentiometer.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/LightSense%20Module%20Schematic.pdf)
 
-# Load
+## Load
 ![Load](images/modules/load.jpg)
 
 Each one of the 7 GPIO pins are connected to a transistor to handle a load, like a motor.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Load%20Module%20Schematic.pdf)
 
-# MaxO
+## MaxO
 ![MaxO](images/modules/maxo.jpg)
 
 Shift registers used to take serial SPI data and put on parallel pins, perfect for driving tons of LEDs. This video explains how this works
@@ -566,13 +566,13 @@ Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadg
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/MaxO%20Module%20Schematic.pdf)
 
-# MicroSD Card
+## MicroSD Card
 ![MicroSD Card](images/modules/microsd.jpg)
 
 No file system support yet.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/MicroSD%20Card%20Module%20Schematic.pdf)
 
-# Moisture
+## Moisture
 ![Moisture](images/modules/moisture.jpg)
 
 This is a simple analog input measuring the direct resistance (moisture). An enable pin needs to be activated.
@@ -600,7 +600,7 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Moisture%20Sensor%20Module%20Schematic.pdf)
 
-# Motor Driver
+## Motor Driver
 ![Motor Driver](images/modules/motordriver.jpg)
 
 The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
@@ -654,31 +654,31 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Motor%20Driver%20L298%20Module%20Schematic.pdf)
 
-# Multicolor LED
+## Multicolor LED
 ![Multicolor LED](images/modules/multicolor_led.jpg)
 
 
 A DaisyLink module, we will not support.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Multicolor%20LED%20Module%20Schematic.pdf)
 
-# Music
+## Music
 ![Music](images/modules/music.jpg)
 
 The Music Module uses the popular VS1053 decoder chip that decodes MP3, WMA, OGG, MIDI and WAV files.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Music) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Music%20Module%20Schematic.pdf)
 
-# Null Modem
+## Null Modem
 ![Null Modem](images/modules/null-modem.jpg)
 
 No driver is needed.
 
-# OBD II
+## OBD II
 ![OBD II](images/modules/obd-ii.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/OBDII) as a reference.
 
-# OneWire X1
+## OneWire X1
 ![OneWire X1](images/modules/onewire-x1.jpg)
 
 A breakout with a terminal block for easily connecting OneWire devices, specifically the common temperature probes.
@@ -686,19 +686,19 @@ A breakout with a terminal block for easily connecting OneWire devices, specific
 OneWire is not supported yet.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/OneWire%20X1%20Module%20Schematic.pdf)
 
-# PIR
+## PIR
 ![PIR](images/modules/pir.jpg)
 
 Motion detection. Simply pin 3 changes its state when it detects motion.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/PIR%20Module%20Schematic.pdf)
 
-# Parallel CNC
+## Parallel CNC
 ![Parallel CNC](images/modules/parallel-cnc.jpg)
 
 A DaisyLink module, we will not support.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Parallel%20CNC%20Module%20Schematic.pdf)
 
-# Potentiometer
+## Potentiometer
 ![Potentiometer](images/modules/potentiometer.jpg)
 
 The Potentiometer module is simply a variable resistor connected to pin3. Rotating its knob will result in an analog value changing from min to max.
@@ -722,56 +722,56 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Potentiometer%20Module%20Schematic.pdf)
 
-# Pulse Count
+## Pulse Count
 ![Pulse Count](images/modules/pulse-count.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseCount) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20Count%20Module%20Schematic.pdf)
 
 
-# Pulse InOut
+## Pulse InOut
 ![Pulse InOut](images/modules/pulse-inout.jpg)
 
 A DaisyLink module, we will not support.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20In%20Out%20Module%20Schematic.pdf)
 
-# Pulse Oximeter
+## Pulse Oximeter
 ![Pulse Oximeter](images/modules/pulse-oximeter.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/PulseOximeter) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Pulse%20Oximeter%20Module%20Schematic.pdf)
 
-# RFID Reader
+## RFID Reader
 ![RFID Reader](images/modules/rfid-reader.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RFIDReader) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/RFID%20Module%20Schematic.pdf)
 
-# RS232
+## RS232
 ![RS232](images/modules/rs232.jpg)
 
 Simply a serial port.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/RS232%20Module%20Schematic.pdf)
 
-# RS485 
+## RS485 
 ![RS485](images/modules/rs485.jpg)
 
 Simply a serial port.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/RS485%20Module%20Schematic.pdf)
 
-# Radio FM1
+## Radio FM1
 ![Radio FM1](images/modules/radio-fm1.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RadioFM1) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Radio%20FM1%20Module%20Schematic.pdf)
 
-# Reflector R3
+## Reflector R3
 ![Reflector R3](images/modules/reflector-r3.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/ReflectorR3) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Reflector%20R3%20Module%20Schematic.pdf)
 
-# Relay ISOx16
+## Relay ISOx16
 ![Relay ISOx16](images/modules/relay-isox16.jpg)
 
 An array of 16 relays. Operate similar to the MaxO module.
@@ -779,54 +779,54 @@ An array of 16 relays. Operate similar to the MaxO module.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RelayISOx16) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Relay%20ISOx16%20Module%20Schematic.pdf)
 
-# Relay X1
+## Relay X1
 ![Relay X1](images/modules/relay-x1.jpg)
 
 Simply set pin 3 high to activate the relay.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Relay%20X1%20Module%20Schematic.pdf)
 
-# Rotary H1
+## Rotary H1
 ![Rotary H1](images/modules/rotary-h1.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/RotaryH1) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Rotary%20H1%20Module%20Schematic.pdf)
 
-# SD Card
+## SD Card
 ![SD Card](images/modules/sd-card.jpg)
 
 File system is not supported yet.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/SDCard%20Module%20Schematic.pdf)
 
-# S-Plus
+## S-Plus
 ![S-Plus](images/modules/s-plus.jpg)
 
 We will not support hubs.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/SPlus%20Module%20Schematic.pdf)
 
-# Serial Camera
+## Serial Camera
 ![Serial Camera](images/modules/serial-camera.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/SerialCameraL1) as a reference.
 
-# Stepper L6470
+## Stepper L6470
 ![Stepper L6470](images/modules/stepper-l6470.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/StepperL6470) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Stepper%20L647x%20Module%20Schematic.pdf)
 
-# TempHumidity
+## TempHumidity
 ![TempHumidity](images/modules/temp-humidity.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TempHumidity) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Temp%20Humid%20SI70%20Module%20Schematic.pdf)
 
-# Thermocouple
+## Thermocouple
 ![Thermocouple](images/modules/thermocouple.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/Thermocouple) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Thermocouple%20Module%20Schematic.pdf)
 
-# Touch C8
+## Touch C8
 ![Touch C8](images/modules/touch-c8.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchC8) as a reference.
@@ -838,7 +838,7 @@ Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadg
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/TouchL12) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Touch%20L12%20Module%20Schematic.pdf)
 
-# Tunes
+## Tunes
 ![Tunes](images/modules/tunes.jpg)
 
 The Tunes Module is a tiny speaker that is connected to pin 9. Use PWM to generate sounds
@@ -870,61 +870,61 @@ class Program {
 ```
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Tunes%20Module%20Schematic.pdf)
 
-# UC Battery 4xAA
+## UC Battery 4xAA
 ![UC Battery 4xAA](images/modules/uc-battery-4xaa.jpg)
 
 No driver is needed.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/UC%20Battery%204xAA%20Module%20Schematic.pdf)
 
-# USB Client DP
+## USB Client DP
 ![USB Client DP](images/modules/usb-client.jpg)
 
 No driver is needed.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/USB%20Client%20DP%20Module%20Schematic.pdf)
 
-# USB Client SP
+## USB Client SP
 ![USB Client SP](images/modules/usb-client-sp.jpg)
 
 No driver is needed.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/USB%20Client%20SP%20Module%20Schematic.pdf)
 
-# USB Host
+## USB Host
 ![USB Host](images/modules/usb-host.jpg)
 
 USB Host is not currently supported.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/USB%20Host%20Module%20Schematic.pdf)
 
-# USB Serial
+## USB Serial
 ![USB Serial](images/modules/usb-serial.jpg)
 
 Simply, a serial port.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Serial%20USB%20Module%20Schematic.pdf)
 
-# USB Serial SP
+## USB Serial SP
 ![USB Serial SP](images/modules/usb-serial-sp.jpg)
 
 Simply, a serial port.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/USB%20Serial%20SP%20Module%20Schematic.pdf)
 
-# VideoOut
+## VideoOut
 ![VideoOut](images/modules/video-out.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/VideoOut%20Module%20Schematic.pdf)
 
-# WiFi RN171
+## WiFi RN171
 ![WiFi RN171](images/modules/wifi-rn171.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/WiFi%20RN171%20Module%20Schematic.pdf)
 
-# WiFi RS21
+## WiFi RS21
 ![WiFi RS21](images/modules/wifi-rs21.jpg)
 
 Will not be supported, NDA issues.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/WiFi%20RS21%20Module%20Schematic.pdf)
 
-# XBee Adapter
+## XBee Adapter
 ![XBee Adapter](images/modules/xbee-adapter.jpg)
 
 Simply, a serial port. From there a driver like https://xbee.codeplex.com/ will help.

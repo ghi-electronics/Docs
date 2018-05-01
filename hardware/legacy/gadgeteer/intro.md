@@ -22,7 +22,7 @@ Most of the Gadgeteer ecosystem is open-source:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQlTLNOCl90" frameborder="0" allowfullscreen></iframe>
 
-# Socket Map
+## Socket Map
 The magic of Gadgeteer is in its socket map
 
 Socket | Pin1 | Pin2 | Pin3 | Pin4 | Pin5 | Pin6 | Pin7 | Pin8 | Pin9 | Pin10
@@ -59,7 +59,7 @@ GPIO | A general-purpose digital input/output pin, operating at 3.3 volts.
 +5V | Connection to the +5 V power net.
 GND | Connection the power ground net.
 
-# Using .NET Gadgeteer
+## Using .NET Gadgeteer
 To use .NET Gadgeteer's legacy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
@@ -71,7 +71,7 @@ The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Gadgetee
 > [!Tip]
 > You can only use Visual Studio 2013, not a newer edition, unless you are using your Gadgeteer hardware [with TinyCLR OS](#with-tinyclr-os).
 
-# With TinyCLR OS
+## With TinyCLR OS
 All .NET Gadgeteer devices are still useable today, and with the latest technologies, thanks to efforts by GHI Electronics and the community. 
 
 It all started in this video!
@@ -82,7 +82,7 @@ This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR 
 
 The first step needed to use TinyCLR OS is to load the GHI Bootloader v2 onto your mainboard, then use that to load the TinyCLR OS firmware. Each mainboard product page includes the needed instructions. Once those are loaded, you can start blinking the debug LED, detailed in the next section.
 
-# Blinking the LED
+## Blinking the LED
 
 > [!Tip]
 > If you have never used TinyCLR OS before, [start here]( ../../../software/tinyclr/tutorials/intro.md)
@@ -113,6 +113,6 @@ class Program {
 > The complete pin mapping is made available through `GHIElectronics.TinyCLR.Pins`. You should not need to use any schematics.
 > Replace `FEZSpider` with your mainboard's name.
 
-# Adding Gadgeteer Modules
+## Adding Gadgeteer Modules
 You are now ready to start adding [modules](modules.md).
 
