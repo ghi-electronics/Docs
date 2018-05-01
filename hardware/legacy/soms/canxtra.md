@@ -6,6 +6,6 @@ CANxtra is a hand-held programmable OBD-II tool that includes CAN, LIN and other
 
 Resources below are provided for reference only. Please [contact us](http://ghielectronics.com/company/contact) for all of your custom automotive needs.
 
-# Resources
+## Resources
 * [Brochure](http://files.ghielectronics.com/downloads/Documents/Brochures/CANxtra Brochure.pdf)
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/CANxtra Schematic.pdf)

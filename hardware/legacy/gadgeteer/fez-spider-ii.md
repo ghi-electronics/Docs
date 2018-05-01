@@ -4,16 +4,16 @@
 
 FEZ Spider II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider II is the G120E System on Module (SoM).
 
-# Resources
+## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Spider%20II%20Schematic.pdf)
 
-# Using the Gadgeteer software
+## Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
-# Using TinyCLR OS
+## Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader v2
+### Loading Bootloader v2
 
 1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#g120)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
@@ -29,7 +29,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 12. Change the configuration switches back to the off position and reset the board.
 13. You are now running GHI Electronics bootloader v2!
 
-## Loading the Firmware
+### Loading the Firmware
 
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.

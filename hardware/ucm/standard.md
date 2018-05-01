@@ -52,7 +52,7 @@ ADCs are used to measure an analog voltage level by converting it to a digital v
 PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/pwm.md)
 
 ### GPIO (General Purpose Input/Output)
-GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be programmed to perform more advanced communication and control duties. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md)
+GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be used to perform more advanced communication and control duties. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md)
 
 ### IRQ (Interrupt Request Capable GPIO)
 IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a WiFi module to tell the processor that the WiFi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md#digital-input-events)

@@ -4,16 +4,16 @@
 
 FEZ Spider is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider is the EMX System on Module (SoM).
 
-# Resources
+## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Spider%20Schematic.pdf)
 
-# Using the Gadgeteer software
+## Using the Gadgeteer software
 We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
 
-# Using TinyCLR OS
+## Using TinyCLR OS
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
-## Loading Bootloader v2
+### Loading Bootloader v2
 > [!Tip]
 > The EMX bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
@@ -38,7 +38,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 2. Follow the exact same steps above except you need to also switch #4 to `ON` (serial mode) and you need to set the baud rate to 115200 on the terminal software.
 3. The drivers for the USB-serial module should load automatically. If not, get them from http://www.ftdichip.com/
 
-## Loading the Firmware
+### Loading the Firmware
 
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.

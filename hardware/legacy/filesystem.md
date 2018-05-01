@@ -4,7 +4,7 @@
 
 Since 2003, GHI Electronics has made several industry-first file system chipsets.
 
-# F40
+## F40
 ![F40](images/f40.jpg)
 
 Originally called ALFAT.
@@ -16,12 +16,12 @@ Originally called ALFAT.
 * [Firmware 2.00](https://old.ghielectronics.com/downloads/ALFAT/ALFAT(2.0.0).GHI) (the file name needs changing)
 
 
-# F20
+## F20
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F20 Datasheet.pdf)
 * Firmware v103
 * [F20-uSD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/F20 uSD Schematic.pdf)
 
-# uALFAT
+## uALFAT
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/uALFAT User Manual.pdf)
 
 ***

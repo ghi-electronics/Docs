@@ -1,13 +1,16 @@
 # Display
 ---
-Displays can be grouped into two distinct interface categories, Parallel TFT Display and Serial SPI/I2C Displays.
+Displays can be grouped into two distinct interface categories, parallel TFT displays and serial SPI/I2C displays.
 
 ## Parallel TFT Displays
-These displays connect to special dedicated pins to the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory, without any processor interaction. When the system needs to update the graphics, it simply writes to memory. The operating system doesn't need to handle any display work. The down side to this is that the system needs to have enough RAM to handle the display. A 800x600 display with 16bpp needs 960,000 bytes! This should be no issues for systems with external memory.
+These displays connect to special dedicated pins on the processor. Internally the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.
 
-TinyCLR OS built in graphics can be used with these displays. You need to add the `GHIElectronics.TinyCLR.Drawing` NuGet package and also this in your code: `using System.Drawing` and `using GHIElectronics.TinyCLR.Devices.Display`
+TinyCLR OS has built in graphics methods for these displays. You will need to add the `GHIElectronics.TinyCLR.Drawing` NuGet package to your program and `using System.Drawing` and `using GHIElectronics.TinyCLR.Devices.Display` to your code.
 
 ```
+using System.Drawing
+using GHIElectronics.TinyCLR.Devices.Display
+
 var displayController = DisplayController.GetDefault();
 // Enter the proper display configurations
 displayController.ApplySettings(new ParallelDisplayControllerSettings {
@@ -38,9 +41,9 @@ screen.Flush();
 ```
 
 ## Serial SPI/I2C Displays
-Serial displays can work on all microcontrollers. They use the very common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial display are usually smaller displays.
+Serial displays can work with all microcontrollers. They use common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial interfaces are usually used with smaller displays.
 
-To the system, the serial display is nothing but a serial device. You are expected to write the code to handle graphics.
+To the system, a serial display is nothing but a serial device. You are expected to write your own code to handle graphics.
 
 A good example is the Adafruit Display Shield which uses a SPI display.
 

@@ -7,8 +7,6 @@
 ### Install Visual Studio Community Edition
 Download and install [Microsoft's Visual Studio 2013 Community Edition](http://go.microsoft.com/fwlink/?LinkId=517284).
 
-To use Visual Studio 2015, **though unsupported**, please see [this document](https://www.ghielectronics.com/docs/346/using-visual-studio-2015)
-
 ### Install Microsoft .NET Micro Framework
 * Uninstall any currently installed NETMF SDKs.
 * Download [Microsoft .NET Micro Framework 4.3 (QFE2)](http://files.ghielectronics.com/downloads/NETMF/SDKs/MS%20NETMF%20QFE2.zip) and unzip the file.
@@ -16,24 +14,25 @@ To use Visual Studio 2015, **though unsupported**, please see [this document](ht
 
 ### Install Microsoft .NET Gadgeteer Core (for Gadgeteer users only)
 Download and install [Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812).
-For more information on the future of Gadgeteer, please see this [news post](https://www.ghielectronics.com/community/forum/topic?id=23671).
+For more information on the future of Gadgeteer, please see this [news post](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197).
 
 ### Install GHI Electronic's NETMF SDK
-Download and install [GHI Electronics NETMF SDK 2016 R1](http://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
-If you have a reason you want to use an older SDK [click here](http://old.ghielectronics.com/support/netmf/sdks).
+Download and install GHI Electronics NETMF SDK 2016 R1 from our [NETMF Downloads](downloads.md#available-netmf-sdks) page.
+Older GHI NETMF SDKs are also available on the [NETMF Downloads](downloads.md) page.
 
-> [!Tip]
-> All example code should be copied directly from this document and pasted into the Visual Studio program editor.
-
-The pictures used in this tutorial may vary slightly with different versions of the development platform.
+### Get Started with *.NET Micro Framework for Beginners*
+To help you get started we have a free e-book in .pdf format: [*.NET Micro Framework for Beginners*](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf)
 
 ## The Emulator
 
-The NETMF SDK includes an emulator for running NETMF applications on the PC. For the first part of this project, the emulator will be used to run a very simple application; after that, the same program is run on NETMF hardware.
+The NETMF SDK includes an emulator for running NETMF applications on the PC. For the first part of this project, the emulator will be used to run a very simple application; afterwards the same program is run on NETMF hardware.
 
 ## Create a New Project
 
 Open Visual Studio, select `File > New Project`. There should be a `Micro Framework` option in the left menu. Click on it and then select `Console Application` in the center panel.
+
+> [!Note]
+> The pictures used in this tutorial may vary slightly with different versions of the development platform.
 
 ![New console application](images/new-console-application.jpg)
 
@@ -60,7 +59,8 @@ Double click on `Program.cs` to open the file in the editor.
     }
 
 For simplicity change the code to match the listing below:
-    
+> [!Tip]
+> All example code should be copied directly from this page and pasted into the Visual Studio program editor.
     
     using Microsoft.SPOT;
     
@@ -123,30 +123,27 @@ Press `F5` to run the software. When the application reaches the breakpoint the 
 Deploying and running NETMF applications on hardware is very simple.  Just connect the hardware, change an option in Visual Studio, and all loading, running, debugging, etc. are done on the device. The complete procedure is described below.
 
 > [!Warning] 
-> When working with hardware, take care not to expose the hardware to static electricity as it can damage the components.
+> When working with hardware, take care not to expose the hardware to static electricity as it can damage the device.
 
 ## Connect and Power-up
 
 Connect the NETMF hardware to the PC using a USB cable. This is done one of two ways.
 
 1. If the processor has an integral USB port and is colored red, plug a USB cable from the computer directly to the board.
-2. Processors without an integral USB port will use a Gadgeteer socket to connect the power/USB module to the board. For these boards connect the power module to a "D" labeled socket on the board, then connect the power/USB module to the computer. (These circuitboards are black).
+2. Processors without an integral USB port will use a Gadgeteer socket to connect the power/USB module to the board. For these boards connect the power module to a "D" labeled socket on the board, then connect the power/USB module to the computer. (These circuit boards are black).
 
-The first time a processor is connected to the computer, Windows will need to load a driver. Before proceeding, wait until the driver is fully loaded.
+The first time a processor is connected to the computer, Windows will need to load a driver. Wait until the driver is fully loaded before proceeding.
 
 ## Updating Device Software
 
-Before using the NETMF device, the embedded software must match the version of the SDK being used. Descriptions and procedures for updating the embedded software are explained in either of two documents:
+Before using a NETMF device, the embedded software must match the version of the SDK being used. Instructions for updating the embedded software are found on the [Firmware Update](tutorials/firmware-update.md) page.
 
-1. A [step-by-step guide](https://www.ghielectronics.com/docs/230/netmf-processor-setup) with brief explanations (a quick how-to for getting started).
-2. A [detailed explanation](https://www.ghielectronics.com/docs/237/update-preparation-loader-tinybooter-and-firmware-tinyclr) followed by instructions.
-
-If necessary, use one of the above documents, and then return here to continue the tutorial.
+If necessary, update your firmware, and then return here to continue the tutorial.
 
 Skipping the above step is **the most common problem faced by beginners**.
 
 > [!Tip]
-> Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems then make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power (see also the USB sections in [**NETMF Troubleshooting**](https://www.ghielectronics.com/docs/165/netmf-troubleshooting)).
+> Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems, make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power (see also the USB sections in [**NETMF Troubleshooting**](http://old.ghielectronics.com/docs/165/netmf-troubleshooting)).
 
 ## Deploying to Hardware
 
