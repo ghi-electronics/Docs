@@ -5,7 +5,7 @@ The GHI Bootloader is used to update the firmware on our devices. It is the firs
 The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and which version of the bootloader it runs.
 
 > [!Tip]
-> If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the [downloads section](ghi-bootloader.md#usb-drivers).
+> If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See "USB Drivers" in the [**downloads section**](ghi-bootloader.md#usb-drivers).
 
 ## Bootloader v2
 All commands and results are terminated with CR and LF (\r\n). "OK." will be sent after each successful command.
@@ -58,7 +58,7 @@ After the upload header is the actual image to flash. If its length is not divis
 4. 16 bit CRC-CCITT of the boot image bounded by the specified address and length.
 
 ## Bootloader v1
-Currently the USBizi, EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
+Currently the Embedded Master, EMX, G120, G120E and USBizi ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. "BL" or "Done." will be sent after each command.
 
 On startup, a banner is sent that is terminated by "BL". Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.
 
