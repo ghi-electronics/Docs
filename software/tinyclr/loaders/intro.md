@@ -7,25 +7,16 @@ A bootloader is a small software that boots up the system and runs the firmware.
 This section covers different bootloader features and usage details.
 
 ## GHI Bootloader
-The [**GHI Bootloader**](ghi-bootloader.md) page can be found [**here**](ghi-bootloader.md).
+The [GHI Bootloader](ghi-bootloader.md) page can be found [here](ghi-bootloader.md). This page describes the bootloader commands, using the bootloader to load firmware onto a device, and has a [**downloads**](ghi-bootloader.md#downloads) section where you can find the bootloaders for our products.
 
 ## STM32 Bootloader
-The [**STM32 Bootloader**](stm32-bootloader.md) page can be found [**here**](stm32-bootloader.md).
+The [STM32 Bootloader](stm32-bootloader.md) page can be found [here](stm32-bootloader.md). This page covers loading .hex, .bin, and .dfu files onto our STM32 based devices.
 
 ## SAM-BA Bootloader
-The SAM-BA Bootloader lives on many Atmel chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.
+The SAM-BA Bootloader lives on many Atmel chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software. The [SAM-BA Bootloader](sam-ba-bootloader.md) page can be found [here](sam-ba-bootloader.md).
 
-### Uploading bin Files
-To set the chip in SAM-BA mode, hold down the dedicated button on your board (BOOTA on UCM Dev and Breakout boards) while the system powers up (or during reset). If there is no such button, connect SPI1_MISO to ground instead. Keep the pin grounded for three seconds after power up or reset and then remove the connection from SPI1_MISO to ground. The device manager will show a COM port similar to "Bossa Program Port" or "GPS Detect".
-
-1. If it is not already installed, download and install the [SAM-BA tool](http://www.microchip.com/developmenttools/productdetails.aspx?partno=atmel%20sam-ba%20in-system%20programmer) from Microchip. The latest version we have tested is 2.18 for Windows.
-2. Open the SAM-BA program then select the COM port for your device in the connection box and your board type below it (at91sam9x35-ek for G400), then click connect.
-3. Near the middle of the window, go to the `DataFlash AT45DB/DCB` tab.
-4. Under `Scripts`, select `Enable Dataflash (SPI0 CS0)` then click the `Execute` button..
-5. Under `Scripts`, select `Erase All` then click `Execute`. This will take some time to complete.  It seems that if SAM-BA loses focus during the erase procedure it can lock up.  We recommend that once you click the `Execute` button you leave the computer alone until the erase procedure is completed.
-6. Under `Scripts`, select `Send Boot File`, click execute, then browse to and select the bootloader for the device.
-7. Once the transfer finishes, go to `File` > `Quit` and then reset the board. Make sure to properly quit the program or connection errors may result on subsequent uses.
-8. Now reset the board.  Congratulations, your board is now running the loaded program!
+## Upgrading Bootloader v1 to Bootloader v2
+Some of our earlier devices based on the NXP LPC family of microcontrollers come shipped with our Bootloader v1 installed. These include the Embedded Master, EMX, G120, G120E, and USBizi devices. To upgrade this bootloader to v2, go to the [GHI v1 to v2 bootloader page](upgrading-v1-to-v2.md)
 
 ## Mikro Bootloader
 MikroElektronika's bootloader is found on several products offered by them. Some of the TinyCLR OS supported boards are made by MikroElectronika and include this loader by default.

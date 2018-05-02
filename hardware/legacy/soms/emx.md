@@ -18,24 +18,7 @@ The following instructions describe how to set up EMX to work with TinyCLR OS. T
 > The bootloader version 1 doesn't always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
-**To update using USB**
-1. Download the [bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#emx)
-2. Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
-4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
-5. Select serial and pick the COM port associated with your board.
-6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
-7. Enter `X` and you will see `CCCC`... showing on the terminal.
-8. Now go to `File` -> `Transfer` -> `XMODEM` -> `Send` and then check the `1K` option.
-9. Select the bootloader file you have downloaded above.
-10. You will see `File Transfer Finished Successfully`.
-11. Change the configuration switches back to the off position and reset the board.
-12. You are now running GHI Electronics bootloader v2!
-
-**To update using Serial**
-1. Connect a development PC to COM1 on EMX, Pin5 and Pin6 (through RS232 converter or a USB-Serial TTL cable).
-2. SET LMODE pin low.
-3. Follow the steps above to load the firmware.
+EMX comes with Bootloader v1 pre-installed. To install v2 of the bootloader, follow the instructions on the [Upgrading GHI Bootloader v1 to v2](../../../software/tinyclr/loaders/upgrading-v1-to-v2.md) page. To put EMX in boot mode, make pins 3,7 and 53 low and reset the board (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11).
 
 ### Loading the Firmware
 
