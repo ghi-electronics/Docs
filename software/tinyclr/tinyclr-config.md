@@ -2,6 +2,8 @@
 ---
 TinyCLR Config is a stand-alone tool to help managing TinyCLR OS devices. The tool is cloud-connected. It automatically finds and downloads newer firmware versions from a list of provided sources. These sources can be on the internet or local on your machine if you don't have or don't want to access to the internet. The firmware update functionality only works for devices that have [GHI Bootloader v2](../tinyclr/loaders/ghi-bootloader.md).
 
+You can download TinyCLR Config from [TinyCLR Config](downloads.md#tinyclr-config) section of our [Downloads](downloads.md) page.
+
 ![TinyCLR Config](images/tinyclr-config.png)
 
 The TinyCLR Config tool is stil in development. Please [stay tuned](https://forums.ghielectronics.com/c/announcements).

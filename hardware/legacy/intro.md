@@ -22,7 +22,7 @@ This section covers GHI's legacy products. These products are not recommended fo
 
 GHI Electronic's products are all engineered and manufactured in-house.  While some of our older products are deemed legacy and not recommended for new designs, we can still produce them, however a minimum order may be required.
 
-We understand the need for continued product support and availability. Please [contact us](https://www.ghielectronics.com/contact) to discuss ways to fulfill your immediate needs and also to discuss upgrade options.
+We understand the need for continued product support and availability. Please [contact us](https://www.ghielectronics.com/company/contact) to discuss ways to fulfill your immediate needs and also to discuss upgrade options.
 
 ***
 

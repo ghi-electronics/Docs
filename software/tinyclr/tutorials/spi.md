@@ -26,17 +26,17 @@ class Program
 {
     static void Main()
     {
-        var settings = new SpiConnectionSettings(0x1C)// the slave's select pin
+        var settings = new SpiConnectionSettings(FEZ.GpioPin.PB6)   // the slave's select pin
         {
             Mode = SpiMode.Mode1,
-            ClockFrequency = 4* 1000 * 1000,//4Mhz
+            ClockFrequency = 4 * 1000 * 1000,       //4Mhz
             DataBitLength = 8,
         };
         var device = SpiDevice.FromId(FEZ.SpiBus.Spi1, settings);
 
-        device.Write(new byte[] { 1, 2 });// write something
-        device.TransferSequential(...)// this is good for reading registers
-        device.TransferFullDuplex(...)// this is the only one that trully represents how SPI works
+        device.Write(new byte[] { 1, 2 });          // write something
+        device.TransferSequential(...)              // this is good for reading registers
+        device.TransferFullDuplex(...)              // this is the only one that trully represents how SPI works
     }
 
 }   
