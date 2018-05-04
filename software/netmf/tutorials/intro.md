@@ -24,6 +24,6 @@
 * [USB Host](usb-host.md)
 
 ## What is .NET Micro Framework?
-Learn more about [.NET Micro Framework](http://old.ghielectronics.com/technologies/netmf).  If you are new to NETMF you might want to take a look at our free e-book [.NET Micro Framework for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf)
+Learn more about [.NET Micro Framework](http://old.ghielectronics.com/technologies/netmf).  If you are new to NETMF you might want to take a look at our free e-book [.NET Micro Framework for Beginners](http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf)
 
 ---

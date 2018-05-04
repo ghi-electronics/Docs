@@ -21,7 +21,7 @@ Download and install GHI Electronics NETMF SDK 2016 R1 from our [NETMF Downloads
 Older GHI NETMF SDKs are also available on the [NETMF Downloads](downloads.md) page.
 
 ### Get Started with *.NET Micro Framework for Beginners*
-To help you get started we have a free e-book in .pdf format: [*.NET Micro Framework for Beginners*](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf)
+To help you get started we have a free e-book in .pdf format: [*.NET Micro Framework for Beginners*](http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf)
 
 ## The Emulator
 

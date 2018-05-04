@@ -254,7 +254,66 @@ VerticalBackPorch = 32,
 VerticalSyncPulseWidth = 3,
 VerticalSyncPolarity = false,
 ```
-As for the capacitive touch controller, use this [old NETMF driver](https://old.ghielectronics.com/docs/338/display-nhvn-developers-guide) as a reference.
+As for the capacitive touch controller, use this old NETMF driver code as a reference:
+```
+public class FT5306Controller {
+    private InterruptPort touchInterrupt;
+    private I2CDevice i2cBus;
+    private I2CDevice.I2CTransaction[] transactions;
+    private byte[] addressBuffer;
+    private byte[] touchDataBuffer;
+    private byte[] touchCountBuffer;
+
+    public delegate void TouchEventHandler(FT5306Controller sender, TouchEventArgs e);
+
+    public event TouchEventHandler TouchDown;
+    public event TouchEventHandler TouchUp;
+    public event TouchEventHandler TouchMove;
+
+    public FT5306Controller(Cpu.Pin interruptPin) {
+        this.transactions = new I2CDevice.I2CTransaction[2];
+        this.addressBuffer = new byte[1];
+        this.touchDataBuffer = new byte[4];
+        this.touchCountBuffer = new byte[1];
+        this.i2cBus = new I2CDevice(new I2CDevice.Configuration(0x38, 400));
+        this.touchInterrupt = new InterruptPort(interruptPin, false, Port.ResistorMode.Disabled, Port.InterruptMode.InterruptEdgeBoth);
+        this.touchInterrupt.OnInterrupt += (a, b, c) => this.OnTouchEvent();
+    }
+
+    private void OnTouchEvent() {
+        var points = this.ReadData(2, this.touchCountBuffer)[0];
+
+        for (var i = 0; i < points; i++) {
+            var data = this.ReadData(i * 6 + 3, this.touchDataBuffer);
+            var flag = (data[0] & 0xC0) >> 6;
+            var x = ((data[0] & 0x0F) << 8) | data[1];
+            var y = ((data[2] & 0x0F) << 8) | data[3];
+
+            var handler = flag == 0 ? this.TouchDown : flag == 1 ? this.TouchUp : flag == 2 ? this.TouchMove : null;
+
+            if (handler != null)
+                handler(this, new TouchEventArgs { X = x, Y = y });
+        }
+    }
+
+    private byte[] ReadData(int address, byte[] resultBuffer) {
+        this.addressBuffer[0] = (byte)address;
+
+        this.transactions[0] = I2CDevice.CreateWriteTransaction(this.addressBuffer);
+        this.transactions[1] = I2CDevice.CreateReadTransaction(resultBuffer);
+
+        this.i2cBus.Execute(this.transactions, 500);
+
+        return resultBuffer;
+    }
+
+    public class TouchEventArgs : EventArgs {
+        public int X { get; internal set; }
+        public int Y { get; internal set; }
+    }
+}
+```
+
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20NHVN%20Module%20Schematic.pdf)
 
 ## Display T35

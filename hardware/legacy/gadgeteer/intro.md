@@ -66,7 +66,7 @@ To use .NET Gadgeteer's legacy software, install:
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
 4. GHI Electronics' [NETMF SDK](../../../software/netmf/downloads.md#available-netmf-sdks). The latest is recommended.
 
-The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Gadgeteer/NET_Gadgeteer_for_beginners.pdf) guide is a good starting point.
+The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Documents/Guides/NET%20Gadgeteer%20for%20Beginners.pdf) guide is a good starting point.
 
 > [!Tip]
 > You can only use Visual Studio 2013, not a newer edition, unless you are using your Gadgeteer hardware [with TinyCLR OS](#with-tinyclr-os).
