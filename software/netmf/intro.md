@@ -7,7 +7,7 @@
 ## General Resources
 * [.NET Micro Framework for Beginners](http://files.ghielectronics.com/downloads/NETMF/NETMF_for_Beginners.pdf)
 * [Source code](https://github.com/ghi-electronics/NETMF-Gadgeteer) to mainboards and module drivers.
-* [.NET Micro Framework Board](https://forums.ghielectronics.com/c/netmf-gadgeteer) is monitored by our engineers and active community members.
+* The [.NET Micro Framework Discussion Forum](https://forums.ghielectronics.com/c/netmf-gadgeteer) is monitored by our engineers and active community members.
 
 |    |    |
 |----|----|
@@ -19,10 +19,5 @@
 
 > [!Tip]
 > We discourage the use of NETMF on our products in favor of [**TinyCLR OS**](../../software/tinyclr/intro.md). Learn more about using NETMF devices [with TinyCLR OS]().
-
-## .NET Gadgeteer Resources
-* [Sockets Quick Reference](http://old.ghielectronics.com/docs/305/gadgeteer-sockets-quick-reference)
-* [Driver Modification](http://old.ghielectronics.com/docs/122/gadgeteer-driver-modification)
-* [Using Plain NETMF on .NET Gadgeteer](http://old.ghielectronics.com/docs/144/plain-netmf-on-gadgeteer)
 
 

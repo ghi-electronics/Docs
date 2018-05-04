@@ -5,6 +5,8 @@
 ## The Maker Board to Rule Them All!
 FEZ (fast and easy) is our magnificient maker board. This low cost board offers Arduino pinout compatibility, optional WiFi for IOT applications, and can be programmed using multiple programming languages and development environments.
 
+Pricing, purchasing and other information can be found on the [FEZ page]() on our main website.
+
 ### Specifications
 
 | Spec           | Value                           |
@@ -44,8 +46,8 @@ FEZ (fast and easy) is our magnificient maker board. This low cost board offers 
 | [![TinyCLR](images/tinyclrlogo.jpg)](tinyclr.md) | [![Arduino](images/arduino-logo.png)](arduino.md) |
 | **Mbed** </br> Free online C/C++ compiler. [**Learn more...**](mbed.md) | **MicroPython** </br> A version of Python for microcontrollers. [**Learn more...**](python.md) |
 | [![Mbed Logo](images/mbed-logo.png)](mbed.md) | [![G400S](images/micro-python-logo.png)](python.md) |
-| **Bare Metal** </br> Use the Cortex-M4 compiler of your choice. [**Learn more...**](bare-metal.md) | **Accessories** </br> Selected to help get you started. [**Learn more...**](projects/projects.md)
-| [![Sample Code](images/code.png)](bare-metal.md) | [![Accessories](images/projects.png)](projects/projects.md)
+| **Bare Metal** </br> Use the Cortex-M4 compiler of your choice. [**Learn more...**](bare-metal.md) | **Accessories** </br> Selected to help get you started. [**Learn more...**](shields/shields.md)
+| [![Sample Code](images/code.png)](bare-metal.md) | [![Accessories](images/projects.png)](shields/shields.md)
 
 ***
 

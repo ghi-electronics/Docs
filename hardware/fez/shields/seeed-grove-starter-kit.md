@@ -8,6 +8,10 @@ The included Grove modules plug into the included arduino shield. This shield wo
 
 You can get the drivers [here](https://github.com/ghi-electronics/TinyCLR-Accessories).
 
+This video discusses using Seeed Studio Grove Modules with our FEZ products.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9hxnYIgAX48?rel=0" frameborder="0" allowfullscreen></iframe>
+
 
 This example makes some noise!
 

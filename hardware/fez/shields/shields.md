@@ -1,8 +1,8 @@
-# Projects
+# Shields
 ---
-![Projects](images/projects-noborder.png)
+![Shields](images/shields-noborder.png)
 
-There are thousands of accessories that can be used with the [FEZ](../../fez/intro.md). However, we have hand picked a few of our favorites and then built the necessary drivers for them.
+Shields are standard plug-in accesories that expand an arduino-pinout-compatible board with additional functionality. There are hundreds of available shields that can be used with [FEZ](../../fez/intro.md). Here we have hand picked a few of our favorite shields from some of the most respected companies supporting makers.
 
 * [Adafruit Display Shield](adafruit-display-shield.md)
 * [MikroElektronika Arduino UNO Click Shield](arduino-uno-click-shield.md)
@@ -10,7 +10,6 @@ There are thousands of accessories that can be used with the [FEZ](../../fez/int
 * [Seeed Grove Starter Kit](seeed-grove-starter-kit.md)
 * [Sparkfun Ardumoto Shield Kit](sparkfun-ardumoto-shield-kit.md)
 
-Have a list of your own and want to contribute? Talk to us, [directly](https://www.ghielectronics.com/contact) or through the [community forum](https://forums.ghielectronics.com/).
 
 ***
 
