@@ -532,7 +532,7 @@ The `Api` class is used internally by the devices library to talk to the native 
 
 We added `Marshal.GetDelegateForFunctionPointer` to enable you to create a quick native interop for a specific address in memory that takes a single `ref IntPtr` parameter and returns nothing. `DeviceInformation` was also added to return the device name, manufacturer, and version set on the native side.
 
-After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 
 ### Libraries
 
@@ -627,7 +627,7 @@ You can see a quick example on using the new serial API [here](https://gist.gith
 
 There has been no change to the G120 and G400 bootloaders in this release so you do not need to update them if you already have them on your device from the 0.3.0 release.
 
-After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 
 ### Libraries
 
@@ -710,9 +710,9 @@ The Diagnostics namespace now matches the desktop version more closely. WriteLin
 
 The last notable change is that we implemented IntPtr and UIntPtr. For now, they're only used as the type of the Hdc property in drawing. We expect them to be used in more places going forward. Since these two types map to native int and native unsigned int in the CLR and the managed compilers emit those types when they encounter IntPtr or UIntPtr, we have also added initial support for those types in the interpreter and runtime as well. Let us know if you encounter any weird or hard to explain runtime issues.
 
-This release also includes the firmware for the G400. It requires an updated bootloader from the one provided on the [G400 bootloader installation page](https://old.ghielectronics.com/docs/336/g400-bootloader-installation). Simply download the bootloader installer from the installation page and replace Bootloader.bin with the bootloader provided in the TinyCLR download package (making sure to rename it to Bootloader.bin). This updated bootloader can still be used to install the NETMF G400 firmware. It will eventually replace the one provided on the installation page.
+This release also includes the firmware for the G400. It requires an updated bootloader from the one provided on the [G400 bootloader installation page](../../hardware/ucm/g400d.md). Simply download the bootloader installer from the installation page and replace Bootloader.bin with the bootloader provided in the TinyCLR download package (making sure to rename it to Bootloader.bin). This updated bootloader can still be used to install the NETMF G400 firmware. It will eventually replace the one provided on the installation page.
 
-After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+After flashing the firmware for the first time on any device, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 
 You can see some examples of the new APIs added in this release [here](https://gist.github.com/anonymous/63595fe71b867356ce45f7489d7a85bc).
 
@@ -794,9 +794,9 @@ The MSBuild package is no longer provided or required. The metadata processor to
 
 The information displayed while deploying to the device has also been improved to show more information about what is going on and what stage the deployment is in. We've also reworked incremental deployment so that assemblies are deployed one to a flash sector (if space allows) to enable re-deploying only the assemblies that have changed on a sector by sector basis. This greatly increases deployment speed on devices which a large number of flash sectors allocated to deployment.
 
-This release also includes the firmware for the G120 and G120E. Because the current GHI bootloader on the G120 expects to load TinyBooter, we have provided a second stage bootloader with this preview that you must deploy using the existing GHI bootloader as if you were deploying TinyBooter. Once it is deployed and you restart the device, you'll notice that it starts our newer [GHI bootloader 2.0](https://old.ghielectronics.com/docs/344/ghi-bootloader). You can then use this second bootloader to deploy the TinyCLR OS firmware. Asserting LDR0 will enter the second bootloader while asserting both LDR0 and LDR1 will enter the original bootloader and allow you to return to NETMF.
+This release also includes the firmware for the G120 and G120E. Because the current GHI bootloader on the G120 expects to load TinyBooter, we have provided a second stage bootloader with this preview that you must deploy using the existing GHI bootloader as if you were deploying TinyBooter. Once it is deployed and you restart the device, you'll notice that it starts our newer [GHI bootloader 2.0](loaders/ghi-bootloader.md). You can then use this second bootloader to deploy the TinyCLR OS firmware. Asserting LDR0 will enter the second bootloader while asserting both LDR0 and LDR1 will enter the original bootloader and allow you to return to NETMF.
 
-After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 
 ### Libraries
 
@@ -856,7 +856,7 @@ After flashing the firmware the first time, Windows may still use the old NETMF 
 
 ### Known Issues
 - After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it.
-- To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](https://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1).
+- To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 - Breakpoints and the commands dependent on them (run to cursor, others) do not work. As a work around, add a class library project called mscorlib to your solution and add a project reference to it or insert calls to System.Diagnostics.Debugger.Break.
 - References can fail to deploy unless a solution close and open occurs after adding the reference.
 - Re-deploying immediately after stopping debugging can fail. Try again to work around it.
