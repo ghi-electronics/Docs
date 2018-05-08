@@ -82,7 +82,6 @@
 <h2 id="installation-steps">Installation Steps</h2>
 <h3 id="install-visual-studio-community-edition">Install Visual Studio Community Edition</h3>
 <p>Download and install <a href="http://go.microsoft.com/fwlink/?LinkId=517284">Microsoft&#39;s Visual Studio 2013 Community Edition</a>.</p>
-<p>To use Visual Studio 2015, <strong>though unsupported</strong>, please see <a href="https://www.ghielectronics.com/docs/346/using-visual-studio-2015">this document</a></p>
 <h3 id="install-microsoft-net-micro-framework">Install Microsoft .NET Micro Framework</h3>
 <ul>
 <li>Uninstall any currently installed NETMF SDKs.</li>
@@ -91,17 +90,18 @@
 </ul>
 <h3 id="install-microsoft-net-gadgeteer-core-for-gadgeteer-users-only">Install Microsoft .NET Gadgeteer Core (for Gadgeteer users only)</h3>
 <p>Download and install <a href="http://gadgeteer.codeplex.com/downloads/get/1519812">Microsoft .NET Gadgeteer Core</a>.
-For more information on the future of Gadgeteer, please see this <a href="https://www.ghielectronics.com/community/forum/topic?id=23671">news post</a>.</p>
+For more information on the future of Gadgeteer, please see this <a href="https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197">news post</a>.</p>
 <h3 id="install-ghi-electronics-netmf-sdk">Install GHI Electronic&#39;s NETMF SDK</h3>
-<p>Download and install <a href="http://old.ghielectronics.com/support/netmf/sdk/41/ghi-electronics-netmf-sdk-2016-r1">GHI Electronics NETMF SDK 2016 R1</a>.
-If you have a reason you want to use an older SDK <a href="http://old.ghielectronics.com/support/netmf/sdks">click here</a>.</p>
-<div class="TIP"><h5>Tip</h5><p>All example code should be copied directly from this document and pasted into the Visual Studio program editor.</p>
-</div>
-<p>The pictures used in this tutorial may vary slightly with different versions of the development platform.</p>
+<p>Download and install GHI Electronics NETMF SDK 2016 R1 from our <a href="downloads.html#available-netmf-sdks">NETMF Downloads</a> page.
+Older GHI NETMF SDKs are also available on the <a href="downloads.html">NETMF Downloads</a> page.</p>
+<h3 id="get-started-with-net-micro-framework-for-beginners">Get Started with <em>.NET Micro Framework for Beginners</em></h3>
+<p>To help you get started we have a free e-book in .pdf format: <a href="http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf"><em>.NET Micro Framework for Beginners</em></a></p>
 <h2 id="the-emulator">The Emulator</h2>
-<p>The NETMF SDK includes an emulator for running NETMF applications on the PC. For the first part of this project, the emulator will be used to run a very simple application; after that, the same program is run on NETMF hardware.</p>
+<p>The NETMF SDK includes an emulator for running NETMF applications on the PC. For the first part of this project, the emulator will be used to run a very simple application; afterwards the same program is run on NETMF hardware.</p>
 <h2 id="create-a-new-project">Create a New Project</h2>
 <p>Open Visual Studio, select <code>File &gt; New Project</code>. There should be a <code>Micro Framework</code> option in the left menu. Click on it and then select <code>Console Application</code> in the center panel.</p>
+<div class="NOTE"><h5>Note</h5><p>The pictures used in this tutorial may vary slightly with different versions of the development platform.</p>
+</div>
 <p><img src="images/new-console-application.jpg" alt="New console application"></p>
 <p>Click the <code>OK</code> button to create a new project. The project has only one C# file, called <code>Program.cs</code>. C# source files are listed in the <code>Solution Explorer</code> window. If the Solution Explorer is not open, use the <code>View &gt; Solution Explorer</code> menu to open it.</p>
 <p><img src="images/open-program.jpg" alt="Open program.cs"></p>
@@ -122,6 +122,8 @@ namespace MFConsoleApplication1
     }
 }
 </code></pre><p>For simplicity change the code to match the listing below:</p>
+<div class="TIP"><h5>Tip</h5><p>All example code should be copied directly from this page and pasted into the Visual Studio program editor.</p>
+</div>
 <pre><code>using Microsoft.SPOT;
 
 public class Program
@@ -156,24 +158,20 @@ public class Program
 <p><code>F11</code> can be used to single step execution line by line. <code>F5</code> can be used to let the program run.</p>
 <h2 id="running-on-hardware">Running on Hardware</h2>
 <p>Deploying and running NETMF applications on hardware is very simple.  Just connect the hardware, change an option in Visual Studio, and all loading, running, debugging, etc. are done on the device. The complete procedure is described below.</p>
-<div class="WARNING"><h5>Warning</h5><p>When working with hardware, take care not to expose the hardware to static electricity as it can damage the components.</p>
+<div class="WARNING"><h5>Warning</h5><p>When working with hardware, take care not to expose the hardware to static electricity as it can damage the device.</p>
 </div>
 <h2 id="connect-and-power-up">Connect and Power-up</h2>
 <p>Connect the NETMF hardware to the PC using a USB cable. This is done one of two ways.</p>
 <ol>
 <li>If the processor has an integral USB port and is colored red, plug a USB cable from the computer directly to the board.</li>
-<li>Processors without an integral USB port will use a Gadgeteer socket to connect the power/USB module to the board. For these boards connect the power module to a &quot;D&quot; labeled socket on the board, then connect the power/USB module to the computer. (These circuitboards are black).</li>
+<li>Processors without an integral USB port will use a Gadgeteer socket to connect the power/USB module to the board. For these boards connect the power module to a &quot;D&quot; labeled socket on the board, then connect the power/USB module to the computer. (These circuit boards are black).</li>
 </ol>
-<p>The first time a processor is connected to the computer, Windows will need to load a driver. Before proceeding, wait until the driver is fully loaded.</p>
+<p>The first time a processor is connected to the computer, Windows will need to load a driver. Wait until the driver is fully loaded before proceeding.</p>
 <h2 id="updating-device-software">Updating Device Software</h2>
-<p>Before using the NETMF device, the embedded software must match the version of the SDK being used. Descriptions and procedures for updating the embedded software are explained in either of two documents:</p>
-<ol>
-<li>A <a href="https://www.ghielectronics.com/docs/230/netmf-processor-setup">step-by-step guide</a> with brief explanations (a quick how-to for getting started).</li>
-<li>A <a href="https://www.ghielectronics.com/docs/237/update-preparation-loader-tinybooter-and-firmware-tinyclr">detailed explanation</a> followed by instructions.</li>
-</ol>
-<p>If necessary, use one of the above documents, and then return here to continue the tutorial.</p>
+<p>Before using a NETMF device, the embedded software must match the version of the SDK being used. Instructions for updating the embedded software are found on the <a href="tutorials/firmware-update.html">Firmware Update</a> page.</p>
+<p>If necessary, update your firmware, and then return here to continue the tutorial.</p>
 <p>Skipping the above step is <strong>the most common problem faced by beginners</strong>.</p>
-<div class="TIP"><h5>Tip</h5><p>Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems then make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power (see also the USB sections in <a href="https://www.ghielectronics.com/docs/165/netmf-troubleshooting"><strong>NETMF Troubleshooting</strong></a>).</p>
+<div class="TIP"><h5>Tip</h5><p>Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems, make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power (see also the USB sections in <a href="http://old.ghielectronics.com/docs/165/netmf-troubleshooting"><strong>NETMF Troubleshooting</strong></a>).</p>
 </div>
 <h2 id="deploying-to-hardware">Deploying to Hardware</h2>
 <p>Once the board is connected, Visual Studio has a control to switch back and forth between the emulator and connected hardware.</p>

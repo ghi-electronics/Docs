@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Upgrading GHI Bootloader v1 to v2 </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Upgrading GHI Bootloader v1 to v2 ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="upgrading-ghi-bootloader-v1-to-v2">Upgrading GHI Bootloader v1 to v2</h1>
+
+<hr>
+<p>Some of our devices come shipped with Bootloader v1 installed. These devices included Embedded Master, EMX, G120, G120E, and USBizi. Use the following instructions to upgrade devices from Bootloader v1 to Bootloader v2.</p>
+<h2 id="to-update-using-usb">To update using USB</h2>
+<ol>
+<li>Download the <a href="ghi-bootloader.html#downloads">bootloader file</a>.</li>
+<li>Put your device in boot mode (instructions are found on each product&#39;s documentation page).</li>
+<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../../netmf/intro.html">NETMF</a> SDK.</li>
+<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
+<li>Select serial and pick the COM port associated with your board.</li>
+<li>Enter <code>E</code> and you will see back &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
+<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
+<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
+<li>Select the bootloader file you have downloaded above.</li>
+<li>You will see <code>File Transfer Finished Successfully</code>.</li>
+<li>Change the configuration switches back to the off position and reset the board.</li>
+<li>You are now running GHI Electronics bootloader v2!</li>
+</ol>
+<h3 id="to-update-using-serial-for-embedded-master-and-emx">To update using serial (for Embedded Master and EMX)</h3>
+<ol>
+<li>Connect your PC to COM1 on the device, pins 5 and 6 (through RS232 converter or a USB-Serial TTL cable).</li>
+<li>Set the down and select pins low on Embedded Master or the LMODE pin low on EMX.</li>
+<li>Follow the above steps starting at step 4 to load the firmware.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/loaders/upgrading-v1-to-v2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

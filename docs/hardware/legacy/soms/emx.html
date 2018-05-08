@@ -92,27 +92,7 @@
 <div class="TIP"><h5>Tip</h5><p>The bootloader version 1 doesn&#39;t always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
 This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.</p>
 </div>
-<p><strong>To update using USB</strong></p>
-<ol>
-<li>Download the <a href="../../../software/tinyclr/loaders/ghi-bootloader.html#emx">bootloader file</a></li>
-<li>Set EMX in boot mode, by making pins 3,7 and 53 low and reset EMX. (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11)</li>
-<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../../../software/netmf/intro.html">NETMF</a> SDK.</li>
-<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
-<li>Select serial and pick the COM port associated with your board.</li>
-<li>Enter <code>E</code> and you will see back &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
-<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
-<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
-<li>Select the bootloader file you have downloaded above.</li>
-<li>You will see <code>File Transfer Finished Successfully</code>.</li>
-<li>Change the configuration switches back to the off position and reset the board.</li>
-<li>You are now running GHI Electronics bootloader v2!</li>
-</ol>
-<p><strong>To update using Serial</strong></p>
-<ol>
-<li>Connect a development PC to COM1 on EMX, Pin5 and Pin6 (through RS232 converter or a USB-Serial TTL cable).</li>
-<li>SET LMODE pin low.</li>
-<li>Follow the steps above to load the firmware.</li>
-</ol>
+<p>EMX comes with Bootloader v1 pre-installed. To install v2 of the bootloader, follow the instructions on the <a href="../../../software/tinyclr/loaders/upgrading-v1-to-v2.html">Upgrading GHI Bootloader v1 to v2</a> page. To put EMX in boot mode, make pins 3,7 and 53 low and reset the board (Pin3=P0.4 | Pin7=P2.5 | Pin53=P2.11).</p>
 <h3 id="loading-the-firmware">Loading the Firmware</h3>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>

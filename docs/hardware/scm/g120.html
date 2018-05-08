@@ -83,26 +83,15 @@
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Documents/Datasheets/G120%20and%20G120E%20Datasheet.pdf">Datasheet</a></li>
 </ul>
+<p>Pricing, purchasing and other information can be found on the <a href="http://www.ghielectronics.com/products/scm/g120">G120 Page</a> on our main website.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>Options for programming the G120 include the following:</p>
-<h3 id="microsofts-net-micro-foundation-netmf">Microsoft&#39;s .NET Micro Foundation (NETMF)</h3>
+<h3 id="microsofts-net-micro-framework-netmf">Microsoft&#39;s .NET Micro Framework (NETMF)</h3>
 <p>We discourage the use of NETMF software on our products in favor of TinyCLR OS. For more information on NETMF you can go to the <a href="../../software/netmf/intro.html">NETMF Introduction</a> page.  The <a href="../../software/netmf/getting-started.html">NETMF Getting Started</a> page covers NETMF from setup of the host computer to program deployment on both an emulator and target device.</p>
 <h3 id="tinyclr-os">TinyCLR OS</h3>
 <p>TinyCLR provides a way to program the G120 in C# or Visual Basic using Microsoft Visual Studio.  To get started you must first install the bootloader and firmware on the G120 (instructions below) and then go to the TinyCLR <a href="../../software/tinyclr/getting-started.html">Getting Started</a> page for instructions on setting up the host computer and writing and deploying programs.</p>
 <h4 id="loading-bootloader-v2">Loading Bootloader v2</h4>
-<ol>
-<li>Download the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#g120">bootloader file</a></li>
-<li>Set the LDR0 and LDR1 signals low while resetting the board.</li>
-<li>The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the <a href="../../software/netmf/intro.html">NETMF</a> SDK.</li>
-<li>Open any terminal software, we recommend <a href="http://ttssh2.osdn.jp/">Tera Term</a>.</li>
-<li>Select serial and pick the COM port associated with your board.</li>
-<li>Enter <code>E</code> and you will see &quot;Erase all memory! Are you sure?&quot; now enter <code>Y</code>. (The bootloader is case sensitive)</li>
-<li>Enter <code>X</code> and you will see <code>CCCC</code>... showing on the terminal.</li>
-<li>Now go to <code>File</code> -&gt; <code>Transfer</code> -&gt; <code>XMODEM</code> -&gt; <code>Send</code> and then check the <code>1K</code> option.</li>
-<li>Select the bootloader file you have downloaded above.</li>
-<li>You will see <code>File Transfer Finished Successfully</code>.</li>
-<li>Reset your board, you are now running GHI Electronics bootloader version 2!</li>
-</ol>
+<p>The G120 comes with Bootloader v1 pre-installed. To upgrade to Bootloader v2, follow the instructions on our <a href="../../software/tinyclr/loaders/upgrading-v1-to-v2.html">Upgrading GHI Bootloader v1 to v2</a> page. To put the G120 into boot mode, set the LDR0 and LDR1 signals low while resetting the board.</p>
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>

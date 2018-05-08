@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>STM32 Bootloader </title>
+    <title>The STM32 Bootloader </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="STM32 Bootloader ">
+    <meta name="title" content="The STM32 Bootloader ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,37 +75,50 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="stm32-bootloader">STM32 Bootloader</h1>
+<h1 id="the-stm32-bootloader">The STM32 Bootloader</h1>
 
 <hr>
-<p>The STM32 Bootloader lives on all STM32 chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.</p>
+<p>The STM32 Bootloader lives on all STM32 chips. The bootloader is used to load files (bootloaders and/or firmware) onto the chip. Several TinyCLR OS supported boards use this bootloader.</p>
 <p>These instructions apply to all STM32 chips with built in USB and DFU features.</p>
-<h2 id="creating-dfu-file">Creating DFU file</h2>
-<p>The STM32 bootloader only accepts DFU file types, which can be generated from a HEX or BIN files. To generate a DFU file, download the &quot;DfuSe USB device firmware upgrade STMicroelectronics extension&quot; <a href="http://www.st.com/en/development-tools/stsw-stm32080.html">software package</a></p>
-<p>Depending on using a HEX or BIN files, the instructions are slightly different.</p>
-<h3 id="from-hex-files">From HEX files</h3>
+<h2 id="loading-the-ghi-bootloader-v2">Loading the GHI Bootloader v2</h2>
+<p>The bootloader often comes pre-installed on our devices. It only needs to be installed once. It does not need to be reinstalled unless it becomes erased or corrupted.</p>
 <ol>
-<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
-<li>Click on &quot;S19 or Hex...&quot; button to select the hex file.</li>
-<li>Click &quot;Generate...&quot;</li>
-<li>You now have the DFU file!</li>
+<li>Download and save the latest <a href="ghi-bootloader.html#downloads">bootloader file</a> (v2.x.x).</li>
+<li>Download and install the <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll">DfuSe USB device firmware upgrade software</a> from STMicroelectronics (click on the blue <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll"><strong>Get Software</strong></a> button).</li>
+<li>Run the DfuSeDemo program installed in the previous step. It should appear in the programs menu under <code>STMicroelectronics</code>.</li>
+<li>Put your board in DFU (Device Firmware Upgrade) mode. Instructions for putting your device in DFU mode are found on the documents page for the board you are using. <code>STM Device in DFU Mode</code> should now appear under <code>Available DFU Devices</code> at the upper left of the DfuSe Demo program screen.</li>
+<li>Near the bottom of the DfuSe Demo program window click on the <code>Choose...</code> button. Find the bootloader file you saved in step 1 (...Bootloader v2.x.x.dfu), click on it and click on the <code>Open</code> button.</li>
+<li>Now click on the upgrade button. If a dialog box appears with <code>Your device was plugged in DFU mode...</code> click the <code>Yes</code> button.</li>
+<li>You should see a message at the bottom of the DfuSe Demo window saying the upgrade was successful. Now reset the your device or click on the <code>Leave DFU mode</code> button.</li>
+<li>Congratulations! You have successfully installed the GHI STM32 bootloader!</li>
 </ol>
-<h3 id="from-bin-files">From BIN files</h3>
+<h2 id="creating-a-dfu-file">Creating a DFU file</h2>
+<p>The DfuSe upgrade software only accepts DFU file types. You can create DFU files from .hex or .bin files using the DFU file manager software which is part of the <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll">DfuSe USB device firmware upgrade software</a> download from step 2 of the above instructions.</p>
+<p>If you haven&#39;t already, download the <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll">DfuSe USB device firmware upgrade software</a> from STMicroelectronics (click on the blue <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll"><strong>Get Software</strong></a> button).</p>
+<p>The instructions are slightly different depending on whether you are starting with a .hex or .bin file.</p>
+<h3 id="from-hex-files">From .hex files</h3>
 <ol>
-<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
-<li>Click on &quot;Multi BIN...&quot; button to select the bin file.</li>
+<li>Find and open the &quot;Dfu file manager&quot; program. It should appear in the programs menu under <code>STMicroelectronics</code>. Select <code>I want to generate a DFU file</code>.</li>
+<li>Click on the <code>S19 or Hex...</code> button to select the .hex file.</li>
+<li>Click <code>Generate...</code></li>
+<li>You now have a DFU file!</li>
+</ol>
+<h3 id="from-bin-files">From .bin files</h3>
+<ol>
+<li>Find and open the &quot;Dfu file manager&quot; program. It should appear in the programs menu under <code>STMicroelectronics</code>. Select <code>I want to generate a DFU file</code>.</li>
+<li>Click on <code>Multi BIN...</code> button to select the .bin file.</li>
 <li>Change the address to 08000000</li>
-<li>Click on the &quot;Add to list &gt;&gt;&quot; button then click the &quot;OK&quot; button.</li>
-<li>Click &quot;Generate...&quot;</li>
-<li>You now have the DFU file!</li>
+<li>Click on the <code>Add to list &gt;&gt;</code> button then click the <code>OK</code> button.</li>
+<li>Click <code>Generate...</code></li>
+<li>You now have a DFU file!</li>
 </ol>
 <h2 id="uploading-dfu-files">Uploading DFU Files</h2>
-<p>To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 or BOOTA button, just hold the button down while powering the system up. The device manager will see the device &quot;STM Device in DFU Mode&quot;.</p>
+<p>To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 or BOOTA button, just hold the button down while powering the system up. The device manager will see a device called <code>STM Device in DFU Mode</code>.</p>
 <ol>
-<li>Find and open &quot;Open DfuSe Demo&quot; (from the ST download higher in this page)</li>
-<li>Under &quot;Upgrade and Verify Action&quot;, click the &quot;Choose...&quot; button and select the firmware DFU file you want to load.</li>
-<li>Click the &quot;Upgrade&quot; button.</li>
-<li>Click the &quot;Leave DFU mode&quot; button.</li>
+<li>Find and open the <code>DfuSe Demo</code> program (from the ST download higher in this page).</li>
+<li>Under <code>Upgrade and Verify Action</code>, click the <code>Choose...</code> button and select the firmware DFU file you want to load.</li>
+<li>Click the <code>Upgrade</code> button.</li>
+<li>Click the <code>Leave DFU mode</code> button or reset the device.</li>
 <li>Congratulations, your board is now running the loaded firmware!</li>
 </ol>
 </article>

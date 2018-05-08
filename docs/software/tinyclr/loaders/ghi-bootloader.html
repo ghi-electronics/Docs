@@ -80,7 +80,7 @@
 <hr>
 <p>The GHI Bootloader is used to update the firmware on our devices. It is the first program to run and unless the device specific LDR pins are set (see device documentation for details), it will execute the firmware on the device (if present). </p>
 <p>The bootloader communicates over a USB virtual serial port and a regular serial port. The interface used is controlled by a MODE pin. See your device specifications for details on interface configuration and selection and which version of the bootloader it runs.</p>
-<div class="TIP"><h5>Tip</h5><p>If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See the <a href="ghi-bootloader.html#usb-drivers">downloads section</a>.</p>
+<div class="TIP"><h5>Tip</h5><p>If you are running Windows 7 or Windows 8, you must install drivers for the bootloader to appear in Windows. See &quot;USB Drivers&quot; in the <a href="ghi-bootloader.html#usb-drivers"><strong>downloads section</strong></a>.</p>
 </div>
 <h2 id="bootloader-v2">Bootloader v2</h2>
 <p>All commands and results are terminated with CR and LF (\r\n). &quot;OK.&quot; will be sent after each successful command.</p>
@@ -128,7 +128,7 @@
 <li>16 bit CRC-CCITT of the boot image bounded by the specified address and length.</li>
 </ol>
 <h2 id="bootloader-v1">Bootloader v1</h2>
-<p>Currently the USBizi, EMX, G120, and G120E ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
+<p>Currently the Embedded Master, EMX, G120, G120E and USBizi ship with this version of the bootloader. All results are terminated with LF (\n). Commands are executed as soon as they entered without waiting for a new-line. &quot;BL&quot; or &quot;Done.&quot; will be sent after each command.</p>
 <p>On startup, a banner is sent that is terminated by &quot;BL&quot;. Once the banner is received, you are free to enter any of the case-sensitive single-character commands described below.</p>
 <ul>
 <li>V: returns the current version.</li>

@@ -87,7 +87,7 @@
 <h3 id="using-tinyclr-os">Using TinyCLR OS</h3>
 <p>TinyCLR provides a way to program the UC2550 in C# or Visual Basic from the Microsoft Visual Studio integrated development environment.  To get started you must first install the bootloader and firmware on the UC2550 (instructions below) and then go to the TinyCLR <a href="../../software/tinyclr/getting-started.html">Getting Started</a> page for instructions on setting up the host computer and writing and deploying programs.</p>
 <h4 id="loading-bootloader-version-2">Loading Bootloader Version 2</h4>
-<p>Download the UC2550 bootloader <a href="../../software/tinyclr/loaders/ghi-bootloader.html#uc2550">here</a>.</p>
+<p>Download the UC2550 bootloader from <a href="../../software/tinyclr/loaders/ghi-bootloader.html#uc2550">here</a>.</p>
 <p>Go to the <a href="../../software/tinyclr/loaders/stm32-bootloader.html#uploading-dfu-files">Uploading DFU Files</a> section of the <a href="../../software/tinyclr/loaders/stm32-bootloader.html">STM32 Bootloader</a> page for instructions on installing the bootloader.</p>
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
@@ -96,6 +96,8 @@
 <p>Download the <a href="../../software/tinyclr/downloads.html#uc2550">UC2550 firmware</a> and follow the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h4 id="setup-the-host-computer-and-start-coding">Setup the Host Computer and Start Coding</h4>
 <p>Now that you have installed the bootloader and firmware on the UC2550, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
+<h2 id="schematic">Schematic</h2>
+<p>The schematic for the UC2550 can be found <a href="http://files.ghielectronics.com/downloads/Schematics/Systems/UC2550%20Rev%20C%20Schematic.pdf">here</a>.</p>
 <h2 id="specifications">Specifications</h2>
 <table>
 <thead>
@@ -233,11 +235,6 @@
 </tbody>
 </table>
 <p>*<em>The &quot;Overall&quot; column includes peripherals that fall outside of the UCM standard definition.  Using these peripherals may reduce code portability with our other UCM models.  Also, as many of these non-standard peripherals share I/O pins, not all of them will be available to your application.</em></p>
-<h2 id="documents">Documents</h2>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Schematics/Systems/UC2550_Schematic.pdf">Schematic</a></li>
-<li><a href="http://files.ghielectronics.com/downloads/Documents/Datasheets/UC2550%20Datasheet.pdf">Datasheet</a></li>
-</ul>
 <h2 id="pin-assignments">Pin Assignments</h2>
 <table>
 <thead>
