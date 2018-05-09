@@ -57,7 +57,7 @@ As FEZ Hydra has been released as open source, some of the features found in oth
 * Startup Logo
 * SD card detection
 * BuiltInEthernet
-* WiFi RS9110
+* Wi-Fi RS9110
 * PPP
 * SQLite
 * USB host

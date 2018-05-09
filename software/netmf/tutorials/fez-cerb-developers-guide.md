@@ -11,7 +11,7 @@ The powerful firmware on a single chip design of the Cerb Family makes this core
 ## Memory Constraints
 Due to the limited amount of memory on the Cerb Family, the following features are not supported:
 
-* WiFi RS9110
+* Wi-Fi RS9110
 * PPP
 * SQLite
 * USB Host Webcam and Hub

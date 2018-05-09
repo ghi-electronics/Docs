@@ -6,7 +6,7 @@ Originally a .NET Micro Framework product, netdunio 3 is available in three flav
 
 - [netduino 3](http://www.netduino.com/netduino3/specs.htm)
 - [netduino 3 Ethernet](http://www.netduino.com/netduino3ethernet/specs.htm)
-- [netduino 3 WiFi](http://www.netduino.com/netduino3wifi/specs.htm)
+- [netduino 3 Wi-Fi](http://www.netduino.com/netduino3wifi/specs.htm)
 
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.

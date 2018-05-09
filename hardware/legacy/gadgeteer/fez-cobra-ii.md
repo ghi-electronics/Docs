@@ -1,6 +1,6 @@
-# FEZ Cobra II Eco and WiFi
+# FEZ Cobra II Eco and Wi-Fi
 ---
-![FEZ Cobra II Eco](images/fez-cobra-ii.jpg) ![FEZ Cobra II Wifi](images/fez-cobra-ii-wifi.jpg)
+![FEZ Cobra II Eco](images/fez-cobra-ii.jpg) ![FEZ Cobra II WiFi](images/fez-cobra-ii-wifi.jpg)
 
 FEZ Cobra II is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Cobra II is the G120 System on Module (SoM).
 

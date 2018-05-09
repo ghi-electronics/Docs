@@ -6,11 +6,11 @@ Below is an outline of our goals for a stable and production-ready 1.0 release o
 
 ## v0.8.0 in February
 - A Cortex-M7 build of the core library
-- Low-level STMicroelectronics WiFi driver
+- Low-level STMicroelectronics Wi-Fi driver
 - FEZ Hydra firmware
 
 ## v0.9.0 in March
-- A .NET sockets and HTTP library for any interface (including ST's WiFi)
+- A .NET sockets and HTTP library for any interface (including ST's Wi-Fi)
 - A .NET IO library for any interface
 - Native driver for SPI displays
 
