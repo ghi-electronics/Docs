@@ -971,13 +971,13 @@ Simply, a serial port.
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/VideoOut) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/VideoOut%20Module%20Schematic.pdf)
 
-## WiFi RN171
-![WiFi RN171](images/modules/wifi-rn171.jpg)
+## Wi-Fi RN171
+![Wi-Fi RN171](images/modules/wifi-rn171.jpg)
 
 Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadgeteer/tree/master/Modules/GHIElectronics/WiFiRN171) as a reference.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/WiFi%20RN171%20Module%20Schematic.pdf)
 
-## WiFi RS21
+## Wi-Fi RS21
 ![WiFi RS21](images/modules/wifi-rs21.jpg)
 
 Will not be supported, NDA issues.

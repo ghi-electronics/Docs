@@ -3,7 +3,7 @@
 ![FEZ](images/fez-noborder.jpg)
 
 ## The Maker Board to Rule Them All!
-FEZ (fast and easy) is our magnificient maker board. This low cost board offers Arduino pinout compatibility, optional WiFi for IOT applications, and can be programmed using multiple programming languages and development environments.
+FEZ (fast and easy) is our magnificient maker board. This low cost board offers Arduino pinout compatibility, optional Wi-Fi for IOT applications, and can be programmed using multiple programming languages and development environments.
 
 Pricing, purchasing and other information can be found on the [FEZ page]() on our main website.
 
@@ -13,8 +13,8 @@ Pricing, purchasing and other information can be found on the [FEZ page]() on ou
 |----------------|---------------------------------|
 | Processor      | STMicroelectronics ST32F401RET6 |
 | Speed          | 84 MHz                          |
-| Internal RAM   | 96 kB                           |
-| Internal Flash | 512 kB                          |
+| Internal RAM   | 96 KByte                        |
+| Internal Flash | 512 KByte                       |
 | Dimensions     | 70.6 x 56.0 x 14.5 mm           |
 
 ### Peripherals*
@@ -30,7 +30,7 @@ Pricing, purchasing and other information can be found on the [FEZ page]() on ou
 | 12 Bit ADC         | 7                 |
 | CAN                | 0                 |
 | USB Client         | 1                 |
-| WiFi               | Optional          |
+| Wi-Fi              | Optional          |
 
 \**Note:  Many peripherals share I/O pins.  Not all peripherals will be available to your application.*
 
