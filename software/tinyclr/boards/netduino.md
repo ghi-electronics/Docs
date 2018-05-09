@@ -2,16 +2,19 @@
 ![netduino 3](images/netduino3.jpg) 
 ## netduino 3
 
-Originally a .NET Micro Framework product, netdunio 3 is available in three flavors:
+Originally a .NET Micro Framework product, netduino 3 is available in three flavors:
 
 - [netduino 3](http://www.netduino.com/netduino3/specs.htm)
 - [netduino 3 Ethernet](http://www.netduino.com/netduino3ethernet/specs.htm)
 - [netduino 3 Wi-Fi](http://www.netduino.com/netduino3wifi/specs.htm)
 
+> [!Note]
+> We do not support, test, or guarantee TinyCLR's operation on devices from other manufactures. We are only sharing the experiences of ourselves and others running TinyCLR on third party boards.
+
 > [!Tip]
 > Currently the firmware is the same for all three devices and doesn't include any networking support.
 
-The netduino3 firmware is located [here](../downloads.md#netduino-3). To put the netduino in DFU mode, hold its one button down while plugging in the USB cable. Now follow the instructions at the [STM32 bootloader](../../tinyclr/loaders/stm32-bootloader.md) page to generate and load a DFU file.
+The netduino3 firmware source is located in the [TinyCLR ports repository](https://github.com/ghi-electronics/TinyCLR-Ports). Please go to our [Porting TinyCLR](../porting/intro.md) page for instructions on how to build the firmware. To put the netduino in DFU mode, hold its one button down while plugging in the USB cable. Now follow the instructions at the [STM32 bootloader](../../tinyclr/loaders/stm32-bootloader.md) page to generate and load a DFU file.
 
 When done, your PC should detect a TinyCLR device. You are now ready to [start coding](../tutorials/intro.md)
 
@@ -172,7 +175,7 @@ namespace GHIElectronics.TinyCLR.Pins {
 This board uses STM32F2, which is very similar to the STM32F4 used on the netduino 3. Porting TinyCLR OS to netduino 2 should not be very difficult.
 
 ## netduino 1
-This board uses an Atmel micocontroller. The G400 uses an Atmel processor and can be a good starting point for porting TinyCLR OS.
+This board uses an Atmel microcontroller. The G400 uses an Atmel processor and can be a good starting point for [porting](../porting/intro.md) TinyCLR OS.
 
 ***
 
