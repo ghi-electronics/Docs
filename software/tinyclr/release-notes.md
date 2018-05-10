@@ -46,6 +46,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
 - Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
 - Using SPI1 on G120 may corrupt the flash [#294](https://github.com/ghi-electronics/TinyCLR-Ports/issues/294).
+- Use of CAN causes all pins for all CAN busses to be reserved [#296](https://github.com/ghi-electronics/TinyCLR-Ports/issues/296).
 
 ### TinyCLR Config
 
