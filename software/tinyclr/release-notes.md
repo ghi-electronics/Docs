@@ -1,5 +1,83 @@
 # Release Notes
----
+
+## 0.11.0 on 2018-05-10
+
+### Notes
+This release fixes a number of bugs, improved the BrainPad display API, added a number of methods to the porting API, and completely reworked the native USB client API. We also move graphics out of the core library so it's now much leaner which helps small devices like the G30.
+
+`.constrained` continues to throw in this release as we gather more data. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you. There are no new bootloaders in this release.
+
+### Libraries
+
+#### Changes
+- Added a pins library for the UCM standard.
+- Fixed the range of values the BrainPad temperature returns.
+- Fixed disposing of the underlying image when disposing graphics.
+- Fixed another case that would cause `Thread.ManagedThreadId` to get lost.
+- Renamed `ShowOnScreen` to `RefreshScreen` and `ClearScreen` to `Clear` in BrainPad.
+- Removed the various `AndShowOnScreen` methods in BrainPad.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Software SPI does not work with some devices [#293](https://github.com/ghi-electronics/TinyCLR-Ports/issues/293).
+
+### Firmware
+
+#### Changes
+- Added RTC to Cerberus [#263](https://github.com/ghi-electronics/TinyCLR-Ports/issues/263).
+- Added RTC to G30 and FEZCLR [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
+- Fixed RTC crashing the G400 and FEZHydra [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
+- Fixed ADC11 being mapped incorrect on STM32F7 [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
+- Fixed opening the debugger UART not throwing an exception when in UART debug mode [#259](https://github.com/ghi-electronics/TinyCLR-Ports/issues/259).
+- Fixed pins not always being acquired or released in the HAL [#258](https://github.com/ghi-electronics/TinyCLR-Ports/issues/258).
+- Fixed all GPIO getting reset when opening the GPIO controller [#256](https://github.com/ghi-electronics/TinyCLR-Ports/issues/256).
+- Fixed errors from the HAL side not always surfacing in managed code.
+- Fixed flushing a large screen locking up the device.
+- Implemented UART error events for AT and ST.
+
+#### Known Issues
+- Many UART properties and events are not implemented.
+- PWM may jitter when decreasing the pulse length while enabled.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- Using SPI1 on G120 may corrupt the flash [#294](https://github.com/ghi-electronics/TinyCLR-Ports/issues/294).
+
+### TinyCLR Config
+
+#### Changes
+- Minor improvements and fixes.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- Added a dependency to the VSIX to ensure .NET v4.5.2 is present.
+- Added `BrainPad Helper` item template.
+- Removed the `BrainPad Application` project template.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added `ClearReadBuffer` and `ClearWriteBuffer` to UART.
+- Added `GetUnreadCount` and `GetUnwrittenCount` to UART.
+- Added `GetUnwrittenMessageCount` and `ClearWriteBuffer` to CAN.
+- Changed GPIO debounce time to ticks.
+- Cleaned and overhauled the USB client API.
+- Moved the graphics interop out of the core library.
+
+#### Known Issues
+- None.
+
 ## 0.10.0 on 2018-04-05
 
 ### Notes
