@@ -3,7 +3,7 @@
 ## 0.11.0 on 2018-05-10
 
 ### Notes
-This release fixes a number of bugs, improved the BrainPad display API, added a number of methods to the porting API, and completely reworked the native USB client API. We also move graphics out of the core library so it's now much leaner which helps small devices like the G30.
+This release fixed a number of bugs, improved the BrainPad display API, added a number of methods to the porting API, and completely reworked the native USB client API. We also moved graphics out of the core library so it's now much leaner which helps small devices like the G30.
 
 `.constrained` continues to throw in this release as we gather more data. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`.
 
@@ -30,7 +30,7 @@ As before, you can find all downloads in their respective sections on the [downl
 - Added RTC to Cerberus [#263](https://github.com/ghi-electronics/TinyCLR-Ports/issues/263).
 - Added RTC to G30 and FEZCLR [#228](https://github.com/ghi-electronics/TinyCLR-Ports/issues/228).
 - Fixed RTC crashing the G400 and FEZHydra [#260](https://github.com/ghi-electronics/TinyCLR-Ports/issues/260).
-- Fixed ADC11 being mapped incorrect on STM32F7 [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
+- Fixed ADC11 being mapped incorrectly on STM32F7 [#261](https://github.com/ghi-electronics/TinyCLR-Ports/issues/261).
 - Fixed opening the debugger UART not throwing an exception when in UART debug mode [#259](https://github.com/ghi-electronics/TinyCLR-Ports/issues/259).
 - Fixed pins not always being acquired or released in the HAL [#258](https://github.com/ghi-electronics/TinyCLR-Ports/issues/258).
 - Fixed all GPIO getting reset when opening the GPIO controller [#256](https://github.com/ghi-electronics/TinyCLR-Ports/issues/256).
