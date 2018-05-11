@@ -81,7 +81,7 @@
 <p><img src="images/uc5550-noborder.jpg" alt="UC5550"></p>
 <h2 id="overview">Overview</h2>
 <p>Our UC5550 module is a step up from the UC2550 in terms of processor speed, internal flash, external RAM and available peripherals.  Unlike the UC2550, the UC5550 has USB host, parallel LCD, DCMI interfaces and Ethernet PHY support.</p>
-<p> Depending on the model it can have onboard WiFi and/or an Ethernet PHY. It can also have 4MB of external flash for large user programs.</p>
+<p>We currently stock the UC5550 both with and without Wi-Fi depending on the model. The current models are shipping with 16 MByte of external RAM and 4 MByte of external flash. We also offer customized, non-stock versions of our SoMs. See <a href="#options">Options</a> below for more information. </p>
 <h2 id="getting-started">Getting Started</h2>
 <p>The UCM <a href="development-options.html">development options</a> can greatly simplify the process of building a product or prototype using the UC5550.  Options include a development board and displays which can get you programming in minutes.  Please refer to the <a href="development-options.html">Development Options</a> page for more information.</p>
 <h3 id="using-tinyclr-os">Using TinyCLR OS</h3>
@@ -98,6 +98,36 @@
 <p>Now that you have installed the bootloader and firmware on the UC5550, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
 <h2 id="schematic">Schematic</h2>
 <p>The schematic for the UC5550 can be found <a href="http://files.ghielectronics.com/downloads/Schematics/Systems/UC5550%20Rev%20C%20Schematic.pdf">here</a>.</p>
+<h2 id="options">Options</h2>
+<table>
+<thead>
+<tr>
+<th>Model Number</th>
+<th>Wi-Fi</th>
+<th>Ethernet PHY</th>
+<th>External SDRAM</th>
+<th>External QSPI Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UC5550-67HFN</td>
+<td>no</td>
+<td>no</td>
+<td>16 MByte</td>
+<td>4 MByte</td>
+</tr>
+<tr>
+<td>UC5550-67HFW</td>
+<td>yes</td>
+<td>no</td>
+<td>16 MByte</td>
+<td>4 MByte</td>
+</tr>
+</tbody>
+</table>
+<h3 id="customization">Customization</h3>
+<p>We also offer customized, non-stock versions of our SoMs. Many options are available, such as various sizes of external QSPI flash. Please <a href="http://ghielectronics.com/company/contact">contact us</a> for details. We will always do our best to provide you with a module to fit your exact needs.</p>
 <h2 id="specifications">Specifications</h2>
 <table>
 <thead>
@@ -117,22 +147,23 @@
 </tr>
 <tr>
 <td>Internal RAM</td>
-<td>512 KB (SRAM)</td>
+<td>512 KByte (SRAM)</td>
 </tr>
 <tr>
 <td>Internal Flash</td>
-<td>2 MB</td>
+<td>2 MByte</td>
 </tr>
 <tr>
 <td>External RAM</td>
-<td>16 MB (SDRAM)</td>
+<td>16 MByte (SDRAM)</td>
 </tr>
 <tr>
 <td>External Flash</td>
-<td>4 MB (QSPI)</td>
+<td>4 MByte (QSPI)</td>
 </tr>
 </tbody>
 </table>
+<h2 id="peripherals">Peripherals</h2>
 <table>
 <thead>
 <tr>
@@ -213,7 +244,7 @@
 <td>Supported</td>
 </tr>
 <tr>
-<td>WiFi</td>
+<td>Wi-Fi</td>
 <td>Supported</td>
 <td>Supported</td>
 </tr>
@@ -258,7 +289,7 @@
 <tr>
 <td>3</td>
 <td>Module Specific 1</td>
-<td>(WiFi Module PIN14) GPIO4 (LED WPWR)</td>
+<td>(Wi-Fi Module PIN14) GPIO4 (LED WPWR)</td>
 </tr>
 <tr>
 <td>4</td>
@@ -418,17 +449,17 @@
 <tr>
 <td>35</td>
 <td>Module Specific 4</td>
-<td>(WiFi Module PIN13) GPIO7</td>
+<td>(Wi-Fi Module PIN13) GPIO7</td>
 </tr>
 <tr>
 <td>36</td>
 <td>Module Specific 5</td>
-<td>(WiFi Module PIN16) GPIO0</td>
+<td>(Wi-Fi Module PIN16) GPIO0</td>
 </tr>
 <tr>
 <td>37</td>
 <td>Module Specific 6</td>
-<td>(WiFi Module PIN22) GPIO6</td>
+<td>(Wi-Fi Module PIN22) GPIO6</td>
 </tr>
 <tr>
 <td>38</td>
@@ -628,12 +659,12 @@
 <tr>
 <td>77</td>
 <td>UART D TX</td>
-<td>PB10, USART3 TX, T2C3, I2C2 SCL (WiFi)</td>
+<td>PB10, USART3 TX, T2C3, I2C2 SCL (Wi-Fi)</td>
 </tr>
 <tr>
 <td>78</td>
 <td>UART D RX</td>
-<td>PB11, USART3 RX, T2C4, I2C2 SDA (WiFi)</td>
+<td>PB11, USART3 RX, T2C4, I2C2 SDA (Wi-Fi)</td>
 </tr>
 <tr>
 <td>79</td>
@@ -783,12 +814,12 @@
 <tr>
 <td>108</td>
 <td>Module Specific 2</td>
-<td>(WiFi Module PIN2) BOOT0</td>
+<td>(Wi-Fi Module PIN2) BOOT0</td>
 </tr>
 <tr>
 <td>109</td>
 <td>Module Specific 3</td>
-<td>(WiFi Module PIN4) GPIO8 (Mini Python)</td>
+<td>(Wi-Fi Module PIN4) GPIO8 (Mini Python)</td>
 </tr>
 <tr>
 <td>110</td>
@@ -1078,7 +1109,7 @@
 <tr>
 <td>167</td>
 <td>Indicator C</td>
-<td>(WiFi Module PIN15) GPIO3 (LED LINK)</td>
+<td>(Wi-Fi Module PIN15) GPIO3 (LED LINK)</td>
 </tr>
 <tr>
 <td>168</td>
@@ -1243,7 +1274,7 @@
 <tr>
 <td>200</td>
 <td>Indicator D</td>
-<td>(WiFi Module PIN5) GPIO10 (LED ACT)</td>
+<td>(Wi-Fi Module PIN5) GPIO10 (LED ACT)</td>
 </tr>
 </tbody>
 </table>

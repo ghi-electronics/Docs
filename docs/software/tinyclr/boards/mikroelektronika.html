@@ -77,31 +77,34 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="mikroelektronika">MikroElektronika</h1>
 
-<p>MikroElektronika offers multiple boards that are suited for TinyCLR OS. We offer pre-compiled firmware for a few of their products.</p>
+<p>MikroElektronika offers multiple boards that are suited for TinyCLR OS. We offer source that can be compiled into firmware for a few of their products.</p>
 <p>Clicker/Clicker 2 and related boards ship with the <a href="../loaders/intro.html#mikro-bootloader">Mikro bootloader</a> pre installed. Use it to load the TinyCLR OS firmware.</p>
+<div class="NOTE"><h5>Note</h5><p>We do not support, test, or guarantee TinyCLR&#39;s operation on devices from other manufactures. We are only sharing the experiences of ourselves and others running TinyCLR on third party boards.</p>
+</div>
 <div class="TIP"><h5>Tip</h5><p>The loader will wait for a few seconds on every power up before it runs TinyCLR OS. If this delay is not desirable, use an ST-Link programmer to flash the firmware onto the board directly, overwriting the bootloader.</p>
 </div>
-<h1 id="clicker">Clicker</h1>
+<h2 id="clicker">Clicker</h2>
 <p><img src="images/clicker.jpg" alt="Clicker"> </p>
-<p>MikroElekronika&#39;s <a href="https://shop.mikroe.com/clicker-stm32f4">STM32 M4 Clicker</a> board includes a single <a href="https://www.mikroe.com/mikrobus/">mikroBUS</a> socket, for quickly adding one of many available click modules.</p>
-<p>The TinyCLR OS <a href="../downloads.html#clicker">Clicker firmware</a>.</p>
+<p>MikroElekronika&#39;s <a href="https://shop.mikroe.com/clicker-stm32f4">STM32 M4 Clicker</a> board includes a single <a href="https://www.mikroe.com/mikrobus/">mikroBUS</a> socket for quickly adding one of the many available click modules.</p>
+<p>The TinyCLR OS Clicker firmware source can be found in our <a href="https://github.com/ghi-electronics/TinyCLR-Ports">TinyCLR ports repository</a>. Please go to our <a href="../porting/intro.html">Porting TinyCLR</a> page for instructions on how to build the firmware.</p>
 <div class="WARNING"><h5>Warning</h5><p>Clicker and Clicker 2 boards use different processors and a different system clock. Each board has its own TinyCLR OS firmware.</p>
 </div>
-<h1 id="clicker-2">Clicker 2</h1>
+<h2 id="clicker-2">Clicker 2</h2>
 <p><img src="images/clicker2.jpg" alt="Clicker"> </p>
-<p>MikroElekronika&#39;s <a href="https://shop.mikroe.com/clicker-2-stm32f4">clicker 2 for STM32</a> board includes dual <a href="https://www.mikroe.com/mikrobus/">mikroBUS</a> sockets, for adding many available click modules.</p>
-<p>The TinyCLR OS <a href="../downloads.html#clicker-2">Clicker 2 firmware</a>.</p>
-<h1 id="mini-m4-for-stm32">MINI-M4 for STM32</h1>
+<p>MikroElektronika&#39;s <a href="https://shop.mikroe.com/clicker-2-stm32f4">clicker 2 for STM32</a> board includes dual <a href="https://www.mikroe.com/mikrobus/">mikroBUS</a> sockets for adding available click modules.</p>
+<p>The TinyCLR OS Clicker 2 firmware source can be found in our <a href="https://github.com/ghi-electronics/TinyCLR-Ports">TinyCLR ports repository</a>. Please go to our <a href="../porting/intro.html">Porting TinyCLR</a> page for instructions on how to build the firmware.</p>
+<h2 id="mini-m4-for-stm32">MINI-M4 for STM32</h2>
 <p><img src="images/mini-m4-stm32.jpg" alt="Clicker"> </p>
-<p>The <a href="https://shop.mikroe.com/mini-stm32f4">MINI-M4 for STM32</a> uses the same processor and system clock as the Clicker board. Use the TinyCLR OS <a href="../downloads.html#clicker">Clicker firmware</a>.</p>
-<h1 id="buggy">Buggy</h1>
+<p>The <a href="https://shop.mikroe.com/mini-stm32f4">MINI-M4 for STM32</a> uses the same processor and system clock as the Clicker board. Use the TinyCLR OS Clicker firmware source from our <a href="https://github.com/ghi-electronics/TinyCLR-Ports">TinyCLR ports repository</a> and go to our <a href="../porting/intro.html">Porting TinyCLR</a> page for instructions on how to build the firmware.</p>
+<h2 id="buggy">Buggy</h2>
 <p><img src="images/buggy.jpg" alt="Clicker"> </p>
 <p><a href="https://shop.mikroe.com/buggy">Buggy</a> is a robot rover platform that is expandable through the click modules. The Clicker 2 is used to drive this rover, making it a TinyCLR OS rover!</p>
-<h1 id="quail">Quail</h1>
+<h2 id="quail">Quail</h2>
 <p><img src="images/quail-board.png" alt="Quail"></p>
-<p>Originally a .NET Micro Framework product, the Quail board brings the option of using hundreds of plug-and-play sensors and control modules, thanks to Mikro&#39;s click modules.</p>
+<p>Originally a .NET Micro Framework product, the Quail board can be used with hundreds of Mikro click plug-and-play modules for sensing and control.</p>
 <p>Learn more about Quail at:<br><a href="https://www.mikrobusnet.org/">https://www.mikrobusnet.org/</a> and <a href="https://shop.mikroe.com/quail">https://shop.mikroe.com/quail</a>  </p>
-<p>The Quail firmware is located <a href="../downloads.html#quail">here</a>. To enter the DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Now, follow the instructions on the <a href="../loaders/stm32-bootloader.html">STM32 bootloader</a> page to generate and load a DFU firmware file.</p>
+<p>The Quail firmware source is located in our <a href="https://github.com/ghi-electronics/TinyCLR-Ports">TinyCLR ports repository</a>. Please go to our <a href="../porting/intro.html">Porting TinyCLR</a> page for instructions on how to build the firmware.</p>
+<p>To enter DFU mode, press and hold the Boot button down while pressing and releasing the Reset button. Follow the instructions on the <a href="../loaders/stm32-bootloader.html">STM32 bootloader</a> page to generate and load a DFU firmware file.</p>
 <p>When done, your PC should detect a TinyCLR device. You are now ready to <a href="../tutorials/intro.html">start coding</a></p>
 <div class="TIP"><h5>Tip</h5><p>The region set aside for RLI is 0x2002F000 - 0x2002FFF8</p>
 </div>
