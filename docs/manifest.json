@@ -2689,7 +2689,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/development-options.html",
-          "hash": "/1AqelY4VSB4jgrgo/Wakg=="
+          "hash": "MqslnRANyAsjsu2pTztr6Q=="
         }
       },
       "is_incremental": false,
@@ -2702,6 +2702,17 @@
         ".html": {
           "relative_path": "hardware/ucm/g400d.html",
           "hash": "woxSBEVsZAve/rs+HjMpCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/ucm/images/200-pin-ddr2-so-dimm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/ucm/images/200-pin-ddr2-so-dimm.jpg"
         }
       },
       "is_incremental": false,
@@ -3127,7 +3138,18 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/getting-started.html",
-          "hash": "iSpaPxTKoa2Pg/rJ2pABeQ=="
+          "hash": "bjaYeVJBQOn5vCc4ZcHXJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/netmf/images/advanced-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "software/netmf/images/advanced-options.png"
         }
       },
       "is_incremental": false,
@@ -4538,14 +4560,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
