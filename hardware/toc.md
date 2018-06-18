@@ -1,4 +1,4 @@
-# [Introduction](intro.md)
+# [Legacy Introduction](legacy.md)
 # [SoMs](soms/intro.md)
 ## [CANxtra](soms/canxtra.md)
 ## [ChipworkX](soms/chipworkx.md)

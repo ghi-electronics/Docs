@@ -1,6 +1,6 @@
 # .NET Gadgeteer Modules
 ---
-This page lists all .NET Gadgeteer modules and how they can be used with [TinyCLR OS](../../../software/tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software, which we discourage,  then read the [.NET Gadgeteer Intro](intro.md) page.
+This page lists all .NET Gadgeteer modules and how they can be used with [TinyCLR OS](../../software/tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software, which we discourage,  then read the [.NET Gadgeteer Intro](intro.md) page.
 
 > [!Tip]
 > You can use Intellisense with the pin definition class to quickly determine where things go.
@@ -152,7 +152,7 @@ Use the [original Gadgteer driver](https://github.com/ghi-electronics/NETMF-Gadg
 ## Display CP7
 ![Display CP7](images/modules/display-cp7.jpg)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 // these are the wrong values!
@@ -177,13 +177,13 @@ VerticalSyncPolarity = true,
 ![Display N18](images/modules/display-n18.jpg)
 
 This is an SPI display that can work on any system with SPI bus, even small ones without TFT display support.
-See the [Display](../../../software/tinyclr/tutorials/display.md) tutorial for more details.
+See the [Display](../../software/tinyclr/tutorials/display.md) tutorial for more details.
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Display%20N18%20Module%20Schematic.pdf)
 
 ## Display N7
 ![Display N7](images/modules/display-n7.jpg)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 Width = 800,
@@ -217,7 +217,7 @@ Supported displays:
 * [NHD-7.0-800480EF-ATXV#](http://www.newhavendisplay.com/nhd70800480efatxv-p-6720.html)
 * [NHD-7.0-800480EF-ATXV#-CTP](http://www.newhavendisplay.com/nhd70800480efatxvctp-p-6912.html)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 
 The configurations for all 4.3" display:
 ```
@@ -319,7 +319,7 @@ public class FT5306Controller {
 ## Display T35
 ![Display T35](images/modules/display-t35.jpg)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 Width = 320,
@@ -342,7 +342,7 @@ VerticalSyncPolarity = false,
 ## Display T43
 ![Display T43](images/modules/display-t43.jpg)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 Width = 480,
@@ -365,7 +365,7 @@ VerticalSyncPolarity = false,
 ## Display TE35
 ![Display TE35](images/modules/display-te35.jpg)
 
-Read more about the [display support](../../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
+Read more about the [display support](../../software/tinyclr/tutorials/display.md) on TinyCLR OS.
 The configurations for the display:
 ```
 Width = 320,
@@ -670,7 +670,7 @@ The Motor Driver Module uses L298 H-bridge that can drive two motors up to 4A.
 * Pin 9: Motor B Speed (PWM)
 
 > [!Tip]
-> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../../software/tinyclr/tutorials/pwm.md).
+> NETMF didn't handle PWM correctly. TinyCLR OS breaks PWM pins to individual channels. Read more about [PWM](../../software/tinyclr/tutorials/pwm.md).
 
 This example will setup both motors and then will make motor A go very slow forward then very fast backward, in a loop.
 

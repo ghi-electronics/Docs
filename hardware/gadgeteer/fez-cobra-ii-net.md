@@ -15,7 +15,7 @@ We discourage the use of NETMF and Gadgeteer software technologies on our produc
 If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.md#with-tinyclr-os)
 
 ### Loading Bootloader v2
-Follow the instructions on the [G120 page](../../../hardware/scm/g120.md)
+Follow the instructions on the [G120 page](../scm/g120.md)
 
 ### Loading the Firmware
 
@@ -24,5 +24,5 @@ Follow the instructions on the [G120 page](../../../hardware/scm/g120.md)
 
 To activate bootloader v2, press and hold the LDR0 button while resetting the board.
 
-Download the [G120 firmware](../../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 

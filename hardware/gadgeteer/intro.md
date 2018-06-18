@@ -7,7 +7,7 @@
 > [!Tip]
 > We will refer to .NET Gadgeteer as Gadgeteer throughout the rest of the documentation.
 
-The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Like Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. [Learn more about NETMF](../../../software/netmf/intro.md)
+The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Like Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. [Learn more about NETMF](../../software/netmf/intro.md)
 
 Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to [announce](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197) the EOL for Gadgeteer; however, the Gadgeteer hardware can still be used [with TinyCLR OS](#with-tinyclr-os).
 
@@ -64,7 +64,7 @@ To use .NET Gadgeteer's legacy software, install:
 1. [Visual Studio 20013](https://www.visualstudio.com/vs/older-downloads/) (community edition is also supported)
 2. Unzip and install netmfvs2013.vsix and MicroFramewrokSDK.msi from [here](http://netmf.codeplex.com/downloads/get/1423115) 
 3. Microsoft's [Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
-4. GHI Electronics' [NETMF SDK](../../../software/netmf/downloads.md#available-netmf-sdks). The latest is recommended.
+4. GHI Electronics' [NETMF SDK](../../software/netmf/downloads.md#available-netmf-sdks). The latest is recommended.
 
 The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Documents/Guides/NET%20Gadgeteer%20for%20Beginners.pdf) guide is a good starting point.
 
@@ -78,14 +78,14 @@ It all started in this video!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6-FzcgJJM" frameborder="0" allowfullscreen></iframe>
 
-This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR OS](../../../software/tinyclr/intro.md).
+This means you can still use all your beloved .NET Gadgeteer gear with [TinyCLR OS](../../software/tinyclr/intro.md).
 
 The first step needed to use TinyCLR OS is to load the GHI Bootloader v2 onto your mainboard, then use that to load the TinyCLR OS firmware. Each mainboard product page includes the needed instructions. Once those are loaded, you can start blinking the debug LED, detailed in the next section.
 
 ## Blinking the LED
 
 > [!Tip]
-> If you have never used TinyCLR OS before, [start here]( ../../../software/tinyclr/tutorials/intro.md)
+> If you have never used TinyCLR OS before, [start here]( ../../software/tinyclr/tutorials/intro.md)
 
 This example will blink the debug LED. You only need to add a power module to your mainboard.
 

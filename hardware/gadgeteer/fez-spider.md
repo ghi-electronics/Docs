@@ -19,10 +19,10 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 > This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.
 
 **To update using USB**
-1. Download the [EMX bootloader file](../../../software/tinyclr/loaders/ghi-bootloader.md#emx)
+1. Download the [EMX bootloader file](../../software/tinyclr/loaders/ghi-bootloader.md#emx)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1, #2 and #3 to the `ON` position.
 3. Connect the FEZ Spider to a power module (red module) and then to a PC.
-4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
+4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../software/netmf/intro.md) SDK.
 5. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 6. Select serial and pick the COM port associated with your board.
 7. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)
@@ -45,5 +45,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.
 
-Download the [EMX firmware](../../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Download the [EMX firmware](../../software/tinyclr/downloads.md#emx) and follow [Loading the Firmware](../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 
