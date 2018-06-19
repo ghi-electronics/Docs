@@ -6,14 +6,14 @@ This section covers GHI's legacy products. These products are not recommended fo
 
 |  |  |
 |--|--|
-| **SoMs** </br> [**Learn more...**](soms/intro.md) | **Gadgeteer** </br> [**Learn more...**](gadgeteer/intro.md) |
-| [![Legacy SoMs](images/legacy-soms.jpg)](soms/intro.md) | [![FEZ Cobra II](gadgeteer/images/gadgeteer.jpg)](gadgeteer/intro.md) |
-| **Gadgeteering** </br> [**Learn more...**](gadgeteering.md) | **File System** </br> [**Learn more...**](filesystem.md) |
-| [![Fez Lynx](images/fez-lynx-sm.jpg)](gadgeteering.md) | [![F40](images/f40-board.jpg)](filesystem.md) |
-| **Imaging** </br> [**Learn more...**](imaging.md) | **Raspberry PI Hats** </br> [**Learn more...**](raspberrypi-hats.md) |
-| [![Alcam](images/alcam-sm.jpg)](imaging.md) | [![FEZ Hat](images/fez-hat.jpg)](raspberrypi-hats.md) |
-| **mBuino** </br> [**Learn more...**](mbuino.md) | 
-| [![Sample Code](images/mbuino-sm.jpg)](mbuino.md) |  |
+| **SoMs** </br> [**Learn more...**](scm.md) | **Gadgeteer** </br> [**Learn more...**](../hardware/gadgeteer/intro.md) |
+| [![Legacy SoMs](images/legacy-soms.jpg)](scm.md) | [![FEZ Cobra II](../hardware/gadgeteer/images/gadgeteer.jpg)](../hardware/gadgeteer/intro.md) |
+| **Gadgeteering** </br> [**Learn more...**](../hardware/gadgeteering.md) | **File System** </br> [**Learn more...**](../hardware/filesystem.md) |
+| [![Fez Lynx](../hardware/images/fez-lynx-sm.jpg)](../hardware/gadgeteering.md) | [![F40](../hardware/images/f40-board.jpg)](../hardware/filesystem.md) |
+| **Imaging** </br> [**Learn more...**](../hardware/imaging.md) | **Raspberry PI Hats** </br> [**Learn more...**](../hardware/raspberrypi-hats.md) |
+| [![Alcam](../hardware/images/alcam-sm.jpg)](../hardware/imaging.md) | [![FEZ Hat](../hardware/images/fez-hat.jpg)](../hardware/raspberrypi-hats.md) |
+| **mBuino** </br> [**Learn more...**](../hardware/mbuino.md) | 
+| [![Sample Code](../hardware/images/mbuino-sm.jpg)](../hardware/mbuino.md) |  |
 
 > [!Tip]
 > Our [**community forum**](https://forums.ghielectronics.com/) is a great place to get help from our engineers and from thousands of community members: **https://forums.ghielectronics.com/**

@@ -2,4 +2,4 @@
 # [SCM](hardware/scm/intro.md)
 # [TinyCLR](software/tinyclr/intro.md)
 # [NETMF](software/netmf/intro.md)
-# [Legacy](hardware/legacy.md)
+# [Legacy](legacy/intro.md)
