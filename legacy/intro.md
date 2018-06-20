@@ -6,8 +6,8 @@ This section covers GHI's legacy products. These products are not recommended fo
 
 |  |  |
 |--|--|
-| **SoMs** </br> [**Learn more...**](scm.md) | **Gadgeteer** </br> [**Learn more...**](../hardware/gadgeteer/intro.md) |
-| [![Legacy SoMs](images/legacy-soms.jpg)](scm.md) | [![FEZ Cobra II](../hardware/gadgeteer/images/gadgeteer.jpg)](../hardware/gadgeteer/intro.md) |
+| **SoMs** </br> [**Learn more...**](som.md) | **Gadgeteer** </br> [**Learn more...**](../hardware/gadgeteer/intro.md) |
+| [![Legacy SoMs](images/legacy-soms.jpg)](som.md) | [![FEZ Cobra II](../hardware/gadgeteer/images/gadgeteer.jpg)](../hardware/gadgeteer/intro.md) |
 | **Gadgeteering** </br> [**Learn more...**](../hardware/gadgeteering.md) | **File System** </br> [**Learn more...**](../hardware/filesystem.md) |
 | [![Fez Lynx](../hardware/images/fez-lynx-sm.jpg)](../hardware/gadgeteering.md) | [![F40](../hardware/images/f40-board.jpg)](../hardware/filesystem.md) |
 | **Imaging** </br> [**Learn more...**](../hardware/imaging.md) | **Raspberry PI Hats** </br> [**Learn more...**](../hardware/raspberrypi-hats.md) |

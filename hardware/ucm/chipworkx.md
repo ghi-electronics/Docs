@@ -1,6 +1,6 @@
 # ChipworkX
 ---
-![ChipworkX](images/chipworksX.jpg)
+![ChipworkX](images/chipworkx.jpg)
 
 ChipworkX is a NETMF System on Module. 
 
