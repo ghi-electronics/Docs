@@ -1,4 +1,5 @@
-# [Home](https://ghielectronics.com/)
+# [Main Site](https://ghielectronics.com/)
+# [Forums](https://forums.ghielectronics.com/)
 # [UCM](hardware/ucm/intro.md)
 # [SCM](hardware/scm/intro.md)
 # [TinyCLR](software/tinyclr/intro.md)
