@@ -26,6 +26,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "hardware/automotive.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/automotive.html",
+          "hash": "8j7xdd2t8IytsTGzSb7Gpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "hardware/breakout/fez-cerb40.md",
       "output": {
         ".html": {
@@ -2073,6 +2085,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "hardware/images/canxtra.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/canxtra.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "hardware/images/f40-board-noborder.jpg",
       "output": {
         "resource": {
@@ -2230,30 +2253,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/scm/canxtra.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/scm/canxtra.html",
-          "hash": "uzXGRfrTEr7JFgxFOgnPWw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/scm/chipworkx.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/scm/chipworkx.html",
-          "hash": "+dGcr6TXxJ6rYj0g38Pfsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "hardware/scm/embedded-master.md",
       "output": {
         ".html": {
@@ -2331,28 +2330,6 @@
         ".html": {
           "relative_path": "hardware/scm/g80.html",
           "hash": "VVY2acZy4bLhsSzdQRwElA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/scm/images/canxtra.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/scm/images/canxtra.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/scm/images/chipworksX.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/scm/images/chipworksX.jpg"
         }
       },
       "is_incremental": false,
@@ -2616,6 +2593,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "hardware/ucm/chipworkx.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/ucm/chipworkx.html",
+          "hash": "DS0HPa4ngbRVDoN7vbD+Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "hardware/ucm/development-options.md",
       "output": {
         ".html": {
@@ -2666,6 +2655,17 @@
       "output": {
         "resource": {
           "relative_path": "hardware/ucm/images/accessories.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/ucm/images/chipworkx.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/ucm/images/chipworkx.jpg"
         }
       },
       "is_incremental": false,
@@ -3079,7 +3079,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/intro.html",
-          "hash": "8p9dZDTYiY7hFD4AvEismg=="
+          "hash": "N65edCMloCsRoLKX0mWKrw=="
         }
       },
       "is_incremental": false,
@@ -3087,11 +3087,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "legacy/scm.md",
+      "source_relative_path": "legacy/som.md",
       "output": {
         ".html": {
-          "relative_path": "legacy/scm.html",
-          "hash": "eup/p1ZFRvGKxITWP839Yw=="
+          "relative_path": "legacy/som.html",
+          "hash": "QLV5M7se7UB9WIiq5O1i2Q=="
         }
       },
       "is_incremental": false,
@@ -3103,7 +3103,7 @@
       "output": {
         ".html": {
           "relative_path": "legacy/toc.html",
-          "hash": "CZrPbZiQmcprH5e2ivIwuA=="
+          "hash": "PbBatSSd2bsF2EosSUv4Lw=="
         }
       },
       "is_incremental": false,
@@ -4534,7 +4534,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "TzYFVzpD6XEnfylHP/JTlg=="
+          "hash": "ES5zAIh32gtl9UcTRHQ94Q=="
         }
       },
       "is_incremental": false,
@@ -4549,18 +4549,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
