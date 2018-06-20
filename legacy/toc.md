@@ -1,6 +1,5 @@
 # [Legacy Introduction](intro.md)
 # [SoMs](som.md)
-## [CANxtra](../hardware/scm/canxtra.md)
 ## [ChipworkX](../hardware/ucm/chipworkx.md)
 ## [Embedded Master](../hardware/scm/embedded-master.md)
 ## [EMX](../hardware/scm/emx.md)
@@ -39,6 +38,7 @@
 ## [G120 TH](../hardware/breakout/g120-th.md)
 ## [G400 TH](../hardware/breakout/g400-th.md)
 
+# [Automotive](../hardware/automotive.md)
 # [File System](../hardware/filesystem.md)
 # [Gadgeteering](../hardware/gadgeteering.md)
 # [Imaging](../hardware/imaging.md)
