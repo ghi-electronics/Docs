@@ -26,6 +26,454 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/fez-cerb40.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/fez-cerb40.html",
+          "hash": "96MYMqRRV93QC0AaUbYEdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/fez-cobra.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/fez-cobra.html",
+          "hash": "OZsAQgt6GljoDMEZy3SwmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/fez-rhino.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/fez-rhino.html",
+          "hash": "bi0IhtJdilSK2auwxC4gsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/g120-hdr.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/g120-hdr.html",
+          "hash": "IpaCgzYljHw/+W3RcVkgbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/g120-th.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/g120-th.html",
+          "hash": "4sYKFWwDVpcLMW5R6T9mWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/g30-th.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/g30-th.html",
+          "hash": "13aiWR7bt2+aJPBqayAqpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/g400-th.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/g400-th.html",
+          "hash": "Drxt+yGxwSeOmuPmMX2wYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/g80-th.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/g80-th.html",
+          "hash": "qHn5g0JbOP8HfiwgShsSUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/fez-cerb40.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/fez-cerb40.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/fez-cerb40_II.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/fez-cerb40_II.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/fez-cobra.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/fez-cobra.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/fez-rhino.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/fez-rhino.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g120hdr-rev2-top.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g120hdr-rev2-top.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g120hdr-top.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g120hdr-top.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g120hdr.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g120hdr.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g120th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g120th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g30th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g30th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g400th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g400th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/breakout/images/g80th.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/breakout/images/g80th.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/breakout/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/breakout/intro.html",
+          "hash": "hMDigEhMofnN1/wqKCCcdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-cerbuino-bee.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-cerbuino-bee.html",
+          "hash": "gP+jPneJftx6qHx3+2uXNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-cerbuino-net.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-cerbuino-net.html",
+          "hash": "/dxPWyzkoZddS7BxJtXbqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-cobra-iii.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-cobra-iii.html",
+          "hash": "gp6z856pSk98uAcTSyVQ+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-domino.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-domino.html",
+          "hash": "Ojj51/AbLT9AzvWnUxrwOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-lemur.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-lemur.html",
+          "hash": "254TjiRo9EF6qIqJoHVlow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-mini.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-mini.html",
+          "hash": "yHuPExriktxgCqIeUhMR7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-panda-ii.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-panda-ii.html",
+          "hash": "cB+bP7ygj9UXVjsXQEECDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-panda-iii.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-panda-iii.html",
+          "hash": "0HFjsdzpXXoUTq/vH54z+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/fez-panda.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/fez-panda.html",
+          "hash": "I81n1GNtmI3qGwOCyEyriA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-cerbuino-bee.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-cerbuino-bee.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-cerbuino-net.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-cerbuino-net.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-cobra-iii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-cobra-iii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-domino.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-domino.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-lemur.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-lemur.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-mini.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-mini.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-panda-ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-panda-ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-panda-iii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-panda-iii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/duino/images/fez-panda.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/duino/images/fez-panda.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/duino/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/duino/intro.html",
+          "hash": "+Rm7WiuK81Y/8SeHtzrfNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "hardware/fez/arduino.md",
       "output": {
         ".html": {
@@ -380,11 +828,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/fez-cerb40.md",
+      "source_relative_path": "hardware/filesystem.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/fez-cerb40.html",
-          "hash": "dkM7jVPEPTI9yjeUiIECXg=="
+          "relative_path": "hardware/filesystem.html",
+          "hash": "is2fTBaWFM6KDa1lqDZ6TA=="
         }
       },
       "is_incremental": false,
@@ -392,11 +840,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/fez-cobra.md",
+      "source_relative_path": "hardware/gadgeteer/fez-cerberus.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/fez-cobra.html",
-          "hash": "96LM3M8EzJDOS6o3fD7sQQ=="
+          "relative_path": "hardware/gadgeteer/fez-cerberus.html",
+          "hash": "mW/d4V6RAK3atAf05f+rhw=="
         }
       },
       "is_incremental": false,
@@ -404,11 +852,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/fez-rhino.md",
+      "source_relative_path": "hardware/gadgeteer/fez-cerbot.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/fez-rhino.html",
-          "hash": "tq25uTQrMe4XR4O9tWb7oA=="
+          "relative_path": "hardware/gadgeteer/fez-cerbot.html",
+          "hash": "T6HAnABeEMpalGrpwAP1Zw=="
         }
       },
       "is_incremental": false,
@@ -416,11 +864,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/g120-hdr.md",
+      "source_relative_path": "hardware/gadgeteer/fez-cobra-ii-net.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/g120-hdr.html",
-          "hash": "X7oIfhlYVjH5HHzP4gG18Q=="
+          "relative_path": "hardware/gadgeteer/fez-cobra-ii-net.html",
+          "hash": "Ptx8cT+5XeA3GmN0Nn67gg=="
         }
       },
       "is_incremental": false,
@@ -428,11 +876,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/g120-th.md",
+      "source_relative_path": "hardware/gadgeteer/fez-cobra-ii.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/g120-th.html",
-          "hash": "CUfcwsGK5bLhfZvhFDdY0Q=="
+          "relative_path": "hardware/gadgeteer/fez-cobra-ii.html",
+          "hash": "K9DocknudeTpRis8qoGOWQ=="
         }
       },
       "is_incremental": false,
@@ -440,11 +888,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/g30-th.md",
+      "source_relative_path": "hardware/gadgeteer/fez-hydra.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/g30-th.html",
-          "hash": "7OvtRm/jgUTqOOL39892GQ=="
+          "relative_path": "hardware/gadgeteer/fez-hydra.html",
+          "hash": "AgjRbe8A8uULAq76XfRuGw=="
         }
       },
       "is_incremental": false,
@@ -452,11 +900,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/g400-th.md",
+      "source_relative_path": "hardware/gadgeteer/fez-raptor.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/g400-th.html",
-          "hash": "R9bCmA1HkQvrbj0h6rDcIQ=="
+          "relative_path": "hardware/gadgeteer/fez-raptor.html",
+          "hash": "IzuBAgaSg1F0e0BkfnRRAw=="
         }
       },
       "is_incremental": false,
@@ -464,132 +912,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/g80-th.md",
+      "source_relative_path": "hardware/gadgeteer/fez-reaper.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/g80-th.html",
-          "hash": "zdsJDvLIJfHeOW6YX0qcvw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez-cerb40.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez-cerb40.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez-cerb40_II.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez-cerb40_II.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez-cobra.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez-cobra.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/fez-rhino.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/fez-rhino.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g120hdr-rev2-top.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g120hdr-rev2-top.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g120hdr-top.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g120hdr-top.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g120hdr.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g120hdr.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g120th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g120th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g30th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g30th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g400th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g400th.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/breakout/images/g80th.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/breakout/images/g80th.jpg"
+          "relative_path": "hardware/gadgeteer/fez-reaper.html",
+          "hash": "egFXQVl3gkZ8BQUPZdTICA=="
         }
       },
       "is_incremental": false,
@@ -597,11 +924,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/breakout/intro.md",
+      "source_relative_path": "hardware/gadgeteer/fez-spider-ii.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/breakout/intro.html",
-          "hash": "7IC1x2QvjEzvTYouYFPLOw=="
+          "relative_path": "hardware/gadgeteer/fez-spider-ii.html",
+          "hash": "SnDhy115kx0DqBAIGqWTgQ=="
         }
       },
       "is_incremental": false,
@@ -609,11 +936,1078 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-cerbuino-bee.md",
+      "source_relative_path": "hardware/gadgeteer/fez-spider.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-cerbuino-bee.html",
-          "hash": "VcwwrsH5JGfLXid4a/KMQg=="
+          "relative_path": "hardware/gadgeteer/fez-spider.html",
+          "hash": "DYJF4E3Qi7L1oNBtsnGOuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-cerberus.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-cerberus.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-cerbot.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-cerbot.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-cobra-ii-net.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-cobra-ii-net.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-cobra-ii-wifi.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-cobra-ii-wifi.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-cobra-ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-cobra-ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-gameo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-gameo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-hydra.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-hydra.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-raptor.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-raptor.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-reaper.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-reaper.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-spider-ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-spider-ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/fez-spider.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/fez-spider.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/gadgeteer.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/gadgeteer.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/accel-g248.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/accel-g248.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/barometer.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/barometer.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/bluetooth.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/bluetooth.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/breadboard-x1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/breadboard-x1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/breakout-tb10.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/breakout-tb10.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/breakout.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/breakout.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/button-s7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/button-s7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/button.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/button.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/camera.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/camera.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/can-dw.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/can-dw.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/cellular-radio.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/cellular-radio.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/character-display.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/character-display.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/color-sense.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/color-sense.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/compass.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/compass.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/current-acs712.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/current-acs712.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-cp7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-cp7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-n18.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-n18.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-n7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-n7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-nhvn.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-nhvn.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-t35.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-t35.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-t43.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-t43.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/display-te35.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/display-te35.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/distance-us3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/distance-us3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/ethernet-enc28.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/ethernet-enc28.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/ethernet-j11d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/ethernet-j11d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/extender.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/extender.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/feztive.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/feztive.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/flash.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/flash.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/gas-sense.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/gas-sense.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/gps.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/gps.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/gyro.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/gyro.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/hd44780.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/hd44780.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/hub-ap5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/hub-ap5.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/io60p16.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/io60p16.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/ir-reciever.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/ir-reciever.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/joystick.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/joystick.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/keypad-kp16.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/keypad-kp16.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/led-7c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/led-7c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/led-7r.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/led-7r.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/led-strip.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/led-strip.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/light-sense.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/light-sense.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/load.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/load.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/maxo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/maxo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/microsd.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/microsd.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/moisture.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/moisture.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/motordriver.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/motordriver.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/multicolor_led.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/multicolor_led.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/music.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/music.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/null-modem.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/null-modem.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/obd-ii.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/obd-ii.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/onewire-x1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/onewire-x1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/parallel-cnc.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/parallel-cnc.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/pir.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/pir.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/potentiometer.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/potentiometer.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/pulse-count.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/pulse-count.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/pulse-inout.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/pulse-inout.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/pulse-oximeter.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/pulse-oximeter.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/radio-fm1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/radio-fm1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/reflector-r3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/reflector-r3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/relay-isox16.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/relay-isox16.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/relay-x1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/relay-x1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/rfid-reader.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/rfid-reader.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/rotary-h1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/rotary-h1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/rs232.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/rs232.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/rs485.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/rs485.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/s-plus.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/s-plus.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/sd-card.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/sd-card.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/serial-camera.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/serial-camera.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/stepper-l6470.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/stepper-l6470.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/temp-humidity.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/temp-humidity.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/thermocouple.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/thermocouple.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/touch-c8.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/touch-c8.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/touch-l12.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/touch-l12.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/tunes.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/tunes.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/uc-battery-4xaa.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/uc-battery-4xaa.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/usb-client-sp.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/usb-client-sp.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/usb-client.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/usb-client.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/usb-host.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/usb-host.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/usb-serial-sp.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/usb-serial-sp.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/usb-serial.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/usb-serial.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/video-out.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/video-out.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/wifi-rn171.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/wifi-rn171.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/wifi-rs21.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/wifi-rs21.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/modules/xbee-adapter.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/modules/xbee-adapter.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/gadgeteer/images/socket.png",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/gadgeteer/images/socket.png"
         }
       },
       "is_incremental": false,
@@ -621,11 +2015,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-cerbuino-net.md",
+      "source_relative_path": "hardware/gadgeteer/intro.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-cerbuino-net.html",
-          "hash": "br3YBMKZky/Pn+01N0ZnWw=="
+          "relative_path": "hardware/gadgeteer/intro.html",
+          "hash": "ravzTxbrWTp2mFb3FACu8g=="
         }
       },
       "is_incremental": false,
@@ -633,11 +2027,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-cobra-iii.md",
+      "source_relative_path": "hardware/gadgeteer/modules.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-cobra-iii.html",
-          "hash": "nxrj5uD3Yt0ncp/RNZLR6g=="
+          "relative_path": "hardware/gadgeteer/modules.html",
+          "hash": "kBP81oqCuJVFXJ3VVSuMiA=="
         }
       },
       "is_incremental": false,
@@ -645,11 +2039,154 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-domino.md",
+      "source_relative_path": "hardware/gadgeteering.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-domino.html",
-          "hash": "ycSGm1kWjV/yAAouCWCQkg=="
+          "relative_path": "hardware/gadgeteering.html",
+          "hash": "0AHb4zpa7MQbZ/WdTTkbUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/alcam-sm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/alcam-sm.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/alcam.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/alcam.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/f40-board-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/f40-board-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/f40-board.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/f40-board.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/f40.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/f40.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-cream.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-cream.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-hat.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-hat.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-lynx-sm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-lynx-sm.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-lynx.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-lynx.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-protopi.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-protopi.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/fez-utility.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/fez-utility.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/mbuino-sm.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/mbuino-sm.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/images/mbuino.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/images/mbuino.jpg"
         }
       },
       "is_incremental": false,
@@ -657,11 +2194,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-lemur.md",
+      "source_relative_path": "hardware/imaging.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-lemur.html",
-          "hash": "40A2lOsYNwYSoNkxo+J2wQ=="
+          "relative_path": "hardware/imaging.html",
+          "hash": "KoiZmajLwvSfk8M39SJ19g=="
         }
       },
       "is_incremental": false,
@@ -669,11 +2206,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-mini.md",
+      "source_relative_path": "hardware/mbuino.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-mini.html",
-          "hash": "FE/zfPGuD5JnGrbDLFCaNg=="
+          "relative_path": "hardware/mbuino.html",
+          "hash": "xmzVwAKjgLEUtnEQkXboQw=="
         }
       },
       "is_incremental": false,
@@ -681,11 +2218,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-panda-ii.md",
+      "source_relative_path": "hardware/raspberrypi-hats.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-panda-ii.html",
-          "hash": "sob/ykw8l45deetdfHOxDQ=="
+          "relative_path": "hardware/raspberrypi-hats.html",
+          "hash": "nsQGfQXvv/hRtAlaLnTfgw=="
         }
       },
       "is_incremental": false,
@@ -693,11 +2230,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-panda-iii.md",
+      "source_relative_path": "hardware/scm/canxtra.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-panda-iii.html",
-          "hash": "AM0qw3qoC3vP3dYXbflLFQ=="
+          "relative_path": "hardware/scm/canxtra.html",
+          "hash": "uzXGRfrTEr7JFgxFOgnPWw=="
         }
       },
       "is_incremental": false,
@@ -705,110 +2242,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/fez-panda.md",
+      "source_relative_path": "hardware/scm/chipworkx.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/fez-panda.html",
-          "hash": "LCPOgxhHS4Zjvh34xymUTw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-cerbuino-bee.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-cerbuino-bee.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-cerbuino-net.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-cerbuino-net.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-cobra-iii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-cobra-iii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-domino.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-domino.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-lemur.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-lemur.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-mini.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-mini.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-panda-ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-panda-ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-panda-iii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-panda-iii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/duino/images/fez-panda.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/duino/images/fez-panda.jpg"
+          "relative_path": "hardware/scm/chipworkx.html",
+          "hash": "+dGcr6TXxJ6rYj0g38Pfsg=="
         }
       },
       "is_incremental": false,
@@ -816,11 +2254,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/duino/intro.md",
+      "source_relative_path": "hardware/scm/embedded-master.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/duino/intro.html",
-          "hash": "RTijl0Gyu/RAAQOeDILZwA=="
+          "relative_path": "hardware/scm/embedded-master.html",
+          "hash": "iPfdh+AKnFXE9gijCufLSw=="
         }
       },
       "is_incremental": false,
@@ -828,1618 +2266,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/filesystem.md",
+      "source_relative_path": "hardware/scm/emx.md",
       "output": {
         ".html": {
-          "relative_path": "hardware/legacy/filesystem.html",
-          "hash": "nMvnCCfxT2x+Y710a0DezA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-cerberus.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-cerberus.html",
-          "hash": "ZDKIMXtuJRLOS+DR6B4SXA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-cerbot.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-cerbot.html",
-          "hash": "mGV1B4DLh3VIqUj4YMP5Xg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii-net.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii-net.html",
-          "hash": "qSBKBRfFAjIaobv4SuLY/w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-cobra-ii.html",
-          "hash": "eL6j0LSo2oq+p9zF3FL83g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-hydra.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-hydra.html",
-          "hash": "Luvg6PZGPJLvKVPbN4hTBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-raptor.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-raptor.html",
-          "hash": "F216cbHBzpgCgJTAC7tq3w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-reaper.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-reaper.html",
-          "hash": "G2weSLP6BRaimU0eRg8FOg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-spider-ii.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-spider-ii.html",
-          "hash": "akTL+FelI4CbddtpNuQvoA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/fez-spider.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/fez-spider.html",
-          "hash": "jniHeELurEmwL7GrNekbJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cerberus.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-cerberus.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cerbot.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-cerbot.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii-net.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii-net.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii-wifi.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii-wifi.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-cobra-ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-gameo.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-gameo.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-hydra.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-hydra.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-raptor.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-raptor.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-reaper.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-reaper.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-spider-ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-spider-ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/fez-spider.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/fez-spider.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/gadgeteer.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/gadgeteer.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/accel-g248.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/accel-g248.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/barometer.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/barometer.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/bluetooth.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/bluetooth.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard-x1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/breadboard-x1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breakout-tb10.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/breakout-tb10.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/breakout.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/breakout.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/button-s7.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/button-s7.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/button.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/button.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/camera.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/camera.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/can-dw.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/can-dw.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/cellular-radio.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/cellular-radio.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/character-display.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/character-display.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/color-sense.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/color-sense.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/compass.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/compass.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/current-acs712.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/current-acs712.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-cp7.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-cp7.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-n18.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-n18.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-n7.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-n7.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-nhvn.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-nhvn.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-t35.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-t35.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-t43.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-t43.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/display-te35.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/display-te35.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/distance-us3.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/distance-us3.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-enc28.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-enc28.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-j11d.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ethernet-j11d.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/extender.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/extender.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/feztive.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/feztive.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/flash.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/flash.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/gas-sense.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/gas-sense.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/gps.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/gps.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/gyro.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/gyro.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/hd44780.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/hd44780.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/hub-ap5.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/hub-ap5.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/io60p16.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/io60p16.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/ir-reciever.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/ir-reciever.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/joystick.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/joystick.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/keypad-kp16.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/keypad-kp16.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-7c.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-7c.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-7r.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-7r.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/led-strip.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/led-strip.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/light-sense.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/light-sense.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/load.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/load.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/maxo.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/maxo.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/microsd.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/microsd.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/moisture.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/moisture.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/motordriver.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/motordriver.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/multicolor_led.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/multicolor_led.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/music.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/music.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/null-modem.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/null-modem.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/obd-ii.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/obd-ii.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/onewire-x1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/onewire-x1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/parallel-cnc.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/parallel-cnc.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pir.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pir.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/potentiometer.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/potentiometer.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-count.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-count.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-inout.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-inout.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-oximeter.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/pulse-oximeter.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/radio-fm1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/radio-fm1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/reflector-r3.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/reflector-r3.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay-isox16.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay-isox16.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/relay-x1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/relay-x1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rfid-reader.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rfid-reader.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rotary-h1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rotary-h1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rs232.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rs232.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/rs485.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/rs485.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/s-plus.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/s-plus.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/sd-card.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/sd-card.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/serial-camera.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/serial-camera.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/stepper-l6470.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/stepper-l6470.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/temp-humidity.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/temp-humidity.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/thermocouple.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/thermocouple.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch-c8.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch-c8.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/touch-l12.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/touch-l12.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/tunes.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/tunes.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/uc-battery-4xaa.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/uc-battery-4xaa.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client-sp.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client-sp.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-client.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-host.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-host.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial-sp.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial-sp.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/usb-serial.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/video-out.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/video-out.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rn171.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rn171.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rs21.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/wifi-rs21.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/modules/xbee-adapter.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/modules/xbee-adapter.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/gadgeteer/images/socket.png",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/gadgeteer/images/socket.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/intro.html",
-          "hash": "qApcY4nF67rnxdv/r4jAfQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteer/modules.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteer/modules.html",
-          "hash": "5U/7Xt/WeRQwRa3DH1CP+g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/gadgeteering.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/gadgeteering.html",
-          "hash": "Ue98ndNegIlz9UTeRQ6H9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/alcam-sm.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/alcam-sm.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/alcam.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/alcam.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/f40-board-noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/f40-board-noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/f40-board.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/f40-board.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/f40.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/f40.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-cream.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-cream.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-hat.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-hat.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-lynx-sm.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-lynx-sm.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-lynx.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-lynx.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-protopi.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-protopi.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/fez-utility.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/fez-utility.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/legacy-noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/legacy-noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/legacy-soms.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/legacy-soms.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/mbuino-sm.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/mbuino-sm.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/images/mbuino.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/images/mbuino.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/imaging.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/imaging.html",
-          "hash": "11QsR4Amwa5Q0t5Wyp9uvw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/intro.html",
-          "hash": "Ns/uTGMm60iiNnjQkhNSgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/mbuino.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/mbuino.html",
-          "hash": "OqLuicBdnDZw9chZb3teow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/raspberrypi-hats.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/raspberrypi-hats.html",
-          "hash": "pKsw9pOwGscq4nf7MsAOqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/canxtra.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/canxtra.html",
-          "hash": "ifJieeaeBhPoBUuzxBRmIA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/chipworkx.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/chipworkx.html",
-          "hash": "xY9CqyxEdE4Gb3QDvXcKnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/embedded-master.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/embedded-master.html",
-          "hash": "Aw83HA/uy7noWBjhdGPO5w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/emx.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/emx.html",
-          "hash": "/6TyCLUAzLE+pvqfyEoxNw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/canxtra.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/canxtra.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/chipworksX.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/chipworksX.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/embedded-master.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/embedded-master.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/emx-dev-sys.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/emx-dev-sys.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/emx-som.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/emx-som.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/legacy-soms.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/legacy-soms.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi-100.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi-100.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi-144.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi-144.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "hardware/legacy/soms/images/usbizi-devsys.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "hardware/legacy/soms/images/usbizi-devsys.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/intro.html",
-          "hash": "AAQe1BgzVJPj/1e+W1sjpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "hardware/legacy/soms/usbizi.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/soms/usbizi.html",
-          "hash": "4N3G9Lri7JIuUOFt3dZwaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "hardware/legacy/toc.md",
-      "output": {
-        ".html": {
-          "relative_path": "hardware/legacy/toc.html",
-          "hash": "KD5l8PKNFv1QLdKWYvv+Hw=="
+          "relative_path": "hardware/scm/emx.html",
+          "hash": "UI9ZWinvamNnAU3BvQanFg=="
         }
       },
       "is_incremental": false,
@@ -2487,7 +2318,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g400s.html",
-          "hash": "DmdPgg7S/C5y0DWbeM5rSg=="
+          "hash": "pK/ty5pw9E78Rtplu+TuJw=="
         }
       },
       "is_incremental": false,
@@ -2500,6 +2331,61 @@
         ".html": {
           "relative_path": "hardware/scm/g80.html",
           "hash": "VVY2acZy4bLhsSzdQRwElA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/canxtra.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/canxtra.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/chipworksX.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/chipworksX.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/embedded-master.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/embedded-master.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/emx-dev-sys.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/emx-dev-sys.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/emx-som.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/emx-som.jpg"
         }
       },
       "is_incremental": false,
@@ -2660,6 +2546,39 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/usbizi-100.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/usbizi-100.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/usbizi-144.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/usbizi-144.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/scm/images/usbizi-devsys.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/scm/images/usbizi-devsys.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "hardware/scm/intro.md",
       "output": {
@@ -2678,6 +2597,18 @@
         ".html": {
           "relative_path": "hardware/scm/toc.html",
           "hash": "tixnuUd8j+FT65Vgx3nFaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/scm/usbizi.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/scm/usbizi.html",
+          "hash": "OJVEXvxCKQXS9wbuwczV/g=="
         }
       },
       "is_incremental": false,
@@ -3114,7 +3045,65 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Qb9wkAQd4qv+/3HSFEpGjQ=="
+          "hash": "z5hBrSuTANVjYpDXjUCtqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/images/legacy-noborder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/images/legacy-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "legacy/images/legacy-soms.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "legacy/images/legacy-soms.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/intro.html",
+          "hash": "8p9dZDTYiY7hFD4AvEismg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "legacy/scm.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/scm.html",
+          "hash": "eup/p1ZFRvGKxITWP839Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "legacy/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "legacy/toc.html",
+          "hash": "CZrPbZiQmcprH5e2ivIwuA=="
         }
       },
       "is_incremental": false,
@@ -4294,7 +4283,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/porting/intro.html",
-          "hash": "l5G29LV3FRbfcGSAilZUOg=="
+          "hash": "zxLziPin8gy8pzd+SV8Erg=="
         }
       },
       "is_incremental": false,
@@ -4330,7 +4319,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/release-notes.html",
-          "hash": "OVWrvbqrGPR/4uanLUielw=="
+          "hash": "UGHs6TTtCk4xpn87Tx39Sw=="
         }
       },
       "is_incremental": false,
@@ -4545,7 +4534,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "rB+9wSvDGPzoHjv1Tw8GLw=="
+          "hash": "TzYFVzpD6XEnfylHP/JTlg=="
         }
       },
       "is_incremental": false,
@@ -4565,13 +4554,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

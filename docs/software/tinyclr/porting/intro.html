@@ -79,12 +79,12 @@
 
 <hr>
 <p><img src="../images/tinyclr-logo-noborder.jpg" alt="TinyCLR Logo"></p>
-<p>TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpreter and runtime for several architectures. Currently Cortex M3, Cortex M4, ARM7, and ARM9 are supported. To get started we&#39;ll build the FEZCLR firmware that the FEZ uses.</p>
+<p>TinyCLR OS can be ported to new devices. We provide the precompiled .NET interpreter and runtime for several architectures. Currently Cortex M3, Cortex M4, Cortex M7, ARM7, and ARM9 are supported. To get started we&#39;ll build the FEZCLR firmware that the FEZ uses.</p>
 <ol>
-<li>Clone the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">ports repo</a> to your computer. If you&#39;re new to git or haven&#39;t even heard of it, take a look at the <a href="https://git-scm.com/book/en/v2">Git Book</a> to learn more about it.</li>
+<li>Clone the <a href="https://github.com/ghi-electronics/TinyCLR-Ports">ports repo</a> to your computer. Make sure to clone the master branch so you&#39;re using the latest stable version. If you&#39;re new to git or haven&#39;t even heard of it, take a look at the <a href="https://git-scm.com/book/en/v2">Git Book</a> to learn more about it.</li>
 <li>Download and install <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">GCC</a>. The latest version we have tested is <code>7-2017-q4-major</code>.</li>
 <li>Download and extract the contents of <a href="https://github.com/ARM-software/CMSIS_5/releases/download/5.2.0/ARM.CMSIS.5.2.0.pack">CMSIS</a> into the CMSIS folder of the cloned repo. While the file extension is <code>*.pack</code>, it&#39;s actually a zip that you can extract once you rename it to <code>*.zip</code>.</li>
-<li>Download and extract the latest <a href="https://github.com/ghi-electronics/TinyCLR-Ports/releases">TinyCLR OS Core Library</a> into the Core folder of the cloned repo.</li>
+<li>Download and extract the latest <a href="https://github.com/ghi-electronics/TinyCLR-Ports/releases">TinyCLR OS Core Library</a> into the Core folder of the cloned repo. Make sure to download the version corresponding to the version of the source code that you&#39;re trying to build. If you&#39;re building the master branch, then you want to use the very latest released version.</li>
 <li>Open a command prompt, change the directory to the cloned repo, and then execute <code>build.bat FEZCLR</code>.</li>
 </ol>
 <p>The compiled firmware can then be found in the repo directory under <code>build\release\FEZCLR</code>. The build system automatically produces firmware images in hex format (.hex), a raw binary (.bin), and either a binary meant to be loaded by our <a href="../loaders/ghi-bootloader.html">GHI Bootloader</a> with its U command (.glb) or a binary meant to be loaded by the same bootloader with the X command (.ghi). For the FEZCLR firmware we built, flash the <code>FEZCLR Firmware.glb</code> to your FEZ following the instructions on the <a href="../loaders/ghi-bootloader.html">bootloader</a> page. When you restart it, it should be running TinyCLR OS and you can deploy to it from Visual Studio.</p>
