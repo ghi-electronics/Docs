@@ -7,6 +7,8 @@ These options are provided to speed the development of your product and make it 
 ## UCM Dev Board
 ![UCM Dev board](images/ucm-dev-board-noborder.jpg)
 
+[Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UCM%20Dev%20Board%20Rev%20E%20Schematic.pdf)
+
 The UCM Dev Board is the fastest and easiest way to start using our Universal Compute Modules. This board provides a socket for the UCM, standard connectors for input/output, and three 40 pin socket headers for connecting peripherals and a display. Peripheral connectors include external power, Ethernet, CAN, USB host and client, RTC backup battery, DCMI interface and an SD card slot.  It also has a buzzer, LEDs, a reset button, and user programmable boot buttons.
 
 Our display modules have mating 40 pin headers. The headers allow you to mount the display directly to the Dev Board or mount the display remotely using a standard IDE hard drive cable.
@@ -15,6 +17,8 @@ To start development using the UCM Dev Board, just plug a UCM into the socket on
 
 ## UCM Breakout Board
 ![UCM Breakout](images/ucm-breakout.jpg)
+
+[Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UCM%20Breakout%20Rev%20C%20Schematic.pdf)
 
 The UCM Breakout Board provides a socket for UCMs, and both through hole and surface mount edge connections for soldering the Breakout Board to your own circuit board. You can solder pin headers to the Breakout Board and use traditional breadboarding techniques to build your prototype as well.
 
@@ -35,10 +39,18 @@ To see sample code used to write to these displays please visit the [Parallel TF
 ### UD435
 ![UD435](images/ud435.jpg)
 
+[Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD435%20Rev%20A%20Schematic.pdf)
+
+Display Module: ER-TFT043-3
+
 The UD435 supports either a 4.3 inch or 5 inch capacitive LCD touch screen.
 
 ### UD700
 ![UD700](images/ud700.jpg)
+
+[Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD700%20Rev%20A%20Schematic.pdf)
+
+Display Module: ER-TFT070-4
 
 The UD700 supports a 7 inch capacitive LCD touch screen.
 
