@@ -3,13 +3,13 @@
     "content": [
       {
         "files": [ "**/*.md" ],
-        "exclude": [ "obj/**", "docs/**" ]
+        "exclude": [ "obj/**", "docs/**", "pdf/**" ]
       }
     ],
     "resource": [
       {
         "files": [ "**/*.png", "**/*.jpg", "**/*.ico" ],
-        "exclude": [ "obj/**", "docs/**" ]
+        "exclude": [ "obj/**", "docs/**", "pdf/**" ]
       }
     ],
     "dest": "docs",
@@ -22,5 +22,20 @@
       "_enableSearch": true,
       "_enableNewTab": true
     }
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [ "**/*.md" ],
+        "exclude": [ "obj/**", "docs/**", "pdf/**" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "**/*.png", "**/*.jpg", "**/*.ico" ],
+        "exclude": [ "obj/**", "docs/**", "pdf/**" ]
+      }
+    ],
+    "dest": "pdf"
   }
 }

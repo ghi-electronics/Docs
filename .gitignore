@@ -4,6 +4,7 @@
 /**/bin/
 /**/obj/
 /api/
+/pdf/
 
 /**/.vs/
 *.user
