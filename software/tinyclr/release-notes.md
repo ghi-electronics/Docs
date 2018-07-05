@@ -1,5 +1,88 @@
 # Release Notes
 
+## 0.12.0 on 2018-07-05
+
+### Notes
+This release adds support for gif images, a WPF-like UI library used to build graphical user interfaces, and an SD card driver and associated FAT filesystem. There are also a number of other small API additions and changes to Graphics and the BrainPad. 
+
+We're also distributing the interop definition headers for all of our libraries so that you can interact with them from native code you may right. Keep in mind that the fields are often private members to the class, so are regarded as implementation details that may change between release.
+
+One important note for creators of native APIs, the `Implementation` parameter was changed so that it is only ever a pointer to a single instance. It no longer points to an array if `Count` is more than one and, in fact, the `Count` parameter was removed completely since it's only ever one or `nullptr` now. As part of this, we added a controller parameter to many functions such as UART and I2C.
+
+`.constrained` continues to throw in this release as we gather more data. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
+
+As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you. There are no new bootloaders in this release.
+
+### Libraries
+
+#### Changes
+- Changed return values of the BrainPad accelerometer to -100 to 100 for -1g to 1g.
+- Capped return values in BrainPad accelerometer to 1g.
+- Marked `SystemTime.SetTime` as not CLS-compliant.
+- Added `EnableFullRange` to BrainPad accelerometer to control returning more than 1g.
+- Added `GraphicsUnit` to `Font` and `Graphics`.
+- Added `Expansion` to the BrainPad library.
+- Added SD and Filesystem to the IO library.
+- Added more overloads of `DrawString` and `DrawImage` to `Graphics`.
+- Added `Graphics.MeasureString`.
+- Added `Font.Height`.
+- Added a UI library.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- Software SPI does not work with some devices [#293](https://github.com/ghi-electronics/TinyCLR-Ports/issues/293).
+- I2C sharing conflicts incorrectly throw `OutOfMemoryException` [#298](https://github.com/ghi-electronics/TinyCLR-Ports/issues/298).
+
+### Firmware
+
+#### Changes
+- Added gif image format support.
+- Fixed interrupts crashing the system after some time on UC2550 and UC5550.
+- Fixed the firmware getting erased when using SPI1 on the G120 [#294](https://github.com/ghi-electronics/TinyCLR-Ports/issues/294).
+- Fixed opening one CAN reserving all other CAN pins [#296](https://github.com/ghi-electronics/TinyCLR-Ports/issues/296).
+- Fixed default debounce time to 20ms [#313](https://github.com/ghi-electronics/TinyCLR-Ports/issues/313).
+
+#### Known Issues
+- Many UART properties and events are not implemented.
+- PWM may jitter when decreasing the pulse length while enabled.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- Filesystem is not available on G30.
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+- The run app pin doesn't work on USBizi [#33](https://github.com/ghi-electronics/TinyCLR-Ports/issues/33).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- During multi-pin reservations if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+- `OutputEnablePolarity` is inverted on UC5550 [#315](https://github.com/ghi-electronics/TinyCLR-Ports/issues/315).
+- Some SD cards are corrupt after use on G400 [#319](https://github.com/ghi-electronics/TinyCLR-Ports/issues/319).
+- G120 can get stuck deploying [#331](https://github.com/ghi-electronics/TinyCLR-Ports/issues/331).
+- CAN does not work on G400 [#332](https://github.com/ghi-electronics/TinyCLR-Ports/issues/332).
+
+### TinyCLR Config
+
+#### Changes
+- None.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- Added `Expansion` to the BrainPad helper template.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added `GetControllerCount` to many providers.
+- Changed how providers are registered in native to only take a single pointer to an implementation instead of optionally an array.
+
+#### Known Issues
+- None.
+
 ## 0.11.0 on 2018-05-10
 
 ### Notes
