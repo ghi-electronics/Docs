@@ -79,6 +79,7 @@ As before, you can find all downloads in their respective sections on the [downl
 #### Changes
 - Added `GetControllerCount` to many providers.
 - Changed how providers are registered in native to only take a single pointer to an implementation instead of optionally an array.
+- Added interop definitions for our libraries.
 
 #### Known Issues
 - None.
