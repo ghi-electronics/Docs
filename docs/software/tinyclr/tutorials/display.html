@@ -119,7 +119,95 @@ screen.Flush();
 <p>This video features a very low cost I2C display option</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CL-nSqaGVaw" frameborder="0" allowfullscreen=""></iframe>
 
-</article>
+<h2 id="ui">UI</h2>
+<p>You can use the <code>GHIElectronics.TinyCLR.UI</code> library to create user interfaces for your application. It is inspired by WPF on the desktop. The below sample shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed touch and button events in from whatever source you may want to use.</p>
+<pre><code class="lang-cs">using GHIElectronics.TinyCLR.Devices.Display;
+using GHIElectronics.TinyCLR.UI;
+using GHIElectronics.TinyCLR.UI.Controls;
+using GHIElectronics.TinyCLR.UI.Media;
+
+namespace UI {
+    public class Program : Application {
+        public Program(DisplayController d) : base(d) {
+
+        }
+
+        public static void Main() {
+            var disp = DisplayController.GetDefault();
+
+            disp.ApplySettings(new ParallelDisplayControllerSettings {
+                //Your display configuration
+            });
+
+            var app = new Program(disp);
+
+            //Use the below two functions to pass input to the UI system
+            //app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
+            //app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
+
+            app.Run(Program.CreateWindow(disp));
+        }
+
+        private static Window CreateWindow(DisplayController disp) {
+            //Setup
+            var window = new Window {
+                Height = (int)disp.ActiveSettings.Height,
+                Width = (int)disp.ActiveSettings.Width
+            };
+
+            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0, window.Width, window.Height);
+
+            var font = Resources.GetFont(/*your font*/);
+
+            OnScreenKeyboard.Font = font;
+
+
+            //List
+            var listBox = new ListBox();
+
+            listBox.Child.Width = window.Width;
+
+
+            //Text
+            for (var i = 0; i &lt; 3; i++) {
+                var text = new Text(font, $&quot;Text item {i}&quot;);
+
+                text.SetMargin(5);
+
+                listBox.Items.Add(text);
+            }
+
+            //Button
+            var j = 0;
+            var val = new Text(font, &quot;Tap Me&quot;);
+            var btn = new Button {
+                Child = val,
+                Width = 100
+            };
+
+            btn.SetMargin(5);
+            btn.Click += (s, e) =&gt; val.TextContent = &quot;Tap Me &quot; + (j++).ToString();
+
+            listBox.Items.Add(btn);
+
+            //Textbox
+            var txt = new TextBox {
+                Font = font,
+                Text = &quot;Text Sample&quot;
+            };
+
+            txt.SetMargin(5);
+            listBox.Items.Add(txt);
+
+            //Setup
+            window.Child = listBox;
+            window.Visibility = Visibility.Visible;
+
+            return window;
+        }
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
