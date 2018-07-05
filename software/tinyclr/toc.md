@@ -23,6 +23,7 @@
 
 # [TinyCLR Config](tinyclr-config.md)
 # [Downloads](downloads.md)
+# [Release Notes](release-notes.md)
 # [Roadmap](roadmap.md)
 # [Board Options](boards/intro.md)
 # [Bootloaders](loaders/intro.md)
