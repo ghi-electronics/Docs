@@ -2,7 +2,7 @@
 ---
 ![FEZ Raptor](images/fez-raptor.jpg)
 
-FEZ Raptor is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Spider is the G400S System on Module (SoM).
+FEZ Raptor is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF). The core of FEZ Raptor is the G400S System on Module (SoM).
 
 ## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Raptor%20Schematic.pdf)
