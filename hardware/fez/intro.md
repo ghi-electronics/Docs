@@ -48,7 +48,7 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 | [![TinyCLR](images/tinyclrlogo.jpg)](tinyclr.md) | [![Arduino](images/arduino-logo.png)](arduino.md) |
 | **Mbed** </br> Free online C/C++ compiler. [**Learn more...**](mbed.md) | **MicroPython** </br> A version of Python for microcontrollers. [**Learn more...**](python.md) |
 | [![Mbed Logo](images/mbed-logo.png)](mbed.md) | [![G400S](images/micro-python-logo.png)](python.md) |
-| **Bare Metal** </br> Use the Cortex-M4 compiler of your choice. [**Learn more...**](bare-metal.md) | **Accessories** </br> Selected to help get you started. [**Learn more...**](shields/shields.md)
+| **Bare Metal** </br> Use the Cortex-M4 compiler of your choice. [**Learn more...**](bare-metal.md) | **Shields** </br> Selected to help get you started. [**Learn more...**](shields/shields.md)
 | [![Sample Code](images/code.png)](bare-metal.md) | [![Accessories](images/projects.png)](shields/shields.md)
 
 ***
