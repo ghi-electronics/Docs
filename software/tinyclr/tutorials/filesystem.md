@@ -28,3 +28,11 @@ namespace Filesystem {
 }
 
 ```
+
+## Low-level Access
+You can access the raw underlying sectors of an SD card if the provider implements `ISdCardLowLevelController`, like the one provided by the `GHIElectronics.TinyCLR.Devices` library. That interface exposes `ReadSectors`, `WriteSectors`, `EraseSector`, and `GetSectorMap`. Be careful when using this interface, however, as it bypasses any filesystem present and writes directly to the device. This is useful for implementing your own or otherwise not-supported filesystems.
+
+```cs
+var controller = SdCardController.GetDefault();
+var lowLevel = (ISdCardLowLevelController)controller.Provider;
+```
