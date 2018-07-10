@@ -11,15 +11,14 @@ The port for [FEZ](../../hardware/fez/intro.md) is the official reference port f
 > [BrainPad](https://www.brainpad.com/) uses the same port as FEZ.
 
 The reference port includes these libraries:
-(maybe put them in 3 column table? And hyperlink to the tutorials)
 
-||
-------------------|-----------|-------
-Memory Management | Threading | Events
-[Digital Input](tutorials/gpio.md) | [Digital Output](tutorials/gpio.md) | [Interrupts](tutorials/gpio.md)
-[PWM](tutorials/pwm.md) | [ADC](tutorials/adc.md) | [DAC](tutorials/dac.md)
-[UART](tutorials/uart.md) | [SPI](tutorials/spi.md) | [I2C](tutorials/i2c.md)
-[GPIO Change Writer](tutorials/gpio-change-writer.md) | [GPIO Change Reader](tutorials/gpio-change-reader.md) | [GPIO Pulse Reader Writer](tutorials/gpio-pulse-reader-writer.md)
+|                   |           |        |
+|-------------------|-----------|--------|
+| Memory Management | Threading | Events |
+| [Digital Input](tutorials/gpio.md) | [Digital Output](tutorials/gpio.md) | [Interrupts](tutorials/gpio.md) |
+| [PWM](tutorials/pwm.md) | [ADC](tutorials/adc.md) | [DAC](tutorials/dac.md) |
+| [UART](tutorials/uart.md) | [SPI](tutorials/spi.md) | [I2C](tutorials/i2c.md) |
+| [GPIO Change Writer](tutorials/gpio-change-writer.md) | [GPIO Change Reader](tutorials/gpio-change-reader.md) | [GPIO Pulse Reader Writer](tutorials/gpio-pulse-reader-writer.md) |
 
 Keep in mind that while the above features are available not every device will support every feature because the processor itself may not support it or resources are not available.
 
@@ -30,18 +29,18 @@ We understand that commercial customers want things to just work and so we handl
 
 The firmware for these devices include all features found in the official reference port, plus the following:
 
-|             | UC5550 | UC2550 | G120 | G400 | G80 | G30
-|-------------|--------|--------|------|------|-----|----
-| File System | Y | Y | Y | Y | Y | D
-| Graphics    | Y | Y | Y | Y | N | N
-| USB Client  | F | F | F | F | F | N
-| USB Host    | F | F | F | F | F | N
-| IFU         | F | F | F | F | F | N
+|             | UC5550 | UC2550 | G120 | G400 | G80 | G30 |
+|-------------|--------|--------|------|------|-----|-----|
+| File System | Y | Y | Y | Y | Y | D |
+| Graphics    | Y | Y | Y | Y | N | N |
+| USB Client  | F | F | F | F | F | N |
+| USB Host    | F | F | F | F | F | N |
+| IFU         | F | F | F | F | F | N |
 
-Y = Supported
-N = Not Supported
-D = In Development
-F = Future Plan
+* Y = Supported
+* N = Not Supported
+* D = In Development
+* F = Future Plan
 
 The above list is subject to change and is not a guarantee.
 
