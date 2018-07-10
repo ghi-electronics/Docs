@@ -4,7 +4,7 @@
 
 Through MikroElektronika's [mikroBUS standard](https://www.mikroe.com/mikrobus/), hundreds of [Mikro's Click boards](https://shop.mikroe.com/click) can be easily connected to your board.
 
-The [BrainPad](http://docs.brainpad.com), [Clicker](../../../software/tinyclr/boards/mikroelektronika.md#clicker), and [Quail](../../../software/tinyclr/boards/mikroelektronika.md#quail) boards all have sockets for plugging in click boards.
+The [BrainPad](http://docs.brainpad.com) has sockets for plugging in click boards.
 
 This video talks about the technology behind SPI bus, shift registers, and serial-parallel data. It uses the [LED ring click](https://shop.mikroe.com/led-ring-r-click) on the BrainPad.
 

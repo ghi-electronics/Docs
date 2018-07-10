@@ -27,5 +27,5 @@
 # [Downloads](downloads.md)
 # [Release Notes](release-notes.md)
 # [Roadmap](roadmap.md)
-# [Board Options](boards/intro.md)
+# [Supported Devices](supported-devices.md)
 # [Bootloaders](loaders/intro.md)
