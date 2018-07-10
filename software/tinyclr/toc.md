@@ -12,6 +12,7 @@
 ## [DAC](tutorials/dac.md)
 ## [CAN](tutorials/can.md)
 ## [Display](tutorials/display.md)
+## [Graphics](tutorials/graphics.md)
 ## [Filesystem](tutorials/filesystem.md)
 ## [Gpio Change Writer](tutorials/gpio-change-writer.md)
 ## [Gpio Change Reader](tutorials/gpio-change-reader.md)
