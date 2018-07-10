@@ -576,6 +576,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "hardware/fez/images/fez.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/fez/images/fez.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "hardware/fez/images/mbed-logo-noborder.png",
       "output": {
         "resource": {
@@ -657,7 +668,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/fez/intro.html",
-          "hash": "ZTnEgTd3nYB1a6oiqH8OUA=="
+          "hash": "WnwngXaWKpSL4B9YxJitLw=="
         }
       },
       "is_incremental": false,
@@ -705,7 +716,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/fez/shields/arduino-uno-click-shield.html",
-          "hash": "X3Qp5znn0H3qUoPMCkD6Kw=="
+          "hash": "B9RVOtcdNv03MuMRk4u/Ow=="
         }
       },
       "is_incremental": false,
@@ -927,7 +938,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/gadgeteer/fez-raptor.html",
-          "hash": "IzuBAgaSg1F0e0BkfnRRAw=="
+          "hash": "iuYM+0qO7XNS167wjWKZlw=="
         }
       },
       "is_incremental": false,
@@ -2975,17 +2986,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/legacy-noborder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "images/legacy-noborder.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/legacy.jpg",
       "output": {
         "resource": {
@@ -3012,6 +3012,17 @@
       "output": {
         "resource": {
           "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/netmf-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/netmf-logo.png"
         }
       },
       "is_incremental": false,
@@ -3056,7 +3067,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "z5hBrSuTANVjYpDXjUCtqQ=="
+          "hash": "rXt6y/GBMMc+kZ3ctI6Maw=="
         }
       },
       "is_incremental": false,
@@ -3245,17 +3256,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/netmf/images/netmf-logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "software/netmf/images/netmf-logo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "software/netmf/images/new-console-application.jpg",
       "output": {
         "resource": {
@@ -3348,7 +3348,7 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/intro.html",
-          "hash": "x5LGu0Tu0Bdm6DVxihxajg=="
+          "hash": "GsoBP19fEhT9932Bsx7KiQ=="
         }
       },
       "is_incremental": false,
@@ -3655,142 +3655,6 @@
         ".html": {
           "relative_path": "software/netmf/tutorials/usb-host.html",
           "hash": "D/uQOnSIY8nkK3RAEQ1xBw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/buggy.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/buggy.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/clicker.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/clicker.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/clicker2.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/clicker2.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/mini-m4-stm32.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/mini-m4-stm32.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/netduino3.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/netduino3.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/nucleo-f401re.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/nucleo-f401re.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/quail-board.png",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/quail-board.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/boards/images/stm32f411-discovery-board.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/boards/images/stm32f411-discovery-board.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/boards/intro.html",
-          "hash": "6N16Qu+9PPJSQSpYCX+fUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/mikroelektronika.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/boards/mikroelektronika.html",
-          "hash": "NkgnBGIKoIf+Z1dTRJT8yA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/netduino.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/boards/netduino.html",
-          "hash": "wigA6s+IaLePdl5Cr2vbng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/boards/stm32-boards.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/boards/stm32-boards.html",
-          "hash": "2Ub3MPK4Z0jBhDmHlxi6MQ=="
         }
       },
       "is_incremental": false,
@@ -4211,7 +4075,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/intro.html",
-          "hash": "5QZumt8HZnppX2a4bCgqqg=="
+          "hash": "94n7NintVBNFpOlKnU6QGA=="
         }
       },
       "is_incremental": false,
@@ -4350,6 +4214,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/supported-devices.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/supported-devices.html",
+          "hash": "CqwrcJTotqIhRaytTdQPIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "software/tinyclr/tinyclr-config.md",
       "output": {
         ".html": {
@@ -4366,7 +4242,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/toc.html",
-          "hash": "M6s9dbEjch3apnJgKAvXBw=="
+          "hash": "9NLrgc1nuDD2wKzw1i6gFQ=="
         }
       },
       "is_incremental": false,
@@ -4414,7 +4290,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/display.html",
-          "hash": "2ay5uxk9gKpes75kp5GVfQ=="
+          "hash": "Q93xSndOtfgDoUPsBmf0CA=="
         }
       },
       "is_incremental": false,
@@ -4426,7 +4302,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/filesystem.html",
-          "hash": "VnqMEdZOLlHEODOvwYMoqw=="
+          "hash": "GqEM1k13Bu2uNakzKcyAaQ=="
         }
       },
       "is_incremental": false,
@@ -4474,7 +4350,19 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/gpio.html",
-          "hash": "uKN9t7cUVL+RWB0uFFWO6g=="
+          "hash": "rqJ3Z3K6dUKBfb1tfI0LrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics.html",
+          "hash": "1IQFfJoaQjxT+V80UiAP8g=="
         }
       },
       "is_incremental": false,
@@ -4572,14 +4460,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

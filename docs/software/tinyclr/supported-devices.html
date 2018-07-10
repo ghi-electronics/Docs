@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>.NET Micro Framework Introduction </title>
+    <title>Supported Devices </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=".NET Micro Framework Introduction ">
+    <meta name="title" content="Supported Devices ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -75,45 +75,126 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="net-micro-framework-introduction">.NET Micro Framework Introduction</h1>
+<h1 id="supported-devices">Supported Devices</h1>
 
-<hr>
-<p><img src="images/netmf-logo-noborder.png" alt="NETMF Logo"></p>
-<p>.NET Micro Framework (NETMF) is a subset of the full Microsoft .NET Framework used to make Windows applications. NETMF was started by Microsoft for use in SPOT watches and then later open sourced. The latest version of Visual Studio working with our NETMF products is VS2013.</p>
-<h2 id="general-resources">General Resources</h2>
-<ul>
-<li><a href="http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf">.NET Micro Framework for Beginners</a></li>
-<li><a href="https://github.com/ghi-electronics/NETMF-Gadgeteer">Source code</a> to mainboards and module drivers.</li>
-<li>The <a href="https://forums.ghielectronics.com/c/netmf-gadgeteer">.NET Micro Framework Discussion Forum</a> is monitored by our engineers and active community members.</li>
-</ul>
+<p><img src="images/boards.png" alt="Boards"></p>
+<p>TinyCLR OS can be <a href="porting/intro.html">ported</a> to almost any device running an ARM processor, but it is also already ported to many devices. Available options fall under three different tiers: official reference, commercially supported, and community supported.</p>
+<h2 id="official-reference">Official Reference</h2>
+<p>The port for <a href="../../hardware/fez/intro.html">FEZ</a> is the official reference port for TinyCLR OS. We recommend using it as a starting point to learn how to build and modify TinyCLR OS. Grab one of the ultra-low-cost FEZ boards and start <a href="porting/intro.html">porting</a> today.</p>
+<div class="TIP"><h5>Tip</h5><p><a href="https://www.brainpad.com/">BrainPad</a> uses the same port as FEZ.</p>
+</div>
+<p>The reference port includes these libraries:</p>
 <table>
 <thead>
 <tr>
+<th></th>
 <th></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Getting Started</strong> <br> Deploy your first NETMF program. <a href="getting-started.html"><strong>Learn more...</strong></a></td>
-<td><strong>Tutorials</strong> <br> Learn NETMF embedded programming. <a href="tutorials/intro.html"><strong>Learn more...</strong></a></td>
+<td>Memory Management</td>
+<td>Threading</td>
+<td>Events</td>
 </tr>
 <tr>
-<td><a href="getting-started.html"><img src="../tinyclr/images/getting-started.jpg" alt="Getting Started"></a></td>
-<td><a href="tutorials/intro.html"><img src="../tinyclr/images/tutorials.jpg" alt="Learn More"></a></td>
+<td><a href="tutorials/gpio.html">Digital Input</a></td>
+<td><a href="tutorials/gpio.html">Digital Output</a></td>
+<td><a href="tutorials/gpio.html">Interrupts</a></td>
 </tr>
 <tr>
-<td><strong>Downloads</strong> <br> Visual Studio and device downloads. <a href="downloads.html"><strong>Learn more...</strong></a></td>
-<td></td>
+<td><a href="tutorials/pwm.html">PWM</a></td>
+<td><a href="tutorials/adc.html">ADC</a></td>
+<td><a href="tutorials/dac.html">DAC</a></td>
 </tr>
 <tr>
-<td><a href="downloads.html"><img src="../tinyclr/images/download.jpg" alt="Download"></a></td>
-<td></td>
+<td><a href="tutorials/uart.html">UART</a></td>
+<td><a href="tutorials/spi.html">SPI</a></td>
+<td><a href="tutorials/i2c.html">I2C</a></td>
+</tr>
+<tr>
+<td><a href="tutorials/gpio-change-writer.html">GPIO Change Writer</a></td>
+<td><a href="tutorials/gpio-change-reader.html">GPIO Change Reader</a></td>
+<td><a href="tutorials/gpio-pulse-reader-writer.html">GPIO Pulse Reader Writer</a></td>
 </tr>
 </tbody>
 </table>
-<div class="TIP"><h5>Tip</h5><p>We discourage the use of NETMF on our products in favor of <a href="../tinyclr/intro.html"><strong>TinyCLR OS</strong></a>. Learn more about using NETMF devices <a href="">with TinyCLR OS</a>.</p>
-</div>
+<p>Keep in mind that while the above features are available not every device will support every feature because the processor itself may not support it or resources are not available.</p>
+<h2 id="commercially-supported">Commercially Supported</h2>
+<p>Our Cortex-M <a href="../../hardware/scm/intro.html">SCM</a> and <a href="../../hardware/ucm/intro.html">UCM</a> modules include a commercially supported TinyCLR OS firmware which has additional premium features suited for commercial designs.</p>
+<p>We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using <a href="porting/native-interops.html">native interops</a> loaded at runtime.</p>
+<p>The firmware for these devices include all features found in the official reference port, plus the following:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>UC5550</th>
+<th>UC2550</th>
+<th>G120</th>
+<th>G400</th>
+<th>G80</th>
+<th>G30</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File System</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Graphics</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>USB Client</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>N</td>
+</tr>
+<tr>
+<td>USB Host</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>N</td>
+</tr>
+<tr>
+<td>IFU</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Y = Supported</li>
+<li>N = Not Supported</li>
+<li>D = In Development</li>
+<li>F = Future Plan</li>
+</ul>
+<p>The above list is subject to change and is not a guarantee.</p>
+<h2 id="community-supported">Community Supported</h2>
+<p>The community supported ports are the joint effort of the community and GHI Electronics to bring TinyCLR OS to many popular products. While these ports may be incomplete or broken, we encourage you to try them and contribute. These ports also include some of the discontinued GHI Electronics products, like the Cerb family and the FEZ Hydra.</p>
+<p>Take a look at the devices on our <a href="https://github.com/ghi-electronics/TinyCLR-Ports/tree/master/Devices">GitHub</a> to see what&#39;s available!</p>
 </article>
           </div>
           
@@ -122,7 +203,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/netmf/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/supported-devices.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

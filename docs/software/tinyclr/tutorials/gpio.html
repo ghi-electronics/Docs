@@ -218,7 +218,16 @@ class Program {
 }
 </code></pre><div class="TIP"><h5>Tip</h5><p>Once you type += after the event, hit the tab key twice and Visual Studio will automatically create the event for you.</p>
 </div>
-</article>
+<h2 id="ucm-standard-pins">UCM Standard Pins</h2>
+<p>The <a href="../../../hardware/ucm/standard.html">UCM Standard</a> provides a consistent mapping of pins to enable easily swapping out the underlying SoM. While the standard assigns a consistent name to each pin, the underlying pin on the processor is different, so it is helpful to use the <code>UCMStandard</code> class available in the <code>GHIElectronics.TinyCLR.Pins.UCM</code> library. Once you specify the device model to use it&#39;ll map the pins for you automatically. For example:</p>
+<pre><code class="lang-cs">using GHIElectronics.TinyCLR.Pins;
+using GHIElectronics.TinyCLR.Devices.Gpio;
+
+UCMStandard.SetModel(UCMModel.UC5550);
+
+var controller = GpioController.GetDefault();
+var pin = controller.OpenPin(UCMStandard.GpioPin.A);
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
