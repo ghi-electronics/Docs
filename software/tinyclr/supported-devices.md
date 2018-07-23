@@ -23,11 +23,11 @@ The reference port includes these libraries:
 Keep in mind that while the above features are available not every device will support every feature because the processor itself may not support it or resources are not available.
 
 ## Commercially Supported
-Our Cortex-M [SCM](../../hardware/scm/intro.md) and [UCM](../../hardware/ucm/intro.md) modules include a commercially supported TinyCLR OS firmware which has additional premium features suited for commercial designs.
+We also provide a pre-compiled firmware for our Cortex-M [SCM](../../hardware/scm/intro.md) and [UCM](../../hardware/ucm/intro.md) modules. This is a commercially supported TinyCLR OS firmware that includes additional features suited for commercial designs -- features only found in the pre-compiled firmware you receive from us.
 
 We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using [native interops](porting/native-interops.md) loaded at runtime.
 
-The firmware for these devices include all features found in the official reference port, plus the following:
+The firmware for these devices include all features found in the official reference port, plus the following additional commercial features:
 
 |             | UC5550 | UC2550 | G120 | G400 | G80 | G30 |
 |-------------|--------|--------|------|------|-----|-----|
