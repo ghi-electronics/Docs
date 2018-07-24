@@ -9,7 +9,7 @@ class MyNativeClass {
     private int field = 5;
 
     [MethodImpl(MethodImplOptions.InternalCall)]
-    public extern string MyNativeFunc(uint param1);
+    public extern int MyNativeFunc(int arg0);
 
     public extern int MyNativeProperty {
         [MethodImpl(MethodImplOptions.InternalCall)]
@@ -21,12 +21,26 @@ class MyNativeClass {
 Once you have your native API defined, build your project. In the output folder, find and open `pe` and then `Interop`. In there are three files that let TinyCLR connect the managed methods to the native methods. There are two main files that have the same name as your project. These define the entire API. Importantly, there is an object that has the assembly name, its checksum, and an array of its methods. The remaining file contains function stubs for each native method you need to implement from the `MyNativeClass` class. Each function has a single parameter of type `TinyCLR_Interop_MethodData` that can be found in the `TinyCLR.h` file. This type has two memebers: an opaque stack type that you pass to other interop functions and the [API provider](apis.md) that gives you access to the runtime. You can use this API provider to find the interop provider. The interop provider allows you to read and write object fields, read arguments passed to the function, write to reference arguments, set the return value, raise other events, and create new managed objects. The following code shows reading from a field and setting it as the return value of the property:
 
 ```cpp
+TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeFunc___I4__I4(const TinyCLR_Interop_MethodData md) {
+    auto ip = md.InteropManager;
+
+    TinyCLR_Interop_ClrValue arg;
+    TinyCLR_Interop_ClrValue ret;
+
+    ip->GetArgument(ip, 0, arg);
+    ip->GetReturn(ip, md.Stack, ret);
+
+    ret.Data.Numeric->I4 = arg.Data.Numeric->I4 * arg.Data.Numeric->I4;
+
+    return TinyCLR_Result::Success;
+}
+
 TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {
-    auto ip = reinterpret_cast<const TinyCLR_Interop_Provider*>(md.ApiProvider.FindDefault(&md.ApiProvider, TinyCLR_Api_Type::InteropProvider));
+    auto ip = md.InteropManager;
 
     const TinyCLR_Interop_ClrObject* self;
-    TinyCLR_Interop_ClrValue ret;
     TinyCLR_Interop_ClrValue field;
+    TinyCLR_Interop_ClrValue ret;
 
     ip->GetThisObject(ip, md.Stack, self);
     ip->GetField(ip, self, InteropTest_InteropTest_MyNativeClass::FIELD___field___I4, field);
@@ -65,5 +79,6 @@ Marshal.Copy(interop, 0, new IntPtr(0x20016000), interop.Length);
 Interop.Add(new IntPtr(0x2001607C));
 
 var cls = new MyNativeClass();
-var val = cls.MyNativeProperty;
+var prop = cls.MyNativeProperty;
+var func = cls.MyNativeFunc(2);
 ```
