@@ -8,8 +8,8 @@ TinyCLR OS started with Microsoft's .NET Micro Framework and continues to enable
 |--|--|
 |  **Getting Started** </br> Deploy your first TinyCLR program. [**Learn more...**](getting-started.md)  |  **Tutorials** </br> Learn TinyCLR embedded programming. [**Learn more...**](tutorials/intro.md)   |
 |  [![Getting Started](images/getting-started.jpg)](getting-started.md)   |  [![Tutorials](images/tutorials.jpg)](tutorials/intro.md)  |
-|   **Porting** </br> Run TinyCLR on other devices. [**Learn more...**](porting/intro.md)  |  **Release Notes** </br> Find the latest changes to TinyCLR. [**Learn more...**](release-notes.md)  |
-|  [![TinyCLR Logo](images/tinyclr-logo.jpg)](porting/intro.md)   |  [![Release Notes](images/tinyclr-logo.jpg)](release-notes.md)   |
+|   **Native** </br> Run native code on your device and port to other targets. [**Learn more...**](native/intro.md)  |  **Release Notes** </br> Find the latest changes to TinyCLR. [**Learn more...**](release-notes.md)  |
+|  [![TinyCLR Logo](images/tinyclr-logo.jpg)](native/intro.md)   |  [![Release Notes](images/tinyclr-logo.jpg)](release-notes.md)   |
 |  **Downloads** </br> Visual Studio and device downloads. [**Learn more...**](downloads.md)   |   **Roadmap** </br> The future of TinyCLR. [**Learn more...**](roadmap.md)  |
 |  [![Download](images/download.jpg)](downloads.md)   |  [![Road](images/roadmap.jpg)](roadmap.md)   |
 |  **Supported Devices** </br> Some boards that run TinyCLR. [**Learn more...**](supported-devices.md)   |  **Bootloaders** </br> [**Learn more...**](loaders/intro.md)   |

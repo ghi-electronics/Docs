@@ -19,9 +19,10 @@
 ## [Gpio Pulse Reader Writer](tutorials/gpio-pulse-reader-writer.md)
 
 
-# [Porting](porting/intro.md)
-## [Native Interops](porting/native-interops.md)
-## [Native APIs](porting/native-apis.md)
+# [Native Code](native/intro.md)
+## [Interops](native/interops.md)
+## [APIs](native/apis.md)
+## [Porting](native/porting.md)
 
 # [TinyCLR Config](tinyclr-config.md)
 # [Downloads](downloads.md)

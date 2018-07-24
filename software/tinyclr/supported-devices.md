@@ -2,10 +2,10 @@
 
 ![Boards](images/boards.png)
 
-TinyCLR OS can be [ported](porting/intro.md) to almost any device running an ARM processor, but it is also already ported to many devices. Available options fall under three different tiers: official reference, commercially supported, and community supported.
+TinyCLR OS can be [ported](native/porting.md) to almost any device running an ARM processor, but it is also already ported to many devices. Available options fall under three different tiers: official reference, commercially supported, and community supported.
 
 ## Official Reference
-The port for [FEZ](../../hardware/fez/intro.md) is the official reference port for TinyCLR OS. We recommend using it as a starting point to learn how to build and modify TinyCLR OS. Grab one of the ultra-low-cost FEZ boards and start [porting](porting/intro.md) today.
+The port for [FEZ](../../hardware/fez/intro.md) is the official reference port for TinyCLR OS. We recommend using it as a starting point to learn how to build and modify TinyCLR OS. Grab one of the ultra-low-cost FEZ boards and start [porting](native/porting.md) today.
 
 > [!Tip]
 > [BrainPad](https://www.brainpad.com/) uses the same port as FEZ.
@@ -25,7 +25,7 @@ Keep in mind that while the above features are available not every device will s
 ## Commercially Supported
 We also provide a pre-compiled firmware for our Cortex-M [SCM](../../hardware/scm/intro.md) and [UCM](../../hardware/ucm/intro.md) modules. This is a commercially supported TinyCLR OS firmware that includes additional features suited for commercial designs -- features only found in the pre-compiled firmware you receive from us.
 
-We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using [native interops](porting/native-interops.md) loaded at runtime.
+We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using [native interops](native/interops.md) loaded at runtime.
 
 The firmware for these devices include all features found in the official reference port, plus the following additional commercial features:
 

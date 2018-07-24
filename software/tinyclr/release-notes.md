@@ -363,7 +363,7 @@ As before, you can find all downloads in their respective sections on the [downl
 ## 0.8.0 on 2018-02-01
 
 ### Notes
-This release adds a firmware and bootloader for the FEZ Hydra, a driver for the SPWF04Sx Wi-Fi module from STMicroelectronics, and a build of the core for Cortex-M7 based devices. We've also updated to the latest GCC and CMSIS builds, so be sure to visit the [porting](porting/intro.md) page to ensure you have the latest if you build your own firmware.
+This release adds a firmware and bootloader for the FEZ Hydra, a driver for the SPWF04Sx Wi-Fi module from STMicroelectronics, and a build of the core for Cortex-M7 based devices. We've also updated to the latest GCC and CMSIS builds, so be sure to visit the [porting](native/porting.md) page to ensure you have the latest if you build your own firmware.
 
 Also added are overloads to the various SPI and I2C write and read functions that take an offset and a count so you no longer need to pass exact sized buffers. The previous overloads still exist for compatibility  with UWP. While they're not yet exposed in managed code publicly, UART and CAN now allow you to customize the size of the read and write buffer for each port to suit your needs.
 
@@ -466,7 +466,7 @@ As before, you can find all downloads in their respective sections on the [downl
 ### Notes
 This release adds CAN support to many devices. The managed API reflects the UWP provider model, but there are more changes to come. We've also fixed the issue in the latest Visual Studio 15.5 update that prevents projects from building along with many other firmware level bugs. For best results with the 15.5 fix, you should either recreate your projects or remove the `NoStdLib` and `AddAdditionalExplicitAssemblyReferences` properties from your csproj (or vbproj).
 
-There have been several changes around the interop API in this release that makes it easier to interact with managed arguments, fields, and objects including reading, writing, creation, and reassignment. You can find an updated basic example on the [interop docs](porting/native-interops.md). There was also a field added to the API info object that allows the API author to track custom state based on their needs.
+There have been several changes around the interop API in this release that makes it easier to interact with managed arguments, fields, and objects including reading, writing, creation, and reassignment. You can find an updated basic example on the [interop docs](native/interops.md). There was also a field added to the API info object that allows the API author to track custom state based on their needs.
 
 As before, you can find all downloads in their respective sections on the [downloads](downloads.md) page. There are no new bootloader releases this time. Just download the new installers and NuGet packages to get going. You don't even need to download the firmwares since you can use the update firmware feature in TinyCLR Config to automatically download them for you.
 
@@ -683,7 +683,7 @@ Lastly, how we distribute releases is changing going forward. There's no longer 
 ### Notes
 This release focuses on the public porting library and API -- though there are a few minor fixes and changes in other areas. As part of the new porting experience, we are also releasing a very early build of TinyCLR for the Netduino 3 and Quail mainboard!
 
-You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](porting/intro.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See [here](porting/native-interops.md) for details.
+You can now port TinyCLR OS to run on your own system using the header file and library we provide -- as long as your architecture is supported. Currently, only Cortex M4 is available. Keep in mind the available API is still alpha and may change, especially USB client. See [here](native/porting.md) for details. You can also create your own managed functions that can call into native code that you provide. These will be automatically wired into the system for a seamless experience. See [here](native/interops.md) for details.
 
 To support this, we added a few more classes under `System.Runtime.InteropServices`. Most important is the `Interop` class. It allows you to add and remove interops from the system by providing it with the address in memory of the interop definition table. It expects you to load it into memory yourself using the `Marshal` class. You can use `FindAll` to get back a list of all interops registered in the system and `RaiseEvent` to trigger an event on the specified native event dispatcher.
 
