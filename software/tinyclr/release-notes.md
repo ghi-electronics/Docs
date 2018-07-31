@@ -5,7 +5,7 @@
 ### Notes
 This release adds support for gif images, a WPF-like UI library used to build graphical user interfaces, and an SD card driver and associated FAT filesystem. There are also a number of other small API additions and changes to Graphics and the BrainPad. 
 
-We're also distributing the interop definition headers for all of our libraries so that you can interact with them from native code you may right. Keep in mind that the fields are often private members to the class, so are regarded as implementation details that may change between release.
+We're also distributing the interop definition headers for all of our libraries so that you can interact with them from native code you may write. Keep in mind that the fields are often private members to the class, so are regarded as implementation details that may change between release.
 
 One important note for creators of native APIs, the `Implementation` parameter was changed so that it is only ever a pointer to a single instance. It no longer points to an array if `Count` is more than one and, in fact, the `Count` parameter was removed completely since it's only ever one or `nullptr` now. As part of this, we added a controller parameter to many functions such as UART and I2C.
 
