@@ -95,7 +95,9 @@ class Program
         {
             for (int i = 0; i < note.Length; i++)
             {
+                tones.Stop();
                 Controller1.SetDesiredFrequency( note[i]);
+                tones.Start();
                 Thread.Sleep(duration[i]);
             }
             Thread.Sleep(100);
