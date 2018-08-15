@@ -1,5 +1,114 @@
 # Release Notes
 
+## 1.0.0-preview1 on 2018-08-15
+
+### Notes
+This release is the first preview of the 1.0 release for TinyCLR. We will have at least one other preview after this one. The biggest change in this release is the rework and simplification of a lot of the devices library. It was split up into one library per peripheral to reduce deployment size for apps that don't require everything. We did keep the devices package as a metapackage that just depends on all the rest so you can easily bring them into your project.
+
+Many of the devices did keep a familiar API like ADC, DAC, and GPIO. Others like I2C and SPI did keep a similar device API but the controller was reworked. Previously you'd be able to call `FromId` on the device or controller object. Now you must call `FromName` on the controller and then call `GetDevice`. A few others had minor tweaks to names and members. Of particular note is that you must now call `Enable` to turn the display on and mounting with `FileSystem` now requires the `Hdc` property from the `SdCardController` instead of the controller instance itself.
+
+UART saw a lot of changes in this release. The entire storage library was removed and the `SerialCommunication` class was changed into `UartController` to mirror the pattern used with all of the other devices. `DataReader` and `DataWriter` are gone as well, so reading and writing to UART can only be done with a byte array.
+
+We also introduced a new native library that holds many of the things we added to `mscorlib` previously like interops, APIs, system time, `NativeEventDispatcher`, and, new in this release, power.
+
+Given the amount of changes in the HAL layer we do expect a few more bugs in this release, but we are working to iron them all out before 1.0.
+
+`.constrained` continues to throw in this release as we gather more data. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others. We will be making a decision soon on whether or not to revert the exception before the final release.
+
+In preparation for the official 1.0 release we are no longer building the firmwares for older unsupported devices. Please see [this doc](http://docs.ghielectronics.com/software/tinyclr/supported-devices.html) for more information. We have also uploaded the libraries to our [NuGet account](https://www.nuget.org/profiles/ghielectronics) and the VSIX to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/ghielectronics). We will still make them available on our own hosting as well, but the expected workflow going forward is the usual NuGet/Marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before you can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source. There are no new bootloaders in this release.
+
+### Libraries
+
+#### Changes
+- Reworked the APIs of many of the peripherals in `GHIElectronics.TinyCLR.Devices` library, particularly UART.
+- Split up the `GHIElectronics.TinyCLR.Devices` into one library per peripheral.
+- Removed the `GHIElectronics.TinyCLR.Storage` library.
+- Added a new `GHIElectronics.TinyCLR.Native` library and moved `SystemTime`, `Interop`, `Api`, and `DeviceInformation` to it.
+- Added `Power` to `GHIElectronics.TinyCLR.Native`.
+- Added `DrawPixel` to the display controller.
+- Added `DrawBuffer` to the display controller.
+- Added `Enable` and `Disable` to many controllers.
+- Reworked `SystemTime` to have `GetTime` and `SetTime` with `DateTime overloads.
+- Reworked and simplified the entire provider model, removing many classes in the process.
+- Renamed `OutputEnable` to `DataEnable` on `DisplayController`.
+- Renamed `SetActiveSettings` to `SetConfiguration` on `DisplayController`.
+- Renamed `PwmPin` to `PwmChannel`.
+- Fixed `GetDirectories` always throwing [#343](https://github.com/ghi-electronics/TinyCLR-Ports/issues/343).
+- Reduced the default brightness of the light bulb on the BrainPad.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes.
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- A number of API names are missing from pins, notably RTC and SD.
+- The `Edge` property of GPIO interrupts is not always correct.
+- Many properties on `SignalGenerator` and `SignalCapture` do not work.
+- `PulseFeedback` does not work.
+- `SoftwareI2C` does not work [#365](https://github.com/ghi-electronics/TinyCLR-Ports/issues/365).
+- `DisplayController.DrawBuffer` does not work with a non-zero origin or size different than the entire screen [#410](https://github.com/ghi-electronics/TinyCLR-Ports/issues/410).
+- `DisplayController.DrawPixel` draws the incorrect color.
+- The timestamp is incorrect when creating a new file.
+
+### Firmware
+
+#### Changes
+- Fixed I2C sharing conflicts incorrectly throwing `OutOfMemoryException` [#298](https://github.com/ghi-electronics/TinyCLR-Ports/issues/298).
+- Fixed `OutputEnablePolarity` being inverted on UC5550 [#315](https://github.com/ghi-electronics/TinyCLR-Ports/issues/315).
+- Fixed some SD cards getting corrupt after use on G400 [#319](https://github.com/ghi-electronics/TinyCLR-Ports/issues/319).
+- Fixed G120 getting stuck deploying [#331](https://github.com/ghi-electronics/TinyCLR-Ports/issues/331).
+- Fixed CAN not working on G400 [#332](https://github.com/ghi-electronics/TinyCLR-Ports/issues/332).
+- Fixed the run app pin not working on USBizi [#333](https://github.com/ghi-electronics/TinyCLR-Ports/issues/333).
+- Fixed paths requiring an extra `\` after the drive letter [#334](https://github.com/ghi-electronics/TinyCLR-Ports/issues/334).
+- Fixed the display on the G400 reserving PC26 [#336](https://github.com/ghi-electronics/TinyCLR-Ports/issues/336).
+- Removed the SPI display controller implementation.
+
+#### Known Issues
+- PWM may jitter when decreasing the pulse length while enabled.
+- UART handshaking may miss data on STM32F4.
+- Testing `NaN`s for equality gives unexpected results.
+- `SignalGenerator` and `SignalCapture` do not work on UC2550 and UC5550.
+- The UD700 will become corrupted after running for a few minutes on the UC5550.
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- Software SPI does not work with some devices [#293](https://github.com/ghi-electronics/TinyCLR-Ports/issues/293).
+- During multi-pin reservations if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+- Filesystem is not available on G30 [#322](https://github.com/ghi-electronics/TinyCLR-Ports/issues/322).
+- The ADC is not accurate on the G400 [#373](https://github.com/ghi-electronics/TinyCLR-Ports/issues/373).
+- Many events do not pass a timestamp [#368](https://github.com/ghi-electronics/TinyCLR-Ports/issues/368).
+- Many of the non-essential functions of USB client are not implemented [#398](https://github.com/ghi-electronics/TinyCLR-Ports/issues/398).
+- Using UART may eventually lockup the UC5550 [#411](https://github.com/ghi-electronics/TinyCLR-Ports/issues/411).
+
+### TinyCLR Config
+
+#### Changes
+- Allowed the app to be resized.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- None.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Simplified many of the controller APIs.
+- Removed the controller number from the various controllers.
+- Renamed many instances of provider to manager or controller.
+- Updated to use the latest GCC.
+- Removed `Acquire` and `Release` from core-provided APIs.
+- Changed to an initialize and uninitialize pattern for required APIs.
+- Added `InteropManager` to `TinyCLR_Interop_MethodData`.
+- Merged `DeploymentProvider` and `SdCardProvider`.
+- Changed specifying the deployment API to a dedicated function call.
+- Changed `InteropManager::GetArgument` to start at index 0 for all arguments, regardless of instance or static.
+
+#### Known Issues
+- The linker will not error when regions overflow or overlap [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+
 ## 0.12.0 on 2018-07-05
 
 ### Notes
