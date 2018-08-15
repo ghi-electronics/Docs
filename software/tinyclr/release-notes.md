@@ -31,7 +31,7 @@ In preparation for the official 1.0 release we are no longer building the firmwa
 - Reworked `SystemTime` to have `GetTime` and `SetTime` with `DateTime overloads.
 - Reworked and simplified the entire provider model, removing many classes in the process.
 - Renamed `OutputEnable` to `DataEnable` on `DisplayController`.
-- Renamed `SetActiveSettings` to `SetConfiguration` on `DisplayController`.
+- Renamed `ApplySettings` to `SetConfiguration` on `DisplayController`.
 - Renamed `PwmPin` to `PwmChannel`.
 - Fixed `GetDirectories` always throwing [#343](https://github.com/ghi-electronics/TinyCLR-Ports/issues/343).
 - Reduced the default brightness of the light bulb on the BrainPad.
