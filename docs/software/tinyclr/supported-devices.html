@@ -78,9 +78,9 @@
 <h1 id="supported-devices">Supported Devices</h1>
 
 <p><img src="images/boards.png" alt="Boards"></p>
-<p>TinyCLR OS can be <a href="porting/intro.html">ported</a> to almost any device running an ARM processor, but it is also already ported to many devices. Available options fall under three different tiers: official reference, commercially supported, and community supported.</p>
+<p>TinyCLR OS can be <a href="native/porting.html">ported</a> to almost any device running an ARM processor, but it is also already ported to many devices. Available options fall under three different tiers: official reference, commercially supported, and community supported.</p>
 <h2 id="official-reference">Official Reference</h2>
-<p>The port for <a href="../../hardware/fez/intro.html">FEZ</a> is the official reference port for TinyCLR OS. We recommend using it as a starting point to learn how to build and modify TinyCLR OS. Grab one of the ultra-low-cost FEZ boards and start <a href="porting/intro.html">porting</a> today.</p>
+<p>The port for <a href="../../hardware/fez/intro.html">FEZ</a> is the official reference port for TinyCLR OS. We recommend using it as a starting point to learn how to build and modify TinyCLR OS. Grab one of the ultra-low-cost FEZ boards and start <a href="native/porting.html">porting</a> today.</p>
 <div class="TIP"><h5>Tip</h5><p><a href="https://www.brainpad.com/">BrainPad</a> uses the same port as FEZ.</p>
 </div>
 <p>The reference port includes these libraries:</p>
@@ -122,9 +122,9 @@
 </table>
 <p>Keep in mind that while the above features are available not every device will support every feature because the processor itself may not support it or resources are not available.</p>
 <h2 id="commercially-supported">Commercially Supported</h2>
-<p>Our Cortex-M <a href="../../hardware/scm/intro.html">SCM</a> and <a href="../../hardware/ucm/intro.html">UCM</a> modules include a commercially supported TinyCLR OS firmware which has additional premium features suited for commercial designs.</p>
-<p>We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using <a href="porting/native-interops.html">native interops</a> loaded at runtime.</p>
-<p>The firmware for these devices include all features found in the official reference port, plus the following:</p>
+<p>We also provide a pre-compiled firmware for our Cortex-M <a href="../../hardware/scm/intro.html">SCM</a> and <a href="../../hardware/ucm/intro.html">UCM</a> modules. This is a commercially supported TinyCLR OS firmware that includes additional features suited for commercial designs -- features only found in the pre-compiled firmware you receive from us.</p>
+<p>We understand that commercial customers want things to just work and so we handle all testing and validation of the provided firmware. It is possible to extend this firmware with additional native functionality using <a href="native/interops.html">native interops</a> loaded at runtime.</p>
+<p>The firmware for these devices include all features found in the official reference port, plus the following additional commercial features:</p>
 <table>
 <thead>
 <tr>

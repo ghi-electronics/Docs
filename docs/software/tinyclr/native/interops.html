@@ -84,20 +84,34 @@
     private int field = 5;
 
     [MethodImpl(MethodImplOptions.InternalCall)]
-    public extern string MyNativeFunc(uint param1);
+    public extern int MyNativeFunc(int arg0);
 
     public extern int MyNativeProperty {
         [MethodImpl(MethodImplOptions.InternalCall)]
         get;
     }
 }
-</code></pre><p>Once you have your native API defined, build your project. In the output folder, find and open <code>pe</code> and then <code>Interop</code>. In there are three files that let TinyCLR connect the managed methods to the native methods. There are two main files that have the same name as your project. These define the entire API. Importantly, there is an object that has the assembly name, its checksum, and an array of its methods. The remaining file contains function stubs for each native method you need to implement from the <code>MyNativeClass</code> class. Each function has a single parameter of type <code>TinyCLR_Interop_MethodData</code> that can be found in the <code>TinyCLR.h</code> file. This type has two memebers: an opaque stack type that you pass to other interop functions and the <a href="native-apis.html">API provider</a> that gives you access to the runtime. You can use this API provider to find the interop provider. The interop provider allows you to read and write object fields, read arguments passed to the function, write to reference arguments, set the return value, raise other events, and create new managed objects. The following code shows reading from a field and setting it as the return value of the property:</p>
-<pre><code class="lang-cpp">TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {
-    auto ip = reinterpret_cast&lt;const TinyCLR_Interop_Provider*&gt;(md.ApiProvider.FindDefault(&amp;md.ApiProvider, TinyCLR_Api_Type::InteropProvider));
+</code></pre><p>Once you have your native API defined, build your project. In the output folder, find and open <code>pe</code> and then <code>Interop</code>. In there are three files that let TinyCLR connect the managed methods to the native methods. There are two main files that have the same name as your project. These define the entire API. Importantly, there is an object that has the assembly name, its checksum, and an array of its methods. The remaining file contains function stubs for each native method you need to implement from the <code>MyNativeClass</code> class. Each function has a single parameter of type <code>TinyCLR_Interop_MethodData</code> that can be found in the <code>TinyCLR.h</code> file. This type has two memebers: an opaque stack type that you pass to other interop functions and the <a href="apis.html">API provider</a> that gives you access to the runtime. You can use this API provider to find the interop provider. The interop provider allows you to read and write object fields, read arguments passed to the function, write to reference arguments, set the return value, raise other events, and create new managed objects. The following code shows reading from a field and setting it as the return value of the property:</p>
+<pre><code class="lang-cpp">TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeFunc___I4__I4(const TinyCLR_Interop_MethodData md) {
+    auto ip = md.InteropManager;
+
+    TinyCLR_Interop_ClrValue arg;
+    TinyCLR_Interop_ClrValue ret;
+
+    ip-&gt;GetArgument(ip, 0, arg);
+    ip-&gt;GetReturn(ip, md.Stack, ret);
+
+    ret.Data.Numeric-&gt;I4 = arg.Data.Numeric-&gt;I4 * arg.Data.Numeric-&gt;I4;
+
+    return TinyCLR_Result::Success;
+}
+
+TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(const TinyCLR_Interop_MethodData md) {
+    auto ip = md.InteropManager;
 
     const TinyCLR_Interop_ClrObject* self;
-    TinyCLR_Interop_ClrValue ret;
     TinyCLR_Interop_ClrValue field;
+    TinyCLR_Interop_ClrValue ret;
 
     ip-&gt;GetThisObject(ip, md.Stack, self);
     ip-&gt;GetField(ip, self, InteropTest_InteropTest_MyNativeClass::FIELD___field___I4, field);
@@ -107,7 +121,7 @@
 
     return TinyCLR_Result::Success;
 }
-</code></pre><p>Now you need to compile these files. If you don&#39;t have GCC yet, see the <a href="intro.html">porting guide</a> to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We&#39;ve provided samples of each below.</p>
+</code></pre><p>Now you need to compile these files. If you don&#39;t have GCC yet, see the <a href="porting.html">porting guide</a> to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We&#39;ve provided samples of each below.</p>
 <p>The makefile is setup to compile all cpp in the same directory it is and to do using for a Cortex M4 architecture. If you&#39;re not on CortexM4, change the <code>MCU_FLAGS</code> parameter accordingly. The output file is <code>InteropTest.bin</code>. You can change that with the <code>OUTPUT_NAME</code> property.</p>
 <pre><code class="lang-makefile" name="makefile">OUTPUT_NAME = InteropTest
 LINKERSCRIPT_NAME = scatterfile
@@ -173,7 +187,8 @@ Marshal.Copy(interop, 0, new IntPtr(0x20016000), interop.Length);
 Interop.Add(new IntPtr(0x2001607C));
 
 var cls = new MyNativeClass();
-var val = cls.MyNativeProperty;
+var prop = cls.MyNativeProperty;
+var func = cls.MyNativeFunc(2);
 </code></pre></article>
           </div>
           
@@ -182,7 +197,7 @@ var val = cls.MyNativeProperty;
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/porting/native-interops.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/native/interops.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
