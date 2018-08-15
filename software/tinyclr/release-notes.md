@@ -28,7 +28,7 @@ In preparation for the official 1.0 release we are no longer building the firmwa
 - Added `DrawPixel` to the display controller.
 - Added `DrawBuffer` to the display controller.
 - Added `Enable` and `Disable` to many controllers.
-- Reworked `SystemTime` to have `GetTime` and `SetTime` with `DateTime overloads.
+- Reworked `SystemTime` to have `GetTime` and `SetTime` with `DateTime` overloads.
 - Reworked and simplified the entire provider model, removing many classes in the process.
 - Renamed `OutputEnable` to `DataEnable` on `DisplayController`.
 - Renamed `ApplySettings` to `SetConfiguration` on `DisplayController`.
