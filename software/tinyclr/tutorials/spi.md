@@ -16,28 +16,24 @@ In its simplest terms, the master will swap data between itself and the slave. Y
 > Note that a board running TinyCLR OS is always a SPI masters, not slaves.
 
 ```csharp
-using System;
-using System.Diagnostics;
-using System.Threading;
 using GHIElectronics.TinyCLR.Devices.Spi;
 using GHIElectronics.TinyCLR.Pins;
 
-class Program
-{
-    static void Main()
-    {
-        var settings = new SpiConnectionSettings(FEZ.GpioPin.PB6)   // the slave's select pin
+class Program {
+    private static void Main() {
+        var settings = new SpiConnectionSettings(FEZ.GpioPin.A0)   // the slave's select pin
         {
             Mode = SpiMode.Mode1,
             ClockFrequency = 4 * 1000 * 1000,       //4Mhz
             DataBitLength = 8,
         };
-        var device = SpiDevice.FromId(FEZ.SpiBus.Spi1, settings);
+        var controller = SpiController.FromName(FEZ.SpiBus.Spi1);
+        var device = controller.GetDevice(settings);
 
-        device.Write(new byte[] { 1, 2 });          // write something
-        device.TransferSequential(...)              // this is good for reading registers
-        device.TransferFullDuplex(...)              // this is the only one that trully represents how SPI works
+        device.Write(new byte[] { 1, 2 });          //Write something.
+        device.TransferSequential(...);             //This is good for reading registers.
+        device.TransferFullDuplex(...);             //This is the only one that trully represents how SPI works.
     }
-
-}   
+}
+  
 ```

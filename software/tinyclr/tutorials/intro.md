@@ -14,6 +14,8 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [ADC](adc.md)
 * [DAC](dac.md)
 * [CAN](can.md)
+* [Graphics](graphics.md)
+* [Filesystem](filesystem.md)
 * [Display](display.md)
 * [Gpio Change Writer](gpio-change-writer.md)
 * [Gpio Change Reader](gpio-change-reader.md)
