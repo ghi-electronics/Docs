@@ -14,9 +14,9 @@
 ## [Display](tutorials/display.md)
 ## [Graphics](tutorials/graphics.md)
 ## [Filesystem](tutorials/filesystem.md)
-## [Gpio Change Writer](tutorials/gpio-change-writer.md)
-## [Gpio Change Reader](tutorials/gpio-change-reader.md)
-## [Gpio Pulse Reader Writer](tutorials/gpio-pulse-reader-writer.md)
+## [Signal Generator](tutorials/signal-generator.md)
+## [Signal Capture](tutorials/signal-capture.md)
+## [Pulse Feedback](tutorials/pulse-feedback.md)
 
 
 # [Native Code](native/intro.md)
