@@ -17,8 +17,8 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [Graphics](graphics.md)
 * [Filesystem](filesystem.md)
 * [Display](display.md)
-* [Gpio Change Writer](gpio-change-writer.md)
-* [Gpio Change Reader](gpio-change-reader.md)
-* [Gpio Pulse Reader Writer](gpio-pulse-reader-writer.md)
+* [Gpio Change Writer](signal-generator.md)
+* [Gpio Change Reader](signal-capture.md)
+* [Gpio Pulse Reader Writer](pulse-feedback.md)
 
 

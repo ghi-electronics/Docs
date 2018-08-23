@@ -7,7 +7,7 @@ These displays connect to special dedicated pins on the processor. Internally th
 
 TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our G400D Dev Board. You will need to add the `GHIElectronics.TinyCLR.Drawing` NuGet package to your program and `using System.Drawing` and `using GHIElectronics.TinyCLR.Devices.Display` to your code.
 
-```
+```csharp
 using System.Drawing;
 using GHIElectronics.TinyCLR.Devices.Display;
 

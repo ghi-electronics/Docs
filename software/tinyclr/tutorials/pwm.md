@@ -20,8 +20,8 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        PwmController controller = PwmController.FromName(FEZ.PwmChannel.Controller4.Id);
-        PwmChannel led = controller.OpenChannel(FEZ.PwmChannel.Controller4.Led1);
+        var controller = PwmController.FromName(FEZ.PwmChannel.Controller4.Id);
+        var led = controller.OpenChannel(FEZ.PwmChannel.Controller4.Led1);
         controller.SetDesiredFrequency(10000);
         double duty = 0.5, speed = 0.01;
         led.Start();
@@ -77,8 +77,8 @@ class Program {
                               QUARTER, QUARTER, QUARTER, QUARTER, QUARTER, QUARTER,    QUARTERDOT,
                               EIGHTH,  WHOLE};
     private static void Main() {
-        PwmController controller = PwmController.FromName(FEZ.PwmChannel.Controller1.Id);
-        PwmChannel toneOut = controller.OpenChannel(FEZ.PwmChannel.Controller1.D0);
+        var controller = PwmController.FromName(FEZ.PwmChannel.Controller1.Id);
+        var toneOut = controller.OpenChannel(FEZ.PwmChannel.Controller1.D0);
         toneOut.SetActiveDutyCyclePercentage(0.5);
         toneOut.Start();
         while (true) {
@@ -106,8 +106,8 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        PwmController controller = PwmController.FromName(FEZ.PwmChannel.Controller1.Id);
-        PwmChannel servo = controller.OpenChannel(FEZ.PwmChannel.Controller1.D0);
+        var controller = PwmController.FromName(FEZ.PwmChannel.Controller1.Id);
+        var servo = controller.OpenChannel(FEZ.PwmChannel.Controller1.D0);
 
         controller.SetDesiredFrequency(1 / 0.020);      //Pulse every 20ms.
         double maxPulseLength = 2.0;

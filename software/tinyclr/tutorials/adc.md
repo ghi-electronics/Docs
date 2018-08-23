@@ -17,8 +17,8 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        AdcController adc = AdcController.GetDefault();
-        AdcChannel analog = adc.OpenChannel(FEZ.AdcChannel.A0);
+        var adc = AdcController.GetDefault();
+        var analog = adc.OpenChannel(FEZ.AdcChannel.A0);
         while (true) {
             double d = analog.ReadRatio();
             Debug.WriteLine("An-> " + d.ToString("N2"));

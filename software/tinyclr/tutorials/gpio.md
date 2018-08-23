@@ -134,7 +134,7 @@ Using events to check an input instead of polling the input is often preferred. 
 
 When an event occurs, the program stops what it is doing and control is transferred to an event handler. An event handler is code you write that responds to the event. 
 
-Let's use event driven programming to respond to a button and turn and LED on and off. We will raise an event when the value on the button's input pin changes because the button is pressed or released.
+Let's use event driven programming to respond to a button and turn an LED on and off. We will raise an event when the value on the button's input pin changes because the button is pressed or released.
 
 You will see a reference to a "falling edge" in the following code. A falling edge occurs when the state of a pin goes from high to low. A rising edge is just the opposite -- it occurs when a pin goes from low to high.
 
@@ -176,7 +176,7 @@ class Program {
 ## UCM Standard Pins
 The [UCM Standard](../../../hardware/ucm/standard.md) provides a consistent mapping of pins to enable easily swapping out the underlying SoM. While the standard assigns a consistent name to each pin, the underlying pin on the processor is different, so it is helpful to use the `UCMStandard` class available in the `GHIElectronics.TinyCLR.Pins.UCM` library. Once you specify the device model to use, it will map the pins for you automatically. For example:
 
-```cs
+```csharp
 using GHIElectronics.TinyCLR.Pins;
 using GHIElectronics.TinyCLR.Devices.Gpio;
 

@@ -65,10 +65,10 @@ The `WriteMessages()` method is used to send an array of CAN messages.  The argu
 ### Filtering Incoming CAN Messages
 
 #### `SetGroupFilters()`
-`SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
+`SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below, the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
 
 #### `SetExplicitFilters()`
-`SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted in addition to the arbitration IDs specified by the group filters.
+`SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted, in addition to the arbitration IDs specified by the group filters.
 
 ## Sample Code
 The following sample code is written for our G120E Dev Board.  It requires installation of the `GHIElectronics.TinyCLR.Core`, `GHIElectronics.TinyCLR.Devices` and `GHIElectronics.TinyCLR.Pins` Nuget packages.

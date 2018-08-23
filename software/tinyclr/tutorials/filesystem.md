@@ -2,7 +2,7 @@
 ---
 The filesystem library can be used to read and write files from an SD card. The below example requires the `GHIElectronics.TinyCLR.IO` and `GHIElectronics.TinyCLR.Storage` libraries and a device with an SD card.
 
-```
+```csharp
 using GHIElectronics.TinyCLR.Devices.Storage;
 using GHIElectronics.TinyCLR.IO;
 using System;
@@ -30,9 +30,9 @@ namespace Filesystem {
 ```
 
 ## Low-level Access
-You can access the raw underlying data of the storage provider using the `Provider` property of the controller. Be careful when using this interface, however, as it bypasses any filesystem present and writes directly to the device. This is useful for implementing your own or otherwise not-supported filesystems.
+You can access the raw underlying data of the storage provider using the `Provider` property of the controller. Be careful when using this interface, however, as it bypasses any filesystem present and writes directly to the device. This is useful for implementing your own or otherwise unsupported filesystems.
 
-```cs
+```csharp
 var controller = StorageController.FromName(@"GHIElectronics.TinyCLR.NativeApis.STM32F4.SdCardStorageController\0");
 controller.Provider.Read(address, buffer, 0, buffer.Length, -1);
 ```

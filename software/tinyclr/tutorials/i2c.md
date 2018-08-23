@@ -33,7 +33,7 @@ The I2C bus is relatively simple and can be "bit banged" using software. The adv
 
 This example initializes a software I2C driver. Once initialized, it's used the same as hardware I2C.
 
-```
+```csharp
 using GHIElectronics.TinyCLR.Devices.I2c;
 using GHIElectronics.TinyCLR.Devices.I2c.Provider;
 using GHIElectronics.TinyCLR.Pins;
