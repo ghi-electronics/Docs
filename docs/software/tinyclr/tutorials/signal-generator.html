@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Gpio Change Reader </title>
+    <title>Signal Generator </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Gpio Change Reader ">
+    <meta name="title" content="Signal Generator ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,13 +75,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gpio-change-reader">Gpio Change Reader</h1>
+<h1 id="signal-generator">Signal Generator</h1>
 
 <hr>
-<p>Gpio Change Reader works in the current release. Documentation is coming soon.</p>
-<p><code>var reader = new GpioChangeReader(FEZ.GpioPin.A1, GpioPinDriveMode.InputPullUp);</code></p>
-<p>See this for now <a href="https://old.ghielectronics.com/docs/106/signal-capture">https://old.ghielectronics.com/docs/106/signal-capture</a></p>
-</article>
+<p>SignalGenerator is a digital waveform generator. SignalGenerator works by comparing an internal counter to an array of time values, one by one. When the value of the argument matches the counter, the output pin is changed. The time values are in microseconds.</p>
+<p>SignalGenerator can also be used to generate PWM. Unlike the PWM class, SignalGenerator can be used to generate PWM on any available output pin. It does use processor time -- the higher the frequency the more processor time it uses.</p>
+<p>At this time, SignalGenerator only operates in blocking mode. While SingnalGenerator is running it will not yield any processor time to other code.</p>
+<p>The following sample code will blink LED1 on the FEZ.</p>
+<pre><code class="lang-csharp">using GHIElectronics.TinyCLR.Pins;
+using GHIElectronics.TinyCLR.Devices.Gpio;
+using GHIElectronics.TinyCLR.Devices.Signals;
+
+class Program {
+    private static void Main() {
+        var timing = new long[] { 500 * 1000, 500 * 1000 };
+        var led = new SignalGenerator(FEZ.GpioPin.Led1, GpioPinValue.Low);
+        led.Write(timing, 0, timing.Length);
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -89,7 +101,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/gpio-change-reader.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/signal-generator.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

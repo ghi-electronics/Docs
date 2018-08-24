@@ -78,8 +78,8 @@
 <h1 id="filesystem">Filesystem</h1>
 
 <hr>
-<p>The filesystem library can be used to read and write files from an SD card. The below example requires the <code>GHIElectronics.TinyCLR.IO</code> library and a device with an SD card.</p>
-<pre><code>using GHIElectronics.TinyCLR.Devices.SdCard;
+<p>The filesystem library can be used to read and write files from an SD card. The below example requires the <code>GHIElectronics.TinyCLR.IO</code> and <code>GHIElectronics.TinyCLR.Storage</code> libraries and a device with an SD card.</p>
+<pre><code class="lang-csharp">using GHIElectronics.TinyCLR.Devices.Storage;
 using GHIElectronics.TinyCLR.IO;
 using System;
 using System.IO;
@@ -87,9 +87,9 @@ using System.Text;
 
 namespace Filesystem {
     public class Program {
-        public static void Main() {
-            var sd = SdCardController.GetDefault();
-            var drive = FileSystem.Mount(sd);
+        private static void Main() {
+            var sd = StorageController.FromName(@&quot;GHIElectronics.TinyCLR.NativeApis.STM32F4.SdCardStorageController\0&quot;);
+            var drive = FileSystem.Mount(sd.Hdc);
 
             var file = new FileStream($@&quot;{drive.Name}Test.txt&quot;, FileMode.OpenOrCreate);
             var bytes = Encoding.UTF8.GetBytes(DateTime.UtcNow.ToString() + Environment.NewLine);
@@ -98,14 +98,14 @@ namespace Filesystem {
 
             file.Flush();
 
-            FileSystem.Flush(sd);
+            FileSystem.Flush(sd.Hdc);
         }
     }
 }
 </code></pre><h2 id="low-level-access">Low-level Access</h2>
-<p>You can access the raw underlying sectors of an SD card if the provider implements <code>ISdCardLowLevelController</code>, like the one provided by the <code>GHIElectronics.TinyCLR.Devices</code> library. That interface exposes <code>ReadSectors</code>, <code>WriteSectors</code>, <code>EraseSector</code>, and <code>GetSectorMap</code>. Be careful when using this interface, however, as it bypasses any filesystem present and writes directly to the device. This is useful for implementing your own or otherwise not-supported filesystems.</p>
-<pre><code class="lang-cs">var controller = SdCardController.GetDefault();
-var lowLevel = (ISdCardLowLevelController)controller.Provider;
+<p>You can access the raw underlying data of the storage provider using the <code>Provider</code> property of the controller. Be careful when using this interface, however, as it bypasses any filesystem present and writes directly to the device. This is useful for implementing your own or otherwise unsupported filesystems.</p>
+<pre><code class="lang-csharp">var controller = StorageController.FromName(@&quot;GHIElectronics.TinyCLR.NativeApis.STM32F4.SdCardStorageController\0&quot;);
+controller.Provider.Read(address, buffer, 0, buffer.Length, -1);
 </code></pre></article>
           </div>
           

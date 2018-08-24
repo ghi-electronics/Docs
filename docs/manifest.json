@@ -4230,7 +4230,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/supported-devices.html",
-          "hash": "CZ/3DMdz9aEB5cXJalSbtw=="
+          "hash": "C3dmLpbNIv87FTwStqjnYA=="
         }
       },
       "is_incremental": false,
@@ -4254,7 +4254,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/toc.html",
-          "hash": "H5pG5+I1bbbwLJm6NvHiQA=="
+          "hash": "iVR8gp1v02EYU8HQ6ONYOg=="
         }
       },
       "is_incremental": false,
@@ -4266,7 +4266,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/adc.html",
-          "hash": "X9x9R7zxECt8hjMIX+vd0w=="
+          "hash": "NORuoMv1JVnZE9cr6zYBiQ=="
         }
       },
       "is_incremental": false,
@@ -4278,7 +4278,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/can.html",
-          "hash": "nN/xBSQRhpVv9Q6j/XKVEg=="
+          "hash": "NBHTUQGz+87SHdOAcDNn+g=="
         }
       },
       "is_incremental": false,
@@ -4290,7 +4290,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/dac.html",
-          "hash": "ducaNW2stfsS5Cxt5ipE3A=="
+          "hash": "hrM563yVpQRTrKhRW6NXzQ=="
         }
       },
       "is_incremental": false,
@@ -4302,7 +4302,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/display.html",
-          "hash": "Q93xSndOtfgDoUPsBmf0CA=="
+          "hash": "hP3O2656H3N9KCuED1xeXA=="
         }
       },
       "is_incremental": false,
@@ -4314,43 +4314,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/filesystem.html",
-          "hash": "GqEM1k13Bu2uNakzKcyAaQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpio-change-reader.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpio-change-reader.html",
-          "hash": "RSlfGTG5eWYhZ8gj3v6wVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpio-change-writer.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpio-change-writer.html",
-          "hash": "uJOlVBatA/KiM3ZO5XJR0A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/gpio-pulse-reader-writer.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/gpio-pulse-reader-writer.html",
-          "hash": "sbDohA6uKwN2tHVOlj7YPw=="
+          "hash": "0BP2oKYxlpGCgKHzpYR8+Q=="
         }
       },
       "is_incremental": false,
@@ -4362,7 +4326,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/gpio.html",
-          "hash": "rqJ3Z3K6dUKBfb1tfI0LrA=="
+          "hash": "zVP7YtVxFXKG23YDSse5/A=="
         }
       },
       "is_incremental": false,
@@ -4374,7 +4338,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/graphics.html",
-          "hash": "1IQFfJoaQjxT+V80UiAP8g=="
+          "hash": "ErzgXywN3iqSApS46Pc+NQ=="
         }
       },
       "is_incremental": false,
@@ -4386,7 +4350,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/i2c.html",
-          "hash": "vFtBSwsi5FWA1I+W+vYD4A=="
+          "hash": "ninsATA8TygGtn9ZMMcDMQ=="
         }
       },
       "is_incremental": false,
@@ -4404,12 +4368,46 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/capacitive-touch-schematic.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/capacitive-touch-schematic.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/pulse-feedback.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/pulse-feedback.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "software/tinyclr/tutorials/intro.md",
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/intro.html",
-          "hash": "uFNy1NMyXsntBZ45gpidNw=="
+          "hash": "7RnVvEPqZKdsqeN7dgVZTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/pulse-feedback.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/pulse-feedback.html",
+          "hash": "ZsTyrAsH96ke34JwCvCf3g=="
         }
       },
       "is_incremental": false,
@@ -4421,7 +4419,31 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/pwm.html",
-          "hash": "b3bvqfB98ZrfVvew3RIwBA=="
+          "hash": "3D1SHpUR+oHI7G5GJwAk0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/signal-capture.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/signal-capture.html",
+          "hash": "Gv3OkwxcfWxrAgLbJfWhCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/signal-generator.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/signal-generator.html",
+          "hash": "L628BNgLQT1Bwu0iaI9YQA=="
         }
       },
       "is_incremental": false,
@@ -4433,7 +4455,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/spi.html",
-          "hash": "IhhwVGnSFXZ22jmE6RwThQ=="
+          "hash": "ueV7oYdNgq+yAse+7gC4Gw=="
         }
       },
       "is_incremental": false,
@@ -4445,7 +4467,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/uart.html",
-          "hash": "U3aU5Rk4N2l09qmXz59Xjw=="
+          "hash": "GQNsVToU6tqgf79uXXgcBg=="
         }
       },
       "is_incremental": false,
@@ -4472,14 +4494,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

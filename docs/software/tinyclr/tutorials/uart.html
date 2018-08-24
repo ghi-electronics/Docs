@@ -81,54 +81,79 @@
 <p>Serial data ports, called UARTs, transfer data between devices using two pins: TXD (transmit data) and RXD (receive data). UART stands for Universal Asynchronous Receiver Transmitter. Asynchronous means there is no clock signal to synchronize the two devices. The devices agree on a data rate, called the baud rate, and send a start bit the beginning of each transmitted character to keep the devices synchronized. </p>
 <div class="TIP"><h5>Tip</h5><p>the TXD on one end (output) goes to the RXD on the other side (input) and vice versa.</p>
 </div>
-<p>The easiest way to test a UART is by wiring a device&#39;s TXD to its RXD so any transmitted data is received by the same device. This is called a &quot;loopback&quot; test. This demo will transmit and receive a number every half second.</p>
-<div class="TIP"><h5>Tip</h5><p>UART serial communication uses Storage Streams to handle the data. Don&#39;t forget to add the Storage NuGet package.</p>
+<p>The easiest way to test a UART is by wiring a device&#39;s TXD to its RXD so any transmitted data is received by the same device. This is called a &quot;loopback&quot; test. The following code performs a simple loopback test on the FEZ. If you connect the TX pin directly to the RX pin, you will see &quot;ABCDEF&quot; in the output window when running this code.</p>
+<div class="TIP"><h5>Tip</h5><p>Don&#39;t forget to add the GHIElectronics.TinyCLR.Devices.Uart NuGet package!</p>
 </div>
-<pre><code class="lang-csharp">using System;
-using System.Diagnostics;
+<pre><code class="lang-csharp">using System.Diagnostics;
+using System.Text;
 using System.Threading;
-using GHIElectronics.TinyCLR.Storage.Streams;
-using GHIElectronics.TinyCLR.Devices.SerialCommunication;
+using GHIElectronics.TinyCLR.Devices.Uart;
 using GHIElectronics.TinyCLR.Pins;
 
 class Program {
-    static DataReader serReader;
-    static DataWriter serWriter;
+    private static void Main() {
+        var txBuffer = new byte[] { 0x41, 0x42, 0x43, 0x44, 0x45, 0x46 };    //A, B, C, D, E, F
+        var rxBuffer = new byte[txBuffer.Length];
 
-    static void Sender() {
-        byte b = 0;
-        while(true) {
-            serWriter.WriteByte(b++);
-            serWriter.Store();
-            Debug.WriteLine(&quot;Sent: &quot; + b);
+        var myUart = UartController.FromName(FEZ.UartPort.Usart1);
 
-            Thread.Sleep(500);
-        }
-    }
-
-    static void Main() {
-        SerialDevice ser = SerialDevice.FromId(FEZ.UartPort.Usart1);
-        ser.BaudRate = 115200;
-        ser.ReadTimeout = TimeSpan.Zero;
-        serReader = new DataReader(ser.InputStream);
-        serWriter = new DataWriter(ser.OutputStream);
-
-        Thread SenderT = new Thread(Sender);
-        SenderT.Start();
+        myUart.SetActiveSettings(9600, 8, UartParity.None, UartStopBitCount.One, UartHandshake.None);
+        myUart.Enable();
+        myUart.Write(txBuffer, 0, txBuffer.Length);
 
         while (true) {
-            var i = serReader.Load(1);
-            if(i&gt;0)
-            {
-                byte b = serReader.ReadByte();
-                Debug.WriteLine(&quot;Recieved: &quot; + b);
+            if (myUart.BytesToRead &gt; 0) {
+                var bytesReceived = myUart.Read(rxBuffer, 0, myUart.BytesToRead);
+                Debug.WriteLine(Encoding.UTF8.GetString(rxBuffer, 0, bytesReceived));
             }
-
-            Thread.Sleep(10);// always give the system time to think!
+            Thread.Sleep(20);
         }
     }
 }
-</code></pre><h2 id="rs232">RS232</h2>
+</code></pre><h2 id="event-handlers">Event Handlers</h2>
+<p>TinyCLR&#39;s UART API included the following event watchers:</p>
+<ul>
+<li>ClearToSendChanged</li>
+<li>DataReceived</li>
+<li>ErrorReceived</li>
+</ul>
+<p>The following example demonstrates the DateReceived event.</p>
+<pre><code class="lang-csharp">using System.Diagnostics;
+using System.Text;
+using System.Threading;
+using GHIElectronics.TinyCLR.Devices.Uart;
+using GHIElectronics.TinyCLR.Pins;
+
+class Program {
+    private static byte[] txBuffer;
+    private static byte[] rxBuffer;
+    private static UartController myUart;
+
+    private static void Main() {
+        txBuffer = new byte[] { 0x41, 0x42, 0x43, 0x44, 0x45, 0x46 };    //A, B, C, D, E, F
+        rxBuffer = new byte[txBuffer.Length];
+        myUart = UartController.FromName(FEZ.UartPort.Usart1);
+
+        myUart.SetActiveSettings(9600, 8, UartParity.None, UartStopBitCount.One, UartHandshake.None);
+        myUart.Enable();
+
+        myUart.DataReceived += MyUart_DataReceived;
+
+        myUart.Write(txBuffer, 0, txBuffer.Length);
+
+        while (true) {
+            Thread.Sleep(20);
+        }
+    }
+
+    private static void MyUart_DataReceived(UartController sender, DataReceivedEventArgs e) {
+        var bytesReceived = myUart.Read(rxBuffer, 0, e.Count);
+        Debug.WriteLine(Encoding.UTF8.GetString(rxBuffer, 0, bytesReceived));
+    }
+}
+</code></pre><div class="TIP"><h5>Tip</h5><p>Once you type += after the event, hit the tab key and Visual Studio will automatically create the event for you.</p>
+</div>
+<h2 id="rs232">RS232</h2>
 <p>UART uses the processor&#39;s voltage levels (logic levels) for transferring data. On the FEZ this is 0 to 3.3 volts. In the early days of computers UARTs used -12 to 12 volts to communicate reliably over longer distances. This is known as the RS232 standard.</p>
 <p>Some PCs still include serial ports, but those are RS232 serial ports. A voltage level shifter is needed to properly connect a logic level UART to an RS232 device.</p>
 <div class="WARNING"><h5>Warning</h5><p>Connecting your device to an RS232 port without a proper voltage level shifter can damage your device.</p>

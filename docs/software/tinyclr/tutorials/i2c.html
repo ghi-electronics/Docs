@@ -82,35 +82,33 @@
 <p>Before data is transferred, the master transmits the 7-bit address of the slave device it wants to communicate with. It also sends one bit indicating whether it wants to send data to the slave or receive data from the slave. When a slave sees its address on the bus, it will acknowledge its presence. At this point, the master can send or receive data. The master will start data transfers with a &quot;start condition&quot; before sending an address or data. The master ends the data transfer with a &quot;stop condition.&quot;</p>
 <p>The two wires for I2C communication are called the SDA and SCL lines. SDA stands for Serial Data, and SCL is Serial Clock.</p>
 <p>This is a partial demo showing the use of I2C.</p>
-<pre><code>using System;
-using System.Diagnostics;
-using System.Threading;
-using GHIElectronics.TinyCLR.Devices.I2c;
+<pre><code class="lang-csharp">using GHIElectronics.TinyCLR.Devices.I2c;
 using GHIElectronics.TinyCLR.Pins;
 
 class Program {
-    static void Main() {
-        var settings = new I2cConnectionSettings(0x1C) {    // the slave&#39;s address
-            BusSpeed = I2cBusSpeed.FastMode
-        };
-        var device = I2cDevice.FromId(FEZ.I2cBus.I2c1, settings);
+    private static void Main() {
+        var settings = new I2cConnectionSettings(0x1C);     //The slave&#39;s address.
+        settings.BusSpeed = I2cBusSpeed.FastMode;
 
-        device.Write(new byte[] { 1, 2 });  // write something
-        device.WriteRead(...)               // this is good for reading registers
+        var controller = I2cController.FromName(FEZ.I2cBus.I2c1);
+        var device = controller.GetDevice(settings);
+
+        device.Write(new byte[] { 1, 2 });  //Write something
+        device.WriteRead(...);              //This is good for reading registers.
     }
-}   
+}
 </code></pre><h2 id="software-i2c">Software I2C</h2>
 <p>The I2C bus is relatively simple and can be &quot;bit banged&quot; using software. The advantage is that any two GPIO pins can be used. However, software I2C requires more system resources and runs slower.</p>
 <p>This example initializes a software I2C driver. Once initialized, it&#39;s used the same as hardware I2C.</p>
-<pre><code>using GHIElectronics.TinyCLR.Devices.I2c;
+<pre><code class="lang-csharp">using GHIElectronics.TinyCLR.Devices.I2c;
+using GHIElectronics.TinyCLR.Devices.I2c.Provider;
 using GHIElectronics.TinyCLR.Pins;
 
 class Program {
-    static void Main() {
-        var softwareProvider = new I2cSoftwareProvider(FEZ.GpioPin.PA0, FEZ.GpioPin.PA1);
-        var controllers = I2cController.GetControllers(softwareProvider);
-        var controller = controllers[0];
-        var device = controller.GetDevice(new I2cConnectionSettings(0x22) { BusSpeed = I2cBusSpeed.StandardMode, SharingMode = I2cSharingMode.Exclusive });
+    private static void Main() {
+        var provider = new I2cControllerSoftwareProvider(FEZ.GpioPin.A0, FEZ.GpioPin.A1, false);
+        var controller = I2cController.FromProvider(provider);
+        var device = controller.GetDevice(new I2cConnectionSettings(0x1C) { AddressFormat = I2cAddressFormat.SevenBit, BusSpeed = I2cBusSpeed.StandardMode }); //Device address
     }
 }
 </code></pre></article>

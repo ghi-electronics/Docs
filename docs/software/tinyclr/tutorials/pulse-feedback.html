@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Gpio Pulse Reader Writer </title>
+    <title>Pulse Feedback </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Gpio Pulse Reader Writer ">
+    <meta name="title" content="Pulse Feedback ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
@@ -75,11 +75,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gpio-pulse-reader-writer">Gpio Pulse Reader Writer</h1>
+<h1 id="pulse-feedback">Pulse Feedback</h1>
 
 <hr>
-<p>Gpio Pulse Reader Writer works in the current release. Documentation is coming soon.</p>
-<p><code>var pulse = new GpioPulseReaderWriter(GpioPulseReaderWriter.Mode.DrainDuration, true, 100, FEZ.GpioPin.A1);</code></p>
+<p>The PulseFeedback class can be used in three different modes.</p>
+<p>The first mode is EchoDuration. This mode sends a pulse of a given length and state over the provided pin. It then waits for an echo on the other specified pin and measures how long in microseconds that echo pulse was. The echo and pulse pin can be the same if desired. </p>
+<p>The next mode is DurationUntilEcho. It is very similar to EchoDuration, although instead of sending a pulse and measuring the length of the resulting echo, it measures how long it takes until that echo is received.</p>
+<p>The final mode is DrainDuration. This mode is often used in capacitive touch. When calling Read, the pulse line will be held in the specified state for the specified time and then set to an input. When a resistor and capacitor are connected to this pin and ground, the pin will fall to ground after a short period of time dependent on the capacitance on the pin. The below image shows a sample circuit. Do note that this mode can only be used with a single pin.</p>
+<p><img src="images/capacitive-touch-schematic.jpg" alt="Capacitive touch schematic"></p>
+<p>The below example illustrates sending a pulse of 10us and reading an echo on the same pin where both the pulse and echo are high. A constructor overload is available that allows you to specify a different echo pin and state.</p>
+<p>This image shows an example pin capture for each of the modes. It is not drawn to scale. The area marked by the arrows is the time measured for each mode. Remember that the pulse and echo may be on separate pins.</p>
+<p><img src="images/pulse-feedback.jpg" alt="Pulse feedback timing"></p>
 <p>See this for now <a href="https://old.ghielectronics.com/docs/326/pulse-feedback">https://old.ghielectronics.com/docs/326/pulse-feedback</a></p>
 </article>
           </div>
@@ -89,7 +95,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/gpio-pulse-reader-writer.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/pulse-feedback.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
