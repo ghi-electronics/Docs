@@ -42,9 +42,7 @@ class Program {
     private static void Main() {
         var provider = new I2cControllerSoftwareProvider(FEZ.GpioPin.A0, FEZ.GpioPin.A1, false);
         var controller = I2cController.FromProvider(provider);
-        var device = controller.GetDevice(new I2cConnectionSettings(0x1C)); //Device address
-        device.ConnectionSettings.AddressFormat = I2cAddressFormat.SevenBit;
-        device.ConnectionSettings.BusSpeed = I2cBusSpeed.FastMode;
+        var device = controller.GetDevice(new I2cConnectionSettings(0x1C) { AddressFormat = I2cAddressFormat.SevenBit, BusSpeed = I2cBusSpeed.StandardMode }); //Device address
     }
 }
 
