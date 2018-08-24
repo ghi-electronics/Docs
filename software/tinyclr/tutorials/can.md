@@ -65,10 +65,10 @@ The `WriteMessages()` method is used to send an array of CAN messages.  The argu
 ### Filtering Incoming CAN Messages
 
 #### `SetGroupFilters()`
-`SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
+`SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below, the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
 
 #### `SetExplicitFilters()`
-`SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted in addition to the arbitration IDs specified by the group filters.
+`SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted, in addition to the arbitration IDs specified by the group filters.
 
 ## Sample Code
 The following sample code is written for our G120E Dev Board.  It requires installation of the `GHIElectronics.TinyCLR.Core`, `GHIElectronics.TinyCLR.Devices` and `GHIElectronics.TinyCLR.Pins` Nuget packages.
@@ -79,67 +79,63 @@ using System.Diagnostics;
 using System.Threading;
 using GHIElectronics.TinyCLR.Devices.Can;
 using GHIElectronics.TinyCLR.Devices.Gpio;
+using GHIElectronics.TinyCLR.Pins;
 
-namespace CanExample {
-    class Program {
-        static void Main() {
-            var downButton = GpioController.GetDefault().OpenPin(0);
-            
-            downButton.SetDriveMode(GpioPinDriveMode.InputPullUp);
+class Program {
+    private static void Main() {
+        var downButton = GpioController.GetDefault().OpenPin(G120E.GpioPin.P0_22);
+        downButton.SetDriveMode(GpioPinDriveMode.InputPullUp);
 
-            var can = CanController.FromId(G120E.CanBus.Can1);
+        var can = CanController.FromName(G120E.CanBus.Can1);
 
-            var propagation = 0;
-            var phase1 = 7;
-            var phase2 = 4;
-            var baudratePrescaler = 5;
-            var synchronizationJumpWidth = 1;
-            var useMultiBitSampling = false;
+        var propagation = 0;
+        var phase1 = 7;
+        var phase2 = 4;
+        var baudratePrescaler = 5;
+        var synchronizationJumpWidth = 1;
+        var useMultiBitSampling = false;
 
-            can.SetBitTiming(new CanBitTiming(propagation, phase1, phase2, baudratePrescaler, synchronizationJumpWidth, useMultiBitSampling));
+        can.SetBitTiming(new CanBitTiming(propagation, phase1, phase2, baudratePrescaler, synchronizationJumpWidth, useMultiBitSampling));
 
-            var message = new CanMessage() {
-                Data = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2E, 0x20, 0x20 },
-                ArbitrationId = (0x11),
-                Length = 6,
-                IsRemoteTransmissionRequest = false,
-                IsExtendedId = false
-            };
+        var message = new CanMessage() {
+            Data = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2E, 0x20, 0x20 },
+            ArbitrationId = 0x11,
+            Length = 6,
+            IsRemoteTransmissionRequest = false,
+            IsExtendedId = false
+        };
 
-            var lowerBounds = new uint[] { 0x12, 0x500 };
-            var upperBounds = new uint[] { 0x20, 0x1000 };
-            can.SetGroupFilters(lowerBounds, upperBounds);
+        var lowerBounds = new int[] { 0x12, 0x500 };
+        var upperBounds = new int[] { 0x20, 0x1000 };
+        can.SetGroupFilters(lowerBounds, upperBounds);
 
-            var explicitFilter = new uint[] { 0x11, 0x5678 };
-            can.SetExplicitFilters(explicitFilter);
+        var explicitFilter = new int[] { 0x11, 0x5678 };
+        can.SetExplicitFilters(explicitFilter);
 
-            can.MessageReceived += CanController_MessageReceived;
-            can.ErrorReceived += CanController_ErrorReceived;
+        can.MessageReceived += Can_MessageReceived;
+        can.ErrorReceived += Can_ErrorReceived;
 
-            while (true) {
-                if (downButton.Read() == GpioPinValue.Low)
-                    can.WriteMessage(message);
-					
-                Thread.Sleep(100);
-            }
+        while (true) {
+            if (downButton.Read() == GpioPinValue.Low) can.WriteMessage(message);
+            Thread.Sleep(100);
         }
-
-        private static void CanController_MessageReceived(CanController sender, MessageReceivedEventArgs e) {
-            sender.ReadMessage(out var message);
-
-            Debug.WriteLine("Arbritration ID: 0x" + message.ArbitrationId.ToString("X8"));
-            Debug.WriteLine("Is extended ID: " + message.IsExtendedId.ToString());
-            Debug.WriteLine("Is remote transmission request: " + message.IsRemoteTransmissionRequest.ToString());
-            Debug.WriteLine("Time stamp: " + message.TimeStamp.ToString());
-
-            var data = "";
-            for (var i = 0; i < message.Length; i++)
-			    data += Convert.ToChar(message.Data[i]);
-
-            Debug.WriteLine("Data: " + data);
-        }
-
-        private static void CanController_ErrorReceived(CanController sender, ErrorReceivedEventArgs e) => Debug.WriteLine("Error " + e.ToString());
     }
+
+    private static void Can_MessageReceived(CanController sender, MessageReceivedEventArgs e) {
+        sender.ReadMessage(out var message);
+
+        Debug.WriteLine("Arbritration ID: 0x" + message.ArbitrationId.ToString("X8"));
+        Debug.WriteLine("Is extended ID: " + message.IsExtendedId.ToString());
+        Debug.WriteLine("Is remote transmission request: " + message.IsRemoteTransmissionRequest.ToString());
+        Debug.WriteLine("Time stamp: " + message.TimeStamp.ToString());
+
+        var data = "";
+        for (var i = 0; i < message.Length; i++) data += Convert.ToChar(message.Data[i]);
+
+        Debug.WriteLine("Data: " + data);
+    }
+
+    private static void Can_ErrorReceived(CanController sender, ErrorReceivedEventArgs e) => Debug.WriteLine("Error " + e.ToString());
 }
+
 ```

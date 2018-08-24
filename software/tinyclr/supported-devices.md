@@ -18,7 +18,7 @@ The reference port includes these libraries:
 | [Digital Input](tutorials/gpio.md) | [Digital Output](tutorials/gpio.md) | [Interrupts](tutorials/gpio.md) |
 | [PWM](tutorials/pwm.md) | [ADC](tutorials/adc.md) | [DAC](tutorials/dac.md) |
 | [UART](tutorials/uart.md) | [SPI](tutorials/spi.md) | [I2C](tutorials/i2c.md) |
-| [GPIO Change Writer](tutorials/gpio-change-writer.md) | [GPIO Change Reader](tutorials/gpio-change-reader.md) | [GPIO Pulse Reader Writer](tutorials/gpio-pulse-reader-writer.md) |
+| [GPIO Change Writer](tutorials/signal-generator.md) | [GPIO Change Reader](tutorials/signal-capture.md) | [GPIO Pulse Reader Writer](tutorials/pulse-feedback.md) |
 
 Keep in mind that while the above features are available not every device will support every feature because the processor itself may not support it or resources are not available.
 

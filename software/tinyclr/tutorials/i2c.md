@@ -8,24 +8,23 @@ The two wires for I2C communication are called the SDA and SCL lines. SDA stands
 
 This is a partial demo showing the use of I2C.
 
-```
-using System;
-using System.Diagnostics;
-using System.Threading;
+```csharp
 using GHIElectronics.TinyCLR.Devices.I2c;
 using GHIElectronics.TinyCLR.Pins;
 
 class Program {
-    static void Main() {
-        var settings = new I2cConnectionSettings(0x1C) {    // the slave's address
-            BusSpeed = I2cBusSpeed.FastMode
-        };
-        var device = I2cDevice.FromId(FEZ.I2cBus.I2c1, settings);
+    private static void Main() {
+        var settings = new I2cConnectionSettings(0x1C);     //The slave's address.
+        settings.BusSpeed = I2cBusSpeed.FastMode;
 
-        device.Write(new byte[] { 1, 2 });  // write something
-        device.WriteRead(...)               // this is good for reading registers
+        var controller = I2cController.FromName(FEZ.I2cBus.I2c1);
+        var device = controller.GetDevice(settings);
+
+        device.Write(new byte[] { 1, 2 });  //Write something
+        device.WriteRead(...);              //This is good for reading registers.
     }
-}   
+}
+
 ```
 
 ## Software I2C
@@ -34,16 +33,19 @@ The I2C bus is relatively simple and can be "bit banged" using software. The adv
 
 This example initializes a software I2C driver. Once initialized, it's used the same as hardware I2C.
 
-```
+```csharp
 using GHIElectronics.TinyCLR.Devices.I2c;
+using GHIElectronics.TinyCLR.Devices.I2c.Provider;
 using GHIElectronics.TinyCLR.Pins;
 
 class Program {
-    static void Main() {
-        var softwareProvider = new I2cSoftwareProvider(FEZ.GpioPin.PA0, FEZ.GpioPin.PA1);
-        var controllers = I2cController.GetControllers(softwareProvider);
-        var controller = controllers[0];
-        var device = controller.GetDevice(new I2cConnectionSettings(0x22) { BusSpeed = I2cBusSpeed.StandardMode, SharingMode = I2cSharingMode.Exclusive });
+    private static void Main() {
+        var provider = new I2cControllerSoftwareProvider(FEZ.GpioPin.A0, FEZ.GpioPin.A1, false);
+        var controller = I2cController.FromProvider(provider);
+        var device = controller.GetDevice(new I2cConnectionSettings(0x1C)); //Device address
+        device.ConnectionSettings.AddressFormat = I2cAddressFormat.SevenBit;
+        device.ConnectionSettings.BusSpeed = I2cBusSpeed.FastMode;
     }
 }
+
 ```

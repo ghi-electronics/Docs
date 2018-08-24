@@ -1,8 +1,8 @@
 # Graphics
 
-You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The below sample shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed touch and button events in from whatever source you may want to use.
+You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
 
-```cs
+```csharp
 using GHIElectronics.TinyCLR.Devices.Display;
 using GHIElectronics.TinyCLR.UI;
 using GHIElectronics.TinyCLR.UI.Controls;
@@ -17,7 +17,7 @@ namespace UI {
         public static void Main() {
             var disp = DisplayController.GetDefault();
 
-            disp.ApplySettings(new ParallelDisplayControllerSettings {
+            disp.SetConfiguration(new ParallelDisplayControllerSettings {
                 //Your display configuration
             });
 
@@ -33,8 +33,8 @@ namespace UI {
         private static Window CreateWindow(DisplayController disp) {
             //Setup
             var window = new Window {
-                Height = (int)disp.ActiveSettings.Height,
-                Width = (int)disp.ActiveSettings.Width
+                Height = (int)disp.ActiveConfiguration.Height,
+                Width = (int)disp.ActiveConfiguration.Width
             };
 
             window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0, window.Width, window.Height);
@@ -89,4 +89,5 @@ namespace UI {
         }
     }
 }
+
 ```
