@@ -39,6 +39,7 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 ### Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20T18%20Rev%20D%20Schematic.pdf)
 * [TinyCLR Tutorial](../../software/tinyclr/tutorials/intro.md)
+* [Instructions](../components/spwf04sa.md) for updating the Wi-Fi module firmware.
 
 ### Programming Options
 
