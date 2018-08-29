@@ -33,10 +33,10 @@ Using this tool is the recommended path; however, the instructions for manually 
 #### Manually Loading the Firmware
 We recommend using the TinyCLR Config tool to update the firmware. As a backup, use these instructions:
 
-1. Download and save the latest [FEZCLR firmware](../../software/tinyclr/downloads.md#fezclr)
+1. Download and save the latest [FEZCLR firmware](../../software/tinyclr/downloads.md#fezclr).
 2. Put the FEZ in bootloader mode: Hold down BTN1, press and release the RESET button, and then release BTN1.
-3. Open any terminal software, for example [Tera Term](http://ttssh2.osdn.jp/),
-4. Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)
+3. Open any terminal software, for example [Tera Term](http://ttssh2.osdn.jp/).
+4. Select serial and pick the COM port associated with your board (if unsure, check Device Manager).
 5. Press `V` and then enter. The FEZ will respond with the installed boot loader version number (v2.x.x)
 6. Press `U` and then enter to start the upload firmware procedure.
 7. Press `Y` to confirm then enter. The FEZ will respond with `CCCC`...
