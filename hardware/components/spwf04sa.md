@@ -1,8 +1,8 @@
-# Updating the WPWF04SA Wi-Fi Module Firmware
+# Updating the SPWF04SA Wi-Fi Module Firmware
 ---
 
 > [!Warning]
-> Before updating the Wi-Fi firmware, erase all applications on the host board to prevent them from interfering with the upgrade process and to avoid possible damage to the host processor.
+> Before updating the Wi-Fi firmware, erase all applications on the host board to prevent them from interfering with the upgrade process and to prevent possible damage to the host processor.
 
 When the Wi-Fi module starts, it sends a PowerOn message which tells you what firmware version is installed. For example, `PowerOn 171117-0328fe3-SPWF04S`. In this case the firmware is dated 11/17/17.
 
@@ -20,7 +20,7 @@ You will also need:
 > [!Tip]
 > For the USB to serial adapter you can use the Gadgeteer USB-Serial Module with a Gadgeteer Breadboard. Connect the module socket to the breadboard socket using a ribbon cable. You must also power the breadboard by connecting GND and 3.3V from the FEZ to the corresponding breadboard connectors.
 
-## Erase Host Firmware
+## Erase the Host Firmware
 
 Before updating the Wi-Fi module firmware, you must erase the firmware on the host board or SoM. This is accomplished using terminal software while the board is in bootloader mode. The instructions are very similar to the instructions for [manually loading firmware](../../software/tinyclr/loaders/ghi-bootloader.md#manually-loading-the-firmware).
 
@@ -57,10 +57,10 @@ Before updating the Wi-Fi firmware, you must first connect the following pins (P
 
 | Wi-Fi Pin Name | FEZ | UC2550/UC5550 | UCM Dev Board | UCM Breakout Board |
 |----------------|-----|---------------|---------------|--------------------|
-| BOOT0 | Header H1 pin 1 | SO-DIMM pin 108 | HDR B pin 24 | SH10 |
-| TXD | Header H1 pin 2 | SO-DIMM pin 93 | HDR A pin 24 | SH70 |
-| RXD | Header H1 pin 3 | SO-DIMM pin 94 | HDR A pin 26 | SH69 |
-| GPIO 0 | WGPIO pin 0 | SO-DIMM pin 36 | HDR B pin 27 | N/A |
+| BOOT0 | Header H1 pin 1 | SO-DIMM pin 108 | HDR B MS2 | MS2 |
+| TXD | Header H1 pin 2 | SO-DIMM pin 93 | HDR A SPI B MISO | SPI B MISO |
+| RXD | Header H1 pin 3 | SO-DIMM pin 94 | HDR A SPI B MOSI | SPI B MOSI |
+| GPIO 0 | WGPIO pin 0 | SO-DIMM pin 36 | HDR B MS5 | N/A |
 
 ## Flash the Wi-Fi Module
 
@@ -76,7 +76,7 @@ Before updating the Wi-Fi firmware, you must first connect the following pins (P
 
     ![Flash loader choose device](images/flash-loader-choose-device.gif)
 
-* Click on the `Download to device` radio button and then select the Wi-Fi firmware file you [downloaded](https://www.st.com/content/st_com/en/products/embedded-software/wireless-connectivity-software/stsw-wifi004.html#getsoftware-scroll) earlier. This file is a .hex file called `SPWF04S-xxxxxx-xxxxxxx-Full.hex`. If you are searching for the file, make sure to search for a .hex file. Click the `Next` button to copy this file to the Wi-Fi module.
+* Click the `Download to device` radio button and then select the Wi-Fi firmware file you [downloaded](https://www.st.com/content/st_com/en/products/embedded-software/wireless-connectivity-software/stsw-wifi004.html#getsoftware-scroll) earlier. This file is a .hex file called `SPWF04S-xxxxxx-xxxxxxx-Full.hex`. If you are searching for the file, make sure to search for a .hex file. Click the `Next` button to copy this file to the Wi-Fi module.
 
     ![Choose firmware](images/choose-firmware.gif)
 
@@ -92,10 +92,10 @@ Before updating the Wi-Fi firmware, you must first connect the following pins (P
 
 ## Reset Factory Wi-Fi Settings
 After each update you must reset the Wi-Fi module to its factory settings:
-* Unplug the FEZ.
+* Unplug the board or SoM.
 
 * Connect a jumper wire from GPIO 0 of the Wi-Fi module to a 3.3 volt source.
 
 * Power up the board.
 
-* Remove the jumper wire and reset the board.
+* Remove the jumper wire and reset the device.
