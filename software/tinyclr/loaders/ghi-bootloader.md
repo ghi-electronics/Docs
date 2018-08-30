@@ -32,7 +32,7 @@ Using this tool is the recommended path; however, manual installation instructio
 ### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
 
-1. Set your board in the bootloader mode. Each product has a specific way to enter the boot loader.
+1. Put your board in bootloader mode. Each product has a specific way to enter the boot loader.
 2. Open any terminal software, for example [Tera Term](http://ttssh2.osdn.jp/).
 3. Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)
 4. Press `V` and then enter. You will see back the boot loader version number (v2.x.x)
