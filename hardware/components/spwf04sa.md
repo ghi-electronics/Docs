@@ -4,7 +4,7 @@
 > [!Warning]
 > Before updating the Wi-Fi firmware, erase all applications on the host board to prevent them from interfering with the upgrade process and to prevent possible damage to the host processor.
 
-When the Wi-Fi module starts, it sends a PowerOn message which tells you what firmware version is installed. For example, `PowerOn 171117-0328fe3-SPWF04S`. In this case the firmware is dated 11/17/17.
+When the Wi-Fi module starts, it sends a PowerOn message which tells you what firmware version is installed. For example, `PowerOn 171117-0328fe3-SPWF04S`. In this case the firmware is dated 17 November 2017.
 
 ## Requirements
 To upgrade the Wi-Fi module's firmware, you must first download and install the following:
