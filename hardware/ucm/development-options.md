@@ -57,6 +57,9 @@ The UD700 supports a 7 inch capacitive LCD touch screen.
 ## Designing your own circuit boards
 ![200 pin DDR2 SO-DIMM socket](images/200-pin-ddr2-so-dimm.jpg)
 
+> [!Tip]
+> If your custom design uses or might use Wi-Fi, it's a good idea to expose the pins needed to update the Wi-Fi firmware. These pins are Wi-Fi BOOT0 (SO-DIMM pin 108), Wi-Fi TXD (SO-DIMM pin 93), Wi-Fi RXD (SO-DIMM pin 94), and Wi-Fi GPIO 0 (SO-DIMM pin 36).
+
 You can design your own circuit boards for UCMs by incorporating the correct SO-DIMM socket into your design.
 
 SO-DIMM stands for Small Outline Dual Inline Memory Module. Our UCMs use the 200 pin DDR2 SO-DIMM socket.
