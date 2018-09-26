@@ -6,19 +6,37 @@ SignalGenerator can also be used to generate PWM. Unlike the PWM class, SignalGe
 
 At this time, SignalGenerator only operates in blocking mode. While SingnalGenerator is running it will not yield any processor time to other code.
 
-The following sample code will blink LED1 on the FEZ.
+The following sample code will blink LED1 on the FEZ four times (for one second each time) every five seconds.
 
 ```csharp
-using GHIElectronics.TinyCLR.Pins;
 using GHIElectronics.TinyCLR.Devices.Gpio;
 using GHIElectronics.TinyCLR.Devices.Signals;
+using GHIElectronics.TinyCLR.Pins;
+using System;
+using System.Threading;
 
-class Program {
-    private static void Main() {
-        var timing = new long[] { 500 * 1000, 500 * 1000 };
-        var led = new SignalGenerator(FEZ.GpioPin.Led1, GpioPinValue.Low);
-        led.Write(timing, 0, timing.Length);
+public static class Program {
+    public static void Main() {
+        var gen = new SignalGenerator(FEZ.GpioPin.Led1);
+        var buffer = new[] {
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+            TimeSpan.FromSeconds(1),
+        };
+
+        gen.DisableInterrupts = false;
+        gen.IdleValue = GpioPinValue.Low;
+
+        while (true) {
+            gen.Write(buffer);
+
+            Thread.Sleep(5000);
+        }
     }
 }
-
 ```
