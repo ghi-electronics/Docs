@@ -66,6 +66,10 @@ File | Date | Status | MD5
 [v0.7.0](http://files.ghielectronics.com/downloads/TinyCLR/Config/TinyCLR%20Config%20Setup%20v0.7.0.msi) | 2018-01-04 | Alpha | 329D4A24BA66423DD5D655202873B38C
 [v0.6.0](http://files.ghielectronics.com/downloads/TinyCLR/Config/TinyCLR%20Config%20Setup%20v0.6.0.msi) | 2017-08-31 | Alpha | 75743E33D1B98E6999BDCC9936479C14
 
+## FontConverter Utility
+This command line utility converts a TrueType font to a .tcfnt file for use in TinyCLR applications.
+ 
+
 ## Firmwares
 The Firmware is the TinyCLR OS that lives on your hardware. The firmware version loaded on the hardware must match the version number of the extension and the libraries. This will be easier managed once the libraries are hosted on http://www.nuget.org/
 
