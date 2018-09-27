@@ -110,7 +110,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
   
     *Path* is the path to the TrueType font you want to convert. If the path contains spaces, you must enclose it in quotes and escape any backslashes.
 
-    For example:
+    Example:
 
             AddfontToProcess C:\Windows\Fonts\Arial.ttf
 
@@ -163,7 +163,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
 
 * AdjustRightMargin *adjustment*
 
-    *Adjustment* is integer number of EM units to add to the right margin. Can be positive or negative. Applies to the characters specified by the ImportRange option most closely following this option.
+    *Adjustment* is integer number of EM units to add to the right margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement most closely following this statement.
 
 * AntiAlias *level*
 
@@ -171,7 +171,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
 
 * ImportRange *start end*
 
-    *Start* and *end* are Unicode character codes indicating the beginning and end of the range of characters to convert (inclusive). Can be applied multiple times to convert a non-contiguous range of characters. Must come after the SelectFont statement specifying the font to which this statement applies. Both arguments are required. To specify a single character, make both start and end point to that character.
+    *Start* and *end* are Unicode character codes indicating the beginning and end of the range of characters to convert (inclusive). Can be applied multiple times to convert a non-contiguous range of characters. Must come after the SelectFont statement specifying the font to which this statement applies. Both arguments are required. To specify a single character, make start and end the same number.
 
 * ImportRangeAndMap *start end offset*
 
@@ -209,7 +209,7 @@ Syntax for running FontConverter is GHIElectronics.TinyCLR.FontConverter.exe *in
 
 ### Adding Fonts to Your Application
 
-Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, in the Visual Studio `project` menu select `Add New Item...`. In the `Add New Item` dialog box select `Resources File` and click the `Add` button.
+Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select `Add New Item...` in the Visual Studio `project` menu. In the `Add New Item` dialog box select `Resources File` and click the `Add` button.
 
 ![Add resources file](images/add-resource-file.png)
 
