@@ -14,11 +14,11 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [ADC](adc.md)
 * [DAC](dac.md)
 * [CAN](can.md)
+* [Display](display.md)
 * [Graphics](graphics.md)
 * [Filesystem](filesystem.md)
-* [Display](display.md)
-* [Gpio Change Writer](signal-generator.md)
-* [Gpio Change Reader](signal-capture.md)
-* [Gpio Pulse Reader Writer](pulse-feedback.md)
+* [Signal Generator](signal-generator.md)
+* [Signal Capture](signal-capture.md)
+* [Pulse Feedback](pulse-feedback.md)
 
 
