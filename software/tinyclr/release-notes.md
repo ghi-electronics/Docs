@@ -74,6 +74,13 @@ The libraries are once again uploaded to our [NuGet account](https://www.nuget.o
 - The `.constrained` IL prefix is not supported.
 - Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
 - During multi-pin reservations, if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+- Serial debug sometimes fails on G80 [#456](https://github.com/ghi-electronics/TinyCLR-Ports/issues/456).
+- Deployment after accessing filesystem fails [#457](https://github.com/ghi-electronics/TinyCLR-Ports/issues/457).
+- Software I2C fails on G400 [#458](https://github.com/ghi-electronics/TinyCLR-Ports/issues/458).
+- Software SPI fails for some slaves [#459](https://github.com/ghi-electronics/TinyCLR-Ports/issues/459).
+- RTC fails on G400 [#460](https://github.com/ghi-electronics/TinyCLR-Ports/issues/460).
+- G400 signal generator generates incorrect timings [#461](https://github.com/ghi-electronics/TinyCLR-Ports/issues/461).
+- UART handshaking behaves inconsistently [#462](https://github.com/ghi-electronics/TinyCLR-Ports/issues/462).
 
 ### TinyCLR Config
 
