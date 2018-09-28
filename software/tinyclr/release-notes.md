@@ -3,13 +3,17 @@
 ## 1.0.0-preview2 on 2018-09-28
 
 ### Notes
-This release is the first preview of the 1.0 release for TinyCLR. We will have at least one other preview after this one. The biggest change in this release is the rework and simplification of the devices library. It was divided into one library per peripheral to reduce deployment size for apps that don't require all libraries. We did keep the devices package as a metapackage that depends on the other packages so you can easily bring them all into your project if desired.
+This release is the second preview of the 1.0 release for TinyCLR. It also marks the point where we are feature complete for 1.0! If we do another preview release, it'll just be a bug fix release. The biggest change in this release is the addition of a managed graphics provider and the initial release of some drivers for common chips (like the one on our old N18 display). There are also several usability tweaks to SPI and the three signals classes.
 
-We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
+To support uploading to the Visual Studio gallery, we had to change the package ID used by the project system extension. This means the old one will not get uninstalled when installing this release, so please uninstall the preview1 or older extensions manually.
 
-The libraries are once against uploaded to our [NuGet account](https://www.nuget.org/profiles/ghielectronics). Make sure to enable finding prereleases in the NuGet package manager. We will still make them available on our own hosting as well, but the expected workflow going forward is the usual NuGet search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before you, can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source.
+We're also releasing a tool to convert desktop TrueType fonts to the format used by TinyCLR. Keep in mind there are legal implications to using and distributing fonts and that we cannot provide advice on that. The tool used to convert binary files to `glb` and `ghi` files was also updated to support generating `UF2` files used by the BrainPad (which has its own new firmware in this release as well, available on https://brainpad.com/).
 
-FontGenerator, UF2 ImageGenerator, UC5550 BL, UC GLB, CMSIS, VSIX id changed (manually uninstall)
+The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format and you can find their device definitions in the ports repo as well. There is also a new bootloader for the UC5550 available on the [bootloader page](loaders/ghi-bootloader.md).
+
+We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
+
+The libraries are once again uploaded to our [NuGet account](https://www.nuget.org/profiles/ghielectronics). Make sure to enable finding prereleases in the NuGet package manager. We've also uploaded the extension to the [Visual Studio Gallery]() so you can download and install it from there and then keep it up to date with Visual Studio. We will still make them available on our own hosting as well, but the expected workflow remains the usual NuGet/gallery search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before you, can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source.
 
 ### Libraries
 
