@@ -92,10 +92,12 @@
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader v2, hold the LDR0 signal low (press BOOT B on UCM Dev and Breakout boards) while resetting the board.</p>
+<p>To activate bootloader v2, hold the LDR0 signal low (press BOOT B on the UCM Dev and Breakout boards) and reset the board. You may have to wait a couple of seconds before releasing LDR0.</p>
 <p>Download the <a href="../../software/tinyclr/downloads.html#uc2550">UC2550 firmware</a> and follow the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h4 id="setup-the-host-computer-and-start-coding">Setup the Host Computer and Start Coding</h4>
 <p>Now that you have installed the bootloader and firmware on the UC2550, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
+<h3 id="updating-the-wi-fi-module-firmware">Updating the Wi-Fi Module Firmware</h3>
+<p>To update the firmware on the UC2550 Wi-Fi module, follow the instructions on <a href="../components/spwf04sa.html">this page</a>.</p>
 <h2 id="schematic">Schematic</h2>
 <p>The schematic for the UC2550 can be found <a href="http://files.ghielectronics.com/downloads/Schematics/Systems/UC2550%20Rev%20C%20Schematic.pdf">here</a>.</p>
 <h2 id="options">Options</h2>
@@ -283,7 +285,7 @@
 <tr>
 <td>3</td>
 <td>Module Specific 1</td>
-<td>(Wi-Fi Module PIN14) GPIO4 (LED PWR)</td>
+<td>(Wi-Fi PIN14) Wi-Fi Power LED</td>
 </tr>
 <tr>
 <td>4</td>
@@ -318,12 +320,12 @@
 <tr>
 <td>10</td>
 <td>Indicator A</td>
-<td>(Wi-Fi Module PIN15) GPIO3 (LED LINK)</td>
+<td>(Wi-Fi PIN15) Wi-Fi Link Up LED</td>
 </tr>
 <tr>
 <td>11</td>
 <td>Indicator B</td>
-<td>(Wi-Fi Module PIN5) GPIO10 (LED ACT)</td>
+<td>(Wi-Fi PIN5) Wi-Fi Running (Blink) LED</td>
 </tr>
 <tr>
 <td>12</td>
@@ -408,22 +410,22 @@
 <tr>
 <td>28</td>
 <td>PWM E</td>
-<td>PE5, T9C1</td>
+<td>PE5, TIM9 CH1</td>
 </tr>
 <tr>
 <td>29</td>
 <td>PWM F</td>
-<td>PE6, T9C2</td>
+<td>PE6, TIM9 CH2</td>
 </tr>
 <tr>
 <td>30</td>
 <td>PWM G</td>
-<td>PB14, T12C1</td>
+<td>PB14, TIM12 CH1</td>
 </tr>
 <tr>
 <td>31</td>
 <td>PWM H</td>
-<td>PB15, T12C2</td>
+<td>PB15, TIM12 CH2</td>
 </tr>
 <tr>
 <td>32</td>
@@ -443,17 +445,17 @@
 <tr>
 <td>35</td>
 <td>Module Specific 4</td>
-<td>(Wi-Fi Module PIN13) GPIO7</td>
+<td>(Wi-Fi PIN13)</td>
 </tr>
 <tr>
 <td>36</td>
 <td>Module Specific 5</td>
-<td>(Wi-Fi Module PIN16) GPIO0</td>
+<td>(Wi-Fi PIN16)</td>
 </tr>
 <tr>
 <td>37</td>
 <td>Module Specific 6</td>
-<td>(Wi-Fi Module PIN22) GPIO6</td>
+<td>(Wi-Fi PIN22)</td>
 </tr>
 <tr>
 <td>38</td>
@@ -588,7 +590,7 @@
 <tr>
 <td>64</td>
 <td>GPIO C</td>
-<td>PA15, T2C1</td>
+<td>PA15, TIM2 CH1</td>
 </tr>
 <tr>
 <td>65</td>
@@ -598,12 +600,12 @@
 <tr>
 <td>66</td>
 <td>GPIO D</td>
-<td>PB0, ADC8, T3C3</td>
+<td>PB0, ADC8, TIM3 CH3</td>
 </tr>
 <tr>
 <td>67</td>
 <td>GPIO E</td>
-<td>PB7, T4C2</td>
+<td>PB7, TIM4 CH2</td>
 </tr>
 <tr>
 <td>68</td>
@@ -633,7 +635,7 @@
 <tr>
 <td>73</td>
 <td>I2C B SDA</td>
-<td>PB8, I2C3 SDA, T10C1</td>
+<td>PB8, I2C3 SDA, TIM10 CH1</td>
 </tr>
 <tr>
 <td>74</td>
@@ -653,12 +655,12 @@
 <tr>
 <td>77</td>
 <td>UART D TX</td>
-<td>PD15, USART9 TX, T4C4</td>
+<td>PD15, USART9 TX, TIM4 CH4</td>
 </tr>
 <tr>
 <td>78</td>
 <td>UART D RX</td>
-<td>PD14, USART9 RX, T4C3</td>
+<td>PD14, USART9 RX, TIM4 CH3</td>
 </tr>
 <tr>
 <td>79</td>
@@ -723,7 +725,7 @@
 <tr>
 <td>91</td>
 <td>ADC A</td>
-<td>PA0, ADC0, T5C1</td>
+<td>PA0, ADC0, TIM5 CH1</td>
 </tr>
 <tr>
 <td>92</td>
@@ -733,12 +735,12 @@
 <tr>
 <td>93</td>
 <td>SPI B MISO</td>
-<td>PE13, SPI5 MISO, T1C3</td>
+<td>(Wi-Fi PIN6) PE13, SPI5 MISO, TIM1 CH3</td>
 </tr>
 <tr>
 <td>94</td>
 <td>SPI B MOSI</td>
-<td>PE14, SPI5 MOSI, T1C4</td>
+<td>(Wi-Fi PIN8) PE14, SPI5 MOSI, TIM1 CH4</td>
 </tr>
 <tr>
 <td>95</td>
@@ -748,12 +750,12 @@
 <tr>
 <td>96</td>
 <td>SPI B SCK</td>
-<td>PE12, SPI5 SCK</td>
+<td>(Wi-Fi PIN10) PE12, SPI5 SCK</td>
 </tr>
 <tr>
 <td>97</td>
 <td>ADC B</td>
-<td>PA1, ADC1, T5C2</td>
+<td>PA1, ADC1, TIM5 CH2</td>
 </tr>
 <tr>
 <td>98</td>
@@ -788,12 +790,12 @@
 <tr>
 <td>104</td>
 <td>ADC C</td>
-<td>PA2, ADC2, T5C3</td>
+<td>PA2, ADC2, TIM5 CH3</td>
 </tr>
 <tr>
 <td>105</td>
 <td>PWM A</td>
-<td>PE9, T1C1</td>
+<td>PE9, TIM1 CH1</td>
 </tr>
 <tr>
 <td>106</td>
@@ -802,33 +804,33 @@
 </tr>
 <tr>
 <td>107</td>
-<td>System A</td>
+<td>BOOT A</td>
 <td>BOOT0</td>
 </tr>
 <tr>
 <td>108</td>
 <td>Module Specific 2</td>
-<td>(Wi-Fi Module PIN2) BOOT0</td>
+<td>(Wi-Fi PIN2)</td>
 </tr>
 <tr>
 <td>109</td>
 <td>Module Specific 3</td>
-<td>(Wi-Fi Module PIN4) GPIO8 (Mini Python)</td>
+<td>(Wi-Fi PIN4)</td>
 </tr>
 <tr>
 <td>110</td>
 <td>ADC D</td>
-<td>PA3, ADC3, T5C4</td>
+<td>PA3, ADC3, TIM5 CH4</td>
 </tr>
 <tr>
 <td>111</td>
-<td>System C</td>
-<td>PE3</td>
+<td>BOOT C</td>
+<td>PE3, LDR1</td>
 </tr>
 <tr>
 <td>112</td>
 <td>PWM B</td>
-<td>PE11, T1C2</td>
+<td>PE11, TIM1 CH2</td>
 </tr>
 <tr>
 <td>113</td>
@@ -843,12 +845,12 @@
 <tr>
 <td>115</td>
 <td>I2C A SDA</td>
-<td>PB9, I2C2 SDA, T10C1</td>
+<td>PB9, I2C2 SDA, TIM10 CH1</td>
 </tr>
 <tr>
 <td>116</td>
 <td>I2C A SCL</td>
-<td>PB10, I2C2 SCL, T2C3</td>
+<td>PB10, I2C2 SCL, TIM2 CH3</td>
 </tr>
 <tr>
 <td>117</td>
@@ -863,7 +865,7 @@
 <tr>
 <td>119</td>
 <td>GPIO I</td>
-<td>PD14, UART9 RX, T4C3</td>
+<td>PD14, UART9 RX, TIM4 CH3</td>
 </tr>
 <tr>
 <td>120</td>
@@ -878,12 +880,12 @@
 <tr>
 <td>122</td>
 <td>GPIO J</td>
-<td>PD15, UART9 RX, T4C4</td>
+<td>PD15, UART9 RX, TIM4 CH4</td>
 </tr>
 <tr>
 <td>123</td>
 <td>SD Card D0</td>
-<td>PC8, SD D0, T8C3</td>
+<td>PC8, SD D0, TIM8 CH3</td>
 </tr>
 <tr>
 <td>124</td>
@@ -903,7 +905,7 @@
 <tr>
 <td>127</td>
 <td>SD Card D1</td>
-<td>PC9, SD D1, T8C4</td>
+<td>PC9, SD D1, TIM8 CH4</td>
 </tr>
 <tr>
 <td>128</td>
@@ -918,7 +920,7 @@
 <tr>
 <td>130</td>
 <td>PWM C</td>
-<td>PC6, T3C1, USART6 TX</td>
+<td>PC6, TIM3 CH1, USART6 TX</td>
 </tr>
 <tr>
 <td>131</td>
@@ -933,17 +935,17 @@
 <tr>
 <td>133</td>
 <td>PWM D</td>
-<td>PC7, T3C2, USART6 RX</td>
+<td>PC7, TIM3 CH2, USART6 RX</td>
 </tr>
 <tr>
 <td>134</td>
-<td>System B</td>
-<td>PB2</td>
+<td>BOOT B</td>
+<td>PB2, LDR0</td>
 </tr>
 <tr>
 <td>135</td>
-<td>System D</td>
-<td>PE4</td>
+<td>BOOT D</td>
+<td>PE4, MODE</td>
 </tr>
 <tr>
 <td>136</td>
@@ -1143,7 +1145,7 @@
 <tr>
 <td>175</td>
 <td>SPI A SCK</td>
-<td>PB3, SPI1 SCK, T2C2</td>
+<td>PB3, SPI1 SCK, TIM2 CH2</td>
 </tr>
 <tr>
 <td>176</td>

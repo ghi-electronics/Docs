@@ -266,6 +266,117 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/boot0-wires-fez.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/boot0-wires-fez.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/choose-firmware.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/choose-firmware.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/erase-firmware.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/erase-firmware.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/flash-loader-choose-device.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/flash-loader-choose-device.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/target-connected.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/target-connected.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/uart-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/uart-settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/uart-wires-fez.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/uart-wires-fez.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/update-process.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/update-process.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/components/images/update-wifi-fez.gif",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/components/images/update-wifi-fez.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "hardware/components/spwf04sa.md",
+      "output": {
+        ".html": {
+          "relative_path": "hardware/components/spwf04sa.html",
+          "hash": "YkNp0ajhSoCmVHOQeKrtWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "hardware/duino/fez-cerbuino-bee.md",
       "output": {
@@ -668,7 +779,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/fez/intro.html",
-          "hash": "WnwngXaWKpSL4B9YxJitLw=="
+          "hash": "fYrBE6nUa/lBoXMVLhCtLg=="
         }
       },
       "is_incremental": false,
@@ -842,7 +953,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/fez/tinyclr.html",
-          "hash": "c4VYzIyyLK2blirVSNlJfw=="
+          "hash": "cpSOESYStzsXDO7JA86DWw=="
         }
       },
       "is_incremental": false,
@@ -2303,7 +2414,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g120.html",
-          "hash": "eJ6+tKLQKIPj+aBUBy82NQ=="
+          "hash": "VL/ZlOydA4DtENmcimW/Pg=="
         }
       },
       "is_incremental": false,
@@ -2327,7 +2438,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g30.html",
-          "hash": "viU7q2EoyurpveD5m0FTSg=="
+          "hash": "gGstjMlwUNhhvHbR+uvYRA=="
         }
       },
       "is_incremental": false,
@@ -2339,7 +2450,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g400s.html",
-          "hash": "pK/ty5pw9E78Rtplu+TuJw=="
+          "hash": "WaniJT7Unrfxscl1Hjep7g=="
         }
       },
       "is_incremental": false,
@@ -2351,7 +2462,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g80.html",
-          "hash": "VVY2acZy4bLhsSzdQRwElA=="
+          "hash": "xQROwir1ougIy1tLPgvjOg=="
         }
       },
       "is_incremental": false,
@@ -2631,7 +2742,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/development-options.html",
-          "hash": "DM4XBEeXrtaQptHsEIA5AQ=="
+          "hash": "rgg+ZeUFsA9JddKUCvpO3A=="
         }
       },
       "is_incremental": false,
@@ -2643,7 +2754,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/g400d.html",
-          "hash": "woxSBEVsZAve/rs+HjMpCQ=="
+          "hash": "SUYpff4BgOT/eAi6pttYog=="
         }
       },
       "is_incremental": false,
@@ -2900,7 +3011,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc2550.html",
-          "hash": "NZXmmSvnbF6UbACweArxlw=="
+          "hash": "YiZ9D9kIpib8X82zadS0jA=="
         }
       },
       "is_incremental": false,
@@ -2912,7 +3023,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc5550.html",
-          "hash": "5dlHtTaJS9YSGdy1ZMpgKQ=="
+          "hash": "h8g6lkCXq5EZl1mHJVravQ=="
         }
       },
       "is_incremental": false,
@@ -3666,7 +3777,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/downloads.html",
-          "hash": "nokfQCvChjnebjmifH/3pQ=="
+          "hash": "mhG6ji6bHPnutvR4GnQlag=="
         }
       },
       "is_incremental": false,
@@ -3678,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/getting-started.html",
-          "hash": "Wd9OHHiNTBYS8ZxjopVB7g=="
+          "hash": "kAMsn55wdPtEzbSZk4GB8w=="
         }
       },
       "is_incremental": false,
@@ -3708,17 +3819,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/add-package-source.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/add-package-source.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/boards.png",
       "output": {
         "resource": {
@@ -3741,10 +3841,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/browse-local-nuget-feed.jpg",
+      "source_relative_path": "software/tinyclr/images/browse-nuget-feed.jpg",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/browse-local-nuget-feed.jpg"
+          "relative_path": "software/tinyclr/images/browse-nuget-feed.jpg"
         }
       },
       "is_incremental": false,
@@ -3756,17 +3856,6 @@
       "output": {
         "resource": {
           "relative_path": "software/tinyclr/images/browse-nugets.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/choose-local-nuget-package-folder.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/choose-local-nuget-package-folder.jpg"
         }
       },
       "is_incremental": false,
@@ -3950,17 +4039,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/setting-nuget-package-source.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/images/setting-nuget-package-source.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/show-installed-nuget-packages.jpg",
       "output": {
         "resource": {
@@ -4087,7 +4165,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/loaders/ghi-bootloader.html",
-          "hash": "57ubHIjtBVkFVyOXwZcitg=="
+          "hash": "qSoadYsuIgZjXX6nz4VLTg=="
         }
       },
       "is_incremental": false,
@@ -4194,7 +4272,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/native/porting.html",
-          "hash": "oiyukecEhgiF6FAvvX9r6g=="
+          "hash": "7HzwTF877VkhLwxrDYEgWA=="
         }
       },
       "is_incremental": false,
@@ -4206,7 +4284,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/release-notes.html",
-          "hash": "PCkUDu9+FDaCxuvBI2DzMA=="
+          "hash": "a0iV3mn7t7e8VrpkwMUkoA=="
         }
       },
       "is_incremental": false,
@@ -4302,7 +4380,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/display.html",
-          "hash": "hP3O2656H3N9KCuED1xeXA=="
+          "hash": "ZeTcae172n9ML9dwtRdB9w=="
         }
       },
       "is_incremental": false,
@@ -4338,7 +4416,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/graphics.html",
-          "hash": "ErzgXywN3iqSApS46Pc+NQ=="
+          "hash": "5HqQUrJkYr/treUl7Lk2GQ=="
         }
       },
       "is_incremental": false,
@@ -4351,6 +4429,28 @@
         ".html": {
           "relative_path": "software/tinyclr/tutorials/i2c.html",
           "hash": "ninsATA8TygGtn9ZMMcDMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/add-existing-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/add-existing-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/add-resource-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/add-resource-file.png"
         }
       },
       "is_incremental": false,
@@ -4380,6 +4480,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/low-level-display-sample.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/low-level-display-sample.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "software/tinyclr/tutorials/images/pulse-feedback.jpg",
       "output": {
         "resource": {
@@ -4395,7 +4506,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/intro.html",
-          "hash": "7RnVvEPqZKdsqeN7dgVZTQ=="
+          "hash": "FzXzVNlpf5LUQmFqzhc5oA=="
         }
       },
       "is_incremental": false,
@@ -4407,7 +4518,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/pulse-feedback.html",
-          "hash": "ZsTyrAsH96ke34JwCvCf3g=="
+          "hash": "e7pT5nz1SZk7YsE2DvRs9g=="
         }
       },
       "is_incremental": false,
@@ -4419,7 +4530,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/pwm.html",
-          "hash": "3D1SHpUR+oHI7G5GJwAk0Q=="
+          "hash": "nOfYzl6Tf+g/6ZGswUY9DA=="
         }
       },
       "is_incremental": false,
@@ -4431,7 +4542,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/signal-capture.html",
-          "hash": "Gv3OkwxcfWxrAgLbJfWhCg=="
+          "hash": "o9587FBKTsLs5ZKDQP1GOg=="
         }
       },
       "is_incremental": false,
@@ -4443,7 +4554,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/signal-generator.html",
-          "hash": "L628BNgLQT1Bwu0iaI9YQA=="
+          "hash": "Q3397elzh0LRK24znQrNuQ=="
         }
       },
       "is_incremental": false,
@@ -4455,7 +4566,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/spi.html",
-          "hash": "ueV7oYdNgq+yAse+7gC4Gw=="
+          "hash": "PV6RKWYd4SJccP4D+Cy+9Q=="
         }
       },
       "is_incremental": false,
@@ -4494,14 +4605,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

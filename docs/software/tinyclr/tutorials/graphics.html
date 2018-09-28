@@ -164,7 +164,93 @@ namespace UI {
         }
     }
 }
-</code></pre></article>
+</code></pre><h2 id="fonts">Fonts</h2>
+<p>Fonts can be included in your TinyCLR application by adding them as a resource. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool.</p>
+<h3 id="converting-truetype-fonts">Converting TrueType Fonts</h3>
+<div class="NOTE"><h5>Note</h5><p>Many fonts are copyrighted. It is up to you to make sure you can legally use a specific TrueType font in your application.</p>
+</div>
+<p>TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. <a href="../downloads.html#tinyclr-font-converter">Font Converter</a> is a command line utility which does just that. It can be found on the <a href="../downloads.html#tinyclr-font-converter">Downloads page</a>. </p>
+<p>To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. These options are as follows:</p>
+<div class="NOTE"><h5>Note</h5><p>The order of statements in the .fntdef file matters. For example, properties such as AntiAlias must be specified before the InputRange property.</p>
+</div>
+<ul>
+<li><p>AddFontToProcess <em>path</em></p>
+<p>  <em>Path</em> is the path to the TrueType font you want to convert. If the path contains spaces, you must enclose it in quotes and escape any backslashes.</p>
+<p>  Example: <code>AddfontToProcess C:\Windows\Fonts\Arial.ttf</code></p>
+</li>
+<li><p>SelectFont <em>&quot;selection string&quot;</em></p>
+<p>  <em>&quot;Selection string&quot;</em> is a quoted string containing comma delimited fields indicating the characteristics of the font to convert. ConvertFont searches the TrueType fonts installed on your computer, as well as any fonts in the AddFontToProcess argument, for a font matching the characteristics in the <em>selection string</em> argument. The first match is converted.</p>
+<p>  Using spaces around the commas or colons in <em>selection string</em> will result in errors. Field types are as follows:</p>
+<ul>
+<li>HE: Height in logical units. Use zero for default height, a positive number for cell height and a negative number for character height.</li>
+<li>WI: Width. Average width of characters in logical units. Set to zero for closest match based on aspect ratio.</li>
+<li>ES: Escapement angle in tenths of a degree. Negative numbers rotate clockwise, positive numbers rotate counterclockwise.</li>
+<li>WE: Weight of font in range of 0 to 1000. 400 is normal, 700 is bold. Set to zero for default weight.</li>
+<li>IT: Italic if set to 1 (IT:1).</li>
+<li>FN: Face name. Name of the typeface.</li>
+<li>FullName: Full name. The unique name of the font. For example: &quot;Monotype:Arial Regular (Microsoft).&quot;</li>
+</ul>
+<p>For example, <code>SelectFont &quot;HE:12,WE:400,FN:Arial</code> will look for a regular-weight font of height 12 with a face name of &quot;Arial.&quot;</p>
+</li>
+<li><p>AdjustAscent <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of EM units to adjust ascent. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.</p>
+</li>
+<li><p>AdjustDescent <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of EM units to adjust descent. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.</p>
+</li>
+<li><p>AdjustExternalLeading <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of EM units to adjust the external leading. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.</p>
+</li>
+<li><p>AdjustInternalLeading <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of EM units to adjust the internal leading. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.</p>
+</li>
+<li><p>AdjustLeftMargin <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of device units to add to the left margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement that most closely follows this option.</p>
+</li>
+<li><p>AdjustRightMargin <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is integer number of EM units to add to the right margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement that most closely follows this statement.</p>
+</li>
+<li><p>AntiAlias <em>level</em></p>
+<p>  <em>Level</em> can be 1, 2, 4, or 8. Font bitmaps will contain 2, 5, 17, or 65 levels of gray respectively. Must come after the SelectFont statement specifying the font to which this statement applies. May be applied to a range of characters defined by the ImportRange option.</p>
+</li>
+<li><p>ImportRange <em>start end</em></p>
+<p>  <em>Start</em> and <em>end</em> are Unicode character codes indicating the beginning and end of the range of characters to convert (inclusive). Can be applied multiple times to convert a non-contiguous range of characters. Must come after the SelectFont statement specifying the font to which this statement applies. Both arguments are required. To specify a single character, make start and end the same number.</p>
+</li>
+<li><p>ImportRangeAndMap <em>start end offset</em></p>
+<p>  Specifies range of characters to convert starting with Unicode character <em>start</em> + <em>offset</em> and ending with character <em>end</em> + <em>offset</em>, inclusive. Can be applied multiple times to convert a non-contiguous range of characters. Must come after the SelectFont statement specifying the font to which this statement applies.</p>
+</li>
+<li><p>NoDefaultCharacter</p>
+<p>  Specifies that no default character will be substituted for characters not converted. Must come after the SelectFont statement specifying the font to which this statement applies.</p>
+</li>
+<li><p>OffsetX <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is an integer describing the number of EM units to shift character position left or right. Positive numbers shift to the left, and negative numbers shift to the right. Applies to characters specified by any ImportRange, ImportRangeAndMap, or SetAsDefaultCharacter statements that follow it in the .fntdef file. Subsequent OffsetX statements supersede all previous OffxetX statements in the same .fntdef file.</p>
+</li>
+<li><p>OffsetY <em>adjustment</em></p>
+<p>  <em>Adjustment</em> is an integer describing the number of EM units to shift character position up or down. Positive numbers shift down, and negative numbers shift up. Applies to characters specified by any ImportRange, ImportRangeAndMap, or SetAsDefaultCharacter statements that follow it in the .fntdef file. Subsequent OffsetX statements supersede all previous OffxetX statements in the same .fntdef file.</p>
+</li>
+<li><p>SetAsDefaultcharacter <em>charcode</em></p>
+<p>  <em>&quot;Charcode</em> is the Unicode character code for the default character to substitute for characters that weren&#39;t converted.</p>
+</li>
+<li><p>SetDefaultcharacter</p>
+<p>  Indicates that the default character of the currently selected TrueType font will be substituted for characters that weren&#39;t converted.</p>
+</li>
+<li><p>Verbosity <em>level</em></p>
+<div class="NOTE"><h5>Note</h5><p>It seems that setting verbosity greater than one can stop fonts from being converted. Also, character diagrams are not rendered properly.</p>
+</div>
+<p>  <em>Level</em> can be 0, 1, or 2. Level 0 displays no details, level 1 displays font properties, and level 2 displays font and character properties and a diagram of each character.</p>
+</li>
+<li><p># Comments</p>
+<p>  You can add comments to your .fntdef file by starting the comment line with the &quot;#&quot; character.</p>
+</li>
+</ul>
+<p>Syntax for running FontConverter is GHIElectronics.TinyCLR.FontConverter.exe <em>input-font</em> <em>output-font</em>. For example <code>GHIElectronics.TinyCLR.FontConverter.exe Arial.fntdef Arial.tcfnt</code>.</p>
+<h3 id="adding-fonts-to-your-application">Adding Fonts to Your Application</h3>
+<p>Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select <code>Add New Item...</code> in the Visual Studio <code>Project</code> menu. In the <code>Add New Item</code> dialog box select <code>Resources File</code> and click the <code>Add</code> button.</p>
+<p><img src="images/add-resource-file.png" alt="Add resources file"></p>
+<p>Then, on the tab for your resource file, click on the small down arrow on the right of the <code>Add Resource</code> button and select <code>Add Existing File...</code>. </p>
+<p><img src="images/add-existing-file.png" alt="Add existing file"></p>
+<p>Use the <code>Add existing file to resources</code> dialog box to find and open the .tcfnt file you created using FontConverter.</p>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

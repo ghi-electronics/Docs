@@ -21,12 +21,15 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        var settings = new SpiConnectionSettings(FEZ.GpioPin.A0)   // the slave's select pin
+        var settings = new SpiConnectionSettings()
         {
+            ChipSelectType = SpiChipSelectType.Gpio,
+            ChipSelectLine = FEZ.GpioPin.A0,
             Mode = SpiMode.Mode1,
             ClockFrequency = 4 * 1000 * 1000,       //4Mhz
             DataBitLength = 8,
         };
+
         var controller = SpiController.FromName(FEZ.SpiBus.Spi1);
         var device = controller.GetDevice(settings);
 

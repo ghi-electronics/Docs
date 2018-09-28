@@ -95,7 +95,7 @@
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
 </div>
-<p>To activate bootloader v2, hold the LDR0 signal low while resetting the board.  On the UCM Dev board and UCM Breakout board, hold down the BOOT B button, press the RESET button and then release BOOT B.</p>
+<p>To activate bootloader v2, hold the LDR0 signal low and reset the board. You may have to wait a couple of seconds before releasing LDR0. On the UCM Dev board and UCM Breakout board, hold down the BOOT B button, press the RESET button, wait a second or two, and then release BOOT B.</p>
 <p>Download the <a href="../../software/tinyclr/downloads.html#g400">G400 firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h4 id="setup-the-host-computer-and-start-coding">Setup the Host Computer and Start Coding</h4>
 <p>Now that you have installed the bootloader and firmware on the G400D, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
@@ -781,7 +781,7 @@
 </tr>
 <tr>
 <td>107</td>
-<td>Bootstrap A</td>
+<td>BOOT A</td>
 <td>SPI1 MISO</td>
 </tr>
 <tr>
@@ -801,7 +801,7 @@
 </tr>
 <tr>
 <td>111</td>
-<td>Bootstrap C</td>
+<td>BOOT C</td>
 <td>PA4, LDR1</td>
 </tr>
 <tr>
@@ -916,13 +916,13 @@
 </tr>
 <tr>
 <td>134</td>
-<td>Bootstrap B</td>
-<td>PA24</td>
+<td>BOOT B</td>
+<td>PA24, LDR0</td>
 </tr>
 <tr>
 <td>135</td>
-<td>Bootstrap D</td>
-<td>PA25</td>
+<td>BOOT D</td>
+<td>PA25, MODE</td>
 </tr>
 <tr>
 <td>136</td>

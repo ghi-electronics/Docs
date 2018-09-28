@@ -17,7 +17,7 @@ Instructions for installing the bootloader and firmware are provided on the docu
 ### Download and Install Visual Studio and the TinyCLR Extension
 1. If you don't already have Visual Studio 2017, download and install the free version from here:  [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to select the `.NET desktop development` workload when installing Visual Studio.
-3. Download and install the newest [TinyCLR Visual Studio Project System](https://marketplace.visualstudio.com/items?itemName=ghielectronics.tinyclr-projectsystem) from the Visual Studio Marketplace. You can also find it on our [Downloads page](downloads.md#visual-studio-project-system).
+3. Download and install the newest TinyCLR Visual Studio Project System by going to `Tools` > `Extensions and Updates...` > `Online` and search for and install the `TinyCLR OS Project System`. You'll need to restart Visual Studio and let the extension installer appear to complete the install.
 
 ### Install the TinyCLR Nuget Packages
 
@@ -47,31 +47,22 @@ And, that's it! You're now ready to start programming using TinyCLR OS. Unless y
 
 ### Download and Install the TinyCLR Nuget Packages Locally
 
-1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet.  Download the newest [libraries](downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
-2. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
-3. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
-4. Right click on your Project in the Solution Explorer panel and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu. You can also select `Manage NuGet Packages...` in the `Project` menu of Visual Studio.
+1. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
+2. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
+3. Right click on your Project in the Solution Explorer and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer' in the 'View' menu.
+
 ![View Show Solution Explorer](images/select-manage-nuget-packages.jpg)
 
-5. Select the `Package Source` settings icon. 
-![Setting Nuget Package Source](images/setting-nuget-package-source.jpg) 
-
-6. Click the `+` button to add a new Package source. 
-![Add Package Source](images/add-package-source.jpg)
-
-7. Select the location where the NuGet packages are stored locally by pressing the `...` button. 
-![Choose Local NuGet Package Folder](images/choose-local-nuget-package-folder.jpg)
-
-8. After Selecting the local folder where the downloaded NuGet packages are, you can select the `Installed` Tab to view the installed NuGet Packages. 
+4. You can select the `Installed` Tab to view the installed NuGet Packages. 
 ![Show Installed NuGet Packages](images/show-installed-nuget-packages.jpg)
 
-9. Selecting the `Browse` tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a green check mark in front of the name. 
-![Browse Local NuGet Feed](images/browse-local-nuget-feed.jpg)
+5. Selecting the `Browse` tab will show all the NuGet packages available online. Those installed are noted with a green check mark in front of the name. You may want to search for "TinyCLR" to narrow down the available packages.
+![Browse Local NuGet Feed](images/browse-nuget-feed.jpg)
 
-10. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
+6. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
 ![Add Nuget Package](images/add-nuget-package.jpg)
 
-11. Accept the licensing agreement to install the package.
+7. Accept the licensing agreement to install the package.
 ![Accept Agreement for NuGet](images/accept-agreement-for-nuget.jpg)
 
 And, that's it! You're now ready to start programming using TinyCLR OS.
