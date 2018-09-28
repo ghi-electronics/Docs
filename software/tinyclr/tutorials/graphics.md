@@ -101,7 +101,7 @@ Fonts can be included in your TinyCLR application by adding them as a resource. 
 > [!Note]
 > Many fonts are copyrighted. It is up to you to make sure you can legally use a specific TrueType font in your application.
 
-TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. [Font Converter](../downloads.md#tinyclr-font-converter) is a command line utility which does just that. It can be found on the [Downloads page](../downloads.md#fontconverter-utility). 
+TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. [Font Converter](../downloads.md#tinyclr-font-converter) is a command line utility which does just that. It can be found on the [Downloads page](../downloads.md#tinyclr-font-converter). 
 
 To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. These options are as follows:
 
