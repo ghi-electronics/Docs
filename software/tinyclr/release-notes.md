@@ -1,5 +1,119 @@
 # Release Notes
 
+## 1.0.0-preview2 on 2018-09-28
+
+### Notes
+This release is the first preview of the 1.0 release for TinyCLR. We will have at least one other preview after this one. The biggest change in this release is the rework and simplification of the devices library. It was divided into one library per peripheral to reduce deployment size for apps that don't require all libraries. We did keep the devices package as a metapackage that depends on the other packages so you can easily bring them all into your project if desired.
+
+We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
+
+The libraries are once against uploaded to our [NuGet account](https://www.nuget.org/profiles/ghielectronics). Make sure to enable finding prereleases in the NuGet package manager. We will still make them available on our own hosting as well, but the expected workflow going forward is the usual NuGet search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before you, can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source.
+
+FontGenerator, UF2 ImageGenerator, UC5550 BL, UC GLB, CMSIS, VSIX id changed (manually uninstall)
+
+### Libraries
+
+#### Changes
+- Added chip select setup time, hold time, and polarity to SPI settings.
+- Added `Now` to `RtcController` that takes a `DataTime`.
+- Added `IsValid` to `RtcController`.
+- Added `Rgb444` and `VerticalByteStrip1Bpp ` display formats.
+- Added I2C display interface type.
+- Added a public constructor to `Font`.
+- Added infrastructure to provide custom draw targets to be used with a managed graphics implementation using `GraphicsManager` in drawing.
+- Added built in draw targets that draw to an in-memory buffer in various formats.
+- Added `AssemblyInformationalVersion` attributes to every library.
+- Added `SSD1306`, `ST7735`, and `APA102C` drivers.
+- Added `Memory` to the native library that exposes members from the native provider.
+- Added `ChipSelectType` to `SpiConnectionSettings` to pick between GPIO, controller, and none.
+- Fixed red and blue being swapped in the internal field of `Color`.
+- Fixed software I2C not working [#365](https://github.com/ghi-electronics/TinyCLR-Ports/issues/365).
+- Fixed software SPI not working [#293](https://github.com/ghi-electronics/TinyCLR-Ports/issues/293).
+- Moved `SPWF04Sx` driver to the drivers namespace and package.
+- Removed `UseControllerChipSelect` from `SpiConnectionSettings`.
+- Removed the constructor from `SpiConnectionSettings`.
+
+#### Known Issues
+- SPWF04Sx may sometimes lose writes [#14](https://github.com/ghi-electronics/TinyCLR-Drivers/issues/14).
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors.
+- A number of API names are missing from pins, notably RTC and SD.
+- Carrier frequency does not work on signal generator.
+
+### Firmware
+
+#### Changes
+- Added new BrainPad BP2 firmware.
+- Added signals to UC2550 and UC5550.
+- Added filesystem to G30 [#322](https://github.com/ghi-electronics/TinyCLR-Ports/issues/322).
+- Fixed `DisplayController.DrawBuffer` failing for data not sized to the entire screen [#410](https://github.com/ghi-electronics/TinyCLR-Ports/issues/410).
+- Fixed `DisplayController.DrawPixel` using an incorrect format.
+- Fixed ADC on G120E failing if closed multiple times [#438](https://github.com/ghi-electronics/TinyCLR-Ports/issues/438).
+- Fixed UART failing to receive any data after receiving an error on G400 [#428](https://github.com/ghi-electronics/TinyCLR-Ports/issues/428).
+- Fixed CAN pins being reversed on the UC2550.
+- Fixed memory intensive applications crashing low-memory devices [#423](https://github.com/ghi-electronics/TinyCLR-Ports/issues/423).
+- Fixed I2C failing on some slaves, [#416](https://github.com/ghi-electronics/TinyCLR-Ports/issues/416).
+- Fixed UART `DataReceived` event always returning a count of zero.
+- Fixed servo not working on the BrainPad, [#414](https://github.com/ghi-electronics/TinyCLR-Ports/issues/414).
+- Fixed multiple I2C devices failing when used together.
+- Fixed heavy serial load crashing STM32Fx devices [#411](https://github.com/ghi-electronics/TinyCLR-Ports/issues/411).
+- Fixed the `Edge` property on the GPIO interrupt sometimes being incorrect.
+- Fixed G400 ADC not always being accurate [#373](https://github.com/ghi-electronics/TinyCLR-Ports/issues/373).
+- Fixed several HAL functions having no implementation [#376](https://github.com/ghi-electronics/TinyCLR-Ports/issues/376).
+- Fixed the run-app pin failing on USBizi [#333](https://github.com/ghi-electronics/TinyCLR-Ports/issues/333).
+- Fixed the UD700 getting corrupt on the UC5550 after a few minutes.
+- Implemented all of signal capture and pulse feedback and most of signal generator [#357](https://github.com/ghi-electronics/TinyCLR-Ports/issues/357).
+- Implemented many functions missing on USB client [#398](https://github.com/ghi-electronics/TinyCLR-Ports/issues/398).
+
+#### Known Issues
+- PWM may jitter when decreasing the pulse length while enabled.
+- Testing `NaN`s for equality gives unexpected results.
+- The `.constrained` IL prefix is not supported.
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- During multi-pin reservations if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+
+### TinyCLR Config
+
+#### Changes
+- Fixed help URLs.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- Updated the package ID of the VSIX.
+
+#### Known Issues
+- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+
+### Porting
+
+#### Changes
+- Added timestamps to many device event handlers [#388](https://github.com/ghi-electronics/TinyCLR-Ports/issues/388) [#368](https://github.com/ghi- electronics/-TinyCLR-Ports/issues/368).
+- Added `IsValid` to `TinyCLR_Rtc_Controller`.
+- Added a config object to `TinyCLR_Display_SpiConfiguration`.
+- Added `TinyCLR_Display_I2cConfiguration`.
+- Added `TinyCLR_Startup_SetMemoryProfile` that allows setting the memory profile of the device.
+- Added `GetStats` to `TinyCLR_Memory_Manager` to return amount of memory free and used.
+- Added wake source to `TinyCLR_Power_Controller::Sleep`.
+- Added contiguous and equal-sized properties to the deployment configuration.
+- Added UC2550 and UC5550 device headers to ports.
+- Added UF2 support to `imagegen.exe` [#412](https://github.com/ghi-electronics/TinyCLR-Ports/issues/412).
+- Changed the sleep level names to `LevelN`.
+- Changed SPI, I2C, UART, and CAN configuration to take a config struct.
+- Changed CAN read and write to take a message struct.
+- Changed `TinyCLR_Startup_SetDeploymentApi` to `TinyCLR_Startup_AddDeploymentRegion`.
+- Changed return type to `TinyCLR_Result` on power.
+- Changed `TinyCLR_Task_Manager::Enqueue` time unit to be native ticks.
+- Changed many of the members in `TinyCLR_Interrupt_Controller`.
+- Changed the parameter `apiName` to `data0` (and shifted the rest) in `TinyCLR_Interop_Manager::RaiseEvent`.
+- Changed `RegionsRepeat` into contiguous and equal-sized in storage.
+- Fixed the linker not always complaining when regions overflow [#30](https://github.com/ghi-electronics/TinyCLR-Ports/issues/30).
+
+#### Known Issues
+- None.
+
 ## 1.0.0-preview1 on 2018-08-15
 
 ### Notes
