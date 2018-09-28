@@ -35,7 +35,7 @@ We are now hosting our libraries online on our [Nuget account](https://www.nuget
 ![Search for TinyCLR](images/search-for-tinyclr.png)
 
 6. Selecting the `Browse` tab will show all the TinyCLR NuGet packages. Those installed are noted with a green check mark in front of the name. 
-![Browse Local NuGet Feed](images/browse-local-nuget-feed.jpg)
+![Browse Local NuGet Feed](images/browse-nuget-feed.jpg)
 
 7. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
 ![Add Nuget Package](images/add-nuget-package.jpg)
