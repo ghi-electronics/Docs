@@ -94,7 +94,7 @@ The libraries are once again uploaded to our [NuGet account](https://www.nuget.o
 ### Porting
 
 #### Changes
-- Added timestamps to many device event handlers [#388](https://github.com/ghi-electronics/TinyCLR-Ports/issues/388) [#368](https://github.com/ghi- electronics/-TinyCLR-Ports/issues/368).
+- Added timestamps to many device event handlers [#388](https://github.com/ghi-electronics/TinyCLR-Ports/issues/388) [#368](https://github.com/ghi-electronics/TinyCLR-Ports/issues/368).
 - Added `IsValid` to `TinyCLR_Rtc_Controller`.
 - Added a config object to `TinyCLR_Display_SpiConfiguration`.
 - Added `TinyCLR_Display_I2cConfiguration`.
