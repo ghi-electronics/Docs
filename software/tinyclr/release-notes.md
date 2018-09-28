@@ -73,7 +73,7 @@ The libraries are once again uploaded to our [NuGet account](https://www.nuget.o
 - Testing `NaN`s for equality gives unexpected results.
 - The `.constrained` IL prefix is not supported.
 - Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
-- During multi-pin reservations if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+- During multi-pin reservations, if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
 
 ### TinyCLR Config
 
@@ -89,7 +89,7 @@ The libraries are once again uploaded to our [NuGet account](https://www.nuget.o
 - Updated the package ID of the VSIX.
 
 #### Known Issues
-- When adding an image or font to a resx file a reference to the drawing assembly is not automatically added.
+- When adding an image or font to a resx file, a reference to the drawing assembly is not automatically added.
 
 ### Porting
 
