@@ -15,7 +15,7 @@ Preview | Preview of the next release, not quite ready for production use.
 Alpha | Bleeding edge development that will frequently change. Major changes to come.
 
 ## Visual Studio Project System
-The extension is what gets loaded on Visual Studio to allow it to communicate with a TinyCLR OS device. It also includes project templates.
+The extension is what gets loaded on Visual Studio to allow it to communicate with a TinyCLR OS device. It also includes project templates. You can find it on [Visual Studio Marketplace](getting-started.md) instead of downloading it here.
 
 File | Date | Status | MD5
 --- | --- | --- | ---
@@ -35,7 +35,7 @@ File | Date | Status | MD5
 [v0.1.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.1.0.vsix) | 2016-12-16 | Alpha | D93A8FF13900362FB4528F8036D46612
 
 ## Libraries
-Libraries are hosted though a local NuGet feed for now as we are a lot of changes still. These libraries will be hosted on http://www.nuget.org/ in the future.
+Libraries provide prebuilt ways of performing many common tasks. You can find them on [NuGet](getting-started.md) instead of downloading them here.
 
 File | Date | Status | MD5
 --- | --- | --- | ---
