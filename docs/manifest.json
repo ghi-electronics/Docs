@@ -3789,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/getting-started.html",
-          "hash": "kAMsn55wdPtEzbSZk4GB8w=="
+          "hash": "n30wqCZE3zAUePklQncZ1A=="
         }
       },
       "is_incremental": false,
@@ -3973,6 +3973,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/package-source.png",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/package-source.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/program-cs.png",
       "output": {
         "resource": {
@@ -4010,6 +4021,17 @@
       "output": {
         "resource": {
           "relative_path": "software/tinyclr/images/roadmap.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/search-for-tinyclr.png",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/search-for-tinyclr.png"
         }
       },
       "is_incremental": false,
@@ -4605,14 +4627,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

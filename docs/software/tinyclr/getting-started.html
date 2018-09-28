@@ -93,13 +93,39 @@
 <li>Make sure to select the <code>.NET desktop development</code> workload when installing Visual Studio.</li>
 <li>Download and install the newest TinyCLR Visual Studio Project System by going to <code>Tools</code> &gt; <code>Extensions and Updates...</code> &gt; <code>Online</code> and search for and install the <code>TinyCLR OS Project System</code>. You&#39;ll need to restart Visual Studio and let the extension installer appear to complete the install.</li>
 </ol>
-<h3 id="download-and-install-the-tinyclr-nuget-packages">Download and Install the TinyCLR Nuget Packages</h3>
+<h3 id="install-the-tinyclr-nuget-packages">Install the TinyCLR Nuget Packages</h3>
+<p>We are now hosting our libraries online on our <a href="https://www.nuget.org/profiles/ghielectronics">Nuget account</a>.</p>
 <ol>
 <li>Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).</li>
 <li>Start Visual Studio and create a new <code>TinyCLR Application</code> under <code>C# &gt; TinyCLR</code>. New to Visual Studio or C#? Take a look at the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio">getting started guide from Microsoft</a>.</li>
-<li><p>Right click on your Project in the Solution Explorer and select <code>Manage NuGet Packages</code>.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer&#39; in the &#39;View&#39; menu.
+<li><p>Right click on your Project in the Solution Explorer panel and select <code>Manage NuGet Packages</code>.  If the Solution Explorer window is not visible, open it by selecting <code>Solution Explorer</code> in the <code>View</code> menu. You can also select <code>Manage NuGet Packages...</code> in the <code>Project</code> menu of Visual Studio.
 <img src="images/select-manage-nuget-packages.jpg" alt="View Show Solution Explorer"></p>
 </li>
+<li><p>Make sure the package source is set to &quot;Package source&quot; or &quot;All.&quot;
+<img src="images/package-source.png" alt="Set package source"></p>
+</li>
+<li><p>In the search box type &quot;tinyclr&quot; and make sure the &quot;Include prerelease&quot; box is checked.
+<img src="images/search-for-tinyclr.png" alt="Search for TinyCLR"></p>
+</li>
+<li><p>Selecting the <code>Browse</code> tab will show all the TinyCLR NuGet packages. Those installed are noted with a green check mark in front of the name. 
+<img src="images/browse-nuget-feed.jpg" alt="Browse Local NuGet Feed"></p>
+</li>
+<li><p>To install one of the packages click on the package name, click the check box to the right under &quot;Version(s),&quot; and click on the <code>Install</code> button.
+<img src="images/add-nuget-package.jpg" alt="Add Nuget Package"></p>
+</li>
+<li><p>Accept the licensing agreement to install the package.
+<img src="images/accept-agreement-for-nuget.jpg" alt="Accept Agreement for NuGet"></p>
+</li>
+</ol>
+<p>And, that&#39;s it! You&#39;re now ready to start programming using TinyCLR OS. Unless you want to install the NuGet packages to a local feed, you can skip the next section.</p>
+<h3 id="download-and-install-the-tinyclr-nuget-packages-locally">Download and Install the TinyCLR Nuget Packages Locally</h3>
+<ol>
+<li>Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).</li>
+<li>Start Visual Studio and create a new <code>TinyCLR Application</code> under <code>C# &gt; TinyCLR</code>. New to Visual Studio or C#? Take a look at the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio">getting started guide from Microsoft</a>.</li>
+<li>Right click on your Project in the Solution Explorer and select <code>Manage NuGet Packages</code>.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer&#39; in the &#39;View&#39; menu.</li>
+</ol>
+<p><img src="images/select-manage-nuget-packages.jpg" alt="View Show Solution Explorer"></p>
+<ol>
 <li><p>You can select the <code>Installed</code> Tab to view the installed NuGet Packages. 
 <img src="images/show-installed-nuget-packages.jpg" alt="Show Installed NuGet Packages"></p>
 </li>
