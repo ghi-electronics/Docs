@@ -98,6 +98,9 @@ Fonts can be included in your TinyCLR application by adding them as a resource. 
 
 ### Converting TrueType Fonts
 
+> [!Note]
+> Many fonts are copyrighted. It is up to you to make sure you can legally use a specific TrueType font in your application.
+
 TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. [FontConverter](../downloads.md#fontconverter-utility) is a command line utility which does just that. It can be found on the [Downloads page](../downloads.md#fontconverter-utility). 
 
 To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. These options are as follows:
@@ -110,9 +113,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
   
     *Path* is the path to the TrueType font you want to convert. If the path contains spaces, you must enclose it in quotes and escape any backslashes.
 
-    Example:
-
-            AddfontToProcess C:\Windows\Fonts\Arial.ttf
+    Example: `AddfontToProcess C:\Windows\Fonts\Arial.ttf`
 
 * SelectFont *"selection string"*
 
@@ -120,25 +121,15 @@ To convert a font you must first make a .fntdef file which is a text file descri
 
     Using spaces around the commas or colons in *selection string* will result in errors. Field types are as follows:
 
-    * FN: Face name.
-    * HE: Height in logical units. Use zero for default height, a positive number for cell height and a negative number of character height.
+    * HE: Height in logical units. Use zero for default height, a positive number for cell height and a negative number for character height.
     * WI: Width. Average width of characters in logical units. Set to zero for closest match based on aspect ratio.
+    * ES: Escapement angle in tenths of a degree. Negative numbers rotate clockwise, positive numbers rotate counterclockwise.
     * WE: Weight of font in range of 0 to 1000. 400 is normal, 700 is bold. Set to zero for default weight.
     * IT: Italic if set to 1 (IT:1).
-    * UN: Underline if set to 1 (UN:1).
-    * ST: Strike out if set to 1 (ST:1).
-    * ES: Escapement angle in tenths of a degree.
-    * OR: Orientation angle in tenths of a degree.
-    * CS: Charset
-    * OP: Out precision
-    * CP: Clip precision
-    * QA: Quality
-    * PF: Pitch and family
-    * FullName: Full name
-    * Style: Style
-    * Script: Script
+    * FN: Face name. Name of the typeface.
+    * FullName: Full name. The unique name of the font. For example: "Monotype:Arial Regular (Microsoft)."
 
-    For example, `SelectFont "HE:12,WE:400,FN:Arial" will look for a regular-weight font of height 12 with a face name of "Arial."
+  For example, `SelectFont "HE:12,WE:400,FN:Arial` will look for a regular-weight font of height 12 with a face name of "Arial."
 
 * AdjustAscent *adjustment*
 
@@ -156,18 +147,17 @@ To convert a font you must first make a .fntdef file which is a text file descri
 
     *Adjustment* is integer number of EM units to adjust the internal leading. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.
 
-
 * AdjustLeftMargin *adjustment*
 
-    *Adjustment* is integer number of device units to add to the left margin. Can be positive or negative. Applies to the characters specified by the ImportRange option most closely following this option.
+    *Adjustment* is integer number of device units to add to the left margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement that most closely follows this option.
 
 * AdjustRightMargin *adjustment*
 
-    *Adjustment* is integer number of EM units to add to the right margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement most closely following this statement.
+    *Adjustment* is integer number of EM units to add to the right margin. Can be positive or negative. Applies to the characters specified by the ImportRange statement that most closely follows this statement.
 
 * AntiAlias *level*
 
-    *Level* can be 1, 2, 4, or 8. Font bitmaps will contain 2, 5, 17, or 65 levels of gray respectively. Must come after the SelectFont statement specifying the font to which this statement applies. May be applied to a range of characters defined by the ImnportRange option.
+    *Level* can be 1, 2, 4, or 8. Font bitmaps will contain 2, 5, 17, or 65 levels of gray respectively. Must come after the SelectFont statement specifying the font to which this statement applies. May be applied to a range of characters defined by the ImportRange option.
 
 * ImportRange *start end*
 
@@ -199,6 +189,9 @@ To convert a font you must first make a .fntdef file which is a text file descri
 
 * Verbosity *level*
 
+    > [!Note]
+    > It seems that setting verbosity greater than one can stop fonts from being converted. Also, character diagrams are not rendered properly.
+
     *Level* can be 0, 1, or 2. Level 0 displays no details, level 1 displays font properties, and level 2 displays font and character properties and a diagram of each character.
 
 * \# Comments
@@ -209,7 +202,7 @@ Syntax for running FontConverter is GHIElectronics.TinyCLR.FontConverter.exe *in
 
 ### Adding Fonts to Your Application
 
-Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select `Add New Item...` in the Visual Studio `project` menu. In the `Add New Item` dialog box select `Resources File` and click the `Add` button.
+Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select `Add New Item...` in the Visual Studio `Project` menu. In the `Add New Item` dialog box select `Resources File` and click the `Add` button.
 
 ![Add resources file](images/add-resource-file.png)
 
