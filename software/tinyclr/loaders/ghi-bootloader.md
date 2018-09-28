@@ -89,6 +89,7 @@ File | Date | Status | MD5
 ### UC5550
 File | Date | Status | MD5
 --- | --- | --- | ---
+[v2.0.5](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.5.dfu) | 2018-09-28 | Alpha | 9F4DB868E5501773CC52048D8085B8D6
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 594744A52EC07CEFE6212669D33A5FE1
 
 ### G120
