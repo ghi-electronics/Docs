@@ -17,7 +17,10 @@ Instructions for installing the bootloader and firmware are provided on the docu
 ### Download and Install Visual Studio and the TinyCLR Extension
 1. If you don't already have Visual Studio 2017, download and install the free version from here:  [Visual Studio Community 2017](https://www.visualstudio.com/downloads/).
 2. Make sure to select the `.NET desktop development` workload when installing Visual Studio.
-3. Download and install the newest TinyCLR Visual Studio Project System by going to `Tools` > `Extensions and Updates...` > `Online` and search for and install the `TinyCLR OS Project System`. You'll need to restart Visual Studio and let the extension installer appear to complete the install.
+3. Download and install the newest TinyCLR Visual Studio Project System by going to `Tools` > `Extensions and Updates...`. In the `Extensions and Updates` dialog box select `Online` in the left panel. Type `tinyclr` into the `Search` text box in the upper right of the window to search for and install the `TinyCLR OS Project System`. You'll need to restart Visual Studio to let the extension installer complete the installation.
+    ![Install TinyCLR Extension](images/install-tinyclr-extension.gif)
+
+    You can also find the [TinyCLR OS Project System](downloads.md#visual-studio-project-system) on our [Downloads](downloads.md) page if you want to download the file and install it from your hard drive.
 
 ### Install the TinyCLR Nuget Packages
 
@@ -26,7 +29,7 @@ We are now hosting our libraries online on our [NuGet account](https://www.nuget
 1. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
 2. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 3. Right click on your Project in the Solution Explorer panel and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu. You can also select `Manage NuGet Packages...` in the `Project` menu of Visual Studio.
-![View Show Solution Explorer](images/select-manage-nuget-packages.jpg)
+![View Show Solution Explorer](images/select-manage-nuget-packages.gif)
 
 4. Make sure the package source is set to "Package source" or "All."
 ![Set package source](images/package-source.png)
@@ -34,14 +37,20 @@ We are now hosting our libraries online on our [NuGet account](https://www.nuget
 5. In the search box type "tinyclr" and make sure the "Include prerelease" box is checked.
 ![Search for TinyCLR](images/search-for-tinyclr.png)
 
-6. Selecting the `Browse` tab will show all the TinyCLR NuGet packages. Those installed are noted with a green check mark in front of the name. 
-![Browse NuGet Feed](images/browse-nuget-feed.jpg)
+6. Selecting the `Browse` tab will show all the TinyCLR NuGet packages. Those installed are noted with a green down arrow in front of the name. 
+![Browse NuGet Feed](images/browse-nuget-feed.gif)
 
-7. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
-![Add Nuget Package](images/add-nuget-package.jpg)
+7. To install one of the packages click on the down arrow to the right of the package version.
+![Add Nuget Package](images/add-nuget-package.gif)
+
+     You can also select the package and click on the `Install` button in the center panel.
+    ![Nuget-package-install-button](images/nuget-install-button.gif)
+
+8. Click `OK` to accept the proposed changes.
+![Accept changes](images/accept-changes.gif)
 
 8. Accept the licensing agreement to install the package.
-![Accept Agreement for NuGet](images/accept-agreement-for-nuget.jpg)
+![Accept Agreement for NuGet](images/accept-agreement-for-nuget.gif)
 
 And, that's it! You're now ready to start programming using TinyCLR OS.
 
@@ -63,7 +72,7 @@ C# source files are listed in the `Solution Explorer` window.  If the `Solution 
 
 ![Solution Explorer](images/solution-explorer.png)
 
-If you right click on the project name in the Solution Explorer window a drop down menu will appear.  Select `Manage NuGet Packages...` from the menu.
+If you right click on the project name in the Solution Explorer window, a drop down menu will appear.  Select `Manage NuGet Packages...` from the menu.
 
 ![View Show Solution Explorer](images/manage-nuget-packages-menu.png) 
 
