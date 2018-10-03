@@ -31,7 +31,7 @@ The firmware for these devices include all features found in the official refere
 
 |             | UC5550 | UC2550 | G120 | G400 | G80 | G30 |
 |-------------|--------|--------|------|------|-----|-----|
-| File System | Y | Y | Y | Y | Y | D |
+| File System | Y | Y | Y | Y | Y | Y |
 | Graphics    | Y | Y | Y | Y | N | N |
 | USB Client  | F | F | F | F | F | N |
 | USB Host    | F | F | F | F | F | N |
