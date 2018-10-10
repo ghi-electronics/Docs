@@ -2,13 +2,15 @@
 ---
 ![Roadmap](images/roadmap-noborder.jpg)
 
-Below is an outline of our goals for a stable and production-ready 1.0 release of TinyCLR OS. Of course, this is subject to change and does not include many smaller improvements and features.
+TinyCLR OS 1.0 is now feature-complete and we're working on the final previews making sure we can get it as bug free and as stable as we can for a final release before the end of 2018.
 
-With the latest alpha release, TinyCLR has all of the major features we plan to include in the final 1.0 release. Now we are focusing on bugs fixes and final polish. We plan to have a first preview release candidate in early August and a second to follow later that month. If everything goes well, we are aiming for the final release in September.
+After 1.0, we will continue to evaluate stability and may issue some bug-fix only releases like a 1.0.1. The bulk of our effort will be going towards 1.1, however, where we plan to investigate features like In-Field Update, USB Host and USB Client, RTC Alarm, Watchdog, OneWire, and other similar-sized features. Our current plan is to start getting previews for some of these features in your hands before the end of 2018 as well, though the final release will not be until 2019.
 
-While we will continue to support and fix bugs in 1.0, we're not done there! High on our list for 2.0 are several important features like improved networking, in field update, even easier interops, and USB host and client. We hope to get as many of these out as soon as we can, in preview form at least. More details will follow after 1.0. 
+After 1.1, we'll potentially do some bug-fix releases again, but our primary work will be on what we are tentatively planning to version 1.2. This release will focus on networking, specifically a built-in networking and TLS stack with drivers for our Ethernet PHYs and perhaps also some Wi-Fi modules. Previews for this will not start until after 1.1 is released.
 
-Longer term we do plan to investigate support for generics and, once we have that, alignment with .NET Standard.
+Longer term we do plan to investigate support for generics and a fully conforming ECMA-335 implementation and, once we have that, alignment with .NET Standard.
+ 
+Keep in mind that all of this is subject to change and does not include many smaller improvements and features. We may change what features we plan to deliver, drop some entirely, or change when they get delivered.
 
 ***
 
