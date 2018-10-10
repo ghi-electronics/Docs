@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/GHICode/Docs",
+  "source_base_path": "D:/Code/GHI/Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -3789,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/getting-started.html",
-          "hash": "O6KmvpHphqIlxTUlweqPFw=="
+          "hash": "H26o8hOkUff+/rHz3FVQjg=="
         }
       },
       "is_incremental": false,
@@ -3797,10 +3797,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/accept-agreement-for-nuget.jpg",
+      "source_relative_path": "software/tinyclr/images/Install-tinyclr-extension.gif",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/accept-agreement-for-nuget.jpg"
+          "relative_path": "software/tinyclr/images/Install-tinyclr-extension.gif"
         }
       },
       "is_incremental": false,
@@ -3808,10 +3808,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/add-nuget-package.jpg",
+      "source_relative_path": "software/tinyclr/images/accept-agreement-for-nuget.gif",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/add-nuget-package.jpg"
+          "relative_path": "software/tinyclr/images/accept-agreement-for-nuget.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/accept-changes.gif",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/accept-changes.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/add-nuget-package.gif",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/add-nuget-package.gif"
         }
       },
       "is_incremental": false,
@@ -3841,10 +3863,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/browse-nuget-feed.jpg",
+      "source_relative_path": "software/tinyclr/images/browse-nuget-feed.gif",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/browse-nuget-feed.jpg"
+          "relative_path": "software/tinyclr/images/browse-nuget-feed.gif"
         }
       },
       "is_incremental": false,
@@ -3962,6 +3984,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "software/tinyclr/images/nuget-install-button.gif",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/images/nuget-install-button.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "software/tinyclr/images/output-window.png",
       "output": {
         "resource": {
@@ -4039,10 +4072,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "software/tinyclr/images/select-manage-nuget-packages.jpg",
+      "source_relative_path": "software/tinyclr/images/select-manage-nuget-packages.gif",
       "output": {
         "resource": {
-          "relative_path": "software/tinyclr/images/select-manage-nuget-packages.jpg"
+          "relative_path": "software/tinyclr/images/select-manage-nuget-packages.gif"
         }
       },
       "is_incremental": false,
@@ -4318,7 +4351,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/roadmap.html",
-          "hash": "WnfkI+rGBFu7+UoIFkUfHQ=="
+          "hash": "KUFr2YMVcQoB60xGRrZ5lQ=="
         }
       },
       "is_incremental": false,
@@ -4330,7 +4363,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/supported-devices.html",
-          "hash": "C3dmLpbNIv87FTwStqjnYA=="
+          "hash": "aLAczfISu4f9ITg2TTDQ4g=="
         }
       },
       "is_incremental": false,
@@ -4627,6 +4660,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -4634,11 +4672,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
