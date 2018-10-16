@@ -11,7 +11,6 @@ using GHIElectronics.TinyCLR.UI.Media;
 namespace UI {
     public class Program : Application {
         public Program(DisplayController d) : base(d) {
-
         }
 
         public static void Main() {
@@ -20,6 +19,8 @@ namespace UI {
             disp.SetConfiguration(new ParallelDisplayControllerSettings {
                 //Your display configuration
             });
+
+            disp.Enable();
 
             var app = new Program(disp);
 
@@ -37,9 +38,11 @@ namespace UI {
                 Width = (int)disp.ActiveConfiguration.Width
             };
 
-            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0, window.Width, window.Height);
+            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0,
+                window.Width, window.Height);
 
-            var font = Resources.GetFont(/*your font*/);
+            //In next line replace "YourFont" with name of font you added to Resources file.
+            var font = Resource1.GetFont(Resource1.FontResources.YourFont);
 
             OnScreenKeyboard.Font = font;
 
@@ -59,6 +62,7 @@ namespace UI {
                 listBox.Items.Add(text);
             }
 
+
             //Button
             var j = 0;
             var val = new Text(font, "Tap Me");
@@ -72,6 +76,7 @@ namespace UI {
 
             listBox.Items.Add(btn);
 
+
             //Textbox
             var txt = new TextBox {
                 Font = font,
@@ -81,6 +86,7 @@ namespace UI {
             txt.SetMargin(5);
             listBox.Items.Add(txt);
 
+
             //Setup
             window.Child = listBox;
             window.Visibility = Visibility.Visible;
@@ -89,7 +95,6 @@ namespace UI {
         }
     }
 }
-
 ```
 
 ## Fonts
