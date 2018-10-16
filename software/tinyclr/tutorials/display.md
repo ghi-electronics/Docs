@@ -5,14 +5,21 @@ Displays can be grouped into two distinct interface categories, parallel TFT dis
 ## Parallel TFT Displays
 These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.
 
-TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our G400D Dev Board. You will need to add the `GHIElectronics.TinyCLR.Drawing` NuGet package to your program and `using System.Drawing` and `using GHIElectronics.TinyCLR.Devices.Display` to your code.
+TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our G400D Dev Board. You will need to add the `GHIElectronics.TinyCLR.Drawing`, `GHIElectronics.TinyCLR.Devices.Gpio` and `GHIElectronics.TinyCLR.Pins` NuGet package to your program and `using System.Drawing`, `using GHIElectronics.TinyCLR.Devices.Display`, `using GHIElectronics.TinyCLR.Devices.Gpio`, and `using GHIElectronics.TinyCLR.Pins` to your code.
+
+In this example, GPIO is only used to turn on the backlight. Note that the backlight on the G400D Dev Board is pulled high with a pullup resistor, so turning on the backlight is unnecessary -- you can only use GPIO pin PD6 to turn it off. However, on the UD435 and UD700 displays a pull down resistor is built into the backlight driver chip. For these display you will need to set the corresponding GPIO pin high to turn on the backlight.
 
 ```csharp
 using System.Drawing;
 using GHIElectronics.TinyCLR.Devices.Display;
+using GHIElectronics.TinyCLR.Devices.Gpio;
+using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
+        var backlight = GpioController.GetDefault().OpenPin(G400D.GpioPin.PD6);
+        backlight.SetDriveMode(GpioPinDriveMode.Output);
+
         var displayController = DisplayController.GetDefault();
 
         // Enter the proper display configurations
@@ -35,14 +42,17 @@ class Program {
         });
 
         displayController.Enable();
+        backlight.Write(GpioPinValue.High);
 
         // Some needed objects
         var screen = Graphics.FromHdc(displayController.Hdc);
-        var GreenPen = new Pen(Color.Green);
+        var greenPen = new Pen(Color.Green);
+        var redPen = new Pen(Color.Red);
 
-        // Start Drawing (to memroy)
+        // Start Drawing (to memory)
         screen.Clear(Color.Black);
-        screen.DrawEllipse(GreenPen, 40, 30, 20, 10);
+        screen.DrawEllipse(greenPen, 40, 30, 80, 60);
+        screen.DrawLine(redPen, 0, 0, 479, 271);
 
         // Flush the memory to the display. This is a very fast operation.
         screen.Flush();
