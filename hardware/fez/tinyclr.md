@@ -44,6 +44,12 @@ We recommend using the TinyCLR Config tool to update the firmware. As a backup, 
 9. Select the firmware file you downloaded in step 1.
 10. When the transfer is complete, press the RESET button on the FEZ.
 
+## Using Native Code with TinyCLR
+TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out [Native Code on TinyCLR](../../software/tinyclr/native/intro.md).
+
+TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the FEZ, the interop region starts at address 0x20016000, and its length is 0x3F8.
+
+
 ***
 Check out our [**TinyCLR Tutorials**](../../software/tinyclr/tutorials/intro.md)!
 
