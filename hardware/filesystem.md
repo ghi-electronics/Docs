@@ -25,6 +25,7 @@ Originally called ALFAT.
 
 ## uALFAT
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/uALFAT User Manual.pdf)
+* [Firmware 3.13](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/uALFAT Firmware v3.13.ghi)
 
 ***
 
