@@ -13,19 +13,20 @@ Originally called ALFAT.
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
 * [ALFAT-OEM Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20OEM%20Board%20Schematic.pdf)
 * [ALFAT-SD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SD%20Board%20Schematic.pdf)
-* [ALFAT-USB](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20USB%20Board%20Schematic.pdf)
-* [Firmware 1.08](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v1.0.8.ghi)
-* [Firmware 2.00](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v2.0.0.ghi)
+* [ALFAT-USB Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20USB%20Board%20Schematic.pdf)
+* [Firmware v1.0.8](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v1.0.8.ghi)
+* [Firmware v2.0.0](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v2.0.0.ghi)
 
 
 ## F20
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F20%20Datasheet.pdf)
-* [Firmware v103](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/F20%20Firmware%20v1.0.3.ghi)
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
 * [F20-uSD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/F20%20uSD%20Schematic.pdf)
+* [Firmware v1.0.3](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/F20%20Firmware%20v1.0.3.ghi)
 
 ## uALFAT
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/uALFAT%20User%20Manual.pdf)
-* [Firmware 3.13](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/uALFAT%20Firmware%20v3.13.ghi)
+* [Firmware v3.13](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/uALFAT%20Firmware%20v3.13.ghi)
 
 ***
 
