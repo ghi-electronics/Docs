@@ -13,7 +13,9 @@ Originally called ALFAT.
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
 * [ALFAT-OEM Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20OEM%20Board%20Schematic.pdf)
 * [ALFAT-SD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SD%20Board%20Schematic.pdf)
+* [ALFAT-SDR Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SDR%20Board%20Schematic.pdf)
 * [ALFAT-USB Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20USB%20Board%20Schematic.pdf)
+* [ALFAT Eval Kit Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20Evaluation%20Kit%20Schematic.pdf)
 * [Firmware v1.0.8](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v1.0.8.ghi)
 * [Firmware v2.0.0](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v2.0.0.ghi)
 
@@ -28,6 +30,10 @@ Originally called ALFAT.
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/uALFAT%20User%20Manual.pdf)
 * [Firmware v3.13](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/uALFAT%20Firmware%20v3.13.ghi)
 
+## USBwiz
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBwiz%20User%20Manual.pdf)
+* [Firmware](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/USBwiz%20Firmware.ghi)
+
 ***
 
-Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
+Visit our main website at [**www.ghielectronics.com**](https://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
