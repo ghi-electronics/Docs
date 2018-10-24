@@ -32,7 +32,7 @@ Originally called ALFAT.
 
 ## USBwiz
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/USBwiz%20User%20Manual.pdf)
-* [Firmware](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/USBwiz%20Firmware.ghi)
+* [Firmware v2.29](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/USBwiz%20Firmware%20v2.29.ghi)
 
 ***
 
