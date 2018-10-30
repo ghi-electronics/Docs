@@ -11,13 +11,12 @@ The UCM Standard defines a consistent hardware and software interface for the mo
 All of our UCMs use the same 200 pin SO-DIMM socket that was originally made for DDR2 memory modules. The fastest way to get started with UCMs is by using the optional boards and displays described on the [UCM Development Options](development-options.md) page. You can also incorporate any of our UCMs into your own custom design by adding the correct SO-DIMM socket to your circuit board.
 
 > [!Tip]
-> If your custom design uses or might use Wi-Fi, it's a good idea to expose the pins needed to update the Wi-Fi firmware. These pins are Wi-Fi BOOT0 (SO-DIMM pin 108), Wi-Fi TXD (SO-DIMM pin 93), Wi-Fi RXD (SO-DIMM pin 94), and Wi-Fi GPIO 0 (SO-DIMM pin 36).
+> Makes sure to expose the required pins in your design. Specific pins are needed for device programming, updates, recovery, and Wi-Fi firmware updates. See device specifications for details.
 
-SO-DIMM stands for Small Outline Dual Inline Memory Module. Our UCMs use the 200 pin DDR2 SO-DIMM socket.
+SO-DIMM stands for Small Outline Dual Inline Memory Module. There are two different 200 pin SO-DIMM sockets, those made for DDR memory and those made for DDR2 memory. They are identical except for the orientation notch which is in a slightly different position. These sockets are not interchangeable. There is also a 204 pin SO-DIMM socket for DDR3 memory with the notch positioned closer to the center of the module.
 
-There are two different 200 pin SO-DIMM sockets, those made for DDR memory and those made for DDR2 memory. They are identical except for the orientation notch which is in a slightly different position. These sockets are not interchangeable. There is also a 204 pin SO-DIMM socket for DDR3 memory with the notch positioned closer to the center of the module.
-
-Our UCMs are only compatible with DDR2 type 200 pin SO-DIMM sockets.
+> [!Note]
+> Our UCMs are only compatible with DDR2 type 200 pin SO-DIMM sockets.
 
 Here is a link to the manufacturer's web page for the connector we use on our boards: [EMBOSS ASSY DDR2 SODIMM SOCKET 200P 5.2H](http://www.te.com/usa-en/product-1565917-4.html)
 
