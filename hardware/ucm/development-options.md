@@ -54,22 +54,6 @@ Display Module: ER-TFT070-4
 
 The UD700 supports a 7 inch capacitive LCD touch screen.
 
-## Designing your own circuit boards
-![200 pin DDR2 SO-DIMM socket](images/200-pin-ddr2-so-dimm.jpg)
-
-> [!Tip]
-> If your custom design uses or might use Wi-Fi, it's a good idea to expose the pins needed to update the Wi-Fi firmware. These pins are Wi-Fi BOOT0 (SO-DIMM pin 108), Wi-Fi TXD (SO-DIMM pin 93), Wi-Fi RXD (SO-DIMM pin 94), and Wi-Fi GPIO 0 (SO-DIMM pin 36).
-
-You can design your own circuit boards for UCMs by incorporating the correct SO-DIMM socket into your design.
-
-SO-DIMM stands for Small Outline Dual Inline Memory Module. Our UCMs use the 200 pin DDR2 SO-DIMM socket.
-
-There are two different 200 pin SO-DIMM sockets, those made for DDR memory and those made for DDR2 memory. They are identical except for the orientation notch which is in a slightly different position. These sockets are not interchangeable. There is also a 204 pin SO-DIMM socket for DDR3 memory with the notch positioned closer to the center of the module.
-
-Our UCMs are only compatible with DDR2 type 200 pin SO-DIMM sockets.
-
-Here is a link to the manufacturer's web page for the connector we use on our boards: [EMBOSS ASSY DDR2 SODIMM SOCKET 200P 5.2H](http://www.te.com/usa-en/product-1565917-4.html)
-
 ***
 
 Need a solution for harsh or high vibration environments? Check out our [**SCMs**](../scm/intro.md).
