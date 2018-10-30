@@ -8,10 +8,10 @@ The UCM Standard defines a consistent hardware and software interface for the mo
 
 ![200 pin DDR2 SO-DIMM socket](images/200-pin-ddr2-so-dimm.jpg)
 
-All of our UCMs use the same 200 pin SO-DIMM socket that was originally made for DDR2 memory modules. The fastest way to get started with UCMs is by using the optional boards and displays described on the [UCM Development Options](development-options.md) page. You can also incorporate any of our UCMs into your own custom design by adding the correct SO-DIMM socket to your circuit board.
+All of our UCMs use the same 200 pin SO-DIMM socket that was originally made for DDR2 memory modules. The fastest way to get started with UCMs is by using the optional boards and displays described on the [UCM Development Options](development-options.md) page. You can also incorporate any of our UCMs into your own custom design by adding the appropriate SO-DIMM socket to your circuit board.
 
 > [!Tip]
-> Makes sure to expose the required pins in your design. Specific pins are needed for device programming, updates, recovery, and Wi-Fi firmware updates. See device specifications for details.
+> Make sure to expose the required pins in your design. Specific pins are needed for device programming, updates, recovery, and Wi-Fi firmware updates. See device specifications for details.
 
 SO-DIMM stands for Small Outline Dual Inline Memory Module. There are two different 200 pin SO-DIMM sockets, those made for DDR memory and those made for DDR2 memory. They are identical except for the orientation notch which is in a slightly different position. These sockets are not interchangeable. There is also a 204 pin SO-DIMM socket for DDR3 memory with the notch positioned closer to the center of the module.
 
