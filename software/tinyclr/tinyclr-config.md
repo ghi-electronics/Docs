@@ -27,7 +27,7 @@ Hit the `Connect` button. The device, name, manufacturer and firmware versions s
 #### Debug Mode Command Buttons
 
 ##### Update Firmware
-Updates device firmware to the latest version found in the `FirmwareSources.txt` file. If there is no `FirmwareSources.txt` file, one will be created that points to the official GHI downloads page.
+Updates device firmware to the latest version found from whatever sources have been specified (a default source points to the official GHI Electronics downloads). See [firmware sources](#firmware-sources) below for more information.
 
 ##### Ping
 Used to ping the device to verify the connection.
@@ -51,10 +51,10 @@ Used to erase an application program from a device. Does not erase the firmware 
 Used to save a binary image of the device application program as a .tca file. Does not save the TinyCLR firmware or the bootloader.
 
 ##### Load App
-Used to load a previously saved binary image of an application (.tca file) onto your device.
+Used to load a previously saved binary image of an application (.tca file) onto your device. Keep in mind that you need to make sure that the device is the same model and is running the same firmware when you load the application that it was when the application was saved.
 
 ### Using Loader Mode
-Plug the device into your computer's USB port and start TinyCLR Config. To use Loader mode, the device must first be placed into bootloader mode. Devices without firmware installed should boot into loader mode by default. You can also use the `Enter Loader` button in the `Debug` section of TinyCLR Config to put your device in loader mode.
+Plug the device into your computer's USB port and start TinyCLR Config. To use Loader mode, the device must first be placed into bootloader mode. Devices without firmware installed should boot into loader mode by default. You can also use the `Enter Loader` button in the `Debug` section of TinyCLR Config to put your device in loader mode. You may also assert one of the boot pins to force the device to stay in loader mode on power up -- see your device specifications for details.
 
 > [!Note]
 > You must have GHI Bootloader v2 installed on your device to communicate using the `Loader` mode of TinyCLR Config.
@@ -66,7 +66,7 @@ Click on the `Loader` tab of TinyCLR Config. Next to `Port:`, use the drop down 
 #### Loader Mode Command Buttons
 
 ##### Update to Latest
-Updates the device firmware to the latest version found in the `FirmwareSources.txt` file. If there is no `FirmwareSources.txt` file, one will be created that points to the official GHI downloads page.
+Updates the device firmware to the latest version found using the same rules as the firmware update section of the `Debug` tab. It will always erase and reload the latest found firmware, regardless of version.
 
 ##### Manual Update
 Allows you to update from a locally stored firmware file.
@@ -75,7 +75,7 @@ Allows you to update from a locally stored firmware file.
 Erases the application program and firmware from the device. Does not erase the bootloader.
 
 ##### Run
-Takes the device out of bootloader mode and runs the application program on the device
+Takes the device out of bootloader mode and starts the firmware on the device.
 
 ## Firmware Sources
 When TinyCLR Config starts up, it looks for a file called `FirmwareSources.txt` in the same directory as the TinyCLR Config executable itself. If the file isn't present, it's created automatically with one entry pointing to the official GHI firmware store.
