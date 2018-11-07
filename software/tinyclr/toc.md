@@ -17,6 +17,7 @@
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
+## [Wi-Fi](tutorials/wifi.md)
 
 
 # [Native Code](native/intro.md)
