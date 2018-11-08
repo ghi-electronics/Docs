@@ -1,6 +1,6 @@
 # Wi-Fi
 ---
-First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. Originally used to network desktop computers, Wi-Fi is has become a major factor in the Internet of Things revolution as it is incorporated into an ever increasing number of electronic devices.
+First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. Originally used to network desktop computers, Wi-Fi is being incorporated into an ever increasing number of electronic devices and is a driving force behind the Internet of things revolution.
 
 Wi-Fi is a high bandwidth, low power, short range networking technology. Operating in the UHF and microwave spectrums, Wi-Fi radio waves propogate mainly by line of sight. The signal is blocked by hills, but can penetrate foliage and buildings well enough to be used effectively indoors and out.
 
@@ -40,7 +40,7 @@ Wi-Fi is a high bandwidth, low power, short range networking technology. Operati
 
 ### OpenSocket()
 
-`OpenSocket(string host, int port, SPWF04SxConnectionType connectionType, SPWF04SxConnectionSecurityType connectionSecurity, string commonName = null)`. Opens a socket client. Arguments are a string host name, an integer port number, an SPWF04SxConnectionType connection type, and a connection security type of `none` or `Tls`. Returns an integer ID number for the socket.
+`OpenSocket(string host, int port, SPWF04SxConnectionType connectionType, SPWF04SxConnectionSecurityType connectionSecurity, string commonName)`. Opens a socket client. Arguments are a string host name, an integer port number, an SPWF04SxConnectionType connection type, and a connection security type of `none` or `Tls`. Returns an integer ID number for the socket.
 
 ### QuerySocket()
 
@@ -106,7 +106,7 @@ Fires an event when a Wi-Fi error message is received.
 
 ### ForceSocketsTls
 
-Boolean property that can be used to force the next socket to be opened as a secure TLS socket. For example, executing `wifi.ForceSocketsTls = true;` before `OpenSocket()` will cause the socket to be opened as a TLS Socket.
+Boolean property that can be used to ensure a socket is opened as a secure TLS socket. For example, executing `wifi.ForceSocketsTls = true;` before `OpenSocket()` will cause the socket to be opened as a TLS Socket.
 
 ### ForceSocketsTlsCommonName
 
@@ -122,7 +122,7 @@ The possible states are: `HardwarePowerUp`, `HardwareFailure`, `RadioTerminatedB
 
 ## Sample Code
 
-The following sample code will work on the FEZ and the UC5550 with the Wi-Fi option. Just comment out the code for the board you are not using (works as is on FEZ with Wi-Fi).
+The following sample code will work on the FEZ and the UC5550 if they have Wi-Fi. Just comment out the code for the board you are not using (works as is on the FEZ).
 
 ```csharp
 using GHIElectronics.TinyCLR.Devices.Gpio;
@@ -190,17 +190,15 @@ namespace WiFi {
                 WaitForButton();
 
                 //.NET
-                //TestHttp("http://files.ghielectronics.com", "/"); //no
-                //TestHttp("https://www.ghielectronics.com", "/robots.txt"); //no
-                //TestSocket("www.ghielectronics.com", "/robots.txt", 80); //yes, but 404.
+                TestHttp("http://www.ghielectronics.com", "/products/fez");
+                //TestHttp("http://ghielectronics.com", "/products/system-on-modules");
+                //TestSocket("www.ghielectronics.com", "/tinyclr/features", 80);
 
                 //WiFi
-                //TestHttp("files.ghielectronics.com", "/", 80, SPWF04SxConnectionSecurityType.None, true); //400
-                //TestHttp("www.ghielectronics.com", "/robots.txt", 80, SPWF04SxConnectionSecurityType.None, false); //411
-                //TestHttp("www.ghielectronics.com", "/robots.txt", 80, SPWF04SxConnectionSecurityType.None, true); //404
-                //TestHttp("old.ghielectronics.com", "/downloads/", 80, SPWF04SxConnectionSecurityType.None, true); //200 Yes!
-                //TestSocket("www.ghielectronics.com", "/robots.txt", 80, SPWF04SxConnectionType.Tcp, SPWF04SxConnectionSecurityType.None); //404
-                TestSocket("www.ghielectronics.com", "/robots.txt", 443, SPWF04SxConnectionType.Tcp, SPWF04SxConnectionSecurityType.Tls, "*.ghielectronics.com");
+                //TestHttp("www.ghielectronics.com", "/tinyclr/faq", 80, SPWF04SxConnectionSecurityType.None, true);
+                //TestHttp("old.ghielectronics.com", "/downloads/", 80, SPWF04SxConnectionSecurityType.None, true);
+                //TestSocket("www.ghielectronics.com", "/products/BrainPad", 80, SPWF04SxConnectionType.Tcp, SPWF04SxConnectionSecurityType.None);
+                //TestSocket("www.ghielectronics.com", "/products/longevity", 443, SPWF04SxConnectionType.Tcp, SPWF04SxConnectionSecurityType.Tls, "ghielectronics.com");
 
                 Debug.WriteLine(GC.GetTotalMemory(true).ToString("N0"));
             }
@@ -319,7 +317,6 @@ namespace WiFi {
             var start = DateTime.UtcNow;
             var req = (HttpWebRequest)HttpWebRequest.Create(host + url);
             req.HttpsAuthentCerts = new[] { new X509Certificate() };
-            //var req = HttpWebRequest.Create("http://151.101.65.69:443/");
             var res = (HttpWebResponse)req.GetResponse();
             var str = res.GetResponseStream();
 
@@ -442,6 +439,7 @@ namespace WiFi {
         }
     }
 }
+
 
 ```
 
