@@ -8,7 +8,7 @@
     <title>G80 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="G80 ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -95,6 +97,41 @@
 <h4 id="loading-the-firmware">Loading the Firmware</h4>
 <p>To activate bootloader v2, hold LDR0 low and reset the device. You may have to wait a couple of seconds before releasing LDR0.</p>
 <p>Download the <a href="../../software/tinyclr/downloads.html#g80">G80 firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
+<h4 id="using-native-code-with-tinyclr">Using Native Code with TinyCLR</h4>
+<p>TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out <a href="../../software/tinyclr/native/intro.html">Native Code on TinyCLR</a>.</p>
+<p>TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the G80, the interop region starts at address 0x2002F000, and its length is 0xFF8.</p>
+<h2 id="specifications">Specifications</h2>
+<table>
+<thead>
+<tr>
+<th>Spec</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Processor</td>
+<td>STM32F427VGT6</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>180 MHz</td>
+</tr>
+<tr>
+<td>Internal RAM</td>
+<td>256 KByte (SRAM)</td>
+</tr>
+<tr>
+<td>Internal Flash</td>
+<td>1 MByte</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>LQFP100 14 x 14 mm</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Not all memory will be available for your application.</em></p>
 <h3 id="g80-based-products">G80 Based products</h3>
 <h4 id="g80-development-board">G80 Development Board</h4>
 <p><img src="images/g80dev.jpg" alt="G80 Dev Board"></p>

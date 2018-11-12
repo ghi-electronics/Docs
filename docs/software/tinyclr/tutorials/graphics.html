@@ -8,7 +8,7 @@
     <title>Graphics </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Graphics ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -86,7 +88,6 @@ using GHIElectronics.TinyCLR.UI.Media;
 namespace UI {
     public class Program : Application {
         public Program(DisplayController d) : base(d) {
-
         }
 
         public static void Main() {
@@ -95,6 +96,8 @@ namespace UI {
             disp.SetConfiguration(new ParallelDisplayControllerSettings {
                 //Your display configuration
             });
+
+            disp.Enable();
 
             var app = new Program(disp);
 
@@ -112,9 +115,11 @@ namespace UI {
                 Width = (int)disp.ActiveConfiguration.Width
             };
 
-            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0, window.Width, window.Height);
+            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0,
+                window.Width, window.Height);
 
-            var font = Resources.GetFont(/*your font*/);
+            //In next line replace &quot;YourFont&quot; with name of font you added to Resources file.
+            var font = Resource1.GetFont(Resource1.FontResources.YourFont);
 
             OnScreenKeyboard.Font = font;
 
@@ -134,6 +139,7 @@ namespace UI {
                 listBox.Items.Add(text);
             }
 
+
             //Button
             var j = 0;
             var val = new Text(font, &quot;Tap Me&quot;);
@@ -147,6 +153,7 @@ namespace UI {
 
             listBox.Items.Add(btn);
 
+
             //Textbox
             var txt = new TextBox {
                 Font = font,
@@ -155,6 +162,7 @@ namespace UI {
 
             txt.SetMargin(5);
             listBox.Items.Add(txt);
+
 
             //Setup
             window.Child = listBox;

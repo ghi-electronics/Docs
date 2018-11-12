@@ -8,7 +8,7 @@
     <title>TinyCLR OS </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="TinyCLR OS ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -113,6 +115,9 @@
 <li>Select the firmware file you downloaded in step 1.</li>
 <li>When the transfer is complete, press the RESET button on the FEZ.</li>
 </ol>
+<h2 id="using-native-code-with-tinyclr">Using Native Code with TinyCLR</h2>
+<p>TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out <a href="../../software/tinyclr/native/intro.html">Native Code on TinyCLR</a>.</p>
+<p>TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the FEZ, the interop region starts at address 0x20016000, and its length is 0x3F8.</p>
 <hr>
 <p>Check out our <a href="../../software/tinyclr/tutorials/intro.html"><strong>TinyCLR Tutorials</strong></a>!</p>
 <p>Visit our main website at <a href="http://www.ghielectronics.com"><strong>www.ghielectronics.com</strong></a> and our community forums at <a href="https://forums.ghielectronics.com/"><strong>forums.ghielectronics.com</strong></a>.</p>

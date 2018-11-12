@@ -8,7 +8,7 @@
     <title>G400S </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="G400S ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -98,6 +100,9 @@
 </div>
 <p>To activate bootloader v2, hold the LDR0 (pin 101) signal low and reset the board. You may have to wait a couple of seconds before releasing LDR0.</p>
 <p>Download the <a href="../../software/tinyclr/downloads.html#g400">G400 firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
+<h4 id="using-native-code-with-tinyclr">Using Native Code with TinyCLR</h4>
+<p>TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out <a href="../../software/tinyclr/native/intro.html">Native Code on TinyCLR</a>.</p>
+<p>TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the G400S, the interop region starts at address 0x26700000, and its length is 0x16FFFF8.</p>
 <h2 id="specifications">Specifications</h2>
 <table>
 <thead>
@@ -137,6 +142,7 @@
 </tr>
 </tbody>
 </table>
+<p><em>Note: Not all memory will be available for your application.</em></p>
 <h2 id="peripherals">Peripherals</h2>
 <p><em>Note:  Many peripherals share I/O pins.  Not all peripherals will be available to your application.</em></p>
 <table>

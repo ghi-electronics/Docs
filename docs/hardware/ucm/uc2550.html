@@ -8,7 +8,7 @@
     <title>UC2550 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="UC2550 ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -96,6 +98,9 @@
 <p>Download the <a href="../../software/tinyclr/downloads.html#uc2550">UC2550 firmware</a> and follow the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h4 id="setup-the-host-computer-and-start-coding">Setup the Host Computer and Start Coding</h4>
 <p>Now that you have installed the bootloader and firmware on the UC2550, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
+<h4 id="using-native-code-with-tinyclr">Using Native Code with TinyCLR</h4>
+<p>TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out <a href="../../software/tinyclr/native/intro.html">Native Code on TinyCLR</a>.</p>
+<p>TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the UC2550, the interop region starts at address 0x2003E000, and its length is 0x1FF8.</p>
 <h3 id="updating-the-wi-fi-module-firmware">Updating the Wi-Fi Module Firmware</h3>
 <p>To update the firmware on the UC2550 Wi-Fi module, follow the instructions on <a href="../components/spwf04sa.html">this page</a>.</p>
 <h2 id="schematic">Schematic</h2>
@@ -157,8 +162,13 @@
 <td>External Flash</td>
 <td>Up to 4 MByte (QSPI)</td>
 </tr>
+<tr>
+<td>Dimensions</td>
+<td>67.7 x 31.7 x 3.2 mm</td>
+</tr>
 </tbody>
 </table>
+<p><em>Note: Not all memory will be available for your application.</em></p>
 <h2 id="peripherals">Peripherals</h2>
 <table>
 <thead>
