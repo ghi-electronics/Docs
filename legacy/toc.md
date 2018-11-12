@@ -39,7 +39,6 @@
 ## [G400 TH](../hardware/breakout/g400-th.md)
 
 # [Automotive](../hardware/automotive.md)
-# [File System](../hardware/filesystem.md)
 # [Gadgeteering](../hardware/gadgeteering.md)
 # [Imaging](../hardware/imaging.md)
 # [Raspberry PI Hats](../hardware/raspberrypi-hats.md)
