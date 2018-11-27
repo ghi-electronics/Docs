@@ -75,7 +75,7 @@ This video features a very low cost I2C display option
 ## Low Level Display Access
 TinyCLR also provides low level display access as part of the `GHIElectronics.TinyCLR.Devices.Display` library. These methods provide a simple way to write to a display without need for the `System.Drawing` library or an added font resource file.
 
-The following example is written for the G120E Dev Board and will paint the screen as shown in the picture beneath the code. Note that while DrawPixel expects RGB888 color information, DrawBuffer simply writes the data array directly to the display. DrawBuffer requires you to format your data as required by your display. The G120E Dev Board used in this example expects each pixel to have 16 bits (two bytes per pixel) of color information in RGB565 format with little endian byte order.
+The following example is written for the G120E Dev Board and will paint the screen as shown in the picture beneath the code. Note that low level display access requires that you to use the data format required by your display as configured. The G120E Dev Board used in this example expects each pixel to have 16 bits (two bytes per pixel) of color information in RGB565 format.
 
 ```csharp
 using GHIElectronics.TinyCLR.Devices.Display;
@@ -116,8 +116,8 @@ class Program {
         displayController.DrawString("Low Level Display Demo.");
 
         for (var x = 20; x < 300; x++) {
-            displayController.DrawPixel(x, 50, 0xFF0000);
-            displayController.DrawPixel(x, 51, 0xFF0000);
+            displayController.DrawPixel(x, 50, 0xF800);     //Color is 31,0,0 (RGB565).
+            displayController.DrawPixel(x, 51, 0xF800);
         }
     }
 }
