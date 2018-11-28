@@ -7,7 +7,7 @@ This release is the third and final planned preview of the 1.0 release for TinyC
 
 We are also maintaining our decision to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
 
-The libraries, extension, and firmwares are all uploaded to their online sources so you can update your firmware using TinyCLR Config, update your packages using the NuGet package manager with the NuGet.org source, and update the VSIX from the extensions area of Visual Studio. We will still make these binaries available on our own hosting as well, but the expected workflow remains the usual NuGet/marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page.
+The libraries, extension, and firmwares are all uploaded to their online sources so you can update your firmware using TinyCLR Config, update your packages using the NuGet package manager with the NuGet.org source, and update the VSIX from the extensions area of Visual Studio (make sure to include pre-releases for NuGet as this is still a preview). We will still make these binaries available on our own hosting as well, but the expected workflow remains the usual NuGet/marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page.
 
 ### Libraries
 
