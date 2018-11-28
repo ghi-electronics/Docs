@@ -32,7 +32,7 @@ The libraries, extension, and firmwares are all uploaded to their online sources
 ### Firmware
 
 #### Changes
-- Fixed PWM jittering when decreasing the pulse [#102](https://github.com/ghi-electronics/TinyCLR-Devices/issues/102).
+- Fixed PWM jittering when decreasing the pulse width [#102](https://github.com/ghi-electronics/TinyCLR-Devices/issues/102).
 - Fixed the reported messages received on CAN being incorrect [#527](https://github.com/ghi-electronics/TinyCLR-Ports/issues/527).
 - Fixed the CTS changed event not working [#59](https://github.com/ghi-electronics/TinyCLR-Devices/issues/59).
 - Fixed deployment not getting added to api manager [#545](https://github.com/ghi-electronics/TinyCLR-Ports/issues/545).
@@ -99,7 +99,7 @@ The libraries, extension, and firmwares are all uploaded to their online sources
 ### Porting
 
 #### Changes
-- Fixed product version string showing the version numbers and not friendly string [#356](https://github.com/ghi-electronics/TinyCLR-Core/issues/356).
+- Fixed product version string showing the version numbers and not the friendly string [#356](https://github.com/ghi-electronics/TinyCLR-Core/issues/356).
 - Fixed some API IDs and target names not matching [#292](https://github.com/ghi-electronics/TinyCLR-Ports/issues/292).
 - Added interrupt and sleep data to power [#480](https://github.com/ghi-electronics/TinyCLR-Ports/issues/480).
 - Added USB get connection status [#568](https://github.com/ghi-electronics/TinyCLR-Ports/issues/568).
