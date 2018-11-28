@@ -1,5 +1,116 @@
 # Release Notes
 
+## 1.0.0-preview3 on 2018-11-30
+
+### Notes
+This release is the third and final planned preview of the 1.0 release for TinyCLR. There have been no major changes in this release -- its entire focus was bug fixing. We'll wait a few weeks to ensure no major issues are discovered before rebuilding with the final release version numbers and doing the final release.
+
+We are also maintaining our decision to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
+
+The libraries, extension, and firmwares are all uploaded to their online sources so you can update your firmware using TinyCLR Config, update your packages using the NuGet package manager with the NuGet.org source, and update the VSIX from the extensions area of Visual Studio. We will still make these binaries available on our own hosting as well, but the expected workflow remains the usual NuGet/marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page.
+
+### Libraries
+
+#### Changes
+- Fixed cases where SPWF04Sx will sometimes lose writes [#14](https://github.com/ghi-electronics/TinyCLR-Drivers/issues/14).
+- Fixed `SPWF04SxConnectionType` being misspelled [#26](https://github.com/ghi-electronics/TinyCLR-Drivers/issues/26).
+- Fixed `GetFiles` and `EnumerateFileSystemEntries` having an extra slash in path [#309](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/309).
+- Fixed managed drawing functions throwing when out of range [#300](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/300).
+- Fixed red and blue being swapped in the UI library [#306](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/306).
+- Fixed some pins and ports names being out of sync [#193](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/193).
+- Fixed software I2C not running at a consistent speed [#515](https://github.com/ghi-electronics/TinyCLR-Ports/issues/515).
+- Fixed software SPI not respecting `ChipSelectType` [#459](https://github.com/ghi-electronics/TinyCLR-Ports/issues/459).
+- Added missing SD, RTC, and Wi-Fi names to pins [#266](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/266).
+- Added chipselect hold and setup time to software SPI [#292](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/292).
+- Added support for carrier frequency in signal generator [#477](https://github.com/ghi-electronics/TinyCLR-Ports/issues/477).
+- Changed `DrawPixel` in display controller to use the format of the display controller [#543](https://github.com/ghi-electronics/TinyCLR-Ports/issues/543).
+- Removed setter from `IDriveProvider.Name` in place of an `Initialize` method [#297](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/297).
+
+#### Known Issues
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors [#51](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/51).
+
+### Firmware
+
+#### Changes
+- Fixed PWM jittering when decreasing the pulse [#102](https://github.com/ghi-electronics/TinyCLR-Devices/issues/102).
+- Fixed the reported messages received on CAN being incorrect [#527](https://github.com/ghi-electronics/TinyCLR-Ports/issues/527).
+- Fixed the CTS changed event not working [#59](https://github.com/ghi-electronics/TinyCLR-Devices/issues/59).
+- Fixed deployment not getting added to api manager [#545](https://github.com/ghi-electronics/TinyCLR-Ports/issues/545).
+- Fixed `SupportedDataFormats` in display throwing an exception on access [#572](https://github.com/ghi-electronics/TinyCLR-Ports/issues/572).
+- Fixed `DrawString` not resetting row/column on soft reboot [#542](https://github.com/ghi-electronics/TinyCLR-Ports/issues/542).
+- Fixed enabling CAN before setting timings throwing the wrong exception [#554](https://github.com/ghi-electronics/TinyCLR-Ports/issues/554).
+- Fixed the `Read` and `Write` in storage provider crashing the device [#495](https://github.com/ghi-electronics/TinyCLR-Ports/issues/495).
+- Fixed use of filesystem crashing the second deploy without a power cycle [#457](https://github.com/ghi-electronics/TinyCLR-Ports/issues/457).
+- Fixed being able to mount the filesystem after previously unmounting it [#491](https://github.com/ghi-electronics/TinyCLR-Ports/issues/491) [#506](https://github.com/ghi-electronics/TinyCLR-Ports/issues/506).
+- Fixed the system crashing if the SD card is removed after acquiring the controller [#498](https://github.com/ghi-electronics/TinyCLR-Ports/issues/498).
+- Fixed deploying on G120 and G400 sometimes failing [#431](https://github.com/ghi-electronics/TinyCLR-Ports/issues/431).
+- Fixed G120 disappearing in TinyCLR Config if the device is rebooted [#513](https://github.com/ghi-electronics/TinyCLR-Ports/issues/513).
+- Fixed enabling handshaking on UART2 crashing the G30 [#518](https://github.com/ghi-electronics/TinyCLR-Ports/issues/518).
+- Fixed signal generator failing on G400 [#461](https://github.com/ghi-electronics/TinyCLR-Ports/issues/461).
+- Fixed software I2C failing on G400 [#458](https://github.com/ghi-electronics/TinyCLR-Ports/issues/458).
+- Fixed G80 serial debug not working [#456](https://github.com/ghi-electronics/TinyCLR-Ports/issues/456).
+- Fixed GPIO interrupts not always working [#496](https://github.com/ghi-electronics/TinyCLR-Ports/issues/496) [#578](https://github.com/ghi-electronics/TinyCLR-Ports/issues/578).
+- Fixed graphics getting corrupt on the UC5550 after some time [#562](https://github.com/ghi-electronics/TinyCLR-Ports/issues/562).
+- Fixed RTC not working on G400 [#460](https://github.com/ghi-electronics/TinyCLR-Ports/issues/460).
+- Fixed rebooting the device in serial mode taking a long time [#509](https://github.com/ghi-electronics/TinyCLR-Ports/issues/509).
+- Fixed the native SPI drivers not respecting `ChipSelectType` [#471](https://github.com/ghi-electronics/TinyCLR-Ports/issues/471).
+- Fixed SPI `SupportedDataBitLengths` throwing an exception on access [#557](https://github.com/ghi-electronics/TinyCLR-Ports/issues/557).
+- Fixed the storage description having wrong values and format for size, address, and attributes [#544](https://github.com/ghi-electronics/TinyCLR-Ports/issues/544)  [#571](https://github.com/ghi-electronics/TinyCLR-Ports/issues/571).
+- Fixed multi-pin reservations not releasing previously reserved pins if a pin fails to reserve [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
+- Fixed the timestamp for HAL events using the wrong origin [#546](https://github.com/ghi-electronics/TinyCLR-Ports/issues/546).
+- Fixed `GetMessagesToWrite` in CAN crashing the device [#555](https://github.com/ghi-electronics/TinyCLR-Ports/issues/555).
+- Fixed the UART `DataReceived` event not raising for all data [#547](https://github.com/ghi-electronics/TinyCLR-Ports/issues/547).
+- Fixed UART handshaking not always working [#462](https://github.com/ghi-electronics/TinyCLR-Ports/issues/462).
+- Fixed UARTHS-B handshaking not working on UC2550 [#517](https://github.com/ghi-electronics/TinyCLR-Ports/issues/517).
+- Fixed entering bootloader from TinyCLR Config not working on UC5550 [#503](https://github.com/ghi-electronics/TinyCLR-Ports/issues/503).
+- Fixed UC5550 sometimes crashing [#484](https://github.com/ghi-electronics/TinyCLR-Ports/issues/484).
+- Removed the `-mlong-calls` compiler flag [#501](https://github.com/ghi-electronics/TinyCLR-Ports/issues/501).
+- Removed display backlight from the native driver [#481](https://github.com/ghi-electronics/TinyCLR-Ports/issues/481).
+- Improved performance of flushing the display on STM32F7 [#487](https://github.com/ghi-electronics/TinyCLR-Ports/issues/487).
+- Changed pins to default pull-up [#563](https://github.com/ghi-electronics/TinyCLR-Ports/issues/563).
+
+#### Known Issues
+- Testing `NaN`s for equality gives unexpected results [#231](https://github.com/ghi-electronics/TinyCLR-Core/issues/231).
+- The `.constrained` IL prefix is not supported [#76](https://github.com/ghi-electronics/TinyCLR-Core/issues/76).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- CAN message timestamps use the wrong origin [#579](https://github.com/ghi-electronics/TinyCLR-Ports/issues/579).
+- CAN timing calculation does not use all of the values correctly [#576](https://github.com/ghi-electronics/TinyCLR-Ports/issues/576).
+- Signal generator generates incorrect timings in some cases [#526](https://github.com/ghi-electronics/TinyCLR-Ports/issues/526).
+- Letting P3.30 on G120E read anything but high causes SDRAM to fail CRC checks [#564](https://github.com/ghi-electronics/TinyCLR-Ports/issues/564).
+
+### TinyCLR Config
+
+#### Changes
+- Added a version field to the UI [#24](https://github.com/ghi-electronics/TinyCLR-Config/issues/24).
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- Fixed deploying a project using fewer sectors than a previous project leaving old assemblies on the device [#151](https://github.com/ghi-electronics/TinyCLR-SDK/issues/151).
+- Fixed inspecting certain variables in the debugger locking up the device [#152](https://github.com/ghi-electronics/TinyCLR-SDK/issues/152).
+- Fixed rebooting TinyCLR sometimes throwing when trying to connect to the USB stream [#155](https://github.com/ghi-electronics/TinyCLR-SDK/issues/155).
+
+#### Known Issues
+- When adding an image or font to a resx file, a reference to the drawing assembly is not automatically added [#90](https://github.com/ghi-electronics/TinyCLR-SDK/issues/90).
+
+### Porting
+
+#### Changes
+- Fixed product version string showing the version numbers and not friendly string [#356](https://github.com/ghi-electronics/TinyCLR-Core/issues/356).
+- Fixed some API IDs and target names not matching [#292](https://github.com/ghi-electronics/TinyCLR-Ports/issues/292).
+- Added interrupt and sleep data to power [#480](https://github.com/ghi-electronics/TinyCLR-Ports/issues/480).
+- Added USB get connection status [#568](https://github.com/ghi-electronics/TinyCLR-Ports/issues/568).
+- Added OneWire API type ID [#359](https://github.com/ghi-electronics/TinyCLR-Core/issues/359).
+- Added TouchController API type ID [#357](https://github.com/ghi-electronics/TinyCLR-Core/issues/357).
+- Added USB connection event and property [#367](https://github.com/ghi-electronics/TinyCLR-Core/issues/367).
+- Removed the presence event and property from storage [#361](https://github.com/ghi-electronics/TinyCLR-Core/issues/361).
+
+#### Known Issues
+- None.
+
 ## 1.0.0-preview2 on 2018-09-28
 
 ### Notes
@@ -13,7 +124,7 @@ The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format
 
 We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
 
-The libraries are once again uploaded to our [NuGet account](https://www.nuget.org/profiles/ghielectronics). Make sure to enable finding prereleases in the NuGet package manager. We've also uploaded the extension to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ghielectronics.tinyclr-projectsystem) so you can download and install it from there and then keep it up to date with Visual Studio. We will still make them available on our own hosting as well, but the expected workflow remains the usual NuGet/marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before you, can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source.
+The libraries are once again uploaded to our [NuGet account](https://www.nuget.org/profiles/ghielectronics). Make sure to enable finding prereleases in the NuGet package manager. We've also uploaded the extension to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ghielectronics.tinyclr-projectsystem) so you can download and install it from there and then keep it up to date with Visual Studio. We will still make them available on our own hosting as well, but the expected workflow remains the usual NuGet/marketplace search and download process you have for other packages and extensions. You can find all downloads in their respective sections on the [downloads](downloads.md) page. As before, you can update your firmware using TinyCLR Config and now you can update your packages using the NuGet package manager from the online source.
 
 ### Libraries
 
