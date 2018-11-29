@@ -134,7 +134,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
     * FN: Face name. Name of the typeface.
     * FullName: Full name. The unique name of the font. For example: "Monotype:Arial Regular (Microsoft)."
 
-  For example, `SelectFont "HE:12,WE:400,FN:Arial` will look for a regular-weight font of height 12 with a face name of "Arial."
+  For example, `SelectFont "HE:12,WE:400,FN:Arial"` will look for a regular-weight font of height 12 with a face name of "Arial."
 
 * AdjustAscent *adjustment*
 
