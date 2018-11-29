@@ -118,7 +118,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
   
     *Path* is the path to the TrueType font you want to convert. If the path contains spaces, you must enclose it in quotes and escape any backslashes.
 
-    Example: `AddfontToProcess C:\Windows\Fonts\Arial.ttf`
+    Example: `AddFontToProcess C:\Windows\Fonts\Arial.ttf`
 
 * SelectFont *"selection string"*
 
