@@ -184,7 +184,7 @@ namespace UI {
 <ul>
 <li><p>AddFontToProcess <em>path</em></p>
 <p>  <em>Path</em> is the path to the TrueType font you want to convert. If the path contains spaces, you must enclose it in quotes and escape any backslashes.</p>
-<p>  Example: <code>AddfontToProcess C:\Windows\Fonts\Arial.ttf</code></p>
+<p>  Example: <code>AddFontToProcess C:\Windows\Fonts\Arial.ttf</code></p>
 </li>
 <li><p>SelectFont <em>&quot;selection string&quot;</em></p>
 <p>  <em>&quot;Selection string&quot;</em> is a quoted string containing comma delimited fields indicating the characteristics of the font to convert. ConvertFont searches the TrueType fonts installed on your computer, as well as any fonts in the AddFontToProcess argument, for a font matching the characteristics in the <em>selection string</em> argument. The first match is converted.</p>
@@ -198,7 +198,7 @@ namespace UI {
 <li>FN: Face name. Name of the typeface.</li>
 <li>FullName: Full name. The unique name of the font. For example: &quot;Monotype:Arial Regular (Microsoft).&quot;</li>
 </ul>
-<p>For example, <code>SelectFont &quot;HE:12,WE:400,FN:Arial</code> will look for a regular-weight font of height 12 with a face name of &quot;Arial.&quot;</p>
+<p>For example, <code>SelectFont &quot;HE:12,WE:400,FN:Arial&quot;</code> will look for a regular-weight font of height 12 with a face name of &quot;Arial.&quot;</p>
 </li>
 <li><p>AdjustAscent <em>adjustment</em></p>
 <p>  <em>Adjustment</em> is integer number of EM units to adjust ascent. Can be positive or negative. Can only be used once per .fntdef file. If it is used more than once, only the last occurrence will be used.</p>
