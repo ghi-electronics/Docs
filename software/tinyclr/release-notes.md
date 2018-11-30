@@ -28,6 +28,7 @@ The libraries, extension, and firmwares are all uploaded to their online sources
 
 #### Known Issues
 - Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors [#51](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/51).
+- SPWF04Sx Wi-Fi on the FEZ does not work unless PA0 is manually set low before initialization [#28](https://github.com/ghi-electronics/TinyCLR-Drivers/issues/28).
 
 ### Firmware
 
@@ -77,6 +78,9 @@ The libraries, extension, and firmwares are all uploaded to their online sources
 - CAN timing calculation does not use all of the values correctly [#576](https://github.com/ghi-electronics/TinyCLR-Ports/issues/576).
 - Signal generator generates incorrect timings in some cases [#526](https://github.com/ghi-electronics/TinyCLR-Ports/issues/526).
 - Letting P3.30 on G120E read anything but high causes SDRAM to fail CRC checks [#564](https://github.com/ghi-electronics/TinyCLR-Ports/issues/564).
+- Multi-pin reservatinos where the first pin is already reserved mistakenly return okay [#580](https://github.com/ghi-electronics/TinyCLR-Ports/issues/580).
+- PWM polarity is opposite from what it should be on G120 and G400 [#581](https://github.com/ghi-electronics/TinyCLR-Ports/issues/581).
+- The first clock for signal generator is the same as idle state [#582](https://github.com/ghi-electronics/TinyCLR-Ports/issues/582).
 
 ### TinyCLR Config
 
