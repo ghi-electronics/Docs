@@ -96,6 +96,7 @@ class Program {
         var useMultiBitSampling = false;
 
         can.SetBitTiming(new CanBitTiming(propagation, phase1, phase2, baudratePrescaler, synchronizationJumpWidth, useMultiBitSampling));
+        can.Enable();
 
         var message = new CanMessage() {
             Data = new byte[] { 0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2E, 0x20, 0x20 },
