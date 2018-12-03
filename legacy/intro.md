@@ -8,12 +8,10 @@ This section covers GHI's legacy products. These products are not recommended fo
 |--|--|
 | **SoMs** </br> [**Learn more...**](som.md) | **Gadgeteer** </br> [**Learn more...**](../hardware/gadgeteer/intro.md) |
 | [![Legacy SoMs](images/legacy-soms.jpg)](som.md) | [![FEZ Cobra II](../hardware/gadgeteer/images/gadgeteer.jpg)](../hardware/gadgeteer/intro.md) |
-| **Gadgeteering** </br> [**Learn more...**](../hardware/gadgeteering.md) | **File System** </br> [**Learn more...**](../hardware/filesystem.md) |
-| [![Fez Lynx](../hardware/images/fez-lynx-sm.jpg)](../hardware/gadgeteering.md) | [![F40](../hardware/images/f40-board.jpg)](../hardware/filesystem.md) |
+| **Gadgeteering** </br> [**Learn more...**](../hardware/gadgeteering.md) | **mBuino** </br> [**Learn more...**](../hardware/mbuino.md)  |
+| [![Fez Lynx](../hardware/images/fez-lynx-sm.jpg)](../hardware/gadgeteering.md) | [![Sample Code](../hardware/images/mbuino-sm.jpg)](../hardware/mbuino.md) |
 | **Imaging** </br> [**Learn more...**](../hardware/imaging.md) | **Raspberry PI Hats** </br> [**Learn more...**](../hardware/raspberrypi-hats.md) |
 | [![Alcam](../hardware/images/alcam-sm.jpg)](../hardware/imaging.md) | [![FEZ Hat](../hardware/images/fez-hat.jpg)](../hardware/raspberrypi-hats.md) |
-| **mBuino** </br> [**Learn more...**](../hardware/mbuino.md) | 
-| [![Sample Code](../hardware/images/mbuino-sm.jpg)](../hardware/mbuino.md) |  |
 
 > [!Tip]
 > Our [**community forum**](https://forums.ghielectronics.com/) is a great place to get help from our engineers and from thousands of community members: **https://forums.ghielectronics.com/**

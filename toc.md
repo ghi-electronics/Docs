@@ -5,5 +5,5 @@
 # [FEZ](hardware/fez/intro.md)
 # [TinyCLR](software/tinyclr/intro.md)
 # [NETMF](software/netmf/intro.md)
-# [File System](hardware/filesystem.md)
+# [File System](hardware/filesystem/intro.md)
 # [Legacy](legacy/intro.md)
