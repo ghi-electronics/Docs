@@ -88,10 +88,10 @@ class Program {
 
         var can = CanController.FromName(G120E.CanBus.Can1);
 
-        var propagation = 0;
-        var phase1 = 7;
-        var phase2 = 4;
-        var baudratePrescaler = 5;
+        var propagation = 1;
+        var phase1 = 12;
+        var phase2 = 2;
+        var baudratePrescaler = 4;
         var synchronizationJumpWidth = 1;
         var useMultiBitSampling = false;
 
