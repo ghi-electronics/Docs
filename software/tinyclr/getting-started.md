@@ -34,7 +34,7 @@ We are now hosting our libraries online on our [NuGet account](https://www.nuget
 4. Make sure the package source is set to "Package source" or "All."
 ![Set package source](images/package-source.png)
 
-5. In the search box type "tinyclr" and make sure the "Include prerelease" box is checked.
+5. In the search box type "tinyclr" and **make sure the "Include prerelease" box is checked.**
 ![Search for TinyCLR](images/search-for-tinyclr.png)
 
 6. Selecting the `Browse` tab will show all the TinyCLR NuGet packages. Those installed are noted with a green down arrow in front of the name. 
