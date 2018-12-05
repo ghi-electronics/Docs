@@ -1,10 +1,10 @@
-# Wi-Fi
+# SPWF04Sx Wi-Fi Module
 ---
 First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. Originally used to network desktop computers, Wi-Fi is being incorporated into an ever increasing number of electronic devices and is a driving force behind the Internet of things revolution.
 
 Wi-Fi is a high bandwidth, low power, short range networking technology. Operating in the UHF and microwave spectrums, Wi-Fi radio waves propogate mainly by line of sight. The signal is blocked by hills, but can penetrate foliage and buildings well enough to be used effectively indoors and out.
 
-## Wi-Fi Methods
+## SPWF04Sx Methods
 
 ### ClearTlsServerRootCertificate()
 
@@ -92,7 +92,7 @@ In Micorosoft Edge click on the lock icon to the left of the web address and the
 
 `WriteSocket(int socket, byte[] data, int offset, int count)`. Same as above but also takes integer arguments for the offset into the data array and a count for the number bytes to send.
 
-## Wi-Fi Events
+## SPWF04Sx Events
 
 ### IndicationReceived
 
@@ -102,7 +102,7 @@ Fires an event when a Wi-Fi indication (WIND) message is received.
 
 Fires an event when a Wi-Fi error message is received.
 
-## Wi-Fi Properties
+## SPWF04Sx Properties
 
 ### ForceSocketsTls
 

@@ -17,7 +17,9 @@
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
-## [Wi-Fi](tutorials/wifi.md)
+## [Networking](tutorials/networking/intro.md)
+### [SPWF04Sx Wi-Fi Module](tutorials/networking/spwf04sx-wifi.md)
+### [IFTTT Example](tutorials/networking/ifttt.md)
 
 
 # [Native Code](native/intro.md)
