@@ -28,5 +28,6 @@
 # [Downloads](downloads.md)
 # [Release Notes](release-notes.md)
 # [Roadmap](roadmap.md)
+# [Licensing](licensing.md)
 # [Supported Devices](supported-devices.md)
 # [Bootloaders](loaders/intro.md)
