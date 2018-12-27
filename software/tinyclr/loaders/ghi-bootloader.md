@@ -139,5 +139,7 @@ Only needed for Windows 7 and 8 since they do not automatically load drivers for
 
 File | Date | Status | MD5
 --- | --- | --- | ---
+[v1.0.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v1.0.0.msi) | 2018-12-27 | Production | 74D66FC4236126A83CCCFE28D556F339
+[v1.0.0 x86](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v1.0.0.msi) | 2018-12-27 | Production | 8BDE68132452E22B14597C0972ABA8FD
 [v0.6.0 x64](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x64%20v0.6.0.msi) | 2017-08-31 | Alpha | AEDD7C00854BBF99AC3FDAB4976E1F33
 [v0.6.0 x86](http://files.ghielectronics.com/downloads/Bootloaders/Drivers/GHI%20Electronics%20Bootloader%20Driver%20x86%20v0.6.0.msi) | 2017-08-31 | Alpha | A0F487D32B882199F0A69E6CAA8DE4CB
