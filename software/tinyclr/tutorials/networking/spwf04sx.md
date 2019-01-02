@@ -1,10 +1,14 @@
 # SPWF04Sx Wi-Fi Module
 ---
-First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. Originally used to network desktop computers, Wi-Fi is being incorporated into an ever increasing number of electronic devices and is a driving force behind the Internet of things revolution.
+First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. The [SPWF04Sx family of modules](https://www.st.com/en/wireless-connectivity/spwf04sa.html) from STMicroelectronics have an easy-to-use AT command based socket and HTTP API that allow applications to quickly connect to the internet. They also support Transport Layer Security, which is vital in an IoT environment.
 
-Wi-Fi is a high bandwidth, low power, short range networking technology. Operating in the UHF and microwave spectrums, Wi-Fi radio waves propogate mainly by line of sight. The signal is blocked by hills, but can penetrate foliage and buildings well enough to be used effectively indoors and out.
+## Constructors
 
-## SPWF04Sx Methods
+### SPWF04SxInterface()
+
+`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the Wi-Fi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.
+
+## Methods
 
 ### ClearTlsServerRootCertificate()
 
@@ -74,10 +78,6 @@ You can use your web browser to obtain a website's root certificate. In Chrome, 
 
 In Micorosoft Edge click on the lock icon to the left of the web address and then select `View certificate.` Click on the `Export to file` button and save the file with a .cer extension.
 
-### SPWF04SxInterface()
-
-`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the Wi-Fi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.
-
 ### TurnOff()
 
 `TurnOff()`. Turns off the Wi-Fi module. Takes no arguments and has no return value.
@@ -92,7 +92,7 @@ In Micorosoft Edge click on the lock icon to the left of the web address and the
 
 `WriteSocket(int socket, byte[] data, int offset, int count)`. Same as above but also takes integer arguments for the offset into the data array and a count for the number bytes to send.
 
-## SPWF04Sx Events
+## Events
 
 ### IndicationReceived
 
@@ -102,7 +102,7 @@ Fires an event when a Wi-Fi indication (WIND) message is received.
 
 Fires an event when a Wi-Fi error message is received.
 
-## SPWF04Sx Properties
+## Properties
 
 ### ForceSocketsTls
 
