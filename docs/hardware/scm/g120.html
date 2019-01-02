@@ -146,6 +146,99 @@
 </tbody>
 </table>
 <p><em>Note: Not all memory will be available for your application.</em></p>
+<h2 id="can-bit-timing-settings">CAN Bit Timing Settings</h2>
+<p>The following CAN bit timing paramaters were calculated for a G120 driving the SN65HVD230 CAN driver chip. See the <a href="../../software/tinyclr/tutorials/can.html#configuring-the-bus">Configuring the Bus</a> section of the <a href="../../software/tinyclr/tutorials/can.html">CAN Tutorial</a> for more information.</p>
+<table>
+<thead>
+<tr>
+<th>Baud</th>
+<th>Propagation</th>
+<th>Phase1</th>
+<th>Phase2</th>
+<th>Baudrate Prescaler</th>
+<th>Synchronization Jump Width</th>
+<th>Use Multi Bit Sampling</th>
+<th>Sample Point</th>
+<th>Max Osc. Tolerance</th>
+<th>Max Cable Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>33.333K</td>
+<td>1</td>
+<td>12</td>
+<td>2</td>
+<td>120</td>
+<td>1</td>
+<td>False</td>
+<td>86.7%</td>
+<td>0.33%</td>
+<td>2145M</td>
+</tr>
+<tr>
+<td>83.333K</td>
+<td>1</td>
+<td>13</td>
+<td>2</td>
+<td>45</td>
+<td>1</td>
+<td>False</td>
+<td>87.5%</td>
+<td>0.31%</td>
+<td>845M</td>
+</tr>
+<tr>
+<td>125K</td>
+<td>1</td>
+<td>13</td>
+<td>2</td>
+<td>30</td>
+<td>1</td>
+<td>False</td>
+<td>87.5%</td>
+<td>0.31%</td>
+<td>545M</td>
+</tr>
+<tr>
+<td>250K</td>
+<td>1</td>
+<td>13</td>
+<td>2</td>
+<td>15</td>
+<td>1</td>
+<td>False</td>
+<td>87.5%</td>
+<td>0.31%</td>
+<td>245M</td>
+</tr>
+<tr>
+<td>500K</td>
+<td>1</td>
+<td>12</td>
+<td>2</td>
+<td>8</td>
+<td>1</td>
+<td>False</td>
+<td>86.7%</td>
+<td>0.33%</td>
+<td>92M</td>
+</tr>
+<tr>
+<td>1M</td>
+<td>1</td>
+<td>12</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>False</td>
+<td>86.7%</td>
+<td>0.33%</td>
+<td>18M</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Maximum Oscillator Tolerance and Maximum Cable Length are theoretical maximums and must be tested to ensure reliability.</em></p>
 <h2 id="g120-development-board">G120 Development Board</h2>
 <p><img src="images/g120dev.jpg" alt="G120 Dev Board"> </p>
 <p>The development system used for evaluating the G120 SoM.</p>

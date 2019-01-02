@@ -24,8 +24,6 @@ Instructions for installing the bootloader and firmware are provided on the docu
 
 ### Install the TinyCLR Nuget Packages
 
-We are now hosting our libraries online on our [NuGet account](https://www.nuget.org/profiles/ghielectronics).
-
 1. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
 2. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 3. Right click on your Project in the Solution Explorer panel and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu. You can also select `Manage NuGet Packages...` in the `Project` menu of Visual Studio.
@@ -34,7 +32,7 @@ We are now hosting our libraries online on our [NuGet account](https://www.nuget
 4. Make sure the package source is set to "Package source" or "All."
 ![Set package source](images/package-source.png)
 
-5. In the search box type "tinyclr" and make sure the "Include prerelease" box is checked.
+5. In the search box type "tinyclr"
 ![Search for TinyCLR](images/search-for-tinyclr.png)
 
 6. Selecting the `Browse` tab will show all the TinyCLR NuGet packages. Those installed are noted with a green down arrow in front of the name. 
@@ -43,13 +41,13 @@ We are now hosting our libraries online on our [NuGet account](https://www.nuget
 7. To install one of the packages click on the down arrow to the right of the package version.
 ![Add Nuget Package](images/add-nuget-package.gif)
 
-     You can also select the package and click on the `Install` button in the center panel.
-    ![Nuget-package-install-button](images/nuget-install-button.gif)
+You can also select the package and click on the `Install` button in the center panel.
+![Nuget-package-install-button](images/nuget-install-button.gif)
 
 8. Click `OK` to accept the proposed changes.
 ![Accept changes](images/accept-changes.gif)
 
-8. Accept the licensing agreement to install the package.
+9. Accept the licensing agreement to install the package.
 ![Accept Agreement for NuGet](images/accept-agreement-for-nuget.gif)
 
 And, that's it! You're now ready to start programming using TinyCLR OS.

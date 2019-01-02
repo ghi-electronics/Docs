@@ -28,14 +28,20 @@ High speed CAN is set up as a linear bus of 120 ohm nominal twisted pair wiring 
 Low speed or fault tolerant CAN uses a linear bus, star bus, or multiple star buses.  Fault tolerant CAN buses are terminated differently than linear CAN buses and require a termination resistor at each node.  The value of these resistors depends on the network but should equal about 100 ohms per CAN line in total.
 
 ## The TinyCLR CAN Interface
-The TinyCLR CAN API provides several methods for sending and receiving CAN messages.
 
-### Configuring the bus
+The TinyCLR CAN API provides several methods for configuring the CAN bus and sending and receiving CAN messages.
+
+### Configuring the Bus
+
+CAN bit timing is a complex topic that requires considerable knowledge of the CAN protocol. If you can obtain timing parameters for a device you are connecting to, use them. All nodes on a CAN network must use the same baud rate.
+
+Sample bit timing settings are given on each product's documentation page to help you get started. Please note that the given maximum oscillator tolerance and maximum cable length are theoretical maximums based only on the bit timing. These values do not take into account the number of nodes on the network, the type of cabling and termination, and the resistance of the cable, all of which may reduce the maximum bus length. It is up to you to test the network to ensure reliability.
+
 Before you can communicate over the CAN bus, the processor needs to know the characteristics of the bus so all nodes can communicate properly.
 
-`SetBitTiming()` defines the CAN bus timing using the arguments listed below.  Due to the complexity of CAN bus timing, CAN bit rate calculators are available online which you may find helpful.  Please refer to the processor datasheet for a full description of the following parameters.
+`SetBitTiming()` defines the CAN bus timing using the arguments listed below.  Due to the complexity of CAN bus timing, CAN bit rate calculators are available online which you may find helpful.  Please refer to the processor datasheet for more information about the following parameters.
 
-The `propagation` argument is used to compensate for the physical delay times of the network and includes the input comparator delay, the output driver delay and the propagation delay of the bus itself (which is affected by the length of the CAN bus wiring).  `Propagation` uses time quanta as a unit of measurement.
+The `propagation` argument is used to compensate for the physical delay times of the network and includes the input comparator delay, the output driver delay and the propagation delay of the bus itself (which is affected by the length and type of cable used). `Propagation` uses time quanta as a unit of measurement.
 
 The `phase1` argument defines the length in time quanta of the phase one segment.  The phase one segment can be automatically lengthened during re-synchronization.
 
@@ -47,27 +53,27 @@ The `synchronizationJumpWidth` defines the maximum amount of time quanta a bit p
 
 When true, `useMultiBitSampling` will cause the bus to be sampled three times for each bit.  Its use is recommended for low to medium speed buses to filter noise on the bus line.  For high speed buses it is recommended to set this to `false`.
 
-In the sample code below the CAN bus is communicating at 1 Megabit per second over a short bus.
+In the sample code below, the CAN bus is communicating at one Megabit per second over a short bus.
 
 ### Sending CAN Messages
 
-#### `WriteMessage()`
+#### WriteMessage()
 `WriteMessage()` writes a single CAN message.  Each CAN message is defined by eight data bytes, an arbitration ID, the length (number of bytes to send), and two Boolean arguments which specify if the transmission is a remote transmission request and whether the message uses an extended arbitration ID.  Extended arbitration IDs are 29 bits long, standard IDs are 11 bits long.
 
-#### `WriteMessages()`
+#### WriteMessages()
 The `WriteMessages()` method is used to send an array of CAN messages.  The arguments for this function are the array of CAN messages followed by an `offset` and `count` integer values.  The `offset` is the array subscript of the first message to send, while `count` specifies how many messages to send.
  
 ### Receiving CAN Messages
 
-#### `ReadMessage()`
+#### ReadMessage()
 `ReadMessage()` receives a CAN message and includes the `ArbitrationId`, `IsExtendedId`, `IsRemoteTransmissionRequest`, `TimeStamp` and `Data` properties.
 
 ### Filtering Incoming CAN Messages
 
-#### `SetGroupFilters()`
+#### SetGroupFilters()
 `SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below, the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
 
-#### `SetExplicitFilters()`
+#### SetExplicitFilters()
 `SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted, in addition to the arbitration IDs specified by the group filters.
 
 ## Sample Code

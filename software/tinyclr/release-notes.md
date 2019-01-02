@@ -1,5 +1,63 @@
 # Release Notes
 
+## 1.0.0 on 2018-12-27
+
+### Notes
+We're happy to release the first production-ready version of TinyCLR OS, our modern and managed .NET development system for tiny IoT and embedded devices that uses the world-class Microsoft Visual Studio with C# and Visual Basic. TinyCLR can be used commercially on our System on Modules but you can also port it to your own system, free of charge, using our prebuilt cores for ARM7, ARM9, Cortex M3, Cortex M4, and Cortex M7 and the freely available GCC compiler. We're already hard at work on the next release where we plan to bring even more features that make embedded development even faster and easier.
+
+The libraries, extension, and firmwares are all uploaded to their online sources so you can update your firmware using TinyCLR Config, update your packages using the NuGet package manager with the NuGet.org source, and update the VSIX from the extensions area of Visual Studio. To get going, take a look at the [Getting Started](getting-started.md) guide.
+
+### Libraries
+
+#### Changes
+- None.
+
+#### Known Issues
+- Support for the embedded Visual Basic runtime is incomplete and some uses may throw cryptic compile errors [#51](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/51).
+- `DrawPicture` on the BrainPad does not work correctly [#313](https://github.com/ghi-electronics/TinyCLR-Libraries/issues/313).
+- SPWF04Sx Wi-Fi on the FEZ does not work unless PA0 is manually set low before initialization [#28](https://github.com/ghi-electronics/TinyCLR-Drivers/issues/28).
+
+### Firmware
+
+#### Changes
+- None.
+
+#### Known Issues
+- Testing `NaN`s for equality gives unexpected results [#231](https://github.com/ghi-electronics/TinyCLR-Core/issues/231).
+- The `.constrained` IL prefix is not supported and throws `UnsupportedInstructionException` [#76](https://github.com/ghi-electronics/TinyCLR-Core/issues/76).
+- Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
+- CAN message timestamps use the wrong origin [#579](https://github.com/ghi-electronics/TinyCLR-Ports/issues/579).
+- CAN timing calculation does not use all of the values correctly [#576](https://github.com/ghi-electronics/TinyCLR-Ports/issues/576).
+- Signal generator generates incorrect timings in some cases [#526](https://github.com/ghi-electronics/TinyCLR-Ports/issues/526).
+- Multi-pin reservations where the first pin is already reserved mistakenly return okay [#580](https://github.com/ghi-electronics/TinyCLR-Ports/issues/580).
+- PWM polarity is opposite from what it should be on G120 and G400 [#581](https://github.com/ghi-electronics/TinyCLR-Ports/issues/581).
+- The first clock for signal generator is the same as idle state [#582](https://github.com/ghi-electronics/TinyCLR-Ports/issues/582).
+- When not debugging the application may slow down [#584](https://github.com/ghi-electronics/TinyCLR-Ports/issues/584).
+
+### TinyCLR Config
+
+#### Changes
+- None.
+
+#### Known Issues
+- None.
+
+### Extension
+
+#### Changes
+- None.
+
+#### Known Issues
+- When adding an image or font to a resx file, a reference to the drawing assembly is not automatically added [#90](https://github.com/ghi-electronics/TinyCLR-SDK/issues/90).
+
+### Porting
+
+#### Changes
+- None.
+
+#### Known Issues
+- None.
+
 ## 1.0.0-preview3 on 2018-11-30
 
 ### Notes
@@ -77,8 +135,7 @@ The libraries, extension, and firmwares are all uploaded to their online sources
 - CAN message timestamps use the wrong origin [#579](https://github.com/ghi-electronics/TinyCLR-Ports/issues/579).
 - CAN timing calculation does not use all of the values correctly [#576](https://github.com/ghi-electronics/TinyCLR-Ports/issues/576).
 - Signal generator generates incorrect timings in some cases [#526](https://github.com/ghi-electronics/TinyCLR-Ports/issues/526).
-- Letting P3.30 on G120E read anything but high causes SDRAM to fail CRC checks [#564](https://github.com/ghi-electronics/TinyCLR-Ports/issues/564).
-- Multi-pin reservatinos where the first pin is already reserved mistakenly return okay [#580](https://github.com/ghi-electronics/TinyCLR-Ports/issues/580).
+- Multi-pin reservations where the first pin is already reserved mistakenly return okay [#580](https://github.com/ghi-electronics/TinyCLR-Ports/issues/580).
 - PWM polarity is opposite from what it should be on G120 and G400 [#581](https://github.com/ghi-electronics/TinyCLR-Ports/issues/581).
 - The first clock for signal generator is the same as idle state [#582](https://github.com/ghi-electronics/TinyCLR-Ports/issues/582).
 

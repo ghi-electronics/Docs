@@ -17,7 +17,8 @@
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
-
+## [Networking](tutorials/networking/intro.md)
+### [SPWF04Sx](tutorials/networking/spwf04sx.md)
 
 # [Native Code](native/intro.md)
 ## [Interops](native/interops.md)
@@ -28,5 +29,6 @@
 # [Downloads](downloads.md)
 # [Release Notes](release-notes.md)
 # [Roadmap](roadmap.md)
+# [Licensing](licensing.md)
 # [Supported Devices](supported-devices.md)
 # [Bootloaders](loaders/intro.md)

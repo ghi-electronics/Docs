@@ -2414,7 +2414,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g120.html",
-          "hash": "J3LLD9u9zglxaz0luRnHwg=="
+          "hash": "nxQaK2Iaawir7tcBGxV8iQ=="
         }
       },
       "is_incremental": false,
@@ -2450,7 +2450,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g400s.html",
-          "hash": "vHwH7+zkQjnahlSCZ7ptPw=="
+          "hash": "SUTEH9DdmLXF8h5lpSp4PA=="
         }
       },
       "is_incremental": false,
@@ -2462,7 +2462,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g80.html",
-          "hash": "g0QQbDGdqJD01HvgUTBlmQ=="
+          "hash": "9EE073KlWo/bXSEqjIe1lA=="
         }
       },
       "is_incremental": false,
@@ -2754,7 +2754,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/g400d.html",
-          "hash": "2RTCNellbxfzKCGVEt4VgQ=="
+          "hash": "a6PTi1isDOuJkI9fkslp9Q=="
         }
       },
       "is_incremental": false,
@@ -3011,7 +3011,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc2550.html",
-          "hash": "c/dDHn8RDXUMc1MytLGdjw=="
+          "hash": "IYSx8xqHTjVwqOp2LWG6Hg=="
         }
       },
       "is_incremental": false,
@@ -3023,7 +3023,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/uc5550.html",
-          "hash": "Xn+TakSn7IYcotoyGUelHA=="
+          "hash": "VwnoDTvUNYZkuE+SSi7SSQ=="
         }
       },
       "is_incremental": false,
@@ -3777,7 +3777,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/downloads.html",
-          "hash": "Xt0cfgRvuuUN6bpOgZpBDQ=="
+          "hash": "dObMVX6MA0i7XxmnDgsfVQ=="
         }
       },
       "is_incremental": false,
@@ -3789,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/getting-started.html",
-          "hash": "EzJaDeeKzO1hWuH2jiMKtg=="
+          "hash": "7LZ1DNAlhtFjFuOr8RZRGQ=="
         }
       },
       "is_incremental": false,
@@ -4238,11 +4238,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/licensing.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/licensing.html",
+          "hash": "seieP3AmZSZOQW0CKF//zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "software/tinyclr/loaders/ghi-bootloader.md",
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/loaders/ghi-bootloader.html",
-          "hash": "nfRUzrA7S1bqgPF6c5RKYA=="
+          "hash": "8zeYvZ5FpaMhK6gj+swfPg=="
         }
       },
       "is_incremental": false,
@@ -4361,7 +4373,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/release-notes.html",
-          "hash": "e1IsEKKDD5iu7XweyVw/8Q=="
+          "hash": "FrqSvyqLe/yYSrYFYsisyw=="
         }
       },
       "is_incremental": false,
@@ -4409,7 +4421,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/toc.html",
-          "hash": "8UY0Fz2s+debpDZxT0OsDA=="
+          "hash": "g9M51h1w5JpxycN9NrxqrQ=="
         }
       },
       "is_incremental": false,
@@ -4433,7 +4445,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/can.html",
-          "hash": "pYOpyP62AO3mphylWjhZug=="
+          "hash": "/zcFBVIRyZTJ/1oa5l/Esg=="
         }
       },
       "is_incremental": false,
@@ -4682,14 +4694,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
