@@ -19,8 +19,6 @@
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
 ## [Networking](tutorials/networking/intro.md)
 ### [SPWF04Sx Wi-Fi Module](tutorials/networking/spwf04sx-wifi.md)
-### [IFTTT Example](tutorials/networking/ifttt.md)
-
 
 # [Native Code](native/intro.md)
 ## [Interops](native/interops.md)
