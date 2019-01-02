@@ -4,15 +4,12 @@
 
 This page has the technical details and manuals for the File System products. The main website's [File System page](https://www.ghielectronics.com/products/filesystem) has more info as well.
 
-## Commands Set
-A standard commands set is used on all File System products. All commands are covered by teh user manual.
-
 ## F40 (ALFAT) Chipset
 ![F40](images/f40-chipset.jpg)
 
 F40, originally called ALFAT, is the flagship file system chipset.
 
-* Part #: ALF2X-SC-512
+* Part Number ALF2X-SC-512
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F40%20Datasheet.pdf)
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
 * [Firmware v1.0.8](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v1.0.8.ghi)
@@ -21,9 +18,9 @@ F40, originally called ALFAT, is the flagship file system chipset.
 ### ALFAT OEM Board
 ![F40](images/alfat-oem.jpg)
 
-F40 chipset with SD and dual-USB connectors. The PHY needed for USB 2.0 480mhz speeds is available on one of the USB ports.
+F40 chipset with SD and dual-USB connectors. The PHY needed for USB 2.0 480 MHz speeds is available on one of the USB ports.
 
-* Part #: ALFAT-OM-337
+* Part Number ALFAT-OM-337
 * [ALFAT-OEM Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20OEM%20Board%20Schematic.pdf)
 
 ### ALFAT SD
@@ -31,7 +28,7 @@ F40 chipset with SD and dual-USB connectors. The PHY needed for USB 2.0 480mhz s
 
 F40 chipset with SD connector.
 
-* Part #: ALFAT-SD-338
+* Part Number ALFAT-SD-338
 * [ALFAT-SD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SD%20Board%20Schematic.pdf)
 
 ### ALFAT USB
@@ -39,15 +36,15 @@ F40 chipset with SD connector.
 
 F40 chipset with USB connector.
 
-* Part #: ALFAT-USB-428
+* Part Number ALFAT-USB-428
 * [ALFAT-USB Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20USB%20Board%20Schematic.pdf)
 
 ### ALFAT SDR
 ![F40](images/alfat-sdr.jpg)
 
-This board wires F40 in the SD-reader-mode.
+This board wires the F40 in SD-reader mode.
 
-* Part #: AFSDR-FS-523
+* Part Number AFSDR-FS-523
 * [ALFAT-SDR Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SDR%20Board%20Schematic.pdf)
 
 ### ALFAT Evaluation Kit
@@ -59,19 +56,17 @@ The kit incudes:
 1. ALFAT OEM board
 2. ALFAT SDR board
 3. ALFAT EVAL carrier board
-4. storage devices and USB cable
+4. Storage devices and USB cable
 
-* Part #: AFEVL-FS-524
+* Part Number AFEVL-FS-524
 * [ALFAT Eval Kit Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20Evaluation%20Kit%20Schematic.pdf)
-
-***
 
 ## F20 Chipset
 ![F20](images/f20-chipset.jpg)
 
-This low-cost chipset is compatible with F40 but with a limited featureset.
+This low-cost chipset is compatible with F40 but with a limited feature set.
 
-* Part #: F20SC-SC-558
+* Part Number F20SC-SC-558
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F20%20Datasheet.pdf)
 * [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
 * [Firmware v1.0.3](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/F20%20Firmware%20v1.0.3.ghi)
@@ -81,10 +76,9 @@ This low-cost chipset is compatible with F40 but with a limited featureset.
 
 This boards combines F20 with a micro SD card connector on a very tiny circuit.
 
-* Part #: F20FS-546
+* Part Number F20FS-546
 * [F20-uSD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/F20%20uSD%20Schematic.pdf)
 
-***
 ## Legacy Products
 
 ### uALFAT Chipset
