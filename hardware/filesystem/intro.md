@@ -8,7 +8,7 @@ This page has the technical details and manuals for the File System products. Th
 A standard commands set is used on all File System products. All commands are covered by teh user manual.
 
 ## F40 (ALFAT) Chipset
-![F40](images/f40.jpg)
+![F40](images/f40-chipset.jpg)
 
 F40, originally called ALFAT, is the flagship file system chipset.
 
