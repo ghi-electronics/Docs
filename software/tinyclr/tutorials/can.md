@@ -57,23 +57,23 @@ In the sample code below, the CAN bus is communicating at one Megabit per second
 
 ### Sending CAN Messages
 
-#### `WriteMessage()`
+#### WriteMessage()
 `WriteMessage()` writes a single CAN message.  Each CAN message is defined by eight data bytes, an arbitration ID, the length (number of bytes to send), and two Boolean arguments which specify if the transmission is a remote transmission request and whether the message uses an extended arbitration ID.  Extended arbitration IDs are 29 bits long, standard IDs are 11 bits long.
 
-#### `WriteMessages()`
+#### WriteMessages()
 The `WriteMessages()` method is used to send an array of CAN messages.  The arguments for this function are the array of CAN messages followed by an `offset` and `count` integer values.  The `offset` is the array subscript of the first message to send, while `count` specifies how many messages to send.
  
 ### Receiving CAN Messages
 
-#### `ReadMessage()`
+#### ReadMessage()
 `ReadMessage()` receives a CAN message and includes the `ArbitrationId`, `IsExtendedId`, `IsRemoteTransmissionRequest`, `TimeStamp` and `Data` properties.
 
 ### Filtering Incoming CAN Messages
 
-#### `SetGroupFilters()`
+#### SetGroupFilters()
 `SetGroupFilters()` takes two arrays as arguments to set ranges of arbitration IDs that will be accepted.  The first array defines the lower bounds of accepted arbitration IDs, while the second array specifies the upper bounds.  Both arrays must be the same size.  In the sample code below, the group filters will accept messages with arbitration IDs ranging from `0x12` to `0x20` and also between `0x500` and `0x1000` inclusive.
 
-#### `SetExplicitFilters()`
+#### SetExplicitFilters()
 `SetExplicitFilter()` takes an array argument which specifies individual arbitration IDs that will be accepted regardless of the group filter settings.  In the sample code below, CAN messages with arbitration IDs of `0x11` and `0x5678` will be accepted, in addition to the arbitration IDs specified by the group filters.
 
 ## Sample Code
