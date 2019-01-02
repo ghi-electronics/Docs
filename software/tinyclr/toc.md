@@ -18,7 +18,7 @@
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
 ## [Networking](tutorials/networking/intro.md)
-### [SPWF04Sx Wi-Fi Module](tutorials/networking/spwf04sx-wifi.md)
+### [SPWF04Sx](tutorials/networking/spwf04sx.md)
 
 # [Native Code](native/intro.md)
 ## [Interops](native/interops.md)
