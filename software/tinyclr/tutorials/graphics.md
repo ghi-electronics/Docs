@@ -108,8 +108,17 @@ Fonts can be included in your TinyCLR application by adding them as a resource. 
 
 TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. [Font Converter](../downloads.md#tinyclr-font-converter) is a command line utility which does just that. It can be found on the [Downloads page](../downloads.md#tinyclr-font-converter). 
 
-To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. These options are as follows:
+To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. A minimal .fntdef file may look like this to have the standard ASCII characters.
 
+```
+SelectFont "FN:Arial,WE:400,HE:12,IT:0"
+ImportRange 32 126
+```
+
+> [!TIP]
+> This third-party [tool](http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx) can be handy for generating fonts.
+
+The .fntdef file options are as follows:
 
 > [!Note]
 > The order of statements in the .fntdef file matters. For example, properties such as AntiAlias must be specified before the InputRange property.
@@ -195,7 +204,7 @@ To convert a font you must first make a .fntdef file which is a text file descri
 * Verbosity *level*
 
     > [!Note]
-    > It seems that setting verbosity greater than one can stop fonts from being converted. Also, character diagrams are not rendered properly.
+    > Not currently supported, set to 0.
 
     *Level* can be 0, 1, or 2. Level 0 displays no details, level 1 displays font properties, and level 2 displays font and character properties and a diagram of each character.
 
