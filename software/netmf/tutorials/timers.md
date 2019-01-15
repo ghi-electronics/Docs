@@ -9,7 +9,7 @@ This example creates a timer that will run after five seconds and then it will k
 
 Note: the time parameters expect times in milliseconds.
 
-```
+```cs
 using System.Threading;
 using Microsoft.SPOT;
 

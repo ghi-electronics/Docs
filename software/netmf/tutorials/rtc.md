@@ -9,7 +9,7 @@ Note: NETMF has time services that you can use to get/set the system time such a
 ## Time via NETMF
 This example sets the current time to a predefined value that is lost when power is lost.
 
-```
+```cs
 using System;
 using System.Threading;
 using Microsoft.SPOT;
@@ -36,7 +36,7 @@ public class Program
 ## Using GHI's extension for Real Time Clock
 To use the RTC hardware, we first need to check if the RTC hardware has the valid time or not. If RTC has a valid time then we can read from the RTC and use that to set the NETMF system time. If time is not valid, then you will need to set the RTC to the correct time. You can verify the validilty of the RTS several ways. One way is to use the built in battery ram (if available) to store some "magic numbers" that we check later to determine if the battery ram data is still valid. If they are then most likely the RTC is valid. You can also check the RTC against some known time. For example, if your program was written on 1/1/2014, you can check to see if the current RTC date is before that known date. If it is, then the time is incorrect.
 
-```
+```cs
 using System;
 using GHI.Processor;
 using Microsoft.SPOT;

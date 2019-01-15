@@ -4,7 +4,7 @@
 ## Introduction
 To make the processor registers directly available to developers, We added the Register class.
 
-```
+```cs
 Register PCONP = new Register(0xE01FC0C4);
 // Enable timer2 and timer3
 PCONP.SetBits((1 << 22) | (1 << 23));
@@ -20,7 +20,7 @@ Here is an example that sets timer 3 and P0.4 on the LPC2478 processor to count 
 > [!Tip]
 > You will need the LPC2478 datasheet and manuall to fully understand the example.
 
-```
+```cs
 using System;
 using System.Threading;
 using Microsoft.SPOT;

@@ -33,7 +33,7 @@ The data sent can be shown on a terminal program, like teraterm. Note how we end
 > [!Tip]
 > Using serial ports require the Microsoft.SPOT.Hardware.SerialPort. If your program uses the enums Parity or StopBits, the Microsoft.SPOT.Hardware assembly is needed.
 
-```c#
+```cs
 using System.IO.Ports;
 using System.Text;
 using System.Threading;
@@ -66,7 +66,7 @@ public class Program
 ## Receiving Data
 This example will wait until a byte is received on the port and then print it telling you what was sent from the other end.
 
-```c#
+```cs
 using System.Threading;
 using System.IO.Ports;
 using System.Text;
@@ -104,7 +104,7 @@ public class Program
 ## Sending and Receiving
 This example is a loop-back. Connect a wire from TX to RX on your board and it will send data and make sure it is receiving it correctly.
 
-```c#
+```cs
 using System.IO.Ports;
 using System.Text;
 using System.Threading;

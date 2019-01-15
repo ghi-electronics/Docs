@@ -6,7 +6,7 @@ The SignalCapture class monitors a pin and records any changes (high-low or low-
 
 SignalCapture is a GHI Electronics' extension to NETMF. It requires the GHI.Hardware assembly. 
 
-```
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 using GHI.IO;

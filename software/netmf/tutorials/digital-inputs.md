@@ -14,7 +14,7 @@ In this example, a button is connected between ground and the input pin. We will
 
 The following code requires the Microsoft.SPOT.Hardware assembly. Consult the device schematics or manuals for the proper pin numbers.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 
@@ -49,13 +49,11 @@ In the example below, we are using the low edge to detect a button press. "IntBu
 
 The following code requires the Microsoft.SPOT.Hardware assembly. Consult the device schematic or manual for pin numbers.
 
-```c#
+```cs
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using System;    
 using System.Threading;
-
-
 
 public class Program
 {
@@ -98,7 +96,7 @@ The code below requires the Microsoft.SPOT.Hardware assembly.
 > [!Warning]
 > Be careful not to have the pin connected to a switch then set the pin to output.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;

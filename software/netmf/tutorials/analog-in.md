@@ -7,7 +7,7 @@ Unlike digital input pins which can only read high or low, analog pins can read 
 This example uses a light sensor.  Its output voltage varies with light intensity -- the darker the light the higher the voltage output.
 The following code requires the Microsoft.SPOT.Hardware assembly. Consult the Developers' Guide or the product manual for specific channels.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;

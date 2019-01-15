@@ -145,7 +145,7 @@ If necessary, update your firmware, and then return here to continue the tutoria
 Skipping the above step is **the most common problem faced by beginners**.
 
 > [!Tip]
-> Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems, make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power (see also the USB sections in [**NETMF Troubleshooting**](http://old.ghielectronics.com/docs/165/netmf-troubleshooting)).
+> Many USB hubs are poorly implemented in PCs. If Windows failed to recognize the NETMF device or had any connection problems, make sure the device is connected directly to the PC, not through a USB hub. If problems persist, try using a power transformer or powered USB hub to guarantee the device is getting sufficient power.
 
 ## Deploying to Hardware
 

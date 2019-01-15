@@ -21,7 +21,7 @@ The 50% voltage (level == 0.5) by default would generate 1.65V.  Because of Scal
 
 The following code requires the Microsoft.SPOT.Hardware assembly.
     
-```c#
+```cs
 using Microsoft.SPOT.Hardware;
 
 public class Program

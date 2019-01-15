@@ -16,7 +16,7 @@ This example uses an array of toggle times to turn the LED on and off.
 
 The state of the the pin controlled by SignalGenerator will change after waiting for the durations specified in an array. Onces all the elements have been used; SignalGenerator will, optionally, start over at the beginning of the array.
 
-```
+```cs
 using Microsoft.SPOT.Hardware;
 using GHI.IO;
 

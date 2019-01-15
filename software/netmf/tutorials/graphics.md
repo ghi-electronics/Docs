@@ -14,7 +14,7 @@ In order to use a display, you must configure it. You can select the display typ
 
 If you are using a display that is not present under GHIDisplay, you will need to configure the properties on the Display object instead of calling the Populate method.
 
-```
+```cs
 using GHI.Processor;
 using Microsoft.SPOT.Hardware;
 
@@ -35,7 +35,7 @@ public class Program
 ## Drawing
 The following example draws a line and an ellipse on the screen. The assemblies Microsoft.SPOT.Graphics and Microsoft.SPOT.TinyCore are required.
 
-```
+```cs
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation;
 using Microsoft.SPOT.Presentation.Media;
@@ -56,7 +56,7 @@ public class Program
 ## Text
 The following code shows how to display text using NETMF. Since resources depend on your project's default namespace, make sure that you change the namespace in this example to match your namespace. If you do not currently have a font resource in your project, NETMF ships with two default fonts that you can add as a resource found in C:\Program Files (x86)\Microsoft .NET Micro Framework\v4.3\Fonts. You can find the NinaB font that we use below in that folder.
 
-```
+```cs
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation;
 using Microsoft.SPOT.Presentation.Media;
@@ -88,7 +88,7 @@ If your device does not have enough memory to create a bitmap for the entire scr
 
 The below example shows how to do this on the FEZ Cerberus and requires the GHI.Hardware, Microsoft.SPOT.Graphics, and Microsoft.SPOT.Hardware assemblies. Make sure you properly set any pins other configuration below for your actual device bearing in mind the above considerations. If you are not using the DisplayN18, you must configure the display before first use and set the draw window before you call Flush every time.
 
-```
+```cs
 using GHI.Pins;
 using GHI.Processor;
 using GHI.Utilities;
@@ -123,7 +123,7 @@ When using Gadgeteer display modules, the SimpleGraphics interface is provided f
 
 The below example shows how to display an ellipse, line, and some text. Make sure that you change the namespace to match yours. Gadgeteer programs automatically add the NinaB font to your project so you do not need to worry about adding it yourself.
 
-```
+```cs
 using GT = Gadgeteer;
 
 namespace your_namespace

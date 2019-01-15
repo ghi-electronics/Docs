@@ -32,7 +32,7 @@ This example assumes the card is already inserted; it lists all files available 
 > [!Note]
 > Some SD card sockets/interfaces have an internal switch that closes when a card is inserted or ejected. Utilizing the switch is shown in the "[**SD Card: Media Detection**](#sd-card-media-detection)" example further down on this page.
 
-```
+```cs
 using System.IO;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;

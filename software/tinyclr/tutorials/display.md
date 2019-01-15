@@ -9,7 +9,7 @@ TinyCLR OS has built in graphics methods for these displays. The following sampl
 
 In this example, GPIO is only used to turn on the backlight. Note that the backlight on the G400D Dev Board is pulled high with a pullup resistor, so turning on the backlight is unnecessary -- you can only use GPIO pin PD6 to turn it off. However, on the UD435 and UD700 displays a pull down resistor is built into the backlight driver chip. For these display you will need to set the corresponding GPIO pin high to turn on the backlight.
 
-```csharp
+```cs
 using System.Drawing;
 using GHIElectronics.TinyCLR.Devices.Display;
 using GHIElectronics.TinyCLR.Devices.Gpio;
@@ -17,7 +17,8 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        var backlight = GpioController.GetDefault().OpenPin(G400D.GpioPin.PD6);
+        UCMStandard.SetModel(UCMModel.UC5550);
+        var backlight = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
         backlight.SetDriveMode(GpioPinDriveMode.Output);
 
         var displayController = DisplayController.GetDefault();
@@ -27,18 +28,18 @@ class Program {
             Width = 480,
             Height = 272,
             DataFormat = DisplayDataFormat.Rgb565,
-            PixelClockRate = 20000000,
-            PixelPolarity = false,
-            DataEnablePolarity = true,
-            DataEnableIsFixed = false,
-            HorizontalFrontPorch = 2,
-            HorizontalBackPorch = 2,
-            HorizontalSyncPulseWidth = 41,
+            HorizontalBackPorch = 46,
+            HorizontalFrontPorch = 16,
             HorizontalSyncPolarity = false,
-            VerticalFrontPorch = 2,
-            VerticalBackPorch = 2,
-            VerticalSyncPulseWidth = 10,
+            HorizontalSyncPulseWidth = 1,
+            DataEnableIsFixed = false,
+            DataEnablePolarity = false,
+            PixelClockRate = 12_000_000,
+            PixelPolarity = false,
+            VerticalBackPorch = 23,
+            VerticalFrontPorch = 7,
             VerticalSyncPolarity = false,
+            VerticalSyncPulseWidth = 1
         });
 
         displayController.Enable();
@@ -46,8 +47,8 @@ class Program {
 
         // Some needed objects
         var screen = Graphics.FromHdc(displayController.Hdc);
-        var greenPen = new Pen(Color.Green);
-        var redPen = new Pen(Color.Red);
+        var greenPen = new Pen(Color.Green, 5);
+        var redPen = new Pen(Color.Red, 3);
 
         // Start Drawing (to memory)
         screen.Clear(Color.Black);
@@ -58,7 +59,6 @@ class Program {
         screen.Flush();
     }
 }
-
 ```
 
 ## Serial SPI/I2C Displays

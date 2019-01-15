@@ -17,7 +17,7 @@ Debugging and deploying serially is specific to each device so you may want to c
 ## Mouse
 The following example tells your device to act as a mouse and send random commands to your computer. You could use this to prank others and send their computer fake mouse commands or to have a second mouse for your own computer.
 
-```c#
+```cs
 using System;
 using System.Threading;
 using GHI.Usb;
@@ -94,7 +94,7 @@ public class Program
 ## Keyboard
 Emulating a keyboard is as very similar to emulating a mouse. The following example will create a USB Keyboard and send "Hello world!" to a computer every second.
 
-```c#
+```cs
 using System.Threading;
 using GHI.Usb;
 using GHI.Usb.Client;
@@ -158,7 +158,7 @@ The buffer size is limited so you must be make sure to read all data quickly bec
 
 The following example will create a USB CDC and send "Hello world!" to computer every second.
 
-```c#
+```cs
 using System.Threading;
 using GHI.Usb;
 using GHI.Usb.Client;
@@ -205,7 +205,7 @@ This example code assumes an SD card is always plugged in. It enables MSC showin
 
 In addition to the assemblies mentioned above in the Note, the following code requires the GHI.Hardware assembly.
 
-```c#
+```cs
 using System;
 using System.Threading;
 using GHI.Usb.Client;

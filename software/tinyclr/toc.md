@@ -14,6 +14,7 @@
 ## [Display](tutorials/display.md)
 ## [Graphics](tutorials/graphics.md)
 ## [Filesystem](tutorials/filesystem.md)
+## [Time](tutorials/time.md)
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)

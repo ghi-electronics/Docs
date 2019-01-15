@@ -8,7 +8,7 @@ The first mode is EchoDuration. This mode sends a pulse of a given length and st
 
 The below example illustrates sending a pulse of 10us and reading an echo on the same pin where both the pulse and echo are high. A constructor overload is available that allows you to specify a different echo pin and state.
 
-```
+```cs
 using GHI.IO;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;

@@ -11,7 +11,7 @@ When working with USB host, you interact with the Controller.  You subscribe to 
 
 The below code requires the GHI.Usb and GHI.Hardware assemblies and shows you briefly how to handle device connections and disconnections.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using System.Threading;
@@ -50,7 +50,7 @@ public class Program
 ## Mice, keyboards, and joysticks
 Once you receive a connect event and the associated object for a mouse, keyboard, or joystick, you can subscribe to various events on those objects to receive data from the device. The below code simply prints out when a button or key is pressed.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using System.Threading;
@@ -144,7 +144,7 @@ A few other USB-Serial manufacturers, like Prolific, are included, but they are 
 
 The below example simply echoes any data received back out to the sender and prints it to the debug output.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using System.Threading;
@@ -183,7 +183,7 @@ When you connect a mass storage device, it can be accessed through the regular N
 
 The below code simply opens or creates a file on the drive, writes "Hello, World!" to it, and then unmounts the device. It requires the Microsoft.SPOT.IO and System.IO assembly.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using Microsoft.SPOT.IO;
@@ -235,7 +235,7 @@ You can also connect a webcam and stream images from it. Webcams only support ce
 
 The below code requires the Microsoft.SPOT.Graphics and Microsoft.SPOT.TinyCore assemblies. It looks for a format that has a size of 320x240 and starts to stream it. When a new image is available an event is raised and we draw the received image to the bitmap that represents our screen and then flush it. Make sure you have a display properly configured.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Presentation;
@@ -280,7 +280,7 @@ public class Program
 ## Unknown Devices
 If your device is not recognized by our libraries, the UnknownDeviceConnected event will be triggered. This event will give you the USB parameters of the device that you can use to "force" the creation of a specific type. This method is not guaranteed to work with every unknown device, however. The below code illustrates how to do this with a usb to serial device.
 
-```c#
+```cs
 using GHI.Usb.Host;
 using Microsoft.SPOT;
 using System.Threading;

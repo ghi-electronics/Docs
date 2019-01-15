@@ -7,7 +7,7 @@ NETMF devices have the ability to receive touch input from a touch screen.
 ## Getting Started
 The below code draws a blue circle wherever you touch on the display. Make sure that you have configured your display properly before running this example. It requires the Microsoft.SPOT.Graphics, Microsoft.SPOT.TinyCore, and Microsoft.SPOT.Touch assemblies.
 
-```
+```cs
 using Microsoft.SPOT;
 using Microsoft.SPOT.Input;
 using Microsoft.SPOT.Presentation;

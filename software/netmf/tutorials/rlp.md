@@ -15,7 +15,7 @@ Download and then install the following programs in order. Make sure the install
 You can verify the correct installation by running make --version and arm-none-eabi-gcc --version from a command prompt.
 
 ## Getting Started
-Download and extract the samples found [here](need a link).
+Download and extract the samples found [here](http://files.ghielectronics.com/downloads/NETMF/RLP%20Examples.zip).
 
 The RLP.h file found in the Native directory is a header that defines our extensions and helpers that make it easier to write your native code. You will also see a folder for each supported platform. Within each platform, there are four files.
 
@@ -49,7 +49,7 @@ Arrays of each of the above parameters (except bitmaps) are also supported. When
 
 For example, imagine you have passed an integer, a byte array, its length, and a boolean down to the native side. You can retrieve those parameters using the following code:
 
-```
+```c
 int YourFunc(void** args) {
 	int arg1 = *(int*)(args[0]); //the integer
 	unsigned char* arg2 = (unsigned char*)(args[1]); //the byte array
@@ -73,7 +73,7 @@ To be able to invoke the native function from managed code, you must get the com
 ## Invoking Your Function
 The below code shows you how to load the byte array representing the ELF file into RLP and calling it natively. (It assumes you have added the ELF file as a resource to your C# project.) You pass the name of your native function into the FindFunction function and it will return an object that you can call Invoke() on and pass parameters. We will use the same four parameters as above, an integer, byte array, its length, and a boolean. This code requires the GHI.Hardware assembly.
 
-```
+```cs
 using GHI.Processor;
 using Microsoft.SPOT;
 
@@ -98,7 +98,7 @@ public class Program
 ```
 Now imagine we defined the native function like this:
 
-```
+```c
 int YourFunc(void** args) {
 	int arg1 = *(int*)(args[0]); //the integer
 	unsigned char* arg2 = (unsigned char*)(args[1]); //the byte array
@@ -122,7 +122,7 @@ You can break your work up into smaller chunks that are worked on during each ca
 
 The below example passes the first and only argument passed to RLP into the task and then fires that many events. It schedules itself to fire again in one second until the parameter is zero.
 
-```
+```c
 RLP_Task task;
 
 void TaskCallback(void* arg)
@@ -153,7 +153,7 @@ int StartTask(void** args)
 ```
 As before, we create and invoke the RLP function object but we also subscribe to the NativeEvent event and then print out the value received. Every time PostManagedEvent is called from the native side, this event will be fired with the data passed to it. In this example, it should be fired six times, printing out 5, 4, 3, 2, 1, and then 0.
 
-```
+```cs
 using GHI.Processor;
 using Microsoft.SPOT;
 using System.Threading;
@@ -186,7 +186,7 @@ You can also pass bitmaps to RLP. You will receive an unsigned short array in th
 
 Each entry in the array represents one pixel in RGB 565 format. You can access a pixel using the following code:
 
-```
+```c
 void SetPixel(unsigned short* bmp, int x, int y, int bitmapWidth, unsigned short color)
 {
 	bmp[y * bitmapWidth + x] = color;

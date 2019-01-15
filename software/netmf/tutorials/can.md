@@ -20,7 +20,7 @@ The above image shows two CAN nodes connected over a bus with the 120 ohm resist
 
 The code below sends a message over the CAN bus and prints out every message it receives to the debug window. It requires the GHI.Hardware assembly be added to the resources in your Visual Studio project.
 
-```c#
+```cs
 using GHI.IO;
 using Microsoft.SPOT;
 using System.Threading;

@@ -49,7 +49,7 @@ GHI Electronics' NETMF devices support reading and writing XML format. Reading a
 ## XML in Memory
 This code shows how to make an XML document in memory, it implements the XML presented above.
 
-```
+```cs
 using System.IO;
 using System.Xml;
 using System.Ext.Xml;
@@ -96,7 +96,7 @@ If  the "Unsupported Exception" is raised on an older device, replace the System
 ## Readable Output
 When running the example above, we will see the output XML data at the end. The data is correct but it is not formatted to be "human" friendly. Note that we are reading and writing XML files on a very small system so the less info (spaces/formatting) the better it is. So it is actually better not to have any extra spaces or formatting but for the sake of making things look pretty, we will add new lines as follows
 
-```
+```cs
 using System.IO;
 using System.Xml;
 using System.Ext.Xml;
@@ -145,7 +145,7 @@ public class Program
 ## Reading and Parsing
 Creating XML files is actually easier than parsing (reading) them. There are many ways to read the XML file but basically you can just go through the file and read one piece at the time till you reach the end. This code example creates an XML data and it reads it back.
 
-```
+```cs
 using System.IO;
 using System.Xml;
 using System.Ext.Xml;

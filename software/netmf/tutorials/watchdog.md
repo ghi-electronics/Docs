@@ -35,7 +35,7 @@ This example shows how to set the watchdog to 5 seconds timeout and create a thr
 > [!Tip]
 > Once you enable the Watchdog, it cannot be disabled. So you have to keep resetting the timeout. This is done to assure that no system corruption will disable watchdog accidentally.
 
-```
+```cs
 using System;
 using System.Threading;
 using GHI.Processor;

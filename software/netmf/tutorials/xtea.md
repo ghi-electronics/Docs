@@ -9,7 +9,7 @@ Make sure you only attempt to encrypt arrays with a size divisible by eight.
 ## Getting Started
 The following example shows the basic encryption and decryption of a string. When you use the parameterless constructor of the Xtea object, a key is generated for you that you can find in the Key property. If you pass a key to the constructor, it will be used instead.
 
-```
+```cs
 using GHI.Utilities;
 using Microsoft.SPOT;
 using System.Text;
