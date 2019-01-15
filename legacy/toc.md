@@ -1,4 +1,5 @@
-# [Legacy Introduction](intro.md)
+# [Introduction](intro.md)
+
 # [SoMs](som.md)
 ## [ChipworkX](../hardware/ucm/chipworkx.md)
 ## [Embedded Master](../hardware/scm/embedded-master.md)

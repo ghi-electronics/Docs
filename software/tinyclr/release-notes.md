@@ -181,7 +181,7 @@ To support uploading to the Visual Studio gallery, we had to change the package 
 
 We're also releasing a tool to convert desktop TrueType fonts to the format used by TinyCLR. Keep in mind there are legal implications to using and distributing fonts and that we cannot provide advice on that. The tool used to convert binary files to `glb` and `ghi` files was also updated to support generating `UF2` files used by the BrainPad (which has its own new firmware in this release as well, available on https://brainpad.com/).
 
-The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format and you can find their device definitions in the ports repo as well. There is also a new bootloader for the UC5550 available on the [bootloader page](loaders/ghi-bootloader.md).
+The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format and you can find their device definitions in the ports repo as well. There is also a new bootloader for the UC5550 available on the [bootloader page](../loaders/ghi-bootloader.md).
 
 We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
 
@@ -988,7 +988,7 @@ This release adds support for the G400 and all of our previous NXP based devices
 
 Also available in this release is a very early preview of the new TinyCLR Config tool. It can be used to check your device for updates over the internet and install an update if found (if the device has the GHI Bootloader version 2); save, load, erase, pause, and resume the managed application; and capture debug messages. More functionality is planned. See [here](tinyclr-config.md) for more information. Relatedly, we are also making signed drivers for the GHI Bootloader available for Windows 7 and 8. These drivers are not needed on Windows 10 or newer.
 
-Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../tinyclr/loaders/ghi-bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
+Lastly, how we distribute releases is changing going forward. There's no longer one monolithic archive to download. Instead, everything TinyCLR can be found on its [downloads](downloads.md) page and bootloader binaries are available on the bootloader [download](../loaders/ghi-bootloader.md#downloads) page. MD5 hashes are provided for all downloads as well.
 
 ### Libraries
 
@@ -1363,7 +1363,7 @@ The MSBuild package is no longer provided or required. The metadata processor to
 
 The information displayed while deploying to the device has also been improved to show more information about what is going on and what stage the deployment is in. We've also reworked incremental deployment so that assemblies are deployed one to a flash sector (if space allows) to enable re-deploying only the assemblies that have changed on a sector by sector basis. This greatly increases deployment speed on devices which a large number of flash sectors allocated to deployment.
 
-This release also includes the firmware for the G120 and G120E. Because the current GHI bootloader on the G120 expects to load TinyBooter, we have provided a second stage bootloader with this preview that you must deploy using the existing GHI bootloader as if you were deploying TinyBooter. Once it is deployed and you restart the device, you'll notice that it starts our newer [GHI bootloader 2.0](loaders/ghi-bootloader.md). You can then use this second bootloader to deploy the TinyCLR OS firmware. Asserting LDR0 will enter the second bootloader while asserting both LDR0 and LDR1 will enter the original bootloader and allow you to return to NETMF.
+This release also includes the firmware for the G120 and G120E. Because the current GHI bootloader on the G120 expects to load TinyBooter, we have provided a second stage bootloader with this preview that you must deploy using the existing GHI bootloader as if you were deploying TinyBooter. Once it is deployed and you restart the device, you'll notice that it starts our newer [GHI bootloader 2.0](../loaders/ghi-bootloader.md). You can then use this second bootloader to deploy the TinyCLR OS firmware. Asserting LDR0 will enter the second bootloader while asserting both LDR0 and LDR1 will enter the original bootloader and allow you to return to NETMF.
 
 After flashing the firmware the first time, Windows may still use the old NETMF USB IDs preventing the device from being seen by TinyCLR. Uninstall the device from the Device Manager and reinstall it to fix it. To update the firmware on pre-Windows 10 machines, you will need the bootloader drivers provided by our existing [2016 R1 NETMF SDK](../netmf/downloads.md).
 

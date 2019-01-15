@@ -15,7 +15,7 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 ### Loading Bootloader v2
 
-1. Download the [bootloader file](../../software/tinyclr/loaders/ghi-bootloader.md#g120)
+1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md#g120)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
 3. Connect the FEZ Spider to a power module (red module) and then to a PC.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../software/netmf/intro.md) SDK.
@@ -36,5 +36,5 @@ If haven't yet, read about using .NET Gadgeteer devices [with TinyCLR OS](intro.
 
 To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.
 
-Download the [G120 firmware](../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 

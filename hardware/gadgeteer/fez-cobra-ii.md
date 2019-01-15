@@ -24,5 +24,5 @@ Follow the instructions on the [G120 page](../scm/g120.md)
 
 To activate bootloader v2, press and hold the LDR0 button while resetting the board.
 
-Download the [G120 firmware](../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../software/tinyclr/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Download the [G120 firmware](../../software/tinyclr/downloads.md#g120) and follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 

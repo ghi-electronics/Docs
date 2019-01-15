@@ -16,7 +16,7 @@ This document splits it's examples into two sets. One for SD/MMC Card file syste
 > Under current versions of .NET Micro Framework, there can be a variable time delay before the buffers are actually written to the media when using the FileStream's Flush method. This delay can reportedly be as long as a minute (see: https://netmf.codeplex.com/workitem/2149). To guarantee that the file buffers and the meta-data are written to the media you need to flush the volume:
 >
 > * `VolumeInfo.GetVolumes()[0].FlushAll()` -or-
-> * `new Microsoft.SPOT.IO.VolumeInfo("\SD").FlushAll()`.
+> * `Microsoft.SPOT.IO.VolumeInfo("\SD").FlushAll()`.
 >
 > Ideally, you would unmount the media before it is removed from the system. This may not be always possible -- FlushAll will guarantee your data is saved
 

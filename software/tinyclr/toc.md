@@ -31,4 +31,4 @@
 # [Roadmap](roadmap.md)
 # [Licensing](licensing.md)
 # [Supported Devices](supported-devices.md)
-# [Bootloaders](loaders/intro.md)
+# [Bootloaders](../loaders/intro.md)

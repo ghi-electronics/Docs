@@ -19,7 +19,7 @@ The firmware may come pre-installed on the FEZ, but it might not be the latest v
 ### Loading the GHI Bootloader v2
 The bootloader comes pre-installed on the FEZ and should not need to be reinstalled unless it is erased or becomes corrupted. Also, some advanced programming techniques require you to erase the bootloader (for example Mbed).
 
-If you do need to reinstall the bootloader instructions are found on the [STM32 Bootloader](../../software/tinyclr/loaders/stm32-bootloader.md) page under [Loading the GHI Bootloader v2](../../software/tinyclr/loaders/stm32-bootloader.md#loading-the-ghi-bootloader-v2). When you are asked to put the FEZ in DFU mode, hold down the BOOT0 button, press and release the RESET button, and then release the BOOT0 button.
+If you do need to reinstall the bootloader instructions are found on the [STM32 Bootloader](../../software/loaders/stm32-bootloader.md) page under [Loading the GHI Bootloader v2](../../software/loaders/stm32-bootloader.md#loading-the-ghi-bootloader-v2). When you are asked to put the FEZ in DFU mode, hold down the BOOT0 button, press and release the RESET button, and then release the BOOT0 button.
 
 ### Loading the Firmware
 > [!Tip]

@@ -17,7 +17,7 @@ Download and install [Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.c
 For more information on the future of Gadgeteer, please see this [news post](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197).
 
 ### Install GHI Electronic's NETMF SDK
-Download and install GHI Electronics NETMF SDK 2016 R1 from our [NETMF Downloads](downloads.md#available-netmf-sdks) page. When installing newer GHI NETMF SDKs, click the `Advanced` button on the opening dialog box and uncheck the boxes to install the FEZ CERB Family and G400/FEZ Hydra loader updaters (the first two options). If needed, these loaders can be installed separately as highlighted in the individual product pages.
+Download and install GHI Electronics NETMF SDK 2016 R1 from our [NETMF Downloads](downloads.md) page. When installing newer GHI NETMF SDKs, click the `Advanced` button on the opening dialog box and uncheck the boxes to install the FEZ CERB Family and G400/FEZ Hydra loader updaters (the first two options). If needed, these loaders can be installed separately as highlighted in the individual product pages.
 ![Advanced options](images/advanced-options.png)
 
 Older GHI NETMF SDKs are also available on the [NETMF Downloads](downloads.md) page.
@@ -159,6 +159,5 @@ Pressing `F5` sends the simple application to the hardware and runs it. Debuggin
 
 ## Next Steps
 
-We are currently updating the NETMF documentation found in our NETMF [Tutorials](tutorials/intro.md). We also have extensive NETMF documentation on our old website which can be viewed [here](http://old.ghielectronics.com/support/netmf).
-
+We are currently updating the NETMF documentation found in our NETMF [Tutorials](tutorials/intro.md).
 

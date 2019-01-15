@@ -2,10 +2,6 @@
 
 ![Tutorials](../../tinyclr/images/tutorials.jpg)
 
-> [!Note] 
-> We are currently updating our NETMF documentation.  We have extensive NETMF documentation on our old website which can be viewed 
-> [**here**](http://old.ghielectronics.com/support/netmf).
-
 ## Topics
 
 * [Analog Inputs](analog-in.md)
