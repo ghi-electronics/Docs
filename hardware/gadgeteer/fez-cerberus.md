@@ -4,16 +4,17 @@
 
 FEZ Cerberus is a .NET Gadgeteer product that utilizes .NET Micro Framework (NETMF). The core of the FEZ Cerberus is the G30 System on Chip (SoC).
 
-FEZ Cerberus is the mother of the Cerb Family.
+FEZ Cerberus is the mother of the Cerb Family!
+
+To use with NETMF/Gadgeteer, follow these [setup instructions](../../software/netmf/getting-started.md).
 
 ## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerberus%20Schematic.pdf)
 
-## Using the Gadgeteer software
-We discourage the use of Gadgeteer and NETMF software on our products in favor of TinyCLR OS, but the choice is up to you. To find out more about NETMF, go to our [NETMF Introduction Page](../../software/netmf/intro.md)
-
 ## Using TinyCLR OS
-The following instructions describe how to set up EMX to work with TinyCLR OS. To learn more about TinyCLR check out the [TinyCLR Introduction](../../software/tinyclr/intro.md) page.
+An [unsupported port](https://github.com/ghi-electronics/TinyCLR-Ports) is provided as a starting point for experimenting with TinyCLR OS. 
+
+Once a firmware is built, the following instructions describe how to set up your board to work with TinyCLR OS. To learn more about TinyCLR OS check out the [TinyCLR Introduction](../../software/tinyclr/intro.md) page.
 
 ## The Boot Pins
 PB10 is the MODE pin, which is used to select between USB and serial interfaces for bootloader and firmware. USART1 (PB6 and PB7) is used when in serial mode.
@@ -32,8 +33,6 @@ LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts th
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
 
 To activate bootloader v2, set PC1 pin low.
-
-Download the [Cerb firmware](../../software/tinyclr/downloads.md#cerb) and follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.
 
 ## FEZ Game-O
 ![FEZ Game-O](images/fez-gameo.jpg)

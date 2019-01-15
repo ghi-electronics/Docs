@@ -6,7 +6,7 @@ The [Pololu Zumo Robot](https://www.pololu.com/category/169/zumo-robot-for-ardui
 
 Drop your [FEZ](../../fez/intro.md) on top of the Zumo Robot, or any other Arduino-compatible board, and you are ready to make the robot follow lines and dance around.
 
-The driver is found [here](https://github.com/ghi-electronics/TinyCLR-Accessories).
+The complete project is found [here](https://github.com/ghi-electronics/TinyCLR-Samples)
 
 You are now ready for some serious dancing!
 

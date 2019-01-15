@@ -4,14 +4,15 @@
 
 FEZ Hydra is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF).
 
+To use with NETMF/Gadgeteer, follow these [setup instructions](../../software/netmf/getting-started.md).
+
 ## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Hydra%20Schematic.pdf)
 
-## Using the Gadgeteer software
-We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. [Read more](intro.md) about the use of NETMF, Gadgeteer and TinyCLR OS.
-
 ## Using TinyCLR OS
-TinyCLR is our own operating system and provides a means of programming embedded devices using .NET and Visual Studio.  Visual Studio is widely regarded as one of the best (if not the best) integrated development environments available.  The free Community version of Visual Studio can be downloaded here:  [Visual Studio Downloads](https://www.visualstudio.com/downloads/).  For information on setting up TinyCLR to work in Visual Studio please click here:  [TinyCLR Introduction](../../software/tinyclr/intro.md)
+An [unsupported port](https://github.com/ghi-electronics/TinyCLR-Ports) is provided as a starting point for experimenting with TinyCLR OS. 
+
+Once a firmware is built, the following instructions describe how to set up your board to work with TinyCLR OS. To learn more about TinyCLR OS check out the [TinyCLR Introduction](../../software/tinyclr/intro.md) page.
 
 ### Loading Bootloader v2
 1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md#fez-hydra).
@@ -30,5 +31,3 @@ TinyCLR is our own operating system and provides a means of programming embedded
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
 
 To activate bootloader v2, hold the LDR0 (socket 3, pin 3) signal low while resetting the board.
-
-Download the [FEZHydra firmware](../../software/tinyclr/downloads.md#fez-hydra) and follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.

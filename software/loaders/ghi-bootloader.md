@@ -75,7 +75,7 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 
 Here you can find the various bootloaders available for the various products.
 
-### FEZCLR
+### FEZCLR (used on FEZ and BrainPad)
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 33F7FCAE266D07209C079CEA38AAB583

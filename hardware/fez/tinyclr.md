@@ -5,11 +5,11 @@
 TinyCLR is our own operating system and allows you to program the FEZ in C# or Visual Basic using Microsoft's Visual Studio development environment.
 
 To start using TinyCLR with the FEZ you must first:
-* Set up your computer:  Install Visual Studio, the TinyCLR OS extensions and NuGet packages.
+* Set up your computer:  Install Visual Studio and the TinyCLR OS extensions.
 * Set up your FEZ:  Install the GHI bootloader (if not installed already) and latest TinyCLR firmware.
 
 ## Setting Up Your Computer
-Instructions for setting up your computer are found [here](../../software/tinyclr/getting-started.md#tinyclr-computer-setup) on the [Getting Started]under the TinyCLR section of our documentation.
+Instructions for setting up your computer are found [here](../../software/tinyclr/getting-started.md) under the TinyCLR section of our documentation.
 
 ## Setting Up the FEZ
 The following instructions explain how to install the bootloader and TinyCLR firmware on the FEZ.  The bootloader should be installed on the FEZ already.  It does not need to be reinstalled unless it becomes deleted or corrupted.
@@ -19,7 +19,7 @@ The firmware may come pre-installed on the FEZ, but it might not be the latest v
 ### Loading the GHI Bootloader v2
 The bootloader comes pre-installed on the FEZ and should not need to be reinstalled unless it is erased or becomes corrupted. Also, some advanced programming techniques require you to erase the bootloader (for example Mbed).
 
-If you do need to reinstall the bootloader instructions are found on the [STM32 Bootloader](../../software/loaders/stm32-bootloader.md) page under [Loading the GHI Bootloader v2](../../software/loaders/stm32-bootloader.md#loading-the-ghi-bootloader-v2). When you are asked to put the FEZ in DFU mode, hold down the BOOT0 button, press and release the RESET button, and then release the BOOT0 button.
+If you do need to reinstall the bootloader instructions are found on the [STM32 Bootloader](../../software/loaders/stm32-bootloader.md) page. When you are asked to put the FEZ in DFU mode, hold down the BOOT0 button, press and release the RESET button, and then release the BOOT0 button.
 
 ### Loading the Firmware
 > [!Tip]
@@ -28,13 +28,13 @@ If you do need to reinstall the bootloader instructions are found on the [STM32 
 #### Using TinyCLR Config
 Our [TinyCLR Config](../../software/tinyclr/tinyclr-config.md) tool includes multiple features useful for working with TinyCLR-OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, the instructions for manually loading the firmware are included below. Read more on the [TinyCLR Config](../../software/tinyclr/tinyclr-config.md) page.
+Using this tool is the recommended path; however, the instructions for manually loading the firmware are included below.
 
 #### Manually Loading the Firmware
-We recommend using the TinyCLR Config tool to update the firmware. As a backup, use these instructions:
+We recommend using the TinyCLR Config tool to update the firmware. As a backup, use these manual instructions:
 
-1. Download and save the latest [FEZCLR firmware](../../software/tinyclr/downloads.md#fezclr)
-2. Put the FEZ in bootloader mode: Hold down BTN1, press and release the RESET button, wait a second or two, and then release BTN1.
+1. Download and save the latest [FEZCLR firmware](../../software/tinyclr/downloads.md)
+2. Put the FEZ in bootloader mode: Hold down BTN1, press and release the RESET button, wait a second, and then release BTN1.
 3. Open any terminal software, for example [Tera Term](http://ttssh2.osdn.jp/),
 4. Select serial and pick the COM port associated with your board. (If unsure, check Device Manager)
 5. Press `V` and then enter. The FEZ will respond with the installed boot loader version number (v2.x.x)

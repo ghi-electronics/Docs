@@ -29,5 +29,4 @@
 ## [XML](tutorials/xml.md)
 ## [XTEA](tutorials/xtea.md)
 # [Downloads](downloads.md)
-
-
+# [Bootloaders](../loaders/intro.md)
