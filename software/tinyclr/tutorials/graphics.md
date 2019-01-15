@@ -2,7 +2,7 @@
 
 You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
 
-```csharp
+```cs
 using GHIElectronics.TinyCLR.Devices.Display;
 using GHIElectronics.TinyCLR.UI;
 using GHIElectronics.TinyCLR.UI.Controls;
@@ -86,7 +86,6 @@ namespace UI {
             txt.SetMargin(5);
             listBox.Items.Add(txt);
 
-
             //Setup
             window.Child = listBox;
             window.Visibility = Visibility.Visible;
@@ -95,6 +94,13 @@ namespace UI {
         }
     }
 }
+```
+## User Input
+A user can feed in input to the graphcial interface through touch or button input. The earlier example shows how it is done.
+
+```cs
+app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
+app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
 ```
 
 ## Fonts
