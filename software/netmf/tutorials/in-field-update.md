@@ -25,7 +25,7 @@ Once this is done, you can place this file on an SD card and insert it into your
 
 The following example shows you how to load data into IFU and then flash the device. It requires the GHI.Hardware assembly and assumes that you have already mounted an SD card. Since firmware files can large and often cannot be held in entirely in memory we only load portions of the file at a time.
 
-```
+```cs
 using GHI.Processor;
 using System.IO;
 

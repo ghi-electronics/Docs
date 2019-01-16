@@ -5,7 +5,7 @@ Some of our devices come shipped with Bootloader v1 installed. These devices inc
 ## To update using USB
 1. Download the [bootloader file](ghi-bootloader.md#downloads).
 2. Put your device in boot mode (instructions are found on each product's documentation page).
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
+3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../software/netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 5. Select serial and pick the COM port associated with your board.
 6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)

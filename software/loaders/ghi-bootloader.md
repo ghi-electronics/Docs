@@ -27,7 +27,7 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr-config.md) page.
+Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../tinyclr/tinyclr-config.md) page.
 
 ### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
@@ -75,7 +75,7 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 
 Here you can find the various bootloaders available for the various products.
 
-### FEZCLR
+### FEZCLR (used on FEZ and BrainPad)
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/FEZCLR%20Bootloader%20v2.0.4.dfu) | 2017-08-31 | Alpha | 33F7FCAE266D07209C079CEA38AAB583

@@ -2,12 +2,22 @@
 ---
 ![Downloads](../../software/tinyclr/images/download-noborder.jpg)
 
+## General Resources
+* [.NET Micro Framework for Beginners](http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf) (ebook PDF)
+* Gadgeteer mainboards and moudle driver [Source code](https://github.com/ghi-electronics/NETMF-Gadgeteer)
+* NETMF [Open Source Ports](https://github.com/ghi-electronics/NETMF-Open-Firmware)
+
 ## Microsoft Visual Studio
 The lastest version of Visual Studio that works with NETMF is VS2013.  The Community Version can be downloaded from the following link:
 [Microsoft Visual Studio 2013 Community Edition](http://go.microsoft.com/fwlink/?LinkId=517284)
 
-## Available NETMF SDKs
-Release notes are found within the SDKs.
+## Microsoft .NET Gadgeteer Core
+
+[Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)
+
+## GHI Electronics Product NETMF SDKs
+> [!Tip] 
+>Release notes are found within the SDKs.
 
 Date | NETMF Core Rev | SDK
 --- | --- | ---
@@ -23,7 +33,3 @@ Aug 27, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R2](http://files.ghie
 Apr 30, 2013 | 4.3 RTM | [NETMF and Gadgeteer Package 2013 R1 Update 1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1%20Update1.zip)
 Feb 14, 2013 | 4.2 QFE2 | [NETMF and Gadgeteer Package 2013 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202013%20R1.zip)
 Feb 17, 2012 | 4.1 RTM | [NETMF 4.1 SDK, for Embedded Master, USBizi and ChipworkX](https://ghistorage.blob.core.windows.net/downloads/NETMF/SDKs/NETMF%204.1%20SDK.zip) (Includes IoT book for FEZ Panda)
-
-## Microsoft .NET Gadgeteer Core
-
-[Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812)

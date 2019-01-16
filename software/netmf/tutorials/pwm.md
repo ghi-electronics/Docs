@@ -15,7 +15,7 @@ Some common uses of PWM:
 ## .NET Micro Framework PWM Channels
 In NETMF, the PWM pins are defined in the "Cpu.PWMChannel" enumeration. As the enumeration has a limited number of members, the number of PWM pins may exceed the members. Casting can be used for those extra PWMs.
 
-```c#
+```cs
 // Using the enumeration
 PWM MyServo = new PWM(Cpu.PWMChannel.PWM_3, 2175, 175,
                       PWM.ScaleFactor.Microseconds, false);
@@ -33,7 +33,7 @@ PWM LED = new PWM((Cpu.PWMChannel)9, 10000, 0.10, false);
 
 This example starts the LED at 0% intensity then slowly steps up to full intensity, after which it reverts to 0% and starts over.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 
@@ -65,7 +65,7 @@ public class Program
 ## Musical Tones
 Music notes have specific frequencies, for example C is about 261Hz. Plugging these numbers into an array and knowing the length of each tone is all that is needed to play some simple music.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 
@@ -125,7 +125,7 @@ It is important for the high pulse to be between 1.25ms and 1.75ms so that the s
 
 The code below will move the position of the servo to 180 degrees (using a pulse of 1.75ms). It uses a pause time between pulses of 20ms. So the period is 21.75ms and a duration of 1.75ms. Note the use of "scale".
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 

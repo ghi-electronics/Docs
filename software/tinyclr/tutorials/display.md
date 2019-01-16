@@ -5,11 +5,11 @@ Displays can be grouped into two distinct interface categories, parallel TFT dis
 ## Parallel TFT Displays
 These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.
 
-TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our G400D Dev Board. You will need to add the `GHIElectronics.TinyCLR.Drawing`, `GHIElectronics.TinyCLR.Devices.Gpio` and `GHIElectronics.TinyCLR.Pins` NuGet package to your program and `using System.Drawing`, `using GHIElectronics.TinyCLR.Devices.Display`, `using GHIElectronics.TinyCLR.Devices.Gpio`, and `using GHIElectronics.TinyCLR.Pins` to your code.
+TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our UCM Dev Board with the UD435 Display option. You will need to add the `GHIElectronics.TinyCLR.Drawing`, `GHIElectronics.TinyCLR.Devices.Gpio` and `GHIElectronics.TinyCLR.Pins` NuGet package to your program.
 
-In this example, GPIO is only used to turn on the backlight. Note that the backlight on the G400D Dev Board is pulled high with a pullup resistor, so turning on the backlight is unnecessary -- you can only use GPIO pin PD6 to turn it off. However, on the UD435 and UD700 displays a pull down resistor is built into the backlight driver chip. For these display you will need to set the corresponding GPIO pin high to turn on the backlight.
+In this example, GPIO is only used to turn on the backlight. Note that the backlight is usually on GPIO A. 
 
-```csharp
+```cs
 using System.Drawing;
 using GHIElectronics.TinyCLR.Devices.Display;
 using GHIElectronics.TinyCLR.Devices.Gpio;
@@ -17,28 +17,29 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     private static void Main() {
-        var backlight = GpioController.GetDefault().OpenPin(G400D.GpioPin.PD6);
+        UCMStandard.SetModel(UCMModel.UC5550); // Change to your specific board.
+        var backlight = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
         backlight.SetDriveMode(GpioPinDriveMode.Output);
 
         var displayController = DisplayController.GetDefault();
 
-        // Enter the proper display configurations
+        // Enter the proper display configurations for the UD435
         displayController.SetConfiguration(new ParallelDisplayControllerSettings {
             Width = 480,
             Height = 272,
             DataFormat = DisplayDataFormat.Rgb565,
-            PixelClockRate = 20000000,
-            PixelPolarity = false,
-            DataEnablePolarity = true,
-            DataEnableIsFixed = false,
-            HorizontalFrontPorch = 2,
-            HorizontalBackPorch = 2,
-            HorizontalSyncPulseWidth = 41,
+            HorizontalBackPorch = 46,
+            HorizontalFrontPorch = 16,
             HorizontalSyncPolarity = false,
-            VerticalFrontPorch = 2,
-            VerticalBackPorch = 2,
-            VerticalSyncPulseWidth = 10,
+            HorizontalSyncPulseWidth = 1,
+            DataEnableIsFixed = false,
+            DataEnablePolarity = false,
+            PixelClockRate = 12_000_000,
+            PixelPolarity = false,
+            VerticalBackPorch = 23,
+            VerticalFrontPorch = 7,
             VerticalSyncPolarity = false,
+            VerticalSyncPulseWidth = 1
         });
 
         displayController.Enable();
@@ -46,8 +47,8 @@ class Program {
 
         // Some needed objects
         var screen = Graphics.FromHdc(displayController.Hdc);
-        var greenPen = new Pen(Color.Green);
-        var redPen = new Pen(Color.Red);
+        var greenPen = new Pen(Color.Green, 5);
+        var redPen = new Pen(Color.Red, 3);
 
         // Start Drawing (to memory)
         screen.Clear(Color.Black);
@@ -58,19 +59,15 @@ class Program {
         screen.Flush();
     }
 }
-
 ```
 
 ## Serial SPI/I2C Displays
-Serial displays can work with all microcontrollers. They use common SPI or I2C busses. These displays have built in memory buffers, freeing resources from the system. However, updating graphics is significantly slower than using Parallel TFT Displays. The system will have to send serial commands to identify the memory region to update and then follow that with the new data. This is why serial interfaces are usually used with smaller displays.
+The internal grphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.
 
-To the system, a serial display is nothing but a serial device. You are expected to write your own code to handle graphics.
+As each display has its own pixel format and color depth, you also have access to the way pixels are written in the graphics memory.
 
-A good example is the Adafruit Display Shield which uses a SPI display.
+This [blog](https://forums.ghielectronics.com/t/managed-graphics-for-non-tft-displays-in-tinyclr/21887) details how this can be accomplished.
 
-This video features a very low cost I2C display option
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CL-nSqaGVaw" frameborder="0" allowfullscreen></iframe>
 
 ## Low Level Display Access
 TinyCLR also provides low level display access as part of the `GHIElectronics.TinyCLR.Devices.Display` library. These methods provide a simple way to write to a display without need for the `System.Drawing` library or an added font resource file.

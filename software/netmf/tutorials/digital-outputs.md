@@ -15,7 +15,7 @@ The digital pins on micro-controllers are very weak. They can not be used to dri
 ## Light Up an LED
 This example turns a LED on. The initial state of the pin (true or false) must be specified when creating the OutputPort. This example makes the pin true which will cause the LED to be on by default.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 
@@ -34,7 +34,7 @@ public class Program
 ## Blink an LED
 To blink an LED, the pin is toggled between high and low. Due to the high speed of the microcontroller (it can flash the LED millions of times per second) a delay needs to be added between ON and OFF to see the blinking.
  
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 

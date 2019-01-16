@@ -1,4 +1,5 @@
-# [Legacy Introduction](intro.md)
+# [Introduction](intro.md)
+
 # [SoMs](som.md)
 ## [ChipworkX](../hardware/ucm/chipworkx.md)
 ## [Embedded Master](../hardware/scm/embedded-master.md)
@@ -8,8 +9,7 @@
 # [Gadgeteer](../hardware/gadgeteer/intro.md)
 ## [FEZ Cerberus](../hardware/gadgeteer/fez-cerberus.md)
 ## [FEZ Cerbot](../hardware/gadgeteer/fez-cerbot.md)
-## [FEZ Cobra II Eco and WiFi](../hardware/gadgeteer/fez-cobra-ii.md)
-## [FEZ Cobra II Net](../hardware/gadgeteer/fez-cobra-ii-net.md)
+## [FEZ Cobra II](../hardware/gadgeteer/fez-cobra-ii.md)
 ## [FEZ Hydra](../hardware/gadgeteer/fez-hydra.md)
 ## [FEZ Raptor](../hardware/gadgeteer/fez-raptor.md)
 ## [FEZ Reaper](../hardware/gadgeteer/fez-reaper.md)

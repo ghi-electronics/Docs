@@ -9,7 +9,7 @@ Launch FEZ Config and click on `Check device for update` button. This will show 
 version numbers on the PC and what is loaded on the device.
 
 > [!Note]
-> Fez Config is installed when you install the [**NETMF SDK**](../downloads.md#available-netmf-sdks).
+> Fez Config is installed when you install the [**NETMF SDK**](../downloads.md ).
 
 To proceed with updating TinyCLR, click on the `Firmware Updater` button on the left and
 follow the instructions.

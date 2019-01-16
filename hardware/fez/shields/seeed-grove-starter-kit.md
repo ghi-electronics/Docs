@@ -6,7 +6,7 @@ Grove is a modular electronic platform for quick prototyping. Every module has o
 
 The included Grove modules plug into the included arduino shield. This shield works with any arduino pinout compatible board, like the [FEZ](../../fez/intro.md).
 
-You can get the drivers [here](https://github.com/ghi-electronics/TinyCLR-Accessories).
+The complete project is found [here](https://github.com/ghi-electronics/TinyCLR-Samples).
 
 This video discusses using Seeed Studio Grove Modules with our FEZ products.
 
@@ -60,18 +60,6 @@ while (true)
 }
 ```
 
-> [!Warning]
+> [!Tip]
 > Pay attention to the 3.3V-5V switch on the shield. The rotary and temperature sensors only work with 3.3V but the RGB character display only works with 5V.
-
-Since the character display connects to I2C and only works with 5V. We have modified one of the I2C sockets to be always 5V. This allows us to keep the switch at 3.3V, leaving all other sockets at 3.3V.
-
-> [!Warning]
-> These steps require some experience and will void your warranty!
-
-Start by cutting the power trace going to the last socket.
-
-(image)
-
-Now, add a wire from the socket directly to 5V.
-
-(image)
+> The character display connects to I2C and only works with 5V. We have modified one of the I2C sockets to be always 5V. This allows us to keep the switch at 3.3V, leaving all other sockets at 3.3V.

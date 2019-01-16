@@ -14,6 +14,7 @@
 ## [Display](tutorials/display.md)
 ## [Graphics](tutorials/graphics.md)
 ## [Filesystem](tutorials/filesystem.md)
+## [Time](tutorials/time.md)
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
@@ -31,4 +32,4 @@
 # [Roadmap](roadmap.md)
 # [Licensing](licensing.md)
 # [Supported Devices](supported-devices.md)
-# [Bootloaders](loaders/intro.md)
+# [Bootloaders](../loaders/intro.md)
