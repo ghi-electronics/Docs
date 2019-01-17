@@ -61,6 +61,13 @@ class Program {
 }
 ```
 
+The `DisplayController.ActiveConfiguration` can be used to read the configuration at any time. The Width and Height can be used to write code that automatically scales to the display's resolution.
+
+The example above can be changed to automatically draw a line from corner to corner, no matter the display resolution.
+```
+screen.DrawLine(redPen, 0, 0, displayController.ActiveConfiguration.Width-1, displayController.ActiveConfiguration.Height-1);
+```
+
 ## Serial SPI/I2C Displays
 The internal grphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.
 
