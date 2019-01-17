@@ -13,7 +13,7 @@ A variety of tools and software options are available. Check the individual prod
 | **UC5500** </br> ARM Cortex-M7 based UCM with optional Wi-Fi. [**Learn more...**](uc5550.md) | **G400D** </br> Based on a 400 MHz Atmel ARM 926. [**Learn more...**](g400d.md) |
 | [![UC5550](images/uc5550.jpg)](uc5550.md) | [![G400D](images/g400d.jpg)](g400d.md) |
 | **UCM Development Options** </br> Development boards, breakout boards, displays. [**Learn more...**](development-options.md) |  |
-| [![Display Option](images/accessories.jpg)](development-options.md) |  |
+| [![Display Option](images/development-options.jpg)](development-options.md) |  |
 
 ***
 
