@@ -28,12 +28,12 @@ using GHIElectronics.TinyCLR.Pins;
 
 class Program {
     static void Blinker() {
-        var LED = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.C);
-        LED.SetDriveMode(GpioPinDriveMode.Output);
+        var led = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.C);
+        led.SetDriveMode(GpioPinDriveMode.Output);
         var state = false;
         while (true) {
             state = !state;
-            LED.Write(state? GpioPinValue.High: GpioPinValue.Low);
+            led.Write(state? GpioPinValue.High: GpioPinValue.Low);
             Thread.Sleep(100);
         }
     }
@@ -74,18 +74,28 @@ Please note that this is a **Breakout Board** and it does not have any power sup
 > [!Tip]
 > There are 2 LEDs by the USB connector, for 3.3V and 5V. They are useful to check that you have supplied the necessary power.
 
+(change image)
+
 ![UCM Breakout Power Pins](images/ucm-breakout-power-pins.jpg)
 
 A simple board can be designed and hand soldered to host the Breakout Board. You can turn an idea into a product prototype in days!
 
-![UCM Breakout Power Pins](images/ucm-breakout-demo.jpg)
+This example board example (in green) is made to be the exact same size as the 4.3" universal display board. 
+
+![UCM Breakout Demo](images/ucm-breakout-demo.jpg)
+
+It can be designed with the display connector conveniently located in the right place. 
+
+![UCM Breakout Demo Connector](images/ucm-demo-connector.jpg)
 
 To start using the breakout board, plug one of the UCMs into the socket on the board and wire in 3.3V (you may also need 5V) and plug in USB into your PC. Go to the documentation page for the particular UCM you are using for instructions.
 
 ## Universal Displays
-![UCM Breakout Power Pins](images/display-options.jpg)
+![Display Options](images/display-options.jpg)
 
-Available displays work directly with the options above, just make sure you are using a SoM supporting the needed peripherals. The Universal Displays can be connected directly or wired though a 40-pin ribbon cable, similar to the old-style IDE hard drive cables.
+Available displays work directly with the options above, just make sure you are using a SoM supporting the needed peripherals. The Universal Displays can be connected directly or wired though a 40-pin ribbon cable, similar to the old-style IDE hard drive cable extender.
+
+(image of cable extender)
 
 To connect a display with the Dev Board, simply plug it on top.
 
@@ -93,24 +103,15 @@ To connect a display with the Dev Board, simply plug it on top.
 
 The display can be larger than the board but it will still use the same connector (HDR C).
 
-![Connecting a Display](images/large-display.jpg)
+![Large Display](images/large-display.jpg)
 
-When using the Breakout Board you can solder the display directly or solder a female header onto the Breakout Board.
-
-(image)
-
-Note how the Breakout Board, and potentially your host board, hide behind the display.
+When using the Breakout Board you can solder the display directly or solder a female header onto the Breakout Board. Make sure the header is placed on the back of the Breakout Board.
 
 (image)
 
-When using a ribbon cable, attention needs to be paid to the orientation of the connectors. The connector used is dual row. Pin 1 from the cable can be on the right side or the left side of the connector! For example, to use a standard IDE cable, a male to male gender changer is need. This is not simply a male-to-male header, but a small circuit that mirrors the pins appropriately.
-
-(image of connector)
-
-When using the Breakout Board with a ribbon cable, this can be resolved by placing the headers on the opposite side.
+Note how the Breakout Board, and potentially your host board, hide behind the display. This is a good advantage when mounting the display inside a product.
 
 (image)
-
 
 
 ### UCD-D43-A
