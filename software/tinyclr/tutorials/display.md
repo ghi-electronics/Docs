@@ -64,12 +64,12 @@ class Program {
 The `DisplayController.ActiveConfiguration` can be used to read the configuration at any time. The Width and Height can be used to write code that automatically scales to the display's resolution.
 
 The example above can be changed to automatically draw a line from corner to corner, no matter the display resolution.
-```
+```cs
 screen.DrawLine(redPen, 0, 0, displayController.ActiveConfiguration.Width-1, displayController.ActiveConfiguration.Height-1);
 ```
 
 ## Serial SPI/I2C Displays
-The internal grphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.
+The internal graphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.
 
 As each display has its own pixel format and color depth, you also have access to the way pixels are written in the graphics memory.
 
@@ -81,7 +81,7 @@ TinyCLR also provides low level display access as part of the `GHIElectronics.Ti
 
 The following example is written for the G120E Dev Board and will paint the screen as shown in the picture beneath the code. Note that low level display access requires that you to use the data format required by your display as configured. The G120E Dev Board used in this example expects each pixel to have 16 bits (two bytes per pixel) of color information in RGB565 format.
 
-```csharp
+```cs
 using GHIElectronics.TinyCLR.Devices.Display;
 
 class Program {
