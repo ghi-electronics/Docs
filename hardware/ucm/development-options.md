@@ -1,6 +1,6 @@
 # UCM Development Options
 ---
-![G400 Dev Board](../ucm/images/accessories-noborder.jpg)
+![G400 Dev Board](../ucm/images/development-options.jpg)
 
 These options are provided to speed the development of your product and make it possible to start programming your application within minutes without designing or building new hardware.
 
@@ -9,7 +9,7 @@ You may also use these products as quick drop-in options into your design as wel
 The [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md)
 
 ## UCM Dev Board
-![UCM Dev board](images/ucm-dev-board-noborder.jpg)
+![UCM Dev board](images/ucm-dev.jpg)
 
 Model Number: UCD-DEV-E	
 
@@ -78,21 +78,22 @@ Please note that this is a **Breakout Board** and it does not have any power sup
 
 A simple board can be designed and hand soldered to host the Breakout Board. You can turn an idea into a product prototype in days!
 
-(image)
+![UCM Breakout Power Pins](images/ucm-breakout-demo.jpg)
 
 To start using the breakout board, plug one of the UCMs into the socket on the board and wire in 3.3V (you may also need 5V) and plug in USB into your PC. Go to the documentation page for the particular UCM you are using for instructions.
 
 ## Universal Displays
+![UCM Breakout Power Pins](images/display-options.jpg)
 
 Available displays work directly with the options above, just make sure you are using a SoM supporting the needed peripherals. The Universal Displays can be connected directly or wired though a 40-pin ribbon cable, similar to the old-style IDE hard drive cables.
 
 To connect a display with the Dev Board, simply plug it on top.
 
-(image)
+![Connecting a Display](images/connect-display.jpg)
 
 The display can be larger than the board but it will still use the same connector (HDR C).
 
-(image)
+![Connecting a Display](images/large-display.jpg)
 
 When using the Breakout Board you can solder the display directly or solder a female header onto the Breakout Board.
 
@@ -102,7 +103,7 @@ Note how the Breakout Board, and potentially your host board, hide behind the di
 
 (image)
 
-When using a ribbon cable, attention needs to be paid to the orientation of the connectors. Teh connector used is dual row. Pin 1 from the cable can be on the right side or the left side of the connector! For example, to use a standard IDE cable, a male to male gender changer is need. This is not simply a male-to-male header, but a small circuit that mirrors the pins appropriately.
+When using a ribbon cable, attention needs to be paid to the orientation of the connectors. The connector used is dual row. Pin 1 from the cable can be on the right side or the left side of the connector! For example, to use a standard IDE cable, a male to male gender changer is need. This is not simply a male-to-male header, but a small circuit that mirrors the pins appropriately.
 
 (image of connector)
 
@@ -192,7 +193,7 @@ Display Module: ER-TFT070-4
 
 This display module has a 7" 800x480 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A.
 
-The display is exactly the same size as the Dev Board. Tehy can be nicely mounted back to back with stand offs. A ribbon cable will be needed for the display signals.
+The display is exactly the same size as the Dev Board. They can be nicely mounted back to back with stand offs. A ribbon cable will be needed for the display signals.
 
 (image)
 
