@@ -6,6 +6,8 @@ These options are provided to speed the development of your product and make it 
 
 You may also use these products as quick drop-in options into your design as well.
 
+The [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md)
+
 ## UCM Dev Board
 ![UCM Dev board](images/ucm-dev-board-noborder.jpg)
 
@@ -16,6 +18,45 @@ Model Number: UCD-DEV-E
 The UCM Dev Board is the fastest and easiest way to start using our Universal Compute Modules. This board provides a socket for the UCM, standard connectors for input/output, and three 40 pin socket headers for connecting peripherals and a display. Peripheral connectors include external power, Ethernet, CAN, USB host and client, RTC backup battery, DCMI interface and an SD card slot.  It also has a buzzer, LEDs, a reset button, and user programmable boot buttons.
 
 To start development using the UCM Dev Board, just plug a UCM into the socket on the board and connect the board to a host computer using a micro USB cable. Go to the documentation page for the particular UCM you are using for instructions.
+
+TinyCLR OS makes development a breeze! This example blinks the LED in a thread and sweeps the buzzer through frequencies in the main loop.
+```
+using System.Threading;
+using GHIElectronics.TinyCLR.Devices.Gpio;
+using GHIElectronics.TinyCLR.Devices.Pwm;
+using GHIElectronics.TinyCLR.Pins;
+
+class Program {
+    static void Blinker() {
+        var LED = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.C);
+        LED.SetDriveMode(GpioPinDriveMode.Output);
+        var state = false;
+        while (true) {
+            state = !state;
+            LED.Write(state? GpioPinValue.High: GpioPinValue.Low);
+            Thread.Sleep(100);
+        }
+    }
+    private static void Main() {
+        UCMStandard.SetModel(UCMModel.UC5550);
+        new Thread(Blinker).Start();
+
+        var freq = 1000;
+        var BuzzerCon = PwmController.FromName(UCMStandard.PwmChannel.A.Id);
+        var BuzzerChan = BuzzerCon.OpenChannel(UCMStandard.PwmChannel.A.Pin);
+        BuzzerChan.SetActiveDutyCyclePercentage(0.5);
+        BuzzerCon.SetDesiredFrequency(freq);
+        BuzzerChan.Start();
+        while (true) {
+            BuzzerCon.SetDesiredFrequency(freq);
+            if ((freq += 100) > 5000)
+                freq = 1000;
+            Thread.Sleep(20);
+        }
+    }
+}
+```
+
 
 ## UCM Breakout Board
 ![UCM Breakout](images/ucm-breakout.jpg)
@@ -29,6 +70,9 @@ The UCM Breakout Board provides a socket for UCMs, and both through hole and sur
 For added convenience, it also includes USB Client connector, a reset button, four user programmable boot buttons, and a micro SD card slot. 
 
 Please note that this is a **Breakout Board** and it does not have any power supplies. You will need to add 3.3V or 5V as needed to power up your modules. However, the power from USB is available on one of the pins (5V USB) so it is possible to wire a 3.3V regulator.
+
+> [!Tip]
+> There are 2 LEDs by the USB connector, for 3.3V and 5V. They are useful to check that you have supplied the necessary power.
 
 ![UCM Breakout Power Pins](images/ucm-breakout-power-pins.jpg)
 
