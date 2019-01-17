@@ -105,13 +105,13 @@ The display can be larger than the board but it will still use the same connecto
 
 ![Large Display](images/large-display.jpg)
 
-When using the Breakout Board you can solder the display directly or solder a female header onto the Breakout Board. Make sure the header is placed on the back of the Breakout Board.
+When using the Breakout Board you need to add a female header. Make sure the header is placed on the back of the Breakout Board.
 
-(image)
+![UCM Breakout with Female Header](images/ucm-breakout-female-header.jpg)
 
 Note how the Breakout Board, and potentially your host board, hide behind the display. This is a good advantage when mounting the display inside a product.
 
-(image)
+![UCM Breakout with Display Connected to Header](images/ucm-display-connected-header.jpg)
 
 
 ### UCD-D43-A
@@ -196,7 +196,7 @@ This display module has a 7" 800x480 TFT display with capacitive touch screen. T
 
 The display is exactly the same size as the Dev Board. They can be nicely mounted back to back with stand offs. A ribbon cable will be needed for the display signals.
 
-(image)
+![UCM Breakout with Display Connected to IDE](images/ucm-display-connected-ide.jpg)
 
 This is an example code using the display. For more details, see the [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md) tutorials.
 
