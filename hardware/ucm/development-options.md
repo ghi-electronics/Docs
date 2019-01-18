@@ -178,10 +178,7 @@ class Program {
     }
 }
 ```
-
-For the capacitive touch screen, a driver is provided as a NuGet package.
-
-(where is the touch tutorial?)
+The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
 
 ### UCD-D70-A
 ![UD700](images/ud700.jpg)
@@ -252,10 +249,7 @@ class Program {
     }
 }
 ```
-For the capacitive touch screen, a driver is provided as a NuGet package.
-
-(where is the touch tutorial?)
-
+The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
 
 ***
 

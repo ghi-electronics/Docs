@@ -1,5 +1,19 @@
 # Graphics
+---
+TinyCLR OS support includes two level of graphics support, the core elements and User Interface.
 
+## Core Elements
+`System.Drawing` includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.
+
+Shape examples are `Graphics.FillEllipse`, `Graphics.DrawLine` and `Graphics.DrawRectangle`. These methods need `Pen` and `Brush` that are also part of `Graphics`.
+
+For images, TinyCLR OS supports BMP, GIF and JPG. Depending on your hardware,'s limitation, one or more of these image formats maybe supported. Images can be loaded from storage memory or network but the simplest option is to load from a resource.
+
+A complete font support is included. Fonts are covered later on this page.
+
+It is important to note that drawing functions process graphics in RAM independently from any display. The display driver then transfers the pixels from the internal memory to the display, through `Graphics.Flush`. Learn more about the [display](display.md) support.
+
+## User Interface
 You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
 
 ```cs
