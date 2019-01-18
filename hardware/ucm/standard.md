@@ -6,7 +6,7 @@ The UCM Standard defines a consistent hardware and software interface for the mo
 
 When designing a product, consider following thee UCM standard pinout. This will make your design compatible with any of the UCM modules.
 
-Software also become more portable with the UCM standard and the provided support in TinyCLR OS. This code will use a pin on GPIO A, no matter what module is in use. The software automatically maps the pin to apropiate pin. For example, on UC5550, GPIO_A is pin PD7. So, these 2 lines give identical outcome.
+Software also become more portable with the UCM standard and the provided support in TinyCLR OS. This code will use a pin on GPIO A, no matter what module is in use. The software automatically maps the pin to appropriate pin. For example, on UC5550, GPIO_A is pin PD7. So, these 2 lines give identical outcome.
 
 ```cs
 // The internal system will know it is PD7 if UC5550 is used.
