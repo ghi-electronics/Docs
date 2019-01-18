@@ -72,7 +72,7 @@ The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Document
 > You can only use Visual Studio 2013, not a newer edition, unless you are using your Gadgeteer hardware [with TinyCLR OS](#with-tinyclr-os).
 
 ## With TinyCLR OS
-All .NET Gadgeteer devices are still useable today, and with the latest technologies, thanks to efforts by GHI Electronics and the community. 
+All .NET Gadgeteer devices are still usable today, and with the latest technologies, thanks to efforts by GHI Electronics and the community. 
 
 It all started in this video!
 

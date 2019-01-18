@@ -3,7 +3,7 @@
 ![FEZ](images/fez-noborder.jpg)
 
 ## The Maker Board to Rule Them All!
-FEZ (fast and easy) is our magnificient maker board. This low cost board offers Arduino pinout compatibility, optional Wi-Fi for IOT applications, and can be programmed using multiple programming languages and development environments.
+FEZ (fast and easy) is our magnificent maker board. This low cost board offers Arduino pinout compatibility, optional Wi-Fi for IOT applications, and can be programmed using multiple programming languages and development environments.
 
 Pricing, purchasing and other information can be found on the [FEZ page](https://www.ghielectronics.com/products/FEZ) on our main website.
 
