@@ -73,7 +73,7 @@ class Program {
     }
 }
 ```
-The output will show both times and they should match. The first time time maybe invalid and the time is set but the second power up will show the correct time.
+The output will show both times and they should match. The first time maybe invalid and the time is set but the second power up will show the correct time.
 
 ```
 RTC is Valid

@@ -110,7 +110,7 @@ namespace UI {
 }
 ```
 ## User Input
-A user can feed in input to the graphcial interface through touch or button input. The earlier example shows how it is done.
+A user can feed in input to the graphical interface through touch or button input. The earlier example shows how it is done.
 
 ```cs
 app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
