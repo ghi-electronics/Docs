@@ -19,6 +19,11 @@ The UCM Dev Board is the fastest and easiest way to start using our Universal Co
 
 To start development using the UCM Dev Board, just plug a UCM into the socket on the board and connect the board to a host computer using a micro USB cable. Go to the documentation page for the particular UCM you are using for instructions.
 
+For power, the board can be powered through either USB connectors or the barrel jack. Always use the barrel jack for power when using displays, especially the larger ones. USB does not provide sufficient power needed for displays.
+
+> [!Tip]
+> The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 7V to 30V. 1A of power should be enough for most needs.
+
 TinyCLR OS makes development a breeze! This example blinks the LED in a thread and sweeps the buzzer through frequencies in the main loop.
 ```
 using System.Threading;
@@ -113,6 +118,9 @@ Note how the Breakout Board, and potentially your host board, hide behind the di
 
 ![UCM Breakout with Display Connected to Header](images/ucm-display-connected-header.jpg)
 
+Adding a ribbon cable allows for further flexibility on where and how far the display is mounted. The length of the cable is determined by clock frequency used with the display. If the image on the display is not stable, lower the clock or shorten the cable. In our testing, our display have worked perfectly with 10" cable.
+
+(add pictures of cable being used)
 
 ### UCD-D43-A
 ![UD435](images/ud435.jpg)
@@ -178,7 +186,7 @@ class Program {
     }
 }
 ```
-The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
 
 ### UCD-D70-A
 ![UD700](images/ud700.jpg)
@@ -249,7 +257,11 @@ class Program {
     }
 }
 ```
-The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+
+## Custom Boards
+
+The "Display Interface" utilized on development options include TFT parallel 16bit/24bit bus, I2C bus, SPI, bus and 2 GPIOs. It is possible to design a custom display to utilize the UCM mainboards or design a mainboard that utilize the available display. Additionally, these designs can be used as a reference to start a UCMbased design. GHI Electronics' engineering/manufacturing is available for such designs.
 
 ***
 
