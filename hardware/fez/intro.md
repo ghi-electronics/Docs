@@ -3,11 +3,9 @@
 ![FEZ](images/fez-noborder.jpg)
 
 ## The Maker Board to Rule Them All!
-FEZ (fast and easy) is our magnificient maker board. This low cost board offers Arduino pinout compatibility, optional Wi-Fi for IOT applications, and can be programmed using multiple programming languages and development environments.
+FEZ (fast and easy) is our magnificent maker board. This low cost board offers Arduino pinout compatibility, optional WiFi for IoT applications, and can be programmed using multiple programming languages and development environments. However, we are focused on TinyCLR OS support to program the board in .NET C# and Visual Basic.
 
 Pricing, purchasing and other information can be found on the [FEZ page](https://www.ghielectronics.com/products/FEZ) on our main website.
-
-### Specifications
 
 | Spec           | Value                           |
 |----------------|---------------------------------|
@@ -17,7 +15,6 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 | Internal Flash | 512 KByte                       |
 | Dimensions     | 70.6 x 56.0 x 14.5 mm           |
 
-### Peripherals*
 
 | Peripheral         | Quantity          |
 |--------------------|-------------------|
@@ -36,12 +33,16 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 
 ![FEZ Pinout](images/fez.gif)
 
-### Resources
+## Resources
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20T18%20Rev%20D%20Schematic.pdf)
 * [TinyCLR Tutorials](../../software/tinyclr/tutorials/intro.md)
-* [Instructions](../components/spwf04sa.md) for updating the Wi-Fi module firmware.
+* [Instructions](../components/spwf04sa.md) for updating the WiFi module firmware.
 
-### Programming Options
+FEZ can be powered through the USB connector and/or the power connector. The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 7V to 12V. 500mA of power should be enough for most needs.
+
+Our TinyCLR operating system lets you program the FEZ (and other devices) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](tinyclr.md).
+
+## Programming Options
 
 |  |  |
 |--|--|
@@ -53,7 +54,5 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 | [![Sample Code](images/code.png)](bare-metal.md) | [![Accessories](images/projects.png)](shields/shields.md)
 
 ***
-
-Our TinyCLR operating system lets you program the FEZ (and other devices) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](tinyclr.md).
 
 Visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
