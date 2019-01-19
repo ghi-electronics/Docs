@@ -24,6 +24,7 @@ For power, the board can be powered through either USB connectors or the barrel 
 > [!Tip]
 > The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 7V to 30V. 1A of power should be enough for most needs.
 
+
 TinyCLR OS makes development a breeze! This example blinks the LED in a thread and sweeps the buzzer through frequencies in the main loop.
 ```
 using System.Threading;
