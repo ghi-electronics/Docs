@@ -1,6 +1,6 @@
 # UCM Development Options
 ---
-![G400 Dev Board](../ucm/images/development-options.jpg)
+![Development Options](../ucm/images/development-options.jpg)
 
 These options are provided to speed the development of your product and make it possible to start programming your application within minutes without designing or building new hardware.
 

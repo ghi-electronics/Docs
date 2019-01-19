@@ -27,7 +27,7 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 | 12 Bit ADC         | 8                 |
 | CAN                | 0                 |
 | USB Client         | 1                 |
-| Wi-Fi              | Optional          |
+| WiFi              | Optional          |
 
 \**Note:  Many peripherals share I/O pins.  Not all peripherals will be available to your application.*
 
@@ -38,7 +38,7 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 * [TinyCLR Tutorials](../../software/tinyclr/tutorials/intro.md)
 * [Instructions](../components/spwf04sa.md) for updating the WiFi module firmware.
 
-FEZ can be powered through the USB connector and/or the power connector. The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 7V to 12V. 500mA of power should be enough for most needs.
+FEZ can be powered through the USB connector and/or the power connector. The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 6V to 9V. 500mA of power should be enough for most needs.
 
 Our TinyCLR operating system lets you program the FEZ (and other devices) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](tinyclr.md).
 
