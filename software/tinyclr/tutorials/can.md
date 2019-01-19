@@ -131,7 +131,7 @@ class Program {
     private static void Can_MessageReceived(CanController sender, MessageReceivedEventArgs e) {
         sender.ReadMessage(out var message);
 
-        Debug.WriteLine("Arbritration ID: 0x" + message.ArbitrationId.ToString("X8"));
+        Debug.WriteLine("Arbitration ID: 0x" + message.ArbitrationId.ToString("X8"));
         Debug.WriteLine("Is extended ID: " + message.IsExtendedId.ToString());
         Debug.WriteLine("Is remote transmission request: " + message.IsRemoteTransmissionRequest.ToString());
         Debug.WriteLine("Time stamp: " + message.TimeStamp.ToString());

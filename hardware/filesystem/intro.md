@@ -52,7 +52,7 @@ This board wires the F40 in SD-reader mode.
 
 This kit offers everything needed to evaluate F40 (ALFAT) and the different ALFAT OEM boards.
 
-The kit incudes:
+The kit includes:
 1. ALFAT OEM board
 2. ALFAT SDR board
 3. ALFAT EVAL carrier board

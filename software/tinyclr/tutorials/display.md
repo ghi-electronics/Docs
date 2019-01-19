@@ -129,4 +129,5 @@ class Program {
 ```
 
 G120E Dev Board display after running the sample code:
+
 ![Low Level Display Sample](images/low-level-display-sample.jpg)
