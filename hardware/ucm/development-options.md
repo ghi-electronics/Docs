@@ -84,13 +84,11 @@ Please note that this is a **Breakout Board** and it does not have any power sup
 
 A simple board can be designed and hand soldered to host the Breakout Board. You can turn an idea into a product prototype in days!
 
-This example board example (in green) is made to be the exact same size as the 4.3" universal display board. 
+This example board example (in green) is made to be the exact same size as the 4.3" universal display board.
+
+It can be designed with the display connector conveniently located in the right place.  
 
 ![UCM Breakout Demo](images/ucm-breakout-demo.jpg)
-
-It can be designed with the display connector conveniently located in the right place. 
-
-![UCM Breakout Demo Connector](images/ucm-demo-connector.jpg)
 
 To start using the breakout board, plug one of the UCMs into the socket on the board and wire in 3.3V (you may also need 5V) and plug in USB into your PC. Go to the documentation page for the particular UCM you are using for instructions.
 
