@@ -1,4 +1,4 @@
-# UCM Development Options
+ # UCM Development Options
 ---
 ![Development Options](../ucm/images/development-options.jpg)
 
@@ -80,9 +80,7 @@ Please note that this is a **Breakout Board** and it does not have any power sup
 > [!Tip]
 > There are 2 LEDs by the USB connector, for 3.3V and 5V. They are useful to check that you have supplied the necessary power.
 
-(change image)
-
-![UCM Breakout Power Pins](images/ucm-breakout-power-pins.jpg)
+![UCM Breakout Power Pins](images/ucm-breakout-regulator.jpg)
 
 A simple board can be designed and hand soldered to host the Breakout Board. You can turn an idea into a product prototype in days!
 
