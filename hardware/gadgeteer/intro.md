@@ -2,14 +2,14 @@
 ---
 ![Gadgeteer](images/gadgeteer.jpg)
 
-.NET Gadgeteer is a **discontinued** technology that was initiated by Microsoft Research and taken to production by GHI Electronics in the year 2011. .NET Gadgeteer had a great few year run, where it was loved for its plug-and-play mainboard and modules.
+.NET Gadgeteer is a discontinued technology that was initiated by Microsoft Research and taken to production by GHI Electronics in the year 2011. .NET Gadgeteer had a great few year run, where it was loved for its plug-and-play mainboard and modules.
 
 > [!Tip]
 > We will refer to .NET Gadgeteer as Gadgeteer throughout the rest of the documentation.
 
 The core of .NET Gadgeteer is .NET Micro Framework (NETMF). Like Gadgeteer, NETMF is no longer evolved by Microsoft and left for the community. [Learn more about NETMF](../../software/netmf/intro.md)
 
-Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to [announce](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197) the EOL for Gadgeteer; however, the Gadgeteer hardware can still be used [with TinyCLR OS](#with-tinyclr-os).
+Sadly, and after 5 years of building modules and mainboards, GHI Electronics had to [announce](https://forums.ghielectronics.com/t/the-future-of-gadgeteer/197) the EOL for Gadgeteer; however, most of the Gadgeteer hardware can still be used [with TinyCLR OS](#with-tinyclr-os).
 
 External resources:
 * Microsoft's .NET Gadgeteer website (down) http://www.gadgeteer.com/
@@ -18,7 +18,6 @@ External resources:
 Most of the Gadgeteer ecosystem is open-source:
 *	Microsoft's [.NET Gadgeteer Core](http://gadgeteer.codeplex.com/)
 *	GHI Electronics' [Software sources and Hardware design files]( https://github.com/ghi-electronics/NETMF-Gadgeteer)
-*	The Gadgeteer graphical designer was never made available by Microsoft.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQlTLNOCl90" frameborder="0" allowfullscreen></iframe>
 
@@ -72,7 +71,7 @@ The [Gadgeteer for Beginners](http://files.ghielectronics.com/downloads/Document
 > You can only use Visual Studio 2013, not a newer edition, unless you are using your Gadgeteer hardware [with TinyCLR OS](#with-tinyclr-os).
 
 ## With TinyCLR OS
-All .NET Gadgeteer devices are still usable today, and with the latest technologies, thanks to efforts by GHI Electronics and the community. 
+Most of the .NET Gadgeteer devices are still usable today, and with the latest technologies, thanks to efforts by GHI Electronics and the community. 
 
 It all started in this video!
 
