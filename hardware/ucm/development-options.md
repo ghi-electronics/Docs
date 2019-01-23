@@ -99,9 +99,9 @@ To start using the breakout board, plug one of the UCMs into the socket on the b
 ## Universal Displays
 ![Display Options](images/display-options.jpg)
 
-Available displays work directly with the options above, just make sure you are using a SoM supporting the needed peripherals. The Universal Displays can be connected directly or wired though a 40-pin ribbon cable, similar to the old-style IDE hard drive cable extender.
+Available displays work directly with the options above, just make sure you are using a SoM supporting the needed peripherals. The Universal Displays can be connected directly or wired though a 40-pin IDE extension ribbon cable, similar to the old-style IDE hard drive cable extender, with a Male connector on one end and a Female connector on the other. 
 
-(image of cable extender)
+![IDE Extender Cable](images/ide-cable.jpg)
 
 To connect a display with the Dev Board, simply plug it on top.
 
@@ -113,15 +113,13 @@ The display can be larger than the board but it will still use the same connecto
 
 When using the Breakout Board you need to add a female header. Make sure the header is placed on the back of the Breakout Board.
 
-![UCM Breakout with Female Header](images/ucm-breakout-female-header.jpg)
-
 Note how the Breakout Board, and potentially your host board, hide behind the display. This is a good advantage when mounting the display inside a product.
 
-![UCM Breakout with Display Connected to Header](images/ucm-display-connected-header.jpg)
+![UCM Breakout with Female Header](images/ucm-breakout-female-header.jpg)
 
 Adding a ribbon cable allows for further flexibility on where and how far the display is mounted. The length of the cable is determined by clock frequency used with the display. If the image on the display is not stable, lower the clock or shorten the cable. In our testing, our display have worked perfectly with 10" cable.
 
-(add pictures of cable being used)
+![UCM Display Extended with IDE Cable](images/ucm-display-cable.jpg)
 
 ### UCD-D43-A
 ![UD435](images/ud435.jpg)
