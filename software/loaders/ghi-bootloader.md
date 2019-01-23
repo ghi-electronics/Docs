@@ -92,13 +92,13 @@ File | Date | Status | MD5
 [v2.0.5](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.5.dfu) | 2018-09-28 | Alpha | 9F4DB868E5501773CC52048D8085B8D6
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 594744A52EC07CEFE6212669D33A5FE1
 
-### G120
+### G120 (G120 and G120E)
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | 7052D6FFB1890987DDCC4043895788D3
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
-### G400
+### G400 (G400S and G400D)
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.4.bin) | 2017-09-13 | Alpha | BD46D86D41DCD42C4FC50D27AF02E5EE
