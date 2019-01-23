@@ -1,6 +1,12 @@
 # File System
 ---
-The file system library can be used to read and write files from an SD card. The below example requires the `GHIElectronics.TinyCLR.IO` and `GHIElectronics.TinyCLR.Storage` libraries and a device with an SD card.
+The file system library can be used to read and write files. FAT16 and FAT32 are supported.
+
+## USB Mass Storage
+This allows file access on USB devices with MSC class, such as USB memory sticks. The support for USB drives is still not publicly available.
+
+## SD Card
+The below example requires the `GHIElectronics.TinyCLR.IO` and `GHIElectronics.TinyCLR.Storage` libraries and a device with an SD card.
 
 ```csharp
 using GHIElectronics.TinyCLR.Devices.Storage;
