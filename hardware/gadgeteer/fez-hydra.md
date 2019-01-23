@@ -30,4 +30,4 @@ Once a firmware is built, the following instructions describe how to set up your
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader v2, hold the LDR0 (socket 3, pin 3) signal low while resetting the board.
+To activate bootloader v2, hold the LDR0 (socket 3, pin 3) signal low while resetting the board.  You can now load the firmware as explained on the [GHI Bootloader](../../software/loaders/ghi-bootloader.md) page.

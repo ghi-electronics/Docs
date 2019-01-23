@@ -26,7 +26,7 @@ EMX comes with Bootloader v1 pre-installed. To install v2 of the bootloader, fol
 To activate bootloader v2, set Pin3 low and then reset your board.
 
 
-Now you can follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Now you can follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md) steps.
 
 ## EMX Dev Sys
 ![EMX Dev Sys](images/emx-dev-sys.jpg)

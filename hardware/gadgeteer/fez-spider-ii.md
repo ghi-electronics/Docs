@@ -30,5 +30,4 @@ Follow the instructions on the [G120 page](../scm/g120.md) to learn how to use F
 
 ### Loading the Firmware
 
-> [!Tip]
-> To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.
+To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.  You can now load the firmware as explained on the [GHI Bootloader](../../software/loaders/ghi-bootloader.md) page.

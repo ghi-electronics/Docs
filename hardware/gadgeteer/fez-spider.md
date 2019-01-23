@@ -42,4 +42,4 @@ See the [EMX page](../scm/emx.md) for possible options.
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.
+To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.  You can now load the firmware as explained on the [GHI Bootloader](../../software/loaders/ghi-bootloader.md) page.
