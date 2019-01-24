@@ -14,8 +14,10 @@ Here you will find GHI Electronic's product documentation.  For more information
 | [![uc5550](images/uc5550.jpg)](hardware/ucm/intro.md) | [![G400S](images/g400s.jpg)](hardware/scm/intro.md) |
 | **FEZ** </br> The Maker Board to Rule Them All! [**Learn More...**](hardware/fez/intro.md)| **TinyCLR Operating System** </br> TinyCLR OS is light weight .NET operating system for IoT and embedded devices. [**Learn More...**](software/tinyclr/intro.md) |
 | [![FEZ](hardware/fez/images/fez.jpg)](hardware/fez/intro.md) | [![tinyCLR](images/tinyclrlogo.jpg)](software/tinyclr/intro.md) |
-| **NETMF** </br> The original embedded .NET upon which TinyCLR OS is based [**Learn More...**](software/netmf/intro.md) | **Legacy Products** </br> Here you will find information on GHI's legacy products and longevity policy. [**Learn More...**](legacy/intro.md) |
-| [![NETMF Logo](images/netmf-logo.png)](software/netmf/intro.md) | [![legacy](images/legacy.jpg)](legacy/intro.md) |
+| **NETMF** </br> The original embedded .NET upon which TinyCLR OS is based [**Learn More...**](software/netmf/intro.md) | **File System** </br> Technical details and manuals for the File System products. [**Learn More...**](/filesystem/intro.md) |
+| [![NETMF Logo](images/netmf-logo.png)](software/netmf/intro.md) | [![file systems](images/file-system.jpg)](hardware/filesystem/intro.md) |
+| **Legacy Products** </br> Here you will find information on GHI's legacy products and longevity policy. [**Learn More...**](legacy/intro.md) |
+| [![legacy](images/legacy.jpg)](legacy/intro.md) |
 
 ***
 

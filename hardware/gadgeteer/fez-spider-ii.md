@@ -14,7 +14,7 @@ Follow the instructions on the [G120 page](../scm/g120.md) to learn how to use F
 
 ### Loading Bootloader v2
 
-1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md#g120)
+1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md)
 2. Set the board's configuration switches in boot mode. That is by setting switches #1 and #2 to the on position.
 3. Connect the FEZ Spider to a power module (red module) and then to a PC.
 4. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../software/netmf/intro.md) SDK.
@@ -30,5 +30,4 @@ Follow the instructions on the [G120 page](../scm/g120.md) to learn how to use F
 
 ### Loading the Firmware
 
-> [!Tip]
-> To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.
+To activate bootloader v2, set the configuration switch #1 to the on position and then reset your board. Make sure to set back to off after loading the firmware.  You can now load the firmware as explained on the [GHI Bootloader](../../software/loaders/ghi-bootloader.md) page.

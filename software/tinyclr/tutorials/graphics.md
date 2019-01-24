@@ -1,5 +1,19 @@
 # Graphics
+---
+TinyCLR OS support includes two level of graphics support, the core elements and User Interface.
 
+## Core Elements
+The `GHIElectronics.TinyCLR.Drawing` NuGet package includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.
+
+Shape examples are `Graphics.FillEllipse`, `Graphics.DrawLine` and `Graphics.DrawRectangle`. These methods need `Pen` and `Brush` that are also part of `Graphics`.
+
+For images, TinyCLR OS supports BMP, GIF, and JPG. Depending on your hardware's limitation, one or more of these image formats maybe supported. Images can be loaded from a `stream` but the simplest option is to load from a resource. BMP supports 256 colors and 24bit. GIF does not support animated images.
+
+Fonts are well supported. They are covered later on this page.
+
+It is important to note that drawing functions process graphics in RAM independently from any display. The display driver then transfers the pixels from the internal memory to the display, through `Graphics.Flush`. Learn more about the [display](display.md) support.
+
+## User Interface
 You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
 
 ```cs
@@ -95,8 +109,9 @@ namespace UI {
     }
 }
 ```
+
 ## User Input
-A user can feed in input to the graphcial interface through touch or button input. The earlier example shows how it is done.
+A user can feed in input to the graphical interface through touch or button input. The earlier example shows how it is done.
 
 ```cs
 app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
@@ -105,14 +120,7 @@ app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
 
 ## Fonts
 
-Fonts can be included in your TinyCLR application by adding them as a resource. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool.
-
-### Converting TrueType Fonts
-
-> [!Note]
-> Many fonts are copyrighted. It is up to you to make sure you can legally use a specific TrueType font in your application.
-
-TrueType fonts must be converted to a .tcfnt file before you can add them to your TinyCLR application. [Font Converter](../downloads.md#tinyclr-font-converter) is a command line utility which does just that. It can be found on the [Downloads page](../downloads.md#tinyclr-font-converter). 
+Fonts can be included in your TinyCLR application by adding them as a resource. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under [downloads](../downloads.md) is a command line utility which does just that.
 
 To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. A minimal .fntdef file may look like this to have the standard ASCII characters.
 
@@ -122,7 +130,7 @@ ImportRange 32 126
 ```
 
 > [!TIP]
-> This third-party [tool](http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx) can be handy for generating fonts.
+> This [third-party tool](http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx) can be handy for generating fonts.
 
 The .fntdef file options are as follows:
 

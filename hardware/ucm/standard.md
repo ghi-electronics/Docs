@@ -4,6 +4,10 @@
 
 The UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  
 
+When designing a product, consider following thee UCM standard pinout. This will make your design compatible with any of the UCM modules.
+
+Software also becomes more portable with the UCM standard. For example, our TinyCLR OS provides a library to automatically map the UCM standard names to the underlying system so that your program can use the UCM standard names only, making changing to a different module very easy.
+
 ## The SO-DIMM Socket
 
 ![200 pin DDR2 SO-DIMM socket](images/200-pin-ddr2-so-dimm.jpg)
@@ -20,7 +24,7 @@ SO-DIMM stands for Small Outline Dual Inline Memory Module. There are two differ
 
 Here is a link to the manufacturer's web page for the connector we use on our boards: [EMBOSS ASSY DDR2 SODIMM SOCKET 200P 5.2H](http://www.te.com/usa-en/product-1565917-4.html)
 
-## UCM Standard Peripherals*
+## Peripherals
 | Peripheral                                            | Up to Max |
 |-------------------------------------------------------|-----------|
 | UART (Universal Asynchronous Receiver/Transmitter)    | 4         |
@@ -41,37 +45,43 @@ Here is a link to the manufacturer's web page for the connector we use on our bo
 | VBAT (Battery Backup for RTC)                         | 1         |
 | JTAG (Debug Serial Port)                              | 1         |
 
-\**Available peripherals vary by model.*
+\**Available peripherals vary by model*
 
-### UART (Universal Asynchronous Receiver/Transmitter)
-UART is used to implement moderate speed full duplex asynchronous serial communication.  It is usually used for peer to peer communication between only two devices. It can transfer data using only one wire for each direction if both devices share a common ground. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/uart.md)
+Note that the system defines 12 GPIOs that are free from any other functions but most other peripheral pins also support GPIO, giving the user several more GPIO pin options -- keep in mind the standard does not guarantee this though.
+
+> [!Tip]
+> The [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) are a good resource on using these peripherals.
+
+
+### UART (Universal Asynchronous Receiver Transmitter)
+UART is used to implement moderate speed full duplex asynchronous serial communication.  It is usually used for peer to peer communication between only two devices. It can transfer data using only one wire for each direction if both devices share a common ground.
 
 ### UART HS (Handshaking)
 UART with handshaking is a configuration which allows the host and client to negotiate data transfer via *Ready to Send* (RTS) and *Clear to Send* (CTS) signals (two additional wires) to prevent missed data.
 
 ### I2C (Inter-Integrated Circuit)
-I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/i2c.md)
+I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI.
 
 ### SPI (Serial Peripheral Interface)
-SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/spi.md)
+SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C.
 
 ### CAN (Controller Area Network)
-A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/can.md)
+A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length.
 
 ### SDIO (SD Card)
 SDIO (Secure Digital Input Output) is an interface used for reading from and writing to SD cards.
 
 ### ADC (Analog to Digital Converter)
-ADCs are used to measure an analog voltage level by converting it to a digital value. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/adc.md)
+ADCs are used to measure an analog voltage level by converting it to a digital value.
 
 ### PWM (Pulse Width Modulation)
-PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/pwm.md)
+PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication.
 
 ### GPIO (General Purpose Input/Output)
-GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be used to perform more advanced communication and control duties. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md)
+GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be used to perform more advanced communication and control duties.
 
 ### IRQ (Interrupt Request Capable GPIO)
-IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a Wi-Fi module to tell the processor that the Wi-Fi module is receiving data.  The processor would then stop what it is doing to get the data from the Wi-Fi module. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/gpio.md#digital-input-events)
+IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a Wi-Fi module to tell the processor that the Wi-Fi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module.
 
 ### USB Client
 Used to communicate with a USB host.  Often used to program and debug embedded devices.
@@ -80,13 +90,13 @@ Used to communicate with a USB host.  Often used to program and debug embedded d
 Used to communicate with one or more USB clients.  Typically used to communicate with various devices such as a mouse, keyboard, camera, etc.
 
 ### LCD (TFT Controller - 16bpp or 24bpp)
-An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed. [*Sample TinyCLR code*](../../software/tinyclr/tutorials/display.md)
+An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed.
 
 ### Ethernet PHY
 Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals for the Ethernet connector.
 
 ### DCMI (Digital Camera Interface)
-A standard interface for compatable digital cameras.
+A standard interface for compatible digital cameras.
 
 ### VBAT (Battery Backup for RTC)
 VBAT is used to provide battery voltage to a microcontroller's real time clock.  It allows the microcontroller to keep the correct time when the main power to the controller is disconnected (the device is turned off). 
@@ -94,7 +104,7 @@ VBAT is used to provide battery voltage to a microcontroller's real time clock. 
 ### JTAG
 JTAG is a serial interface which allows communication between the processor and a host computer.  It is built into the microcontroller and provides a means of software debugging including the ability to stop program execution, single step through program instructions, and read and write to memory and processor registers.
 
-## UCM Standard Pin Assignments
+## Pin Assignments
 | SO-DIMM Pin   | Universal Compute Standard    |
 |---------------|-------------------------------|
 | 1             | AGND                          |
@@ -203,11 +213,11 @@ JTAG is a serial interface which allows communication between the processor and 
 | 104           | ADC C                         |
 | 105           | PWM A                         |
 | 106           | 3.3V                          |
-| 107           | System A                      |
+| 107           | SYS A                         |
 | 108           | Module Specific 2             |
 | 109           | Module Specific 3             |
 | 110           | ADC D                         |
-| 111           | System C                      |
+| 111           | SYS C                         |
 | 112           | PWM B                         |
 | 113           | GND                           |
 | 114           | ADC E                         |
@@ -230,8 +240,8 @@ JTAG is a serial interface which allows communication between the processor and 
 | 131           | GND                           |
 | 132           | GPIO K                        |
 | 133           | PWM D                         |
-| 134           | System B                      |
-| 135           | System D                      |
+| 134           | SYS B                         |
+| 135           | SYS D                         |
 | 136           | GPIO L                        |
 | 137           | Module Specific 10            |
 | 138           | UART HS B RTS                 |

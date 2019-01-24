@@ -21,18 +21,18 @@ PB10 is the MODE pin, which is used to select between USB and serial interfaces 
 LDR0 and LDR1 are PC1 and PC3 respectively. Setting LDR0 low on power up puts the device into bootloader mode. Setting LDR1 low will execute the firmware but will stop the application from running.
 
 ### Loading Bootloader v2
-1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md#cerb).
+1. Download the [bootloader file](../../software/loaders/ghi-bootloader.md).
 2. Press and hold the BOOT button down while resetting the board. 
 3. If there is no BOOT button, there will be shunt-footprint labeled BOOT or LDR. Short the 2 pads with a wire while resetting the board.
 4. The system will now detect an ST DFU device.
-5. Read more on [uploading DFU files](../../software/loaders/stm32-bootloader.md#uploading-dfu-files) on STM32 microcontrollers.
+5. Read more on the [STM32 bootloader](../../software/loaders/stm32-bootloader.md) to learn about loading DFU files.
 
 ### Loading the Firmware
 
 > [!Tip]
 > First make sure you have bootloader v2 loaded. This needs to be done only once.
 
-To activate bootloader v2, set PC1 pin low.
+To activate bootloader v2, set PC1 pin low. You can now load the firmware as explained on the [GHI Bootloader](../../software/loaders/ghi-bootloader.md) page.
 
 ## FEZ Game-O
 ![FEZ Game-O](images/fez-gameo.jpg)

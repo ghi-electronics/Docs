@@ -24,6 +24,8 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 
 ## Loading the Firmware
 
+The individual product pages include further instructions on the firmware needed and how to set the board in the loader mode. Once you have downloaded the firmware and set the board in loader mode, use the instructions below to load the firmware.
+
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
@@ -71,9 +73,9 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 > [!Tip]
 > The USB interface on Version 1.0 doesn't always work on Windows 7 and newer operating systems. Use the serial interface instead.
 
-## Downloads
+## Loading the Bootloader
 
-Here you can find the various bootloaders available for the various products.
+Most products already ship with bootloader already installed. But in case the loader needs to be loaded, the individual product pages include instructions on how to load the bootloader. Here you can find the various bootloaders available for the various products.
 
 ### FEZCLR (used on FEZ and BrainPad)
 File | Date | Status | MD5
@@ -92,13 +94,13 @@ File | Date | Status | MD5
 [v2.0.5](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.5.dfu) | 2018-09-28 | Alpha | 9F4DB868E5501773CC52048D8085B8D6
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/UC5550%20Bootloader%20v2.0.4.dfu) | 2018-04-05 | Alpha | 594744A52EC07CEFE6212669D33A5FE1
 
-### G120
+### G120 and G120E
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.4.ghi) | 2017-08-31 | Alpha | 7052D6FFB1890987DDCC4043895788D3
 [v2.0.2](http://files.ghielectronics.com/downloads/Bootloaders/G120%20Bootloader%20v2.0.2.ghi) | 2017-03-07 | Alpha | 00ECD55A24607336863B1D61B91C3D86
 
-### G400
+### G400S and G400D
 File | Date | Status | MD5
 --- | --- | --- | ---
 [v2.0.4](http://files.ghielectronics.com/downloads/Bootloaders/G400%20Bootloader%20v2.0.4.bin) | 2017-09-13 | Alpha | BD46D86D41DCD42C4FC50D27AF02E5EE

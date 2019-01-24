@@ -1,6 +1,6 @@
 # .NET Gadgeteer Modules
 ---
-This page lists all .NET Gadgeteer modules and how they can be used with [TinyCLR OS](../../software/tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software, which we discourage,  then read the [.NET Gadgeteer Intro](intro.md) page.
+This page lists all .NET Gadgeteer modules and hints on how they can be used with [TinyCLR OS](../../software/tinyclr/intro.md). If you are planning on using the old NETMF/Gadgeteer software then read the [.NET Gadgeteer Intro](intro.md) page.
 
 > [!Tip]
 > You can use Intellisense with the pin definition class to quickly determine where things go.
@@ -8,7 +8,7 @@ This page lists all .NET Gadgeteer modules and how they can be used with [TinyCL
 > Another example: Typing `FEZSpider.UartPort.` lists all available UART sockets (that is "U" in the old Gadgeteer standard)
 
 > [!Tip]
-> We will be using the original, and most popular, FEZ Spider as a base for this page but any other mainboard will work very similarly.
+> There are community made NuGet drivers for many of the modules.
 
 
 ## Accel G248

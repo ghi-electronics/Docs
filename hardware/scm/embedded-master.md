@@ -25,4 +25,4 @@ Embedded master comes with Bootloader v1 pre-installed. To install v2 of the boo
 
 To activate bootloader v2, set the up-pin low and then reset your board. To enter USB mode, set the select-pin.
 
-Now you can follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md#loading-the-firmware) steps.
+Now you can follow [Loading the Firmware](../../software/loaders/ghi-bootloader.md) steps.
