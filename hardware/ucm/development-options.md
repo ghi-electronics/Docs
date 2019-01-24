@@ -6,7 +6,7 @@ These options are provided to speed the development of your product and make it 
 
 You may also use these products as quick drop-in options into your design as well.
 
-The [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md)
+For some examples of using the development options in TinyCLR, take a look at the [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples). You may also find the [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) useful.
 
 ## UCM Dev Board
 ![UCM Dev board](images/ucm-dev.jpg)
@@ -23,46 +23,6 @@ For power, the board can be powered through either USB connectors or the barrel 
 
 > [!Tip]
 > The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 7V to 30V. 1A of power should be enough for most needs.
-
-
-TinyCLR OS makes development a breeze! This example blinks the LED in a thread and sweeps the buzzer through frequencies in the main loop.
-```
-using System.Threading;
-using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Devices.Pwm;
-using GHIElectronics.TinyCLR.Pins;
-
-class Program {
-    static void Blinker() {
-        var led = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.C);
-        led.SetDriveMode(GpioPinDriveMode.Output);
-        var state = false;
-        while (true) {
-            state = !state;
-            led.Write(state? GpioPinValue.High: GpioPinValue.Low);
-            Thread.Sleep(100);
-        }
-    }
-    private static void Main() {
-        UCMStandard.SetModel(UCMModel.UC5550);
-        new Thread(Blinker).Start();
-
-        var freq = 1000;
-        var BuzzerCon = PwmController.FromName(UCMStandard.PwmChannel.A.Id);
-        var BuzzerChan = BuzzerCon.OpenChannel(UCMStandard.PwmChannel.A.Pin);
-        BuzzerChan.SetActiveDutyCyclePercentage(0.5);
-        BuzzerCon.SetDesiredFrequency(freq);
-        BuzzerChan.Start();
-        while (true) {
-            BuzzerCon.SetDesiredFrequency(freq);
-            if ((freq += 100) > 5000)
-                freq = 1000;
-            Thread.Sleep(20);
-        }
-    }
-}
-```
-
 
 ## UCM Breakout Board
 ![UCM Breakout](images/ucm-breakout.jpg)
@@ -129,59 +89,27 @@ This display module has a 4.3" 480x272 TFT display with capacitive touch screen.
 
 This is an example code using the UD435 display. For more details, see the [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md) tutorials.
 
-The needed display configuration are in this example.
-
-```cs
-using System.Drawing;
-using System.Threading;
-using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Pins;
-
-class Program {
-    private static void Main() {
-        UCMStandard.SetModel(UCMModel.UC5550);
-        var backlight = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
-        backlight.SetDriveMode(GpioPinDriveMode.Output);
-        backlight.Write(GpioPinValue.High);
-        var displayController = DisplayController.GetDefault();
-        // Enter the proper display configurations
-        displayController.SetConfiguration(new ParallelDisplayControllerSettings {
-            Width = 480,
-            Height = 272,
-            DataFormat = DisplayDataFormat.Rgb565,
-            HorizontalBackPorch = 46,
-            HorizontalFrontPorch = 16,
-            HorizontalSyncPolarity = false,
-            HorizontalSyncPulseWidth = 1,
-            DataEnableIsFixed = false,
-            DataEnablePolarity = false,
-            PixelClockRate = 12_000_000,
-            PixelPolarity = false,
-            VerticalBackPorch = 23,
-            VerticalFrontPorch = 7,
-            VerticalSyncPolarity = false,
-            VerticalSyncPulseWidth = 1
-        });
-
-        displayController.Enable();
-        var screen = Graphics.FromHdc(displayController.Hdc);
-        var greenPen = new Pen(Color.Green, 5);
-        int x = 50, y = 50, dx = 5, dy = 4;
-        while (true) {
-            screen.Clear(Color.Black);
-            screen.DrawEllipse(greenPen, x, y, 10, 10);
-            screen.Flush();
-            x += dx;
-            y += dy;
-            if (x < 0 || x > 480) dx *= -1;
-            if (y < 0 || y > 272) dy *= -1;
-            Thread.Sleep(20);
-        }
-    }
-}
-```
 The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+
+See below for the display configuration values:
+
+Property | Value
+---------|---------
+Width | 480
+Height | 272
+DataFormat | RGB565
+Pixel Clock Rate | 5 MHz <= x <= 12MHz
+Pixel Polarity | low
+DataEnable Is Fixed | false
+DataEnable Polarity | low
+Horizontal Back Porch | 46
+Horizontal Front Porch | 16
+Horizontal Sync Polarity | low
+Horizontal Sync Pulse Width | 1
+Vertical Back Porch | 23
+Vertical Front Porch | 7
+Vertical Sync Polarity | low
+Vertical Sync Pulse Width | 1
 
 ### UCD-D70-A
 ![UD700](images/ud700.jpg)
@@ -191,7 +119,6 @@ Display Module: ER-TFT070-4
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD700%20Rev%20A%20Schematic.pdf)
 
-
 This display module has a 7" 800x480 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A.
 
 The display is exactly the same size as the Dev Board. They can be nicely mounted back to back with stand offs. A ribbon cable will be needed for the display signals.
@@ -200,59 +127,27 @@ The display is exactly the same size as the Dev Board. They can be nicely mounte
 
 This is an example code using the display. For more details, see the [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md) tutorials.
 
-The needed display configuration are in this example.
-
-```cs
-using System.Drawing;
-using System.Threading;
-using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Pins;
-
-class Program {
-    private static void Main() {
-        UCMStandard.SetModel(UCMModel.UC5550);
-        var backlight = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
-        backlight.SetDriveMode(GpioPinDriveMode.Output);
-        backlight.Write(GpioPinValue.High);
-        var displayController = DisplayController.GetDefault();
-        // Enter the proper display configurations
-        displayController.SetConfiguration(new ParallelDisplayControllerSettings {
-            Width = 800,
-            Height = 480,
-            DataFormat = DisplayDataFormat.Rgb565,
-            HorizontalBackPorch = 46,
-            HorizontalFrontPorch = 16,
-            HorizontalSyncPolarity = false,
-            HorizontalSyncPulseWidth = 1,
-            DataEnableIsFixed = false,
-            DataEnablePolarity = false,
-            PixelClockRate = 24_000_000,
-            PixelPolarity = false,
-            VerticalBackPorch = 23,
-            VerticalFrontPorch = 7,
-            VerticalSyncPolarity = false,
-            VerticalSyncPulseWidth = 1
-        });
-
-        displayController.Enable();
-        var screen = Graphics.FromHdc(displayController.Hdc);
-        var greenPen = new Pen(Color.Green, 5);
-        int x = 50, y = 50, dx = 5, dy = 4;
-        while (true) {
-            screen.Clear(Color.Black);
-            screen.DrawEllipse(greenPen, x, y, 10, 10);
-            screen.Flush();
-            x += dx;
-            y += dy;
-            if (x < 0 || x > 800) dx *= -1;
-            if (y < 0 || y > 480) dy *= -1;
-            Thread.Sleep(20);
-        }
-    }
-}
-```
 The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+
+See below for the display configuration values:
+
+Property | Value
+---------|---------
+Width | 800
+Height | 480
+DataFormat | RGB565
+Pixel Clock Rate | <= 50 MHz
+Pixel Polarity | low
+Data Enable Is Fixed | false
+Data Enable Polarity | low
+Horizontal Back Porch | 46
+Horizontal Front Porch | 16
+Horizontal Sync Polarity | low
+Horizontal Sync Pulse Width | 1
+Vertical Back Porch | 23
+Vertical Front Porch | 7
+Vertical Sync Polarity | low
+Vertical Sync Pulse Width | 1
 
 ## Custom Boards
 

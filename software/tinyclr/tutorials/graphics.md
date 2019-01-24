@@ -3,11 +3,11 @@
 TinyCLR OS support includes two level of graphics support, the core elements and User Interface.
 
 ## Core Elements
-`System.Drawing` includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.
+The `GHIElectronics.TinyCLR.Drawing` NuGet package includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.
 
 Shape examples are `Graphics.FillEllipse`, `Graphics.DrawLine` and `Graphics.DrawRectangle`. These methods need `Pen` and `Brush` that are also part of `Graphics`.
 
-For images, TinyCLR OS supports BMP, GIF and JPG. Depending on your hardware's limitation, one or more of these image formats maybe supported. Images can be loaded from a `stream` but the simplest option is to load from a resource. BMP supports 256 colors and 24bit. GIF does not support animated images.
+For images, TinyCLR OS supports BMP, GIF, and JPG. Depending on your hardware's limitation, one or more of these image formats maybe supported. Images can be loaded from a `stream` but the simplest option is to load from a resource. BMP supports 256 colors and 24bit. GIF does not support animated images.
 
 Fonts are well supported. They are covered later on this page.
 

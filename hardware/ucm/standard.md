@@ -6,14 +6,7 @@ The UCM Standard defines a consistent hardware and software interface for the mo
 
 When designing a product, consider following thee UCM standard pinout. This will make your design compatible with any of the UCM modules.
 
-Software also become more portable with the UCM standard and the provided support in TinyCLR OS. This code will use a pin on GPIO A, no matter what module is in use. The software automatically maps the pin to appropriate pin. For example, on UC5550, GPIO_A is pin PD7. So, these 2 lines give identical outcome.
-
-```cs
-// The internal system will know it is PD7 if UC5550 is used.
-var pin = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
-// This has the same effect.
-var pin = GpioController.GetDefault().OpenPin(UC5550.GpioPin.PD7);
-```
+Software also becomes more portable with the UCM standard. For example, our TinyCLR OS provides a library to automatically map the UCM standard names to the underlying system so that your program can use the UCM standard names only, making changing to a different module very easy.
 
 ## The SO-DIMM Socket
 
@@ -54,10 +47,10 @@ Here is a link to the manufacturer's web page for the connector we use on our bo
 
 \**Available peripherals vary by model*
 
-Note that the system defines 12 GPIOs that are free from any other functions but most other peripheral pins may also support GPIO, giving the user several more GPIO pin options.
+Note that the system defines 12 GPIOs that are free from any other functions but most other peripheral pins also support GPIO, giving the user several more GPIO pin options -- keep in mind the standard does not guarantee this though.
 
 > [!Tip]
-> The [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) is a good resource on using these peripherals.
+> The [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) are a good resource on using these peripherals.
 
 
 ### UART (Universal Asynchronous Receiver Transmitter)
@@ -220,11 +213,11 @@ JTAG is a serial interface which allows communication between the processor and 
 | 104           | ADC C                         |
 | 105           | PWM A                         |
 | 106           | 3.3V                          |
-| 107           | SYS A                      |
+| 107           | SYS A                         |
 | 108           | Module Specific 2             |
 | 109           | Module Specific 3             |
 | 110           | ADC D                         |
-| 111           | SYS C                      |
+| 111           | SYS C                         |
 | 112           | PWM B                         |
 | 113           | GND                           |
 | 114           | ADC E                         |
@@ -247,8 +240,8 @@ JTAG is a serial interface which allows communication between the processor and 
 | 131           | GND                           |
 | 132           | GPIO K                        |
 | 133           | PWM D                         |
-| 134           | SYS B                      |
-| 135           | SYS D                      |
+| 134           | SYS B                         |
+| 135           | SYS D                         |
 | 136           | GPIO L                        |
 | 137           | Module Specific 10            |
 | 138           | UART HS B RTS                 |

@@ -32,8 +32,8 @@
 # [Roadmap](roadmap.md)
 # [Licensing](licensing.md)
 # [Supported Devices](supported-devices.md)
+
 # [Bootloaders](../loaders/intro.md)
-## [GHI Loader](../loaders/ghi-bootloader.md)
-## [V1 to V2](../loaders/upgrading-v1-to-v2.md)
-## [STM32](../loaders/stm32-bootloader.md)
-## [SAM-BA](../loaders/sam-ba-bootloader.md)
+## [GHI Bootloader](../loaders/ghi-bootloader.md)
+## [STM32 Bootloader](../loaders/stm32-bootloader.md)
+## [SAM-BA Bootloader](../loaders/sam-ba-bootloader.md)

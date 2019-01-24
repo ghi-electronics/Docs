@@ -16,7 +16,7 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [CAN](can.md)
 * [Display](display.md)
 * [Graphics](graphics.md)
-* [Touch Screen](touch.md)
+* [Touch](touch.md)
 * [File System](filesystem.md)
 * [Signal Generator](signal-generator.md)
 * [Signal Capture](signal-capture.md)

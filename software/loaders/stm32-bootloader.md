@@ -7,7 +7,7 @@ These instructions apply to all STM32 chips with built in USB and DFU features.
 ## Loading the GHI Bootloader v2
 The bootloader often comes pre-installed on our devices. It only needs to be installed once. It does not need to be reinstalled unless it becomes erased or corrupted.
 1. Download and save the latest [bootloader file](ghi-bootloader.md).
-2. Download and install the [DfuSe USB device firmware upgrade software](http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) from ST Microelectronics.
+2. Download and install the [DfuSe USB device firmware upgrade software](http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) from STMicroelectronics.
 3. Run the `DfuSeDemo` program installed in the previous step. It should appear in the programs menu under `STMicroelectronics`.
 4. Put your board in DFU (Device Firmware Upgrade) mode. Instructions for putting your device in DFU mode are found on the documents page for the board you are using. `STM Device in DFU Mode` should now appear under `Available DFU Devices` at the upper left of the DfuSe Demo program screen.
 5. Near the bottom of the DfuSe Demo program window click on the `Choose...` button. Find the bootloader file you saved in step 1 (...Bootloader v2.x.x.dfu), click on it and click on the `Open` button.
