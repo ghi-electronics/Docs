@@ -24,6 +24,8 @@ Most commands require confirmation. Send Y or y followed by a new-line to procee
 
 ## Loading the Firmware
 
+The individual product pages include further instructions on the firmware needed and how to set the board in the loader mode. Once you have downloaded the firmware and set the board in loader mode, use the instructions below to load the firmware.
+
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
@@ -71,9 +73,9 @@ On startup, a banner is sent that is terminated by "BL". Once the banner is rece
 > [!Tip]
 > The USB interface on Version 1.0 doesn't always work on Windows 7 and newer operating systems. Use the serial interface instead.
 
-## Downloads
+## Loading the Bootloader
 
-Here you can find the various bootloaders available for the various products.
+Most products already ship with bootloader already installed. But in case the loader needs to be loaded, the individual product pages include instructions on how to load the bootloader. Here you can find the various bootloaders available for the various products.
 
 ### FEZCLR (used on FEZ and BrainPad)
 File | Date | Status | MD5
