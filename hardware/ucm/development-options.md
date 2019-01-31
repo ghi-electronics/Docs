@@ -155,4 +155,14 @@ The "Display Interface" utilized on development options include TFT parallel 16b
 
 ***
 
+## Legal
+### License
+This System on Module with its TinyCLR OS firmware and libraries are licensed for commercial and noncommercial use. No additional fee or licensing is required. None of the provided documentation/schematics/libraries/sources are to be used in any manner outside for the benefit of using and implementing this System on Module into your product. Please see the [FEZ](../fez/intro.md) for an open source TinyCLR OS reference design. The [TinyCLR Licensing](../../software/tinyclr/licensing.md) page has more details.
+
+### Disclaimer
+
+IN NO EVENT SHALL GHI ELECTRONICS, LLC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS PRODUCT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. GHI ELECTRONICS, LLC LINE OF PRODUCTS ARE NOT DESIGNED FOR LIFE SUPPORT APPLICATIONS. SPECIFICATIONS, PRICE AND AVAILABILITY ARE SUBJECT TO CHANGE WITHOUT ANY NOTICE.
+
+***
+
 You can visit our main website at [**www.ghielectronics.com**](http://www.ghielectronics.com) and our community forums at [**forums.ghielectronics.com**](https://forums.ghielectronics.com/).
