@@ -10,7 +10,7 @@ Download and install [Microsoft's Visual Studio 2013 Community Edition](http://g
 ### Install Microsoft .NET Micro Framework
 * Uninstall any currently installed NETMF SDKs.
 * Download [Microsoft .NET Micro Framework 4.3 (QFE2)](http://files.ghielectronics.com/downloads/NETMF/SDKs/MS%20NETMF%20QFE2.zip) and unzip the file.
-* Open the file's folder and install **Micro FrameworkSDK.MSI** and **netmfvs2013.vsix**.
+* Open the file's folder and install **MicroFrameworkSDK.MSI** and **netmfvs2013.vsix**.
 
 ### Install Microsoft .NET Gadgeteer Core (for Gadgeteer users only)
 Download and install [Microsoft .NET Gadgeteer Core](http://gadgeteer.codeplex.com/downloads/get/1519812).
