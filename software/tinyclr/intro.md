@@ -8,17 +8,12 @@ TinyCLR OS started with Microsoft's .NET Micro Framework and continues to enable
 |--|--|
 |  **Getting Started** </br> Deploy your first TinyCLR program. [**Learn more...**](getting-started.md)  |  **Tutorials** </br> Learn TinyCLR embedded programming. [**Learn more...**](tutorials/intro.md)   |
 |  [![Getting Started](images/getting-started.jpg)](getting-started.md)   |  [![Tutorials](images/tutorials.jpg)](tutorials/intro.md)  |
-|   **Native** </br> Run native code on your device and port to other targets. [**Learn more...**](native/intro.md)  |  **Release Notes** </br> Find the latest changes to TinyCLR. [**Learn more...**](release-notes.md)  |
+|   **Native** </br> Run native code on your device. [**Learn more...**](native/intro.md)  |  **Release Notes** </br> Find the latest changes to TinyCLR. [**Learn more...**](release-notes.md)  |
 |  [![TinyCLR Logo](images/tinyclr-logo.jpg)](native/intro.md)   |  [![Release Notes](images/tinyclr-logo.jpg)](release-notes.md)   |
 |  **Downloads** </br> Visual Studio and device downloads. [**Learn more...**](downloads.md)   |   **Roadmap** </br> The future of TinyCLR. [**Learn more...**](roadmap.md)  |
 |  [![Download](images/download.jpg)](downloads.md)   |  [![Road](images/roadmap.jpg)](roadmap.md)   |
-|  **Supported Devices** </br> Some boards that run TinyCLR. [**Learn more...**](supported-devices.md)   |  **Bootloaders** </br> [**Learn more...**](../loaders/intro.md)   |
-|  [![Boards](images/boards.png)](supported-devices.md)   |  [![Bootloader](images/bootloader.png)](../loaders/intro.md)   |
-|  **TinyCLR Config** </br> Our device configuration program. [**Learn more...**](tinyclr-config.md)   |    |
-|  [![TinyCLR Config](images/tinyclr-config-sm.png)](tinyclr-config.md)   |     |
-
-> [!Tip]
-> TinyCLR OS is still an alpha so there is still a lot more to come!  Take a look at the [**release notes**](release-notes.md) to see what's new and the [**roadmap**](roadmap.md) to see what we have planned.
+|  **TinyCLR Config** </br> Our device configuration program. [**Learn more...**](tinyclr-config.md)   |  **Bootloaders** </br> [**Learn more...**](../loaders/intro.md)   |
+|  [![TinyCLR Config](images/tinyclr-config-sm.png)](tinyclr-config.md)   |  [![Bootloader](images/bootloader.png)](../loaders/intro.md)   |
 
 ***
 
