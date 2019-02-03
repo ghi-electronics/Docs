@@ -151,7 +151,7 @@ Vertical Sync Pulse Width | 1
 
 ## Custom Boards
 
-The "Display Interface" utilized on development options include TFT parallel 16bit/24bit bus, I2C bus, SPI, bus and 2 GPIOs. It is possible to design a custom display to utilize the UCM mainboards or design a mainboard that utilize the available display. Additionally, these designs can be used as a reference to start a UCMbased design. GHI Electronics' engineering/manufacturing is available for such designs.
+The "Display Interface" utilized on development options include TFT parallel 16bit/24bit bus, I2C bus, SPI, bus and 2 GPIOs. It is possible to design a custom display to utilize the UCM mainboards, or design a mainboard to utilize the available displays. Additionally, the designs of the development options can be used as a reference to start a UCMbased design. GHI Electronics' engineering/manufacturing is available for such designs.
 
 ***
 
