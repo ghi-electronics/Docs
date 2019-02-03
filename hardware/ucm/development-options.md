@@ -157,7 +157,8 @@ The "Display Interface" utilized on development options include TFT parallel 16b
 
 ## Legal
 ### License
-This System on Module with its TinyCLR OS firmware and libraries are licensed for commercial and noncommercial use. No additional fee or licensing is required. None of the provided documentation/schematics/libraries/sources are to be used in any manner outside for the benefit of using and implementing this module into your product.
+
+This product and its firmware and libraries are licensed royalty-free for commercial and noncommercial use. None of the provided documentation/schematics/libraries/sources are to be used in any manner outside for the benefit of implementing and using this product into your design.
 
 ### Disclaimer
 
