@@ -6,6 +6,8 @@ These options are provided to speed the development of your product and make it 
 
 You may also use these products as quick drop-in options into your design as well.
 
+## Code Samples
+
 For some examples of using the development options in TinyCLR, take a look at the [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples). You may also find the [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) useful.
 
 ## UCM Dev Board
