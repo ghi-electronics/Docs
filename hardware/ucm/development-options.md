@@ -6,6 +6,8 @@ These options are provided to speed the development of your product and make it 
 
 You may also use these products as quick drop-in options into your design as well.
 
+## Code Samples
+
 For some examples of using the development options in TinyCLR, take a look at the [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples). You may also find the [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) useful.
 
 ## UCM Dev Board
@@ -151,13 +153,14 @@ Vertical Sync Pulse Width | 1
 
 ## Custom Boards
 
-The "Display Interface" utilized on development options include TFT parallel 16bit/24bit bus, I2C bus, SPI, bus and 2 GPIOs. It is possible to design a custom display to utilize the UCM mainboards or design a mainboard that utilize the available display. Additionally, these designs can be used as a reference to start a UCMbased design. GHI Electronics' engineering/manufacturing is available for such designs.
+The "Display Interface" utilized on development options include TFT parallel 16bit/24bit bus, I2C bus, SPI, bus and 2 GPIOs. It is possible to design a custom display to utilize the UCM mainboards, or design a mainboard to utilize the available displays. Additionally, the designs of the development options can be used as a reference to start a UCMbased design. GHI Electronics' engineering/manufacturing is available for such designs.
 
 ***
 
 ## Legal
 ### License
-This System on Module with its TinyCLR OS firmware and libraries are licensed for commercial and noncommercial use. No additional fee or licensing is required. None of the provided documentation/schematics/libraries/sources are to be used in any manner outside for the benefit of using and implementing this System on Module into your product. Please see the [FEZ](../fez/intro.md) for an open source TinyCLR OS reference design. The [TinyCLR Licensing](../../software/tinyclr/licensing.md) page has more details.
+
+This product and its firmware and libraries are licensed royalty-free for commercial and noncommercial use. None of the provided documentation/schematics/libraries/sources are to be used in any manner outside for the benefit of implementing and using this product into your design.
 
 ### Disclaimer
 

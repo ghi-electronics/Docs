@@ -52,13 +52,18 @@ TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(cons
 }
 ```
 
-Now you need to compile these files. If you don't have GCC yet, see the [porting guide](porting.md) to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We've provided samples of each below.
+Now you need to compile these files. You can use free GCC compiler for example.
+
+1. Download and install [GCC](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads). The latest version we have tested is `7-2018-q2-update`.
+2. Download and extract the latest [TinyCLR OS Core Library](https://github.com/ghi-electronics/TinyCLR-Ports/releases). This is where you will find TinyLCR.h.
+
+To compile using GCC, the easiest way is to use a makefile and a scatterfile. We've provided samples of each below.
 
 The makefile is setup to compile all cpp in the same directory it is and to do using for a Cortex M4 architecture. If you're not on CortexM4, change the `MCU_FLAGS` parameter accordingly. The output file is `InteropTest.bin`. You can change that with the `OUTPUT_NAME` property.
 
 [!code-makefile[makefile](samples/makefile)]
 
-Because TinyCLR can't currently dynamically relocate your code, you'll need to provide the proper base and length values for the interop region in the scatterfile by changing the `INTEROP_BASE` and `INTEROP_LENGTH` placeholders. You can find the interop region for your device, if it has one, in the device's documentation.
+You will need to adjust the file with the correct memory regions reserved for interops in the scatterfile by changing the `INTEROP_BASE` and `INTEROP_LENGTH` placeholders. You can find the interop region for your device, if it has one, in the device's documentation.
 
 [!code[scatterfile](samples/scatterfile)]
 
@@ -68,6 +73,8 @@ To execute the makefile, you'll need to have make installed. You can get it from
 
 > [!Tip]
 > If you use the Windows Subsystem for Linux, you'll need to change `del` in the makefile to `rm`.
+
+You can also **build interops in Visual Studio.** This is a 3-part step-by-step [tutorial](https://forums.ghielectronics.com/t/the-power-of-interops-in-tinyclr-part-1/21855).
 
 Once you have a compiled image, look in the map file to find out where the interop definition variable `Interop_InteropTest` (if you're using the default names) got placed. You'll need to pass this address to the managed function that registers the interop. In managed code, add the compiled binary image as a resource and use the `Marshal` class to copy it into the correct location in memory. Then call `System.Runtime.InteropServices.Interop.Add` and pass it the address of the `Interop_InteropTest` object from the map file. You need to do this every time your program runs and before you call any of the native methods in your interop class.
 

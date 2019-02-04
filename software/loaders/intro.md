@@ -7,10 +7,7 @@ A bootloader is a small software that boots up the system and runs the firmware.
 This section covers different bootloader features and usage details.
 
 ## GHI Bootloader
-The [GHI Bootloader](ghi-bootloader.md) page can be found [here](ghi-bootloader.md). This page describes the bootloader commands, using the bootloader to load firmware onto a device, and has a [**downloads**](ghi-bootloader.md#downloads) section where you can find the bootloaders for our products.
-
-### Upgrading Bootloader v1 to Bootloader v2
-Some of our earlier devices based on the NXP LPC family of microcontrollers come shipped with our Bootloader v1 installed. These include the Embedded Master, EMX, G120, and G120E. To upgrade this bootloader to v2, go to the [GHI v1 to v2 bootloader page](upgrading-v1-to-v2.md)
+The [GHI Bootloader](ghi-bootloader.md) page describes the bootloader commands, using the bootloader to load firmware onto a device.
 
 ## STM32 Bootloader
 The [STM32 Bootloader](stm32-bootloader.md) page covers loading .hex, .bin, and .dfu files onto our STM32 based devices.

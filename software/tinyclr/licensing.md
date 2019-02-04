@@ -1,3 +1,0 @@
-# TinyCLR Licensing
----
-TBD
