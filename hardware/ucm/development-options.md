@@ -13,7 +13,7 @@ For some examples of using the development options in TinyCLR, take a look at th
 ## UCM Dev Board
 ![UCM Dev board](images/ucm-dev.jpg)
 
-Model Number: UCD-DEV-E	
+Ordering Part Number: UCD-DEV-E	
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UCM%20Dev%20Board%20Rev%20E%20Schematic.pdf)
 
@@ -29,7 +29,7 @@ For power, the board can be powered through either USB connectors or the barrel 
 ## UCM Breakout Board
 ![UCM Breakout](images/ucm-breakout.jpg)
 
-Model Number: UCD-BKT-C	
+Ordering Part Number: UCD-BKT-C	
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UCM%20Breakout%20Rev%20C%20Schematic.pdf)
 
@@ -82,8 +82,8 @@ Adding a ribbon cable allows for further flexibility on where and how far the di
 ### UCD-D43-A
 ![UD435](images/ud435.jpg)
 
-Model Number: UCD-D43-A
-Display Module: ER-TFT043-3
+Ordering Part Number: UCD-D43-A
+Display Module: [ER-TFT043-3](www.buydisplay.com) with capacitive touch panel.
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD435%20Rev%20A%20Schematic.pdf)
 
@@ -116,8 +116,8 @@ Vertical Sync Pulse Width | 1
 ### UCD-D70-A
 ![UD700](images/ud700.jpg)
 
-Model Number: UCD-D70-A
-Display Module: ER-TFT070-4
+Ordering Part Number: UCD-D70-A
+Display Module: [ER-TFT070-4](www.buydisplay.com) with capacitive touch panel.
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD700%20Rev%20A%20Schematic.pdf)
 
