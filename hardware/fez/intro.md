@@ -63,7 +63,7 @@ You can also update the firmware manually. Download the [firmware](../../softwar
 
 ### Start Coding
 
-Now that you have installed the bootloader and firmware on the G120, you can setup your host computer and start programming. Go to the TinyCLR [Getting Started](../../software/tinyclr/getting-started.md) page for instructions.
+Now that you have installed the bootloader and firmware on the FEZ, you can setup your host computer and start programming. Go to the TinyCLR [Getting Started](../../software/tinyclr/getting-started.md) page for instructions.
 
 ### Code Samples
 

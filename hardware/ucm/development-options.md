@@ -160,7 +160,7 @@ The "Display Interface" utilized on development options include TFT parallel 16b
 ## Legal
 ### License
 
-This product with its accompanying firmware are licensed royalty-free for commercial and noncommercial use. Using the provided firmware on nonofficial product requires additional licensing. The provided documentation/schematics/libraries/sources are not to be used in any manner outside for the benefit of implementing and using this GHI Electronics product into your design.
+This product with its accompanying firmware are licensed royalty-free for commercial and noncommercial use. Using the provided firmware on non-official product requires additional licensing. The provided documentation/schematics/libraries/sources are not to be used in any manner outside for the benefit of implementing and using this GHI Electronics product into your design.
 
 ### Disclaimer
 
