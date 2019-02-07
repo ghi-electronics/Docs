@@ -98,7 +98,7 @@ In other words, do not connect a PC&#39;s serial port to a micro directly. Use a
 <p>The data sent can be shown on a terminal program, like teraterm. Note how we ended the string with &quot;\r\n&quot;. The &quot;\r&quot; is code to tell the terminal to &quot;return&quot; back to the beginning of the line and &quot;\n&quot; is to add &quot;new&quot; line. When data is received on UART, it is automatically queued a side so you wouldn&#39;t lose any data.</p>
 <div class="TIP"><h5>Tip</h5><p>Using serial ports require the Microsoft.SPOT.Hardware.SerialPort. If your program uses the enums Parity or StopBits, the Microsoft.SPOT.Hardware assembly is needed.</p>
 </div>
-<pre><code class="lang-c#">using System.IO.Ports;
+<pre><code class="lang-cs">using System.IO.Ports;
 using System.Text;
 using System.Threading;
 
@@ -127,7 +127,7 @@ public class Program
 }
 </code></pre><h2 id="receiving-data">Receiving Data</h2>
 <p>This example will wait until a byte is received on the port and then print it telling you what was sent from the other end.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using System.IO.Ports;
 using System.Text;
 
@@ -161,7 +161,7 @@ public class Program
 }
 </code></pre><h2 id="sending-and-receiving">Sending and Receiving</h2>
 <p>This example is a loop-back. Connect a wire from TX to RX on your board and it will send data and make sure it is receiving it correctly.</p>
-<pre><code class="lang-c#">using System.IO.Ports;
+<pre><code class="lang-cs">using System.IO.Ports;
 using System.Text;
 using System.Threading;
 using Microsoft.SPOT;

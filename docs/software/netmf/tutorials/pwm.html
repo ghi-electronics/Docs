@@ -91,7 +91,7 @@
 </ul>
 <h2 id="net-micro-framework-pwm-channels">.NET Micro Framework PWM Channels</h2>
 <p>In NETMF, the PWM pins are defined in the &quot;Cpu.PWMChannel&quot; enumeration. As the enumeration has a limited number of members, the number of PWM pins may exceed the members. Casting can be used for those extra PWMs.</p>
-<pre><code class="lang-c#">// Using the enumeration
+<pre><code class="lang-cs">// Using the enumeration
 PWM MyServo = new PWM(Cpu.PWMChannel.PWM_3, 2175, 175,
                       PWM.ScaleFactor.Microseconds, false);
 
@@ -108,7 +108,7 @@ PWM LED = new PWM((Cpu.PWMChannel)9, 10000, 0.10, false);
 
 This example starts the LED at 0% intensity then slowly steps up to full intensity, after which it reverts to 0% and starts over.
 
-```c#
+```cs
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 
@@ -137,7 +137,7 @@ public class Program
 }
 </code></pre><h2 id="musical-tones">Musical Tones</h2>
 <p>Music notes have specific frequencies, for example C is about 261Hz. Plugging these numbers into an array and knowing the length of each tone is all that is needed to play some simple music.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using Microsoft.SPOT.Hardware;
 
 public class Program
@@ -190,7 +190,7 @@ public class Program
 <p>Servos expect a pulse every 20ms to 30ms.</p>
 <p>It is important for the high pulse to be between 1.25ms and 1.75ms so that the servo&#39;s position is set properly.</p>
 <p>The code below will move the position of the servo to 180 degrees (using a pulse of 1.75ms). It uses a pause time between pulses of 20ms. So the period is 21.75ms and a duration of 1.75ms. Note the use of &quot;scale&quot;.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using Microsoft.SPOT.Hardware;
 
 public class Program

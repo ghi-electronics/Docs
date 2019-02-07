@@ -89,7 +89,7 @@
 </div>
 <h2 id="mouse">Mouse</h2>
 <p>The following example tells your device to act as a mouse and send random commands to your computer. You could use this to prank others and send their computer fake mouse commands or to have a second mouse for your own computer.</p>
-<pre><code class="lang-c#">using System;
+<pre><code class="lang-cs">using System;
 using System.Threading;
 using GHI.Usb;
 using GHI.Usb.Client;
@@ -162,7 +162,7 @@ public class Program
 }
 </code></pre><h2 id="keyboard">Keyboard</h2>
 <p>Emulating a keyboard is as very similar to emulating a mouse. The following example will create a USB Keyboard and send &quot;Hello world!&quot; to a computer every second.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using GHI.Usb;
 using GHI.Usb.Client;
 using Microsoft.SPOT;
@@ -217,7 +217,7 @@ public class Program
 <p>Note: CDC drivers usually handle one transaction in every frame. The max EP size on USB is 64 bytes and there 1000 frames per second on full-speed USB. This means that the maximum transfer rate in ideal conditions for CDC is 64KB/sec.</p>
 <p>The buffer size is limited so you must be make sure to read all data quickly because there is no overflow event.</p>
 <p>The following example will create a USB CDC and send &quot;Hello world!&quot; to computer every second.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using GHI.Usb;
 using GHI.Usb.Client;
 using Microsoft.SPOT;
@@ -255,7 +255,7 @@ public class Program
 <p>Note: you can easily switch back and forth between internal file system and USB MSC.</p>
 <p>This example code assumes an SD card is always plugged in. It enables MSC showing the device as a card reader. This code assumes that the USB port is NOT being used for debugging.</p>
 <p>In addition to the assemblies mentioned above in the Note, the following code requires the GHI.Hardware assembly.</p>
-<pre><code class="lang-c#">using System;
+<pre><code class="lang-cs">using System;
 using System.Threading;
 using GHI.Usb.Client;
 using GHI.Usb;

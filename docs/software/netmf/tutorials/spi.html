@@ -89,7 +89,7 @@
 <h2 id="getting-started">Getting Started</h2>
 <p>This example is sending/receiving 10 bytes of data on SPI channel 1.</p>
 <p>Note: NETMF start numbering SPI channels (module) from 1, but on processors the channels start from 0 typically. So, using SPI1 in code is actually using SPI0 on the processor.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using Microsoft.SPOT.Hardware;
 
 public class Program
@@ -111,7 +111,7 @@ public class Program
 }
 </code></pre><h2 id="accessing-multiple-devices">Accessing Multiple Devices</h2>
 <p>The SPI object on NETMF is a representation of the &quot;bus&quot; and not the &quot;device&quot;, so you can&#39;t construct multiple SPI objects, unless it uses a different SPI bus. To access multiple SPI devices you need to have multiple configurations and then when accessing device &quot;A&quot; we need to use configuration &quot;A&quot; and when accessing device &quot;B&quot; we need to use configuration &quot;B&quot;.</p>
-<pre><code class="lang-c#">using Microsoft.SPOT.Hardware;
+<pre><code class="lang-cs">using Microsoft.SPOT.Hardware;
 
 public class Program
 {

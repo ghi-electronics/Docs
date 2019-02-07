@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../../legacy/toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
@@ -81,25 +81,12 @@
 
 <hr>
 <p><img src="images/emx-som.jpg" alt="EMX SoM"></p>
-<p>EMX is a NETMF System on Module.</p>
+<p>EMX is a <a href="../../software/netmf/intro.html">NETMF</a> (.NET Micro Framework) System on Module.</p>
+<p>To use with NETMF, follow the <a href="../../software/netmf/getting-started.html">setup instructions</a>.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Documents/Manuals/EMX%20User%20Manual.pdf">User Manual</a></li>
 </ul>
-<h2 id="using-netmf-software">Using NETMF software</h2>
-<p>We discourage the use of NETMF software on our products in favor of TinyCLR OS, but the choice is up to you. To find out more about NETMF, go to our <a href="../../software/netmf/intro.html">NETMF Introduction Page</a></p>
-<h2 id="using-tinyclr-os">Using TinyCLR OS</h2>
-<p>The following instructions describe how to set up EMX to work with TinyCLR OS. To learn more about TinyCLR check out the <a href="../../software/tinyclr/intro.html">TinyCLR Introduction</a> page.</p>
-<h3 id="loading-bootloader-v2">Loading Bootloader v2</h3>
-<div class="TIP"><h5>Tip</h5><p>The bootloader version 1 doesn&#39;t always work with Windows 7 and newer (Error code 10). You can use the serial option to update the loader.
-This is a one-time procedure. You should have no issues after the bootloader V2 is loaded.</p>
-</div>
-<p>EMX comes with Bootloader v1 pre-installed. To install v2 of the bootloader, follow the instructions on the <a href="../../software/tinyclr/loaders/upgrading-v1-to-v2.html">Upgrading GHI Bootloader v1 to v2</a> page. To put EMX in boot mode, make pins 3, 7, and 53 low and reset the board (Pin3=P0.4 | Pin7=P2.30 | Pin53=P2.11).</p>
-<h3 id="loading-the-firmware">Loading the Firmware</h3>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
-</div>
-<p>To activate bootloader v2, set Pin7 (P2.30) low and then reset your board.</p>
-<p>Download the <a href="../../software/tinyclr/downloads.html#emx">EMX firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 <h2 id="emx-dev-sys">EMX Dev Sys</h2>
 <p><img src="images/emx-dev-sys.jpg" alt="EMX Dev Sys"></p>
 <p>The development system used for evaluating the EMX SoM.</p>

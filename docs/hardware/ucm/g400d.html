@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
@@ -82,30 +82,14 @@
 <hr>
 <p><img src="images/g400d-noborder.jpg" alt="G400D"></p>
 <h2 id="overview">Overview</h2>
-<p>The G400D System on Module (SoM) is the first of the <a href="intro.html">Universal Compute Modules (UCMs)</a>. Originally running .NET Micro Framework exclusively, it is now used with other platforms including TinyCLR.</p>
+<p>The G400D System on Module (SoM) is a 400 MHz ARM9. It is the first <a href="intro.html">Universal Compute Modules (UCMs)</a>. Originally running .NET Micro Framework exclusively, it can now be used with TinyCLR OS.</p>
 <p>Pricing, purchasing and other information can be found on the <a href="http://www.ghielectronics.com/products/ucm/g400d">G400D Page</a> on our main website.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>The UCM <a href="development-options.html">development options</a> can greatly simplify the process of building a product or prototype using the G400D.  Options include a development board and displays which can get you programming in minutes.  Please refer to the <a href="development-options.html">Development Options</a> page for more information.</p>
-<p>There are several options available for programming the G400D which are described below.</p>
-<h3 id="using-microsofts-net-micro-framework-netmf">Using Microsoft&#39;s .NET Micro Framework (NETMF)</h3>
-<p>We discourage the use of NETMF software on our products in favor of TinyCLR OS. For more information on NETMF you can go to the <a href="../../software/netmf/intro.html">NETMF Introduction</a> page.  The <a href="../../software/netmf/getting-started.html">NETMF Getting Started</a> page covers NETMF from setup of the host computer to program deployment on both an emulator and target device.</p>
-<h3 id="using-tinyclr-os">Using TinyCLR OS</h3>
-<p>TinyCLR provides a way to program the G400D in C# or Visual Basic from the Microsoft Visual Studio integrated development environment.  To get started you must first install the bootloader and firmware on the G400D (instructions below) and then go to the TinyCLR <a href="../../software/tinyclr/getting-started.html">Getting Started</a> page for instructions on setting up the host computer and writing and deploying programs.</p>
-<h4 id="loading-bootloader-version-2">Loading Bootloader Version 2</h4>
-<p>Download the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#g400">G400 bootloader file</a>.</p>
-<p>Go to the <a href="../../software/tinyclr/loaders/intro.html#sam-ba-bootloader">SAMBA</a> section of the <a href="../../software/tinyclr/loaders/intro.html">Bootloaders Introduction</a> page for instructions on loading the bootloader.</p>
-<h4 id="loading-the-firmware">Loading the Firmware</h4>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
+<div class="TIP"><h5>Tip</h5><p>Modules designed for the UCM standard have more functionality available when not following the rules set by the standard. It is up to you to decide how much your design will follow the UCM standard.</p>
 </div>
-<p>To activate bootloader v2, hold the LDR0 signal low and reset the board. You may have to wait a couple of seconds before releasing LDR0. On the UCM Dev board and UCM Breakout board, hold down the BOOT B button, press the RESET button, wait a second or two, and then release BOOT B.</p>
-<p>Download the <a href="../../software/tinyclr/downloads.html#g400">G400 firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
-<h4 id="setup-the-host-computer-and-start-coding">Setup the Host Computer and Start Coding</h4>
-<p>Now that you have installed the bootloader and firmware on the G400D, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html#tinyclr-computer-setup">Getting Started</a> page for instructions.</p>
-<h4 id="using-native-code-with-tinyclr">Using Native Code with TinyCLR</h4>
-<p>TinyCLR OS also lets you use native code that that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out <a href="../../software/tinyclr/native/intro.html">Native Code on TinyCLR</a>.</p>
-<p>TinyCLR cannot relocate native code, so you will have specify its location in the scatterfile. For the G400D, the interop region starts at address 0x26700000, and its length is 0x16FFFF8.</p>
-<h2 id="datasheet">Datasheet</h2>
-<p>The G400D datasheet can be found <a href="http://files.ghielectronics.com/downloads/Documents/Datasheets/G400S%20and%20G400D%20Datasheet.pdf">here</a>.</p>
+<h2 id="ordering-part-number">Ordering Part Number</h2>
+<ul>
+<li>G400D SoM: G400D-SM-400</li>
+</ul>
 <h2 id="specifications">Specifications</h2>
 <table>
 <thead>
@@ -145,14 +129,15 @@
 </tr>
 </tbody>
 </table>
-<p><em>Note: Not all memory will be available for your application.</em></p>
+<p><em>Note: Resources are shared between your application and the operating system.</em></p>
 <h2 id="peripherals">Peripherals</h2>
+<p>This table lists the available peripherals. The &quot;overall&quot; column shows the available pins if the design did not follow the UCM standard.</p>
 <table>
 <thead>
 <tr>
 <th>Peripheral</th>
 <th>UCM Standard</th>
-<th>Overall*</th>
+<th>Overall</th>
 </tr>
 </thead>
 <tbody>
@@ -227,7 +212,7 @@
 <td>Supported</td>
 </tr>
 <tr>
-<td>Wi-Fi</td>
+<td>WiFi</td>
 <td>Not supported</td>
 <td>Not supported</td>
 </tr>
@@ -248,7 +233,34 @@
 </tr>
 </tbody>
 </table>
-<p>*<em>The &quot;Overall&quot; column includes peripherals that fall outside of the UCM standard definition.  Using these peripherals may reduce code portability with our other UCM models.  Also, as many of these non-standard peripherals share I/O pins, not all of them will be available to your application.</em></p>
+<h2 id="development-options">Development Options</h2>
+<p><img src="images/development-options.jpg" alt="Development Options"></p>
+<p>The UCM <a href="development-options.html">development options</a> can greatly simplify the process of building a product or prototype using the UC5550.  Options include a development board and displays which can get you programming in minutes.</p>
+<h2 id="net-micro-framework-netmf">.NET Micro Framework (NETMF)</h2>
+<p>The NETMF software on G400 is mature and complete. For more information on NETMF you can go to the <a href="../../software/netmf/intro.html">NETMF Introduction</a> page.  The <a href="../../software/netmf/getting-started.html">NETMF Getting Started</a> page covers NETMF from setup of the host computer to program deployment on both an emulator and target device.</p>
+<p>Bootloader v1 is needed for G400 to work with NETMF. It is available in the NETMF SDK.</p>
+<h2 id="tinyclr-os">TinyCLR OS</h2>
+<p>TinyCLR OS provides a way to program the G400 in C# or Visual Basic from the Microsoft Visual Studio integrated development environment.  To get started you must first install the bootloader and firmware on the UC5550 (instructions below) and then go to the TinyCLR <a href="../../software/tinyclr/getting-started.html">Getting Started</a> page for instructions.</p>
+<h3 id="loading-bootloader-version-2">Loading Bootloader Version 2</h3>
+<p>Download the <a href="../loaders/ghi-bootloader.html">G400 bootloader v2 file</a> and load onto the dataflash. The <a href="../loaders/sam-ba-bootloader.html">SAM-BA Bootloader</a> has the details.</p>
+<h3 id="loading-the-firmware">Loading the Firmware</h3>
+<ol>
+<li>Activate the bootloader, hold the LDR0 signal (SYS B) low while resetting the board.</li>
+<li>Open <a href="../../software/tinyclr/tinyclr-config.html">TinyCLR Config</a> tool.</li>
+<li>Click the loader tab.</li>
+<li>Select the correct COM port. If you are not seeing it then the device is not in the loader mode.</li>
+<li>Click the <code>Update to Latest</code> button.</li>
+</ol>
+<p>You can also update the firmware manually. Download the <a href="../../software/tinyclr/downloads.html">firmware</a> and learn how to use the <a href="../loaders/ghi-bootloader.html">GHI Bootloader</a> manually.</p>
+<h3 id="start-coding">Start Coding</h3>
+<p>Now that you have installed the bootloader and firmware, you can setup your host computer and start programming.  Go to the TinyCLR <a href="../../software/tinyclr/getting-started.html">Getting Started</a> page for instructions.</p>
+<h3 id="code-samples">Code Samples</h3>
+<p>For some examples of using TinyCLR, take a look at the <a href="https://github.com/ghi-electronics/TinyCLR-Samples">TinyCLR Samples repo</a>. You may also find the <a href="../../software/tinyclr/tutorials/intro.html">TinyCLR tutorials</a> useful.</p>
+<h3 id="native-code">Native Code</h3>
+<p>You have the choice of loading the module with your preferred RTOS. Also, you can load <a href="../../software/tinyclr/native/intro.html">Native Code</a> in TinyCLR OS at runtime that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features.</p>
+<p>The memory area reserved for native code in TinyCLR OS on G400D starts at 0x26700000 and its length is 0x16FFFF8.</p>
+<h2 id="datasheet">Datasheet</h2>
+<p>This documentation page replaced the legacy datasheet PDF but it is <a href="http://files.ghielectronics.com/downloads/Documents/Datasheets/G400S%20and%20G400D%20Datasheet.pdf">here</a> for reference.</p>
 <h2 id="pinout">Pinout</h2>
 <table>
 <thead>
@@ -791,7 +803,7 @@
 </tr>
 <tr>
 <td>107</td>
-<td>BOOT A</td>
+<td>SYS A</td>
 <td>SPI1 MISO</td>
 </tr>
 <tr>
@@ -811,7 +823,7 @@
 </tr>
 <tr>
 <td>111</td>
-<td>BOOT C</td>
+<td>SYS C</td>
 <td>PA4, LDR1</td>
 </tr>
 <tr>
@@ -926,12 +938,12 @@
 </tr>
 <tr>
 <td>134</td>
-<td>BOOT B</td>
+<td>SYS B</td>
 <td>PA24, LDR0</td>
 </tr>
 <tr>
 <td>135</td>
-<td>BOOT D</td>
+<td>SYS D</td>
 <td>PA25, MODE</td>
 </tr>
 <tr>
@@ -1262,7 +1274,7 @@
 </tbody>
 </table>
 <h2 id="can-bit-timing-settings">CAN Bit Timing Settings</h2>
-<p>The following CAN bit timing paramaters were calculated for a G400 driving the SN65HVD230 CAN driver chip. See the <a href="../../software/tinyclr/tutorials/can.html#configuring-the-bus">Configuring the Bus</a> section of the <a href="../../software/tinyclr/tutorials/can.html">CAN Tutorial</a> for more information.</p>
+<p>The following CAN bit timing parameters were calculated for a G400 driving the SN65HVD230 CAN driver chip. See the <a href="../../software/tinyclr/tutorials/can.html#configuring-the-bus">Configuring the Bus</a> section of the <a href="../../software/tinyclr/tutorials/can.html">CAN Tutorial</a> for more information.</p>
 <table>
 <thead>
 <tr>
@@ -1342,13 +1354,17 @@
 </tbody>
 </table>
 <p><em>Note: Maximum Oscillator Tolerance and Maximum Cable Length are theoretical maximums and must be tested to ensure reliability.</em></p>
-<h2 id="g400-based-products">G400 Based products</h2>
-<h3 id="g400-development-board">G400 Development Board</h3>
+<h2 id="g400-development-board">G400 Development Board</h2>
 <p><img src="images/g400-dev.jpg" alt="G400 Dev board"></p>
-<p>The development system used for evaluating the G400 SoM.</p>
+<p>This is no longer in production, replaced by the <a href="development-options.html">Development Options</a></p>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/Systems/G400D%20Dev%20Board%20Schematic.pdf">Schematic</a></li>
 </ul>
+<h2 id="legal">Legal</h2>
+<h3 id="license">License</h3>
+<p>This product with its accompanying firmware are licensed royalty-free for commercial and noncommercial use. Using the provided firmware on a non-official product requires additional licensing. The provided documentation/schematics/libraries/sources are not to be used in any manner outside for the benefit of implementing and using this GHI Electronics product into your design.</p>
+<h3 id="disclaimer">Disclaimer</h3>
+<p>IN NO EVENT SHALL GHI ELECTRONICS, LLC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS PRODUCT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. GHI ELECTRONICS LINE OF PRODUCTS ARE NOT DESIGNED FOR LIFE SUPPORT APPLICATIONS. SPECIFICATIONS, PRICE AND AVAILABILITY ARE SUBJECT TO CHANGE WITHOUT ANY NOTICE.</p>
 <hr>
 <p>Want to quickly build your prototype? Check out the UCM <a href="development-options.html"><strong>Development Options</strong></a>.</p>
 <p>You can also visit our main website at <a href="http://www.ghielectronics.com"><strong>www.ghielectronics.com</strong></a> and our community forums at <a href="https://forums.ghielectronics.com/"><strong>forums.ghielectronics.com</strong></a>.</p>

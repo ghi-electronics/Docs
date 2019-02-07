@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../../legacy/toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
@@ -82,28 +82,11 @@
 <hr>
 <p><img src="images/fez-hydra.jpg" alt="FEZ Hydra"></p>
 <p>FEZ Hydra is a .NET Gadgeteer product that utilizes .NET Micro Frameworks (NETMF).</p>
+<p>To use with NETMF/Gadgeteer, follow these <a href="../../software/netmf/getting-started.html">setup instructions</a>.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Hydra%20Schematic.pdf">Schematic</a></li>
 </ul>
-<h2 id="using-the-gadgeteer-software">Using the Gadgeteer software</h2>
-<p>We discourage the use of NETMF and Gadgeteer software technologies on our products in favor for TinyCLR OS. <a href="intro.html">Read more</a> about the use of NETMF, Gadgeteer and TinyCLR OS.</p>
-<h2 id="using-tinyclr-os">Using TinyCLR OS</h2>
-<p>TinyCLR is our own operating system and provides a means of programming embedded devices using .NET and Visual Studio.  Visual Studio is widely regarded as one of the best (if not the best) integrated development environments available.  The free Community version of Visual Studio can be downloaded here:  <a href="https://www.visualstudio.com/downloads/">Visual Studio Downloads</a>.  For information on setting up TinyCLR to work in Visual Studio please click here:  <a href="../../software/tinyclr/intro.html">TinyCLR Introduction</a></p>
-<h3 id="loading-bootloader-v2">Loading Bootloader v2</h3>
-<ol>
-<li>Download the <a href="../../software/tinyclr/loaders/ghi-bootloader.html#fez-hydra">bootloader file</a>.</li>
-<li>Enter SAM-BA mode by connecting SPI1_MISO pin to ground and reset the board. Wait three seconds and remove the connection between SPI1_MISO and ground. SPI1_MISO is pin 8 on socket 3, and ground is pin 10. On later revisions of the board, you can hold down the small button labelled <code>S1</code> near the processor instead.  </li>
-<li>Open up the Device Manager, look under Ports, and find a COM port similar to &quot;Bossa Program Port&quot; or &quot;GPS Detect&quot;.</li>
-<li>Follow the steps for the <a href="../../software/tinyclr/loaders/intro.html#sam-ba-bootloader">SAM-BA bootloader</a>, connecting to the COM port in the previous step. The FEZ Hydra is based on the AT91SAM9RL64-EK. You may get a warning saying that external RAM access is required to run applets. Click yes that you do want to continue anyway.</li>
-</ol>
-<p><strong>Gadgeteer Socket:</strong></p>
-<p><img src="images/socket.png" alt="Gadgeteer Socket"></p>
-<h3 id="loading-the-firmware">Loading the Firmware</h3>
-<div class="TIP"><h5>Tip</h5><p>First make sure you have bootloader v2 loaded. This needs to be done only once.</p>
-</div>
-<p>To activate bootloader v2, hold the LDR0 (socket 3, pin 3) signal low while resetting the board.</p>
-<p>Download the <a href="../../software/tinyclr/downloads.html#fez-hydra">FEZHydra firmware</a> and follow <a href="../../software/tinyclr/loaders/ghi-bootloader.html#loading-the-firmware">Loading the Firmware</a> steps.</p>
 </article>
           </div>
           

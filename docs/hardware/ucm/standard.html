@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
@@ -82,6 +82,8 @@
 <hr>
 <p><img src="images/som-noborder.jpg" alt="UCM SOM"></p>
 <p>The UCM Standard defines a consistent hardware and software interface for the most widely used microcontroller peripherals.  Universal Compute Modules are based on the 200 pin SO-DIMM form factor.  They adhere to a standard pinout across models making it easy to change modules to adapt to the needs of your product.  </p>
+<p>When designing a product, consider following thee UCM standard pinout. This will make your design compatible with any of the UCM modules.</p>
+<p>Software also becomes more portable with the UCM standard. For example, our TinyCLR OS provides a library to automatically map the UCM standard names to the underlying system so that your program can use the UCM standard names only, making changing to a different module very easy.</p>
 <h2 id="the-so-dimm-socket">The SO-DIMM Socket</h2>
 <p><img src="images/200-pin-ddr2-so-dimm.jpg" alt="200 pin DDR2 SO-DIMM socket"></p>
 <p>All of our UCMs use the same 200 pin SO-DIMM socket that was originally made for DDR2 memory modules. The fastest way to get started with UCMs is by using the optional boards and displays described on the <a href="development-options.html">UCM Development Options</a> page. You can also incorporate any of our UCMs into your own custom design by adding the appropriate SO-DIMM socket to your circuit board.</p>
@@ -91,7 +93,7 @@
 <div class="NOTE"><h5>Note</h5><p>Our UCMs are only compatible with DDR2 type 200 pin SO-DIMM sockets.</p>
 </div>
 <p>Here is a link to the manufacturer&#39;s web page for the connector we use on our boards: <a href="http://www.te.com/usa-en/product-1565917-4.html">EMBOSS ASSY DDR2 SODIMM SOCKET 200P 5.2H</a></p>
-<h2 id="ucm-standard-peripherals">UCM Standard Peripherals*</h2>
+<h2 id="peripherals">Peripherals</h2>
 <table>
 <thead>
 <tr>
@@ -170,42 +172,45 @@
 </tr>
 </tbody>
 </table>
-<p>*<em>Available peripherals vary by model.</em></p>
-<h3 id="uart-universal-asynchronous-receivertransmitter">UART (Universal Asynchronous Receiver/Transmitter)</h3>
-<p>UART is used to implement moderate speed full duplex asynchronous serial communication.  It is usually used for peer to peer communication between only two devices. It can transfer data using only one wire for each direction if both devices share a common ground. <a href="../../software/tinyclr/tutorials/uart.html"><em>Sample TinyCLR code</em></a></p>
+<p>*<em>Available peripherals vary by model</em></p>
+<p>Note that the system defines 12 GPIOs that are free from any other functions but most other peripheral pins also support GPIO, giving the user several more GPIO pin options -- keep in mind the standard does not guarantee this though.</p>
+<div class="TIP"><h5>Tip</h5><p>The <a href="../../software/tinyclr/tutorials/intro.html">TinyCLR tutorials</a> are a good resource on using these peripherals.</p>
+</div>
+<h3 id="uart-universal-asynchronous-receiver-transmitter">UART (Universal Asynchronous Receiver Transmitter)</h3>
+<p>UART is used to implement moderate speed full duplex asynchronous serial communication.  It is usually used for peer to peer communication between only two devices. It can transfer data using only one wire for each direction if both devices share a common ground.</p>
 <h3 id="uart-hs-handshaking">UART HS (Handshaking)</h3>
 <p>UART with handshaking is a configuration which allows the host and client to negotiate data transfer via <em>Ready to Send</em> (RTS) and <em>Clear to Send</em> (CTS) signals (two additional wires) to prevent missed data.</p>
 <h3 id="i2c-inter-integrated-circuit">I2C (Inter-Integrated Circuit)</h3>
-<p>I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI. <a href="../../software/tinyclr/tutorials/i2c.html"><em>Sample TinyCLR code</em></a></p>
+<p>I2C is a multi-master, multi-slave, packet switched, half duplex serial communication bus typically used for attaching peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. It uses two wires and has a slower maximum speed than SPI.</p>
 <h3 id="spi-serial-peripheral-interface">SPI (Serial Peripheral Interface)</h3>
-<p>SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C. <a href="../../software/tinyclr/tutorials/spi.html"><em>Sample TinyCLR code</em></a></p>
+<p>SPI is a synchronous serial communication interface used for short distance communication. It uses a master-slave protocol. When using TinyCLR, the processor running TinyCLR is always configured as the master. SPI needs at least three wires and usually needs an additional line (chip select) for each slave. It can communicate much faster than either UART or I2C.</p>
 <h3 id="can-controller-area-network">CAN (Controller Area Network)</h3>
-<p>A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length. <a href="../../software/tinyclr/tutorials/can.html"><em>Sample TinyCLR code</em></a></p>
+<p>A robust bus standard that originated in the automotive field and works very well in high noise environments. It allows microcontrollers and devices to communicate with each other in applications without a host computer. It is a message-based multi-master protocol and generally uses only two wires.  Speed is up to one megabit per second but limited by bus length.</p>
 <h3 id="sdio-sd-card">SDIO (SD Card)</h3>
 <p>SDIO (Secure Digital Input Output) is an interface used for reading from and writing to SD cards.</p>
 <h3 id="adc-analog-to-digital-converter">ADC (Analog to Digital Converter)</h3>
-<p>ADCs are used to measure an analog voltage level by converting it to a digital value. <a href="../../software/tinyclr/tutorials/adc.html"><em>Sample TinyCLR code</em></a></p>
+<p>ADCs are used to measure an analog voltage level by converting it to a digital value.</p>
 <h3 id="pwm-pulse-width-modulation">PWM (Pulse Width Modulation)</h3>
-<p>PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication. <a href="../../software/tinyclr/tutorials/pwm.html"><em>Sample TinyCLR code</em></a></p>
+<p>PWM is a method of generating a square wave signal of uniform frequency with variable duty cycle.  PWM is often used to generate analog voltages, but has many other uses such as generating digital pulses for driving servo motors or driving infrared LEDs for communication.</p>
 <h3 id="gpio-general-purpose-inputoutput">GPIO (General Purpose Input/Output)</h3>
-<p>GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be used to perform more advanced communication and control duties. <a href="../../software/tinyclr/tutorials/gpio.html"><em>Sample TinyCLR code</em></a></p>
+<p>GPIOs are the digital I/O pins that allow the user to interface with basic devices such as buttons (input) or LEDs (output).  GPIOs are very versatile and can also be used to perform more advanced communication and control duties.</p>
 <h3 id="irq-interrupt-request-capable-gpio">IRQ (Interrupt Request Capable GPIO)</h3>
-<p>IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a Wi-Fi module to tell the processor that the Wi-Fi module is receiving data.  The processor would then stop what it is doing to get the data from the Wi-Fi module. <a href="../../software/tinyclr/tutorials/gpio.html#digital-input-events"><em>Sample TinyCLR code</em></a></p>
+<p>IRQ capable GPIO pins can be programmed to interrupt a program when the input to the pin changes.  For example, an IRQ could be used by a Wi-Fi module to tell the processor that the Wi-Fi module is receiving data.  The processor would then stop what it is doing to get the data from the WiFi module.</p>
 <h3 id="usb-client">USB Client</h3>
 <p>Used to communicate with a USB host.  Often used to program and debug embedded devices.</p>
 <h3 id="usb-host">USB Host</h3>
 <p>Used to communicate with one or more USB clients.  Typically used to communicate with various devices such as a mouse, keyboard, camera, etc.</p>
 <h3 id="lcd-tft-controller---16bpp-or-24bpp">LCD (TFT Controller - 16bpp or 24bpp)</h3>
-<p>An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed. <a href="../../software/tinyclr/tutorials/display.html"><em>Sample TinyCLR code</em></a></p>
+<p>An interface providing communication with a TFT LCD (thin-film-transistor liquid-crystal display). The number of data lines connected determines the number of bits per pixel (bpp), which determines the number of colors that can be displayed.</p>
 <h3 id="ethernet-phy">Ethernet PHY</h3>
 <p>Ethernet PHY is the Ethernet physical (hardware) layer.  It provides the Tx and Rx signals for the Ethernet connector.</p>
 <h3 id="dcmi-digital-camera-interface">DCMI (Digital Camera Interface)</h3>
-<p>A standard interface for compatable digital cameras.</p>
+<p>A standard interface for compatible digital cameras.</p>
 <h3 id="vbat-battery-backup-for-rtc">VBAT (Battery Backup for RTC)</h3>
 <p>VBAT is used to provide battery voltage to a microcontroller&#39;s real time clock.  It allows the microcontroller to keep the correct time when the main power to the controller is disconnected (the device is turned off). </p>
 <h3 id="jtag">JTAG</h3>
 <p>JTAG is a serial interface which allows communication between the processor and a host computer.  It is built into the microcontroller and provides a means of software debugging including the ability to stop program execution, single step through program instructions, and read and write to memory and processor registers.</p>
-<h2 id="ucm-standard-pin-assignments">UCM Standard Pin Assignments</h2>
+<h2 id="pin-assignments">Pin Assignments</h2>
 <table>
 <thead>
 <tr>
@@ -640,7 +645,7 @@
 </tr>
 <tr>
 <td>107</td>
-<td>System A</td>
+<td>SYS A</td>
 </tr>
 <tr>
 <td>108</td>
@@ -656,7 +661,7 @@
 </tr>
 <tr>
 <td>111</td>
-<td>System C</td>
+<td>SYS C</td>
 </tr>
 <tr>
 <td>112</td>
@@ -748,11 +753,11 @@
 </tr>
 <tr>
 <td>134</td>
-<td>System B</td>
+<td>SYS B</td>
 </tr>
 <tr>
 <td>135</td>
-<td>System D</td>
+<td>SYS D</td>
 </tr>
 <tr>
 <td>136</td>

@@ -101,7 +101,7 @@ class Program {
         led.Start();
         while (true) {
             if (duty &lt;= 0 || duty &gt;= 1.0) {
-                speed *= -1;    //Invert dirrection.
+                speed *= -1;    //Invert direction.
                 duty += speed;
             }
 

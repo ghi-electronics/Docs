@@ -89,7 +89,7 @@
 <p>Under current versions of .NET Micro Framework, there can be a variable time delay before the buffers are actually written to the media when using the FileStream&#39;s Flush method. This delay can reportedly be as long as a minute (see: <a href="https://netmf.codeplex.com/workitem/2149">https://netmf.codeplex.com/workitem/2149</a>). To guarantee that the file buffers and the meta-data are written to the media you need to flush the volume:</p>
 <ul>
 <li><code>VolumeInfo.GetVolumes()[0].FlushAll()</code> -or-</li>
-<li><code>new Microsoft.SPOT.IO.VolumeInfo(&quot;\SD&quot;).FlushAll()</code>.</li>
+<li><code>Microsoft.SPOT.IO.VolumeInfo(&quot;\SD&quot;).FlushAll()</code>.</li>
 </ul>
 <p>Ideally, you would unmount the media before it is removed from the system. This may not be always possible -- FlushAll will guarantee your data is saved</p>
 </div>
@@ -100,7 +100,7 @@
 <p>This example assumes the card is already inserted; it lists all files available in the root directory.</p>
 <div class="NOTE"><h5>Note</h5><p>Some SD card sockets/interfaces have an internal switch that closes when a card is inserted or ejected. Utilizing the switch is shown in the &quot;<a href="#sd-card-media-detection"><strong>SD Card: Media Detection</strong></a>&quot; example further down on this page.</p>
 </div>
-<pre><code>using System.IO;
+<pre><code class="lang-cs">using System.IO;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using Microsoft.SPOT.IO;

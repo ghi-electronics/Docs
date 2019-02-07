@@ -123,7 +123,12 @@ TinyCLR_Result InteropTest_InteropTest_MyNativeClass::MyNativeProperty___I4(cons
 
     return TinyCLR_Result::Success;
 }
-</code></pre><p>Now you need to compile these files. If you don&#39;t have GCC yet, see the <a href="porting.html">porting guide</a> to find out how to install GCC. To compile using GCC, the easiest way is to use a makefile and a scatterfile. We&#39;ve provided samples of each below.</p>
+</code></pre><p>Now you need to compile these files. You can use free GCC compiler for example.</p>
+<ol>
+<li>Download and install <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">GCC</a>. The latest version we have tested is <code>7-2018-q2-update</code>.</li>
+<li>Download and extract the latest <a href="https://github.com/ghi-electronics/TinyCLR-Ports/releases">TinyCLR OS Core Library</a>. This is where you will find TinyLCR.h.</li>
+</ol>
+<p>To compile using GCC, the easiest way is to use a makefile and a scatterfile. We&#39;ve provided samples of each below.</p>
 <p>The makefile is setup to compile all cpp in the same directory it is and to do using for a Cortex M4 architecture. If you&#39;re not on CortexM4, change the <code>MCU_FLAGS</code> parameter accordingly. The output file is <code>InteropTest.bin</code>. You can change that with the <code>OUTPUT_NAME</code> property.</p>
 <pre><code class="lang-makefile" name="makefile">OUTPUT_NAME = InteropTest
 LINKERSCRIPT_NAME = scatterfile
@@ -153,7 +158,7 @@ build: $(OBJ_FILES)
 
 %.obj: %.cpp
 	$(CC) -c $(CC_FLAGS) -o $@ $^
-</code></pre><p>Because TinyCLR can&#39;t currently dynamically relocate your code, you&#39;ll need to provide the proper base and length values for the interop region in the scatterfile by changing the <code>INTEROP_BASE</code> and <code>INTEROP_LENGTH</code> placeholders. You can find the interop region for your device, if it has one, in the device&#39;s documentation.</p>
+</code></pre><p>You will need to adjust the file with the correct memory regions reserved for interops in the scatterfile by changing the <code>INTEROP_BASE</code> and <code>INTEROP_LENGTH</code> placeholders. You can find the interop region for your device, if it has one, in the device&#39;s documentation.</p>
 <pre><code name="scatterfile">MEMORY {
     SDRAM (wx) : ORIGIN = INTEROP_BASE, LENGTH = INTEROP_LENGTH
 }
@@ -181,6 +186,7 @@ SECTIONS {
 <p>To execute the makefile, you&#39;ll need to have make installed. You can get it from a toolkit like <a href="http://mingw.org/">MinGW</a> or, if you&#39;re on Windows 10, the Windows Subsystem for Linux. Once you have make installed, just navigate to the folder with the makefile and interop files in a shell and execute <code>make build</code>.</p>
 <div class="TIP"><h5>Tip</h5><p>If you use the Windows Subsystem for Linux, you&#39;ll need to change <code>del</code> in the makefile to <code>rm</code>.</p>
 </div>
+<p>You can also <strong>build interops in Visual Studio.</strong> This is a 3-part step-by-step <a href="https://forums.ghielectronics.com/t/the-power-of-interops-in-tinyclr-part-1/21855">tutorial</a>.</p>
 <p>Once you have a compiled image, look in the map file to find out where the interop definition variable <code>Interop_InteropTest</code> (if you&#39;re using the default names) got placed. You&#39;ll need to pass this address to the managed function that registers the interop. In managed code, add the compiled binary image as a resource and use the <code>Marshal</code> class to copy it into the correct location in memory. Then call <code>System.Runtime.InteropServices.Interop.Add</code> and pass it the address of the <code>Interop_InteropTest</code> object from the map file. You need to do this every time your program runs and before you call any of the native methods in your interop class.</p>
 <pre><code class="lang-csharp">var interop = Resources.GetBytes(Resources.BinaryResources.InteropTest);
 

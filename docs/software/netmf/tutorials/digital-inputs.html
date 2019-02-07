@@ -87,7 +87,7 @@
 <p>An InputPort object is used to handle digital input pins. Most pins on the processor can be input or output. Unconnected input pins are &quot;floating&quot;. When a pin is an input and is not connected, it is open for any surrounding noise, which can make the pin high or low. To take care of this issue, modern processors include internal weak pull-down or pull-up resistors, that are usually controlled by software. Enabling the pull-up resistor will pull the pin high. Note that the pull-up resistor doesn&#39;t make a pin high but it pulls it high. If nothing is connected then the pin is high by default. External resistors can be added as well.</p>
 <p>In this example, a button is connected between ground and the input pin. We will also enable the pull-up resistor. This means that the pin will be high (pull-up) when button is not pressed and low (connected to ground) when the button is pressed. We will read the status of the button and pass its state to the LED. Note that the pin is high when the button is not pressed (pulled-high) and it is low when the button is pressed. This means the LED will turn off when the button is pressed.</p>
 <p>The following code requires the Microsoft.SPOT.Hardware assembly. Consult the device schematics or manuals for the proper pin numbers.</p>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using Microsoft.SPOT.Hardware;
 
 
@@ -113,12 +113,10 @@ public class Program
 <p>We can set the interrupt to fire (call the method) on many state changes on the pin: when a pin is low or maybe when it is high. The most common use is the &quot;on change.&quot; The change from low to high or high to low creates a signal edge. The rising edge occurs when the signal rises from low to high. The falling edge happen when the signal falls from high to low. For a more in-depth understanding of the difference between the &quot;change&quot; interrupt versus a &quot;level&quot; interrupt, use wikipedia -- the two articles of relevance are found by searching for &quot;Interrupt Port&quot; and &quot;edge level transition.&quot;</p>
 <p>In the example below, we are using the low edge to detect a button press. &quot;IntButton_OnInterrupt&quot; will automatically run when button is pressed.</p>
 <p>The following code requires the Microsoft.SPOT.Hardware assembly. Consult the device schematic or manual for pin numbers.</p>
-<pre><code class="lang-c#">using Microsoft.SPOT;
+<pre><code class="lang-cs">using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using System;    
 using System.Threading;
-
-
 
 public class Program
 {
@@ -152,7 +150,7 @@ public class Program
 </div>
 <div class="WARNING"><h5>Warning</h5><p>Be careful not to have the pin connected to a switch then set the pin to output.</p>
 </div>
-<pre><code class="lang-c#">using System.Threading;
+<pre><code class="lang-cs">using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 

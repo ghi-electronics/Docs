@@ -91,7 +91,7 @@
 <p>The GHI libraries include a software I2C implementation in the GHI.Hardware assembly (GHI.IO.SoftwareI2CBus).</p>
 <h2 id="an-i2c-example">An I2C Example</h2>
 <p>This example will read the value of the register on an I2C device with the 7-bit address of 0x38. As discussed above, you first have to write the register number you want to read, two in this case, and then read the value back.</p>
-<pre><code class="lang-c#">using Microsoft.SPOT;
+<pre><code class="lang-cs">using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
 public class Program
@@ -134,7 +134,7 @@ public class Program
 }
 </code></pre><h2 id="multiple-devices">Multiple Devices</h2>
 <p>The I2C object on NETMF is a representation of the &quot;bus&quot; and not the &quot;device&quot; so you can&#39;t construct multiple I2C objects. To access multiple I2C devices you need to have multiple configurations and then when accessing device &quot;A&quot; we need to use configuration &quot;A&quot; and when accessing device &quot;B&quot; we need to use configuration &quot;B&quot;.</p>
-<pre><code class="lang-c#">using Microsoft.SPOT;
+<pre><code class="lang-cs">using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
 public class Program
