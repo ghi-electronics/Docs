@@ -40,18 +40,41 @@ Pricing, purchasing and other information can be found on the [FEZ page](https:/
 
 FEZ can be powered through the USB connector and/or the power connector. The barrel jack is pin positive, sleeve negative, 2.1mm. It is capable of anywhere 6V to 9V. 500mA of power should be enough for most needs.
 
-Our TinyCLR operating system lets you program the FEZ (and other devices) in C# or Visual Basic using Microsoft's Visual Studio -- and it's all free!  [**Learn more...**](tinyclr.md).
+## TinyCLR OS
 
-## Programming Options
+TinyCLR OS provides a way to program FEZ in C# or Visual Basic from the Microsoft Visual Studio integrated development environment.  To get started you must first install the bootloader and firmware (instructions below) and then go to the TinyCLR [Getting Started](../../software/tinyclr/getting-started.md) page for instructions.
 
-|  |  |
-|--|--|
-| **TinyCLR** </br> Embedded programming using Visual Studio .NET. [**Learn more...**](tinyclr.md) | **Arduino** </br> Very popular open source standard. [**Learn more...**](arduino.md) |
-| [![TinyCLR](images/tinyclrlogo.jpg)](tinyclr.md) | [![Arduino](images/arduino-logo.png)](arduino.md) |
-| **Mbed** </br> Free online C/C++ compiler. [**Learn more...**](mbed.md) | **MicroPython** </br> A version of Python for microcontrollers. [**Learn more...**](python.md) |
-| [![Mbed Logo](images/mbed-logo.png)](mbed.md) | [![G400S](images/micro-python-logo.png)](python.md) |
-| **Bare Metal** </br> Use the Cortex-M4 compiler of your choice. [**Learn more...**](bare-metal.md) | **Shields** </br> Selected to help get you started. [**Learn more...**](shields/shields.md)
-| [![Sample Code](images/code.png)](bare-metal.md) | [![Accessories](images/projects.png)](shields/shields.md)
+### Loading Bootloader
+
+1. Download the FEZ bootloader [here](../../hardware/loaders/ghi-bootloader.md).
+2. Connect your device to the USB client port.
+3. Put the board in DFU mode: Hold BOOT0 button low and press/release the reset button. Wait for a second then release BOOT0. Windows *Device Manager* will now show "STM Device in DFU Mode" under the 'Universal Serial Bus controller' TAB.
+4. Go to the [STM32 Bootloader](../../hardware/loaders/stm32-bootloader.md) to learn how to upload DFU files.
+
+### Loading the Firmware
+
+1. Activate the bootloader, hold the BTN1 button low while resetting the board.
+2. Open [TinyCLR Config](../../software/tinyclr/tinyclr-config.md) tool.
+3. Click the loader tab.
+4. Select the correct COM port. If you are not seeing it then the device is not in the loader mode.
+5. Click the `Update to Latest` button.
+
+You can also update the firmware manually. Download the [firmware](../../software/tinyclr/downloads.md) and learn how to use the [GHI Bootloader](../../hardware/loaders/ghi-bootloader.md) manually.
+
+### Start Coding
+
+Now that you have installed the bootloader and firmware on the FEZ, you can setup your host computer and start programming. Go to the TinyCLR [Getting Started](../../software/tinyclr/getting-started.md) page for instructions.
+
+### Code Samples
+
+For some examples of using TinyCLR, take a look at the [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples). You may also find the [TinyCLR tutorials](../../software/tinyclr/tutorials/intro.md) useful.
+
+### Native Code
+
+TinyCLR OS also lets you use native code that works alongside your managed application. Native code can be used to provide improved performance or access to advanced features not exposed through TinyCLR. For more information check out [Native Code on TinyCLR](../../software/tinyclr/native/intro.md).
+
+The memory area reserved for native code in TinyCLR OS on FEZ starts at 0x20016000 and its length is 0x3F8.
+
 
 ***
 

@@ -12,8 +12,8 @@ TinyCLR OS started with Microsoft's .NET Micro Framework and continues to enable
 |  [![TinyCLR Logo](images/tinyclr-logo.jpg)](native/intro.md)   |  [![Release Notes](images/tinyclr-logo.jpg)](release-notes.md)   |
 |  **Downloads** </br> Visual Studio and device downloads. [**Learn more...**](downloads.md)   |   **Roadmap** </br> The future of TinyCLR. [**Learn more...**](roadmap.md)  |
 |  [![Download](images/download.jpg)](downloads.md)   |  [![Road](images/roadmap.jpg)](roadmap.md)   |
-|  **TinyCLR Config** </br> Our device configuration program. [**Learn more...**](tinyclr-config.md)   |  **Bootloaders** </br> [**Learn more...**](../loaders/intro.md)   |
-|  [![TinyCLR Config](images/tinyclr-config-sm.png)](tinyclr-config.md)   |  [![Bootloader](images/bootloader.png)](../loaders/intro.md)   |
+|  **TinyCLR Config** </br> Our device configuration program. [**Learn more...**](tinyclr-config.md)   | |
+|  [![TinyCLR Config](images/tinyclr-config-sm.png)](tinyclr-config.md)   | |
 
 ***
 
