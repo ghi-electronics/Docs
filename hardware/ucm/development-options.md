@@ -82,9 +82,9 @@ Adding a ribbon cable allows for further flexibility on where and how far the di
 ### UCD-D43-A
 ![UD435](images/ud435.jpg)
 
-Ordering Part Number: UCD-D43-A
-Display Module: [ER-TFT043-3](https://www.buydisplay.com/)
-Touch Panel: [ER-TPC043-2](https://www.buydisplay.com/)
+* Ordering Part Number: UCD-D43-A
+* Display Module: [ER-TFT043-3](https://www.buydisplay.com/)
+* Touch Panel: [ER-TPC043-2](https://www.buydisplay.com/)
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD435%20Rev%20A%20Schematic.pdf)
 
@@ -117,9 +117,9 @@ Vertical Sync Pulse Width | 1
 ### UCD-D70-A
 ![UD700](images/ud700.jpg)
 
-Ordering Part Number: UCD-D70-A
-Display Module: [ER-TFT070-4](https://www.buydisplay.com/)
-Touch Panel: [ER-TPC070-6](https://www.buydisplay.com/)
+* Ordering Part Number: UCD-D70-A
+* Display Module: [ER-TFT070-4](https://www.buydisplay.com/)
+* Touch Panel: [ER-TPC070-6](https://www.buydisplay.com/)
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD700%20Rev%20A%20Schematic.pdf)
 
