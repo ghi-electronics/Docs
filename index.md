@@ -16,8 +16,6 @@ Here you will find GHI Electronic's product documentation.  For more information
 | [![FEZ](hardware/fez/images/fez.jpg)](hardware/fez/intro.md) | [![tinyCLR](images/tinyclrlogo.jpg)](software/tinyclr/intro.md) |
 | **NETMF** </br> The original embedded .NET upon which TinyCLR OS is based [**Learn More...**](software/netmf/intro.md) | **File System** </br> Technical details and manuals for the File System products. [**Learn More...**](/filesystem/intro.md) |
 | [![NETMF Logo](images/netmf-logo.png)](software/netmf/intro.md) | [![file systems](images/file-system.jpg)](hardware/filesystem/intro.md) |
-| **Legacy Products** </br> Here you will find information on GHI's legacy products and longevity policy. [**Learn More...**](legacy/intro.md) |
-| [![legacy](images/legacy.jpg)](legacy/intro.md) |
 
 ***
 
