@@ -181,7 +181,7 @@ To support uploading to the Visual Studio gallery, we had to change the package 
 
 We're also releasing a tool to convert desktop TrueType fonts to the format used by TinyCLR. Keep in mind there are legal implications to using and distributing fonts and that we cannot provide advice on that. The tool used to convert binary files to `glb` and `ghi` files was also updated to support generating `UF2` files used by the BrainPad (which has its own new firmware in this release as well, available on https://brainpad.com/).
 
-The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format and you can find their device definitions in the ports repo as well. There is also a new bootloader for the UC5550 available on the [bootloader page](../loaders/ghi-bootloader.md).
+The UC2550 and UC5550 now come in a `glb` format instead of the old `ghi` format and you can find their device definitions in the ports repo as well. There is also a new bootloader for the UC5550 available on the [bootloader page](loaders/ghi-bootloader.md).
 
 We have decided to keep throwing an exception when `.constrained` is encountered instead of potentially allowing silent and incorrect behavior. It is currently known to be used when accessing overridden members on structs, particularly those from object like `ToString`, `Equals`, and `GetHashCode`. You'll encounter it on `enum` and `TimeSpan`, among others.
 

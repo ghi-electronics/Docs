@@ -30,7 +30,7 @@
 # [Roadmap](roadmap.md)
 # [TinyCLR Config](tinyclr-config.md)
 
-# [Bootloaders](../loaders/intro.md)
-## [GHI Bootloader](../loaders/ghi-bootloader.md)
-## [STM32 Bootloader](../loaders/stm32-bootloader.md)
-## [SAM-BA Bootloader](../loaders/sam-ba-bootloader.md)
+# [Bootloaders](loaders/intro.md)
+## [GHI Bootloader](loaders/ghi-bootloader.md)
+## [STM32 Bootloader](loaders/stm32-bootloader.md)
+## [SAM-BA Bootloader](loaders/sam-ba-bootloader.md)
