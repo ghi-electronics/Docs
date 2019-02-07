@@ -4,7 +4,7 @@
 
 A bootloader is a small software that boots up the system and runs the firmware. It is also used to update the firmware.
 
-Our products ship with the GHI Bootloader preloaded. This simplifies the firmware update process, especially when using [TinyCLR Config](../tinyclr-config.md) tool.
+Our products ship with the GHI Bootloader preloaded. This simplifies the firmware update process, especially when using the [TinyCLR Config](../../software/tinyclr/tinyclr-config.md) tool.
 
 ## GHI Bootloader
 The [GHI Bootloader](ghi-bootloader.md) page describes the bootloader commands and how to use the bootloader to load firmware onto a device.

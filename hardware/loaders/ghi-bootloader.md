@@ -29,7 +29,7 @@ The individual product pages include further instructions on the firmware needed
 ### Using TinyCLR Config
 TinyCLR Config tool includes multiple features developers need to work with TinyCLR OS-enabled devices. It simplifies the firmware update and it includes options for accessing the TinyCLR firmware at runtime.
 
-Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../tinyclr/tinyclr-config.md) page.
+Using this tool is the recommended path; however, manual installation instructions are also included on this page. Read more on the [TinyCLR Config](../../software/tinyclr/tinyclr-config.md) page.
 
 ### Manually Loading the Firmware
 TinyCLR Config tool should be used to update the firmware. As a backup, use these instructions:
@@ -78,7 +78,7 @@ Some of our devices ship with v1 loader but require v2 loader to work with TinyC
 
 1. Download the bootloader file from the list below.
 2. Put your device in v1 mode (instructions are found on each product's documentation page).
-3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../../software/netmf/intro.md) SDK.
+3. The PC will now detect a virtual serial (COM) device. If you need drivers, they are in the [NETMF](../../software/netmf/intro.md) SDK.
 4. Open any terminal software, we recommend [Tera Term](http://ttssh2.osdn.jp/).
 5. Select serial and pick the COM port associated with your board.
 6. Enter `E` and you will see back "Erase all memory! Are you sure?" now enter `Y`. (The bootloader is case sensitive)

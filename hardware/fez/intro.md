@@ -46,10 +46,10 @@ TinyCLR OS provides a way to program FEZ in C# or Visual Basic from the Microsof
 
 ### Loading Bootloader
 
-1. Download the FEZ bootloader [here](../../software/tinyclr/loaders/ghi-bootloader.md).
+1. Download the FEZ bootloader [here](../../hardware/loaders/ghi-bootloader.md).
 2. Connect your device to the USB client port.
 3. Put the board in DFU mode: Hold BOOT0 button low and press/release the reset button. Wait for a second then release BOOT0. Windows *Device Manager* will now show "STM Device in DFU Mode" under the 'Universal Serial Bus controller' TAB.
-4. Go to the [STM32 Bootloader](../../software/tinyclr/loaders/stm32-bootloader.md) to learn how to upload DFU files.
+4. Go to the [STM32 Bootloader](../../hardware/loaders/stm32-bootloader.md) to learn how to upload DFU files.
 
 ### Loading the Firmware
 
@@ -59,7 +59,7 @@ TinyCLR OS provides a way to program FEZ in C# or Visual Basic from the Microsof
 4. Select the correct COM port. If you are not seeing it then the device is not in the loader mode.
 5. Click the `Update to Latest` button.
 
-You can also update the firmware manually. Download the [firmware](../../software/tinyclr/downloads.md) and learn how to use the [GHI Bootloader](../../software/tinyclr/loaders/ghi-bootloader.md) manually.
+You can also update the firmware manually. Download the [firmware](../../software/tinyclr/downloads.md) and learn how to use the [GHI Bootloader](../../hardware/loaders/ghi-bootloader.md) manually.
 
 ### Start Coding
 
