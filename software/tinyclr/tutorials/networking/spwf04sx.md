@@ -1,20 +1,20 @@
-# SPWF04Sx Wi-Fi Module
+# SPWF04Sx WiFi Module
 ---
-First introduced over twenty years ago, Wi-Fi has become the most popular wireless networking technology. The [SPWF04Sx family of modules](https://www.st.com/en/wireless-connectivity/spwf04sa.html) from STMicroelectronics have an easy-to-use AT command based socket and HTTP API that allow applications to quickly connect to the internet. They also support Transport Layer Security, which is vital in an IoT environment.
+First introduced over twenty years ago, WiFi has become the most popular wireless networking technology. The [SPWF04Sx family of modules](https://www.st.com/en/wireless-connectivity/spwf04sa.html) from STMicroelectronics have an easy-to-use AT command based socket and HTTP API that allow applications to quickly connect to the Internet. They also support Transport Layer Security, which is vital in an IoT environment.
 
-Take a look at the [FEZ Wi-Fi sample](https://github.com/ghi-electronics/TinyCLR-Samples/tree/master/FEZWiFi) for a working example to get going quickly.
+Take a look at the [FEZ WiFi sample](https://github.com/ghi-electronics/TinyCLR-Samples/) for a working example to get going quickly.
 
 ## Constructors
 
 ### SPWF04SxInterface()
 
-`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the Wi-Fi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.
+`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the WiFi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.
 
 ## Methods
 
 ### ClearTlsServerRootCertificate()
 
-`ClearTlsServerRootCertificate()`. Erases the currently loaded root certificates from the Wi-Fi module's flash memory. Takes no arguments and has no return value.
+`ClearTlsServerRootCertificate()`. Erases the currently loaded root certificates from the WiFi module's flash memory. Takes no arguments and has no return value.
 
 ### CloseSocket()
 
@@ -22,23 +22,23 @@ Take a look at the [FEZ Wi-Fi sample](https://github.com/ghi-electronics/TinyCLR
 
 ### DisableRadio()
 
-`DisableRadio()`. Disables the Wi-Fi radio. Takes no arguments and has no return value.
+`DisableRadio()`. Disables the WiFi radio. Takes no arguments and has no return value.
 
 ### Dispose()
 
-`Dispose()`. Disposes of the Wi-Fi instance. Takes no arguments and has no return value.
+`Dispose()`. Disposes of the WiFi instance. Takes no arguments and has no return value.
 
 ### EnableRadio()
 
-`EnableRadio()`. Enables the Wi-Fi radio. Takes no arguments and has no return value.
+`EnableRadio()`. Enables the WiFi radio. Takes no arguments and has no return value.
 
 ### GetConnectionSettings()
 
-`GetConnectionSettings(SpiChipSelectType chipSelectType, int chipSelectLine)`. Returns the SPI connection settings used to open an SPI port for communication with the Wi-Fi module. The first parameter taken by this function specifies the type of chip select used -- only `SpiChipSelectType.Gpio` is supported at this time. The second parameter specifies the GPIO pin that controls the Wi-Fi module's chip select pin.
+`GetConnectionSettings(SpiChipSelectType chipSelectType, int chipSelectLine)`. Returns the SPI connection settings used to open an SPI port for communication with the WiFi module. The first parameter taken by this function specifies the type of chip select used -- only `SpiChipSelectType.Gpio` is supported at this time. The second parameter specifies the GPIO pin that controls the WiFi module's chip select pin.
 
 ### JoinNetwork()
 
-`JoinNetwork(string ssid, string password)`. Attempts to join the Wi-Fi network specified by the ssid and password values. Has no return value.
+`JoinNetwork(string ssid, string password)`. Attempts to join the WiFi network specified by the ssid and password values. Has no return value.
 
 ### ListSocket()
 
@@ -62,7 +62,7 @@ Take a look at the [FEZ Wi-Fi sample](https://github.com/ghi-electronics/TinyCLR
 
 ### ResetConfiguration()
 
-`ResetConfiguration()`. Restores the factory configuration variables to the flash of the Wi-Fi module. It is necessary to perform a hardware or software reset of the Wi-Fi module after a factory restore. Takes no arguments and has no return value.
+`ResetConfiguration()`. Restores the factory configuration variables to the flash of the WiFi module. It is necessary to perform a hardware or software reset of the WiFi module after a factory restore. Takes no arguments and has no return value.
 
 ### SendHttpGet()
 
@@ -74,7 +74,7 @@ Take a look at the [FEZ Wi-Fi sample](https://github.com/ghi-electronics/TinyCLR
 
 ### SetTlsServerRootCertificate()
 
-`SetTlsServerRootCertificate(byte[] certificate)`. Loads a TLS certificate into the flash memory of the Wi-Fi module. Accepts a byte array containing the certificate as its only argument. Returns a string containing the Subject Key Identifier (SKI) of the certificate. The certificate must be loaded into your application as part of a resources file, be DER encoded, and have the extension .cer.
+`SetTlsServerRootCertificate(byte[] certificate)`. Loads a TLS certificate into the flash memory of the WiFi module. Accepts a byte array containing the certificate as its only argument. Returns a string containing the Subject Key Identifier (SKI) of the certificate. The certificate must be loaded into your application as part of a resources file, be DER encoded, and have the extension .cer.
 
 You can use your web browser to obtain a website's root certificate. In Chrome, click on the lock icon to the left of the web address. Then click on `Certificate` and select the `Details` tab. In `Details` click on the `Copy to File...` button. The `Certificate Export Wizard` will appear. Export the certificate as `DER encoded binary X.509 (.CER)`.
 
@@ -82,11 +82,11 @@ In Micorosoft Edge click on the lock icon to the left of the web address and the
 
 ### TurnOff()
 
-`TurnOff()`. Turns off the Wi-Fi module. Takes no arguments and has no return value.
+`TurnOff()`. Turns off the WiFi module. Takes no arguments and has no return value.
 
 ### TurnOn()
 
-`TurnOn()`. Turns on the Wi-Fi module. Takes no arguments and has no return value.
+`TurnOn()`. Turns on the WiFi module. Takes no arguments and has no return value.
 
 ### WriteSocket()
 
@@ -98,11 +98,11 @@ In Micorosoft Edge click on the lock icon to the left of the web address and the
 
 ### IndicationReceived
 
-Fires an event when a Wi-Fi indication (WIND) message is received.
+Fires an event when a WiFi indication (WIND) message is received.
 
 ### ErrorReceived
 
-Fires an event when a Wi-Fi error message is received.
+Fires an event when a WiFi error message is received.
 
 ## Properties
 
@@ -116,7 +116,7 @@ String property used to specify the common name as found in the websites certifi
 
 ### State
 
-Read only property of type `SPWF04SxWiFiState` that reflects the current state of the Wi-Fi module. For example:
+Read only property of type `SPWF04SxWiFiState` that reflects the current state of the WiFi module. For example:
 
 `if (wifi.State == SPWF04SxWiFiState.HardwareFailure) Debug.WriteLine("Hardware Failure");`
 
