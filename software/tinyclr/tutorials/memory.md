@@ -23,8 +23,8 @@ A fixed location buffer can be allocated using `GHIElectronics.TinyCLR.Native.Me
 Creating/disposing objects is costly, especially when used in inner loops. Assuming there is a method that sends a byte array over a buses/network. Also assuming we there is a byte that needs to be sent. We will need to create a byte array of size one.
 
 ```cs
-static void WritByte(byte b) {
-    byte[] ba = new byte[1];
+void WritByte(byte b) {
+    var ba = new byte[1];
     // use that byte
     ba[0] = b;
     Network.SendByteArray(b);
@@ -33,8 +33,8 @@ static void WritByte(byte b) {
 The code will work just fine but if it is being used in inner loops and it is being called 1000/second, then it will need to create and lose 1000 individual arrays. The system will run better if the array is created only once.
 
 ```cs
-static byte[] ba = new byte[1];
-static void WritByte(byte b) {
+byte[] ba = new byte[1];
+void WritByte(byte b) {
     // use that byte
     ba[0] = b;
     Network.SendByteArray(b);
@@ -53,6 +53,7 @@ class Program {
         led.SetDriveMode(GpioPinDriveMode.Output);
         led.Write(GpioPinValue.High);
     }
+
     static void Main() {
         BadExample();
         // This code will raise an exception
@@ -74,6 +75,7 @@ class Program {
         // Free the pin, but this may change the pin status to default
         led.Dispose();
     }
+
     static void Main() {
         BadExample();
         // This code will now work
@@ -94,6 +96,7 @@ class Program {
     static void Example() {
         led.Write(GpioPinValue.High);
     }
+
     static void Main() {
         // Init the hardware
         led = GpioController.GetDefault().OpenPin(FEZ.GpioPin.Led1);
@@ -101,20 +104,19 @@ class Program {
         // You can use the pin everywhere now
         // ... in the method
         Example();
-        // ... and here 
-
+        // ... and here
         led.Write(GpioPinValue.Low);
         //...
     }
 }
 ```
 
-## FLASH Memory
-FLASH memory does not lose its content on power loss, like an SD memory card for example. There are special requirements to write to flash but you can read FLASH just like RAM. When deploying a program, the `TinyCLR Device Deployment` window will show what is being loaded and how large it is. It will then show how much free FLASH is still available. 
+## Flash Memory
+Flash memory does not lose its content on power loss, like an SD memory card for example. There are special requirements to write to flash but you can read Flash just like RAM. When deploying a program, the `TinyCLR Device Deployment` window will show what is being loaded and how large it is. It will then show how much free Flash is still available. 
 
 > Assemblies deployed. There are 2,408,408 bytes left in the deployment area.
 
-FLASH is not typically written to at runtime. The system will function even with no free available FLASH.
+Flash is not typically written to at runtime. The system will function even with no free available FLASH.
 
 ## Resources
 TinyCLR OS allows resources, like fonts and images, to be merged into the project as a resource and then deployed to the device's flash. Those resources can then be fetched into RAM and used at runtime. The [Resource](resources.md) tutorial has more details.
@@ -132,5 +134,5 @@ Marshal.WriteInt32(address, Marshal.ReadInt32(address) | (1 << 3));
 ```
 
 > [!Tip]
-> You can only read from FLASH, not write.
+> You can only read from Flash, not write.
 
