@@ -1,6 +1,6 @@
 # Display
 ---
-Displays can be grouped into two distinct interface categories, parallel TFT displays and serial (SPI/I2C) displays.
+Displays can be grouped into two distinct interface categories, parallel TFT displays and serial (SPI/I2C) displays. There are also non-graphical character displays.
 
 ## Parallel TFT Displays
 These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.
@@ -69,12 +69,16 @@ screen.DrawLine(redPen, 0, 0, displayController.ActiveConfiguration.Width-1, dis
 ```
 
 ## Serial SPI/I2C Displays
-The internal graphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.
+The internal graphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to the desired display.
 
 As each display has its own pixel format and color depth, you also have access to the way pixels are written in the graphics memory.
 
 This [blog](https://forums.ghielectronics.com/t/managed-graphics-for-non-tft-displays-in-tinyclr/21887) details how this can be accomplished.
 
+## Character Displays
+![Character Display](../images/character-display.jpg)
+
+These displays are capable of only showing characters. The most commonly use the HD44780 controller. They are available in different sizes but 2x16 character is most common. These displays only require GPIO pins and can be used with TinyCLR.
 
 ## Low Level Display Access
 TinyCLR also provides low level display access as part of the `GHIElectronics.TinyCLR.Devices.Display` library. These methods provide a simple way to write to a display without need for the `System.Drawing` library or an added font resource file.
@@ -130,4 +134,4 @@ class Program {
 
 G120E Dev Board display after running the sample code:
 
-![Low Level Display Sample](images/low-level-display-sample.jpg)
+![Low Level Display Sample](../images/low-level-display-sample.jpg)

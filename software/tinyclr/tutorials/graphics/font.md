@@ -1,126 +1,6 @@
-# Graphics
----
-TinyCLR OS support includes two level of graphics support, the core elements and User Interface.
+# Fonts
 
-## Core Elements
-The `GHIElectronics.TinyCLR.Drawing` NuGet package includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.
-
-Shape examples are `Graphics.FillEllipse`, `Graphics.DrawLine` and `Graphics.DrawRectangle`. These methods need `Pen` and `Brush` that are also part of `Graphics`.
-
-For images, TinyCLR OS supports BMP, GIF, and JPG. Depending on your hardware's limitation, one or more of these image formats maybe supported. Images can be loaded from a `stream` but the simplest option is to load from a resource. BMP supports 256 colors and 24bit. GIF does not support animated images.
-
-Fonts are well supported. They are covered later on this page.
-
-It is important to note that drawing functions process graphics in RAM independently from any display. The display driver then transfers the pixels from the internal memory to the display, through `Graphics.Flush`. Learn more about the [display](display.md) support.
-
-## User Interface
-You can use the `GHIElectronics.TinyCLR.UI` library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
-
-```cs
-using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.UI;
-using GHIElectronics.TinyCLR.UI.Controls;
-using GHIElectronics.TinyCLR.UI.Media;
-
-namespace UI {
-    public class Program : Application {
-        public Program(DisplayController d) : base(d) {
-        }
-
-        public static void Main() {
-            var disp = DisplayController.GetDefault();
-
-            disp.SetConfiguration(new ParallelDisplayControllerSettings {
-                //Your display configuration
-            });
-
-            disp.Enable();
-
-            var app = new Program(disp);
-
-            //Use the below two functions to pass input to the UI system
-            //app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
-            //app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
-
-            app.Run(Program.CreateWindow(disp));
-        }
-
-        private static Window CreateWindow(DisplayController disp) {
-            //Setup
-            var window = new Window {
-                Height = (int)disp.ActiveConfiguration.Height,
-                Width = (int)disp.ActiveConfiguration.Width
-            };
-
-            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0,
-                window.Width, window.Height);
-
-            //In next line replace "YourFont" with name of font you added to Resources file.
-            var font = Resource1.GetFont(Resource1.FontResources.YourFont);
-
-            OnScreenKeyboard.Font = font;
-
-
-            //List
-            var listBox = new ListBox();
-
-            listBox.Child.Width = window.Width;
-
-
-            //Text
-            for (var i = 0; i < 3; i++) {
-                var text = new Text(font, $"Text item {i}");
-
-                text.SetMargin(5);
-
-                listBox.Items.Add(text);
-            }
-
-
-            //Button
-            var j = 0;
-            var val = new Text(font, "Tap Me");
-            var btn = new Button {
-                Child = val,
-                Width = 100
-            };
-
-            btn.SetMargin(5);
-            btn.Click += (s, e) => val.TextContent = "Tap Me " + (j++).ToString();
-
-            listBox.Items.Add(btn);
-
-
-            //Textbox
-            var txt = new TextBox {
-                Font = font,
-                Text = "Text Sample"
-            };
-
-            txt.SetMargin(5);
-            listBox.Items.Add(txt);
-
-            //Setup
-            window.Child = listBox;
-            window.Visibility = Visibility.Visible;
-
-            return window;
-        }
-    }
-}
-```
-
-## User Input
-A user can feed in input to the graphical interface through touch or button input. The earlier example shows how it is done.
-
-```cs
-app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
-app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
-```
-
-## Fonts
-
-Fonts can be included in your TinyCLR application by adding them as a resource. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under [downloads](../downloads.md) is a command line utility which does just that.
+Fonts can be included in your TinyCLR application by adding them as a [resource](../resources.md). Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under [downloads](../../downloads.md) is a command line utility which does just that.
 
 To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. A minimal .fntdef file may look like this to have the standard ASCII characters.
 
@@ -130,8 +10,9 @@ ImportRange 32 126
 ```
 
 > [!TIP]
-> This [third-party tool](http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx) can be handy for generating fonts.
+> This [third-party tool](http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx) can be handy for generating compatible fonts.
 
+## Font Defenition
 The .fntdef file options are as follows:
 
 > [!Note]
@@ -228,16 +109,3 @@ The .fntdef file options are as follows:
 
 Syntax for running FontConverter is GHIElectronics.TinyCLR.FontConverter.exe *input-font* *output-font*. For example `GHIElectronics.TinyCLR.FontConverter.exe Arial.fntdef Arial.tcfnt`.
 
-### Adding Fonts to Your Application
-
-Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select `Add New Item...` in the Visual Studio `Project` menu. In the `Add New Item` dialog box select `Resources File` and click the `Add` button.
-
-![Add resources file](images/add-resource-file.png)
-
-
-Then, on the tab for your resource file, click on the small down arrow on the right of the `Add Resource` button and select `Add Existing File...`. 
-
-![Add existing file](images/add-existing-file.png)
-
-
-Use the `Add existing file to resources` dialog box to find and open the .tcfnt file you created using FontConverter.
