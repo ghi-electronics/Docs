@@ -88,11 +88,9 @@ Adding a ribbon cable allows for further flexibility on where and how far the di
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD435%20Rev%20A%20Schematic.pdf)
 
-This display module has a 4.3" 480x272 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A.
+This display module has a 4.3" 480x272 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A. The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B.
 
-This is an example code using the UD435 display. For more details, see the [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md) tutorials.
-
-The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+The [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples) has usage examples. Learn more about the [graphics](../../software/tinyclr/tutorials/graphics/intro.md) support.
 
 See below for the display configuration values:
 
@@ -123,15 +121,13 @@ Vertical Sync Pulse Width | 1
 
 [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/UD700%20Rev%20A%20Schematic.pdf)
 
-This display module has a 7" 800x480 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A.
+This display module has a 7" 800x480 TFT display with capacitive touch screen. The display needs a UCM with TFT display support and needs I2C for the capacitive touch. The backlight is controllable through GPIO A. The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B.
 
 The display is exactly the same size as the Dev Board. They can be nicely mounted back to back with stand offs. A ribbon cable will be needed for the display signals.
 
 ![UCM Breakout with Display Connected to IDE](images/ucm-display-connected-ide.jpg)
 
-This is an example code using the display. For more details, see the [display](../../software/tinyclr/tutorials/display.md) and [graphics](../../software/tinyclr/tutorials/graphics.md) tutorials.
-
-The capacitive touch controller is connected I2C A with the interrupt pin on GPIO B. See the [touch tutorial](../../software/tinyclr/tutorials/touch.md) for details on using the touch screen.
+The [TinyCLR Samples repo](https://github.com/ghi-electronics/TinyCLR-Samples) has usage examples. Learn more about the [graphics](../../software/tinyclr/tutorials/graphics/intro.md) support.
 
 See below for the display configuration values:
 
