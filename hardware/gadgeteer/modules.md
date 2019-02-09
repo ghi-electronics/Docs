@@ -2,9 +2,6 @@
 ---
 This page lists all .NET Gadgeteer modules. All sources are found on the [NETMF and Gadgeteer repo](https://github.com/ghi-electronics/NETMF-Gadgeteer)
 
-> [!Tip]
-> There are community made NuGet drivers for many of the modules.
-
 ## Accel G248
 ![Accel G248](images/modules/accel-g248.jpg)
 
@@ -374,7 +371,7 @@ A very common ultrasonic sensor that works by sending a pulse on the trig Pin4 a
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/GPS%20Module%20Schematic.pdf)
 
-# GasSense
+## GasSense
 ![GasSense](images/modules/gas-sense.jpg)
 
 This module can host several different air sensors, like Alcohol and CO2.
@@ -625,7 +622,7 @@ Simply set pin 3 high to activate the relay.
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Touch%20C8%20Module%20Schematic.pdf)
 
-# Touch L12
+## Touch L12
 ![Touch L12](images/modules/touch-l12.jpg)
 
 * [Schematic](http://files.ghielectronics.com/downloads/Schematics/Gadgeteer/Touch%20L12%20Module%20Schematic.pdf)
