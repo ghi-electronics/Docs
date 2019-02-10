@@ -42,25 +42,18 @@ namespace UI {
 
             //In next line replace "YourFont" with name of font you added to Resources file.
             var font = Resource1.GetFont(Resource1.FontResources.YourFont);
-
             OnScreenKeyboard.Font = font;
-
 
             //List
             var listBox = new ListBox();
-
             listBox.Child.Width = window.Width;
-
 
             //Text
             for (var i = 0; i < 3; i++) {
                 var text = new Text(font, $"Text item {i}");
-
                 text.SetMargin(5);
-
                 listBox.Items.Add(text);
             }
-
 
             //Button
             var j = 0;
@@ -69,26 +62,21 @@ namespace UI {
                 Child = val,
                 Width = 100
             };
-
             btn.SetMargin(5);
             btn.Click += (s, e) => val.TextContent = "Tap Me " + (j++).ToString();
-
             listBox.Items.Add(btn);
-
 
             //Textbox
             var txt = new TextBox {
                 Font = font,
                 Text = "Text Sample"
             };
-
             txt.SetMargin(5);
             listBox.Items.Add(txt);
 
             //Setup
             window.Child = listBox;
             window.Visibility = Visibility.Visible;
-
             return window;
         }
     }
@@ -96,7 +84,7 @@ namespace UI {
 ```
 
 ## User Input
-A user can feed in input to the graphical interface through touch or button input. The earlier example shows how it is done.
+A user can feed in input to the graphical interface through touch or button input.
 
 ```cs
 app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);

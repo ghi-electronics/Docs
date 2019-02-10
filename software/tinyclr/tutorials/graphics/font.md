@@ -2,6 +2,26 @@
 
 Fonts can be included in your TinyCLR application by adding them as a [resource](../resources.md). Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under [downloads](../../downloads.md) is a command line utility which does just that.
 
+```cs
+var screen = Graphics.FromHdc(displayController.Hdc);
+var font = Resource.GetFont(Resource.FontResources.NinaB);
+var greenPen = new Pen(Color.Green);
+screen.DrawString("Hello World!", font, greenPen.Brush, 10, 100);
+screen.Flush();
+```
+
+## Built-in fonts
+When using systems with managed SPI display drivers, the font support is handled though an internal built-in font. This is done to reduce memory requirements.
+
+```cs
+var teal = new SolidBrush(Color.Teal);
+var font = new Font("GHIMono8x5", 8);
+screen.DrawString("Hello World!", font, teal, 40, 10);
+screen.Flush();
+```
+
+## Font Conversion
+
 To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. A minimal .fntdef file may look like this to have the standard ASCII characters.
 
 ```

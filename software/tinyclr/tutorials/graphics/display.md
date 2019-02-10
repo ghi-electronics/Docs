@@ -1,72 +1,11 @@
 # Display
 ---
-Displays can be grouped into two distinct interface categories, parallel TFT displays and serial (SPI/I2C) displays. There are also non-graphical character displays.
+Graphical Displays can be grouped into two distinct interface categories, parallel TFT displays and serial (SPI/I2C) displays. There are also non-graphical character displays.
+
+The display drivers are meant to transfer the pixel data from memory to the actual display. The [drawing](drawing.md) tutorial shows how drawing is done, in memory.
 
 ## Parallel TFT Displays
-These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.
-
-TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our UCM Dev Board with the UD435 Display option. You will need to add the `GHIElectronics.TinyCLR.Drawing`, `GHIElectronics.TinyCLR.Devices.Gpio` and `GHIElectronics.TinyCLR.Pins` NuGet package to your program.
-
-In this example, GPIO is only used to turn on the backlight. Note that the backlight is usually on GPIO A. 
-
-```cs
-using System.Drawing;
-using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.Devices.Gpio;
-using GHIElectronics.TinyCLR.Pins;
-
-class Program {
-    private static void Main() {
-        UCMStandard.SetModel(UCMModel.UC5550); // Change to your specific board.
-        var backlight = GpioController.GetDefault().OpenPin(UCMStandard.GpioPin.A);
-        backlight.SetDriveMode(GpioPinDriveMode.Output);
-
-        var displayController = DisplayController.GetDefault();
-
-        // Enter the proper display configurations for the UD435
-        displayController.SetConfiguration(new ParallelDisplayControllerSettings {
-            Width = 480,
-            Height = 272,
-            DataFormat = DisplayDataFormat.Rgb565,
-            HorizontalBackPorch = 46,
-            HorizontalFrontPorch = 16,
-            HorizontalSyncPolarity = false,
-            HorizontalSyncPulseWidth = 1,
-            DataEnableIsFixed = false,
-            DataEnablePolarity = false,
-            PixelClockRate = 12_000_000,
-            PixelPolarity = false,
-            VerticalBackPorch = 23,
-            VerticalFrontPorch = 7,
-            VerticalSyncPolarity = false,
-            VerticalSyncPulseWidth = 1
-        });
-
-        displayController.Enable();
-        backlight.Write(GpioPinValue.High);
-
-        // Some needed objects
-        var screen = Graphics.FromHdc(displayController.Hdc);
-        var greenPen = new Pen(Color.Green, 5);
-        var redPen = new Pen(Color.Red, 3);
-
-        // Start Drawing (to memory)
-        screen.Clear(Color.Black);
-        screen.DrawEllipse(greenPen, 40, 30, 80, 60);
-        screen.DrawLine(redPen, 0, 0, 479, 271);
-
-        // Flush the memory to the display. This is a very fast operation.
-        screen.Flush();
-    }
-}
-```
-
-The `DisplayController.ActiveConfiguration` can be used to read the configuration at any time. The Width and Height can be used to write code that automatically scales to the display's resolution.
-
-The example above can be changed to automatically draw a line from corner to corner, no matter the display resolution.
-```cs
-screen.DrawLine(redPen, 0, 0, displayController.ActiveConfiguration.Width-1, displayController.ActiveConfiguration.Height-1);
-```
+These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction, using DMA. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes!
 
 ## Serial SPI/I2C Displays
 The internal graphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to the desired display.
