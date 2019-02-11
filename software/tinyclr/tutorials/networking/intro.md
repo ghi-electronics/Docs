@@ -1,9 +1,20 @@
 # Networking
 ---
-It wasn't that long ago that computer networking was expensive, complicated, and used almost solely within organizations. With the widespread adoption of Wi-Fi, Ethernet, and the Internet, networking is now inexpensive, easy, and ubiquitous.
+TinyCLR OS Networking support provides socket and HTTP APIs that should be familiar to any .NET developer. Take a look at the [.NET docs](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.socket) for samples. The implementation can be found in the `GHIElectronics.TinyCLR.Networking` and `GHIElectronics.TinyCLR.Networking.Http` libraries.
 
-As developers and manufacturers of embedded products, the Internet of Things revolution is of great interest. While the projected growth of the IoT market varies wildly depending on whose research you're looking at, everyone agrees that IoT is growing exponentially and that growth will continue for the forseeable future. There are now more IoT devices than PCs, laptops, smartphones, and tablets. Some feel that within the next two years the average connected home will have fifty IoT devices. Others claim that this is the start of the next industrial revolution.
+A low-level hardware-specific driver needs to be implemented.
 
-TinyCLR provides socket and HTTP APIs that should be familiar to any .NET developer. Take a look at the [.NET docs](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.socket) for some samples. Our implementation can be found in the `GHIElectronics.TinyCLR.Networking` and `GHIElectronics.TinyCLR.Networking.Http` libraries.
+## STMicroelectronics SPWF045x
+A reference implementation is available today for STMicroelectronics SPWF04Sx secure WiFi module. See the [SPWF04Sx](spwf04sx.md) page for details.
 
-Currently we have a built in driver for the [SPWF04Sx](spwf04sx.md), but more will be added over time.
+## Espressif ESP32 and ESP8266
+These low-cost WiFi modules have AT command firmware option. The SPWF045x driver can be used as a reference for developing drivers.
+
+## Ethernet
+Supporting built-in Ethernet or the use of SPI-based ENC28J60 require TinyCLR to host is own TCP/IP and TLS stacks. This is currently still in development. Another option is to use a C# TCP/IP implementation, such us [mIP](https://archive.codeplex.com/?p=mip). Or use a chip with built in TCP/IP, like [Wiznet W5500](https://www.wiznet.io/product-item/w5500/).
+
+## Mobile Modems
+Most mobile modems expose AT serial commands for an easy network access. They simply become a serial-to-mobile gateway. Some modems expose AT commands for socket handling, which can be used in an interface driver for TinyCLR networking support, similar to the SPWF045x drivers.
+
+## Redpine RS9110
+Customers coming from older NETMF designs may have utilized Redpine RS9110 WiFi modules. Redpine has discontinued this product and we do not have plans to supporting it in TinyCLR. Also, due to an NDA with Redpine, we are unable to provide an open driver for it.
