@@ -14,6 +14,7 @@
 * [Graphics](graphics.md)
 * [I2C](i2c.md)
 * [In-Field Update](in-field-update.md)
+* [Networking](networking.md)
 * [PWM](pwm.md)
 * [Pulse Feedback](pulse-feedback.md)
 * [Real Time Clock (RTC)](rtc.md)

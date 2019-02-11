@@ -11,6 +11,7 @@
 ## [Graphics](tutorials/graphics.md)
 ## [I2C](tutorials/i2c.md)
 ## [In-Field Update](tutorials/in-field-update.md)
+## [Networking](tutorials/networking.md)
 ## [PWM](tutorials/pwm.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)
 ## [Real Time Clock (RTC)](tutorials/rtc.md)
