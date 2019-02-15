@@ -20,7 +20,7 @@ For more information on the future of Gadgeteer, please see this [news post](htt
 Download and install GHI Electronics NETMF SDK 2016 R1 from our [NETMF Downloads](downloads.md) page. When installing newer GHI NETMF SDKs, click the `Advanced` button on the opening dialog box and uncheck the boxes to install the FEZ CERB Family and G400/FEZ Hydra loader updaters (the first two options). If needed, these loaders can be installed separately as highlighted in the individual product pages.
 ![Advanced options](images/advanced-options.png)
 
-Older GHI NETMF SDKs are also available on the [NETMF Downloads](downloads.md) page.
+Older GHI NETMF SDKs are also available on the [NETMF Downloads](downloads.md) page. For the latest 2016 R1 SDK, we've also made a zip archive of the sub-installers available so that you can install just the pieces you need in a quicker fashion.
 
 ### Get Started with *.NET Micro Framework for Beginners*
 To help you get started we have a free e-book in .pdf format: [*.NET Micro Framework for Beginners*](http://files.ghielectronics.com/downloads/Documents/Guides/NETMF%20for%20Beginners.pdf)
