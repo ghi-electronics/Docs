@@ -21,7 +21,7 @@ The lastest version of Visual Studio that works with NETMF is VS2013.  The Commu
 
 Date | NETMF Core Rev | SDK
 --- | --- | ---
-Jun 27, 2016 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2016 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202016%20R1.exe)
+Jun 27, 2016 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2016 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202016%20R1.exe)<br />[GHI Electronics NETMF SDK 2016 R1 zip](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202016%20R1.zip)
 Aug 31, 2015 | 4.3 QFE2 | [GHI Electronics NETMF SDK 2015 R1](http://files.ghielectronics.com/downloads/NETMF/SDKs/GHI%20Electronics%20NETMF%20SDK%202015%20R1.exe)
 Oct 29, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R5](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R5.exe)
 Oct 8, 2014 | 4.3 QFE1 | [NETMF and Gadgeteer Package 2014 R4](http://files.ghielectronics.com/downloads/NETMF/SDKs/NETMF%20and%20Gadgeteer%20Package%202014%20R4.exe)
