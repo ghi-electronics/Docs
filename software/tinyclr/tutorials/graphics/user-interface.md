@@ -94,106 +94,109 @@ namespace UserInterfaceExample {
 }
 ```
 ## Elements
-A window is not very useful without some elements (controls). There are several built in elements and you can also custom make your own. All elements descend from the `UIElement` class. Explore the `GHIElectronics.TinyCLR.UI.Controls` namespace for available options. The simplest element is a `TextBox`. Modify the previous example to add a `TextBox`. Note how the `Window` now has a `Child`, which is now the `TextBox`.
+A window is not very useful without some elements (controls). There are several built in elements and you can also custom make your own. All elements descend from the `UIElement` class. Explore the `GHIElectronics.TinyCLR.UI.Controls` namespace for available options.
 
+For the sake of simplifying the rest of this tutorial, we will add `private static UIElement Elements()` method that creates and returns the elements. This is then assigned to the `Child` of our `Window`. You will need to add `window.Child = Elements(window.Width, window.Height);` right before returning from `CreateWindow`.
+
+
+> [!Tip]
+> This example needs a [font](font.md).
 
 ```cs
-var txt = new TextBox {
-    Font = font,
-    Text = "Hello World!",
-    HorizontalAlignment = HorizontalAlignment.Center,
-    VerticalAlignment = VerticalAlignment.Center
-};
-window.Child = txt;
+private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+    var txt = new TextBox {
+        Font = font,
+        Text = "Hello World!",
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center
+    };
+    return txt;
+}
 ```
 
 ## Panels
+A `Window` can carry only a single `Child`, that is a single element. This is not a concern because the single element can be a container, like a `Panel`, which holds multiple elements. You can even have panels within panels and each has its own elements. There are two types of panels, `Canvas` and `StackPanel`. The canvas allows elements to be added anywhere on the canvas. Stack panels, on the other had, places elements in order.
 
-
-
-
-
-The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.
+This example will set 2 text elements is a horizontal panel. They will "stack" one right after another. To make them show one on the left of the screen and one on the right, we will set the width of the text area to be half the screen. We now have to identical regions stacked next to each other horizontally. We can then align the text as desired.
 
 ```cs
-using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.UI;
-using GHIElectronics.TinyCLR.UI.Controls;
-using GHIElectronics.TinyCLR.UI.Media;
+private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+    var horiStack = new StackPanel(Orientation.Horizontal);
 
-namespace UI {
-    public class Program : Application {
-        public Program(DisplayController d) : base(d) {
-        }
+    var txt1 = new Text(font, "Hello World!") {
+        ForeColor = Colors.White,
+        TextAlignment = TextAlignment.Left,
+        Width = ScreenWidth / 2,
+    };
+    var txt2 = new Text(font, "TinyCLR is Great!"){
+        ForeColor = Colors.White,
+        TextAlignment = TextAlignment.Right,
+        Width = ScreenWidth / 2 ,
 
-        public static void Main() {
-            var disp = DisplayController.GetDefault();
+    };
+    horiStack.Children.Add(txt1);
+    horiStack.Children.Add(txt2);
 
-            disp.SetConfiguration(new ParallelDisplayControllerSettings {
-                //Your display configuration
-            });
+    return horiStack;
+}
+```
 
-            disp.Enable();
+The beauty of stack panels comes when mixing vertical and horizontal stack panels. This example will introduce shapes found in the `GHIElectronics.TinyCLR.UI.Shapes` namespace. It will also set the margins of the shape.
 
-            var app = new Program(disp);
+```cs
+private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+    var horiStack = new StackPanel(Orientation.Horizontal);
+    var vertStack = new StackPanel(Orientation.Vertical);
 
-            //Use the below two functions to pass input to the UI system
-            //app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
-            //app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
+    var txt1 = new Text(font, "Hello World!") {
+        ForeColor = Colors.White,
+        TextAlignment = TextAlignment.Left,
+        Width = ScreenWidth / 2,
+    };
 
-            app.Run(Program.CreateWindow(disp));
-        }
+    var txt2 = new Text(font, "TinyCLR is Great!"){
+        ForeColor = Colors.White,
+        TextAlignment = TextAlignment.Right,
+        Width = ScreenWidth / 2 ,
+    };
 
-        private static Window CreateWindow(DisplayController disp) {
-            //Setup
-            var window = new Window {
-                Height = (int)disp.ActiveConfiguration.Height,
-                Width = (int)disp.ActiveConfiguration.Width
-            };
+    var rect = new Rectangle(200, 10) {
+        Fill = new SolidColorBrush(Colors.Green),
+    };
+    rect.SetMargin(0, 20, 0, 0);
 
-            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0,
-                window.Width, window.Height);
+    horiStack.Children.Add(txt1);
+    horiStack.Children.Add(txt2);
+    vertStack.Children.Add(horiStack);
+    vertStack.Children.Add(rect);
 
-            //In next line replace "YourFont" with name of font you added to Resources file.
-            var font = Resource1.GetFont(Resource1.FontResources.YourFont);
-            OnScreenKeyboard.Font = font;
+    return vertStack;
+}
+```
 
-            //List
-            var listBox = new ListBox();
-            listBox.Child.Width = window.Width;
+## The Dispatcher
 
-            //Text
-            for (var i = 0; i < 3; i++) {
-                var text = new Text(font, $"Text item {i}");
-                text.SetMargin(5);
-                listBox.Items.Add(text);
-            }
+The User Interface libraries rely on a dispatcher internally to handle system events and updates the invalidated elements. Any changes to any of the elements needs to happen from within the dispatcher. In this example, we will show time on the screen. The time will be in a text box that is updated every second using a `Timer`. Since timers run in their own thread, a dispatcher invoke is needed.
 
-            //Button
-            var j = 0;
-            var val = new Text(font, "Tap Me");
-            var btn = new Button {
-                Child = val,
-                Width = 100
-            };
-            btn.SetMargin(5);
-            btn.Click += (s, e) => val.TextContent = "Tap Me " + (j++).ToString();
-            listBox.Items.Add(btn);
+```cs
+static void Counter(object o) {
+    Application.Current.Dispatcher.Invoke(TimeSpan.FromMilliseconds(1), _ => {
+        Text txt = (Text)o;
+        txt.TextContent = DateTime.Now.ToString();
+        txt.Invalidate();
+        return null;
+    }, null);
+}
 
-            //Textbox
-            var txt = new TextBox {
-                Font = font,
-                Text = "Text Sample"
-            };
-            txt.SetMargin(5);
-            listBox.Items.Add(txt);
+private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+    var txt = new Text(font, "Hello World!") {
+        ForeColor = Colors.White,
+        VerticalAlignment = VerticalAlignment.Center,
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
 
-            //Setup
-            window.Child = listBox;
-            window.Visibility = Visibility.Visible;
-            return window;
-        }
-    }
+    Timer timer = new Timer(Counter, txt, 2000, 1000);
+    return txt;
 }
 ```
 
