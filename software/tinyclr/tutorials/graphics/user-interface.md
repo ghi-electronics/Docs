@@ -117,7 +117,7 @@ private static UIElement Elements() {
 
 These 2 elements are very basic and very useful. They are used in many of the examples throught this tutorial.
 
-## Panels
+## Panel
 A `Window` can carry only a single `Child`, that is a single element. This is not a concern because the single element can be a container, like a `Panel`, which holds multiple elements. You can even have panels within panels and each has its own elements. This example will introduce shapes found in the `GHIElectronics.TinyCLR.UI.Shapes` namespace. It also shows an example of the `TextBox` element. We will also set margins for a better look.
 
 ```cs
@@ -216,7 +216,7 @@ private static UIElement Elements() {
     return canvas;
 }
 ```
-# Border
+## Border
 
 This element allows a border to be added. The border starts from the parent element and then the child is constrained to the border's thickness. This example will demonstrate how. The border is this example i set to 10, meaning the window (the parent) will grow inwards the border's thickness and then the child element(s) will fill in. If the children do not fill in the entire space then the border will fill in more than the assigned thickness. Uncomment the 2 alignment lines to see undesired effect of how borders work.
 
@@ -260,9 +260,91 @@ private static UIElement Elements() {
     return canvas;
 }
 ```
+## Button
 
+Buttons are a good place for user input. The button needs a child, typically text. Buttons also have `Click` event to handle the user input.
 
+```cs
+private static UIElement Elements() {
+    var txt = new Text(font, "Push me!") {
+        VerticalAlignment = VerticalAlignment.Center,
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
+    var button = new Button() {
+        Child = txt,
+        Width = 100,
+        Height = 40,
+    };
+    button.Click += Button_Click;
+    return button;
+}
 
+private static void Button_Click(object sender, RoutedEventArgs e) {
+    // Add your code here...
+}
+```
+
+## TextFlow
+
+This element helps in adding text on multi-line and with different colors and sizes.
+
+```cs
+private static UIElement Elements() {
+
+    var textFlow = new TextFlow();
+    textFlow.TextRuns.Add("Hello ", font, Colors.Red);
+    textFlow.TextRuns.Add("World!", font, Colors.Purple);
+    textFlow.TextRuns.Add(TextRun.EndOfLine);
+    textFlow.TextRuns.Add("TinyCLR is Great!", font, Colors.Yellow);
+
+    return textFlow;
+}
+```
+## ListBox
+
+This element provides a list of options for users to select from.
+
+```cs
+private static UIElement Elements() {
+    var listBox = new ListBox();
+    listBox.Items.Add(new Text(font, "Item 1"));
+    listBox.Items.Add(new Text(font, "Item 2"));
+    listBox.Items.Add(new Text(font, "Item 3"));
+    listBox.Items.Add(new Text(font, "Item 4"));
+
+    return listBox;
+}
+```
+
+It is also possible to add a separator between items, simply by using a rectangle. This item will be set to be not selectable.
+
+```cs
+private static UIElement Elements() {
+    var rect = new Rectangle() {
+        Height = 1,
+        Width=30,
+        Stroke = new Pen(Colors.Black),
+    };
+    var separator = new ListBoxItem() {
+        Child = rect,
+        IsSelectable = false,
+    };
+    separator.SetMargin(2);
+
+    var listBox = new ListBox();
+    listBox.Items.Add(new Text(font, "Item 1"));
+    listBox.Items.Add(new Text(font, "Item 2"));
+    listBox.Items.Add(separator);
+    listBox.Items.Add(new Text(font, "Item 3"));
+    listBox.Items.Add(new Text(font, "Item 4"));
+
+    return listBox;
+}
+```
+
+## ScrollViewer
+
+The scroll viewer allows for viewing content that are larger than the viewing area. The user input can then be used to shift the content within the viewing area.
 
 
 ## The Dispatcher
