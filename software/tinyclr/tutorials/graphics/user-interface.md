@@ -96,14 +96,14 @@ namespace UserInterfaceExample {
 ## Elements
 A window is not very useful without some elements (controls). There are several built in elements and you can also custom make your own. All elements descend from the `UIElement` class. Explore the `GHIElectronics.TinyCLR.UI.Controls` namespace for available options.
 
-For the sake of simplifying the rest of this tutorial, we will add `private static UIElement Elements()` method that creates and returns the elements. This is then assigned to the `Child` of our `Window`. You will need to add `window.Child = Elements(window.Width, window.Height);` right before returning from `CreateWindow`.
+For the sake of simplifying the rest of this tutorial, we will add `private static UIElement Elements()` method that creates and returns the elements. This is then assigned to the `Child` of our `Window`. You will need to add `window.Child = Elements();` right before returning from `CreateWindow`.
 
 
 > [!Tip]
 > This example needs a [font](font.md).
 
 ```cs
-private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+private static UIElement Elements() {
     var txt = new TextBox {
         Font = font,
         Text = "Hello World!",
@@ -113,66 +113,157 @@ private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
     return txt;
 }
 ```
+## Text and TextBox
+
+These 2 elements are very basic and very useful. They are used in many of the examples throught this tutorial.
 
 ## Panels
-A `Window` can carry only a single `Child`, that is a single element. This is not a concern because the single element can be a container, like a `Panel`, which holds multiple elements. You can even have panels within panels and each has its own elements. There are two types of panels, `Canvas` and `StackPanel`. The canvas allows elements to be added anywhere on the canvas. Stack panels, on the other had, places elements in order.
-
-This example will set 2 text elements is a horizontal panel. They will "stack" one right after another. To make them show one on the left of the screen and one on the right, we will set the width of the text area to be half the screen. We now have to identical regions stacked next to each other horizontally. We can then align the text as desired.
+A `Window` can carry only a single `Child`, that is a single element. This is not a concern because the single element can be a container, like a `Panel`, which holds multiple elements. You can even have panels within panels and each has its own elements. This example will introduce shapes found in the `GHIElectronics.TinyCLR.UI.Shapes` namespace. It also shows an example of the `TextBox` element. We will also set margins for a better look.
 
 ```cs
-private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
-    var horiStack = new StackPanel(Orientation.Horizontal);
+private static UIElement Elements() {
+    var panel = new Panel();
 
-    var txt1 = new Text(font, "Hello World!") {
-        ForeColor = Colors.White,
-        TextAlignment = TextAlignment.Left,
-        Width = ScreenWidth / 2,
-    };
-    var txt2 = new Text(font, "TinyCLR is Great!"){
-        ForeColor = Colors.White,
-        TextAlignment = TextAlignment.Right,
-        Width = ScreenWidth / 2 ,
+    var txt1 = new TextBox() {
+        HorizontalAlignment = HorizontalAlignment.Left,
+        VerticalAlignment = VerticalAlignment.Top,
 
     };
-    horiStack.Children.Add(txt1);
-    horiStack.Children.Add(txt2);
+    txt1.Font = font;
+    txt1.SetMargin(20);
+    txt1.Text = "Hello World!";
 
-    return horiStack;
-}
-```
-
-The beauty of stack panels comes when mixing vertical and horizontal stack panels. This example will introduce shapes found in the `GHIElectronics.TinyCLR.UI.Shapes` namespace. It will also set the margins of the shape.
-
-```cs
-private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
-    var horiStack = new StackPanel(Orientation.Horizontal);
-    var vertStack = new StackPanel(Orientation.Vertical);
-
-    var txt1 = new Text(font, "Hello World!") {
+    var txt2 = new Text(font, "TinyCLR is Great!") {
         ForeColor = Colors.White,
-        TextAlignment = TextAlignment.Left,
-        Width = ScreenWidth / 2,
+        HorizontalAlignment = HorizontalAlignment.Right,
     };
+    txt2.SetMargin(20);
 
-    var txt2 = new Text(font, "TinyCLR is Great!"){
-        ForeColor = Colors.White,
-        TextAlignment = TextAlignment.Right,
-        Width = ScreenWidth / 2 ,
-    };
 
     var rect = new Rectangle(200, 10) {
         Fill = new SolidColorBrush(Colors.Green),
+        HorizontalAlignment = HorizontalAlignment.Center,
     };
-    rect.SetMargin(0, 20, 0, 0);
+    panel.Children.Add(txt1);
+    panel.Children.Add(txt2);
+    panel.Children.Add(rect);
 
-    horiStack.Children.Add(txt1);
-    horiStack.Children.Add(txt2);
-    vertStack.Children.Add(horiStack);
-    vertStack.Children.Add(rect);
-
-    return vertStack;
+    return panel;
 }
 ```
+
+## StackPanel
+
+There are also two types of elements that descend from panels, `Canvas` and `StackPanel`. The canvas allows elements to be added anywhere. Stack panels, on the other had, places elements in order.
+
+We will modify the previous example to use vertical stack. The elements will stack and be arrange to the right and the left. Note that setting vertical alignment will be ignored as the vertical stack does overrides how elements are stacked vertically.
+
+```cs
+private static UIElement Elements() {
+    var panel = new StackPanel(Orientation.Vertical);
+
+    var txt1 = new TextBox() {
+        HorizontalAlignment = HorizontalAlignment.Left,
+        VerticalAlignment = VerticalAlignment.Top,
+
+    };
+    txt1.Font = font;
+    txt1.SetMargin(20);
+    txt1.Text = "Hello World!";
+    var txt2 = new Text(font, "TinyCLR is Great!") {
+        ForeColor = Colors.White,
+        HorizontalAlignment = HorizontalAlignment.Right,
+    };
+    txt2.SetMargin(20);
+
+
+    var rect = new Rectangle(200, 10) {
+        Fill = new SolidColorBrush(Colors.Green),
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
+    panel.Children.Add(txt1);
+    panel.Children.Add(txt2);
+    panel.Children.Add(rect);
+
+    return panel;
+}
+```
+
+## Canvas
+
+The canvas provides pixel level control over where element go on the screen. However, like all other components, canvas is aware of the window size and things are aligned from it sides.
+
+```cs
+private static UIElement Elements() {
+    var canvas = new Canvas();
+
+    var txt = new Text(font, "TinyCLR is Great!") {
+        ForeColor = Colors.White,
+    };
+
+    var rect = new Rectangle(150, 30) {
+        Fill = new SolidColorBrush(Colors.Green),
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
+
+    Canvas.SetLeft(rect, 20);
+    Canvas.SetBottom(rect, 20);
+    canvas.Children.Add(rect);
+    Canvas.SetLeft(txt, 30);
+    Canvas.SetBottom(txt, 25);
+    canvas.Children.Add(txt);
+
+    return canvas;
+}
+```
+# Border
+
+This element allows a border to be added. The border starts from the parent element and then the child is constrained to the border's thickness. This example will demonstrate how. The border is this example i set to 10, meaning the window (the parent) will grow inwards the border's thickness and then the child element(s) will fill in. If the children do not fill in the entire space then the border will fill in more than the assigned thickness. Uncomment the 2 alignment lines to see undesired effect of how borders work.
+
+```cs
+private static UIElement Elements() {
+
+    var border = new Border();
+    border.SetBorderThickness(10);
+    border.BorderBrush = new SolidColorBrush(Colors.Red)
+    var txt = new TextBox() {
+        //HorizontalAlignment = HorizontalAlignment.Center,
+        //VerticalAlignment= VerticalAlignment.Center,
+    };
+    txt.Font = font;
+    txt.Text = "TinyCLR is Great!";
+    border.Child = txt;
+
+    return border;
+}
+```
+
+The fix around this is to add a container and then the container will have a border. In this example, the parent of the border is the canvas instead of the window.
+
+```cs
+private static UIElement Elements() {
+
+    var canvas = new Canvas();
+    var border = new Border();
+    border.SetBorderThickness(10);
+    border.BorderBrush = new SolidColorBrush(Colors.Red);
+    Canvas.SetLeft(border, 20);
+    Canvas.SetTop(border, 20);
+
+    var txt = new TextBox();
+    txt.Font = font;
+    txt.Text = "TinyCLR is Great!";
+
+    border.Child = txt;
+    canvas.Children.Add(border);
+
+    return canvas;
+}
+```
+
+
+
+
 
 ## The Dispatcher
 
@@ -188,7 +279,7 @@ static void Counter(object o) {
     }, null);
 }
 
-private static UIElement Elements(int ScreenWidth, int ScreenHeight) {
+private static UIElement Elements() {
     var txt = new Text(font, "Hello World!") {
         ForeColor = Colors.White,
         VerticalAlignment = VerticalAlignment.Center,
