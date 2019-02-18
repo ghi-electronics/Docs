@@ -13,6 +13,7 @@
 ## [CAN](tutorials/can.md)
 ## [File System](tutorials/filesystem.md)
 ## [Time](tutorials/time.md)
+## [Timer](tutorials/timer.md)
 ## [Signal Generator](tutorials/signal-generator.md)
 ## [Signal Capture](tutorials/signal-capture.md)
 ## [Pulse Feedback](tutorials/pulse-feedback.md)

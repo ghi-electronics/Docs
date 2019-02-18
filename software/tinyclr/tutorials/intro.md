@@ -17,6 +17,7 @@ Here you will find programming tutorials and code examples for our TinyCLR OS. W
 * [Graphics](graphics/intro.md)
 * [File System](filesystem.md)
 * [Time](time.md)
+* [Timer](timer.md)
 * [Signal Generator](signal-generator.md)
 * [Signal Capture](signal-capture.md)
 * [Pulse Feedback](pulse-feedback.md)
