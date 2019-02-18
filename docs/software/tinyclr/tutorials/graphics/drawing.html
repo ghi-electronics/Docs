@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Display </title>
+    <title>Drawing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Display ">
+    <meta name="title" content="Drawing ">
     <meta name="generator" content="docfx 2.40.0.0">
     
-    <link rel="shortcut icon" href="../../../images/favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:rel" content="../../../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,14 +77,13 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="display">Display</h1>
+<h1 id="drawing">Drawing</h1>
 
 <hr>
-<p>Displays can be grouped into two distinct interface categories, parallel TFT displays and serial (SPI/I2C) displays.</p>
-<h2 id="parallel-tft-displays">Parallel TFT Displays</h2>
-<p>These displays connect to special dedicated pins on the processor. Internally, the display controller automatically transfers (refreshes) the display directly from memory without any processor interaction. When the system needs to update the display, it simply writes to memory. Neither the operating system nor the application program are burdened with display processing. The down side to this is that the system needs to have enough RAM to handle the display. An 800x600 display with 16bpp needs 960,000 bytes! For systems with external memory this should not be an issue.</p>
+<p>The <code>GHIElectronics.TinyCLR.Drawing</code> NuGet package includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.</p>
+<p>Shape examples are <code>Graphics.FillEllipse</code>, <code>Graphics.DrawLine</code> and <code>Graphics.DrawRectangle</code>. These methods need <code>Pen</code> and <code>Brush</code> that are also part of <code>Graphics</code>.</p>
 <p>TinyCLR OS has built in graphics methods for these displays. The following sample code runs on our UCM Dev Board with the UD435 Display option. You will need to add the <code>GHIElectronics.TinyCLR.Drawing</code>, <code>GHIElectronics.TinyCLR.Devices.Gpio</code> and <code>GHIElectronics.TinyCLR.Pins</code> NuGet package to your program.</p>
-<p>In this example, GPIO is only used to turn on the backlight. Note that the backlight is usually on GPIO A. </p>
+<p>The GPIO in this example is only used to control the display&#39;s backlight. Note that the backlight is on GPIO A on the UCM Dev Board. </p>
 <pre><code class="lang-cs">using System.Drawing;
 using GHIElectronics.TinyCLR.Devices.Display;
 using GHIElectronics.TinyCLR.Devices.Gpio;
@@ -134,61 +133,20 @@ class Program {
         screen.Flush();
     }
 }
-</code></pre><p>The <code>DisplayController.ActiveConfiguration</code> can be used to read the configuration at any time. The Width and Height can be used to write code that automatically scales to the display&#39;s resolution.</p>
-<p>The example above can be changed to automatically draw a line from corner to corner, no matter the display resolution.</p>
+</code></pre><p>The <code>DisplayController.ActiveConfiguration</code> can be used to read the configuration at any time. The Width and Height can be used to write code that automatically scales to the display&#39;s resolution. The example above can be changed to automatically draw a line from corner to corner, no matter the display resolution.</p>
 <pre><code class="lang-cs">screen.DrawLine(redPen, 0, 0, displayController.ActiveConfiguration.Width-1, displayController.ActiveConfiguration.Height-1);
-</code></pre><h2 id="serial-spii2c-displays">Serial SPI/I2C Displays</h2>
-<p>The internal graphics services can be mapped to work with serial displays. This is done by having access directly to the graphics memory, which then can be transfered to teh desired display.</p>
-<p>As each display has its own pixel format and color depth, you also have access to the way pixels are written in the graphics memory.</p>
-<p>This <a href="https://forums.ghielectronics.com/t/managed-graphics-for-non-tft-displays-in-tinyclr/21887">blog</a> details how this can be accomplished.</p>
-<h2 id="low-level-display-access">Low Level Display Access</h2>
-<p>TinyCLR also provides low level display access as part of the <code>GHIElectronics.TinyCLR.Devices.Display</code> library. These methods provide a simple way to write to a display without need for the <code>System.Drawing</code> library or an added font resource file.</p>
-<p>The following example is written for the G120E Dev Board and will paint the screen as shown in the picture beneath the code. Note that low level display access requires that you to use the data format required by your display as configured. The G120E Dev Board used in this example expects each pixel to have 16 bits (two bytes per pixel) of color information in RGB565 format.</p>
-<pre><code class="lang-cs">using GHIElectronics.TinyCLR.Devices.Display;
-
-class Program {
-    private static void Main() {
-        var displayController = DisplayController.GetDefault();
-
-        // Enter the proper display configurations
-        displayController.SetConfiguration(new ParallelDisplayControllerSettings {
-            Width = 320,
-            Height = 240,
-            DataFormat = DisplayDataFormat.Rgb565,
-            HorizontalBackPorch = 29,
-            HorizontalFrontPorch = 51,
-            HorizontalSyncPolarity = false,
-            HorizontalSyncPulseWidth = 41,
-            DataEnableIsFixed = true,
-            DataEnablePolarity = true,
-            PixelClockRate = 15000000,
-            PixelPolarity = true,
-            VerticalBackPorch = 3,
-            VerticalFrontPorch = 16,
-            VerticalSyncPolarity = false,
-            VerticalSyncPulseWidth = 10
-        });
-
-        displayController.Enable();
-
-        byte[] myPic = new byte[320 * 240 * 2];
-        for (var i = 0; i &lt; myPic.Length; i++) {
-            myPic[i] = (byte)(((i % 2) == 0) ? ((i / 2400) &amp; 0b00000111) &lt;&lt; 5 : i / 19200);
-        }
-
-        displayController.DrawString(&quot;\f&quot;);
-        displayController.DrawBuffer(0, 0, 320, 240, myPic, 0);
-        displayController.DrawString(&quot;GHI Electronics\n&quot;);
-        displayController.DrawString(&quot;Low Level Display Demo.&quot;);
-
-        for (var x = 20; x &lt; 300; x++) {
-            displayController.DrawPixel(x, 50, 0xF800);     //Color is 31,0,0 (RGB565).
-            displayController.DrawPixel(x, 51, 0xF800);
-        }
-    }
-}
-</code></pre><p>G120E Dev Board display after running the sample code:</p>
-<p><img src="images/low-level-display-sample.jpg" alt="Low Level Display Sample"></p>
+</code></pre><p>It is important to note that drawing functions process graphics in RAM independently from any display. The display driver then transfers the pixels from the internal memory to the display, through <code>Graphics.Flush</code>. Learn more about the <a href="display.html">display</a> support.</p>
+<h2 id="images">Images</h2>
+<p>TinyCLR OS supports BMP, GIF, and JPG. Depending on your hardware&#39;s limitation, one or more of these image formats maybe supported. Images can be loaded from a <code>stream</code> or simply load from <a href="../resources.html">resources</a>. </p>
+<div class="TIP"><h5>Tip</h5><p>BMP supports 256 colors and 24bit.
+GIF does not support animated images.</p>
+</div>
+<pre><code class="lang-cs">var screen = Graphics.FromHdc(displayController.Hdc);
+var logo = Resource.GetBitmap(Resource.BitmapResources.GHI_Electronics_Logo);
+screen.DrawImage(logo, 50, 150);
+screen.Flush();
+</code></pre><h2 id="fonts">Fonts</h2>
+<p>Fonts are well supported. They are covered <a href="font.html">here</a>.</p>
 </article>
           </div>
           
@@ -197,7 +155,7 @@ class Program {
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/display.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/graphics/drawing.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -223,8 +181,8 @@ class Program {
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>

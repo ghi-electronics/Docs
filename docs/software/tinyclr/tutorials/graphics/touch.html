@@ -10,14 +10,14 @@
     <meta name="title" content="Touch ">
     <meta name="generator" content="docfx 2.40.0.0">
     
-    <link rel="shortcut icon" href="../../../images/favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:rel" content="../../../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -82,15 +82,67 @@
 <hr>
 <h1 id="introduction">Introduction</h1>
 <p>Displays may optionally include a touch sensitive screen to detect user touch input. Touch Screens can be resistive or capacitive.</p>
-<p><img src="images/ucm-touch-display.jpg" alt="UD435"></p>
+<p><img src="../images/ucm-touch-display.jpg" alt="UD435"></p>
 <h1 id="resistive-touch">Resistive Touch</h1>
-<p>A resistive touch screen measures the resistance across X and Y to determine the touch position. While it is possible to use GPIO and ADC, it is better to use dedicated chips. The only advantage of resistive touch over capacitive is that they work through pressure, meaning you can use it while wearing gloves. Resistive touch is not very accurate and requires calibration.</p>
+<p>A resistive touch screen measures the resistance across X and Y to determine the touch position. While it is possible to use GPIO and ADC, it is better to use dedicated chips. The only advantage of resistive touch over capacitive is that they work through pressure, meaning you can use it while wearing gloves. But, resistive touch is not very accurate and requires calibration.</p>
 <p>Unless you have specific reason to use resistive touch, capacitive touch should be used.</p>
-<h1 id="capacitive-touch">Capacitive Touch</h1>
+<p>This is a simple example showing how to read a resistive display. A better approach would be to use a resistive touch controller chip that works over SPI/I2C.</p>
+<pre><code class="lang-cs">private void TouchReader() {
+    var adc = AdcController.GetDefault();
+    var gpio = GpioController.GetDefault();
+    int x, y;
+    while (this.active) {
+        // Read X
+        {
+            var XR = gpio.OpenPin(this.PinXR);
+            XR.SetDriveMode(GpioPinDriveMode.Output);
+            XR.Write(GpioPinValue.High);
+            var XL = gpio.OpenPin(this.PinXL);
+            XL.SetDriveMode(GpioPinDriveMode.Output);
+            XL.Write(GpioPinValue.Low);
+
+            var YD = gpio.OpenPin(this.PinYD);
+            YD.SetDriveMode(GpioPinDriveMode.Input);
+            var YU = adc.OpenChannel(this.ChannelYUA);
+
+            x = (int)(YU.ReadRatio()*1000);
+            XR.Dispose();
+            XL.Dispose();
+            YU.Dispose();
+            YD.Dispose();
+        }
+        // Read Y
+        {
+            var YD = gpio.OpenPin(this.PinYD);
+            YD.SetDriveMode(GpioPinDriveMode.Output);
+            YD.Write(GpioPinValue.High);
+            var YU = gpio.OpenPin(this.PinYU);
+            YU.SetDriveMode(GpioPinDriveMode.Output);
+            YU.Write(GpioPinValue.Low);
+
+            var XR = gpio.OpenPin(this.PinXR);
+            XR.SetDriveMode(GpioPinDriveMode.Input);
+            var XL = adc.OpenChannel(this.ChannelXLA);
+
+            y = (int)(XL.ReadRatio()*1000);
+            XR.Dispose();
+            XL.Dispose();
+            YU.Dispose();
+            YD.Dispose();
+        }
+        if (x &gt; 50 &amp;&amp; y &gt; 50) {
+            var sx = this.Scale(x, 50, 830, 0, 320);
+            var sy = this.Scale(y, 150, 830, 0, 240);
+            this.TouchMove?.Invoke(this, new TouchEventArgs(sx, sy));
+        }
+        Thread.Sleep(20);
+    }
+}
+</code></pre><h1 id="capacitive-touch">Capacitive Touch</h1>
 <p>Capacitive touch screens are used on most modern devices, including phones. They are very accurate and capable of detecting multiple simultaneous touches.</p>
 <p>A special capacitive controller chip must be used to control the touch panel. This chip is usually mounted right on the flat cable going to the touch panel. These chips are usually I2C or SPI, with I2C being more common.</p>
 <p>The capacitive displays used in our development options use a controller from FocalTech.</p>
-<p>We provide the <code>GHIElectronics.TinyCLR.Drivers.FocalTech.FT5xx6</code> NuGet package to interact with the touch screens. The constructor simply needs to know which I2C bus and reset pin are being used. The event fires with exact position matching the display resolution, no need for any scaling or calibration.</p>
+<p>We provide the <code>GHIElectronics.TinyCLR.Drivers.FocalTech.FT5xx6</code> NuGet package to interact with the touch screens. The constructor simply needs to know which I2C bus and reset pin are being used. The event fires with exact position matching the display resolution, no need for any scaling or calibration. The driver source code is found on the <a href="https://github.com/ghi-electronics/TinyCLR-Drivers">TinyCLR Drivers repo</a>.</p>
 <p>This basics example will draw a dot on touch move</p>
 <pre><code class="lang-cs">using GHIElectronics.TinyCLR.Drivers.FocalTech.FT5xx6;
 
@@ -108,7 +160,7 @@ touch.TouchMove += (_, e) =&gt; {
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/touch.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/graphics/touch.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -134,8 +186,8 @@ touch.TouchMove += (_, e) =&gt; {
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>

@@ -90,13 +90,12 @@
 <li>Run the <code>DfuSeDemo</code> program installed in the previous step. It should appear in the programs menu under <code>STMicroelectronics</code>.</li>
 <li>Put your board in DFU (Device Firmware Upgrade) mode. Instructions for putting your device in DFU mode are found on the documents page for the board you are using. <code>STM Device in DFU Mode</code> should now appear under <code>Available DFU Devices</code> at the upper left of the DfuSe Demo program screen.</li>
 <li>Near the bottom of the DfuSe Demo program window click on the <code>Choose...</code> button. Find the bootloader file you saved in step 1 (...Bootloader v2.x.x.dfu), click on it and click on the <code>Open</code> button.</li>
-<li>Now click on the upgrade button. If a dialog box appears with <code>Your device was plugged in DFU mode...</code> click the <code>Yes</code> button.</li>
+<li>Now click on the <strong>Upgrade button</strong>. Make sure you are using the &quot;Upgrade&quot; and not the &quot;Upload&quot; button. If a dialog box appears with <code>Your device was plugged in DFU mode...</code> click the <code>Yes</code> button.</li>
 <li>You should see a message at the bottom of the DfuSe Demo window saying the upgrade was successful. Now reset the your device or click on the <code>Leave DFU mode</code> button.</li>
 <li>Congratulations! You have successfully installed the GHI STM32 bootloader!</li>
 </ol>
 <h2 id="creating-a-dfu-file">Creating a DFU file</h2>
-<div class="TIP"><h5>Tip</h5><p>Creating DFU files are not necessary for most users. This is only provided as a reference for advanced used.</p>
-</div>
+<p>Creating DFU files are not necessary for most users. This is only provided as a reference for advanced used.</p>
 <p>You can create DFU files from .hex or .bin files using the DFU file manager software which is part of the <a href="http://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll">DfuSe USB device firmware upgrade software</a> download from step 2 of the above instructions.</p>
 <p>The instructions are slightly different depending on whether you are starting with a .hex or .bin file.</p>
 <h3 id="from-hex-files">From .hex files</h3>

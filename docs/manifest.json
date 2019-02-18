@@ -2053,7 +2053,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/gadgeteer/modules.html",
-          "hash": "jDz7DmYADKQNWOMPUNZzeg=="
+          "hash": "QjUpJBZNOP6b902514Djlw=="
         }
       },
       "is_incremental": false,
@@ -2337,7 +2337,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/loaders/stm32-bootloader.html",
-          "hash": "Gzn+YmbCEvfT+vwbEoREog=="
+          "hash": "qFmJxOFjAbx8omQ6E2yNTg=="
         }
       },
       "is_incremental": false,
@@ -2397,7 +2397,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g120.html",
-          "hash": "ofEgvs3RTl+sJa+bOv2Wjw=="
+          "hash": "yqdYDm/LmHtJ5nnOI9kIkQ=="
         }
       },
       "is_incremental": false,
@@ -2421,7 +2421,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g30.html",
-          "hash": "n+NoxpIhUUHkqCwszbL+Pw=="
+          "hash": "SdNdTAVWhA/TU+yuf2j8FQ=="
         }
       },
       "is_incremental": false,
@@ -2433,7 +2433,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g400s.html",
-          "hash": "5m21PTBIqybPuysCORlg6A=="
+          "hash": "UJX1W4NDziHOAF02cx3Mrg=="
         }
       },
       "is_incremental": false,
@@ -2445,7 +2445,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/scm/g80.html",
-          "hash": "KmpQ5MwPqqjPEk4IqtU9Mg=="
+          "hash": "LyhyeSOtedsDDJ7jkbuf1Q=="
         }
       },
       "is_incremental": false,
@@ -2824,7 +2824,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/development-options.html",
-          "hash": "KQ/I3ZF7Yymqx+LYVsWVMA=="
+          "hash": "7fxkh9CMwZaLRjgQ+PGGrg=="
         }
       },
       "is_incremental": false,
@@ -2836,7 +2836,7 @@
       "output": {
         ".html": {
           "relative_path": "hardware/ucm/g400d.html",
-          "hash": "sjyPWZaso4uK8rBQ43tBYw=="
+          "hash": "TOSsK8GHhlPNvn927astVQ=="
         }
       },
       "is_incremental": false,
@@ -2914,6 +2914,17 @@
       "output": {
         "resource": {
           "relative_path": "hardware/ucm/images/g400d-noborder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "hardware/ucm/images/g400d-pinout.png",
+      "output": {
+        "resource": {
+          "relative_path": "hardware/ucm/images/g400d-pinout.png"
         }
       },
       "is_incremental": false,
@@ -3392,7 +3403,7 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/downloads.html",
-          "hash": "vu9xi/0gT7yqAPuIAPzWqw=="
+          "hash": "JqNUAfW+gshhHUjBhySp3w=="
         }
       },
       "is_incremental": false,
@@ -3404,7 +3415,7 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/getting-started.html",
-          "hash": "EJZXK/EXelRAz51EPuW/JQ=="
+          "hash": "Wt+oOBHeRt1P01WEdNCb+w=="
         }
       },
       "is_incremental": false,
@@ -3615,7 +3626,7 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/toc.html",
-          "hash": "SOjxqlxPLnbpGNr6kExIUg=="
+          "hash": "40+fTM3A7vHLkVg2zCHjYQ=="
         }
       },
       "is_incremental": false,
@@ -3835,7 +3846,19 @@
       "output": {
         ".html": {
           "relative_path": "software/netmf/tutorials/intro.html",
-          "hash": "qP1TmVYy4WYBNbnkoY5JYA=="
+          "hash": "2L8UgZVhbYMfGqrnoG0yog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/netmf/tutorials/networking.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/netmf/tutorials/networking.html",
+          "hash": "2RPKUBJA2rEQRU8WDCnHtg=="
         }
       },
       "is_incremental": false,
@@ -4589,7 +4612,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/toc.html",
-          "hash": "QLvBrz1m3UI3Sg90cKd/og=="
+          "hash": "yxwXB3oRG33u2ofOjZblIQ=="
         }
       },
       "is_incremental": false,
@@ -4633,18 +4656,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/display.md",
-      "output": {
-        ".html": {
-          "relative_path": "software/tinyclr/tutorials/display.html",
-          "hash": "rjLjFC6uOp2RcyDckXVQMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "software/tinyclr/tutorials/filesystem.md",
       "output": {
         ".html": {
@@ -4669,11 +4680,71 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/graphics.md",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/display.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/tutorials/graphics.html",
-          "hash": "pZJmHCQ6H0v4K0wVgSDkaw=="
+          "relative_path": "software/tinyclr/tutorials/graphics/display.html",
+          "hash": "skHtA9yDJEbkpDxXZlWE4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/drawing.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics/drawing.html",
+          "hash": "uj1evKRtO9bYn1QqCWRw5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/font.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics/font.html",
+          "hash": "wXBL1euGTY/3EAdVuC3Stw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics/intro.html",
+          "hash": "4r8OjVMfRv/113Mx2HZLyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/touch.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics/touch.html",
+          "hash": "eT7Kgq9cE/2fTR2UX6YtCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "software/tinyclr/tutorials/graphics/user-interface.md",
+      "output": {
+        ".html": {
+          "relative_path": "software/tinyclr/tutorials/graphics/user-interface.html",
+          "hash": "6/SO4z8hNmr2W8WlwCbNkQ=="
         }
       },
       "is_incremental": false,
@@ -4686,28 +4757,6 @@
         ".html": {
           "relative_path": "software/tinyclr/tutorials/i2c.html",
           "hash": "vViR6N4NaFJWcLYA3nngRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/tutorials/images/add-existing-file.png",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/tutorials/images/add-existing-file.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "software/tinyclr/tutorials/images/add-resource-file.png",
-      "output": {
-        "resource": {
-          "relative_path": "software/tinyclr/tutorials/images/add-resource-file.png"
         }
       },
       "is_incremental": false,
@@ -4730,6 +4779,17 @@
       "output": {
         "resource": {
           "relative_path": "software/tinyclr/tutorials/images/capacitive-touch-schematic.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "software/tinyclr/tutorials/images/character-display.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "software/tinyclr/tutorials/images/character-display.jpg"
         }
       },
       "is_incremental": false,
@@ -4785,7 +4845,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/intro.html",
-          "hash": "XkkxBsUF3pGzaQRQmmXWLQ=="
+          "hash": "9OexjiPHkQjudlkE+diI5w=="
         }
       },
       "is_incremental": false,
@@ -4797,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/memory.html",
-          "hash": "2cfbIFO6rMGo4NCt62RAJg=="
+          "hash": "zA9pEvycX1G3fBf6zBj/lg=="
         }
       },
       "is_incremental": false,
@@ -4809,7 +4869,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/networking/intro.html",
-          "hash": "ZFmwVQQ0mYMGZhUtTZYtrA=="
+          "hash": "60LCdnQrrbWioasQfXxjfA=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4881,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/networking/spwf04sx.html",
-          "hash": "YfS4ezHp3Xd/ClVVhipokw=="
+          "hash": "Chpli+dQ4MEnVgeUefu0rQ=="
         }
       },
       "is_incremental": false,
@@ -4857,7 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "software/tinyclr/tutorials/resources.html",
-          "hash": "bJc0ofoiU3VAietRynPnsg=="
+          "hash": "Ypu/Hxv7nLH/deytUhMNdA=="
         }
       },
       "is_incremental": false,
@@ -4913,11 +4973,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "software/tinyclr/tutorials/touch.md",
+      "source_relative_path": "software/tinyclr/tutorials/timer.md",
       "output": {
         ".html": {
-          "relative_path": "software/tinyclr/tutorials/touch.html",
-          "hash": "1k277wdglff1/UdSvf/ofw=="
+          "relative_path": "software/tinyclr/tutorials/timer.html",
+          "hash": "sXCPLi52k5pVwXb/UtebXg=="
         }
       },
       "is_incremental": false,
@@ -4956,14 +5016,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

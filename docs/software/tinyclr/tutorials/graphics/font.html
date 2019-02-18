@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Graphics </title>
+    <title>Fonts </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Graphics ">
+    <meta name="title" content="Fonts ">
     <meta name="generator" content="docfx 2.40.0.0">
     
-    <link rel="shortcut icon" href="../../../images/favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:rel" content="../../../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,120 +77,27 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="graphics">Graphics</h1>
+<h1 id="fonts">Fonts</h1>
 
-<hr>
-<p>TinyCLR OS support includes two level of graphics support, the core elements and User Interface.</p>
-<h2 id="core-elements">Core Elements</h2>
-<p>The <code>GHIElectronics.TinyCLR.Drawing</code> NuGet package includes the backbone for all graphics needs. It includes support for shapes, fonts and bitmaps.</p>
-<p>Shape examples are <code>Graphics.FillEllipse</code>, <code>Graphics.DrawLine</code> and <code>Graphics.DrawRectangle</code>. These methods need <code>Pen</code> and <code>Brush</code> that are also part of <code>Graphics</code>.</p>
-<p>For images, TinyCLR OS supports BMP, GIF, and JPG. Depending on your hardware&#39;s limitation, one or more of these image formats maybe supported. Images can be loaded from a <code>stream</code> but the simplest option is to load from a resource. BMP supports 256 colors and 24bit. GIF does not support animated images.</p>
-<p>Fonts are well supported. They are covered later on this page.</p>
-<p>It is important to note that drawing functions process graphics in RAM independently from any display. The display driver then transfers the pixels from the internal memory to the display, through <code>Graphics.Flush</code>. Learn more about the <a href="display.html">display</a> support.</p>
-<h2 id="user-interface">User Interface</h2>
-<p>You can use the <code>GHIElectronics.TinyCLR.UI</code> library to create user interfaces for your application. It is inspired by WPF on the desktop. The sample below shows how to use a few of the available elements. Make sure to provide your display configuration and the font you want to use. You can also feed in touch and button events from any source you want to use.</p>
-<pre><code class="lang-cs">using GHIElectronics.TinyCLR.Devices.Display;
-using GHIElectronics.TinyCLR.UI;
-using GHIElectronics.TinyCLR.UI.Controls;
-using GHIElectronics.TinyCLR.UI.Media;
-
-namespace UI {
-    public class Program : Application {
-        public Program(DisplayController d) : base(d) {
-        }
-
-        public static void Main() {
-            var disp = DisplayController.GetDefault();
-
-            disp.SetConfiguration(new ParallelDisplayControllerSettings {
-                //Your display configuration
-            });
-
-            disp.Enable();
-
-            var app = new Program(disp);
-
-            //Use the below two functions to pass input to the UI system
-            //app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
-            //app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
-
-            app.Run(Program.CreateWindow(disp));
-        }
-
-        private static Window CreateWindow(DisplayController disp) {
-            //Setup
-            var window = new Window {
-                Height = (int)disp.ActiveConfiguration.Height,
-                Width = (int)disp.ActiveConfiguration.Width
-            };
-
-            window.Background = new LinearGradientBrush(Colors.Red, Colors.Blue, 0, 0,
-                window.Width, window.Height);
-
-            //In next line replace &quot;YourFont&quot; with name of font you added to Resources file.
-            var font = Resource1.GetFont(Resource1.FontResources.YourFont);
-
-            OnScreenKeyboard.Font = font;
-
-
-            //List
-            var listBox = new ListBox();
-
-            listBox.Child.Width = window.Width;
-
-
-            //Text
-            for (var i = 0; i &lt; 3; i++) {
-                var text = new Text(font, $&quot;Text item {i}&quot;);
-
-                text.SetMargin(5);
-
-                listBox.Items.Add(text);
-            }
-
-
-            //Button
-            var j = 0;
-            var val = new Text(font, &quot;Tap Me&quot;);
-            var btn = new Button {
-                Child = val,
-                Width = 100
-            };
-
-            btn.SetMargin(5);
-            btn.Click += (s, e) =&gt; val.TextContent = &quot;Tap Me &quot; + (j++).ToString();
-
-            listBox.Items.Add(btn);
-
-
-            //Textbox
-            var txt = new TextBox {
-                Font = font,
-                Text = &quot;Text Sample&quot;
-            };
-
-            txt.SetMargin(5);
-            listBox.Items.Add(txt);
-
-            //Setup
-            window.Child = listBox;
-            window.Visibility = Visibility.Visible;
-
-            return window;
-        }
-    }
-}
-</code></pre><h2 id="user-input">User Input</h2>
-<p>A user can feed in input to the graphical interface through touch or button input. The earlier example shows how it is done.</p>
-<pre><code class="lang-cs">app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
-app.InputProvider.RaiseButton(btn, btnState, DateTime.UtcNow);
-</code></pre><h2 id="fonts">Fonts</h2>
-<p>Fonts can be included in your TinyCLR application by adding them as a resource. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under <a href="../downloads.html">downloads</a> is a command line utility which does just that.</p>
+<p>Fonts can be included in your TinyCLR application by adding them as a <a href="../resources.html">resource</a>. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under <a href="../../downloads.html">downloads</a> is a command line utility which does just that.</p>
+<pre><code class="lang-cs">var screen = Graphics.FromHdc(displayController.Hdc);
+var font = Resource.GetFont(Resource.FontResources.NinaB);
+var greenPen = new Pen(Color.Green);
+screen.DrawString(&quot;Hello World!&quot;, font, greenPen.Brush, 10, 100);
+screen.Flush();
+</code></pre><h2 id="built-in-fonts">Built-in fonts</h2>
+<p>When using systems with managed SPI display drivers, the font support is handled though an internal built-in font. This is done to reduce memory requirements.</p>
+<pre><code class="lang-cs">var teal = new SolidBrush(Color.Teal);
+var font = new Font(&quot;GHIMono8x5&quot;, 8);
+screen.DrawString(&quot;Hello World!&quot;, font, teal, 40, 10);
+screen.Flush();
+</code></pre><h2 id="font-conversion">Font Conversion</h2>
 <p>To convert a font you must first make a .fntdef file which is a text file describing the font to convert as well as a number of other parameters. This file contains one option on each line. A minimal .fntdef file may look like this to have the standard ASCII characters.</p>
 <pre><code>SelectFont &quot;FN:Arial,WE:400,HE:12,IT:0&quot;
 ImportRange 32 126
-</code></pre><div class="TIP"><h5>Tip</h5><p>This <a href="http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx">third-party tool</a> can be handy for generating fonts.</p>
+</code></pre><div class="TIP"><h5>Tip</h5><p>This <a href="http://informatix.miloush.net/microframework/Utilities/TinyFontTool.aspx">third-party tool</a> can be handy for generating compatible fonts.</p>
 </div>
+<h2 id="font-defenition">Font Defenition</h2>
 <p>The .fntdef file options are as follows:</p>
 <div class="NOTE"><h5>Note</h5><p>The order of statements in the .fntdef file matters. For example, properties such as AntiAlias must be specified before the InputRange property.</p>
 </div>
@@ -265,12 +172,6 @@ ImportRange 32 126
 </li>
 </ul>
 <p>Syntax for running FontConverter is GHIElectronics.TinyCLR.FontConverter.exe <em>input-font</em> <em>output-font</em>. For example <code>GHIElectronics.TinyCLR.FontConverter.exe Arial.fntdef Arial.tcfnt</code>.</p>
-<h3 id="adding-fonts-to-your-application">Adding Fonts to Your Application</h3>
-<p>Once a TrueType font has been converted to a .tcfnt file, it can be added as a resource to your TinyCLR application. To add a font resource to your project, select <code>Add New Item...</code> in the Visual Studio <code>Project</code> menu. In the <code>Add New Item</code> dialog box select <code>Resources File</code> and click the <code>Add</code> button.</p>
-<p><img src="images/add-resource-file.png" alt="Add resources file"></p>
-<p>Then, on the tab for your resource file, click on the small down arrow on the right of the <code>Add Resource</code> button and select <code>Add Existing File...</code>. </p>
-<p><img src="images/add-existing-file.png" alt="Add existing file"></p>
-<p>Use the <code>Add existing file to resources</code> dialog box to find and open the .tcfnt file you created using FontConverter.</p>
 </article>
           </div>
           
@@ -279,7 +180,7 @@ ImportRange 32 126
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/graphics.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/Docs/blob/dev/software/tinyclr/tutorials/graphics/font.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -305,8 +206,8 @@ ImportRange 32 126
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>
