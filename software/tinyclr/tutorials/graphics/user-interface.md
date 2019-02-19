@@ -383,7 +383,7 @@ private static UIElement Elements() {
         HorizontalAlignment = HorizontalAlignment.Center,
     };
 
-    DispatcherTimer timer = new DispatcherTimer();
+    var timer = new DispatcherTimer();
     timer.Tag = txt;
     timer.Tick += Counter;
     timer.Interval = new TimeSpan(0, 0, 1);
@@ -392,10 +392,9 @@ private static UIElement Elements() {
 }
 
 private static void Counter(object sender, EventArgs e) {
-    Text txt = (Text)((DispatcherTimer)sender).Tag;
+    var txt = (Text)((DispatcherTimer)sender).Tag;
     txt.TextContent = DateTime.Now.ToString();
     txt.Invalidate();
-
 }
 ```
 
