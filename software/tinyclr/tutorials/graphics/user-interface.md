@@ -373,6 +373,31 @@ private static UIElement Elements() {
 }
 ```
 
+You can also use the dispatcher timer directly
+
+```cs
+private static UIElement Elements() {
+    var txt = new Text(font, "Hello World!") {
+        ForeColor = Colors.White,
+        VerticalAlignment = VerticalAlignment.Center,
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
+
+    var timer = new DispatcherTimer();
+    timer.Tag = txt;
+    timer.Tick += Counter;
+    timer.Interval = new TimeSpan(0, 0, 1);
+    timer.Start();
+    return txt;
+}
+
+private static void Counter(object sender, EventArgs e) {
+    var txt = (Text)((DispatcherTimer)sender).Tag;
+    txt.TextContent = DateTime.Now.ToString();
+    txt.Invalidate();
+}
+```
+
 ## User Input
 A user can feed in input to the graphical interface through touch or button input.
 
