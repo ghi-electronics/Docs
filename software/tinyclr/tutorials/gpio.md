@@ -3,7 +3,7 @@
 Microcontrollers include pins that can be controlled through software. They can be inputs or outputs, hence the name "general purpose input/output," or GPIO for short.
 
 > [!Tip]
-> GPIO is handled by using GHIElectronics.TinyCLR.Devices.Gpio through the NuGet Devices package.
+> GPIO is handled by using GHIElectronics.TinyCLR.Devices.Gpio and GHIElectronics.TinyCLR.Pins through the NuGet Devices package.
 
 ## Digital Outputs
 A digital output pin can be set to either high or low. There are different ways of describing these two states. High can also be called "true" or "one;" low can be called "false" or "zero".
