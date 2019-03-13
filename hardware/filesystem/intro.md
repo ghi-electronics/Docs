@@ -4,6 +4,23 @@
 
 This page has the technical details and manuals for the File System products. The main website's [File System page](https://www.ghielectronics.com/products/filesystem) has more info as well.
 
+## ALFAT Evaluation Kit
+![F40](images/alfat-eval.jpg)
+
+This kit offers everything needed to evaluate F40 (ALFAT) and the different ALFAT OEM boards. As F40 and F20 share the same command set, this kit can also be used for understanding the F20 commands.
+
+The kit includes:
+1. ALFAT OEM board
+2. ALFAT SDR board
+3. ALFAT EVAL carrier board
+4. Storage devices and USB cable
+
+* Part Number AFEVL-FS-524
+* [ALFAT Eval Kit Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20Evaluation%20Kit%20Schematic.pdf)
+* [File System User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
+* [Software Bundle](http://files.ghielectronics.com/downloads/ALFAT/ALFAT%20Evaluation%20Kit.zip)
+* [UART/SPI Command Implementation](http://files.ghielectronics.com/downloads/ALFAT/ALFAT%20Interface%20Code%20Library.zip)
+
 ## F40 (ALFAT) Chipset
 ![F40](images/f40-chipset.jpg)
 
@@ -47,20 +64,6 @@ This board wires the F40 in SD-reader mode.
 * Part Number AFSDR-FS-523
 * [ALFAT-SDR Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20SDR%20Board%20Schematic.pdf)
 
-### ALFAT Evaluation Kit
-![F40](images/alfat-eval.jpg)
-
-This kit offers everything needed to evaluate F40 (ALFAT) and the different ALFAT OEM boards.
-
-The kit includes:
-1. ALFAT OEM board
-2. ALFAT SDR board
-3. ALFAT EVAL carrier board
-4. Storage devices and USB cable
-
-* Part Number AFEVL-FS-524
-* [ALFAT Eval Kit Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20Evaluation%20Kit%20Schematic.pdf)
-
 ## F20 Chipset
 ![F20](images/f20-chipset.jpg)
 
@@ -78,6 +81,9 @@ This boards combines F20 with a micro SD card connector on a very tiny circuit.
 
 * Part Number F20FS-546
 * [F20-uSD Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/F20%20uSD%20Schematic.pdf)
+
+## Firmware Upgrade
+It is possible to upgrade and downgrade the firmware on the file system chipsets using the built in GHI Bootloader v1. The product datasheets explain how to enter the bootloader. The [GHI Bootloader](../loaders/ghi-bootloader.md) page details how to use it.
 
 ## Legacy Products
 
