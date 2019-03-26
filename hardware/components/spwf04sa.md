@@ -2,7 +2,7 @@
 ---
 ## Introduction
 
-The SPWF04SA WiFi module, by STMicroelectronics, is an inexpensive option to bring IoT to embedded devices. While discontinued and out of support, this page provides resources for existing products.
+The SPWF04SA WiFi module from STMicroelectronics is an inexpensive option to bring IoT to embedded devices. While discontinued and out of support, this page provides resources for existing products.
 
 ## Using the SPWF04SA WiFi Module
 
