@@ -2,7 +2,7 @@
 ---
 
 > [!Warning]
-> Before updating the Wi-Fi firmware, erase all applications on the host board to prevent them from interfering with the upgrade process and to prevent possible damage to the host processor.
+> Before updating the WiFi firmware, erase all applications on the host board to prevent them from interfering with the upgrade process and to prevent possible damage to the host processor.
 
 When the WiFi module starts, it sends a PowerOn message which tells you what firmware version is installed. For example, `PowerOn 171117-0328fe3-SPWF04S`. In this case the firmware is dated 17 November 2017.
 
@@ -22,7 +22,7 @@ You will also need:
 
 ## Erase the Host Firmware
 
-Before updating the Wi-Fi module firmware, you must erase the firmware on the host board or SoM. This is accomplished using terminal software while the board is in bootloader mode. The instructions are very similar to the instructions for [manually loading firmware](../../hardware/loaders/ghi-bootloader.md#manually-loading-the-firmware).
+Before updating the WiFi module firmware, you must erase the firmware on the host board or SoM. This is accomplished using terminal software while the board is in bootloader mode. The instructions are very similar to the instructions for [manually loading firmware](../../hardware/loaders/ghi-bootloader.md#manually-loading-the-firmware).
 
 1. Connect the board to your computer's USB port.
 2. Put your board in bootloader mode. Each product has a specific way to enter the boot loader.
@@ -49,7 +49,7 @@ Before updating the WiFi firmware, you must first connect the following pins (Pi
 
 * Connect the TX pin of USB to serial adapter to RXD of WiFi module.
 
-    ![FEZ Uart wires](images/uart-wires-fez.jpg)
+    ![FEZ UART wires](images/uart-wires-fez.jpg)
 
 * Power up the board and connect the USB to serial adapter to your PC.
 
