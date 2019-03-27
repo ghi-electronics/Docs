@@ -75,6 +75,9 @@ TinyCLR OS also lets you use native code that works alongside your managed appli
 
 The memory area reserved for native code in TinyCLR OS on FEZ starts at 0x20016000 and its length is 0x3F8.
 
+## WiFi Support
+
+For support on using the on-board WiFi, including updating the firmware, please see this [page](../../hardware/components/spwf04sa.md).
 
 ***
 
