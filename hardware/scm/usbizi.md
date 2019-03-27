@@ -16,7 +16,7 @@ To use with NETMF, follow these [setup instructions](../../software/netmf/gettin
 
 The original development board for USBizi.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/USBizi%20DevSys%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/USBizi%20DevSys%20Rev%201.1%20Schematic.pdf)
 
 
 
