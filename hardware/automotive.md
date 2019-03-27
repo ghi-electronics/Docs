@@ -8,4 +8,4 @@ Resources below are provided for reference only. Please [contact us](http://ghie
 
 ## Resources
 * [Brochure](http://files.ghielectronics.com/downloads/Documents/Brochures/CANxtra%20Brochure.pdf)
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/CANxtra%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/CANxtra%20Rev%202.1%20Schematic.pdf)
