@@ -12,5 +12,5 @@ The G120HDR Module is a through-hole version of the [G120 Module](../scm/g120.md
 
 ### Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/G120HDR%20Module%20Rev2%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/G120HDR%20Module%20Rev%202.0%20Schematic.pdf)
 
