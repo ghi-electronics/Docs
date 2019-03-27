@@ -1,6 +1,6 @@
 # SPWF04Sx WiFi Module
 ---
-First introduced over twenty years ago, WiFi has become the most popular wireless networking technology. The [SPWF04Sx family of modules](https://www.st.com/en/wireless-connectivity/spwf04sa.html) from STMicroelectronics have an easy-to-use AT command based socket API that allow applications to quickly connect to the Internet. They also support Transport Layer Security, which is vital in an IoT environment.
+First introduced over twenty years ago, WiFi has become the most popular wireless networking technology. The SPWF04Sx family of modules from STMicroelectronics have an easy-to-use AT command based socket API that allow applications to quickly connect to the Internet. They also support Transport Layer Security, which is vital in an IoT environment.
 
 Take a look at the [FEZ WiFi sample](https://github.com/ghi-electronics/TinyCLR-Samples/) for a working example to get going quickly.
 
