@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Domino%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Domino%20Rev%201.1%20Schematic.pdf)
 
 ## Software
 
