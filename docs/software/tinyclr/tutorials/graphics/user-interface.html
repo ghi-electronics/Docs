@@ -388,6 +388,27 @@ private static UIElement Elements() {
     Timer timer = new Timer(Counter, txt, 2000, 1000);
     return txt;
 }
+</code></pre><p>You can also use the dispatcher timer directly</p>
+<pre><code class="lang-cs">private static UIElement Elements() {
+    var txt = new Text(font, &quot;Hello World!&quot;) {
+        ForeColor = Colors.White,
+        VerticalAlignment = VerticalAlignment.Center,
+        HorizontalAlignment = HorizontalAlignment.Center,
+    };
+
+    var timer = new DispatcherTimer();
+    timer.Tag = txt;
+    timer.Tick += Counter;
+    timer.Interval = new TimeSpan(0, 0, 1);
+    timer.Start();
+    return txt;
+}
+
+private static void Counter(object sender, EventArgs e) {
+    var txt = (Text)((DispatcherTimer)sender).Tag;
+    txt.TextContent = DateTime.Now.ToString();
+    txt.Invalidate();
+}
 </code></pre><h2 id="user-input">User Input</h2>
 <p>A user can feed in input to the graphical interface through touch or button input.</p>
 <pre><code class="lang-cs">app.InputProvider.RaiseTouch(x, y, touchState, DateTime.UtcNow);
