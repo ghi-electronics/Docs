@@ -6,7 +6,7 @@ An Arduino-pinout compatible single board computer.
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20III%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20III%20Rev%201.0%20Schematic.pdf)
 
 
 ## Software

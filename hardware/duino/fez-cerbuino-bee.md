@@ -6,7 +6,7 @@ An Arduino-pinout compatible single board computer with Gadgeteer sockets.
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20Bee%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cerbuino%20Bee%20Rev%201.4%20Schematic.pdf)
 
 ## Software
 

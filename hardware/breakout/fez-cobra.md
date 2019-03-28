@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Cobra%20Rev%201.3%20Schematic.pdf)
 
 ## Software
 

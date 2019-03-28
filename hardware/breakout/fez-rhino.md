@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Rhino%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Rhino%20Rev%201.0%20Schematic.pdf)
 
 ## Software
 

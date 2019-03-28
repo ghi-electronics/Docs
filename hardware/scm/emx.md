@@ -14,7 +14,7 @@ To use with NETMF, follow the [setup instructions](../../software/netmf/getting-
 
 The development system used for evaluating the EMX SoM.
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/EMX%20DevSys%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/EMX%20DevSys%20Rev%201.3%20Schematic.pdf)
 
 
 

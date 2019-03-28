@@ -6,7 +6,7 @@ A Arduino-pinout compatible single board computer.
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Lemur%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/FEZ/FEZ%20Lemur%20Rev%201.0%20Schematic.pdf)
 
 ## Software
 

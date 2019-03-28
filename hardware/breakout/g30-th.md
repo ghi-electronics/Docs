@@ -6,7 +6,7 @@ A through-hole version of G30.
 
 ## Resources
 
-* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/G30TH%20Schematic.pdf)
+* [Schematic](http://files.ghielectronics.com/downloads/Schematics/Systems/G30%20TH%20Rev%201.0%20Schematic.pdf)
 
 
 ## Software

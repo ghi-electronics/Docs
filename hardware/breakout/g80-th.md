@@ -6,7 +6,7 @@ A through-hole version of the G80.
 
 ## Resources
 
-* [Schematics](http://files.ghielectronics.com/downloads/Schematics/Systems/G80TH%20Schematic.pdf)
+* [Schematics](http://files.ghielectronics.com/downloads/Schematics/Systems/G80%20TH%20Rev%201.0%20Schematic.pdf)
 
 ## Software
 
