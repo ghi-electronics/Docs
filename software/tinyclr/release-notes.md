@@ -367,7 +367,7 @@ In preparation for the official 1.0 release we are no longer building the firmwa
 - Using exception filters may crash the system in some uses [#177](https://github.com/ghi-electronics/TinyCLR-Ports/issues/177).
 - Software SPI does not work with some devices [#293](https://github.com/ghi-electronics/TinyCLR-Ports/issues/293).
 - During multi-pin reservations if a later pin fails to reserve, previously reserved ones are not released [#312](https://github.com/ghi-electronics/TinyCLR-Ports/issues/312).
-- Filesystem is not available on G30 [#322](https://github.com/ghi-electronics/TinyCLR-Ports/issues/322).
+- File system is not available on G30 [#322](https://github.com/ghi-electronics/TinyCLR-Ports/issues/322).
 - The ADC is not accurate on the G400 [#373](https://github.com/ghi-electronics/TinyCLR-Ports/issues/373).
 - Many events do not pass a timestamp [#368](https://github.com/ghi-electronics/TinyCLR-Ports/issues/368).
 - Many of the non-essential functions of USB client are not implemented [#398](https://github.com/ghi-electronics/TinyCLR-Ports/issues/398).

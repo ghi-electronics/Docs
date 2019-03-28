@@ -17,7 +17,7 @@ The kit includes:
 
 * Part Number AFEVL-FS-524
 * [ALFAT Eval Kit Schematic](http://files.ghielectronics.com/downloads/Schematics/FileSystem/ALFAT%20Evaluation%20Kit%20Rev%201.1%20Schematic.pdf)
-* [File System User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
+* [File System User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/File%20System%20User%20Manual.pdf)
 * [Software Bundle](http://files.ghielectronics.com/downloads/ALFAT/ALFAT%20Evaluation%20Kit.zip)
 * [UART/SPI Command Implementation](http://files.ghielectronics.com/downloads/ALFAT/ALFAT%20Interface%20Code%20Library.zip)
 
@@ -28,7 +28,7 @@ F40, originally called ALFAT, is the flagship file system chipset.
 
 * Part Number ALF2X-SC-512
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F40%20Datasheet.pdf)
-* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/File%20System%20User%20Manual.pdf)
 * [Firmware v1.0.8](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v1.0.8.ghi)
 * [Firmware v2.0.0](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/ALFAT%20Firmware%20v2.0.0.ghi)
 
@@ -71,7 +71,7 @@ This low-cost chipset is compatible with F40 but with a limited feature set.
 
 * Part Number F20SC-SC-558
 * [Datasheet](http://files.ghielectronics.com/downloads/Documents/Datasheets/F20%20Datasheet.pdf)
-* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/Filesystem%20User%20Manual.pdf)
+* [User Manual](http://files.ghielectronics.com/downloads/Documents/Manuals/File%20System%20User%20Manual.pdf)
 * [Firmware v1.0.3](http://files.ghielectronics.com/downloads/ALFAT/Firmwares/F20%20Firmware%20v1.0.3.ghi)
 
 ### F20 uSD Board
