@@ -99,7 +99,7 @@ Property | Value
 Width | 480
 Height | 272
 DataFormat | RGB565
-Pixel Clock Rate | 5 MHz <= x <= 12MHz
+Pixel Clock Rate | 8 MHz <= x <= 16MHz
 Pixel Polarity | low
 DataEnable Is Fixed | false
 DataEnable Polarity | low
@@ -136,7 +136,7 @@ Property | Value
 Width | 800
 Height | 480
 DataFormat | RGB565
-Pixel Clock Rate | <= 50 MHz
+Pixel Clock Rate | 23 MHz <= x <= 46MHz
 Pixel Polarity | low
 Data Enable Is Fixed | false
 Data Enable Polarity | low
