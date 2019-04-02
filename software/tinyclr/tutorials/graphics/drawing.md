@@ -33,7 +33,7 @@ class Program {
             HorizontalSyncPulseWidth = 1,
             DataEnableIsFixed = false,
             DataEnablePolarity = false,
-            PixelClockRate = 18_000_000,
+            PixelClockRate = 16_000_000,
             PixelPolarity = false,
             VerticalBackPorch = 23,
             VerticalFrontPorch = 7,
