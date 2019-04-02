@@ -61,7 +61,7 @@ namespace UserInterfaceExample {
                 HorizontalSyncPulseWidth = 1,
                 DataEnableIsFixed = false,
                 DataEnablePolarity = false,
-                PixelClockRate = 12_000_000,
+                PixelClockRate = 18_000_000,
                 PixelPolarity = false,
                 VerticalBackPorch = 23,
                 VerticalFrontPorch = 7,
