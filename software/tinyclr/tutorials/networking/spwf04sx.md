@@ -18,7 +18,7 @@ To update the firmware, please see this [page](../../../../hardware/components/s
 
 #### SPWF04SxInterface()
 
-`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the WiFi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.
+`SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)`. Used to create a new instance of the WiFi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value. You must also set the mode pin but the constructor does not yet do this for you. Be sure to see the [sample](https://github.com/ghi-electronics/TinyCLR-Samples/blob/master/FEZ/FEZWiFi/Program.cs) for the correct setup or your device will not work.
 
 ### Methods
 
