@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="fonts">Fonts</h1>
 
-<p>Fonts can be included in your TinyCLR application by adding them as a <a href="../resources.html">resource</a>. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under <a href="../../downloads.html">downloads</a> is a command line utility which does just that.</p>
+<p>Fonts can be included in your TinyCLR application by adding them as a <a href="../resources.html">resource</a>. Any TrueType font can be used after being converted to the .tcfnt format with the FontConverter tool. The Font Converter tool (found under <a href="../../downloads.html">downloads</a> is a command line utility which does just that. Make sure to use this tool for any fonts you need, using old fonts from NETMF will not work.</p>
 <pre><code class="lang-cs">var screen = Graphics.FromHdc(displayController.Hdc);
 var font = Resource.GetFont(Resource.FontResources.NinaB);
 var greenPen = new Pen(Color.Green);

@@ -89,7 +89,7 @@
 <h2 id="software">Software</h2>
 <h3 id="constructors">Constructors</h3>
 <h4 id="spwf04sxinterface">SPWF04SxInterface()</h4>
-<p><code>SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)</code>. Used to create a new instance of the WiFi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value.</p>
+<p><code>SPWF04SxInterface(SpiDevice spi, GpioPin irq, GpioPin reset)</code>. Used to create a new instance of the WiFi driver. Takes the SPI device and the IRQ and RESET GPIO pins as arguments. Has no return value. You must also set the mode pin but the constructor does not yet do this for you. Be sure to see the <a href="https://github.com/ghi-electronics/TinyCLR-Samples/blob/master/FEZ/FEZWiFi/Program.cs">sample</a> for the correct setup or your device will not work.</p>
 <h3 id="methods">Methods</h3>
 <h4 id="cleartlsserverrootcertificate">ClearTlsServerRootCertificate()</h4>
 <p><code>ClearTlsServerRootCertificate()</code>. Erases the currently loaded root certificates from the WiFi module&#39;s flash memory. Takes no arguments and has no return value.</p>
